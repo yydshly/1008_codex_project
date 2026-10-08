@@ -1,0 +1,17 @@
+{
+  "name": "github-project-research",
+  "version": "0.1.0",
+  "private": true,
+  "description": "按顺序整理 GitHub 开源项目的研究、实验与 Web 演示。",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "project:add": "node scripts/new-project.mjs",
+    "index:build": "node scripts/project-index.mjs",
+    "index:check": "node scripts/project-index.mjs --check",
+    "check": "node scripts/project-index.mjs --check",
+    "test": "node --test scripts/catalog.test.mjs"
+  }
+}
