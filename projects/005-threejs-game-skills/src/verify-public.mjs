@@ -9,10 +9,10 @@ const checked=[];
 async function get(url,binary=false){
   const response=await fetch(url,{signal:AbortSignal.timeout(60000),headers:{'Cache-Control':'no-cache'}});
   assert.equal(response.status,200,`${url} HTTP ${response.status}`);
-  const body=binary?Buffer.from(await response.arrayBuffer()):await response.text();
-  assert(body.length>0,`${url} 空内容`);
-  checked.push({url:String(url),status:response.status,contentType:response.headers.get('content-type'),bytes:binary?body.length:Buffer.byteLength(body)});
-  return body;
+  const bytes=Buffer.from(await response.arrayBuffer());
+  assert(bytes.length>0,`${url} 空内容`);
+  checked.push({url:String(url),status:response.status,contentType:response.headers.get('content-type'),bytes:bytes.length});
+  return binary?bytes:bytes.toString('utf8');
 }
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const [html,home,json,png]=await Promise.all([

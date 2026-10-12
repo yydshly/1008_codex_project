@@ -102,19 +102,19 @@
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/harbor-active.png",
         "status": 200,
         "contentType": "image/png",
-        "bytes": 180582
+        "bytes": 99892
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/harbor-input-run.webm",
         "status": 200,
         "contentType": "video/webm",
-        "bytes": 7422933
+        "bytes": 4099128
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-active.png",
         "status": 200,
         "contentType": "image/png",
-        "bytes": 2839863
+        "bytes": 1559662
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-art/README.md",
@@ -126,13 +126,13 @@
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-input-run.webm",
         "status": 200,
         "contentType": "video/webm",
-        "bytes": 3729368
+        "bytes": 2058957
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-v1-active.png",
         "status": 200,
         "contentType": "image/png",
-        "bytes": 897561
+        "bytes": 492917
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/overview/provenance.json",
@@ -144,13 +144,13 @@
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ridge-drift.jpg",
         "status": 200,
         "contentType": "image/jpeg",
-        "bytes": 146455
+        "bytes": 81371
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/scaffold.jpg",
         "status": 200,
         "contentType": "image/jpeg",
-        "bytes": 61237
+        "bytes": 35624
       },
       {
         "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/data/publication.json",
