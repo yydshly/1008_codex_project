@@ -1,0 +1,13 @@
+import http from 'node:http';
+import path from 'node:path';
+import {readFile,stat} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+const args=process.argv.slice(2),value=(name,fallback)=>{const i=args.indexOf(name);return i<0?fallback:args[i+1];};
+const web=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const root=path.resolve(web,value('--dir','dist')),port=Number(value('--port','4201'));
+const base=value('--base','/1008_codex_project/011-aitoearn/');
+if(!base.startsWith('/')||!base.endsWith('/'))throw new Error('base 应以 / 开始和结束');
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8','.txt':'text/plain; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml'};
+const server=http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost');if(url.pathname===base.slice(0,-1)){res.writeHead(302,{Location:base});res.end();return;}if(!url.pathname.startsWith(base)){res.writeHead(404);res.end('Not found');return;}const relative=decodeURIComponent(url.pathname.slice(base.length))||'index.html';const target=path.resolve(root,relative),rel=path.relative(root,target);if(rel.startsWith('..')||path.isAbsolute(rel)){res.writeHead(403);res.end('Forbidden');return;}if(!(await stat(target)).isFile()){res.writeHead(404);res.end('Not found');return;}const bytes=await readFile(target);res.writeHead(200,{'Content-Type':mime[path.extname(target)]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(req.method==='HEAD'?undefined:bytes);}catch(error){res.writeHead(error.code==='ENOENT'?404:400);res.end('Not found');}});
+server.on('error',error=>{console.error(error.code==='EADDRINUSE'?`端口${port}已被占用，请通过--port指定空闲端口。`:error.message);process.exitCode=1;});
+server.listen(port,'127.0.0.1',()=>console.log(`本地研究网页：http://127.0.0.1:${port}${base}`));

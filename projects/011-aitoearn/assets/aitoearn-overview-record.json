@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-09",
+  "repository": "https://github.com/yikart/AiToEarn",
+  "commit": "3581f511293236044e56fad67958cfcea0def6b5",
+  "mode": "内置image_gen工具",
+  "tool": "image_gen.imagegen",
+  "imageModel": "工具未公开底层模型编号",
+  "startedAt": "2026-10-08T19:22:18Z",
+  "completedAt": "2026-10-08T19:23:08Z",
+  "prompt": "assets/aitoearn-overview-prompt.txt",
+  "requestedSize": "2160×3840（仅提示词请求，工具没有尺寸参数）",
+  "requestedRatio": "9:16",
+  "output": {
+    "local": "assets/aitoearn-overview.png",
+    "width": 941,
+    "height": 1672,
+    "bytes": 2234580,
+    "sha256": "3e44a35a22c3bd73482172bbeebe72b81775e0419a4fd18b16031d343761a973"
+  },
+  "references": [
+    {
+      "local": "assets/research-to-post/card-01.png",
+      "sha256": "c3393f1c0b6efadfd44667ad09c3abb6cf9873dec4a27aedac052f10627237a8"
+    },
+    {
+      "local": "assets/research-to-post/card-02.png",
+      "sha256": "b7d8966b4be2b888a0a1313b6d633c690faf1b369a856470034d7b9fe0582510"
+    },
+    {
+      "local": "assets/research-to-post/card-03.png",
+      "sha256": "7272897510fb155bd96a1c9a6427b22084286b2a7c5e841b737d3a245a949ba9"
+    }
+  ],
+  "textSource": "assets/aitoearn-overview.md",
+  "facts": [
+    {
+      "local": "web/content.js",
+      "sha256": "0f02b5c83580c8f14792c9acb60ecfeae742f14b861adf8f10fc9d0f2f6dc80f"
+    },
+    {
+      "local": "src/implementation-inventory.json",
+      "sha256": "1afe752cb00cb3e52fb657508f5b9c102aa959d974a57340171e6a9fa40f5236"
+    },
+    {
+      "local": "src/skill-installation.json",
+      "sha256": "9434fd3b95fee5483f88dd7caf19c053fb858f50dddb1a6759f38a1df1433223"
+    },
+    {
+      "local": "experiments/research-to-post/run.json",
+      "sha256": "800a491747a42ee402f76b7cded00ac205c6937a000c33281c9e47068308c45e"
+    }
+  ],
+  "review": {
+    "method": "查看生成结果与本地原始PNG，逐项对照固定研究和演示记录；未运行自动OCR",
+    "panels": 8,
+    "capabilityGroups": 8,
+    "capabilities": 32,
+    "skills": 13,
+    "channels": 14,
+    "scenarios": 6,
+    "extensionSteps": 6,
+    "sourceVersionPresent": true,
+    "demoImages": 3,
+    "actualVideo": false,
+    "actualPublishing": false,
+    "notes": [
+      "八个主题、分类计数、技能与渠道名称、三图主题、1086×1448、标题11字和正文501字等主要事实均与记录对应。",
+      "成品区是参照三张原始PNG重新排版的缩略图；缩略中的小字不能当作原文件逐像素复制。",
+      "工具实际返回941×1672，未达到提示词请求的2160×3840，不标为4K或高清升级。",
+      "图像工具额外加入了装饰性英文、植物与书本，以及少量说明语；这些不作为新增功能或执行证据。",
+      "扩展建议为本项目分析；视频、原后台和社交发布等保留未实测标识。"
+    ]
+  },
+  "promptSha256": "b7dcab61ec1806c145c269da39b86100c9e322ec253e24652c4d1480536448b7",
+  "textSourceSha256": "8fc9c67c267c02f53e80c3928bd8fb195b0aa7a9cc121eb41b093ea03c2bc5d5"
+}

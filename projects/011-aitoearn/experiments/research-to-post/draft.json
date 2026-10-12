@@ -1,0 +1,19 @@
+{
+  "schema": "aitoearn-gpt-local-draft/v1",
+  "id": "local-011-research-to-post-20261009",
+  "status": "local-draft",
+  "type": "IMAGE",
+  "title": "把开源研究变成三张图文",
+  "body": "研究了 AiToEarn，我最关心的问题是：它能把我们已经整理好的开源项目资料，变成什么样的内容？\n\n这次拿本仓库的 011 研究项目做了一次实际尝试：从固定版本的源码结论出发，用当前 GPT/Codex 规划主题、写文案，再通过图像生成工具制作三张介绍图。\n\n① 把开源研究变成内容：从真实资料开始，组织创作、发布和运营。\n② Skill 不是全部：Agent 选择步骤，Skills 提供方法，Tools 执行动作，Backend 保存状态。\n③ 先用一个项目跑通一次创作：整理资料、生成图文、审阅草稿，再决定是否接入发布。\n\n对我们的价值，是把已有的研究成果整理成更容易传播和复用的内容，同时保留事实来源、提示词和成品记录。\n\n本次安装了 13 个上游技能，实际采用图片生成与内容管理两个技能的方法；生成工具和草稿存储经过本地 GPT 适配。三张图是真实生成结果，草稿保存在本地，还没有连接原项目后台或发布到社交账号。\n\n项目：https://github.com/yikart/AiToEarn\n研究版本：3581f51（MIT）",
+  "tags": ["开源工具", "AI创作", "Agent", "内容工作流", "项目研究"],
+  "media": [
+    {"type": "image", "file": "../../assets/research-to-post/card-01.png", "alt": "把开源研究变成内容：AiToEarn创作、发布和运营主题介绍图"},
+    {"type": "image", "file": "../../assets/research-to-post/card-02.png", "alt": "Skill不是全部：Agent、Skills、Tools和Backend四部分工作流原理图"},
+    {"type": "image", "file": "../../assets/research-to-post/card-03.png", "alt": "先用一个项目跑通一次创作：真实资料、生成图文和审阅草稿流程图"}
+  ],
+  "targetFormat": "小红书图文，仅按研究版本规则进行本地预检",
+  "platformAccountId": null,
+  "publishTaskId": null,
+  "remoteDraftId": null,
+  "note": "本地演示格式，不是AiToEarn MCP接口返回值；未创建远端草稿或发布任务。"
+}

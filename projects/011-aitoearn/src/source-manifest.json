@@ -1,0 +1,647 @@
+{
+  "repository": "https://github.com/yikart/AiToEarn",
+  "commit": "3581f511293236044e56fad67958cfcea0def6b5",
+  "researchDate": "2026-10-09",
+  "records": [
+    {
+      "path": "DOCKER_DEPLOYMENT_CN.md",
+      "kind": "reference",
+      "bytes": 5964,
+      "sha256": "0481938af3d48bc746f6676da5146a2e5af81f21798c923712ccc5f370f25481",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/DOCKER_DEPLOYMENT_CN.md",
+      "local": "upstream/DOCKER_DEPLOYMENT_CN.md"
+    },
+    {
+      "path": "docker-compose.yml",
+      "kind": "reference",
+      "bytes": 6713,
+      "sha256": "62875092653f8a87a5e4c7da32288d9a4dae4875c33aea22b46b3a602559023c",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/docker-compose.yml",
+      "local": "upstream/docker-compose.yml"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "reference",
+      "bytes": 1065,
+      "sha256": "70794088c6dca47c5d7db9874cfa6dd67f56f9562deee2a56efb916af8d3f4a8",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/LICENSE",
+      "local": "upstream/LICENSE"
+    },
+    {
+      "path": "presentation/channel-cn.png",
+      "kind": "asset",
+      "bytes": 64945,
+      "sha256": "f9545684ca37cf01e33f1f4f976a746e41d477d7620871d8759dc44934d547df",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/presentation/channel-cn.png",
+      "local": "assets/author-channels.png"
+    },
+    {
+      "path": "presentation/display-1.5.2png.png",
+      "kind": "asset",
+      "bytes": 926854,
+      "sha256": "5f21ce1b010791dfbde47af391bab5d57ced6ef3b3586b68212ea36a66bba8ac",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/presentation/display-1.5.2png.png",
+      "local": "assets/author-create.png"
+    },
+    {
+      "path": "presentation/engage-thumbnail-cn.png",
+      "kind": "asset",
+      "bytes": 278072,
+      "sha256": "c05f77a776f470187b2d1ec47b248476803389932a33a339e3df8c2190d43f89",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/presentation/engage-thumbnail-cn.png",
+      "local": "assets/author-engage.png"
+    },
+    {
+      "path": "presentation/monetize-cn.png",
+      "kind": "asset",
+      "bytes": 86967,
+      "sha256": "d67a8bb8d57da74778eccf3caf16691a82cd98e769fc047f91395e7a7d8757cd",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/presentation/monetize-cn.png",
+      "local": "assets/author-monetize.png"
+    },
+    {
+      "path": "presentation/publish-cn.png",
+      "kind": "asset",
+      "bytes": 37869,
+      "sha256": "10ab448cd8f214a1972c99b1374e82045f08ed7d7411cc4bf04fad024209eb78",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/presentation/publish-cn.png",
+      "local": "assets/author-publish.png"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/package.json",
+      "kind": "reference",
+      "bytes": 1889,
+      "sha256": "5b3627b85d6222020b8b02fad65625c6e64a67283fa271010ff0202fe4566c75",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/package.json",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/package.json"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/agent.constants.ts",
+      "kind": "reference",
+      "bytes": 19955,
+      "sha256": "fb8713cbab68dad1448a461baee8f6b9bbec4b4e9d0059e41e4de9f505625ca4",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/agent.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/agent.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/claude-code-router/claude-code-router.service.ts",
+      "kind": "reference",
+      "bytes": 6015,
+      "sha256": "e19c94c88e638ff15eccf247b1254d3f0cd48dadbde41efabaca5d7f32c717ca",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/claude-code-router/claude-code-router.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/claude-code-router/claude-code-router.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/image-edit.mcp.ts",
+      "kind": "reference",
+      "bytes": 18607,
+      "sha256": "14284608131f40ee9c37b1a77b23aebd2667324d8c5d097827b315de0ac9df61",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/image-edit.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/image-edit.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/media.mcp.ts",
+      "kind": "reference",
+      "bytes": 15285,
+      "sha256": "f47872200cda5d8022d667ed7845d9af1b3f179803e8f4e6773991ddba457b53",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/media.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/media.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/subtitle.mcp.ts",
+      "kind": "reference",
+      "bytes": 6878,
+      "sha256": "228b7f95a978b1cfa0654e0a2fc67c7b6a46bead422b743406071171bb4832a4",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/subtitle.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/subtitle.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/util.mcp.ts",
+      "kind": "reference",
+      "bytes": 3291,
+      "sha256": "af7df5716febb1cfde96abeab70107a6ad2db5aa49ad98e6c1fc6fef5d8b9468",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/util.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/util.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/video-utils.mcp.ts",
+      "kind": "reference",
+      "bytes": 15574,
+      "sha256": "ecd30ae4bc35dcb22dddadc7cf0ae3494c7d779df75e5afaa133e37dbc418ccf",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/video-utils.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/video-utils.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/aideo.mcp.ts",
+      "kind": "reference",
+      "bytes": 5994,
+      "sha256": "0e4d57a078c23d9c70e9ff71192d1de7a9110f94114437fdf48ceae15c36b3ef",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/aideo.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/aideo.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/drama-recap.mcp.ts",
+      "kind": "reference",
+      "bytes": 5109,
+      "sha256": "924b2c3f5835addb09a3d06899c1255a79ce7c7fd476029c46b9607b5bf6ea49",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/drama-recap.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/drama-recap.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/style-transfer.mcp.ts",
+      "kind": "reference",
+      "bytes": 3703,
+      "sha256": "700e7f96a875ab06f88b1764e8b53f160ca09d238cbe2faa03d08f685944579d",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/style-transfer.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/style-transfer.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/video-edit.mcp.ts",
+      "kind": "reference",
+      "bytes": 10507,
+      "sha256": "dde49393a583fe5aca7bc00834e3c38b6862dfed64a945f53736cca8fef68ffd",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/video-edit.mcp.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/video-edit.mcp.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/services/agent-runtime.service.ts",
+      "kind": "reference",
+      "bytes": 38370,
+      "sha256": "9b184fa7f5bcd7f8ac279188206bdb3c9eb69b0b4496633720ad3e5fdca62b26",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/services/agent-runtime.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/services/agent-runtime.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skill-init.service.ts",
+      "kind": "reference",
+      "bytes": 1735,
+      "sha256": "7fd10f75f408aa7ca8fecf70fba6afcb543b84b7b04ff8fce8f7e6726be959cb",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skill-init.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skill-init.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/analyzing-videos/SKILL.md",
+      "kind": "reference",
+      "bytes": 3527,
+      "sha256": "731fb2ec6834affbca6c3b6d2e555dafc3efe05c91934add1e1651c3c5ac5832",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/analyzing-videos/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/analyzing-videos/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/composing-videos/SKILL.md",
+      "kind": "reference",
+      "bytes": 3093,
+      "sha256": "ca20534b8eddd36b15442d4c49422b3c5a301379d3470f1b53cc81e4949d45f4",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/composing-videos/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/composing-videos/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media/SKILL.md",
+      "kind": "reference",
+      "bytes": 3509,
+      "sha256": "052a9f50941d05154bd1097edc16bb581d8cb299108291d65ef25d71b5f565b6",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-images/SKILL.md",
+      "kind": "reference",
+      "bytes": 4163,
+      "sha256": "73df6f754031e4b1762eb42fcef26899bc34828669f2d3c7422e2274b404704e",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-images/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-images/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-videos/SKILL.md",
+      "kind": "reference",
+      "bytes": 14289,
+      "sha256": "3e83f6ff1d2d34a418dc5e52871502180b5ba1530b7c1dee8a257b1d8ab92c04",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-videos/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-videos/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/extracting-thumbnails/SKILL.md",
+      "kind": "reference",
+      "bytes": 2920,
+      "sha256": "7449979be85483c5c38ba6a52ee3344c865722081c3a5cb39841db27026574da",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/extracting-thumbnails/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/extracting-thumbnails/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-drama-recaps/SKILL.md",
+      "kind": "reference",
+      "bytes": 3488,
+      "sha256": "13444fbcc74a5a1f6389268f56cb463b4793c45a6fbefdf6378ba6934f4dd24f",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-drama-recaps/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-drama-recaps/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-images/SKILL.md",
+      "kind": "reference",
+      "bytes": 4200,
+      "sha256": "c2311646fae852011de5a4254db10f02cd22600f0589ed763e91f01c0261ed62",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-images/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-images/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-videos/SKILL.md",
+      "kind": "reference",
+      "bytes": 3604,
+      "sha256": "19f7d446253e0fba84e1c73aefd4723f7ea1a988d053bac018fbddecbfdd06a5",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-videos/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-videos/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/managing-content/SKILL.md",
+      "kind": "reference",
+      "bytes": 1996,
+      "sha256": "9e23a56ea124bf0c7321c1c5cc83837415719d1d5171978ad7812ded0581463b",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/managing-content/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/managing-content/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/removing-subtitles/SKILL.md",
+      "kind": "reference",
+      "bytes": 2763,
+      "sha256": "a027ea4835a4ee82a82ea0fb3dd26bc5f21b68560b91820a13cd9f2479d77822",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/removing-subtitles/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/removing-subtitles/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/transferring-video-styles/SKILL.md",
+      "kind": "reference",
+      "bytes": 3183,
+      "sha256": "06ebe1832d48132d52a059c74c3178d4c9e1699c318a3a3bedbc98697c6eb771",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/transferring-video-styles/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/transferring-video-styles/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/translating-videos/SKILL.md",
+      "kind": "reference",
+      "bytes": 2931,
+      "sha256": "cd4bdd7ee32ff8adbc9f599e7e6f753796618410b892b8a7c99706f1aabab0b1",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/translating-videos/SKILL.md",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/translating-videos/SKILL.md"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-memory.service.ts",
+      "kind": "reference",
+      "bytes": 5954,
+      "sha256": "919b9a02817263d541a60c4a5a4700c35e5c3954a2008c1703337579ab79877b",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-memory.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-memory.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-planner.service.ts",
+      "kind": "reference",
+      "bytes": 21686,
+      "sha256": "dcaa17624e0a3634409a75eecc848c055803960f4a53619db8627c4da68e9d26",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-planner.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-planner.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-platforms.ts",
+      "kind": "reference",
+      "bytes": 4938,
+      "sha256": "619bebf469b631f7e446ef7e0d8465ca47873cd3dc4c47a5431be5e5b2d71e21",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-platforms.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation-platforms.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation.service.ts",
+      "kind": "reference",
+      "bytes": 46605,
+      "sha256": "c1d8505b930fc864778fc2e8b481818c28e516388b33acf30519fe37af9909fc",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-ai/src/core/draft-generation/draft-generation.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/accounts/account-group.service.ts",
+      "kind": "reference",
+      "bytes": 3934,
+      "sha256": "88c41fff6d6ee1fa9b5a792422487d6d2672f6471a90c9f626421eb6e9686d23",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/accounts/account-group.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/accounts/account-group.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/analytics/analytics.vo.ts",
+      "kind": "reference",
+      "bytes": 5837,
+      "sha256": "2076bf08d7f183e70052a5b9143e8189c2ae43d8eb4950141fcaae68cee3f74c",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/analytics/analytics.vo.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/analytics/analytics.vo.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/engagement/engagement.service.ts",
+      "kind": "reference",
+      "bytes": 11940,
+      "sha256": "e6952cbb24f471d5871f0ac9295593bd97cd0a5b8699ada0236d0106eab1a5c5",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/engagement/engagement.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/engagement/engagement.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/mcp/channels.mcp.controller.ts",
+      "kind": "reference",
+      "bytes": 11326,
+      "sha256": "94fd61b7fc6a95aefe84ec907e96d3bec74e2c483f007ee1a113587ecccbfde4",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/mcp/channels.mcp.controller.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/mcp/channels.mcp.controller.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/media/media.service.ts",
+      "kind": "reference",
+      "bytes": 33289,
+      "sha256": "b5007174920023e655891cffa4c9d6759639b65e7528be349cdf0cd2b6baeaa1",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/media/media.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/media/media.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/bilibili/bilibili.constants.ts",
+      "kind": "reference",
+      "bytes": 1128,
+      "sha256": "deaa054f26b270449b14937e4d0105a3f449b4068b3e1c1d9c663f7781308653",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/bilibili/bilibili.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/bilibili/bilibili.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin-publish.provider.ts",
+      "kind": "reference",
+      "bytes": 10084,
+      "sha256": "ba97d6953dd71d9a1fb66936779a27d702af4760f44d7b78aac0c6853d0b4e66",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin-publish.provider.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin-publish.provider.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin.constants.ts",
+      "kind": "reference",
+      "bytes": 1463,
+      "sha256": "a40e7d8d151f34f116def0fc402b9dc24b944a68f3aa8dd3245df4c61f9d3b67",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/facebook/facebook.constants.ts",
+      "kind": "reference",
+      "bytes": 1799,
+      "sha256": "7bd49afaeef554709a39a24dd0d59eef314b85f4f71c3a3d56213aa0a1bc8f77",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/facebook/facebook.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/facebook/facebook.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/google-business/google-business.constants.ts",
+      "kind": "reference",
+      "bytes": 558,
+      "sha256": "a90364c43a797887e6cb4a38c91d25b333f0944e488c5cf7ab7237fc53baf753",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/google-business/google-business.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/google-business/google-business.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/instagram/instagram.constants.ts",
+      "kind": "reference",
+      "bytes": 1805,
+      "sha256": "7e8fe0ae9587bf014ce87e9d6a9201314f3dcf6e186150bf68fbd0766777b379",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/instagram/instagram.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/instagram/instagram.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/kwai/kwai.constants.ts",
+      "kind": "reference",
+      "bytes": 1454,
+      "sha256": "01765138349f9be3d3a8de802d85e1da57e0d509cb1ef954305ad015473ab122",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/kwai/kwai.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/kwai/kwai.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/linkedin/linkedin.constants.ts",
+      "kind": "reference",
+      "bytes": 1074,
+      "sha256": "7777f5d0896b55e826ed541fe3a4edf72d01dd3b40c4a5026ea873dd6860332b",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/linkedin/linkedin.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/linkedin/linkedin.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/pinterest/pinterest.constants.ts",
+      "kind": "reference",
+      "bytes": 1047,
+      "sha256": "c1296bde81758f46cfb600c531eb01e7a1739e0fec019ccd6037cf9447d8cb50",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/pinterest/pinterest.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/pinterest/pinterest.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/platforms.interface.ts",
+      "kind": "reference",
+      "bytes": 26196,
+      "sha256": "693ce4852c733b09ab9dee4d4cfadda9e0193a04a9b251eab7a87d0714ce8b08",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/platforms.interface.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/platforms.interface.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote-publish.provider.ts",
+      "kind": "reference",
+      "bytes": 2423,
+      "sha256": "bf7071037809598afb85646e93fcadd1c1b63e2c775882853df315f0c77195bf",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote-publish.provider.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote-publish.provider.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote.constants.ts",
+      "kind": "reference",
+      "bytes": 1238,
+      "sha256": "3f581417236493ccbed46d5baa1e2f01d46b7d3674f93d354261250f808856c0",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/threads/threads.constants.ts",
+      "kind": "reference",
+      "bytes": 1207,
+      "sha256": "e1e6941c6dc25f79f63b4a0b13ebb7492264a6fada1223d18c69dfc9a758f023",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/threads/threads.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/threads/threads.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/tiktok/tiktok.constants.ts",
+      "kind": "reference",
+      "bytes": 1182,
+      "sha256": "1f679b795d8b381c72bda6eeb6ca78c555166161a78027bb190c36cc72e70e42",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/tiktok/tiktok.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/tiktok/tiktok.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter-engagement.provider.ts",
+      "kind": "reference",
+      "bytes": 7884,
+      "sha256": "a46a6f12d9af172191a048e9c71ec1e194cb2c43f54345c7737eaa5b6ccddd9d",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter-engagement.provider.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter-engagement.provider.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter.constants.ts",
+      "kind": "reference",
+      "bytes": 1238,
+      "sha256": "b03409c2f70d1dcaa80449a8a0caf33202a322da6a86c9552ea929472bb1bd52",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-channels/wechat-channels.constants.ts",
+      "kind": "reference",
+      "bytes": 1144,
+      "sha256": "234a244754df6fbe6a4c66b5716b1abbbe95dfd45e45746604ba55fbeb091393",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-channels/wechat-channels.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-channels/wechat-channels.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-official/wechat-official.constants.ts",
+      "kind": "reference",
+      "bytes": 981,
+      "sha256": "7cfc715925f3b78bed36104c200a453090bbf00e6fabd6922755cb7a1d14af19",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-official/wechat-official.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-official/wechat-official.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/youtube/youtube.constants.ts",
+      "kind": "reference",
+      "bytes": 1119,
+      "sha256": "d3baf24f076ed48770d643cecb6dda933c7511161ddc2fce8145e56be72f6478",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/youtube/youtube.constants.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/youtube/youtube.constants.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/flows/publish-flow.service.ts",
+      "kind": "reference",
+      "bytes": 18103,
+      "sha256": "f90ec5999a0f31aa8467f4d10ae5fac51e3d20f0d0542523841873c2ee8affc4",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/flows/publish-flow.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/flows/publish-flow.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/tasks/publish-queue.service.ts",
+      "kind": "reference",
+      "bytes": 2278,
+      "sha256": "b6bd0afe2f42382ac214f2bf2c84418048539acc229d9dbdab4f8193e9b0be04",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/tasks/publish-queue.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/tasks/publish-queue.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/tasks/publish-task.service.ts",
+      "kind": "reference",
+      "bytes": 35111,
+      "sha256": "fefed0b3d43905b0b3f4cb67e718a96fe9988e02dc1805a623ad1b69c4d46cf7",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/tasks/publish-task.service.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/channels/publish/tasks/publish-task.service.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/content/content.mcp.controller.ts",
+      "kind": "reference",
+      "bytes": 9480,
+      "sha256": "bd940f1370d13d3bf268ed5f96ed04620b7ff078cb355e02c23ff0d412684a75",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/content/content.mcp.controller.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/content/content.mcp.controller.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/unified-mcp/draft-generation.mcp.controller.ts",
+      "kind": "reference",
+      "bytes": 2821,
+      "sha256": "7fba24348bf68562ec58e899d0d9285ad8fc18c14781b1884ffedd60f9d7797d",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-server/src/core/unified-mcp/draft-generation.mcp.controller.ts",
+      "local": "upstream/project/aitoearn-backend/apps/aitoearn-server/src/core/unified-mcp/draft-generation.mcp.controller.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/libs/aitoearn-ai-shared/src/dtos/draft-generation.dto.ts",
+      "kind": "reference",
+      "bytes": 9214,
+      "sha256": "f667f5107cfc838ef5882b6e743fe28c58a5d4013f4bd4899702b38be8576fdb",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/libs/aitoearn-ai-shared/src/dtos/draft-generation.dto.ts",
+      "local": "upstream/project/aitoearn-backend/libs/aitoearn-ai-shared/src/dtos/draft-generation.dto.ts"
+    },
+    {
+      "path": "project/aitoearn-backend/libs/aitoearn-queue/package.json",
+      "kind": "reference",
+      "bytes": 772,
+      "sha256": "8d979eae722e3f29d74c52148a47e1e27f2e42ed94958fac55edb7b67e263c3d",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/libs/aitoearn-queue/package.json",
+      "local": "upstream/project/aitoearn-backend/libs/aitoearn-queue/package.json"
+    },
+    {
+      "path": "project/aitoearn-electron/server/src/modules/finance/finance.service.ts",
+      "kind": "reference",
+      "bytes": 7382,
+      "sha256": "10f210484e6f28cfe7e9b1d92b944809366b3b2c7017e03870317f64a0fc2ff0",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-electron/server/src/modules/finance/finance.service.ts",
+      "local": "upstream/project/aitoearn-electron/server/src/modules/finance/finance.service.ts"
+    },
+    {
+      "path": "project/aitoearn-electron/server/src/modules/task/user-task.service.ts",
+      "kind": "reference",
+      "bytes": 5592,
+      "sha256": "f2d734ddc289e92de41b453fbc3e70070efcd10ecfb4cefb8d627b8cd55b9ebf",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-electron/server/src/modules/task/user-task.service.ts",
+      "local": "upstream/project/aitoearn-electron/server/src/modules/task/user-task.service.ts"
+    },
+    {
+      "path": "project/aitoearn-web/package.json",
+      "kind": "reference",
+      "bytes": 7292,
+      "sha256": "fc3f8b54eda67aecaff4bd17de1247512b37f7715982fa00347f5917e848361e",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/package.json",
+      "local": "upstream/project/aitoearn-web/package.json"
+    },
+    {
+      "path": "project/aitoearn-web/public/assets/promptGallery/cover01.png",
+      "kind": "asset",
+      "bytes": 1657827,
+      "sha256": "d513845fe4cc3da9227835ea4852819335b823f8a864ed8511608e35a62c5f64",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/public/assets/promptGallery/cover01.png",
+      "local": "assets/example-restaurant.png"
+    },
+    {
+      "path": "project/aitoearn-web/src/api/materials/material.types.ts",
+      "kind": "reference",
+      "bytes": 7658,
+      "sha256": "59d4cdd1036d9a84ce5e5bd43b8868ce97accdf297324743014ff20907263ec7",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/src/api/materials/material.types.ts",
+      "local": "upstream/project/aitoearn-web/src/api/materials/material.types.ts"
+    },
+    {
+      "path": "project/aitoearn-web/src/app/[lng]/ai-social/components/PromptGallery/data.ts",
+      "kind": "reference",
+      "bytes": 1438,
+      "sha256": "62a82e3bf97b1182ff83222109186d25cd883a36fa72be51b4c6787531ffc72b",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/src/app/%5Blng%5D/ai-social/components/PromptGallery/data.ts",
+      "local": "upstream/project/aitoearn-web/src/app/[lng]/ai-social/components/PromptGallery/data.ts"
+    },
+    {
+      "path": "project/aitoearn-web/src/store/plugin/plats/douyin/index.ts",
+      "kind": "reference",
+      "bytes": 7929,
+      "sha256": "45a77f853a1190f58d8767efdab9ad109ea9b8b3e25f868b095e572344d4232f",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/src/store/plugin/plats/douyin/index.ts",
+      "local": "upstream/project/aitoearn-web/src/store/plugin/plats/douyin/index.ts"
+    },
+    {
+      "path": "project/aitoearn-web/src/store/plugin/plats/README.md",
+      "kind": "reference",
+      "bytes": 7860,
+      "sha256": "0216cd3423bb02733dd3e5e19c248f77198cf28e3b429d52f1c9fa3a1e1d59fe",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/src/store/plugin/plats/README.md",
+      "local": "upstream/project/aitoearn-web/src/store/plugin/plats/README.md"
+    },
+    {
+      "path": "project/aitoearn-web/src/store/plugin/plats/xhs/index.ts",
+      "kind": "reference",
+      "bytes": 6057,
+      "sha256": "0766b2913971e78a9d373368b3821e4a22a573a208864244016a35252f41fcf4",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-web/src/store/plugin/plats/xhs/index.ts",
+      "local": "upstream/project/aitoearn-web/src/store/plugin/plats/xhs/index.ts"
+    },
+    {
+      "path": "README.md",
+      "kind": "reference",
+      "bytes": 15863,
+      "sha256": "57f39ba4383a392e8225e49b7f0e526c560b6219dedddeebe85220a6dae72dc1",
+      "url": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/README.md",
+      "local": "upstream/README.md"
+    }
+  ]
+}

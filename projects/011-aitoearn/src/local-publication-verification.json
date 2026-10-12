@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-12T11:44:01.583Z",
+  "passed": true,
+  "sections": 18,
+  "summaries": 12,
+  "introductions": 6,
+  "capabilities": 32,
+  "skills": 13,
+  "platforms": 14,
+  "modules": 8,
+  "mechanisms": 6,
+  "reuse": 4,
+  "extensions": 8,
+  "relativeResources": 46,
+  "originalGuide": {
+    "file": "assets/aitoearn-overview.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "3e44a35a22c3bd73482172bbeebe72b81775e0419a4fd18b16031d343761a973",
+    "bytes": 2234580
+  },
+  "scope": "静态研究、链接、摘要一致性和原始引导图核验；不执行原后台、视频或真实发布"
+}

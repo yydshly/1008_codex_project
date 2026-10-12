@@ -1,0 +1,519 @@
+{
+  "commit": "3581f511293236044e56fad67958cfcea0def6b5",
+  "rules": [
+    {
+      "name": "抖音",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/douyin/douyin.constants.ts",
+      "maxTitleLength": 30,
+      "maxBodyLength": 1000,
+      "maxTotalTextLength": 1000,
+      "maxImages": 12,
+      "maxVideos": 1,
+      "maxImageSize": 20971520,
+      "maxVideoSize": 104857600,
+      "maxVideoDuration": 900,
+      "maxCount": 5,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "bmp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "avi",
+        "mkv",
+        "mov"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "小红书",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote.constants.ts",
+      "maxTitleLength": 20,
+      "maxBodyLength": 1000,
+      "maxTotalTextLength": null,
+      "maxImages": 9,
+      "maxVideos": 1,
+      "maxImageSize": 20971520,
+      "maxVideoSize": 1073741824,
+      "maxVideoDuration": 3600,
+      "maxCount": 5,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "bmp",
+        "webp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "avi",
+        "mkv",
+        "mov",
+        "webm"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "快手",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/kwai/kwai.constants.ts",
+      "maxTitleLength": 30,
+      "maxBodyLength": 1000,
+      "maxTotalTextLength": 1000,
+      "maxImages": 0,
+      "maxVideos": 1,
+      "maxImageSize": 20971520,
+      "maxVideoSize": 104857600,
+      "maxVideoDuration": 1800,
+      "maxCount": 4,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "bmp",
+        "webp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "avi",
+        "mkv",
+        "mov",
+        "webm"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "哔哩哔哩",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/bilibili/bilibili.constants.ts",
+      "maxTitleLength": 79,
+      "maxBodyLength": 249,
+      "maxTotalTextLength": null,
+      "maxImages": 0,
+      "maxVideos": 1,
+      "maxImageSize": 5242880,
+      "maxVideoSize": 4294967296,
+      "maxVideoDuration": 18000,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png"
+      ],
+      "videoFormats": [
+        "mp4",
+        "flv"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "微信视频号",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-channels/wechat-channels.constants.ts",
+      "maxTitleLength": 16,
+      "maxBodyLength": 1000,
+      "maxTotalTextLength": null,
+      "maxImages": 9,
+      "maxVideos": 1,
+      "maxImageSize": 20971520,
+      "maxVideoSize": 1073741824,
+      "maxVideoDuration": 3600,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "bmp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "avi",
+        "mkv",
+        "mov",
+        "flv",
+        "rmvb",
+        "wmv",
+        "webm"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "微信公众号",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/wechat/wechat-official/wechat-official.constants.ts",
+      "maxTitleLength": 64,
+      "maxBodyLength": 20000,
+      "maxTotalTextLength": null,
+      "maxImages": 20,
+      "maxVideos": null,
+      "maxImageSize": 10485760,
+      "maxVideoSize": null,
+      "maxVideoDuration": null,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "gif",
+        "bmp"
+      ],
+      "videoFormats": [],
+      "updateSupported": false
+    },
+    {
+      "name": "TikTok",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/tiktok/tiktok.constants.ts",
+      "maxTitleLength": null,
+      "maxBodyLength": 2200,
+      "maxTotalTextLength": 2200,
+      "maxImages": 35,
+      "maxVideos": 1,
+      "maxImageSize": 20971520,
+      "maxVideoSize": 4294967296,
+      "maxVideoDuration": 600,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "webp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "mov",
+        "webm"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "YouTube",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/youtube/youtube.constants.ts",
+      "maxTitleLength": 100,
+      "maxBodyLength": 5000,
+      "maxTotalTextLength": null,
+      "maxImages": 0,
+      "maxVideos": 1,
+      "maxImageSize": null,
+      "maxVideoSize": 274877906944,
+      "maxVideoDuration": 43200,
+      "maxCount": null,
+      "imageFormats": [],
+      "videoFormats": [
+        "mp4",
+        "mov",
+        "avi",
+        "wmv",
+        "flv",
+        "mkv"
+      ],
+      "updateSupported": true
+    },
+    {
+      "name": "Instagram",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/instagram/instagram.constants.ts",
+      "maxTitleLength": null,
+      "maxBodyLength": 2200,
+      "maxTotalTextLength": null,
+      "maxImages": 10,
+      "maxVideos": 1,
+      "maxImageSize": 8388608,
+      "maxVideoSize": 1073741824,
+      "maxVideoDuration": 900,
+      "maxCount": 30,
+      "imageFormats": [
+        "jpg",
+        "jpeg"
+      ],
+      "videoFormats": [
+        "mp4",
+        "mov"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "Facebook",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/facebook/facebook.constants.ts",
+      "maxTitleLength": null,
+      "maxBodyLength": 63206,
+      "maxTotalTextLength": null,
+      "maxImages": 10,
+      "maxVideos": 1,
+      "maxImageSize": 10485760,
+      "maxVideoSize": 1073741824,
+      "maxVideoDuration": 90,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "gif",
+        "bmp",
+        "tiff"
+      ],
+      "videoFormats": [
+        "mp4",
+        "mov",
+        "avi"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "Threads",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/threads/threads.constants.ts",
+      "maxTitleLength": null,
+      "maxBodyLength": 500,
+      "maxTotalTextLength": 500,
+      "maxImages": 10,
+      "maxVideos": 1,
+      "maxImageSize": 8388608,
+      "maxVideoSize": 1073741824,
+      "maxVideoDuration": 300,
+      "maxCount": 1,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png"
+      ],
+      "videoFormats": [
+        "mp4",
+        "mov"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "X / Twitter",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/twitter/twitter.constants.ts",
+      "maxTitleLength": 0,
+      "maxBodyLength": 280,
+      "maxTotalTextLength": 280,
+      "maxImages": 4,
+      "maxVideos": 1,
+      "maxImageSize": 5242880,
+      "maxVideoSize": 536870912,
+      "maxVideoDuration": 140,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "gif",
+        "webp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "mov"
+      ],
+      "updateSupported": false
+    },
+    {
+      "name": "Pinterest",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/pinterest/pinterest.constants.ts",
+      "maxTitleLength": 100,
+      "maxBodyLength": 800,
+      "maxTotalTextLength": null,
+      "maxImages": 1,
+      "maxVideos": 1,
+      "maxImageSize": 20971520,
+      "maxVideoSize": null,
+      "maxVideoDuration": 300,
+      "maxCount": null,
+      "imageFormats": [
+        "bmp",
+        "jpg",
+        "jpeg",
+        "png",
+        "tiff",
+        "webp"
+      ],
+      "videoFormats": [
+        "mp4",
+        "m4v",
+        "mov"
+      ],
+      "updateSupported": true
+    },
+    {
+      "name": "LinkedIn",
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/linkedin/linkedin.constants.ts",
+      "maxTitleLength": 200,
+      "maxBodyLength": 3000,
+      "maxTotalTextLength": null,
+      "maxImages": 9,
+      "maxVideos": 1,
+      "maxImageSize": 10485760,
+      "maxVideoSize": 209715200,
+      "maxVideoDuration": 600,
+      "maxCount": null,
+      "imageFormats": [
+        "jpg",
+        "jpeg",
+        "png",
+        "gif"
+      ],
+      "videoFormats": [
+        "mp4"
+      ],
+      "updateSupported": false
+    }
+  ],
+  "tools": [
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/agent.constants.ts",
+      "names": [
+        "createChannelPublishFlow",
+        "listChannelPublishRecords",
+        "getChannelPublishRecordByRecordId",
+        "getChannelPublishRecordByTaskId",
+        "getChannelPublishRecordByFlowId",
+        "publishChannelTaskNow",
+        "cancelChannelPublishTask",
+        "updateChannelPublishAt",
+        "requestChannelPublishUpdate",
+        "listChannelPlatforms",
+        "getChannelPlatform",
+        "listBilibiliChannelPlatformCategories",
+        "listYoutubeChannelPlatformCategories",
+        "getChannelWorkLinkInfo",
+        "getChannelWorkDetail",
+        "verifyChannelWorkOwnership",
+        "getChannelAccountAnalytics",
+        "getChannelWorkAnalytics",
+        "listChannelEngagementComments",
+        "submitChannelEngagementComment",
+        "callChannelEngagementFunction"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/image-edit.mcp.ts",
+      "names": [
+        "compositeImages",
+        "resizeImage",
+        "transformImage",
+        "adjustImage",
+        "getImageMetadata"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/media.mcp.ts",
+      "names": [
+        "generateImage",
+        "generateVideo",
+        "getVideoStatus",
+        "createSoraCharacter",
+        "getSoraCharacter",
+        "generateVideoWithGrok",
+        "getGrokVideoStatus"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/subtitle.mcp.ts",
+      "names": [
+        "generateSubtitle"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/util.mcp.ts",
+      "names": [
+        "outputTaskResult",
+        "setTitle",
+        "getCurrentTime",
+        "wait"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/video-utils.mcp.ts",
+      "names": [
+        "getVolcVideoInfo",
+        "uploadAndGetVid",
+        "probeVideoMetadata",
+        "extractThumbnail",
+        "generateSubtitle"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/aideo.mcp.ts",
+      "names": [
+        "submitAideoTask",
+        "getAideoTaskStatus"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/drama-recap.mcp.ts",
+      "names": [
+        "submitDramaRecapTask",
+        "getDramaRecapTaskStatus"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/mcp/volcengine/style-transfer.mcp.ts",
+      "names": [
+        "submitVideoStyleTransfer",
+        "getVideoStyleTransferStatus"
+      ],
+      "evidence": "工具名枚举，需核对运行注册"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/mcp/channels.mcp.controller.ts",
+      "names": [
+        "createChannelPublishFlow",
+        "listChannelPublishRecords",
+        "getChannelPublishRecordByRecordId",
+        "getChannelPublishRecordByTaskId",
+        "getChannelPublishRecordByFlowId",
+        "publishChannelTaskNow",
+        "cancelChannelPublishTask",
+        "updateChannelPublishAt",
+        "requestChannelPublishUpdate",
+        "listChannelPlatforms",
+        "getChannelPlatform",
+        "listBilibiliChannelPlatformCategories",
+        "listYoutubeChannelPlatformCategories",
+        "getChannelWorkLinkInfo",
+        "listChannelWorks",
+        "getChannelWorkDetail",
+        "verifyChannelWorkOwnership",
+        "getChannelAccountAnalytics",
+        "getChannelWorkAnalytics",
+        "listChannelEngagementComments",
+        "submitChannelEngagementComment",
+        "callChannelEngagementFunction"
+      ],
+      "evidence": "控制器工具声明"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/content/content.mcp.controller.ts",
+      "names": [
+        "getMediaGroupInfoByName",
+        "createMedia",
+        "getDraftGroupInfoByName",
+        "createDraft",
+        "listDrafts",
+        "getDraftDetail",
+        "deleteDraft",
+        "listMedia",
+        "listDraftGroups",
+        "listMediaGroups"
+      ],
+      "evidence": "控制器工具声明"
+    },
+    {
+      "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/unified-mcp/draft-generation.mcp.controller.ts",
+      "names": [
+        "createVideoDraft",
+        "createImageTextDraft",
+        "getDraftTaskStatus"
+      ],
+      "evidence": "控制器工具声明"
+    }
+  ],
+  "extraPlatform": {
+    "name": "Google Business",
+    "note": "源码另有Google商家元数据，editor=None、modes=[]，未列为内容发布渠道。",
+    "path": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/google-business/google-business.constants.ts"
+  }
+}

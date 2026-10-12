@@ -2,6 +2,7 @@
 import { access, cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import path from 'node:path';
+import { renderSiteCard as renderAiToEarnCard } from '../projects/011-aitoearn/web/publication.js';
 import { ROOT, readCatalog, validateCatalog, projectDirectory } from './catalog.mjs';
 import { renderOctogentCard } from '../projects/007-octogent/web/scripts/render-site-card.mjs';
 import { renderSiteCard as renderUnslothCard } from '../projects/010-unsloth/web/scripts/render-publication.mjs';
@@ -10,7 +11,7 @@ import { renderSiteCard as renderCoveCard } from '../projects/009-cove/web/scrip
 
 // Publication is an explicit allowlist. Local research projects must not become
 // public merely because they are registered in projects.json.
-const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }, { id: '003', slug: 'pascal-editor' }, { id: '004', slug: 'up-learning-guide' }, { id: '005', slug: 'threejs-game-skills' }, { id: '006', slug: 'easel' }, { id: '007', slug: 'octogent' }, { id: '008', slug: 'ghosttrack' }, { id: '009', slug: 'cove' }, { id: '010', slug: 'unsloth' }, { id: '013', slug: 'aihot' }];
+const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }, { id: '003', slug: 'pascal-editor' }, { id: '004', slug: 'up-learning-guide' }, { id: '005', slug: 'threejs-game-skills' }, { id: '006', slug: 'easel' }, { id: '007', slug: 'octogent' }, { id: '008', slug: 'ghosttrack' }, { id: '009', slug: 'cove' }, { id: '010', slug: 'unsloth' }, { id: '011', slug: 'aitoearn' }, { id: '013', slug: 'aihot' }];
 const catalog = readCatalog();
 if (!Array.isArray(catalog.projects)) throw new Error('发布清单缺少 projects 数组。');
 const selected = publication.map(({ id, slug }) => {
@@ -38,6 +39,8 @@ const unslothWeb = path.join(ROOT,projectDirectory(unsloth),'web');
 const ghosttrack = projects.find(project => project.id === '008');
 const ghosttrackWeb = path.join(ROOT,projectDirectory(ghosttrack),'web');
 const cove = projects.find(project => project.id === '009');
+const aitoearn = projects.find(project => project.id === '011');
+const aitoearnWeb = path.join(ROOT,projectDirectory(aitoearn),'web');
 const coveWeb = path.join(ROOT,projectDirectory(cove),'web');
 const easelDirectory = projectDirectory(easel);
 const easelWeb = path.join(ROOT,easelDirectory,'web');
@@ -76,6 +79,7 @@ await build(path.join(octogentWeb,'scripts/build.mjs'),'007 Octogent 完整理�
 await build(path.join(ghosttrackWeb,'scripts/build.mjs'),'008 GhostTrack 完整理解与原图');
 await build(path.join(unslothWeb,'scripts/build.mjs'),'010 Unsloth 完整理解与原图');
 await build(path.join(coveWeb,'scripts/build.mjs'),'009 Cove 全栈模板完整理解与原图');
+await build(path.join(aitoearnWeb,'scripts/build.mjs'),'011 AiToEarn 完整理解与真实图文');
 const site = path.resolve(ROOT, '.cache/pages-site');
 if (path.dirname(site) !== path.resolve(ROOT, '.cache') || path.basename(site) !== 'pages-site') throw new Error('发布目录越界。');
 await rm(site, { recursive: true, force: true });
@@ -91,6 +95,7 @@ await cp(path.join(octogentWeb,'dist'),path.join(site,'007-octogent'),{recursive
 await cp(path.join(ghosttrackWeb,'dist'),path.join(site,'008-ghosttrack'),{recursive:true});
 await cp(path.join(unslothWeb,'dist'),path.join(site,'010-unsloth'),{recursive:true});
 await cp(path.join(coveWeb,'dist'),path.join(site,'009-cove'),{recursive:true});
+await cp(path.join(aitoearnWeb,'dist'),path.join(site,'011-aitoearn'),{recursive:true});
 // README uses the guide cover; the website keeps its original demo figure.
 const original = {
   image: 'assets/original-fine-v2.jpg',
@@ -174,8 +179,9 @@ ${renderOctogentCard(octogent)}
 ${renderGhostTrackCard(ghosttrack)}
 ${renderUnslothCard(unsloth)}
 ${renderCoveCard(cove)}
+${renderAiToEarnCard(aitoearn)}
 <footer>006 研究基线：<a href="${escape(easel.upstream)}/tree/${escape(easelResearch.meta.commit)}">${escape(easelResearch.meta.commit)}</a><br>上游遵循 <a href="${easelEntrance}LICENSE.upstream.txt">Apache-2.0许可</a>。公开网页仅提供研究，未运行模型或社媒发布；扩展方向是建议，离线5项通过与1项失败记录保留。<br><a href="${easelEntrance}research.md">Easel完整研究与验证范围</a><br><br>005 研究基线：<a href="${escape(threejs.upstream)}/tree/${escape(threejsResearch.meta.commit)}">${escape(threejsResearch.meta.commit)}</a><br>上游代码 <a href="${threejsEntrance}LICENSE.upstream.txt">MIT 许可</a>；作者独立游戏素材不自动受源码许可覆盖。总览图、原始截图和两款实验分别说明来源与验证边界；静态站点不调用生成 API。<br><a href="${threejsEntrance}asset-sources.md">图片与素材署名</a> · <a href="${threejsEntrance}research.md">完整研究记录</a><br><br>001 研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>Sandboard 上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">Sandboard 来源、许可与改动范围</a><br><br>002 研究基线：<a href="${escape(interview.upstream)}/tree/${escape(interviewReport.baseline.commit)}">${escape(interviewReport.baseline.commit)}</a><br>上游指南遵循 <a href="${interviewEntrance}LICENSE.upstream.txt">MIT 许可</a>；中文讲解与示例为独立补充，第三方教程仅保留资料入口。<br><a href="${repository}/blob/main/${interviewDirectory}/README.md">面试指南来源与实现说明</a><br><br>003 研究基线：<a href="https://github.com/pascalorg/editor/tree/c5eaf51e161ba8653204d543666f5839d6020874">c5eaf51e161ba8653204d543666f5839d6020874</a><br>四个运行包固定 1.0.3；上游代码 <a href="./003-pascal-editor/LICENSE.upstream.txt">MIT 许可</a>，材质独立来源和许可尚未逐项核实；Basis 解码器保留 Apache 2.0。<br><a href="https://github.com/yydshly/1008_codex_project/blob/main/projects/003-pascal-editor/README.md">Pascal 来源、许可与改动范围</a><br><br>013 研究基线：<a href="${escape(aihot.upstream)}/tree/${escape(aihotBaseline)}">${escape(aihotBaseline)}</a><br>AIHOT 上游遵循 MIT 许可；研究网页保留来源和独立解读，未运行原库采集与模型服务。<br><a href="${repository}/blob/main/${aihotDirectory}/README.md">AIHOT 来源、许可与研究范围</a><br><br>004 研究基线：<a href="https://github.com/byoungd/up/tree/35e2aa9ad3a076fe4e8405877cc560df2593838f">35e2aa9ad3a076fe4e8405877cc560df2593838f</a><br>内容原作者 byoungd and contributors；本地改写与引导图保留 <a href="${upEntrance}research/licenses/LICENSE-CONTENT.md">CC BY-NC 4.0</a>，上游程序另为MIT。本研究网页为独立实现，没有提供教学、模型服务或云同步。<br><a href="${upEntrance}#/guide/sources">Up来源、许可与验证范围</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer>
 </main></body></html>`;
 await writeFile(path.join(site, 'index.html'), html);
 await writeFile(path.join(site, '.nojekyll'), '');
-console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试指南 + Pascal 总结和真实编辑器 + AIHOT 研究；仅发布 001、002、003、004、005、006、007、008、009、010、013，原版路径保留。`);
+console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试指南 + Pascal 总结和真实编辑器 + AIHOT 研究；仅发布 001、002、003、004、005、006、007、008、009、010、011、013，原版路径保留。`);

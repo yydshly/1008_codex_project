@@ -1,0 +1,115 @@
+{
+  "repository": "https://github.com/yikart/AiToEarn",
+  "commit": "3581f511293236044e56fad67958cfcea0def6b5",
+  "date": "2026-10-09",
+  "scope": "011子项目内原版技能，根项目内aitoearn-gpt-content适配入口",
+  "method": "官方skill-installer脚本 --method git --ref固定SHA --dest子项目/.agents/skills",
+  "records": [
+    {
+      "name": "generating-images",
+      "path": ".agents/skills/generating-images/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-images/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-images/SKILL.md",
+      "sha256": "85b3544b3f50baceb3a9674b071b3b4ad77437677fac22da3c18a8ec1b4aa2db",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "generating-videos",
+      "path": ".agents/skills/generating-videos/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-videos/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-videos/SKILL.md",
+      "sha256": "abf4d4e66e824c766d258a0ab3ac1b044c63adf8972fd27b2fbe53b404815f27",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "editing-images",
+      "path": ".agents/skills/editing-images/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-images/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-images/SKILL.md",
+      "sha256": "5fc949f9b4c4999a9430d05f50457fb50bdfc36a8888a6a6d98ca41787f03290",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "editing-videos",
+      "path": ".agents/skills/editing-videos/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-videos/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/editing-videos/SKILL.md",
+      "sha256": "b0c68eaf395cbd34184de5fbf5d95592358b12e9fdfaa8408d05391e3881bb5f",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "composing-videos",
+      "path": ".agents/skills/composing-videos/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/composing-videos/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/composing-videos/SKILL.md",
+      "sha256": "4ea977d5e700c8c8a7de5f8f7ec4770c9da3be644ce197106b64535044996e4f",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "analyzing-videos",
+      "path": ".agents/skills/analyzing-videos/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/analyzing-videos/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/analyzing-videos/SKILL.md",
+      "sha256": "439baec76fe5ece0bbd035bfca44b3af76eff32ad66239b86be5e7a3783a068d",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "translating-videos",
+      "path": ".agents/skills/translating-videos/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/translating-videos/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/translating-videos/SKILL.md",
+      "sha256": "9b769b64a6e5574a3f090f15fa1ab345a8a17307bab7b26fea171a9968e27c3c",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "removing-subtitles",
+      "path": ".agents/skills/removing-subtitles/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/removing-subtitles/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/removing-subtitles/SKILL.md",
+      "sha256": "158d2ba8e5da0024b3f9bb1743a17b0e6635dc716b56c98ad6b2b0f48a5f7f94",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "transferring-video-styles",
+      "path": ".agents/skills/transferring-video-styles/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/transferring-video-styles/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/transferring-video-styles/SKILL.md",
+      "sha256": "dd1a45f5d159461decbcfbc09f97c3fc8974197dc013aded25f217dc4b26b27a",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "generating-drama-recaps",
+      "path": ".agents/skills/generating-drama-recaps/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-drama-recaps/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/generating-drama-recaps/SKILL.md",
+      "sha256": "e977e6d6f75266e1ccd6430b5734fd114e13a2565ca93bcc975250cc9d075eb0",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "managing-content",
+      "path": ".agents/skills/managing-content/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/managing-content/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/managing-content/SKILL.md",
+      "sha256": "f884e5b822dc96777319b0fa09576ef4e9cdd7dbeb743c0be5c3040bf804dbae",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "extracting-thumbnails",
+      "path": ".agents/skills/extracting-thumbnails/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/extracting-thumbnails/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/extracting-thumbnails/SKILL.md",
+      "sha256": "9f6cd98768acd9ab815bdf0d54fe15ba47466af87ec93291bc72a0333d250b98",
+      "unchangedAfterInstall": true
+    },
+    {
+      "name": "crawling-social-media",
+      "path": ".agents/skills/crawling-social-media/SKILL.md",
+      "sourcePath": "project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media/SKILL.md",
+      "source": "https://github.com/yikart/AiToEarn/blob/3581f511293236044e56fad67958cfcea0def6b5/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media/SKILL.md",
+      "sha256": "5e3700edabc585b1d31b9a2485fd526383c31eea9dd9aacc560955a4804ef6f9",
+      "unchangedAfterInstall": true
+    }
+  ],
+  "adapter": "../../.agents/skills/aitoearn-gpt-content/SKILL.md",
+  "discoveryDocs": "https://learn.chatgpt.com/docs/customization/overview#skills"
+}

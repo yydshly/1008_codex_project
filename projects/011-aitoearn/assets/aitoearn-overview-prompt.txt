@@ -1,0 +1,118 @@
+Use case: infographic-diagram.
+Create ONE complete, exceptionally readable Chinese information poster summarizing the AiToEarn open-source library, its capabilities, architecture, supported features, our real local demonstration, usage scenarios, personal value, expansion directions and implementation boundaries.
+Audience: a Chinese-speaking developer studying GitHub projects and building their own content workflow.
+Canvas: tall portrait 9:16, request 2160×3840 pixels if available; use the highest available native detail. Dense but carefully organized, designed for zooming and reading, no cropped sections.
+Visual system: match our existing AiToEarn research site and supplied demo artwork: ivory #f4f5f0, deep charcoal green #172d32, lime #d1f77b, amber only for unfinished/conditional items. Flat editorial infographic with precise lines, restrained icons, numbered panels, aligned cards and abundant paragraph spacing. Crisp Chinese sans-serif type, large section titles, consistently readable body text, no handwritten decorations. Do not spend space on ornamental illustrations.
+The three supplied images are supporting inserts, not edit targets: Image 1, Image 2, Image 3 are actual generated demonstration assets. Place small proportional thumbnail reproductions of these three, in this order, ONLY in the "我们的真实演示" section. Preserve the original compositions and text as faithfully as possible. Do not use these thumbnails as fake software screenshots or proof of publishing. All other diagrams are conceptual explanatory graphics.
+Layout, top to bottom: title and four statistics; full-width operating principle; eight-category capability map in two columns; compact skills and channels panels; prominent actual demonstration with three thumbnails; use scenarios and personal value in two columns; proposed expansion roadmap; clearly legible boundaries and source footer.
+Render ALL the following quoted Chinese copy faithfully. Preserve numbers and names exactly. Do not add slogans, invented data, prices, revenue charts or other text. Text outside thumbnail inserts must be only the supplied copy. You may wrap and arrange lines for readability.
+
+TITLE:
+"AiToEarn 能力与原理总览"
+"从真实素材到内容创作、发布与运营"
+"32 项研究能力 · 13 个技能 · 14 个渠道 · 3 张真实演示图"
+"定位：服务个人创作者、商家、品牌与代运营的内容营销系统"
+
+PANEL 01:
+"01  它怎样工作"
+Four strong explanatory modules:
+"Agent：理解目标，选择和编排步骤"
+"Skills：提供方法、参数、轮询与失败处理"
+"Tools / MCP：调用模型、媒体加工与业务接口"
+"Backend：保存素材、草稿、账号、排期和状态"
+A six-node directional flow, with these exact labels:
+"目标与素材 → Agent 调度 → Skills 方法 → 工具执行 → 后台与队列 → 模型与渠道结果"
+"长任务先返回任务 ID，再轮询状态；任务创建不等于最终发布"
+Compact technical support strip:
+"Next.js · Claude Agent SDK / Router · NestJS · MongoDB · Redis / BullMQ · S3 / RustFS · Sharp / ffmpeg · 外部模型与云 API"
+
+PANEL 02:
+"02  全量能力：八个业务环节"
+Eight cards, with counts and exact contents:
+"内容创作（5）"
+"标题正文话题 · 图片与参考图 · 文生 / 图生视频 · 批量草稿 · 历史偏好摘要"
+"媒体加工（9）"
+"图片精确合成 · 轨道剪辑 · 多素材合成 · 视频理解 / 高光 · 翻译配音字幕 · 硬字幕擦除 · 风格转换 · 影视解说 · 封面 / 媒体探测"
+"素材管理（3）"
+"社媒链接采集 · 媒体库分组 · 草稿与已有视频转草稿"
+"发布与账号（5）"
+"账号分组授权 · 多平台流程 · 日历排期 · 规则 / 格式适配 · 状态与失败处理"
+"互动运营（3）"
+"点赞评论收藏关注 · AI 回复 / 意向识别 · 品牌讨论监测"
+"数据分析（2）"
+"账号与作品指标快照 · 作品查询与归属验证"
+"集成与部署（4）"
+"MCP 助手 · OpenClaw · 私有部署 · Server Relay / AI Relay"
+"推广变现（1）"
+"推广任务、提交与结算"
+Small amber note:
+"AI 回复、品牌监测和推广业务含官方描述，链路未全量实测；采集入口待核验"
+
+PANEL 03:
+"03  技能与渠道"
+"13 个技能"
+"图片生成 · 视频生成 · 图片编辑 · 视频剪辑 · 多素材合成 · 视频理解与高光 · 视频翻译 · 硬字幕擦除 · 视频风格转换 · 影视解说 · 媒体与草稿管理 · 视频封面 · 社媒采集"
+"14 个声明支持渠道"
+"抖音 · 小红书 · 快手 · 哔哩哔哩 · 微信视频号 · 微信公众号"
+"TikTok · YouTube · Instagram · Facebook · Threads · X / Twitter · Pinterest · LinkedIn"
+"每个渠道的格式、授权与完成方式不同：API、插件或用户接续"
+
+PANEL 04, visually emphasize as actual local results with green status:
+"04  我们的真实演示"
+"真实研究资料 → GPT 规划与文案 → 图像工具生成 → 审阅与本地草稿"
+Under the three supplied thumbnails, exact captions respectively:
+"把开源研究变成内容"
+"Skill 不是全部"
+"先用一个项目跑通一次创作"
+"已完成：13 个原版技能安装 + GPT 适配入口"
+"实际产出：3 张 1086×1448 PNG + 中文文案 + 本地 draft.json"
+"本次使用：generating-images、managing-content"
+"GPT 负责规划；image_gen.imagegen 实际生成图片；底层图像模型编号未公开"
+"检查：标题 11 字，正文含话题 501 字，三张图通过研究版本格式预检"
+"观察：主要文字正确、配色一致；第 1 / 3 张有额外装饰小字"
+Amber boundary strip:
+"尚未执行：视频生成、原后台、账号授权、真实发布、互动分析与商业结果"
+
+PANEL 05:
+"05  使用场景"
+"项目研究：README / 截图 / 录屏 → 知识图文与演示"
+"个人创作：主题与素材 → 一周草稿和排期"
+"品牌电商：产品与卖点 → 多场景宣传内容"
+"本地门店：现场照片与活动 → 图文 / 竖屏视频"
+"多语言传播：自有视频 → 翻译、配音与目标渠道"
+"代运营：多个项目 / 客户 → 素材、账号与交付记录"
+
+PANEL 06:
+"06  对你的意义"
+"把已有 GitHub 研究转为可传播的内容"
+"按项目编号保存来源、版本、素材与草稿"
+"建立固定图文模板，减少重复整理"
+"学习 Agent、Skills、工具与后台的分工"
+"参考队列、轮询、重试和平台适配设计"
+"以人工修改量、准备时间和真实反馈评估价值"
+
+PANEL 07:
+"07  可扩展方向（建议，未实现）"
+A modest ordered roadmap:
+"1  研究集 → 自动读取文档、来源与版本"
+"2  模板化 → 统一封面、品牌样式和图文结构"
+"3  视频化 → 接入视频模型、录屏剪辑与字幕审阅"
+"4  单渠道 → 账号授权、草稿审批、发布与结果回看"
+"5  多项目 → 素材分组、预算、客户审核与任务队列"
+"6  反馈闭环 → 渠道数据、内容对照与多语言复用"
+
+PANEL 08:
+"08  接入条件与实现边界"
+"技能文件需要真实工具、模型服务、存储与账号授权配合"
+"采集缺少当前工具；字幕生成注册被注释；封面技能有旧接口"
+"批量不等于并行；历史偏好默认关闭，摘要不等于训练"
+"抖音可能需用户接续，小红书 / 视频号依赖插件"
+"指标受平台和权限影响；成品、发布、转化与收入需分别验证"
+"扩展路线是本项目建议，不能当作上游已实现功能"
+
+SOURCE FOOTER:
+"固定研究：yikart/AiToEarn · 3581f51 · MIT · 2026-10-09"
+"来源：github.com/yikart/AiToEarn"
+"总览图为本项目整理；原版技能保留许可；实际成品与执行记录见 011 网页"
+
+Critical verification requirements: make all eight numbered sections present. All 14 platform names and all 13 skill descriptions must be present. Keep the original library capabilities, actual demo results, proposed extensions and unverified boundaries visibly distinct. DO NOT imply video was generated or social content published in our demonstration. DO NOT draw financial returns or guarantee traffic. Do not omit the source footer. Exactly one image.

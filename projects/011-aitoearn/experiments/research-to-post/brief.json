@@ -1,0 +1,17 @@
+{
+  "id": "011-research-to-post-20261009",
+  "scenario": "把当前AiToEarn研究成果制作成一篇中文图文草稿",
+  "request": "面向关注开源工具和个人内容创作的读者，将真实研究结论转成三张竖版介绍图、一篇可审阅正文与素材清单，展示GPT适配的实际效果。",
+  "date": "2026-10-09",
+  "inputs": ["README.md", "research.md", "web/content.js", "src/implementation-inventory.json"],
+  "verifiedFacts": [
+    "上游固定提交3581f511293236044e56fad67958cfcea0def6b5，许可证MIT",
+    "AiToEarn组织内容创作、草稿、账号与分发、互动、数据和推广交付",
+    "本次研究整理32项能力、13个技能和README声明的14个渠道",
+    "实现包括Agent、Skills、执行工具与业务后台，技能文件本身不完成全部操作",
+    "发布可能需要OAuth、插件或用户接续，指标取决于平台",
+    "本案例使用GPT/Codex规划和文案，实际调用会话图像工具生成媒体"
+  ],
+  "output": {"images": 3, "requestedAspectRatio": "3:4", "language": "zh-CN", "draftTarget": "小红书图文格式预检", "publication": "本地草稿，未执行对外发布"},
+  "constraints": ["图片中的数字与事实来自真实研究", "不编造界面、发布记录或收入", "不使用商家、个人或账号秘密", "保留上游来源"]
+}

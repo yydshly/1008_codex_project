@@ -1,0 +1,190 @@
+{
+  "id": "011-research-to-post-20261009",
+  "date": "2026-10-09",
+  "status": "completed-local-demo",
+  "scenario": "把当前AiToEarn研究成果制作成一篇中文图文草稿",
+  "repository": "https://github.com/yikart/AiToEarn",
+  "commit": "3581f511293236044e56fad67958cfcea0def6b5",
+  "license": "MIT",
+  "installation": {
+    "count": 13,
+    "originalsUnchanged": true,
+    "adapter": "aitoearn-gpt-content",
+    "adapterSha256": "480ebdb9dd056381229d56539faf582705310e0ecb9c451b348d74cdb58fd1ea"
+  },
+  "execution": {
+    "planner": "当前GPT/Codex会话",
+    "imageTool": "image_gen.imagegen",
+    "imageModel": "工具未公开底层模型编号",
+    "usedSkills": [
+      "generating-images",
+      "managing-content"
+    ],
+    "generationCalls": 3,
+    "imageToolSeconds": 267,
+    "storage": "本地assets与draft.json，未调用AiToEarn内容MCP",
+    "actualBackend": false,
+    "actualPublishing": false
+  },
+  "inputs": [
+    {
+      "original": "README.md",
+      "snapshot": "experiments/research-to-post/inputs/README.md",
+      "bytes": 3687,
+      "sha256": "8f9d021c85aa2749642f6d14fb8b5ce683ee3d116d4e7bf57a07d19440aa4ad1"
+    },
+    {
+      "original": "research.md",
+      "snapshot": "experiments/research-to-post/inputs/research.md",
+      "bytes": 65073,
+      "sha256": "1ca2bbce31e897eef9e589461dc7f6cc8a55d41a20b33c7c152002419cac9782"
+    },
+    {
+      "original": "web/content.js",
+      "snapshot": "experiments/research-to-post/inputs/content.js",
+      "bytes": 38315,
+      "sha256": "85c3c367bb4f2e11890ef6145941f5384857510a870d1aa0bbb02b72506bf11c"
+    },
+    {
+      "original": "src/implementation-inventory.json",
+      "snapshot": "experiments/research-to-post/inputs/implementation-inventory.json",
+      "bytes": 14224,
+      "sha256": "1afe752cb00cb3e52fb657508f5b9c102aa959d974a57340171e6a9fa40f5236"
+    },
+    {
+      "original": "experiments/research-to-post/brief.json",
+      "snapshot": "experiments/research-to-post/brief.json",
+      "bytes": 1355,
+      "sha256": "3aeb2508f84c40467afcd256dfd50050f6d8c89f559d4c66fc316960a4a6f7a4"
+    },
+    {
+      "original": "experiments/research-to-post/plan.json",
+      "snapshot": "experiments/research-to-post/plan.json",
+      "bytes": 1053,
+      "sha256": "3f6e22891bfa603c2e262793faed468d87aa7b3823f03f452ad6f5aec57338a3"
+    },
+    {
+      "original": "experiments/research-to-post/prompts.json",
+      "snapshot": "experiments/research-to-post/prompts.json",
+      "bytes": 3661,
+      "sha256": "6126998820001065b937d0ddafe10e6fdde776d055d7089f7c33b2facecacd06"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "01",
+      "file": "card-01.png",
+      "title": "把开源研究变成内容",
+      "message": "从研究资料到内容创作、发布与运营",
+      "local": "assets/research-to-post/card-01.png",
+      "bytes": 2001167,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "c3393f1c0b6efadfd44667ad09c3abb6cf9873dec4a27aedac052f10627237a8",
+      "requestedRatio": "3:4",
+      "ratioMatches": true,
+      "review": {
+        "checked": true,
+        "method": "逐张查看工具输出与本地PNG",
+        "mainTextCorrect": true,
+        "extraDecorativeText": true,
+        "note": "主要中文文字正确，纸张与内容卡片插画清晰。增加了未要求的英文装饰小字，未严格遵守no extra words。视频框和图表仅为插画。"
+      }
+    },
+    {
+      "id": "02",
+      "file": "card-02.png",
+      "title": "Skill 不是全部",
+      "message": "Agent、Skills、Tools和Backend共同完成任务",
+      "local": "assets/research-to-post/card-02.png",
+      "bytes": 2139188,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "b7d8966b4be2b888a0a1313b6d633c690faf1b369a856470034d7b9fe0582510",
+      "requestedRatio": "3:4",
+      "ratioMatches": true,
+      "review": {
+        "checked": true,
+        "method": "逐张查看工具输出与本地PNG",
+        "mainTextCorrect": true,
+        "extraDecorativeText": false,
+        "note": "所需中英文标签清晰，四部分与配对说明正确，连线和桌面组成原理插画。未将画面当作原产品截图。"
+      }
+    },
+    {
+      "id": "03",
+      "file": "card-03.png",
+      "title": "先用一个项目跑通一次创作",
+      "message": "真实资料、生成图文、审阅草稿，之后再验证发布",
+      "local": "assets/research-to-post/card-03.png",
+      "bytes": 2399689,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "7272897510fb155bd96a1c9a6427b22084286b2a7c5e841b737d3a245a949ba9",
+      "requestedRatio": "3:4",
+      "ratioMatches": true,
+      "review": {
+        "checked": true,
+        "method": "逐张查看工具输出与本地PNG",
+        "mainTextCorrect": true,
+        "extraDecorativeText": true,
+        "note": "主要中文文字正确，三张卡片及审阅步骤清楚。增加了未要求的中英文装饰小字；纸面“可以发布”是插画，未验证平台接受。"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "标题长度",
+      "actual": 11,
+      "limit": 20,
+      "passed": true
+    },
+    {
+      "name": "正文与话题长度",
+      "actual": 501,
+      "limit": 1000,
+      "passed": true
+    },
+    {
+      "name": "图片数量",
+      "actual": 3,
+      "limit": 9,
+      "passed": true
+    },
+    {
+      "name": "PNG格式",
+      "actual": "png",
+      "limit": "jpg / jpeg / png / bmp / webp",
+      "passed": true
+    },
+    {
+      "name": "每张图片文件大小",
+      "actual": 2399689,
+      "limit": 20971520,
+      "passed": true
+    },
+    {
+      "name": "请求3:4竖图",
+      "actual": "1086×1448 / 1086×1448 / 1086×1448",
+      "limit": "3:4",
+      "passed": true
+    }
+  ],
+  "ruleSource": "project/aitoearn-backend/apps/aitoearn-server/src/core/channels/platforms/rednote/rednote.constants.ts",
+  "conclusion": "完成3张真实生成图、1篇中文文案和1份本地图文草稿。上游原版技能保留；媒体工具和草稿保存通过GPT适配完成。",
+  "limits": [
+    "未运行AiToEarn原版Agent SDK、后台、队列或MCP",
+    "未授权社交账号、创建发布任务或实际发布",
+    "未验证视频、云剪辑、翻译、互动、分析或商业转化",
+    "图像工具没有公开底层模型编号与计费明细",
+    "平台检查依据研究版本元数据，不验证当前账号权限或平台审核"
+  ],
+  "quality": {
+    "overall": "三张图的主要中文文字正确，配色一致，可作为介绍图草稿。",
+    "notes": [
+      "第一、第三张添加了未要求的中英文装饰小字，未严格遵守“no extra words”；保留实际结果并记录偏差。",
+      "图片中的视频框、图表和桌面卡片是生成的插画，不是原产品界面、视频成片或业务数据；第三张“可以发布”也只是插画检查项。",
+      "尚无真实发布、曝光、转化和节省时间的对照测量。"
+    ]
+  }
+}

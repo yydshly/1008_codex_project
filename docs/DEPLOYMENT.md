@@ -1,5 +1,32 @@
 # 多 Web 演示部署与记录
 
+<!-- AITO_EARN_PUBLICATION:START -->
+## AiToEarn 完整理解、原始引导图与真实图文（2026-10-12）
+
+011 接入现有 GitHub Pages Actions，保留001–010与013独立构建及既有入口。发布的是静态中文研究与真实图文实验档案，原AiToEarn后端、模型、存储、云视频与社交发布另需服务环境。
+
+内容覆盖18章、12项摘要、6段引导、32项能力、13技能、14渠道、8模块、6机制、4复用与8扩展；含六类场景、六项个人价值、参数、实现边界与来源。根projects.json和网页摘要/引导一致，扩展建议有输入、交付物与验收依据。
+
+沿用assets/aitoearn-overview.png完整941×1672 PNG，2,234,580字节，SHA-256：3e44a35a22c3bd73482172bbeebe72b81775e0419a4fd18b16031d343761a973。保留原始字节、文字稿、提示词和生成记录；map.html支持适宽、50%/100%与滑杆缩放。3张真实1086×1448成品、文案、草稿、提示词、调用与成品ZIP可直接查看和下载。
+
+~~~powershell
+npm.cmd ci --prefix projects/011-aitoearn/web
+npm.cmd run build --prefix projects/011-aitoearn/web
+npm.cmd run check --prefix projects/011-aitoearn/web
+npm.cmd run index:build
+npm.cmd run check
+npm.cmd test
+npm.cmd run build:site
+node scripts/validate-site.mjs
+~~~
+
+Node.js22+，网页无第三方运行依赖。完整web/dist/复制至.cache/pages-site/011-aitoearn/，默认子路径/1008_codex_project/011-aitoearn/。相对资源与锚点、静态HTML、map.html、publication.json、understanding.md、来源清单、许可与experiment/成品包保留。CI增加011路径、独立安装和内容/原图审计，同时核验既有项目。
+
+固定研究提交3581f511293236044e56fad67958cfcea0def6b5，MIT。13原版技能及GPT适配保留；本次图文只验证2技能方法与真实图像工具/本地草稿，没有运行原后台、视频处理、账号授权或社交发布。先公开部署核验，再登记demo与发布证据。
+<!-- AITO_EARN_PUBLICATION:END -->
+
+
+
 <!-- COVE_PUBLICATION:START -->
 ## Cove 完整理解与既有引导图发布（2026-10-12）
 

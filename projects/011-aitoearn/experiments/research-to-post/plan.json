@@ -1,0 +1,15 @@
+{
+  "skills": ["generating-images", "managing-content"],
+  "adapter": "aitoearn-gpt-content",
+  "planner": "当前GPT/Codex会话",
+  "imageTool": "image_gen.imagegen",
+  "imageModel": "工具未公开底层模型编号",
+  "execution": "按上游generating-images顺序生成三个独立资产，每次生成后查看",
+  "storage": "本地assets与draft.json，未调用AiToEarn内容MCP",
+  "cards": [
+    {"id": "01", "file": "card-01.png", "title": "把开源研究变成内容", "message": "从研究资料到内容创作、发布与运营"},
+    {"id": "02", "file": "card-02.png", "title": "Skill 不是全部", "message": "Agent、Skills、Tools和Backend共同完成任务"},
+    {"id": "03", "file": "card-03.png", "title": "先用一个项目跑通一次创作", "message": "真实资料、生成图文、审阅草稿，之后再验证发布"}
+  ],
+  "review": ["图片文字是否正确", "三张画面风格是否一致", "事实是否与输入相符", "实际分辨率和比例", "平台文字与文件规则", "来源和哈希完整"]
+}
