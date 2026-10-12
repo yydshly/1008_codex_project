@@ -1,0 +1,48 @@
+Use case: infographic-diagram
+Asset type: 一张中文项目研究总结信息图，保存到 Pascal 子项目，可用于阅读与分享。
+Primary request: 用一张图总结 pascalorg/editor 的实际效果与能力、底层原理、使用场景和对我们开发产品的意义。
+Input images: Image 1 is a supporting insert: a REAL local screenshot of our Pascal npm 1.0.3 demonstration. Preserve the screenshot's actual architecture, split floorplan/3D view, and furniture; use it as an inset with its entire aspect ratio. Do not invent a richer editor UI or photoreal luxury house. Do not replace this screenshot with an imagined product rendering.
+Style: 高质量、清晰克制的中文技术信息图。横向3:2画布，建议2400×1600或更高等比例分辨率。米白背景，深蓝黑正文，少量蓝色强调；整齐网格、大号简体中文、足够留白。标题醒目，模块层级清楚。不要3D装饰文字，不要杂乱科技背景。所有正文文字清晰且拼写完全正确。
+Composition: 四个有编号的模块。上部是“01 效果与能力”，左侧放真实截图、右侧清晰能力条目；中部“02 底层原理”是一条带分支的数据流图；底部“03 使用场景”和“04 对我们的意义”左右并排。页脚独立标明版本、边界和来源。图必须自成一张完整总结，不能只把文章排成密集文字墙。
+Exact visible Chinese copy:
+Title: “PASCAL · 空间设计编辑器”
+Subtitle: “可复用的房间与建筑设计底座”
+Module 01 heading: “01 效果与能力”
+Inset caption: “效果参考：本地 Pascal 1.0.3 分屏截图”
+Small status: “本地已实测”
+Capability lines:
+“参数化墙体、门窗开洞”
+“家具放置、尺寸与材质编辑”
+“2D 平面图 ↔ 3D 空间”
+“室内查看、楼层展开”
+“撤销 / 重做”
+“宿主补充：草稿保存与恢复”
+Module 02 heading: “02 底层原理”
+Draw the following true causal diagram clearly. Main chain from left to right: “用户操作” → “参数化节点与状态” → “标记变化” → “几何重建” → “3D 渲染”.
+Under first node small label “editor · 工具与面板”.
+Under second “core · ID / 父子关系”.
+Under third “dirtyNodes · 按变更更新”.
+Under fourth “nodes · 挤出 / CSG 开洞”.
+Under fifth “viewer · Three.js / R3F”.
+IMPORTANT: Separately branch directly from “参数化节点与状态” downward to an output “2D 平面图”, with the branch label “同一份场景数据”. Do NOT imply the 2D plan is generated from the triangulated 3D mesh.
+A small plain hierarchy near the node state: “场地 → 建筑 → 楼层 → 墙 / 门窗 / 家具”.
+Principle caption: “尺寸和构件关系保存在数据里；修改参数后，相关几何随之更新。”
+Module 03 heading: “03 使用场景”
+Small qualifier: “可以用于”
+Four short lines accompanied by restrained outline pictograms:
+“家装布局与方案试排”
+“家具搭配与空间展示”
+“户型、楼层与建模教学”
+“房间设计 SaaS 原型”
+Module 04 heading: “04 对我们的意义”
+Emphasized statement: “降低空间编辑器基础研发成本”
+Three rows:
+“直接复用｜建模工具、几何系统、2D / 3D 渲染”
+“我们补充｜账号、云存储、协作、素材与业务”
+“继续探索｜MCP / AI 方案生成（待验证）”
+Small conclusion: “现有 003 子项目，可作为后续房间设计产品的起点。”
+Footer, readable and compact:
+“验证基线：Pascal npm 1.0.3 · 2026-10-08”
+“边界：专业施工图、报价、完整导出与 AI 流程尚未验收；官方 Next 完整体验未包含在本地演示中。”
+“来源：github.com/pascalorg/editor · 本地研究与实测”
+Constraints: Preserve the supplied screenshot as supporting evidence within an infographic, clearly label effect reference. No invented metrics or performance scores, no claims of production readiness or photoreal rendering. Distinguish built-in capability from our host's local draft saving. All text is simplified Chinese except exact technical package terms and URL. Draw arrows in the right direction. Keep “MCP / AI” marked as exploration, not as already working in our demo. Make the infographic aesthetically balanced and readable when opened at full resolution.

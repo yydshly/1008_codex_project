@@ -1,0 +1,3478 @@
+{
+  "commit": "c5eaf51e161ba8653204d543666f5839d6020874",
+  "assets": [
+    {
+      "file": "audios/sfx/grid_snap_0.mp3",
+      "bytes": 21888,
+      "sha256": "c17b00cf63396044104492afea2667bcbda9ac0213ff8250270da3461d167a67",
+      "upstreamPath": "apps/editor/public/audios/sfx/grid_snap_0.mp3"
+    },
+    {
+      "file": "audios/sfx/grid_snap_1.mp3",
+      "bytes": 21888,
+      "sha256": "00bda9aeebafa857731669b3ae030f90f28c917ddae04c46b6352f5f55c50c42",
+      "upstreamPath": "apps/editor/public/audios/sfx/grid_snap_1.mp3"
+    },
+    {
+      "file": "audios/sfx/grid_snap_2.mp3",
+      "bytes": 21888,
+      "sha256": "547f0851962da43d6cda741e68a5ca04463d17daca72b8972c93e1e0befc25f4",
+      "upstreamPath": "apps/editor/public/audios/sfx/grid_snap_2.mp3"
+    },
+    {
+      "file": "audios/sfx/item_delete.mp3",
+      "bytes": 57088,
+      "sha256": "db488faf62a9025bd74e33381dc3700f285cb18d12ed2f3fbe90d03144f85ce5",
+      "upstreamPath": "apps/editor/public/audios/sfx/item_delete.mp3"
+    },
+    {
+      "file": "audios/sfx/item_pick.mp3",
+      "bytes": 33024,
+      "sha256": "d632885126b842a6f98eab690e20d0994ee8c186807de39d1e65647906b34d41",
+      "upstreamPath": "apps/editor/public/audios/sfx/item_pick.mp3"
+    },
+    {
+      "file": "audios/sfx/item_place.mp3",
+      "bytes": 33024,
+      "sha256": "3bc7eda1036092e13e50daf5e1009a8e0c8f0f20b55c8d409892b5aef1cc58b1",
+      "upstreamPath": "apps/editor/public/audios/sfx/item_place.mp3"
+    },
+    {
+      "file": "audios/sfx/item_rotate.mp3",
+      "bytes": 33024,
+      "sha256": "4e57a5f18bee5a114d8b5bea7b21fd91359afa33c00350c4416994249a53de0d",
+      "upstreamPath": "apps/editor/public/audios/sfx/item_rotate.mp3"
+    },
+    {
+      "file": "audios/sfx/menu_click.mp3",
+      "bytes": 64896,
+      "sha256": "9c4bb3f383a795ad02e04f7d4e6c061a651b0d068c035a47bd83e87f7809f454",
+      "upstreamPath": "apps/editor/public/audios/sfx/menu_click.mp3"
+    },
+    {
+      "file": "audios/sfx/menu_hover.mp3",
+      "bytes": 21888,
+      "sha256": "68c919047d364f692916bf0c81cdc3d883ab372226eedb0b43e4690410ac4ebb",
+      "upstreamPath": "apps/editor/public/audios/sfx/menu_hover.mp3"
+    },
+    {
+      "file": "audios/sfx/paint_apply.mp3",
+      "bytes": 68992,
+      "sha256": "e2c076f9856af167faaf813f7e746a8cd3d19bdddfc1b2ca72ef0dc09d801a96",
+      "upstreamPath": "apps/editor/public/audios/sfx/paint_apply.mp3"
+    },
+    {
+      "file": "audios/sfx/resize_0.mp3",
+      "bytes": 25984,
+      "sha256": "b022e806abf635edfd2d854a542f76705faba2b373d7d5b94003b4c2891f9032",
+      "upstreamPath": "apps/editor/public/audios/sfx/resize_0.mp3"
+    },
+    {
+      "file": "audios/sfx/resize_1.mp3",
+      "bytes": 25984,
+      "sha256": "e6a6812395e7447c74703016378433bc98b24fa5ae9efe62de7f07e6e1a6d49e",
+      "upstreamPath": "apps/editor/public/audios/sfx/resize_1.mp3"
+    },
+    {
+      "file": "audios/sfx/resize_2.mp3",
+      "bytes": 25984,
+      "sha256": "b10dd66e25740aebc5950acb747159e6ecfd81f940a7dfccef60e2c1ef40f446",
+      "upstreamPath": "apps/editor/public/audios/sfx/resize_2.mp3"
+    },
+    {
+      "file": "audios/sfx/snapshot_capture.mp3",
+      "bytes": 11910,
+      "sha256": "c72ca67425ce32e464f95f7d2e2f6b1e7b45c9ecd020b0df245170224e818d0d",
+      "upstreamPath": "apps/editor/public/audios/sfx/snapshot_capture.mp3"
+    },
+    {
+      "file": "audios/sfx/structure_build_end.mp3",
+      "bytes": 43776,
+      "sha256": "90f8bdafaba83a6bbc348f5ecd3910eb021c53ddd5bf2e51069dc37c40b2add9",
+      "upstreamPath": "apps/editor/public/audios/sfx/structure_build_end.mp3"
+    },
+    {
+      "file": "audios/sfx/structure_build_start.mp3",
+      "bytes": 43776,
+      "sha256": "231d787c446b5eac39ad555a938b383615a49fd08b1be16c90d79301e7833427",
+      "upstreamPath": "apps/editor/public/audios/sfx/structure_build_start.mp3"
+    },
+    {
+      "file": "audios/sfx/structure_delete.mp3",
+      "bytes": 57088,
+      "sha256": "517b11d1c5edc0857154caee7a4d3ec1812fd66713e860ea3e1994807690e206",
+      "upstreamPath": "apps/editor/public/audios/sfx/structure_delete.mp3"
+    },
+    {
+      "file": "audios/sfx/success.mp3",
+      "bytes": 70843,
+      "sha256": "a6facd2f059a3d043be833d9159875b3767f876174949db6c8962155294227a2",
+      "upstreamPath": "apps/editor/public/audios/sfx/success.mp3"
+    },
+    {
+      "file": "basis/basis_transcoder.js",
+      "bytes": 57529,
+      "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/r186/examples/jsm/libs/basis/basis_transcoder.js",
+      "packageVersion": "three@0.186.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "basis/basis_transcoder.wasm",
+      "bytes": 527333,
+      "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/r186/examples/jsm/libs/basis/basis_transcoder.wasm",
+      "packageVersion": "three@0.186.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "basis/LICENSE",
+      "bytes": 11347,
+      "sha256": "065fcf48d6af21c0b75e23be5ed5753aee75c892e1c2cf178fa6736305614a5c",
+      "sourceUrl": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/master/LICENSE",
+      "retrievedAt": "2026-10-08T14:26:39.025Z",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "basis/README.md",
+      "bytes": 1388,
+      "sha256": "a578df416c1e0852e9c36a1cf91b4d28d91a251294f87ce610a3bc7ca4df15e0",
+      "sourceUrl": "https://github.com/mrdoob/three.js/blob/r186/examples/jsm/libs/basis/README.md",
+      "packageVersion": "three@0.186.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "icons/appliance.webp",
+      "bytes": 17432,
+      "sha256": "ca9fd7293e388b37e3f6010e34026127519f68d52f1d74ee84841dbab608b936",
+      "upstreamPath": "apps/editor/public/icons/appliance.webp"
+    },
+    {
+      "file": "icons/bathroom.webp",
+      "bytes": 20950,
+      "sha256": "82edbfdb2c7e0a8ff0c3c8703429c2eb47f33867b6163f4e3715018847bfb9ab",
+      "upstreamPath": "apps/editor/public/icons/bathroom.webp"
+    },
+    {
+      "file": "icons/blueprint.webp",
+      "bytes": 5118,
+      "sha256": "dd264e7ef165e056ab53591164189998615f701d3115c4b6bd315b32bc983ee6",
+      "upstreamPath": "apps/editor/public/icons/blueprint.webp"
+    },
+    {
+      "file": "icons/building.webp",
+      "bytes": 13288,
+      "sha256": "ea471e551cd5e651f8decfec87881da1db3ba1a5ef9aab60cf1897f924c300ee",
+      "upstreamPath": "apps/editor/public/icons/building.webp"
+    },
+    {
+      "file": "icons/ceiling.webp",
+      "bytes": 19320,
+      "sha256": "5bb0d71420a4b91d1d88afe0677cf5d6cd525552429097a68014ab6a74fc19a9",
+      "upstreamPath": "apps/editor/public/icons/ceiling.webp"
+    },
+    {
+      "file": "icons/column.webp",
+      "bytes": 6522,
+      "sha256": "9f86280a30d8019d12fd3d02a5a5497bd336e68420706e890a1ebac19e731edc",
+      "upstreamPath": "apps/editor/public/icons/column.webp"
+    },
+    {
+      "file": "icons/couch.webp",
+      "bytes": 18764,
+      "sha256": "d41dfe865e9e47ee0ef255c13559d963c85bf28d210cf38d42d37b043d4f8e3c",
+      "upstreamPath": "apps/editor/public/icons/couch.webp"
+    },
+    {
+      "file": "icons/cube.webp",
+      "bytes": 9942,
+      "sha256": "cfeea3d7bdfc2121e96b88aff3d380c25e6dfc4730b48e7558ed6cad6715754f",
+      "upstreamPath": "apps/editor/public/icons/cube.webp"
+    },
+    {
+      "file": "icons/divide-room.webp",
+      "bytes": 9300,
+      "sha256": "3e9a73c9fdf494016fa437f535fe3987f6e3af243acc27446a8ccd2afb92cf23",
+      "upstreamPath": "apps/editor/public/icons/divide-room.webp"
+    },
+    {
+      "file": "icons/door.webp",
+      "bytes": 10498,
+      "sha256": "b1f7ff4cd3eb547555de91a021a0e16e8b6e8121c6f2d01385a87a29dd20c91e",
+      "upstreamPath": "apps/editor/public/icons/door.webp"
+    },
+    {
+      "file": "icons/elevator.webp",
+      "bytes": 12836,
+      "sha256": "bbf301d1a111e7eee67edce478d88885ffa206b6fd04a4a47e25527be855b1fa",
+      "upstreamPath": "apps/editor/public/icons/elevator.webp"
+    },
+    {
+      "file": "icons/fence.webp",
+      "bytes": 19250,
+      "sha256": "c968f13f5771eb40ac591ff376a9c9ec90cc46af8516a51def849e964477931a",
+      "upstreamPath": "apps/editor/public/icons/fence.webp"
+    },
+    {
+      "file": "icons/floor.webp",
+      "bytes": 7510,
+      "sha256": "c4424747e36eb6e7407021df4c875359ee2e23d6fd63bbd5bdd6027f5d3649e2",
+      "upstreamPath": "apps/editor/public/icons/floor.webp"
+    },
+    {
+      "file": "icons/floorplan.webp",
+      "bytes": 18018,
+      "sha256": "61ee22e5ba9fe8e7170eb6f1a53180d0b90fcd40cdafc3e0616a3273cdc0e5f6",
+      "upstreamPath": "apps/editor/public/icons/floorplan.webp"
+    },
+    {
+      "file": "icons/item.webp",
+      "bytes": 16436,
+      "sha256": "24e80bfa12a8d651e0842a66cefc817e704b7392934742b3d1672e9b00ba2d01",
+      "upstreamPath": "apps/editor/public/icons/item.webp"
+    },
+    {
+      "file": "icons/kitchen.webp",
+      "bytes": 23356,
+      "sha256": "03b0faf46132e5c8312900c312154740ac6ea82fc4742a3cec4731308dae891c",
+      "upstreamPath": "apps/editor/public/icons/kitchen.webp"
+    },
+    {
+      "file": "icons/level.webp",
+      "bytes": 19496,
+      "sha256": "fa19bb18956391704a2f496d7005d5de51f185709bbf17d212992c52e2dd0931",
+      "upstreamPath": "apps/editor/public/icons/level.webp"
+    },
+    {
+      "file": "icons/measure.webp",
+      "bytes": 8518,
+      "sha256": "d4ebb940eff5c600886697409d7cf88cb0642bc711a677ef51d9e7d963360fc1",
+      "upstreamPath": "apps/editor/public/icons/measure.webp"
+    },
+    {
+      "file": "icons/mesh.webp",
+      "bytes": 12954,
+      "sha256": "06f349bfea36c2fb0566d40742a7dfcf9051831ee70d6ce74c3d6585d570de51",
+      "upstreamPath": "apps/editor/public/icons/mesh.webp"
+    },
+    {
+      "file": "icons/mezzanine.webp",
+      "bytes": 9712,
+      "sha256": "1f26cb374794ffbb779ee5a853999216e4d48b1cbb997ed442552e7d4dbd7dc2",
+      "upstreamPath": "apps/editor/public/icons/mezzanine.webp"
+    },
+    {
+      "file": "icons/paint.webp",
+      "bytes": 13418,
+      "sha256": "9c81a8cf54bf9ca8fc023bf3f6cf28f380468e3133ffd227335abc49cfe796c9",
+      "upstreamPath": "apps/editor/public/icons/paint.webp"
+    },
+    {
+      "file": "icons/pan.webp",
+      "bytes": 14508,
+      "sha256": "46190dcb9ce246d6ea8aae0fd33a341686318e2622f2c7045f28480f5947c495",
+      "upstreamPath": "apps/editor/public/icons/pan.webp"
+    },
+    {
+      "file": "icons/polygon-room.webp",
+      "bytes": 8862,
+      "sha256": "110454ad96805e95f74619554d66ee1ae7e87b320a883b4b2a54486e5d77a8db",
+      "upstreamPath": "apps/editor/public/icons/polygon-room.webp"
+    },
+    {
+      "file": "icons/resize.webp",
+      "bytes": 9164,
+      "sha256": "ff1254df8b9d2bc3f858bf243f5d3c67f880a9f2537dae3075b4c64cf6504f05",
+      "upstreamPath": "apps/editor/public/icons/resize.webp"
+    },
+    {
+      "file": "icons/roof.webp",
+      "bytes": 12340,
+      "sha256": "83afe03e0f90b6e9b993431c5d957c4c19912067bd4fb4d75ed5222e2312ce94",
+      "upstreamPath": "apps/editor/public/icons/roof.webp"
+    },
+    {
+      "file": "icons/room.webp",
+      "bytes": 8768,
+      "sha256": "d5c502d2cb32d936157ba9444ced2ad6ab54bb2dfcc0a451a73b305821550c59",
+      "upstreamPath": "apps/editor/public/icons/room.webp"
+    },
+    {
+      "file": "icons/rotate.webp",
+      "bytes": 15414,
+      "sha256": "f02c42ae7b171489623dde6113a7b547b189c618a0ef47db10efb35e355c384c",
+      "upstreamPath": "apps/editor/public/icons/rotate.webp"
+    },
+    {
+      "file": "icons/select.webp",
+      "bytes": 13530,
+      "sha256": "0de28191bb1308355544d343d45866a95ad829b7c1bd90095fbef3005b7afe0e",
+      "upstreamPath": "apps/editor/public/icons/select.webp"
+    },
+    {
+      "file": "icons/settings.webp",
+      "bytes": 18200,
+      "sha256": "d91e038a879031cb8ee125b9cb6f4ddf2e029e4738ef61a1834bf0cf81772f03",
+      "upstreamPath": "apps/editor/public/icons/settings.webp"
+    },
+    {
+      "file": "icons/shelf.webp",
+      "bytes": 49450,
+      "sha256": "413acbfeff7098bd835c9f2f6e796d1f4ee3bcce60589fb231224a92ee9daba4",
+      "upstreamPath": "apps/editor/public/icons/shelf.webp"
+    },
+    {
+      "file": "icons/site-flag.webp",
+      "bytes": 20034,
+      "sha256": "62ee6295c64aa985fdcc71e9f673c14b8bc5ff69a6491e372dce3ee17b48f13f",
+      "upstreamPath": "apps/editor/public/icons/site-flag.webp"
+    },
+    {
+      "file": "icons/spawn-point.webp",
+      "bytes": 30886,
+      "sha256": "559b1216031a633baa85b5767cd7c8977c9a77c79e53174807a2cde35ce64190",
+      "upstreamPath": "apps/editor/public/icons/spawn-point.webp"
+    },
+    {
+      "file": "icons/stairs.webp",
+      "bytes": 11232,
+      "sha256": "38ac7c362975cb43d2e5b7f52afa684a9f5780bb92a0b17cf981ed66039c62de",
+      "upstreamPath": "apps/editor/public/icons/stairs.webp"
+    },
+    {
+      "file": "icons/topview.webp",
+      "bytes": 10820,
+      "sha256": "d1f501cd9efa4f257882d720a9a37866d67a851efe054aa7c5a1ce74ecbcf20a",
+      "upstreamPath": "apps/editor/public/icons/topview.webp"
+    },
+    {
+      "file": "icons/tree.webp",
+      "bytes": 16436,
+      "sha256": "24e80bfa12a8d651e0842a66cefc817e704b7392934742b3d1672e9b00ba2d01",
+      "upstreamPath": "apps/editor/public/icons/tree.webp"
+    },
+    {
+      "file": "icons/wall.webp",
+      "bytes": 5652,
+      "sha256": "43daeb8473abf46c8d2352574505fb66f615c34904ef12fdacc00f53a0ef4c5d",
+      "upstreamPath": "apps/editor/public/icons/wall.webp"
+    },
+    {
+      "file": "icons/wallcut.webp",
+      "bytes": 15768,
+      "sha256": "11b8c4f483af7ecd0ddf893fe9bad4910cef172ba5a24e71f65e66f69ee4e5a7",
+      "upstreamPath": "apps/editor/public/icons/wallcut.webp"
+    },
+    {
+      "file": "icons/walllow.webp",
+      "bytes": 11560,
+      "sha256": "baa7274435b7b22e7fb89ab13aa34fe8640595537760f540f4420006bc960ce9",
+      "upstreamPath": "apps/editor/public/icons/walllow.webp"
+    },
+    {
+      "file": "icons/window.webp",
+      "bytes": 14362,
+      "sha256": "e527794f37ecb85409c24aaa6a750115079b9d35743118937c40160110eb5a2b",
+      "upstreamPath": "apps/editor/public/icons/window.webp"
+    },
+    {
+      "file": "items/air-conditioning/model.glb",
+      "bytes": 4956,
+      "sha256": "dd77757c047d14a720a21be6625a8c71aeedf9931e829d70e877d5d471c69262",
+      "upstreamPath": "apps/editor/public/items/air-conditioning/model.glb"
+    },
+    {
+      "file": "items/air-conditioning/thumbnail.webp",
+      "bytes": 3548,
+      "sha256": "acdee1cb9d378d6f6c3701604253d205c8a508675b02608f530906046e728318",
+      "upstreamPath": "apps/editor/public/items/air-conditioning/thumbnail.webp"
+    },
+    {
+      "file": "items/bathroom-sink/model.glb",
+      "bytes": 34652,
+      "sha256": "36e4efaffaba977eeea612066e613ee4c274bfa89753dbd1a09187afbb8982e5",
+      "upstreamPath": "apps/editor/public/items/bathroom-sink/model.glb"
+    },
+    {
+      "file": "items/bathroom-sink/thumbnail.webp",
+      "bytes": 2780,
+      "sha256": "f2c4df034d7247b61b43bd70b7417abe0c3d471b801524ecb2730df19aa5cd92",
+      "upstreamPath": "apps/editor/public/items/bathroom-sink/thumbnail.webp"
+    },
+    {
+      "file": "items/bathtub/model.glb",
+      "bytes": 6008,
+      "sha256": "f6d726f9b8661a96e4cfc2acbca892b2407a8021fef51d53c896b0d0be8f707c",
+      "upstreamPath": "apps/editor/public/items/bathtub/model.glb"
+    },
+    {
+      "file": "items/bathtub/thumbnail.webp",
+      "bytes": 3120,
+      "sha256": "9682d4107ef0a8c926a4e11def73abd1b32ca05cb80009201e91ce124956f943",
+      "upstreamPath": "apps/editor/public/items/bathtub/thumbnail.webp"
+    },
+    {
+      "file": "items/bedside-table/model.glb",
+      "bytes": 4524,
+      "sha256": "ae287c86595a3751f6259f5d8c440af7affded0171a82d43d393cef825f15c76",
+      "upstreamPath": "apps/editor/public/items/bedside-table/model.glb"
+    },
+    {
+      "file": "items/bedside-table/thumbnail.webp",
+      "bytes": 2970,
+      "sha256": "e81f1598561856079826c168da731c9f5d44a9d748d2fb39a1f1949018e54eb0",
+      "upstreamPath": "apps/editor/public/items/bedside-table/thumbnail.webp"
+    },
+    {
+      "file": "items/closet/model.glb",
+      "bytes": 1784,
+      "sha256": "d690f77da3591ab289e18fbcec48092495c5b6b2f4ad5abfc4ea3bbbc6593658",
+      "upstreamPath": "apps/editor/public/items/closet/model.glb"
+    },
+    {
+      "file": "items/closet/thumbnail.webp",
+      "bytes": 2948,
+      "sha256": "dd005b577a9af171b0953d09ba0cc5d047927adc960b41ef8f27daa23dd78509",
+      "upstreamPath": "apps/editor/public/items/closet/thumbnail.webp"
+    },
+    {
+      "file": "items/coat-rack/model.glb",
+      "bytes": 4120,
+      "sha256": "f7ede0a869664b66872aa6bc13998e94b22b464c22d7aa563a7c30feaf65087d",
+      "upstreamPath": "apps/editor/public/items/coat-rack/model.glb"
+    },
+    {
+      "file": "items/coat-rack/thumbnail.webp",
+      "bytes": 2702,
+      "sha256": "bbd6178ac485d678128ce7023be93b234ab6af229793cea529793e3c9e0a5917",
+      "upstreamPath": "apps/editor/public/items/coat-rack/thumbnail.webp"
+    },
+    {
+      "file": "items/coffee-table/model.glb",
+      "bytes": 4296,
+      "sha256": "63fcdd7cb8cd18b1b847199e7d6d0efaeab8db86f8ca93d3db0fcd2afe3391c8",
+      "upstreamPath": "apps/editor/public/items/coffee-table/model.glb"
+    },
+    {
+      "file": "items/coffee-table/thumbnail.webp",
+      "bytes": 3842,
+      "sha256": "2fe69041cb46aaf16f6837c25498449582a0262d8be43f5712d954a371e04437",
+      "upstreamPath": "apps/editor/public/items/coffee-table/thumbnail.webp"
+    },
+    {
+      "file": "items/dining-chair/model.glb",
+      "bytes": 5176,
+      "sha256": "fea8f3c14fdccb8beae9101d8e689f0a17f67d84fbfe1ffabf133cee2ffe5c5b",
+      "upstreamPath": "apps/editor/public/items/dining-chair/model.glb"
+    },
+    {
+      "file": "items/dining-chair/thumbnail.webp",
+      "bytes": 3448,
+      "sha256": "ff9a54f77b02f7f416226a223599df6214281e6a5c36e96e96ccd33ae6ac5d55",
+      "upstreamPath": "apps/editor/public/items/dining-chair/thumbnail.webp"
+    },
+    {
+      "file": "items/dining-table/model.glb",
+      "bytes": 3424,
+      "sha256": "92a54b7607e726d8d8d403dac996cad1220669fbbe734bb4087ef8e2aa7af417",
+      "upstreamPath": "apps/editor/public/items/dining-table/model.glb"
+    },
+    {
+      "file": "items/dining-table/thumbnail.webp",
+      "bytes": 2414,
+      "sha256": "0851e4a7663dada444d78a265484ada5d5eaed06cc5dbd8accd2c4d0b915fbca",
+      "upstreamPath": "apps/editor/public/items/dining-table/thumbnail.webp"
+    },
+    {
+      "file": "items/door-bar/model.glb",
+      "bytes": 14212,
+      "sha256": "ec28f169d0b7953eacf930b453ce293985b4bba8eb75711d92241b6687f25b8e",
+      "upstreamPath": "apps/editor/public/items/door-bar/model.glb"
+    },
+    {
+      "file": "items/door-bar/thumbnail.webp",
+      "bytes": 2468,
+      "sha256": "d568891e6a2d08709c238aac373d76be6e12a6f63e9a619e5d0d784e0703e894",
+      "upstreamPath": "apps/editor/public/items/door-bar/thumbnail.webp"
+    },
+    {
+      "file": "items/door/model.glb",
+      "bytes": 16756,
+      "sha256": "b5e7f2a9c489dd26cec3dd51dd539de77e6e2bf1ebd996cbbc7ff601755844e2",
+      "upstreamPath": "apps/editor/public/items/door/model.glb"
+    },
+    {
+      "file": "items/door/thumbnail.webp",
+      "bytes": 1914,
+      "sha256": "215d164fd8d46cd7fad7bf2680d2508967ceca28534bd7d17d4e4d78174902aa",
+      "upstreamPath": "apps/editor/public/items/door/thumbnail.webp"
+    },
+    {
+      "file": "items/double-bed/model.glb",
+      "bytes": 22324,
+      "sha256": "999354f9c78220b5d85b17417131d111a86431ecb6ec1d7cb5ced18386396b64",
+      "upstreamPath": "apps/editor/public/items/double-bed/model.glb"
+    },
+    {
+      "file": "items/double-bed/thumbnail.webp",
+      "bytes": 3368,
+      "sha256": "c0ab3ad60061bc4706c1af3c2bf29354977506317cfcf0528589fbc10dec7fdc",
+      "upstreamPath": "apps/editor/public/items/double-bed/thumbnail.webp"
+    },
+    {
+      "file": "items/dresser/model.glb",
+      "bytes": 4348,
+      "sha256": "6e773cb510e0a808f0fb09c449184ab69011576f96c8a67bcb8f0186f079c34f",
+      "upstreamPath": "apps/editor/public/items/dresser/model.glb"
+    },
+    {
+      "file": "items/dresser/thumbnail.webp",
+      "bytes": 3684,
+      "sha256": "f0921c7fd33a2aeea7bcab7f3d76de1021a92339331262c094fb403eebfc4b70",
+      "upstreamPath": "apps/editor/public/items/dresser/thumbnail.webp"
+    },
+    {
+      "file": "items/drying-rack/model.glb",
+      "bytes": 10068,
+      "sha256": "5a9dbe2061c74540e9cc9a5639453df86efdbe8b87c7e981842b290ffd4a9e0c",
+      "upstreamPath": "apps/editor/public/items/drying-rack/model.glb"
+    },
+    {
+      "file": "items/drying-rack/thumbnail.webp",
+      "bytes": 13452,
+      "sha256": "68f14b01a2f24582cf053afe41587aa67b198073abc5fad47216dea6fbddef07",
+      "upstreamPath": "apps/editor/public/items/drying-rack/thumbnail.webp"
+    },
+    {
+      "file": "items/fir-tree/model.glb",
+      "bytes": 3700,
+      "sha256": "14a8678d49e8616859b9e50b95ea1f32a6e090f3c9bb864351fc5e4b0f83a845",
+      "upstreamPath": "apps/editor/public/items/fir-tree/model.glb"
+    },
+    {
+      "file": "items/fir-tree/thumbnail.webp",
+      "bytes": 2612,
+      "sha256": "bb89c0dcd79258ebecded3514c36644f67e7c5375241749022db49d819943f87",
+      "upstreamPath": "apps/editor/public/items/fir-tree/thumbnail.webp"
+    },
+    {
+      "file": "items/fridge/model.glb",
+      "bytes": 5544,
+      "sha256": "340890d26bcf43d1bed391a1d413c513a9a40a057861b17867811419cc4cd741",
+      "upstreamPath": "apps/editor/public/items/fridge/model.glb"
+    },
+    {
+      "file": "items/fridge/thumbnail.webp",
+      "bytes": 2152,
+      "sha256": "04f60493e6fb8a996c6156f32ae3aa717b1485aa4b50da729644869dd5b865b2",
+      "upstreamPath": "apps/editor/public/items/fridge/thumbnail.webp"
+    },
+    {
+      "file": "items/glass-door/model.glb",
+      "bytes": 23444,
+      "sha256": "c172f24534cc13be6921f23d36566f22b0777282cec70b9cb5aa658e48095165",
+      "upstreamPath": "apps/editor/public/items/glass-door/model.glb"
+    },
+    {
+      "file": "items/glass-door/thumbnail.webp",
+      "bytes": 2248,
+      "sha256": "84d3145d19e549a7fce79765bb6cdda14802cd349b49954a07818fc3a8375047",
+      "upstreamPath": "apps/editor/public/items/glass-door/thumbnail.webp"
+    },
+    {
+      "file": "items/high-fence/model.glb",
+      "bytes": 15200,
+      "sha256": "51248635e298674ec2e20158da9bebc605d9f3bd07c262e19d3c0ab470abcce5",
+      "upstreamPath": "apps/editor/public/items/high-fence/model.glb"
+    },
+    {
+      "file": "items/high-fence/thumbnail.webp",
+      "bytes": 7172,
+      "sha256": "981e9215f1c9875c9185e4f04185270b6165594cca2f08c4a94d1ce20b1858da",
+      "upstreamPath": "apps/editor/public/items/high-fence/thumbnail.webp"
+    },
+    {
+      "file": "items/kitchen-counter/model.glb",
+      "bytes": 2580,
+      "sha256": "95699cf517db7f769ee0bda356ee4d975ba321fbc87d7e4a63aed59f0c900e4f",
+      "upstreamPath": "apps/editor/public/items/kitchen-counter/model.glb"
+    },
+    {
+      "file": "items/kitchen-counter/thumbnail.webp",
+      "bytes": 2884,
+      "sha256": "f807923ec6c974774489ba211d70ac1380b6b97d9b2b468267be0da71d871045",
+      "upstreamPath": "apps/editor/public/items/kitchen-counter/thumbnail.webp"
+    },
+    {
+      "file": "items/kitchen/model.glb",
+      "bytes": 14020,
+      "sha256": "418cbb8f1d14d2e49fa33fbb816cc1bfc4198a86dba39c157fa5840db1caa05d",
+      "upstreamPath": "apps/editor/public/items/kitchen/model.glb"
+    },
+    {
+      "file": "items/kitchen/thumbnail.webp",
+      "bytes": 3676,
+      "sha256": "7018969f91189f3c2c9a9352589732ef3312c15e3735b9a511bb135051e2bf4c",
+      "upstreamPath": "apps/editor/public/items/kitchen/thumbnail.webp"
+    },
+    {
+      "file": "items/livingroom-chair/model.glb",
+      "bytes": 5924,
+      "sha256": "00a12e491a4a5e0fe0c24a54bcbac8596111b2b7d304d58fe6dd7622e8b57c65",
+      "upstreamPath": "apps/editor/public/items/livingroom-chair/model.glb"
+    },
+    {
+      "file": "items/livingroom-chair/thumbnail.webp",
+      "bytes": 3236,
+      "sha256": "cd581e2a9fe0bf7bfc86babd838a031d89d5ad0fa2c340afedfc74d9659ced95",
+      "upstreamPath": "apps/editor/public/items/livingroom-chair/thumbnail.webp"
+    },
+    {
+      "file": "items/lounge-chair/model.glb",
+      "bytes": 5256,
+      "sha256": "12834efb48e32435a312adcab399b1aa74d7fa1c9083a48c3322dc46d2f47626",
+      "upstreamPath": "apps/editor/public/items/lounge-chair/model.glb"
+    },
+    {
+      "file": "items/lounge-chair/thumbnail.webp",
+      "bytes": 3672,
+      "sha256": "576ed9bcba0c882b583955ab22d77b1b6ef11ed506104be7dd7422f55d6aff89",
+      "upstreamPath": "apps/editor/public/items/lounge-chair/thumbnail.webp"
+    },
+    {
+      "file": "items/low-fence/model.glb",
+      "bytes": 9056,
+      "sha256": "193724a51658c6f878fade891a584fcb687da5f9a1feddf1bdbbe470675ae515",
+      "upstreamPath": "apps/editor/public/items/low-fence/model.glb"
+    },
+    {
+      "file": "items/low-fence/thumbnail.webp",
+      "bytes": 5036,
+      "sha256": "dd9eec10fb75f53ac67273f9cc04542d6d2b37e0031eb667f1a951dd431ea13f",
+      "upstreamPath": "apps/editor/public/items/low-fence/thumbnail.webp"
+    },
+    {
+      "file": "items/medium-fence/model.glb",
+      "bytes": 15200,
+      "sha256": "51248635e298674ec2e20158da9bebc605d9f3bd07c262e19d3c0ab470abcce5",
+      "upstreamPath": "apps/editor/public/items/medium-fence/model.glb"
+    },
+    {
+      "file": "items/medium-fence/thumbnail.webp",
+      "bytes": 7172,
+      "sha256": "981e9215f1c9875c9185e4f04185270b6165594cca2f08c4a94d1ce20b1858da",
+      "upstreamPath": "apps/editor/public/items/medium-fence/thumbnail.webp"
+    },
+    {
+      "file": "items/parking-spot/model.glb",
+      "bytes": 2624,
+      "sha256": "26de0845e222a49ddd73ddf59fd8da7e49add0dc1b6179846c972b7370e07dbb",
+      "upstreamPath": "apps/editor/public/items/parking-spot/model.glb"
+    },
+    {
+      "file": "items/parking-spot/thumbnail.webp",
+      "bytes": 2168,
+      "sha256": "1a375323578111435dfeb7818887b5ae0e8f9b2526e6e051c474753d955fddfc",
+      "upstreamPath": "apps/editor/public/items/parking-spot/thumbnail.webp"
+    },
+    {
+      "file": "items/pillar/model.glb",
+      "bytes": 2488,
+      "sha256": "f4a7bdeec82942b4b4eaceafe535d7404536dd75d972b19260a4af4b8d86dcee",
+      "upstreamPath": "apps/editor/public/items/pillar/model.glb"
+    },
+    {
+      "file": "items/pillar/thumbnail.webp",
+      "bytes": 2990,
+      "sha256": "bb3e911ce7bb0219043fe1b9772b3f3de90020a60d6c774058692a88b65de2cc",
+      "upstreamPath": "apps/editor/public/items/pillar/thumbnail.webp"
+    },
+    {
+      "file": "items/shelf/model.glb",
+      "bytes": 1512,
+      "sha256": "c70a024a161a1536d05e02f6fc6a232e9529ab05015d662eed49329675e34c11",
+      "upstreamPath": "apps/editor/public/items/shelf/model.glb"
+    },
+    {
+      "file": "items/shelf/thumbnail.webp",
+      "bytes": 2304,
+      "sha256": "b640ee3862b4eae4fda331b989231bea995cfb06565f181eefb1a8f97854d0bb",
+      "upstreamPath": "apps/editor/public/items/shelf/thumbnail.webp"
+    },
+    {
+      "file": "items/shower-square/model.glb",
+      "bytes": 12608,
+      "sha256": "185266da0575005d63e451ec2a130494966395504cc5a357352bd717c16358d1",
+      "upstreamPath": "apps/editor/public/items/shower-square/model.glb"
+    },
+    {
+      "file": "items/shower-square/thumbnail.webp",
+      "bytes": 3500,
+      "sha256": "4178c100d2914bc404d8de61bc4568e341514f5656082fe1e45e544f62c4198e",
+      "upstreamPath": "apps/editor/public/items/shower-square/thumbnail.webp"
+    },
+    {
+      "file": "items/single-bed/model.glb",
+      "bytes": 6180,
+      "sha256": "73613614e6fc2c6689185d2b312132d9445375205271c0ea4621ecc205d8da22",
+      "upstreamPath": "apps/editor/public/items/single-bed/model.glb"
+    },
+    {
+      "file": "items/single-bed/thumbnail.webp",
+      "bytes": 3220,
+      "sha256": "3ef30db65530baa3cf819e05a2a258d1fe93905a8c9ce7380bb17c78b83c45b6",
+      "upstreamPath": "apps/editor/public/items/single-bed/thumbnail.webp"
+    },
+    {
+      "file": "items/sofa/floor-plan.svg",
+      "bytes": 561,
+      "sha256": "5cfb43b9f79fd02e89c5fe7335e8de623bde62eab1a2cf0958357803f45efb89",
+      "upstreamPath": "apps/editor/public/items/sofa/floor-plan.svg"
+    },
+    {
+      "file": "items/sofa/model.glb",
+      "bytes": 7908,
+      "sha256": "f40aa74dee9eaf82b0a01fb6b7115a70e6372f155c5afc9e880927f481abc0c3",
+      "upstreamPath": "apps/editor/public/items/sofa/model.glb"
+    },
+    {
+      "file": "items/sofa/thumbnail.webp",
+      "bytes": 3440,
+      "sha256": "90186cd6710b7aa3b0180d80d316ccd0b373740e0794c3d641fb9c4ed0dc2b6d",
+      "upstreamPath": "apps/editor/public/items/sofa/thumbnail.webp"
+    },
+    {
+      "file": "items/stove/model.glb",
+      "bytes": 10668,
+      "sha256": "633f58047c9da1f0ef12b3706f09411471725ec7d1a790f562f89f8945fac0c8",
+      "upstreamPath": "apps/editor/public/items/stove/model.glb"
+    },
+    {
+      "file": "items/stove/thumbnail.webp",
+      "bytes": 4096,
+      "sha256": "fdeeca47ca2edea3c47ae803def41e841e40637289f0759c7fd894d3af28bed4",
+      "upstreamPath": "apps/editor/public/items/stove/thumbnail.webp"
+    },
+    {
+      "file": "items/toilet/model.glb",
+      "bytes": 4192,
+      "sha256": "ae0cc0170797dd8026945b4edd08511e6dc2af005df02384b5b277c9bbc6ca94",
+      "upstreamPath": "apps/editor/public/items/toilet/model.glb"
+    },
+    {
+      "file": "items/toilet/thumbnail.webp",
+      "bytes": 2610,
+      "sha256": "c964b5e996db7ca629f9dc15aa3aebc615f9e9849c8e60d6e69453074f6fac56",
+      "upstreamPath": "apps/editor/public/items/toilet/thumbnail.webp"
+    },
+    {
+      "file": "items/toy/model.glb",
+      "bytes": 18884,
+      "sha256": "cd0a56ad4f2fd638cb195c43dd0126351fca68868d3110acf2ce01800ad2f27b",
+      "upstreamPath": "apps/editor/public/items/toy/model.glb"
+    },
+    {
+      "file": "items/toy/thumbnail.webp",
+      "bytes": 3528,
+      "sha256": "c4939fbbf27e03f09d9c90e9458f600331a1d8d85e0fafb57fd297c540937a94",
+      "upstreamPath": "apps/editor/public/items/toy/thumbnail.webp"
+    },
+    {
+      "file": "items/trash-bin/model.glb",
+      "bytes": 4020,
+      "sha256": "a88f236417168106ea6cc0af99f7c74788163c37206fff89cd99ea8895a150f4",
+      "upstreamPath": "apps/editor/public/items/trash-bin/model.glb"
+    },
+    {
+      "file": "items/trash-bin/thumbnail.webp",
+      "bytes": 2848,
+      "sha256": "16ff5c156486164e57a18456c12fbf0eb2dc0ce9f981f8bec14ae475aedba032",
+      "upstreamPath": "apps/editor/public/items/trash-bin/thumbnail.webp"
+    },
+    {
+      "file": "items/tree/model.glb",
+      "bytes": 6496,
+      "sha256": "e216b042e11d590b6c34d92233d6eed9b20e1d6ffe333ee576c49044b71bc273",
+      "upstreamPath": "apps/editor/public/items/tree/model.glb"
+    },
+    {
+      "file": "items/tree/thumbnail.webp",
+      "bytes": 3764,
+      "sha256": "eb72b1fa02f19e8570dac6e17416c37ef5973be74b63adc6529367474a9ddc10",
+      "upstreamPath": "apps/editor/public/items/tree/thumbnail.webp"
+    },
+    {
+      "file": "items/tv-stand/model.glb",
+      "bytes": 1664,
+      "sha256": "4703963652959cd707aeba305774cfc2b1b593fa115b7e19ccf847891a04a017",
+      "upstreamPath": "apps/editor/public/items/tv-stand/model.glb"
+    },
+    {
+      "file": "items/tv-stand/thumbnail.webp",
+      "bytes": 3886,
+      "sha256": "73b82fd9afa323e1c79557275309dc1c255d8690121525c7a5f1adfbbacae723",
+      "upstreamPath": "apps/editor/public/items/tv-stand/thumbnail.webp"
+    },
+    {
+      "file": "items/washing-machine/model.glb",
+      "bytes": 5356,
+      "sha256": "1d2338b5d5b751f688e4d0d9e4a07b09da626eb56671f34bafb0c051a1af064e",
+      "upstreamPath": "apps/editor/public/items/washing-machine/model.glb"
+    },
+    {
+      "file": "items/washing-machine/thumbnail.webp",
+      "bytes": 2794,
+      "sha256": "f067fad3851f3e7cb3dc6392afdbcd4141bd3f80dcc6f3a5b28b07b0568c41a5",
+      "upstreamPath": "apps/editor/public/items/washing-machine/thumbnail.webp"
+    },
+    {
+      "file": "items/window-double/model.glb",
+      "bytes": 6708,
+      "sha256": "8a71e5f60ea6d4331cbd9cc8ee2c8c6fe73ca0ef4f9ab509624def3c524d63aa",
+      "upstreamPath": "apps/editor/public/items/window-double/model.glb"
+    },
+    {
+      "file": "items/window-double/thumbnail.webp",
+      "bytes": 2204,
+      "sha256": "1b943d9866f0a16ccf27cf8ef76fc3049420758b7d849c3ef4cc6688082394dd",
+      "upstreamPath": "apps/editor/public/items/window-double/thumbnail.webp"
+    },
+    {
+      "file": "items/window-large/model.glb",
+      "bytes": 6872,
+      "sha256": "30b43e6eec0df15ee95a8160e89168b1958f3f03280a3c4c4a0641b895cd5419",
+      "upstreamPath": "apps/editor/public/items/window-large/model.glb"
+    },
+    {
+      "file": "items/window-large/thumbnail.webp",
+      "bytes": 2504,
+      "sha256": "3824f7257cf2e00b2acb3705866030f758ae8eb2d6bae2875aa9bd4421e52945",
+      "upstreamPath": "apps/editor/public/items/window-large/thumbnail.webp"
+    },
+    {
+      "file": "items/window-rectangle/model.glb",
+      "bytes": 6788,
+      "sha256": "8d3947f077e916ed4364064519fed4a14ae1770e99e07e9f360d1fda5ed35707",
+      "upstreamPath": "apps/editor/public/items/window-rectangle/model.glb"
+    },
+    {
+      "file": "items/window-rectangle/thumbnail.webp",
+      "bytes": 2666,
+      "sha256": "324c333bf54c2ece2f88900e4e62e75cfa99c2c602a4980968d72dce768c56bf",
+      "upstreamPath": "apps/editor/public/items/window-rectangle/thumbnail.webp"
+    },
+    {
+      "file": "items/window-simple/model.glb",
+      "bytes": 5608,
+      "sha256": "718af0ebb9845ead2b40d242a799978225fdfce6d917585f0578d81f92e68f86",
+      "upstreamPath": "apps/editor/public/items/window-simple/model.glb"
+    },
+    {
+      "file": "items/window-simple/thumbnail.webp",
+      "bytes": 2078,
+      "sha256": "e94740ff96c4946d2ca8f50246f4bdea41730149d72fcafe9738c51bd2c10a58",
+      "upstreamPath": "apps/editor/public/items/window-simple/thumbnail.webp"
+    },
+    {
+      "file": "items/window-square/model.glb",
+      "bytes": 7924,
+      "sha256": "f48448561d470b26d04f39511dcda7e93db3485590d28604e7543b68fd829775",
+      "upstreamPath": "apps/editor/public/items/window-square/model.glb"
+    },
+    {
+      "file": "items/window-square/thumbnail.webp",
+      "bytes": 2150,
+      "sha256": "a935db771a11f4bf60c316ac17631db22ea13a0e73b843cd124446c95bb2739e",
+      "upstreamPath": "apps/editor/public/items/window-square/thumbnail.webp"
+    },
+    {
+      "file": "material/concrete/concrete_plate/concrete_plate_ao_512.ktx2",
+      "bytes": 33302,
+      "sha256": "e217a2b64620e39fa4ce72820243428f54da0d83d0a6e0293478affc6c4e552d",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_plate/concrete_plate_ao_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_plate/concrete_plate_basecolor_512.ktx2",
+      "bytes": 44714,
+      "sha256": "42510c3b178df9375be2f87a83b4327a9c1549b2caecabd7dede124a1fa582c1",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_plate/concrete_plate_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_plate/concrete_plate_normal_512.ktx2",
+      "bytes": 328913,
+      "sha256": "76d436d9ea02647f0b46cb46e6538d7a591ce858de88690b31c57edb22d9a40b",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_plate/concrete_plate_normal_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_plate/concrete_plate_roughness_512.ktx2",
+      "bytes": 41794,
+      "sha256": "fb0bad813624d65d74fea7eb544b472c61ffe2286fcb495ccda7a8641d254143",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_plate/concrete_plate_roughness_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_plate/concrete_plate_thumb.webp",
+      "bytes": 6784,
+      "sha256": "bd78f6990dc63f8d3c8615304d035477618419da79980d1d1ad702c74f4dfb45",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_plate/concrete_plate_thumb.webp"
+    },
+    {
+      "file": "material/concrete/concrete_polished/concrete_polished_basecolor_512.ktx2",
+      "bytes": 41461,
+      "sha256": "2b7821ffec402bdbfde712356321385feb6391acad1760e447ba86f8527404cf",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_polished/concrete_polished_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_polished/concrete_polished_normal_512.ktx2",
+      "bytes": 258424,
+      "sha256": "13900611a2e941b179543c50ea7f38535a18b82d92b7c9fa39bc879203150d61",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_polished/concrete_polished_normal_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_polished/concrete_polished_roughness_512.ktx2",
+      "bytes": 29477,
+      "sha256": "57c3f531f108ffdd2e70ac56c20ec5ace27ad382212997a00a92eb10f1c433ca",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_polished/concrete_polished_roughness_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_polished/concrete_polished_thumb.webp",
+      "bytes": 4112,
+      "sha256": "c3dc82c3fa65ff324e103b90303afeba375147b34944f3c8a70f54aa79debd29",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_polished/concrete_polished_thumb.webp"
+    },
+    {
+      "file": "material/concrete/concrete_raw/concrete_raw_ao_512.ktx2",
+      "bytes": 46530,
+      "sha256": "ff0e490ede93b0ec52b018e6f7c2a0530df13ae9d3b813e0c6182d3fe572317c",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_raw/concrete_raw_ao_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_raw/concrete_raw_basecolor_512.ktx2",
+      "bytes": 44741,
+      "sha256": "68594f650db3a5cf314ad3c0622183f45940b7b111ccd9dfdaebbfe59d34ccca",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_raw/concrete_raw_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_raw/concrete_raw_normal_512.ktx2",
+      "bytes": 331480,
+      "sha256": "f00cc0bbfd0c3f32498b2d5440cd8b0bfbdd062ffa4015f1a9f9d444ba717883",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_raw/concrete_raw_normal_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_raw/concrete_raw_roughness_512.ktx2",
+      "bytes": 18249,
+      "sha256": "437017cf9602ebff096f86e5c74c71d3478b0c8d5af6fd1127602de0ac576a82",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_raw/concrete_raw_roughness_512.ktx2"
+    },
+    {
+      "file": "material/concrete/concrete_raw/concrete_raw_thumb.webp",
+      "bytes": 7272,
+      "sha256": "0bdd08fcd0e92e1ce63523b21c7c754febcc7ad0507b3ca1ed4a452e464ae4bd",
+      "upstreamPath": "apps/editor/public/material/concrete/concrete_raw/concrete_raw_thumb.webp"
+    },
+    {
+      "file": "material/concrete/plaster_painted/plaster_painted_ao_512.ktx2",
+      "bytes": 38840,
+      "sha256": "9b06997ea494d83a4684eabcf0ecd6ff9dd0a3624ff8cc617fbb89bbd3f66fd0",
+      "upstreamPath": "apps/editor/public/material/concrete/plaster_painted/plaster_painted_ao_512.ktx2"
+    },
+    {
+      "file": "material/concrete/plaster_painted/plaster_painted_basecolor_512.ktx2",
+      "bytes": 34871,
+      "sha256": "b7ea7cfd1c4c2554fa9043b1ad0b8ed5821ddc6e29ead64961008a52982c4153",
+      "upstreamPath": "apps/editor/public/material/concrete/plaster_painted/plaster_painted_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/concrete/plaster_painted/plaster_painted_normal_512.ktx2",
+      "bytes": 294572,
+      "sha256": "641fabca9d765fedf7ad11b26011f224e533a3017f91ff13fee85b055434b931",
+      "upstreamPath": "apps/editor/public/material/concrete/plaster_painted/plaster_painted_normal_512.ktx2"
+    },
+    {
+      "file": "material/concrete/plaster_painted/plaster_painted_roughness_512.ktx2",
+      "bytes": 36365,
+      "sha256": "79b93b341722dd50266060cf2913ee8397dc21c594bfff2ad93b24c0069ba81b",
+      "upstreamPath": "apps/editor/public/material/concrete/plaster_painted/plaster_painted_roughness_512.ktx2"
+    },
+    {
+      "file": "material/concrete/plaster_painted/plaster_painted_thumb.webp",
+      "bytes": 1730,
+      "sha256": "1259faa4dccc5156d2fbcdc9f06b884c369995754a8e0c7f91ae31e928874bf1",
+      "upstreamPath": "apps/editor/public/material/concrete/plaster_painted/plaster_painted_thumb.webp"
+    },
+    {
+      "file": "material/concrete/prepared_drywall/prepared_drywall_ao_512.ktx2",
+      "bytes": 50163,
+      "sha256": "bb31283b09e114ac22af1ae09e4050c645e7b11c3620f7e86962946710d423be",
+      "upstreamPath": "apps/editor/public/material/concrete/prepared_drywall/prepared_drywall_ao_512.ktx2"
+    },
+    {
+      "file": "material/concrete/prepared_drywall/prepared_drywall_basecolor_512.ktx2",
+      "bytes": 16703,
+      "sha256": "228cd6abc9a05d0001a5c79a3126b9368445faee470c955ac0d538bf601bf48a",
+      "upstreamPath": "apps/editor/public/material/concrete/prepared_drywall/prepared_drywall_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/concrete/prepared_drywall/prepared_drywall_normal_512.ktx2",
+      "bytes": 336394,
+      "sha256": "92a60f7d2e4a22b1d1b5e2d6aa6b1226a6bef173f102591520d9f8dc58666fce",
+      "upstreamPath": "apps/editor/public/material/concrete/prepared_drywall/prepared_drywall_normal_512.ktx2"
+    },
+    {
+      "file": "material/concrete/prepared_drywall/prepared_drywall_roughness_512.ktx2",
+      "bytes": 43084,
+      "sha256": "81b2c8436f510cb363af347de390ed672ddf778db23fd014ffd9f4fe881c759c",
+      "upstreamPath": "apps/editor/public/material/concrete/prepared_drywall/prepared_drywall_roughness_512.ktx2"
+    },
+    {
+      "file": "material/concrete/prepared_drywall/prepared_drywall_thumb.webp",
+      "bytes": 778,
+      "sha256": "b9332cf5a70998b0c2632e50b416058fe9e41a1c2400b252ddb757b1c25bb121",
+      "upstreamPath": "apps/editor/public/material/concrete/prepared_drywall/prepared_drywall_thumb.webp"
+    },
+    {
+      "file": "material/concrete/white_stucco/white_stucco_ao_512.ktx2",
+      "bytes": 50163,
+      "sha256": "bb31283b09e114ac22af1ae09e4050c645e7b11c3620f7e86962946710d423be",
+      "upstreamPath": "apps/editor/public/material/concrete/white_stucco/white_stucco_ao_512.ktx2"
+    },
+    {
+      "file": "material/concrete/white_stucco/white_stucco_basecolor_512.ktx2",
+      "bytes": 9090,
+      "sha256": "5a88e3db94594f6cef8a76ec7b32ab5cc56925d3be669e9c291be94a6811ae3c",
+      "upstreamPath": "apps/editor/public/material/concrete/white_stucco/white_stucco_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/concrete/white_stucco/white_stucco_normal_512.ktx2",
+      "bytes": 336394,
+      "sha256": "92a60f7d2e4a22b1d1b5e2d6aa6b1226a6bef173f102591520d9f8dc58666fce",
+      "upstreamPath": "apps/editor/public/material/concrete/white_stucco/white_stucco_normal_512.ktx2"
+    },
+    {
+      "file": "material/concrete/white_stucco/white_stucco_roughness_512.ktx2",
+      "bytes": 43084,
+      "sha256": "81b2c8436f510cb363af347de390ed672ddf778db23fd014ffd9f4fe881c759c",
+      "upstreamPath": "apps/editor/public/material/concrete/white_stucco/white_stucco_roughness_512.ktx2"
+    },
+    {
+      "file": "material/concrete/white_stucco/white_stucco_thumb.webp",
+      "bytes": 238,
+      "sha256": "62b85dd9a3216f7b3219f563ea404bac6acb33aabcd0b6d10f1056497e721f70",
+      "upstreamPath": "apps/editor/public/material/concrete/white_stucco/white_stucco_thumb.webp"
+    },
+    {
+      "file": "material/fabric/blue_cotton/blue_cotton_ao_512.ktx2",
+      "bytes": 51153,
+      "sha256": "faffd6577f67d8bef8a209dd3462ea9b816a5d5f12169c11b46c0f89b8431e77",
+      "upstreamPath": "apps/editor/public/material/fabric/blue_cotton/blue_cotton_ao_512.ktx2"
+    },
+    {
+      "file": "material/fabric/blue_cotton/blue_cotton_basecolor_512.ktx2",
+      "bytes": 55118,
+      "sha256": "2a98bbe7ef3d8dc6de9d893683ee2d3574cc4d52c35f3cc86087e16daa48a95a",
+      "upstreamPath": "apps/editor/public/material/fabric/blue_cotton/blue_cotton_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/fabric/blue_cotton/blue_cotton_normal_512.ktx2",
+      "bytes": 342918,
+      "sha256": "95fdaf0a9cc75d86d08fed15a0dc669bca5072027a8c2e4e79db6561186cfbaf",
+      "upstreamPath": "apps/editor/public/material/fabric/blue_cotton/blue_cotton_normal_512.ktx2"
+    },
+    {
+      "file": "material/fabric/blue_cotton/blue_cotton_roughness_512.ktx2",
+      "bytes": 48343,
+      "sha256": "0669e2446dac6bec42bc46614b8a79303cdc49050fb905ca2bce61cf22e73a77",
+      "upstreamPath": "apps/editor/public/material/fabric/blue_cotton/blue_cotton_roughness_512.ktx2"
+    },
+    {
+      "file": "material/fabric/blue_cotton/blue_cotton_thumb.webp",
+      "bytes": 27614,
+      "sha256": "5c44653c77f7c566b6848d677cb602e298991f4374a9114766adc74d007bb806",
+      "upstreamPath": "apps/editor/public/material/fabric/blue_cotton/blue_cotton_thumb.webp"
+    },
+    {
+      "file": "material/fabric/linen_hikari_fabric/linen_hikari_fabric_basecolor_512.ktx2",
+      "bytes": 44921,
+      "sha256": "976478b49b10b8a2816b4b40489feb2409eb33900097d8b21f084eac687912ef",
+      "upstreamPath": "apps/editor/public/material/fabric/linen_hikari_fabric/linen_hikari_fabric_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/fabric/linen_hikari_fabric/linen_hikari_fabric_normal_512.ktx2",
+      "bytes": 330289,
+      "sha256": "abad804762f4fce2ac50860f4d778709d528fc8c5dbc60e6d3a0659273c4aec7",
+      "upstreamPath": "apps/editor/public/material/fabric/linen_hikari_fabric/linen_hikari_fabric_normal_512.ktx2"
+    },
+    {
+      "file": "material/fabric/linen_hikari_fabric/linen_hikari_fabric_thumb.webp",
+      "bytes": 25884,
+      "sha256": "62beb68cfd2719432d60dd76527db56c6b33d8a9180f8a6c0d8f2223c45aa5d5",
+      "upstreamPath": "apps/editor/public/material/fabric/linen_hikari_fabric/linen_hikari_fabric_thumb.webp"
+    },
+    {
+      "file": "material/fabric/red_velvet/red_velvet_ao_512.ktx2",
+      "bytes": 43729,
+      "sha256": "64efbc02e19a91a9013fbbd331c39563629144a7d9bea42daedd1767d4e21ec8",
+      "upstreamPath": "apps/editor/public/material/fabric/red_velvet/red_velvet_ao_512.ktx2"
+    },
+    {
+      "file": "material/fabric/red_velvet/red_velvet_basecolor_512.ktx2",
+      "bytes": 24140,
+      "sha256": "eba554dc6fd305085aa3c667c9d8ab3fb5d9541337990280baf3ff2949379bff",
+      "upstreamPath": "apps/editor/public/material/fabric/red_velvet/red_velvet_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/fabric/red_velvet/red_velvet_normal_512.ktx2",
+      "bytes": 330888,
+      "sha256": "ce5fd52a5ca9ed808ef277c3b0ffde96fce0a3604811fc24bcd99a234333a65d",
+      "upstreamPath": "apps/editor/public/material/fabric/red_velvet/red_velvet_normal_512.ktx2"
+    },
+    {
+      "file": "material/fabric/red_velvet/red_velvet_roughness_512.ktx2",
+      "bytes": 964,
+      "sha256": "40ae0184be8eb8612ec667f1bdc9d07ea3242839c11a622a573880cb84618e3e",
+      "upstreamPath": "apps/editor/public/material/fabric/red_velvet/red_velvet_roughness_512.ktx2"
+    },
+    {
+      "file": "material/fabric/red_velvet/red_velvet_thumb.webp",
+      "bytes": 460,
+      "sha256": "8bba4b01cd45792a3e70a6ed46d62c0d2cc340b641866fdb1989c87b2821732a",
+      "upstreamPath": "apps/editor/public/material/fabric/red_velvet/red_velvet_thumb.webp"
+    },
+    {
+      "file": "material/fabric/suede/suede_ao_512.ktx2",
+      "bytes": 45228,
+      "sha256": "f3d323a09f326ed3baa4f9e454ce8d3ddaedad001b24ea51a285735d1442256a",
+      "upstreamPath": "apps/editor/public/material/fabric/suede/suede_ao_512.ktx2"
+    },
+    {
+      "file": "material/fabric/suede/suede_basecolor_512.ktx2",
+      "bytes": 966,
+      "sha256": "e9013887ac92a43c25fa51b9475ff2265c59a07a1e73b132500b7a590871caa2",
+      "upstreamPath": "apps/editor/public/material/fabric/suede/suede_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/fabric/suede/suede_normal_512.ktx2",
+      "bytes": 336046,
+      "sha256": "c74e2d2951464ee9d46e0db3994b46ab4acd7a53a07fb775e12a7ac19a0410dc",
+      "upstreamPath": "apps/editor/public/material/fabric/suede/suede_normal_512.ktx2"
+    },
+    {
+      "file": "material/fabric/suede/suede_roughness_512.ktx2",
+      "bytes": 37433,
+      "sha256": "dcb8ad5daaf89a1daba84f711f345b15885d8ac6da97d1e02cca6b0703921819",
+      "upstreamPath": "apps/editor/public/material/fabric/suede/suede_roughness_512.ktx2"
+    },
+    {
+      "file": "material/fabric/suede/suede_thumb.webp",
+      "bytes": 190,
+      "sha256": "8699e506738725cfad0ffbf30b6509a461f14037280ccdaa3dc3e259ffc209b4",
+      "upstreamPath": "apps/editor/public/material/fabric/suede/suede_thumb.webp"
+    },
+    {
+      "file": "material/fabric/white_wool/white_wool_ao_512.ktx2",
+      "bytes": 49369,
+      "sha256": "0b1e4b0c600e0fcea6d4840adc9bdc6d1425b67ba23b6218df944ff18eaa8073",
+      "upstreamPath": "apps/editor/public/material/fabric/white_wool/white_wool_ao_512.ktx2"
+    },
+    {
+      "file": "material/fabric/white_wool/white_wool_basecolor_512.ktx2",
+      "bytes": 11886,
+      "sha256": "d75d81f24bb4f2f96f23cf55d286b4e2bc22e89c3dee509508923f497ca245a7",
+      "upstreamPath": "apps/editor/public/material/fabric/white_wool/white_wool_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/fabric/white_wool/white_wool_normal_512.ktx2",
+      "bytes": 318487,
+      "sha256": "bdc54280c9a617e40012b7323433c880e3d3d592d146ddb97f17a25eadd145aa",
+      "upstreamPath": "apps/editor/public/material/fabric/white_wool/white_wool_normal_512.ktx2"
+    },
+    {
+      "file": "material/fabric/white_wool/white_wool_roughness_512.ktx2",
+      "bytes": 35771,
+      "sha256": "67ec906912d58f4acbddffbd7663bb8973dd1f0c0d0646583415102efa013ff6",
+      "upstreamPath": "apps/editor/public/material/fabric/white_wool/white_wool_roughness_512.ktx2"
+    },
+    {
+      "file": "material/fabric/white_wool/white_wool_thumb.webp",
+      "bytes": 388,
+      "sha256": "28901f25139208d0563ea98521b853d75a96cf60361362b6560f8af1f789d19f",
+      "upstreamPath": "apps/editor/public/material/fabric/white_wool/white_wool_thumb.webp"
+    },
+    {
+      "file": "material/fabric/wool_boucle/wool_boucle_basecolor_512.ktx2",
+      "bytes": 59484,
+      "sha256": "749b81d2508067e4803c69deb7f4feeb73417e53a6fa2b2d6fb64e6a7d3319de",
+      "upstreamPath": "apps/editor/public/material/fabric/wool_boucle/wool_boucle_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/fabric/wool_boucle/wool_boucle_normal_512.ktx2",
+      "bytes": 325092,
+      "sha256": "7c4752bcb5e4562fcb5a70b70634cc0e26a7956532ee6a220c01c9e7023cf862",
+      "upstreamPath": "apps/editor/public/material/fabric/wool_boucle/wool_boucle_normal_512.ktx2"
+    },
+    {
+      "file": "material/fabric/wool_boucle/wool_boucle_thumb.webp",
+      "bytes": 31094,
+      "sha256": "18c29cf64957936aee43669eac643391190b597d6496bbbea479585420653804",
+      "upstreamPath": "apps/editor/public/material/fabric/wool_boucle/wool_boucle_thumb.webp"
+    },
+    {
+      "file": "material/flooring/brick_wall_aged/brick_wall_aged_ao_512.ktx2",
+      "bytes": 45683,
+      "sha256": "ce240ea01a3a809418a18c4c83864b6ee4cecad83cc96e71015ea7169d09b54f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_aged/brick_wall_aged_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:32.166Z",
+      "etag": "\"7fa9a368d1d31c23da78a6b8a6eb82ad\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_aged/brick_wall_aged_basecolor_512.ktx2",
+      "bytes": 35308,
+      "sha256": "dd4e5d29ef78b4340f44e8932dc60532e9af0411e7a55383d50a1f55d9922a90",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_aged/brick_wall_aged_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:31.977Z",
+      "etag": "\"064d179af032b23226bbc5b4922915fd\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_aged/brick_wall_aged_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_aged/brick_wall_aged_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:32.010Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_aged/brick_wall_aged_normal_512.ktx2",
+      "bytes": 329431,
+      "sha256": "4b711fe2bfa4320e5cf53eb1106cc8080e074a3b4cbef6f4fcaaf7d028c99990",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_aged/brick_wall_aged_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.212Z",
+      "etag": "\"d9eda380d26d550875c939af3cadced5\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_aged/brick_wall_aged_roughness_512.ktx2",
+      "bytes": 39831,
+      "sha256": "2bc8a263df89893967a9543401cc82bdcf065b2a37dbfe261e49cb7050c09ef1",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_aged/brick_wall_aged_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.197Z",
+      "etag": "\"140ba7b36cbab1d35aa001e2ce19b488\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_aged/brick_wall_aged_thumb.webp",
+      "bytes": 4406,
+      "sha256": "924d1e0b6f712e1403d725f2420ddc661493c4a07cba057757c0562384e8a458",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_aged/brick_wall_aged_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:32.471Z",
+      "etag": "\"d87f8914195ce172c4c119e63f6dae61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_rustic/brick_wall_rustic_ao_512.ktx2",
+      "bytes": 34709,
+      "sha256": "83aec6cd84476f82c6ecba5edf9106ea98a27e757713a4e19a98668f4019377f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_rustic/brick_wall_rustic_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:31.173Z",
+      "etag": "\"dca6d06a8e4775fc5dd02090b9fc5306\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_rustic/brick_wall_rustic_basecolor_512.ktx2",
+      "bytes": 45715,
+      "sha256": "ff9431070c3667149ff8e48106c99d060867b65098b03b2d251e8f019229f058",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_rustic/brick_wall_rustic_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:30.842Z",
+      "etag": "\"09a57f95b6871de23650c0c90fa6a18f\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_rustic/brick_wall_rustic_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_rustic/brick_wall_rustic_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.330Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_rustic/brick_wall_rustic_normal_512.ktx2",
+      "bytes": 282678,
+      "sha256": "14e270f2e012343c3a9102b6b5926dafd6e25f6296144a99a6051a4aeaf71d2d",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_rustic/brick_wall_rustic_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.310Z",
+      "etag": "\"76c438b1599b2928fc63c4fbde3fc151\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_rustic/brick_wall_rustic_roughness_512.ktx2",
+      "bytes": 46349,
+      "sha256": "036969754637fb54be28b691b787824bb49463faf43df84a23f1d65e60693b4a",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_rustic/brick_wall_rustic_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:31.481Z",
+      "etag": "\"60118233bbeedaf7b429c95dea594586\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_rustic/brick_wall_rustic_thumb.webp",
+      "bytes": 9118,
+      "sha256": "ca5d4af9da3de2348723066aa0dbf898130ccbd2b3da59d42352e226926142cf",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_rustic/brick_wall_rustic_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:32.049Z",
+      "etag": "\"895bb70ba4d5baf10c60b13b4565249c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:32 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_weathered/brick_wall_weathered_ao_512.ktx2",
+      "bytes": 30715,
+      "sha256": "a339cba1dac9efec65627a70007dca6da1509b369e0aff6e327eea442654ebb7",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_weathered/brick_wall_weathered_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.369Z",
+      "etag": "\"2ad3d7abcb25a17c87fc852226c91797\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:33 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_weathered/brick_wall_weathered_basecolor_512.ktx2",
+      "bytes": 42338,
+      "sha256": "ad9d19c48e9d6c3ac8ad45bf0f992a086accb7bcef2094e1f5e8efa89ba05f4e",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_weathered/brick_wall_weathered_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:32.729Z",
+      "etag": "\"2191f0660bc093ea43f90c3463aeb945\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:33 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_weathered/brick_wall_weathered_normal_512.ktx2",
+      "bytes": 262887,
+      "sha256": "9bcb7a5f964f30e972e79bd7775fcd9475ce4494b8e9bad69acea2b8768712b6",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_weathered/brick_wall_weathered_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:36.610Z",
+      "etag": "\"ac7994406119fce7a91511b6ec496adf\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:33 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_weathered/brick_wall_weathered_roughness_512.ktx2",
+      "bytes": 28346,
+      "sha256": "be95e21bed9753ce6cad20fb1def62a0466a1cd72fc0e59f150db561a3312b1f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_weathered/brick_wall_weathered_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.630Z",
+      "etag": "\"3116d70bc64cf6b0b437ebda4132c4d4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:33 GMT"
+    },
+    {
+      "file": "material/flooring/brick_wall_weathered/brick_wall_weathered_thumb.webp",
+      "bytes": 7212,
+      "sha256": "303ea7a66a1cb6c4ab3d39a81fbd77f5c01b774a62b319472ed81b92f162a9c6",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/brick_wall_weathered/brick_wall_weathered_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:33.786Z",
+      "etag": "\"d456c5bb2cb43058ed37513968229902\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/ceramic_mosaic/ceramic_mosaic_ao_512.ktx2",
+      "bytes": 3284,
+      "sha256": "db7b640464b9e8f70a022992a6aa452208dae51bcc41475471515e77563a1178",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ceramic_mosaic/ceramic_mosaic_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:38.793Z",
+      "etag": "\"1985d5e873e164b2f8ca447ff3de5ce6\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/ceramic_mosaic/ceramic_mosaic_basecolor_512.ktx2",
+      "bytes": 30090,
+      "sha256": "eaae6a9dc0b683244628898bfb3467a273e1776fac606e1aa212e44520eca0c2",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ceramic_mosaic/ceramic_mosaic_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:39.064Z",
+      "etag": "\"5a6ae7b5295d7404562027fc5d5742c7\"",
+      "lastModified": "Thu, 08 Oct 2026 07:10:35 GMT"
+    },
+    {
+      "file": "material/flooring/ceramic_mosaic/ceramic_mosaic_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ceramic_mosaic/ceramic_mosaic_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:38.916Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/ceramic_mosaic/ceramic_mosaic_normal_512.ktx2",
+      "bytes": 2302,
+      "sha256": "c249d00bd9745738c33b15637c950545cde0fc501c3b267805c572f5be274def",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ceramic_mosaic/ceramic_mosaic_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:39.292Z",
+      "etag": "\"f860332bb4ec7bcbcf53791594869857\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/ceramic_mosaic/ceramic_mosaic_roughness_512.ktx2",
+      "bytes": 8807,
+      "sha256": "8a29600a0af75f89f78e528f0eb969b6edcbfb78c95ba22eb2ca647372ce31e6",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ceramic_mosaic/ceramic_mosaic_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:39.320Z",
+      "etag": "\"6d1928a3b57c29f473dec2d3e5844295\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/ceramic_mosaic/ceramic_mosaic_thumb.webp",
+      "bytes": 22904,
+      "sha256": "f6d10c128173d59a23b4c0132b2552105385e47a9073c4c25ff7f55013a48068",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ceramic_mosaic/ceramic_mosaic_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:39.586Z",
+      "etag": "\"5b8813733e0b3aee7350875bdd13791b\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_ao_512.ktx2",
+      "bytes": 1875,
+      "sha256": "7ed0847ef1ea9b721bd0e7bc2b9d53e82929e134f8c8054343280ea47f5ed975",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:42.186Z",
+      "etag": "\"19b3e3a26115d0876d9b69e9f61182b4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_basecolor_512.ktx2",
+      "bytes": 42017,
+      "sha256": "0ca0877385e63c4304ef7dd9f2e91739ea66b94c87edeab2a113aabe2783b85c",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:45.439Z",
+      "etag": "\"d1cda109e5d3ff9925d62e31cfefc591\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:42.199Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_normal_512.ktx2",
+      "bytes": 5411,
+      "sha256": "816bfea0d8483b39b94f5bbb1fb3545b98816a2f048ac5d28e533ff3b1710c4c",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:42.294Z",
+      "etag": "\"35062c027d3e823260837c4c4b5ed61e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_roughness_512.ktx2",
+      "bytes": 8897,
+      "sha256": "ac61c4d71e357b90381df689391b6642bf25183a3da5ecf5a62692cafb71caf1",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:42.488Z",
+      "etag": "\"6dff547fc00f779f0175de1e263c345b\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_thumb.webp",
+      "bytes": 4182,
+      "sha256": "c36f50741b8962d216f6991077c57b9aa7a24430b92708f2d448d9c03de766bd",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/dark_ceramic_grunge/dark_ceramic_grunge_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:42.820Z",
+      "etag": "\"487b6709a9c994a24c87fb97be701bd3\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/garage_panel/garage_panel_ao_512.ktx2",
+      "bytes": 6625,
+      "sha256": "df59fecb01b85a07dc2c21863b6799e70f90fa0230c0b7b171165f1ca1f614e3",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/garage_panel/garage_panel_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.794Z",
+      "etag": "\"5ef36e06358747f82148901149386dfd\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/garage_panel/garage_panel_basecolor_512.ktx2",
+      "bytes": 36983,
+      "sha256": "c0b3047c24bf38d1380cee0b4c2a2eda193400ae77ae62c3dbc9ce7f341fec5b",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/garage_panel/garage_panel_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:33.841Z",
+      "etag": "\"bd7f15b7cd42f073d31a0e1ce0b59f05\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/garage_panel/garage_panel_normal_512.ktx2",
+      "bytes": 234120,
+      "sha256": "2a491df0d5d8c45b508c5251657201f2c3c3cc0529cacdeb07ba1fe32430f35c",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/garage_panel/garage_panel_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:36.271Z",
+      "etag": "\"ec909d8c3edab9def6da6dffd4574afa\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/garage_panel/garage_panel_thumb.webp",
+      "bytes": 1328,
+      "sha256": "836c5d8d086c05fbd44ddcfec55ef83106126f005288dcc74e4f6b1411fce9d1",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/garage_panel/garage_panel_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:33.726Z",
+      "etag": "\"044a2f4ce7e77b794d754a14416c734e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/green_glass_quartzite/green_glass_quartzite_ao_512.ktx2",
+      "bytes": 35459,
+      "sha256": "aa3b58dd7a771eec23baee6153780523ce7c00287e66818738ae3736c1611c8e",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_glass_quartzite/green_glass_quartzite_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:41.739Z",
+      "etag": "\"2367d557c47798dad81cd6e7ded4e002\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/green_glass_quartzite/green_glass_quartzite_basecolor_512.ktx2",
+      "bytes": 48244,
+      "sha256": "1318c6dfe2d08ab29f133b83d5b898d0803c0ce29263ec674e266b7ec3c5e13f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_glass_quartzite/green_glass_quartzite_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:43.001Z",
+      "etag": "\"bcf80d75ffa13fc4a5d56c25729ee157\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/green_glass_quartzite/green_glass_quartzite_normal_512.ktx2",
+      "bytes": 61748,
+      "sha256": "f7ebd16347656a0ff78ee8ac441bcdb5b55420cc2ba615bbe141e81f974ee33e",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_glass_quartzite/green_glass_quartzite_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:50.721Z",
+      "etag": "\"1f5f63536d7e742de14bd67d4edd2ea8\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/green_glass_quartzite/green_glass_quartzite_thumb.webp",
+      "bytes": 9046,
+      "sha256": "c6c444188007d27df425cb9da7d05ce63125460937a0e9ff1569bbc0f6a9b75b",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_glass_quartzite/green_glass_quartzite_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:42.071Z",
+      "etag": "\"d248055a7660c7cab626293995dceb38\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:42 GMT"
+    },
+    {
+      "file": "material/flooring/green_labradorite/green_labradorite_ao_512.ktx2",
+      "bytes": 41179,
+      "sha256": "c3e92fdebfe7bcf3fc6ae388005a66cf9a5e3525473d1f281a20f04d0366de10",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_labradorite/green_labradorite_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:34.731Z",
+      "etag": "\"602227fadc7b40f712fe13c3911416cd\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/green_labradorite/green_labradorite_basecolor_512.ktx2",
+      "bytes": 57184,
+      "sha256": "7cfa8947087b3f9a269255150e64253f4b82daf915f35dbb6ab1ff55794914e5",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_labradorite/green_labradorite_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:34.313Z",
+      "etag": "\"12e01bc8206f2a6896a2fb104ab89603\"",
+      "lastModified": "Thu, 08 Oct 2026 13:47:17 GMT"
+    },
+    {
+      "file": "material/flooring/green_labradorite/green_labradorite_normal_512.ktx2",
+      "bytes": 85976,
+      "sha256": "b8ec6b9a6f6d13c48859cff009c8b08b041c76ad119d7653ec145a6a645f9bae",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_labradorite/green_labradorite_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:36.511Z",
+      "etag": "\"0e39860be0a2006a89df446a48eb7568\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/green_labradorite/green_labradorite_thumb.webp",
+      "bytes": 20220,
+      "sha256": "9fd73fdeeaf97f220ff9463dbe62d0e362b10c5b030f4af59b2a1670da83234b",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/green_labradorite/green_labradorite_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:34.486Z",
+      "etag": "\"c5732c482126cfc65b7215efd6c5f017\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/ground_earth/ground_earth_ao_512.ktx2",
+      "bytes": 47044,
+      "sha256": "592446ff131c79c44bdab240421ebd9738bb1e0ede914cdcb11c05b13f68d6da",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ground_earth/ground_earth_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:35.477Z",
+      "etag": "\"c6b90f4454b2eb563453397fbe8462dc\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:35 GMT"
+    },
+    {
+      "file": "material/flooring/ground_earth/ground_earth_basecolor_512.ktx2",
+      "bytes": 52342,
+      "sha256": "389cb14277b9fb1b414b142fe5cda8962201e5451a3fe944e05fae3ae05f41e2",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ground_earth/ground_earth_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:34.520Z",
+      "etag": "\"9ebe0479d6290663b5861e29e0cdbacd\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:34 GMT"
+    },
+    {
+      "file": "material/flooring/ground_earth/ground_earth_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ground_earth/ground_earth_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:34.985Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:35 GMT"
+    },
+    {
+      "file": "material/flooring/ground_earth/ground_earth_normal_512.ktx2",
+      "bytes": 339141,
+      "sha256": "db67a70ad7213ffa57c41d022442424b397e2a68fda8372d6d1a22b0c669d58f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ground_earth/ground_earth_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:35.958Z",
+      "etag": "\"8d32f2278db0c332eac9bab45d6f8c4a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:35 GMT"
+    },
+    {
+      "file": "material/flooring/ground_earth/ground_earth_roughness_512.ktx2",
+      "bytes": 43979,
+      "sha256": "c9f4b7ad92ebfc0701bf4376f990276ca73e2fbe63d27c8a230f15b9b4752ef9",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ground_earth/ground_earth_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:36.119Z",
+      "etag": "\"1f24917272a25eebcfe835c2303a4d5c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:35 GMT"
+    },
+    {
+      "file": "material/flooring/ground_earth/ground_earth_thumb.webp",
+      "bytes": 22108,
+      "sha256": "db677fbc53f10a86d19d3a83eef33454fbd537e43a6894b3fc697703310fad06",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/ground_earth/ground_earth_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:36.009Z",
+      "etag": "\"b6fea82be1ab02056f86adecfe5d896d\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:35 GMT"
+    },
+    {
+      "file": "material/flooring/light_ceramic_grunge/light_ceramic_grunge_ao_512.ktx2",
+      "bytes": 1875,
+      "sha256": "7ed0847ef1ea9b721bd0e7bc2b9d53e82929e134f8c8054343280ea47f5ed975",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/light_ceramic_grunge/light_ceramic_grunge_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:43.214Z",
+      "etag": "\"19b3e3a26115d0876d9b69e9f61182b4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/light_ceramic_grunge/light_ceramic_grunge_basecolor_512.ktx2",
+      "bytes": 45704,
+      "sha256": "71d04d517f4874d299e4f561f6c3c5f62545affb9f676fd5801206dfdb825caa",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/light_ceramic_grunge/light_ceramic_grunge_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:42.999Z",
+      "etag": "\"9413af2512469d37c539b4074d748ca8\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/light_ceramic_grunge/light_ceramic_grunge_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/light_ceramic_grunge/light_ceramic_grunge_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:42.838Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/light_ceramic_grunge/light_ceramic_grunge_normal_512.ktx2",
+      "bytes": 5411,
+      "sha256": "816bfea0d8483b39b94f5bbb1fb3545b98816a2f048ac5d28e533ff3b1710c4c",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/light_ceramic_grunge/light_ceramic_grunge_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:43.233Z",
+      "etag": "\"35062c027d3e823260837c4c4b5ed61e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/light_ceramic_grunge/light_ceramic_grunge_roughness_512.ktx2",
+      "bytes": 8897,
+      "sha256": "ac61c4d71e357b90381df689391b6642bf25183a3da5ecf5a62692cafb71caf1",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/light_ceramic_grunge/light_ceramic_grunge_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:43.259Z",
+      "etag": "\"6dff547fc00f779f0175de1e263c345b\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/light_ceramic_grunge/light_ceramic_grunge_thumb.webp",
+      "bytes": 6144,
+      "sha256": "357370376648cf2b4852d68d848538b9da2cb701eb459959b56c88f2ff781aea",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/light_ceramic_grunge/light_ceramic_grunge_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:43.833Z",
+      "etag": "\"577b7ef9932216ac9e872eb40c41add3\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/pool_tiles/pool_tiles_ao_512.ktx2",
+      "bytes": 41099,
+      "sha256": "9dedd7b50aa786b952cbd48f71f8bb37027234a65e9ac60ea4decf86392c57cb",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/pool_tiles/pool_tiles_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:36.661Z",
+      "etag": "\"a2eda2ae7d6c7b732ce0baeb5fce8c64\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:36 GMT"
+    },
+    {
+      "file": "material/flooring/pool_tiles/pool_tiles_basecolor_512.ktx2",
+      "bytes": 57955,
+      "sha256": "65c77f861d49d9ad9cab2629d4854c3da391a7860bff974529c2d2f34afb6f79",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/pool_tiles/pool_tiles_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:35.974Z",
+      "etag": "\"31b050be884e7e72bfc57b3abb653280\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:35 GMT"
+    },
+    {
+      "file": "material/flooring/pool_tiles/pool_tiles_normal_512.ktx2",
+      "bytes": 315515,
+      "sha256": "a4a89ac2c5cbb77ca7b2b879845c5d072fa018f3ecb4c13a8df21a8a0b20e3e9",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/pool_tiles/pool_tiles_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.253Z",
+      "etag": "\"bdb359e3c340a70fbc0cc6d6ccf51aac\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:36 GMT"
+    },
+    {
+      "file": "material/flooring/pool_tiles/pool_tiles_thumb.webp",
+      "bytes": 23172,
+      "sha256": "bb8fe1e8ecace9889c29af7349c3a0c8fec894769da26e6e2ea9885304ff567f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/pool_tiles/pool_tiles_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:36.570Z",
+      "etag": "\"cb0ec290e5173ac73a75cba76a52ba68\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:36 GMT"
+    },
+    {
+      "file": "material/flooring/statuaretto/statuaretto_ao_512.ktx2",
+      "bytes": 43766,
+      "sha256": "1d94ecf3fe41e96361159eb71c729948dea1fd899da234110f92ff8ebbc73d06",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/statuaretto/statuaretto_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.755Z",
+      "etag": "\"ff4d7157046887c377e45383b1b51c0c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:44 GMT"
+    },
+    {
+      "file": "material/flooring/statuaretto/statuaretto_basecolor_512.ktx2",
+      "bytes": 47309,
+      "sha256": "088e16f3b84708bec461adac4fc32e673e865e690cdcc931eb1c6256468a6e21",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/statuaretto/statuaretto_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.704Z",
+      "etag": "\"8a3a403649a09714990940b6ec6f25fc\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:43 GMT"
+    },
+    {
+      "file": "material/flooring/statuaretto/statuaretto_normal_512.ktx2",
+      "bytes": 183466,
+      "sha256": "c62037d9ee3375b5ef6cf93a08e40dd62009f8b9de19d144438192a6f984326a",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/statuaretto/statuaretto_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.501Z",
+      "etag": "\"8cc6aff804e5007f2e196f1d9b18b97c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:44 GMT"
+    },
+    {
+      "file": "material/flooring/statuaretto/statuaretto_thumb.webp",
+      "bytes": 12752,
+      "sha256": "7d2ecac09aa635978d740714715de9e7f0a20978a38475a184ada43692716adf",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/statuaretto/statuaretto_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:43.723Z",
+      "etag": "\"d83d49e727e6623b8ff6829903799db4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:44 GMT"
+    },
+    {
+      "file": "material/flooring/stone_wall/stone_wall_ao_512.ktx2",
+      "bytes": 25766,
+      "sha256": "d66f2419ae350f7ef128c0a245cd58f549571443e4b2d81c145db8cf5c207556",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/stone_wall/stone_wall_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:39.904Z",
+      "etag": "\"3847b8300f0f24fcbee3e05ec0f5f3b0\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/stone_wall/stone_wall_basecolor_512.ktx2",
+      "bytes": 55469,
+      "sha256": "24deede81cab9d568fbc0aa7a306489dbbdacd6e672503a17fca01c32d77e43f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/stone_wall/stone_wall_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.978Z",
+      "etag": "\"7fc9121f366cbf5a5a466c012549ca23\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/stone_wall/stone_wall_normal_512.ktx2",
+      "bytes": 224254,
+      "sha256": "72120887433584b531d9d10988e2d5130d9d3708f0d927a332da15d7816523b6",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/stone_wall/stone_wall_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:41.780Z",
+      "etag": "\"570bc820c5dfa613b178ed6e14629cd4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/stone_wall/stone_wall_thumb.webp",
+      "bytes": 17266,
+      "sha256": "5449272d5a2ae5d21215357b39c0383fc00ec1786cb12c7971b4af578938b54f",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/stone_wall/stone_wall_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:38.144Z",
+      "etag": "\"33d041429fb14f96d6c5d0381b525825\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/terrazzo/terrazzo_basecolor_512.ktx2",
+      "bytes": 44587,
+      "sha256": "79d555ef92560c7eaabd54fa2bf552cbf8b57028116077cb5942208972ad5b04",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/terrazzo/terrazzo_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:39.757Z",
+      "etag": "\"29a04cb898036b9c31c058feedb4fd12\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/terrazzo/terrazzo_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/terrazzo/terrazzo_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:39.545Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:39 GMT"
+    },
+    {
+      "file": "material/flooring/terrazzo/terrazzo_normal_512.ktx2",
+      "bytes": 16483,
+      "sha256": "468704a44a0bd7f125e99809360fe859bd7795399404e9c61d2d248055efe9a8",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/terrazzo/terrazzo_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.340Z",
+      "etag": "\"a3f9d6b0cf0cfa43537450fa8dcf76a8\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:40 GMT"
+    },
+    {
+      "file": "material/flooring/terrazzo/terrazzo_roughness_512.ktx2",
+      "bytes": 41960,
+      "sha256": "29965dd8cc19b48a5904cf234a0bbb7a3f954e3f08522513e2b0e39169362bbb",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/terrazzo/terrazzo_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:41.563Z",
+      "etag": "\"d1590765f6d2dde45bc8fd17c9b13c6f\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:40 GMT"
+    },
+    {
+      "file": "material/flooring/terrazzo/terrazzo_thumb.webp",
+      "bytes": 26126,
+      "sha256": "86b817647b5c7498b151db6833498680b52ae0d90bb7d0de2e6c967254ad1a25",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/terrazzo/terrazzo_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:40.272Z",
+      "etag": "\"76df580691f068bc115558943e8811b0\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:40 GMT"
+    },
+    {
+      "file": "material/flooring/tile_mosaic/tile_mosaic_ao_512.ktx2",
+      "bytes": 1924,
+      "sha256": "2752e98727a83a37857462acc9c8247c3dd4454b59ebb6b008c1a917f0ee8988",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_mosaic/tile_mosaic_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.102Z",
+      "etag": "\"bf90c8a9209a6e07254e89d3e6a1b8e6\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/flooring/tile_mosaic/tile_mosaic_basecolor_512.ktx2",
+      "bytes": 24376,
+      "sha256": "2203cdad079db7eb8d909d68969ee35172bb5ddff3516025a7f14973d3522486",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_mosaic/tile_mosaic_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.350Z",
+      "etag": "\"1ab1a4bf4121ff73bce543145d7b01d9\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:44 GMT"
+    },
+    {
+      "file": "material/flooring/tile_mosaic/tile_mosaic_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_mosaic/tile_mosaic_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.559Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/flooring/tile_mosaic/tile_mosaic_normal_512.ktx2",
+      "bytes": 5233,
+      "sha256": "2ea175c7dbb01dc807f02de4effb89e76cfdfb9739df5212e68349275a344c73",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_mosaic/tile_mosaic_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.412Z",
+      "etag": "\"11dd7710f95bc5a974d5a1fc466a3e0c\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/flooring/tile_mosaic/tile_mosaic_roughness_512.ktx2",
+      "bytes": 7914,
+      "sha256": "0816a37f4bc5f75bff8e2354c39a150e92a242fba36fd2d62956a8784eff0cb1",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_mosaic/tile_mosaic_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:44.791Z",
+      "etag": "\"f6fc75cdd5c8c2947d7be5bab98667cb\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_mosaic/tile_mosaic_thumb.webp",
+      "bytes": 1142,
+      "sha256": "8f5bb2ed655b3ed1b7b7258608627e1f34b4be772c4923e3456f4d8bc0c96cd9",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_mosaic/tile_mosaic_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:44.886Z",
+      "etag": "\"2e36e76d37577dfef5550c2f502ba6a9\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_pattern/tile_pattern_ao_512.ktx2",
+      "bytes": 4714,
+      "sha256": "5cf8b1f0366aa702237f8a8e1920f3c231647600ecdea921e9d054ff3c524743",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_pattern/tile_pattern_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:45.006Z",
+      "etag": "\"baba502fcb95322308363de4ff3c53b1\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_pattern/tile_pattern_basecolor_512.ktx2",
+      "bytes": 46124,
+      "sha256": "1f0e75adc88cc8f30f4dfe2fa84aee1729636d7acdc87ec4a5ca634799b2b7c3",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_pattern/tile_pattern_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:45.179Z",
+      "etag": "\"891883d4c784ee93fbe18df07fe5465b\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_pattern/tile_pattern_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_pattern/tile_pattern_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:45.063Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_pattern/tile_pattern_normal_512.ktx2",
+      "bytes": 7071,
+      "sha256": "ae48548e5faa2dd6f89a92985674cb4c75b5f5e7297995c940213f8858b46ca6",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_pattern/tile_pattern_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:45.554Z",
+      "etag": "\"ab2273b83c74cbcb7331858b5308ab65\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_pattern/tile_pattern_roughness_512.ktx2",
+      "bytes": 40422,
+      "sha256": "21c2a2170d44631027a5bb2ae753c2e593645568885d1971e34b1e188d9d8ba7",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_pattern/tile_pattern_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:45.600Z",
+      "etag": "\"d6fbd6093aca4c2ec6a9ba8eaa2a4c97\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_pattern/tile_pattern_thumb.webp",
+      "bytes": 5468,
+      "sha256": "53c22dbf61f2b0cd4b8fdf95a51aeb11c00aaabe0fa846fc23dd7f32adcf84cd",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_pattern/tile_pattern_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:45.785Z",
+      "etag": "\"39ad8cd0368bcd7cfaedd3b2c5e3fd55\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/tile_quarry/tile_quarry_ao_512.ktx2",
+      "bytes": 1141,
+      "sha256": "8f92401623354d29376694ed1bfa9d1596d447baf87382119295099aa30f54d9",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_quarry/tile_quarry_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:30.310Z",
+      "etag": "\"2351b17af4ee9d3c0e04392cc87a74d2\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:30 GMT"
+    },
+    {
+      "file": "material/flooring/tile_quarry/tile_quarry_basecolor_512.ktx2",
+      "bytes": 48045,
+      "sha256": "2112d95452bb56c082b6ecacfbf31437af956c6c0c226ab1302207a423d0c205",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_quarry/tile_quarry_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:31.260Z",
+      "etag": "\"0d63eddc9d5f456aa7cc9c70a5fd908c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:30 GMT"
+    },
+    {
+      "file": "material/flooring/tile_quarry/tile_quarry_normal_512.ktx2",
+      "bytes": 11917,
+      "sha256": "e4a1d066742737521d68ea92c2a098ca6d8b557f76bc3f708080af64f0d4b2db",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_quarry/tile_quarry_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:30.668Z",
+      "etag": "\"fe06b76e451938fc6d6839f68e930f9a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/tile_quarry/tile_quarry_roughness_512.ktx2",
+      "bytes": 11248,
+      "sha256": "c8fbbe55ad11257ef26a6b2c7f395623bee2b6ee341c41b83c49a3b77e71f9bf",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_quarry/tile_quarry_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:34.851Z",
+      "etag": "\"458981968e98f3bc6ea1b0289cc745a1\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/tile_quarry/tile_quarry_thumb.webp",
+      "bytes": 10454,
+      "sha256": "268dd9ab815dbbbe772e01ec2f944310cbdc3bc0519cb4a4ed11059bfe42df65",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_quarry/tile_quarry_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:30.748Z",
+      "etag": "\"f542edfc71ed30fc9ba7937bb3d3d4d9\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:31 GMT"
+    },
+    {
+      "file": "material/flooring/tile_stone/tile_stone_ao_512.ktx2",
+      "bytes": 1193,
+      "sha256": "3302ff1e9272c432bf724e9ab007a701ef4ed266745260972014b4111569fa2e",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_stone/tile_stone_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.186Z",
+      "etag": "\"28da9c0bcf913cb9b85a7457daf9889c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:40 GMT"
+    },
+    {
+      "file": "material/flooring/tile_stone/tile_stone_basecolor_512.ktx2",
+      "bytes": 46490,
+      "sha256": "5d747305169245db35dd14deecc001c1378c4e4b727044749a65ae991a1a7cc7",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_stone/tile_stone_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.283Z",
+      "etag": "\"f87d9bdc6df7a84875a339b99c765ed4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:40 GMT"
+    },
+    {
+      "file": "material/flooring/tile_stone/tile_stone_normal_512.ktx2",
+      "bytes": 13218,
+      "sha256": "890d385ef8346f39777da3030d21ed0cfe42703308600dc900c3bb7633f6bbc3",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_stone/tile_stone_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.454Z",
+      "etag": "\"71dc97c6360ceacda6c491f48ef35947\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:40 GMT"
+    },
+    {
+      "file": "material/flooring/tile_stone/tile_stone_roughness_512.ktx2",
+      "bytes": 9211,
+      "sha256": "0912f23f42bc30acb3bb67787f55bd1dc0b42b307eb3a4cf1ba57f396e61ba68",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_stone/tile_stone_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.775Z",
+      "etag": "\"54edc2bcf0e29d039c94351194fe96b4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tile_stone/tile_stone_thumb.webp",
+      "bytes": 8240,
+      "sha256": "76f3d8a4d8a8362881f85ea32b03d907cf893ff65c8c9ff08db8d5ffc66e55c0",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_stone/tile_stone_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:40.881Z",
+      "etag": "\"dca43bff8bd883cccf32655fb3e7a658\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tile_terracotta/tile_terracotta_ao_512.ktx2",
+      "bytes": 1098,
+      "sha256": "f630534465d4ed9afea2115edad7e1e44bd8097391d447be3dcbd88069da6e52",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_terracotta/tile_terracotta_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.771Z",
+      "etag": "\"86ba9b6ff43d4551921103c1a3e045af\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tile_terracotta/tile_terracotta_basecolor_512.ktx2",
+      "bytes": 50395,
+      "sha256": "12750c4c8051ea4b5a142826abfbe0031b7f385733de7f4713185dec89481475",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_terracotta/tile_terracotta_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:40.974Z",
+      "etag": "\"d5ebd9938fe9c2c9d11ae84e6af02f04\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tile_terracotta/tile_terracotta_normal_512.ktx2",
+      "bytes": 8631,
+      "sha256": "4e7c1d4cc3d71322c9b8c071309bc2404b099132b17fdd9840cf5215ee30d902",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_terracotta/tile_terracotta_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:41.753Z",
+      "etag": "\"54cc5c67425d1ff1fa9afd7bf6d9519a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tile_terracotta/tile_terracotta_roughness_512.ktx2",
+      "bytes": 13100,
+      "sha256": "dab9826a884b83fa83341d179b50312cd79ff4ca230a379d850940940701f572",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_terracotta/tile_terracotta_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:41.680Z",
+      "etag": "\"d17ab4aef6d6d205db5b2f3de15b3604\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tile_terracotta/tile_terracotta_thumb.webp",
+      "bytes": 12130,
+      "sha256": "7999401cc4c5e4eed5b7807794a33c646a2314e9e5f04434c82490830c93a592",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tile_terracotta/tile_terracotta_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:41.375Z",
+      "etag": "\"8e5648c45b45a6e5e78a4678c9354a4d\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:41 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_checker/tiles_checker_ao_512.ktx2",
+      "bytes": 10141,
+      "sha256": "1ea2fee281cc5fec0b83cee4809f10d77c71eefc7ada8367cc808de08f2211f5",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_checker/tiles_checker_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:38.869Z",
+      "etag": "\"f83721772d318077d31976acf567660d\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:37 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_checker/tiles_checker_basecolor_512.ktx2",
+      "bytes": 45554,
+      "sha256": "82d37cec68b9f24036bfccab0ee2cacb50ccd8634b3ddb5494870cd56a7355e2",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_checker/tiles_checker_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.665Z",
+      "etag": "\"d2b3649a620fcf4773a1b41ceedc67ae\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:36 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_checker/tiles_checker_normal_512.ktx2",
+      "bytes": 45019,
+      "sha256": "5a1d849bb0667e2e8a4a2d2c3af9195f94713e3689e4f4e344b8c18e4e570d1e",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_checker/tiles_checker_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.550Z",
+      "etag": "\"de9be9daa50a6b6efb60fb7dc22ace05\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:37 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_checker/tiles_checker_thumb.webp",
+      "bytes": 9142,
+      "sha256": "1c582b33831e3638fc5e002a72253cf64814bff67684c1b7efec1e89cb9c24de",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_checker/tiles_checker_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:37.208Z",
+      "etag": "\"f6a6c6c34512100f855161ed0251cbb7\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:37 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_grid/tiles_grid_ao_512.ktx2",
+      "bytes": 13671,
+      "sha256": "67ce835f3361ecab60a28b1ec8814165f7db7d95dea760f86b3e8d90aa2e4298",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_grid/tiles_grid_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.557Z",
+      "etag": "\"c75d16cd98cc5894dea6bb6a9d1ae124\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:37 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_grid/tiles_grid_basecolor_512.ktx2",
+      "bytes": 47105,
+      "sha256": "3f9a05971c54aa7a77907f62f66d7543b1387e84c2982ca0f09019eb7de185de",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_grid/tiles_grid_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.370Z",
+      "etag": "\"2958035d3cae1f2ddfca844d09ff0669\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:37 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_grid/tiles_grid_normal_512.ktx2",
+      "bytes": 27049,
+      "sha256": "e01b4716e7d5340c2a8821b66dcedc4ea4aeaee4f6aac16b18095f2c686d8009",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_grid/tiles_grid_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:37.681Z",
+      "etag": "\"80688ec66b99ad761cdd60ced076f526\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:37 GMT"
+    },
+    {
+      "file": "material/flooring/tiles_grid/tiles_grid_thumb.webp",
+      "bytes": 8434,
+      "sha256": "a0ed741715d0f3709a8fc7c65713909851bee414a39a7b17e345e3e742aaf2d5",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/tiles_grid/tiles_grid_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:37.836Z",
+      "etag": "\"3d0dbefab8402851a2e0a4f1dc0fb451\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_2/wooden_ceramic_2_ao_512.ktx2",
+      "bytes": 22786,
+      "sha256": "bdffdc3d040811cd097d3e662b9659a6ea0fa2b9bd63b408a293c3ecb4430c06",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_2/wooden_ceramic_2_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.009Z",
+      "etag": "\"68f4e9a0cfb23f3e8ff16e8088b2281a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_2/wooden_ceramic_2_basecolor_512.ktx2",
+      "bytes": 45729,
+      "sha256": "164e57102aab258d0fb083b0867a461ba6d379ea962a8e690ca24ef1159c6168",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_2/wooden_ceramic_2_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.481Z",
+      "etag": "\"03eaa272f00e89607c6f8e8f177e9681\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:45 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_2/wooden_ceramic_2_normal_512.ktx2",
+      "bytes": 219405,
+      "sha256": "abdc455c750d59a7f0a594e6827686e578b0281a55c0c6e54ad5dcc7e864654b",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_2/wooden_ceramic_2_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.811Z",
+      "etag": "\"d32b60383cc1695479451756f880c3ef\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:46 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_2/wooden_ceramic_2_thumb.webp",
+      "bytes": 6990,
+      "sha256": "ac8689adfedd12e5d6bae1cc34c4b520f0595325939353e89156a6dc8ebb1803",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_2/wooden_ceramic_2_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:46.345Z",
+      "etag": "\"4e171f25ce2a4ce184eb53395a059754\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:46 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_3/wooden_ceramic_3_ao_512.ktx2",
+      "bytes": 15599,
+      "sha256": "f08fbe96e4ed0a3f9c01c6932500a803a4b11a04ae67f52091375a040fd12f92",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_3/wooden_ceramic_3_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:38.315Z",
+      "etag": "\"b11c13c111d1410005f2aaf5b25ddf8a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_3/wooden_ceramic_3_basecolor_512.ktx2",
+      "bytes": 48214,
+      "sha256": "1ab36d198f76664a9ec4f914539d6cfd70013c26cdaf2063d24d54a1c377b4b7",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_3/wooden_ceramic_3_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:38.957Z",
+      "etag": "\"da532fbbbc3197464d641d365d173a9a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_3/wooden_ceramic_3_normal_512.ktx2",
+      "bytes": 237515,
+      "sha256": "810c39256a1417fdb6781c9d69393989af5e8450eec857eba011b0333294873b",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_3/wooden_ceramic_3_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:43.855Z",
+      "etag": "\"f8cc6049d45f43796f220399fbe88a42\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/wooden_ceramic_3/wooden_ceramic_3_thumb.webp",
+      "bytes": 7736,
+      "sha256": "0288727e18f69c7676c4386d4f840a6fb7748d781e19f64cde0984038e986fbb",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/wooden_ceramic_3/wooden_ceramic_3_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:38.520Z",
+      "etag": "\"6978706bde8e573071f328a93a075202\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:38 GMT"
+    },
+    {
+      "file": "material/flooring/woodparquet/woodparquet_ao_512.ktx2",
+      "bytes": 11224,
+      "sha256": "78298c353040476a476f0ff8a6bc0bcaa77d3fd7931b6aefcdb2596eb4cb9bde",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/woodparquet/woodparquet_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.163Z",
+      "etag": "\"a3908551a78aa44ec51e163e4924fd07\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:46 GMT"
+    },
+    {
+      "file": "material/flooring/woodparquet/woodparquet_basecolor_512.ktx2",
+      "bytes": 46717,
+      "sha256": "2945d7d2dab4ba15f25ee60c4caaedf5068b1abcc3c278aa348956a0ba03086a",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/woodparquet/woodparquet_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.666Z",
+      "etag": "\"fd73115b6f2a35c664d367492589f330\"",
+      "lastModified": "Thu, 08 Oct 2026 12:03:35 GMT"
+    },
+    {
+      "file": "material/flooring/woodparquet/woodparquet_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/woodparquet/woodparquet_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.265Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:46 GMT"
+    },
+    {
+      "file": "material/flooring/woodparquet/woodparquet_normal_512.ktx2",
+      "bytes": 5602,
+      "sha256": "33ec7373919c1372fc11db0023141e3fe2e4d9528e8b62f96f25fc87a81c38bc",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/woodparquet/woodparquet_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:50.593Z",
+      "etag": "\"7ae3e4a094256d1298c057b5bd2cfe07\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:46 GMT"
+    },
+    {
+      "file": "material/flooring/woodparquet/woodparquet_roughness_512.ktx2",
+      "bytes": 5570,
+      "sha256": "7655d01de8e0d906b3545ac5a5911474817e169d08021cabf132b29703726829",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/woodparquet/woodparquet_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.606Z",
+      "etag": "\"65b47cd69620ab1999e883cff3de0324\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/flooring/woodparquet/woodparquet_thumb.webp",
+      "bytes": 4918,
+      "sha256": "9343f9770db95d7e8491d521a4bb6e88b9a8a93a7a46185df4d677de5b669e20",
+      "sourceUrl": "https://editor.pascal.app/material/flooring/woodparquet/woodparquet_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:47.221Z",
+      "etag": "\"c1cb1a4c3a2bcbab90bdbafc62f97a85\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/leather/black_leather/black_leather_basecolor_512.ktx2",
+      "bytes": 27862,
+      "sha256": "ba7606acd1aaa04c243bd2a23e5c0614cf34bfd0d02e13e9f98ec981453079af",
+      "upstreamPath": "apps/editor/public/material/leather/black_leather/black_leather_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/leather/black_leather/black_leather_normal_512.ktx2",
+      "bytes": 318466,
+      "sha256": "c2e1cba2d5737cec4a71bc53f272a74bc0e03c8232a3a2152ebbd636fa63be1a",
+      "upstreamPath": "apps/editor/public/material/leather/black_leather/black_leather_normal_512.ktx2"
+    },
+    {
+      "file": "material/leather/black_leather/black_leather_roughness_512.ktx2",
+      "bytes": 43294,
+      "sha256": "28b5fa6e76fce767548e701b68d8c3edcfd29634242d4eece0d9417337cc06de",
+      "upstreamPath": "apps/editor/public/material/leather/black_leather/black_leather_roughness_512.ktx2"
+    },
+    {
+      "file": "material/leather/black_leather/black_leather_thumb.webp",
+      "bytes": 266,
+      "sha256": "e3dbb918730e83f9956a5dddded4973738e62c2e45e98de3295a71dbcdd4d67a",
+      "upstreamPath": "apps/editor/public/material/leather/black_leather/black_leather_thumb.webp"
+    },
+    {
+      "file": "material/leather/calf_leather/calf_leather_ao_512.ktx2",
+      "bytes": 45148,
+      "sha256": "81cd87f15b413404c0bff5c2254c3d53ff20120f40f4ef0077f20acb2f10a4fa",
+      "upstreamPath": "apps/editor/public/material/leather/calf_leather/calf_leather_ao_512.ktx2"
+    },
+    {
+      "file": "material/leather/calf_leather/calf_leather_basecolor_512.ktx2",
+      "bytes": 34726,
+      "sha256": "ffc6c9486da505d043672e3cc25c47d93e24f90e7e88f37bad942209334d8217",
+      "upstreamPath": "apps/editor/public/material/leather/calf_leather/calf_leather_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/leather/calf_leather/calf_leather_normal_512.ktx2",
+      "bytes": 315854,
+      "sha256": "1e96df635d523bf95a3133f1c317c9d91cc6ccbfc329a5a55cd6e30d8a63d0ce",
+      "upstreamPath": "apps/editor/public/material/leather/calf_leather/calf_leather_normal_512.ktx2"
+    },
+    {
+      "file": "material/leather/calf_leather/calf_leather_roughness_512.ktx2",
+      "bytes": 40870,
+      "sha256": "7e621ab75e6b2a7f36a0198ca8da91b787c22817b9a94c553df09adb80f982b3",
+      "upstreamPath": "apps/editor/public/material/leather/calf_leather/calf_leather_roughness_512.ktx2"
+    },
+    {
+      "file": "material/leather/calf_leather/calf_leather_thumb.webp",
+      "bytes": 1420,
+      "sha256": "d0331d4824c81a5aa4a727a93e2d5469490f74a0bd6f782013f1ddfc986c8754",
+      "upstreamPath": "apps/editor/public/material/leather/calf_leather/calf_leather_thumb.webp"
+    },
+    {
+      "file": "material/metal/copper_metal/copper_metal_basecolor_512.ktx2",
+      "bytes": 32637,
+      "sha256": "65553b374ab90db673c7a1db9b99248d27144d02b8c04473cc7e8698c09aa292",
+      "upstreamPath": "apps/editor/public/material/metal/copper_metal/copper_metal_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/metal/copper_metal/copper_metal_metallic_512.ktx2",
+      "bytes": 973,
+      "sha256": "0502828509fff26d63bf56dcbc35bc6397e48a5908382b23eec4f94d239a9d43",
+      "upstreamPath": "apps/editor/public/material/metal/copper_metal/copper_metal_metallic_512.ktx2"
+    },
+    {
+      "file": "material/metal/copper_metal/copper_metal_normal_512.ktx2",
+      "bytes": 205187,
+      "sha256": "9a9e548f5b36ffd253564d0da854a1d460421b83d65485fa14843a1881c9b5bf",
+      "upstreamPath": "apps/editor/public/material/metal/copper_metal/copper_metal_normal_512.ktx2"
+    },
+    {
+      "file": "material/metal/copper_metal/copper_metal_roughness_512.ktx2",
+      "bytes": 34418,
+      "sha256": "da827b2205babef37172a0616ebac5a298222ff819fa293103f04117567fbba9",
+      "upstreamPath": "apps/editor/public/material/metal/copper_metal/copper_metal_roughness_512.ktx2"
+    },
+    {
+      "file": "material/metal/copper_metal/copper_metal_thumb.webp",
+      "bytes": 978,
+      "sha256": "59a29bcd00ba542552acff4f83bb0cc3135cd0a5601bcbdacd1c468d1144b3b9",
+      "upstreamPath": "apps/editor/public/material/metal/copper_metal/copper_metal_thumb.webp"
+    },
+    {
+      "file": "material/metal/polished_metal/polished_metal_ao_512.ktx2",
+      "bytes": 45274,
+      "sha256": "15b792e5a40303050d80f9257bb8952c1a4d3bd0bcd9f11cb8c049cab633072c",
+      "upstreamPath": "apps/editor/public/material/metal/polished_metal/polished_metal_ao_512.ktx2"
+    },
+    {
+      "file": "material/metal/polished_metal/polished_metal_basecolor_512.ktx2",
+      "bytes": 30878,
+      "sha256": "3a556f08bea992937a81b5da9af0a2921edc51cead85617fb5827aaf6195e1af",
+      "upstreamPath": "apps/editor/public/material/metal/polished_metal/polished_metal_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/metal/polished_metal/polished_metal_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "c35296b878e849b949d0accd1d3d29519dad4f177972a57bcb22dca2587449d9",
+      "upstreamPath": "apps/editor/public/material/metal/polished_metal/polished_metal_metallic_512.ktx2"
+    },
+    {
+      "file": "material/metal/polished_metal/polished_metal_normal_512.ktx2",
+      "bytes": 188663,
+      "sha256": "891ac09d7b1ce04ffd68ef2253cc21a7e51153185accc94e771758af29c46af2",
+      "upstreamPath": "apps/editor/public/material/metal/polished_metal/polished_metal_normal_512.ktx2"
+    },
+    {
+      "file": "material/metal/polished_metal/polished_metal_roughness_512.ktx2",
+      "bytes": 26450,
+      "sha256": "b7c6b70bb85c7ff77d5ecfdcc797e74449f7a955c8b84135327fb7a08e8329b3",
+      "upstreamPath": "apps/editor/public/material/metal/polished_metal/polished_metal_roughness_512.ktx2"
+    },
+    {
+      "file": "material/metal/polished_metal/polished_metal_thumb.webp",
+      "bytes": 902,
+      "sha256": "5dca5835526ae782535de4730e8f9999734405e521f5a747f038c16e4a7fac29",
+      "upstreamPath": "apps/editor/public/material/metal/polished_metal/polished_metal_thumb.webp"
+    },
+    {
+      "file": "material/metal/stainless_steel_brushed/stainless_steel_brushed_basecolor_512.ktx2",
+      "bytes": 965,
+      "sha256": "704b58e58bb79654ec20f8ef21e880f6dafc1401323f0e767fa9fa4c1311aef9",
+      "upstreamPath": "apps/editor/public/material/metal/stainless_steel_brushed/stainless_steel_brushed_basecolor_512.ktx2"
+    },
+    {
+      "file": "material/metal/stainless_steel_brushed/stainless_steel_brushed_normal_512.ktx2",
+      "bytes": 198002,
+      "sha256": "00f94ba135a2d2adb3af90a5e678ecfa7e2b1a2a4580cb9656a80dccbbc62132",
+      "upstreamPath": "apps/editor/public/material/metal/stainless_steel_brushed/stainless_steel_brushed_normal_512.ktx2"
+    },
+    {
+      "file": "material/metal/stainless_steel_brushed/stainless_steel_brushed_roughness_512.ktx2",
+      "bytes": 91398,
+      "sha256": "5b5c350106d2e44f162378ed13e3f169969d6c9d33525837600ac57c5b0957e7",
+      "upstreamPath": "apps/editor/public/material/metal/stainless_steel_brushed/stainless_steel_brushed_roughness_512.ktx2"
+    },
+    {
+      "file": "material/metal/stainless_steel_brushed/stainless_steel_brushed_thumb.webp",
+      "bytes": 178,
+      "sha256": "73732575b6572580fcc3d5fa2c83640baf8047f3320dfc51e834380e4061d3fc",
+      "upstreamPath": "apps/editor/public/material/metal/stainless_steel_brushed/stainless_steel_brushed_thumb.webp"
+    },
+    {
+      "file": "material/roofing/roof_shingles_classic/roof_shingles_classic_ao_512.ktx2",
+      "bytes": 29483,
+      "sha256": "9a75b99b59f2954236c97efcff9feff3a616df4bf79bc1506ecf3efa020fd3a6",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_classic/roof_shingles_classic_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:47.622Z",
+      "etag": "\"bd05c60974fa36bea502b47a33390df4\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_classic/roof_shingles_classic_basecolor_512.ktx2",
+      "bytes": 36781,
+      "sha256": "386984790a6659bda672310783eb3e57a773609b6d73fd05010159d2b59fb839",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_classic/roof_shingles_classic_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:48.667Z",
+      "etag": "\"3e2abf5bb4dbeb639a660c008ae60bea\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_classic/roof_shingles_classic_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_classic/roof_shingles_classic_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:46.957Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_classic/roof_shingles_classic_normal_512.ktx2",
+      "bytes": 253085,
+      "sha256": "2b9c4bf9c2a4694a449bd9badd4929263a7cc5e289ad24cc5aa011b45ace420f",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_classic/roof_shingles_classic_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:52.681Z",
+      "etag": "\"7ba9a240c5f3fc0393dade85a5ce56bd\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_classic/roof_shingles_classic_roughness_512.ktx2",
+      "bytes": 32454,
+      "sha256": "513faba8915caa263ffbe1a03ef456d9f479758ba1700bf2c7df946eee48f3aa",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_classic/roof_shingles_classic_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:47.426Z",
+      "etag": "\"d5a892d31fcb14f5a10c37edc535598e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_classic/roof_shingles_classic_thumb.webp",
+      "bytes": 2398,
+      "sha256": "d3b10f3fa02edd1ddb1d25d545bbcb9c7f1c0faf46b2f38da7efd94ed1d935ce",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_classic/roof_shingles_classic_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:47.451Z",
+      "etag": "\"1d8cd9f58ba74f3a6caad8b825c7bf05\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:47 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_weathered/roof_shingles_weathered_ao_512.ktx2",
+      "bytes": 25007,
+      "sha256": "1bef58c8f62769b38c670605c4fc5a14aaa29f50151bc3a589e4ffb7a6c291b4",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_weathered/roof_shingles_weathered_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:51.181Z",
+      "etag": "\"ead3fe8a748e0af7321cec9c7f2c4267\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:50 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_weathered/roof_shingles_weathered_basecolor_512.ktx2",
+      "bytes": 33140,
+      "sha256": "45aa9ad8476f774b6cdc51e2a140252a37a603e0bfc0984ef4de78e943c69815",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_weathered/roof_shingles_weathered_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:50.712Z",
+      "etag": "\"c2ee27685a05678bd2018a6b9ed3dcdd\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:50 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_weathered/roof_shingles_weathered_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_weathered/roof_shingles_weathered_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:50.873Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:51 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_weathered/roof_shingles_weathered_normal_512.ktx2",
+      "bytes": 239180,
+      "sha256": "3ff4ab0989f2f00e63af7856672e203a3a132f2b58b743e9c766aff92414d497",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_weathered/roof_shingles_weathered_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:54.405Z",
+      "etag": "\"0911bcb1c45ac2bc652705d80c1dc756\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:51 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_weathered/roof_shingles_weathered_roughness_512.ktx2",
+      "bytes": 27703,
+      "sha256": "40aff99193db6d1227a366bfe72a5fffd29976e9bc8694a2ae93266e476ef35c",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_weathered/roof_shingles_weathered_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:51.451Z",
+      "etag": "\"22d748b0dffba2795ef2a45056d00cad\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:51 GMT"
+    },
+    {
+      "file": "material/roofing/roof_shingles_weathered/roof_shingles_weathered_thumb.webp",
+      "bytes": 2292,
+      "sha256": "984722f13053f8b37a11eba196a5c3f3fa3060dc21f1b18e2c760dbdafd9b8e2",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_shingles_weathered/roof_shingles_weathered_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:52.578Z",
+      "etag": "\"eb9a384ca9e28f3361e02f14edec6350\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:52 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_clay/roof_tiles_clay_ao_512.ktx2",
+      "bytes": 39414,
+      "sha256": "de9f0f7674107bd8d1071f01db0303324ab44024b8b00a367fc6ccdd8acd3f8c",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_clay/roof_tiles_clay_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:48.053Z",
+      "etag": "\"5c9d09c6b7b54c8525725f9a8d8497de\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:48 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_clay/roof_tiles_clay_basecolor_512.ktx2",
+      "bytes": 29902,
+      "sha256": "40934cee8aec208d2063658f884950eabf365df9c10137855b00d2ad263b80ea",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_clay/roof_tiles_clay_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:48.937Z",
+      "etag": "\"52db2d12edfcdd4307cfc9135f78f903\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:48 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_clay/roof_tiles_clay_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_clay/roof_tiles_clay_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:47.821Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:48 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_clay/roof_tiles_clay_normal_512.ktx2",
+      "bytes": 206171,
+      "sha256": "ea34b0b8633840880c415574e1229ae99679977ae481fb1c1cb17499bdc9825b",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_clay/roof_tiles_clay_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:51.951Z",
+      "etag": "\"cbe3a2ace808b10c201d0205eae849f8\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:48 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_clay/roof_tiles_clay_roughness_512.ktx2",
+      "bytes": 30251,
+      "sha256": "b5646a084fa351c9d247c4c248c4f7f87979586572ceeba3ad63abc88dcc63de",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_clay/roof_tiles_clay_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:48.499Z",
+      "etag": "\"fe33326ee8b27a701e7f475a758c33d3\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:48 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_clay/roof_tiles_clay_thumb.webp",
+      "bytes": 2256,
+      "sha256": "2e1b7a0514b5f8be5ef899b86a40819d7b42a2a0b1f5e6402b3c3034300da813",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_clay/roof_tiles_clay_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:49.601Z",
+      "etag": "\"e239576757a431591f0bff68a76019c3\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:48 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_ao_512.ktx2",
+      "bytes": 11870,
+      "sha256": "c3c5e34bacc08dbcabc25d55a905c4e38a0344bea4cdd4bfa9d571d7e38cb22d",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:49.763Z",
+      "etag": "\"7d31ec22eaf52f6645956131e7bc6390\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:05 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_basecolor_512.ktx2",
+      "bytes": 9054,
+      "sha256": "679394ca31ae4928caf65d68496752bab469ad4e6c4d30b5aa6c15f801b042a2",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:49.207Z",
+      "etag": "\"1a8b80f2a51f2735f1b97070764328c8\"",
+      "lastModified": "Thu, 08 Oct 2026 04:24:57 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:49.195Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:05 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_normal_512.ktx2",
+      "bytes": 39686,
+      "sha256": "546693e57acb96038647aa8e032aa0027321719a70b64aaaafd3558536657498",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:51.326Z",
+      "etag": "\"4a13f2ce79ec7a95cfd237757d965e57\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:05 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_roughness_512.ktx2",
+      "bytes": 8292,
+      "sha256": "9aa17c23633c0e1c4d110a4a363c191cc320a1954414a73076a01671f97df647",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:49.643Z",
+      "etag": "\"5e17e58ac261404ac60d5a3b6c1fbc29\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:05 GMT"
+    },
+    {
+      "file": "material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_thumb.webp",
+      "bytes": 898,
+      "sha256": "41ef59d825e20e6f22e8a440d58b0f698f8d238a9b3231ad6cf9fa7a573697ad",
+      "sourceUrl": "https://editor.pascal.app/material/roofing/roof_tiles_terracotta/roof_tiles_terracotta_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:50.138Z",
+      "etag": "\"d32a62983b94830b293e5ced328956df\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:50 GMT"
+    },
+    {
+      "file": "material/wood/finewood_27/finewood_27_ao_512.ktx2",
+      "bytes": 4990,
+      "sha256": "b44aa990a6a0b96ad4cf422925c9b56f2c87d9a21b9cc5f40be07f55204d1e71",
+      "sourceUrl": "https://editor.pascal.app/material/wood/finewood_27/finewood_27_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.138Z",
+      "etag": "\"bf00cd498242f9f8b7a98b8f9d2bc851\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:19 GMT"
+    },
+    {
+      "file": "material/wood/finewood_27/finewood_27_basecolor_512.ktx2",
+      "bytes": 35211,
+      "sha256": "95df73d068a653ff9607232d12ed00258ceb0721bf822b3b4b2ffc96c09a4235",
+      "sourceUrl": "https://editor.pascal.app/material/wood/finewood_27/finewood_27_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.725Z",
+      "etag": "\"c99523929ecb0e81feca0a1f1096aa6e\"",
+      "lastModified": "Thu, 08 Oct 2026 04:24:58 GMT"
+    },
+    {
+      "file": "material/wood/finewood_27/finewood_27_normal_512.ktx2",
+      "bytes": 83488,
+      "sha256": "3ac5bc6cd03d31d02f5fe3ec2416ec2b1639bbc5d72ba05fe4ad198e464a5b7f",
+      "sourceUrl": "https://editor.pascal.app/material/wood/finewood_27/finewood_27_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:19.632Z",
+      "etag": "\"3d7fa300d17f08cd44629fc052cb7993\"",
+      "lastModified": "Thu, 08 Oct 2026 04:25:58 GMT"
+    },
+    {
+      "file": "material/wood/finewood_27/finewood_27_roughness_512.ktx2",
+      "bytes": 6216,
+      "sha256": "3479f7642116d47c5f49ced0640b3c1f618d5687326d41ee4d29c4ffbc8cfec4",
+      "sourceUrl": "https://editor.pascal.app/material/wood/finewood_27/finewood_27_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:19.991Z",
+      "etag": "\"9b9f6ba120a44003d9b1609186d8c5e3\"",
+      "lastModified": "Thu, 08 Oct 2026 04:25:58 GMT"
+    },
+    {
+      "file": "material/wood/finewood_27/finewood_27_thumb.webp",
+      "bytes": 1824,
+      "sha256": "ee029993881cc15f3a4eb1e63d95cd81a76af348edf952b94a41196645d28801",
+      "sourceUrl": "https://editor.pascal.app/material/wood/finewood_27/finewood_27_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:19.856Z",
+      "etag": "\"27f24adaef5cd13258b5cc2479b893d2\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/floor_plank_1/floor_plank_1_ao_512.ktx2",
+      "bytes": 37718,
+      "sha256": "06df57b9622b47f456ed726af53b5f732f9a8930541a927642621293552a1158",
+      "sourceUrl": "https://editor.pascal.app/material/wood/floor_plank_1/floor_plank_1_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:19.751Z",
+      "etag": "\"0824623961342186702cd86fb1057f87\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:19 GMT"
+    },
+    {
+      "file": "material/wood/floor_plank_1/floor_plank_1_basecolor_512.ktx2",
+      "bytes": 52357,
+      "sha256": "79c018c6c3e5d3b6f4a24e8567319e96a75ca252833cb41a8e89180a5ec0d76d",
+      "sourceUrl": "https://editor.pascal.app/material/wood/floor_plank_1/floor_plank_1_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.270Z",
+      "etag": "\"f508720f5fb53c90544128fa4978c6f9\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/floor_plank_1/floor_plank_1_normal_512.ktx2",
+      "bytes": 147189,
+      "sha256": "76f28a8cffba76c2253ebc38ff2668693093fa435a072578e8192343660f1286",
+      "sourceUrl": "https://editor.pascal.app/material/wood/floor_plank_1/floor_plank_1_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:24.852Z",
+      "etag": "\"07bbffd4b46cabc34ce8b63523fa3d96\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/floor_plank_1/floor_plank_1_thumb.webp",
+      "bytes": 14784,
+      "sha256": "2bef8656fa535466a9df1d516ccdfbc3dbcce50a03fd27dde9d369b3e006cb62",
+      "sourceUrl": "https://editor.pascal.app/material/wood/floor_plank_1/floor_plank_1_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:20.127Z",
+      "etag": "\"5c45b807036d862644accb4b5fde5bbf\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_10/hungarian_parquet_10_basecolor_512.ktx2",
+      "bytes": 47992,
+      "sha256": "5fd8f548fe1f6e7fde6ec29ced9021a130f70de99f7a6455df72a1cd37e3f8c8",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_10/hungarian_parquet_10_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.953Z",
+      "etag": "\"4cbd89aa3ecad679829bee52c6d9d3f2\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_10/hungarian_parquet_10_normal_512.ktx2",
+      "bytes": 57898,
+      "sha256": "01940d7ec9b04fbb4df5f4a4fe9c0784e61824bdd062bb8c16af35b7d01372cb",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_10/hungarian_parquet_10_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.313Z",
+      "etag": "\"0e141adb832085c03a11db00f68aaff9\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_10/hungarian_parquet_10_roughness_512.ktx2",
+      "bytes": 964,
+      "sha256": "40ae0184be8eb8612ec667f1bdc9d07ea3242839c11a622a573880cb84618e3e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_10/hungarian_parquet_10_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.378Z",
+      "etag": "\"761df98c07a04852fa37ea66dfd681af\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_10/hungarian_parquet_10_thumb.webp",
+      "bytes": 8378,
+      "sha256": "d37f20fe7e3b37eb50a22b7f565b292b0f66f34f90a713b6844129b4bc920bac",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_10/hungarian_parquet_10_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:20.622Z",
+      "etag": "\"79ccb5931fbbbf9433abfcf44a89490e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:20 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_2/hungarian_parquet_2_basecolor_512.ktx2",
+      "bytes": 40363,
+      "sha256": "5d08df0ffe0f91bc1396d7a222af1acb184e6d326f65bf2c91891e61b0faac1e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_2/hungarian_parquet_2_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.810Z",
+      "etag": "\"c4bb77d746121abdd0ce450b44e41906\"",
+      "lastModified": "Thu, 08 Oct 2026 04:24:58 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_2/hungarian_parquet_2_normal_512.ktx2",
+      "bytes": 50444,
+      "sha256": "5c9fa85fd65e377c0fc74b6b61998288df4880e9f0439750ca99d0425bf784e6",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_2/hungarian_parquet_2_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.104Z",
+      "etag": "\"afecd2687ff83e7e1fd580d7476f977f\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:00 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_2/hungarian_parquet_2_roughness_512.ktx2",
+      "bytes": 964,
+      "sha256": "40ae0184be8eb8612ec667f1bdc9d07ea3242839c11a622a573880cb84618e3e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_2/hungarian_parquet_2_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:20.847Z",
+      "etag": "\"761df98c07a04852fa37ea66dfd681af\"",
+      "lastModified": "Thu, 08 Oct 2026 10:51:10 GMT"
+    },
+    {
+      "file": "material/wood/hungarian_parquet_2/hungarian_parquet_2_thumb.webp",
+      "bytes": 3086,
+      "sha256": "52ed8e1905444bfb12106c3a1d8278e4bb9fc29be3e698964c1fdc4b5c09332f",
+      "sourceUrl": "https://editor.pascal.app/material/wood/hungarian_parquet_2/hungarian_parquet_2_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:21.106Z",
+      "etag": "\"5063aa45f3fe2101fd28803768078ff7\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:21 GMT"
+    },
+    {
+      "file": "material/wood/square_parquet_21/square_parquet_21_basecolor_512.ktx2",
+      "bytes": 41997,
+      "sha256": "a2a27aa7f5986b86b35283fcbefa350767f079ab909f83f2504c38f633ee15f3",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_parquet_21/square_parquet_21_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.625Z",
+      "etag": "\"4df4d41edf2009e9a1f45c88d513454e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:21 GMT"
+    },
+    {
+      "file": "material/wood/square_parquet_21/square_parquet_21_normal_512.ktx2",
+      "bytes": 29198,
+      "sha256": "b73c4fadcb9ac75bf410f132d3c9217206d067ba8a75d35048858080dcec85c1",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_parquet_21/square_parquet_21_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.923Z",
+      "etag": "\"f7e1ebaa12ef8ff81649074f9fe6fdaa\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:21 GMT"
+    },
+    {
+      "file": "material/wood/square_parquet_21/square_parquet_21_roughness_512.ktx2",
+      "bytes": 964,
+      "sha256": "40ae0184be8eb8612ec667f1bdc9d07ea3242839c11a622a573880cb84618e3e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_parquet_21/square_parquet_21_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.583Z",
+      "etag": "\"761df98c07a04852fa37ea66dfd681af\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:21 GMT"
+    },
+    {
+      "file": "material/wood/square_parquet_21/square_parquet_21_thumb.webp",
+      "bytes": 3240,
+      "sha256": "15f20097244d8cbb897cc3c172c63320a0cd06ed49c7df1eeb1a3d29ca156704",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_parquet_21/square_parquet_21_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:21.681Z",
+      "etag": "\"2c258989394c0245b5a48001a9d28c13\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:21 GMT"
+    },
+    {
+      "file": "material/wood/square_wood_parquet_23/square_wood_parquet_23_basecolor_512.ktx2",
+      "bytes": 46690,
+      "sha256": "2371795c19f7076373d3a3f64898f4886d288594782b0b4c298ff8e35096773e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_wood_parquet_23/square_wood_parquet_23_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.665Z",
+      "etag": "\"55b2bcede17efcbb2f11835584345170\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:00 GMT"
+    },
+    {
+      "file": "material/wood/square_wood_parquet_23/square_wood_parquet_23_normal_512.ktx2",
+      "bytes": 28703,
+      "sha256": "84ab04ce45f743af1fc232c9f6cde42369a64709698fdc4c11519666e555b740",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_wood_parquet_23/square_wood_parquet_23_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.883Z",
+      "etag": "\"96bc375911e9f85e214d17d8a63d3599\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:21 GMT"
+    },
+    {
+      "file": "material/wood/square_wood_parquet_23/square_wood_parquet_23_roughness_512.ktx2",
+      "bytes": 964,
+      "sha256": "40ae0184be8eb8612ec667f1bdc9d07ea3242839c11a622a573880cb84618e3e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_wood_parquet_23/square_wood_parquet_23_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:21.653Z",
+      "etag": "\"761df98c07a04852fa37ea66dfd681af\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:00 GMT"
+    },
+    {
+      "file": "material/wood/square_wood_parquet_23/square_wood_parquet_23_thumb.webp",
+      "bytes": 7092,
+      "sha256": "13ff50d4b1aabaf701b95db701e6ae3f6173e02a59bf5a2d0f1529d27a5d769f",
+      "sourceUrl": "https://editor.pascal.app/material/wood/square_wood_parquet_23/square_wood_parquet_23_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:22.349Z",
+      "etag": "\"65962b4f7862f9fe1bd30717d3dc6b12\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:22 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_11/wood_fine_11_ao_512.ktx2",
+      "bytes": 37044,
+      "sha256": "6c8ad06af54313e48e2c7d97f3206c6c7b3c389270bccfaefe6078abbc4b3a33",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_11/wood_fine_11_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:22.702Z",
+      "etag": "\"8934616c7bfb16d0603efa25758476e5\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:22 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_11/wood_fine_11_basecolor_512.ktx2",
+      "bytes": 41319,
+      "sha256": "e21d2ced185d5e6b7625548fa7fc5d29d5bc985168fbb7fce1f77375d26f3723",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_11/wood_fine_11_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:22.277Z",
+      "etag": "\"5054bc09c04dfebda01269af1dc95568\"",
+      "lastModified": "Thu, 08 Oct 2026 07:31:56 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_11/wood_fine_11_normal_512.ktx2",
+      "bytes": 92982,
+      "sha256": "fc402ed4e5aa4ff6dc4b3410fb9dc47c801de4893bdd52f0908e6aba5cdb6e87",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_11/wood_fine_11_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.263Z",
+      "etag": "\"a4f864fc947fe64f3e6f49fa8571cb68\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:23 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_11/wood_fine_11_thumb.webp",
+      "bytes": 4482,
+      "sha256": "592f5704bb4a5fdad18155f53a7fbfa2b9bd81b7b9a7e36ff8983ca2ebd81337",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_11/wood_fine_11_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:23.647Z",
+      "etag": "\"9f6794c0106665c19f2a5c135dd2e583\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:23 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_13/wood_fine_13_ao_512.ktx2",
+      "bytes": 31188,
+      "sha256": "8fafb8a923070baa60139b2998def122a320ffeb287d69b0356c0d0371c0b14e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_13/wood_fine_13_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:23.266Z",
+      "etag": "\"e60bea89ac4e1da6901fe203559cc53f\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:23 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_13/wood_fine_13_basecolor_512.ktx2",
+      "bytes": 46666,
+      "sha256": "3f40511abefb69ee49ecace33c92dd95f0678ad4c45787c8f9ccbe6967f4501a",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_13/wood_fine_13_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:23.912Z",
+      "etag": "\"1e6737897a498ebfc4e363e2749a0896\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:23 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_13/wood_fine_13_normal_512.ktx2",
+      "bytes": 243788,
+      "sha256": "ae3f266c8bc0c06299e035d486b856f93475702df86f111fe56d730b180ae2cf",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_13/wood_fine_13_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:24.758Z",
+      "etag": "\"1c721122a1f79164c340403962b0c078\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:23 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_13/wood_fine_13_thumb.webp",
+      "bytes": 9774,
+      "sha256": "94f31d163a03e0e3a7f3bd8edb74f7afcc96c94f725e9c79413921e24d6293e6",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_13/wood_fine_13_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:24.156Z",
+      "etag": "\"c2abace6707283cd702dd2cd6c5d0983\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:24 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_2/wood_fine_2_ao_512.ktx2",
+      "bytes": 11094,
+      "sha256": "50f8e1cf1370d42b67b5edd7c5aa523cfb1af71397573f6efbdb1560b180f943",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_2/wood_fine_2_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:24.188Z",
+      "etag": "\"4e665824da780b3e9de5cff4b805d4b2\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_2/wood_fine_2_basecolor_512.ktx2",
+      "bytes": 40701,
+      "sha256": "77238779a97083dbe6205e6dd08af815f12e9afa1a02811d11ff162fd9fc109d",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_2/wood_fine_2_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:23.953Z",
+      "etag": "\"d34574c35d278b0bf4a8386759ca40d9\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:24 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_2/wood_fine_2_normal_512.ktx2",
+      "bytes": 26230,
+      "sha256": "c42cf051b50d20dfbf473e3828bcf83aeb12224009f04f16a183a557da9b2e38",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_2/wood_fine_2_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:24.572Z",
+      "etag": "\"031ad487757714bf95677d992a2a6ccb\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_2/wood_fine_2_thumb.webp",
+      "bytes": 4648,
+      "sha256": "b3e1f7db0f80c7b93ec3495eeec702b9a6de44dbd3376e08c95205b9a6d04498",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_2/wood_fine_2_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:24.410Z",
+      "etag": "\"3863630e6e0d29e18696d5baf34a687c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:24 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_22/wood_fine_22_ao_512.ktx2",
+      "bytes": 38662,
+      "sha256": "7a0adef4c230f32d6699d003818fd6a7e7e47265eb611edd121bc056b901fe63",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_22/wood_fine_22_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.071Z",
+      "etag": "\"686cae9ec2cd8fdfcb93db75ae92e9b8\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_22/wood_fine_22_basecolor_512.ktx2",
+      "bytes": 50600,
+      "sha256": "a116de7538de04bd62113a031757a38fdf52038284b4ee64a977ace2ae8a3422",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_22/wood_fine_22_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.347Z",
+      "etag": "\"7251fbbd64a6d3321f7b100b94a1b2ba\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_22/wood_fine_22_normal_512.ktx2",
+      "bytes": 169155,
+      "sha256": "9a817b8b423707ebcb84cba4f2ee3fa1f5fb002111d57631886f4154b47b834f",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_22/wood_fine_22_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.677Z",
+      "etag": "\"5dfdad43fd1a708c248a9140c505cd8c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_22/wood_fine_22_thumb.webp",
+      "bytes": 12902,
+      "sha256": "2e32956c953f475ee395f608682c76758617eb9e8d3bfcd080f560859244997c",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_22/wood_fine_22_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:24.931Z",
+      "etag": "\"faefee3345afdf6a203d698103f06027\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_24/wood_fine_24_ao_512.ktx2",
+      "bytes": 8689,
+      "sha256": "5178792112ff49c2a63448f78e3821c219554b521ab31e05211ddeb7418d8841",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_24/wood_fine_24_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.317Z",
+      "etag": "\"93eed0a21c3903a124d1798079a145fe\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_24/wood_fine_24_basecolor_512.ktx2",
+      "bytes": 47570,
+      "sha256": "2a731b8de5fad4ca520752467bc8a25a57cb5b350e67491ef1ba965164bb03d0",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_24/wood_fine_24_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.404Z",
+      "etag": "\"7160132f4c0ee56393c75f436b7cc296\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_24/wood_fine_24_normal_512.ktx2",
+      "bytes": 83211,
+      "sha256": "ade91410cab5975ce4b96380443039c6b1b1f7cdcf3de7faa309c1eeee85a0d3",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_24/wood_fine_24_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.161Z",
+      "etag": "\"1105050bb307b8db4ad1a4c4b675a434\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine_24/wood_fine_24_thumb.webp",
+      "bytes": 8892,
+      "sha256": "af13424dc1565044a71c5fd3cd31fb1caa2a17b014ebbebaf3758a7c3d9aa3bb",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine_24/wood_fine_24_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:25.453Z",
+      "etag": "\"9129b6cb03f4188981dbfaa75d6d4ac3\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine/wood_fine_ao_512.ktx2",
+      "bytes": 34594,
+      "sha256": "efbb7b59774363c34bf6e79acda95f15e7a22602661544f725d650cc57a75fb0",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine/wood_fine_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:22.666Z",
+      "etag": "\"9183d0ba07b4bdb0f3af10749b9e49ca\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:22 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine/wood_fine_basecolor_512.ktx2",
+      "bytes": 50777,
+      "sha256": "755748b5b761b0439bb964e529987c329e9d11240042fd2b0e648b818ea2d4a7",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine/wood_fine_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:22.737Z",
+      "etag": "\"3a8ce7056e8f909b4b36b694131e57d1\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:22 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine/wood_fine_normal_512.ktx2",
+      "bytes": 208504,
+      "sha256": "07a423b150b636057d0a06794a0144db41f0f3a6206e904a3cbca4505ff37400",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine/wood_fine_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:23.296Z",
+      "etag": "\"e36cf31ab63c5d40212599392f4acf72\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:22 GMT"
+    },
+    {
+      "file": "material/wood/wood_fine/wood_fine_thumb.webp",
+      "bytes": 14042,
+      "sha256": "21a51c2e720689d215e5cde9edb5ddffd96db3a1559bda53b9fd6f203e94b4c6",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_fine/wood_fine_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:24.226Z",
+      "etag": "\"d96a96329019924de44d80616740ac2d\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:22 GMT"
+    },
+    {
+      "file": "material/wood/wood_parquet_14/wood_parquet_14_ao_512.ktx2",
+      "bytes": 5474,
+      "sha256": "ecacd8be1d354b332a237f35d40b150d4c06146e9ce71dfb72581abb7ab61df4",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_parquet_14/wood_parquet_14_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:26.066Z",
+      "etag": "\"31ca9f9bab9e8b64007ff0e3bf9aeb2c\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wood_parquet_14/wood_parquet_14_basecolor_512.ktx2",
+      "bytes": 41478,
+      "sha256": "83a0419ab49db4329236d1463644c6745c707adad17ff928286eb54d9f9ff0cd",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_parquet_14/wood_parquet_14_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.731Z",
+      "etag": "\"206ad9aa3e5c0ed345b4a450fedb0792\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:25 GMT"
+    },
+    {
+      "file": "material/wood/wood_parquet_14/wood_parquet_14_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_parquet_14/wood_parquet_14_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.772Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wood_parquet_14/wood_parquet_14_normal_512.ktx2",
+      "bytes": 15511,
+      "sha256": "c59c1279f1d30bfd59c365fa8debb16104fe115e7d27bacb6702aee151385724",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_parquet_14/wood_parquet_14_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:25.934Z",
+      "etag": "\"2776de8ad3c7d51ffb5f60b023c6b57f\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wood_parquet_14/wood_parquet_14_roughness_512.ktx2",
+      "bytes": 36988,
+      "sha256": "0cac89eaa5fffa9680339c5f3c5002b2a0dce34e88137b9363d21e4c2556a9fe",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_parquet_14/wood_parquet_14_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.108Z",
+      "etag": "\"d627d5f978c9e8ebe979c29febf2cd77\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wood_parquet_14/wood_parquet_14_thumb.webp",
+      "bytes": 3544,
+      "sha256": "b96e74b46b6bd93d6c193110a98256560ee9bb56a7ea72af4fa6dd39a680a4f5",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wood_parquet_14/wood_parquet_14_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:25.830Z",
+      "etag": "\"cb7e44ae2af03905761f1fbc46f8e576\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wooden_parquet_11/wooden_parquet_11_basecolor_512.ktx2",
+      "bytes": 46394,
+      "sha256": "99f5dd8cd8ca8573b5747d9e342aa1cb4b1b4d38a805400c7d948c13e5f2b6b1",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wooden_parquet_11/wooden_parquet_11_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.043Z",
+      "etag": "\"44208ff30143994d2857264b26d361f9\"",
+      "lastModified": "Thu, 08 Oct 2026 04:24:58 GMT"
+    },
+    {
+      "file": "material/wood/wooden_parquet_11/wooden_parquet_11_normal_512.ktx2",
+      "bytes": 46115,
+      "sha256": "66885d72df9354cf20d8ddb54546fd2d27f0d023a66f0d163f9777f53b6edc9c",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wooden_parquet_11/wooden_parquet_11_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:26.395Z",
+      "etag": "\"7d8f2ae2f30d12880ea4c43e4725af32\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wooden_parquet_11/wooden_parquet_11_roughness_512.ktx2",
+      "bytes": 4719,
+      "sha256": "5d7ef581150e9ee5e4feb7f4be38a29c90cf86628a9fc493a51265c4a95eed22",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wooden_parquet_11/wooden_parquet_11_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:26.807Z",
+      "etag": "\"e2ba90d6e2f641b3c6544158a3af9572\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/wooden_parquet_11/wooden_parquet_11_thumb.webp",
+      "bytes": 6454,
+      "sha256": "1c668aca9368dd54d2a6f28ec6a8e648fa5875bfc13da212ad722a2104b71797",
+      "sourceUrl": "https://editor.pascal.app/material/wood/wooden_parquet_11/wooden_parquet_11_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:26.775Z",
+      "etag": "\"1e4308037cf8ac0ba7cc87df14b93a17\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_121/woodparquet_121_ao_512.ktx2",
+      "bytes": 26907,
+      "sha256": "64af6e075c17e6ac914c59a650ce16803e76838198f493c6ea509c4617142c31",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_121/woodparquet_121_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.474Z",
+      "etag": "\"115adfd9d4fa93b469b76d5a575a397b\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:26 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_121/woodparquet_121_basecolor_512.ktx2",
+      "bytes": 46334,
+      "sha256": "789761272396ea6301f1491a3d4d41f16dc7d99b26f63d25d254b4d38965168e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_121/woodparquet_121_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:26.502Z",
+      "etag": "\"a885b9942b289564aac8c0d3f76bc575\"",
+      "lastModified": "Thu, 08 Oct 2026 08:22:19 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_121/woodparquet_121_normal_512.ktx2",
+      "bytes": 39781,
+      "sha256": "86d7441f45c0b2056432d53f0c050fac8d23cf3d7c9a8cf40a0b4b6a1a5b593d",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_121/woodparquet_121_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.061Z",
+      "etag": "\"d14d3b1f940cff40f5d7a66e8ddd108e\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_121/woodparquet_121_roughness_512.ktx2",
+      "bytes": 1075,
+      "sha256": "10d8a60a10caff557ac7128d1086c6e91ac81e73f930132cc6d375c0261d671a",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_121/woodparquet_121_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:26.982Z",
+      "etag": "\"abd8c6f0743676195a52da2b70778a14\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_121/woodparquet_121_thumb.webp",
+      "bytes": 8240,
+      "sha256": "d99c941a96ac3547db6359f9e9685641ce1ebc080ae426835d6dbf79ea763590",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_121/woodparquet_121_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:27.357Z",
+      "etag": "\"c95bf1432833af8139274d0baec3d6b7\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_56/woodparquet_56_ao_512.ktx2",
+      "bytes": 47890,
+      "sha256": "d90caad0137cde43950c6a01802d0db10814e4c22cf5448b147a8c4ca86f82c5",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_56/woodparquet_56_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.728Z",
+      "etag": "\"919452c5f2db5c1b2e88434de27c580a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_56/woodparquet_56_basecolor_512.ktx2",
+      "bytes": 50448,
+      "sha256": "7bcb45c65ad21d9a1b171a5c48361f3bb759e0e2b2b2a3d5219471a954b6eb3d",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_56/woodparquet_56_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.611Z",
+      "etag": "\"9743d402e0a5fa76af84216514416b73\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_56/woodparquet_56_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_56/woodparquet_56_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.461Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_56/woodparquet_56_normal_512.ktx2",
+      "bytes": 171630,
+      "sha256": "4c13be98b44bfe8f9539da6d5106f742d30d6889b8b01f80ed70b08eb4e32afa",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_56/woodparquet_56_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.719Z",
+      "etag": "\"408c3a7b2eef84e8ae8d83e0a669e1d8\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:27 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_56/woodparquet_56_roughness_512.ktx2",
+      "bytes": 17764,
+      "sha256": "3d6c2501620724b423db10b214a8399178c7cc9273832e29895cd551a7e80ac8",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_56/woodparquet_56_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:27.807Z",
+      "etag": "\"e8477a8e5ff06c3c56b4d47289505d3b\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_56/woodparquet_56_thumb.webp",
+      "bytes": 10776,
+      "sha256": "bc79c752ff28549606403af7d1d271ffc681ec6a2903d52f020d57292e917916",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_56/woodparquet_56_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:27.680Z",
+      "etag": "\"0674ce3d343f66fb4cab1175b74aae22\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_65/woodparquet_65_ao_512.ktx2",
+      "bytes": 28822,
+      "sha256": "07d964c8a6f3847713727cbb6f474e21a21f6cfde1fc59a4979d47faacade9ee",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_65/woodparquet_65_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.322Z",
+      "etag": "\"eb63a64b04a942ada7ad47cd31063fa1\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_65/woodparquet_65_basecolor_512.ktx2",
+      "bytes": 48055,
+      "sha256": "15016af33c691b9f48c6e63cbc24ca887fa6c538b39f3e5c12211e55913e80c8",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_65/woodparquet_65_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:29.365Z",
+      "etag": "\"d753c4c107f100d6d84b80e7f1e517bc\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_65/woodparquet_65_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_65/woodparquet_65_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.035Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_65/woodparquet_65_normal_512.ktx2",
+      "bytes": 101345,
+      "sha256": "8901459fe8d5bdf26a8eb816dabfe7cb8b9a1f812adf7162406ddcb5cd66a819",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_65/woodparquet_65_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.771Z",
+      "etag": "\"110134ce0eec72b2e175161337aa381f\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_65/woodparquet_65_roughness_512.ktx2",
+      "bytes": 13041,
+      "sha256": "8c37cb949f325ea716a913b2e90ddb9d793b78983933d51a68f709bed3a7e8fd",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_65/woodparquet_65_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.332Z",
+      "etag": "\"b95388ad323224d00b7299c2f00da98a\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_65/woodparquet_65_thumb.webp",
+      "bytes": 6126,
+      "sha256": "53ef4a37d403eb28c6c5a695712630b6853eedab9cc590d8251f62ac6f46bc90",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_65/woodparquet_65_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:28.155Z",
+      "etag": "\"180ef556a0e40865e7ef5f8025085571\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_99/woodparquet_99_ao_512.ktx2",
+      "bytes": 42138,
+      "sha256": "b7d3940b0976a77405f1c5df91dacd761ca1dfad829820fc616a2e9b2c30b82c",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_99/woodparquet_99_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.759Z",
+      "etag": "\"e146bd03a5d332196ca9f5a8cc18c7ac\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_99/woodparquet_99_basecolor_512.ktx2",
+      "bytes": 47360,
+      "sha256": "355e490db07d5edb43ff44a2f48e3cd5add4ec45dbd49253ce5d2c3b8aba57f2",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_99/woodparquet_99_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.576Z",
+      "etag": "\"a789af030bf3c4ccf08d102545d90b81\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:28 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_99/woodparquet_99_metallic_512.ktx2",
+      "bytes": 964,
+      "sha256": "382d7b4dcf9380767dca6ce090cc64a961a8b3dc1682552cb6fb0b2bc90b15d4",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_99/woodparquet_99_metallic_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:28.559Z",
+      "etag": "\"409b674f38c703478ee7b2c4e2282c61\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_99/woodparquet_99_normal_512.ktx2",
+      "bytes": 242980,
+      "sha256": "02669d8bfd204050c251fdfd5b405070b1d5e3c54da31e562fbb1f53cfac436b",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_99/woodparquet_99_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:30.216Z",
+      "etag": "\"a28c1acac1e47bac88fe704aa329c506\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_99/woodparquet_99_roughness_512.ktx2",
+      "bytes": 45728,
+      "sha256": "ddc586a5bc058258b4f2d75a93db631be25e29d2adce5b996cd327a62847a406",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_99/woodparquet_99_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:29.788Z",
+      "etag": "\"99b5822a9affe08d05f60fde5751a423\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodparquet_99/woodparquet_99_thumb.webp",
+      "bytes": 5714,
+      "sha256": "0a14042a52fcfc341097038d6da841d90593748957ecf9f8b2dc5cde9d13dcc8",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodparquet_99/woodparquet_99_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:29.139Z",
+      "etag": "\"4762416c6df0f3ba8231895a1fa985ec\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_19/woodplank_19_ao_512.ktx2",
+      "bytes": 7285,
+      "sha256": "0acdfcb091f345c2378b550463764c1259861ec6c446c5a7d2b1dd7eeaaa5b29",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_19/woodplank_19_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:31.197Z",
+      "etag": "\"96be8bd81cc9369d446ab857459e6409\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_19/woodplank_19_basecolor_512.ktx2",
+      "bytes": 46148,
+      "sha256": "457750d95168b746f74bd0e0e6f930cc080bcef27af3b47dd4afd340714791d6",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_19/woodplank_19_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:29.349Z",
+      "etag": "\"231ea3ad8d604361d58df1fa3a849765\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_19/woodplank_19_normal_512.ktx2",
+      "bytes": 19628,
+      "sha256": "b30bfe0026bcb605717382d851e21b6ff3e2b54635633cffb52ec717a5bb436e",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_19/woodplank_19_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:29.387Z",
+      "etag": "\"3e606cdfb2578175beec0f6381b8cbc0\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_19/woodplank_19_roughness_512.ktx2",
+      "bytes": 10776,
+      "sha256": "c6afa18f4f2a48ff1a7e6f883ad1e49e5ed6f82a43b0d4b285474ec27443653a",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_19/woodplank_19_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:29.354Z",
+      "etag": "\"cab66947e2494543fc9282800ff2b5a0\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:29 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_19/woodplank_19_thumb.webp",
+      "bytes": 6246,
+      "sha256": "10398d38938f6f883c14f60dc77ca6b5e35169e7e0a039d2146b086d960e55cc",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_19/woodplank_19_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:29.673Z",
+      "etag": "\"1aaa66c50c83c5b4bc5eb00cce0964f6\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:30 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_48/woodplank_48_ao_512.ktx2",
+      "bytes": 14299,
+      "sha256": "c1660da81a3df672cd9bcbd12530eb679e12699b1257656e8d9b04643637ab56",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_48/woodplank_48_ao_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:29.842Z",
+      "etag": "\"e1aa5f7d4823537108a48a834d59aea0\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_48/woodplank_48_basecolor_512.ktx2",
+      "bytes": 47305,
+      "sha256": "32b856fda50054e49e9ef901e1074fd9f8b95671722368c199e5324ba983e502",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_48/woodplank_48_basecolor_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:30.153Z",
+      "etag": "\"af654a1f6bd6bbba8a39d094b26d4996\"",
+      "lastModified": "Thu, 08 Oct 2026 04:24:58 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_48/woodplank_48_normal_512.ktx2",
+      "bytes": 95555,
+      "sha256": "6eee65b56efec7abe9048efe575caac7ce923b6fe053701ec1c8907095b12ebb",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_48/woodplank_48_normal_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:31.450Z",
+      "etag": "\"7ed916359dcb5f1447699d9c3d910bfb\"",
+      "lastModified": "Thu, 08 Oct 2026 04:26:01 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_48/woodplank_48_roughness_512.ktx2",
+      "bytes": 43312,
+      "sha256": "e66916ab3537ec35e413b40f47865ce6a4f9610478e9d1cd927a4d18112a4c01",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_48/woodplank_48_roughness_512.ktx2",
+      "retrievedAt": "2026-10-08T14:24:30.113Z",
+      "etag": "\"ca0b22a98e15da199f1660bfb7baff55\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:30 GMT"
+    },
+    {
+      "file": "material/wood/woodplank_48/woodplank_48_thumb.webp",
+      "bytes": 5444,
+      "sha256": "713abd3b1e6737245dce00a6864a53af2b1c096cc4623579b9b36b6cb3d5a4cf",
+      "sourceUrl": "https://editor.pascal.app/material/wood/woodplank_48/woodplank_48_thumb.webp",
+      "retrievedAt": "2026-10-08T14:24:30.225Z",
+      "etag": "\"715a35b8b4ed42d69c1bb5086d6e88f5\"",
+      "lastModified": "Thu, 08 Oct 2026 14:24:30 GMT"
+    }
+  ]
+}

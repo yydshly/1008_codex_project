@@ -1,6 +1,7 @@
 import { readFile, access, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { ROOT, readCatalog } from './catalog.mjs';
 
@@ -21,7 +22,7 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '013-aihot'], '发布允许名单仅包含 001、002 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '013-aihot'], '发布允许名单仅包含 001、002、003 与 013');
 
 // Verify the copied 001 aggregate as well as its independently validated build.
 const sandboard = path.join(site, '001-sandboard');
@@ -157,9 +158,37 @@ for (const [id, title] of aihotSections) {
 for (const key of ['capabilities', 'modules', 'pipeline', 'acquisition', 'scenarios', 'reuse', 'extensions', 'limits', 'references']) {
   assert.ok(Object.hasOwn(aihotResearch, key), `013 研究 JSON 缺少内容模块：${key}`);
 }
+// Pascal publishes its complete research route alongside the genuine editor.
+const pascal = path.join(site, '003-pascal-editor');
+const pascalHtml = await readFile(path.join(pascal, 'overview/index.html'), 'utf8');
+const pascalMetadata = readCatalog().projects.find(project => project.id === '003');
+for (const item of pascalMetadata.summaryItems) assert.ok(html.includes(`<strong>${escape(item.title)}</strong>：${escape(item.text)}`), `003 首页完整摘要缺少 ${item.title}`);
+assert.ok(html.includes('href="./003-pascal-editor/overview/"'), '003 公开入口应直接进入理解页');
+assert.ok(html.includes('src="./003-pascal-editor/research/pascal-summary.png"'), '003 首页应使用已有完整引导图');
+for (const id of ['capabilities', 'modules', 'principles', 'scenarios', 'value', 'extensions', 'evidence', 'references']) assert.ok(pascalHtml.includes(`id="${id}"`), `003 发布静态正文缺少 ${id}`);
+const pascalGuide = await readFile(path.join(pascal, 'research/pascal-summary.png'));
+assert.ok(pascalGuide.equals(await readFile(path.join(ROOT, 'projects/003-pascal-editor/assets/pascal-summary.png'))), '003 引导图必须保留原始字节');
+const manifest = JSON.parse(await readFile(path.join(pascal, 'demos/asset-manifest.json'), 'utf8'));
+assert.equal(manifest.assets.length, 460, '003 原库素材清单应完整保留');
+for (const asset of manifest.assets) {
+  const target = path.resolve(pascal, asset.file);
+  assert.ok(target.startsWith(pascal + path.sep), `003 素材路径越界 ${asset.file}`);
+  const bytes = await readFile(target);
+  assert.equal(bytes.length, asset.bytes, `003 发布素材大小错误 ${asset.file}`);
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), asset.sha256, `003 发布素材校验失败 ${asset.file}`);
+}
+await access(path.join(pascal, 'index.html'));
+await access(path.join(pascal, 'demos/house.json'));
+await access(path.join(pascal, 'demos/demo_1.json'));
+await access(path.join(pascal, 'research/research.json'));
+await access(path.join(pascal, 'research/understanding.md'));
+await access(path.join(pascal, 'LICENSE.upstream.txt'));
+
 console.log(JSON.stringify({ entrance: 'index.html', sections: sections.length, checkedInternalLinks: links.size,
   publishedProjects: publishedDirectories, preservedSandboardPages: sandboardPages.length + 1,
   interview: { requiredFiles: files.length, checkedRelativeAssets: interviewAssets, topics: topics.length,
     resourceUrls: report.summary.allUniqueResourceUrls, answers: report.summary.answerRecords, originalGuidePreserved: true },
   aihot: { requiredFiles: aihotFiles.length, checkedRelativeAssets: aihotAssets, sections: aihotSections.length,
-    sources: aihotSources.length, summaryItems: aihotResearch.summaryItems.length, originalGuidePreserved: true } }));
+    sources: aihotSources.length, summaryItems: aihotResearch.summaryItems.length, originalGuidePreserved: true },
+  pascal: { researchSections: 8, summaryItems: pascalMetadata.summaryItems.length, originalGuidePreserved: true,
+    editorPreserved: true, verifiedLibraryAssets: manifest.assets.length } }));

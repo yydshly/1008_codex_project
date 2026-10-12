@@ -6,6 +6,7 @@ on:
     paths:
       - 'projects/001-sandboard/**'
       - 'projects/002-interview-guide/**'
+      - 'projects/003-pascal-editor/**'
       - 'projects/013-aihot/**'
       - 'projects.json'
       - 'scripts/**'
@@ -38,7 +39,8 @@ jobs:
           npm ci --prefix projects/001-sandboard/web
           npm ci --prefix projects/001-sandboard/experiments/sand-art
           npm ci --prefix projects/002-interview-guide/web
-      - name: Build the research entrance and published projects 001, 002 and 013
+          npm ci --prefix projects/003-pascal-editor/web
+      - name: Build the research entrance and published projects 001, 002, 003 and 013
         run: npm run build:site
       - name: Verify archive media and sixteen page links
         working-directory: projects/001-sandboard/experiments/sand-art
@@ -47,6 +49,11 @@ jobs:
           node scripts/validate-research.mjs --built
       - name: Verify public summaries, complete guides and research coverage
         run: node scripts/validate-site.mjs
+      - name: Verify Pascal scenes, resources and comprehensive static research
+        working-directory: projects/003-pascal-editor/web
+        run: |
+          npm run check:scenes
+          npm run check:research
       - name: Verify the complete static AIHOT research and source list
         run: node projects/013-aihot/web/scripts/audit.mjs --built
       - uses: actions/upload-pages-artifact@v4
