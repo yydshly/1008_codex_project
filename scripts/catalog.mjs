@@ -32,6 +32,12 @@ function httpsUrl(value, upstream = false) {
   }
 }
 
+function projectImage(value, directory) {
+  return typeof value === 'string' && value.startsWith(`${directory}/assets/`) &&
+    !value.includes('\\') && !value.split('/').some(part => !part || part === '.' || part === '..') &&
+    /\.(png|jpe?g|webp|gif|svg)$/i.test(value) && !/[<>"?#%:]/.test(value);
+}
+
 export function validateCatalog(catalog, root = ROOT, { requireFiles = true } = {}) {
   if (!catalog || catalog.schemaVersion !== 1 || !Array.isArray(catalog.projects)) {
     throw new Error('projects.json 必须包含 schemaVersion: 1 和 projects 数组。');
@@ -60,6 +66,10 @@ export function validateCatalog(catalog, root = ROOT, { requireFiles = true } = 
     for (const field of ['name', 'summary']) {
       if (!singleLine(project[field])) errors.push(`${label}.${field} 必须是非空单行文本。`);
     }
+    if (project.summaryItems !== undefined && (!Array.isArray(project.summaryItems) || !project.summaryItems.length ||
+      project.summaryItems.some(item => !item || !singleLine(item.title) || !singleLine(item.text)))) {
+      errors.push(`${label}.summaryItems 必须是非空数组，每项的 title 和 text 必须是非空单行文本。`);
+    }
     if (!httpsUrl(project.upstream, true)) errors.push(`${label}.upstream 必须是 GitHub 仓库的 HTTPS URL。`);
     if (!STATUSES.has(project.status)) errors.push(`${label}.status 必须是待研究、研究中、已完成或已归档。`);
     if (!Array.isArray(project.tags) || project.tags.some(tag => !singleLine(tag))) {
@@ -76,16 +86,20 @@ export function validateCatalog(catalog, root = ROOT, { requireFiles = true } = 
     const directory = projectDirectory(project);
     directories.add(path.basename(directory));
     if (project.cover) {
-      const prefix = `${directory}/assets/`;
-      const validCover = typeof project.cover === 'string' && project.cover.startsWith(prefix) &&
-        !project.cover.includes('\\') && !project.cover.split('/').some(part => !part || part === '.' || part === '..') &&
-        /\.(png|jpe?g|webp|gif|svg)$/i.test(project.cover) && !/[<>"?#%:]/.test(project.cover);
+      const validCover = projectImage(project.cover, directory);
       if (!validCover) errors.push(`${label}.cover 必须是本项目 assets/ 内的图片路径。`);
       else if (requireFiles && (!fs.existsSync(path.join(root, project.cover)) || !fs.statSync(path.join(root, project.cover)).isFile())) {
         errors.push(`${label}.cover 图片文件不存在：${project.cover}`);
       }
       if (!singleLine(project.coverAlt)) errors.push(`${label}.coverAlt 有封面时必须填写画面描述。`);
       if (!singleLine(project.coverCaption)) errors.push(`${label}.coverCaption 有封面时必须填写图注。`);
+    }
+    if (project.coverFull !== undefined) {
+      if (!project.cover || !projectImage(project.coverFull, directory)) {
+        errors.push(`${label}.coverFull 必须与封面一起使用，且为本项目 assets/ 内的图片路径。`);
+      } else if (requireFiles && (!fs.existsSync(path.join(root, project.coverFull)) || !fs.statSync(path.join(root, project.coverFull)).isFile())) {
+        errors.push(`${label}.coverFull 图片文件不存在：${project.coverFull}`);
+      }
     }
     if (requireFiles) {
       for (const file of ['README.md', 'notes.md']) {
@@ -127,12 +141,24 @@ export function renderIndex(projects) {
     const directory = projectDirectory(project);
     const demo = project.demo ? `[访问](${markdownUrl(project.demo)})` : '—';
     const upstreamName = new URL(project.upstream).pathname.split('/').filter(Boolean).at(-1);
-    lines.push(`| ${project.id} | [${markdownText(project.name)}](${directory}/README.md) · [${markdownText(upstreamName)}](${markdownUrl(project.upstream)}) | ${markdownText(project.summary)} | ${project.status} | ${demo} |`);
+    const summary = project.summaryItems
+      ? project.summaryItems.map(item => `**${markdownText(item.title)}**：${markdownText(item.text)}`).join('<br>')
+      : markdownText(project.summary);
+    lines.push(`| ${project.id} | [${markdownText(project.name)}](${directory}/README.md) · [${markdownText(upstreamName)}](${markdownUrl(project.upstream)}) | ${summary} | ${project.status} | ${demo} |`);
   }
   for (const project of projects.filter(project => project.cover)) {
-    lines.push('', `### ${project.id} · ${markdownText(project.name)}`, '',
-      `![${markdownText(project.coverAlt)}](${markdownUrl(project.cover)})`, '',
-      markdownText(project.coverCaption));
+    lines.push('', `### ${project.id} · ${markdownText(project.name)}`, '');
+    const image = `![${markdownText(project.coverAlt)}](${markdownUrl(project.cover)})`;
+    if (project.coverFull) {
+      const directory = projectDirectory(project);
+      const links = [`[研究说明](${directory}/README.md)`];
+      if (project.demo) links.push(`[在线体验](${markdownUrl(project.demo)})`);
+      links.push(`[高清引导图](${markdownUrl(project.coverFull)})`);
+      lines.push(markdownText(project.coverCaption), '', links.join(' · '), '',
+        `[${image}](${markdownUrl(project.coverFull)})`);
+    } else {
+      lines.push(image, '', markdownText(project.coverCaption));
+    }
   }
   return lines.join('\n');
 }

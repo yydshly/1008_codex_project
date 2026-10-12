@@ -166,3 +166,43 @@ test('来源链接显示源库自己的名称，兼容末尾斜线与 Markdown �
   assert.ok(!renderIndex([project]).includes('[原仓库]'));
   assert.ok(renderIndex([{ ...project, upstream: 'https://github.com/example/sand_board' }]).includes('[sand\\_board]'));
 });
+
+test('分项摘要以加粗标题和换行呈现，兼容旧摘要并转义输入', () => {
+  const project = { ...entry(), summaryItems: [
+    { title: '能力', text: '交互沙盘' },
+    { title: '输入 *输出*', text: '照片 | <效果>' },
+  ] };
+  validateCatalog({ schemaVersion: 1, projects: [project] }, ROOT, { requireFiles: false });
+  const rendered = renderIndex([project, entry('002', 'legacy')]);
+  assert.ok(rendered.includes('**能力**：交互沙盘<br>**输入 \\*输出\\***：照片 \\| \\<效果\\>'));
+  assert.ok(rendered.includes('| 理解核心实现。 |'));
+  assert.equal(rendered.split('\n').filter(line => line.startsWith('| 001 |')).length, 1);
+  for (const summaryItems of [[], null, [{ title: '', text: '内容' }], [{ title: '能力', text: '第一行\n第二行' }], [null]]) {
+    assert.throws(() => validateCatalog({ schemaVersion: 1, projects: [{ ...entry(), summaryItems }] }, ROOT, { requireFiles: false }), /summaryItems/);
+  }
+});
+
+test('完整引导图与预览都必须是本项目素材，首页只显示一张并提供入口', t => {
+  const root = fixture(t);
+  addProject(root, options);
+  const project = readCatalog(root).projects[0];
+  Object.assign(project, {
+    cover: 'projects/001-sample/assets/preview.svg',
+    coverFull: 'projects/001-sample/assets/overview.svg',
+    coverAlt: '完整研究引导图', coverCaption: '能力、原理与探索。',
+    demo: 'https://example.com/sample/',
+  });
+  fs.writeFileSync(path.join(root, project.cover), '<svg xmlns="http://www.w3.org/2000/svg"></svg>');
+  const catalog = { schemaVersion: 1, projects: [project] };
+  assert.throws(() => validateCatalog(catalog, root), /coverFull 图片文件不存在/);
+  fs.copyFileSync(path.join(root, project.cover), path.join(root, project.coverFull));
+  validateCatalog(catalog, root);
+  const rendered = renderIndex([project]);
+  assert.equal((rendered.match(/!\[/g) || []).length, 1);
+  assert.ok(rendered.includes(`[![完整研究引导图](${project.cover})](${project.coverFull})`));
+  assert.ok(rendered.includes('[研究说明](projects/001-sample/README.md) · [在线体验](https://example.com/sample/)'));
+  for (const coverFull of ['projects/002-other/assets/overview.svg', 'projects/001-sample/assets/../overview.svg', 'https://example.com/image.png']) {
+    assert.throws(() => validateCatalog({ schemaVersion: 1, projects: [{ ...project, coverFull }] }, root), /coverFull/);
+  }
+  assert.throws(() => validateCatalog({ schemaVersion: 1, projects: [{ ...project, cover: '' }] }, root), /coverFull/);
+});

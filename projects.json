@@ -5,7 +5,7 @@
       "id": "001",
       "slug": "sandboard",
       "name": "Sandboard 交互沙盘",
-      "summary": "Sandboard 是 WebGPU 交互沙盘：高度场与邻域输运呈现沟槽、堆积和飞沙，适合触控创作与材料研究。我们保留原版，扩展七工具手绘、照片沙画、动作回放和纪念赠礼原型；可继续探索教学、展演与创作工具，真实成画质感仍待验收。",
+      "summary": "研究 WebGPU 交互沙盘的高度场与飞沙原理，保留原版并探索手绘、照片沙画和纪念赠礼；真实成画质感仍待验证。",
       "upstream": "https://github.com/scottstts/Sandboard",
       "status": "研究中",
       "tags": [
@@ -15,10 +15,37 @@
         "沙画",
         "材料实验"
       ],
-      "cover": "projects/001-sandboard/assets/original-fine-v2.jpg",
-      "coverAlt": "Sandboard 原版精细画质下的字母 A 沙槽、沙脊和椰树阴影",
-      "coverCaption": "2026-10-08 本地原版精细画质实测：2560 × 1440 绘制后截图，保留上游 489cb01 的沙床与渲染算法。",
-      "demo": "https://yydshly.github.io/1008_codex_project/001-sandboard/"
+      "cover": "projects/001-sandboard/assets/understanding/preview.jpg",
+      "coverAlt": "Sandboard 完整理解引导图：源库能力、底层原理、输入输出、真实效果、探索历程与产品方向",
+      "coverCaption": "一图了解 Sandboard 的能力与原理，以及我们从手绘、照片沙画到纪念赠礼的探索。图中保留真实效果，标明 AI 目标与待验证方向。",
+      "demo": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "summaryItems": [
+        {
+          "title": "能力",
+          "text": "WebGPU 沙盘：沟槽、堆积、飞沙。"
+        },
+        {
+          "title": "原理",
+          "text": "高度场、邻域输运与飞沙粒子。"
+        },
+        {
+          "title": "探索",
+          "text": "七工具手绘、照片成画、动作回放。"
+        },
+        {
+          "title": "价值",
+          "text": "触控创作、教学与材料试验。"
+        },
+        {
+          "title": "方向",
+          "text": "纪念赠礼、创作工具、互动展陈。"
+        },
+        {
+          "title": "进度",
+          "text": "原版与旧版保留；真实质感待验证。"
+        }
+      ],
+      "coverFull": "projects/001-sandboard/assets/understanding/overview.png"
     }
   ]
 }
