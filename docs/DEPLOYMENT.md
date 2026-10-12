@@ -3,7 +3,7 @@
 <!-- EASEL_PUBLICATION:START -->
 ## Easel 完整理解、原始引导图与社媒运营研究（2026-10-12）
 
-006 接入现有 GitHub Pages Actions，与001、002、003、004、005、013独立构建后统一发布。目标子路径为 `https://yydshly.github.io/1008_codex_project/006-easel/`。首次部署成功并核验公开HTTPS前，索引demo保持为空；实际状态保留在 `projects/006-easel/src/publication-verification.json`。
+006 已通过现有 GitHub Pages Actions 部署，与001、002、003、004、005、013独立构建后统一发布。[在线完整理解与能力图谱](https://yydshly.github.io/1008_codex_project/006-easel/) 已核验并登记demo；[部署运行38224870098](https://github.com/yydshly/1008_codex_project/actions/runs/38224870098)成功。23个公开HTTPS资源/入口、114技能、完整静态理解、原图哈希和既有项目入口均通过；真实浏览器的技能检索、原文、深链接刷新、扩展直达和390/320手机布局通过。完整范围见[发布核验](../projects/006-easel/src/publication-verification.json)、[HTTP记录](../projects/006-easel/src/public-http-checks.json)与[浏览器记录](../projects/006-easel/src/public-browser-checks.json)。
 
 完整理解包含12项摘要、6段图前介绍、7步运营闭环、8个系统模块、114项技能、27条来源路径、6类场景、4项个人价值、4条复用路线与8项扩展建议。源码研究基线为fb80ae6，图像沿用2026-10-09生成的完整941×1672 PNG，SHA-256为 `41a28113c166c901143ac01abedb05e6ac7a72f5d4b3add507510d615fe35152`，不裁切、不重绘或修改原始字节。
 
@@ -20,7 +20,7 @@ node scripts/validate-site.mjs
 
 静态构建写入完整理解、引导图、模块、场景、复用和扩展，禁用脚本仍可阅读；JavaScript提供技能全文检索、分层筛选、详情、来源筛选和离线过滤实验。根构建完整复制 `web/dist/` 到 `.cache/pages-site/006-easel/`，包括JSON资料、源码证据、JS/CSS、原图、生成规格、研究说明和Apache-2.0许可。公开研究站不运行Easel模型或社媒登录、发稿后端，5项离线通过与1项上游Windows自检失败继续分别记录。
 
-CI核对索引摘要与网页一致、完整静态章节、114技能与原图哈希，继续验证已发布项目。首次公开核验通过后登记demo，再生成README索引；部署成功不能代替原Easel全功能运行或内容效果验收。
+CI核对索引摘要与网页一致、完整静态章节、114技能与原图哈希，继续验证已发布项目。构建为脚本、样式、模块导入和JSON请求加入内容版本，避免浏览器复用旧资源；原图字节保持不变。公开核验通过后已登记demo并生成README索引；部署成功不能代替原Easel全功能运行或内容效果验收。
 <!-- EASEL_PUBLICATION:END -->
 
 <!-- THREEJS_PUBLICATION:START -->

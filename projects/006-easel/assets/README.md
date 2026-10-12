@@ -9,5 +9,11 @@
 - capability-map-prompt.md：本次完整生成规格与文字内容；包含信息来源、实现边界和建议的区分。
 - capability-map-web.jpg：能力全景图加入本地生产研究网页后的真实展示截图，2026-10-09。
 - publication/local-mobile.png：2026-10-12完整理解发布前，390×844手机视口的场景与扩展章节真实截图。
+- publication/live-overview.png：2026-10-12公开HTTPS站点的完整理解首页真实截图。
+- publication/live-value.png：公开网站的使用场景、价值与扩展章节真实截图。
+- publication/live-mobile.png：公开网站390×844手机视口的完整理解首页真实截图。
+- publication/live-extensions.png：公开网站八项扩展建议的直达入口截图。
+
+发布截图来自我们的研究网页，保留真实内容和上下文；不是上游Easel工作台的制作或发布效果实测。详见 `../src/publication-verification.json`。
 
 这是原创研究展示界面，未冒充 Easel 原工作台实测效果。图注和替代文字在项目 README／根 projects.json 维护。上游署名见 ../src/ATTRIBUTION.md。

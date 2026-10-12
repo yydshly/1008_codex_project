@@ -12,6 +12,8 @@
 | verify_research.py | 原离线自检、RSS 正确 URI 实验、真实资讯过滤函数 |
 | verify_public.mjs | 公开HTTPS资源、完整静态内容、114技能、原图哈希与已有项目路径核验 |
 | publication-verification.json | 本次发布范围、构建与浏览器检查、远端部署状态 |
+| public-http-checks.json | 23个公开HTTPS资源/入口、资源版本和完整引导图校验记录 |
+| public-browser-checks.json | 公开真实浏览器中的章节、技能深链接、手机布局与扩展定位记录 |
 | LICENSE.upstream | Easel 原始 Apache-2.0 文本 |
 | ATTRIBUTION.md | 来源与原创范围 |
 

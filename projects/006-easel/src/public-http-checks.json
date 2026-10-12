@@ -1,0 +1,151 @@
+{
+  "checkedAt": "2026-10-12T08:42:42.294Z",
+  "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+  "status": "passed",
+  "resourceVersion": "762d3018f5ec837e",
+  "skills": 114,
+  "guideSha256": "41a28113c166c901143ac01abedb05e6ac7a72f5d4b3add507510d615fe35152",
+  "staticFullUnderstanding": true,
+  "existingProjectPathsPreserved": true,
+  "resources": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 56009
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 460
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 5201
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 51057
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 26383
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 35823
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/app.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 31462
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/browser-checks.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 1805
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/build-info.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 638
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/capabilities.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 1539385
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/capability-map-prompt.md",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 9019
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/capability-map.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 2184191
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/facts.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 61117
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 228
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/index.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 33508
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/LICENSE.upstream.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 11357
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/publication.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 1562
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/publication.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 17518
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/research-view.mjs",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bytes": 6551
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/research.md",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "bytes": 24987
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/style.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 18585
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/verification.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 4564
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 120516
+    }
+  ],
+  "scope": "HTTPS资源与静态内容；真实浏览器交互核验另行记录。"
+}

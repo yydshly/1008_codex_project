@@ -429,7 +429,7 @@
       "cover": "projects/006-easel/assets/capability-map.png",
       "coverAlt": "Easel 完整能力引导图：账号画像驱动七步社媒运营闭环，国内热榜和资讯来源、114个技能、执行原理、使用场景、扩展价值与个人研究用途",
       "coverCaption": "2026-10-09基于固定上游fb80ae6生成的完整研究说明图，原生941×1672；保留原始PNG字节，不裁切。扩展方向和个人用途属于研究建议，精确技能ID与源码依据见网页。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/006-easel/",
       "summaryItems": [
         {
           "title": "定位",

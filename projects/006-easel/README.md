@@ -15,7 +15,7 @@
 | 完整理解整理日期 | 2026-10-12 |
 | 上游许可 | Apache-2.0；保留 [原始许可](src/LICENSE.upstream) |
 | 交付 | 独立静态研究网页；全部 114 个 Skill、8 个系统模块、27 条来源路径、制作发布链路与核验记录 |
-| 在线部署 | 接入统一GitHub Pages；首次公开核验前根索引 `demo` 留空，最终状态见发布核验记录 |
+| 在线部署 | [完整理解与能力图谱](https://yydshly.github.io/1008_codex_project/006-easel/)；已接入统一GitHub Pages并核验公开HTTPS，状态和验证范围见[发布记录](src/publication-verification.json) |
 
 ## 我们对项目的完整理解
 

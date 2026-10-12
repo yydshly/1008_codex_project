@@ -3,7 +3,7 @@
   "baseline": "fb80ae6dd6fc26f5553efcb293ee6d93ef253f02",
   "guideSha256": "41a28113c166c901143ac01abedb05e6ac7a72f5d4b3add507510d615fe35152",
   "targetUrl": "https://yydshly.github.io/1008_codex_project/006-easel/",
-  "status": "locally_verified",
+  "status": "published",
   "local": {
     "contentAudit": "passed",
     "summaryItems": 12,
@@ -38,13 +38,231 @@
         }
       ],
       "consoleErrors": 0,
-      "screenshot": "assets/publication/local-mobile.png"
+      "screenshot": "assets/publication/local-mobile.png",
+      "overviewMobile": [
+        {
+          "width": 390,
+          "scrollWidth": 375
+        },
+        {
+          "width": 320,
+          "scrollWidth": 305
+        }
+      ],
+      "extensionTop": 0.1458333432674408
     },
     "siteBuild": "passed: projects001-006and013",
     "aggregateValidation": "passed",
     "catalogCheck": "passed",
-    "rootTests": "15/15 passed"
+    "rootTests": "15/15 passed",
+    "runtimeVersion": "762d3018f5ec837e"
   },
-  "remote": null,
-  "scope": "验证静态研究网站和原始引导图；未运行原Easel付费生成、社媒登录或真实发布。"
+  "remote": {
+    "verifiedCommit": "127ac438cb051202a5f0b253985674d3788aeb3f",
+    "workflow": {
+      "runId": 38224870098,
+      "url": "https://github.com/yydshly/1008_codex_project/actions/runs/38224870098",
+      "build": "success",
+      "deploy": "success"
+    },
+    "http": {
+      "checkedAt": "2026-10-12T08:42:42.294Z",
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": "passed",
+      "resourceVersion": "762d3018f5ec837e",
+      "skills": 114,
+      "guideSha256": "41a28113c166c901143ac01abedb05e6ac7a72f5d4b3add507510d615fe35152",
+      "staticFullUnderstanding": true,
+      "existingProjectPathsPreserved": true,
+      "resources": [
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 56009
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 460
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 5201
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 51057
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 26383
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 35823
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/app.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "bytes": 31462
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/browser-checks.json",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "bytes": 1805
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/build-info.json",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "bytes": 638
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/capabilities.json",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "bytes": 1539385
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/capability-map-prompt.md",
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8",
+          "bytes": 9019
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/capability-map.png",
+          "status": 200,
+          "contentType": "image/png",
+          "bytes": 2184191
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/facts.json",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "bytes": 61117
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/favicon.svg",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "bytes": 228
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/index.html",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 33508
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/LICENSE.upstream.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8",
+          "bytes": 11357
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/publication.css",
+          "status": 200,
+          "contentType": "text/css; charset=utf-8",
+          "bytes": 1562
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/publication.json",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "bytes": 17518
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/research-view.mjs",
+          "status": 200,
+          "contentType": "text/javascript; charset=utf-8",
+          "bytes": 6551
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/research.md",
+          "status": 200,
+          "contentType": "text/markdown; charset=utf-8",
+          "bytes": 24987
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/style.css",
+          "status": 200,
+          "contentType": "text/css; charset=utf-8",
+          "bytes": 18585
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/006-easel/verification.json",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "bytes": 4564
+        },
+        {
+          "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "bytes": 120516
+        }
+      ],
+      "scope": "HTTPS资源与静态内容；真实浏览器交互核验另行记录。"
+    },
+    "browser": {
+      "checkedAt": "2026-10-12T08:43:55.197Z",
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "loadedDocument": "?publication=127ac43",
+      "overview": {
+        "css": "./publication.css?v=762d3018f5ec837e",
+        "flow": 7,
+        "intro": 6,
+        "script": "./app.js?v=762d3018f5ec837e",
+        "summary": 12,
+        "title": "Easel · 源码能力图谱"
+      },
+      "value": {
+        "extensions": 8,
+        "reuse": 4,
+        "scenarios": 6,
+        "values": 4
+      },
+      "mobile": [
+        {
+          "scrollWidth": 375,
+          "width": 390
+        },
+        {
+          "scrollWidth": 305,
+          "width": 320
+        }
+      ],
+      "extensions": {
+        "items": 8,
+        "title": "场景与扩展 · Easel 源码能力图谱",
+        "top": -0.0520833358168602
+      },
+      "skillSearch": "rss_digest -> 1/114",
+      "fullOriginalDocument": true,
+      "skillDeepLinkAndReload": "RSS 订阅",
+      "console": [],
+      "screenshots": [
+        "assets/publication/live-overview.png",
+        "assets/publication/live-value.png",
+        "assets/publication/live-mobile.png",
+        "assets/publication/live-extensions.png"
+      ],
+      "scope": "验证公开研究网页；未运行上游模型、社媒登录或真实发布。"
+    }
+  },
+  "scope": "验证静态研究网站和原始引导图；未运行原Easel付费生成、社媒登录或真实发布。",
+  "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+  "checkedAt": "2026-10-12T08:44:39.447Z"
 }

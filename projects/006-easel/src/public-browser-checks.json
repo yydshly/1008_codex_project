@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-12T08:43:55.197Z",
+  "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+  "loadedDocument": "?publication=127ac43",
+  "overview": {
+    "css": "./publication.css?v=762d3018f5ec837e",
+    "flow": 7,
+    "intro": 6,
+    "script": "./app.js?v=762d3018f5ec837e",
+    "summary": 12,
+    "title": "Easel · 源码能力图谱"
+  },
+  "value": {
+    "extensions": 8,
+    "reuse": 4,
+    "scenarios": 6,
+    "values": 4
+  },
+  "mobile": [
+    {
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "scrollWidth": 305,
+      "width": 320
+    }
+  ],
+  "extensions": {
+    "items": 8,
+    "title": "场景与扩展 · Easel 源码能力图谱",
+    "top": -0.0520833358168602
+  },
+  "skillSearch": "rss_digest -> 1/114",
+  "fullOriginalDocument": true,
+  "skillDeepLinkAndReload": "RSS 订阅",
+  "console": [],
+  "screenshots": [
+    "assets/publication/live-overview.png",
+    "assets/publication/live-value.png",
+    "assets/publication/live-mobile.png",
+    "assets/publication/live-extensions.png"
+  ],
+  "scope": "验证公开研究网页；未运行上游模型、社媒登录或真实发布。"
+}
