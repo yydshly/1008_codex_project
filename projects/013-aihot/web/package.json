@@ -1,0 +1,14 @@
+{
+  "name": "aihot-research-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit.mjs --built",
+    "preview": "node scripts/serve.mjs --dir dist --port 4213 --base /1008_codex_project/013-aihot/"
+  }
+}

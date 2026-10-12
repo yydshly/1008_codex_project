@@ -1,0 +1,18 @@
+{
+  "originPath": "D:\\codex\\home\\generated_images\\01a11b25-c269-7632-9ee1-fdc3230e3ece\\exec-6cb11a42-b8d0-49ac-8f25-3915a0f8c4c3.png",
+  "generatedOn": "2026-10-08",
+  "generationTool": "builtin image_gen",
+  "copyPath": "assets/aihot-overview.png",
+  "sha256": "c48b5c61a72166d97aaa257545eeadd5864a42b554bb881d10f5167c82016559",
+  "dimensions": {
+    "width": 1448,
+    "height": 1086,
+    "unit": "px"
+  },
+  "byteLength": 1712633,
+  "originalUnchanged": true,
+  "copyMatchesOriginal": true,
+  "researchCommit": "6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48",
+  "description": "既有 AIHOT 研究引导图，按 2026-10-08 固定研究提交解释能力、原理与信源；不是最新版 main 的界面截图或功能实测。",
+  "verification": "从原始 PNG 的 IHDR 读取尺寸；比对原图与项目副本的实际字节，并计算 SHA-256。"
+}

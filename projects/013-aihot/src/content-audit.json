@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "commit": "6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48",
+  "sourceCount": 18,
+  "sourceGroups": {
+    "institution": 10,
+    "media": 5,
+    "community": 3
+  },
+  "adapters": 6,
+  "capabilities": 13,
+  "modules": 17,
+  "pipelineSteps": 9,
+  "evidencePaths": 80,
+  "checkedResources": 20,
+  "guideSha256": "c48b5c61a72166d97aaa257545eeadd5864a42b554bb881d10f5167c82016559",
+  "scope": "数据映射、完整静态出版、许可与图片校验；浏览器行为和上游运行另行记录。"
+}

@@ -1,0 +1,406 @@
+{
+  "commit": "6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48",
+  "method": "git ls-tree -r --name-only at pinned commit",
+  "paths": [
+    {
+      "path": "README.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/architecture.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/sources.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/selection.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/grouping.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/story-digest-evaluation.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/customize.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/deploy.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/sources.json",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/selection.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/prompts/selection-score.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/prompts/structure.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/taxonomy.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "site/site.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "site/models.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/config-keys.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/rss.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/ingest/items.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "apps/api/src/routes/ingest.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/content/extract.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/editorial/analyze.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/events/recall.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/events/group.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/events/hot.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/scope.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/detail.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/representative.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/reports/edition.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/reports/compose.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/providers/receipts.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "apps/worker/src/schedules.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/contracts/src/modules.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "tests/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "LICENSE",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "NOTICE",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/content/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/editorial/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/events/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/publication/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/reports/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/providers/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/notify/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/operations/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/admin/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "apps/api/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "apps/worker/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "apps/web/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/contracts/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "site/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "modules/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "database/migrations/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/content/materials.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/hot.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/topics.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/stories.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "apps/web/app/routes/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "apps/web/app/lib/local-state.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "apps/api/src/routes/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "scripts/eval-selection.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "scripts/eval-relations.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "scripts/eval-story-digests.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/operations/recover.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/admin/models.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/",
+      "exists": true,
+      "type": "directory"
+    },
+    {
+      "path": "packages/backend/src/sources/collect.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "industry/prompts/prefilter.md",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/editorial/writing.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/editorial/translate.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/events/relate.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/publication/publish.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/events/digest.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/web-list.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/examples/sources/news.html",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/json-list.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "docs/examples/sources/news.json",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/x.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/providers/socialdata.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/sources/mp.ts",
+      "exists": true,
+      "type": "file"
+    },
+    {
+      "path": "packages/backend/src/providers/dajiala.ts",
+      "exists": true,
+      "type": "file"
+    }
+  ]
+}

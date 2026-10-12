@@ -6,7 +6,7 @@ import { ROOT, readCatalog, validateCatalog, projectDirectory } from './catalog.
 
 // Publication is an explicit allowlist. Local research projects must not become
 // public merely because they are registered in projects.json.
-const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }];
+const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }, { id: '013', slug: 'aihot' }];
 const catalog = readCatalog();
 if (!Array.isArray(catalog.projects)) throw new Error('发布清单缺少 projects 数组。');
 const selected = publication.map(({ id, slug }) => {
@@ -22,10 +22,13 @@ for (const published of projects) {
 }
 const project = projects.find(project => project.id === '001' && project.slug === 'sandboard');
 const interview = projects.find(project => project.id === '002' && project.slug === 'interview-guide');
+const aihot = projects.find(project => project.id === '013' && project.slug === 'aihot');
 const directory = projectDirectory(project);
 const app = path.join(ROOT, directory, 'experiments/sand-art');
 const interviewDirectory = projectDirectory(interview);
 const interviewWeb = path.join(ROOT, interviewDirectory, 'web');
+const aihotDirectory = projectDirectory(aihot);
+const aihotWeb = path.join(ROOT, aihotDirectory, 'web');
 async function build(script, label, args = []) {
   await new Promise((resolve, reject) => {
     const child = spawn(process.execPath, [script, ...args], { stdio: 'inherit', windowsHide: true });
@@ -35,12 +38,14 @@ async function build(script, label, args = []) {
 }
 await build(path.join(app, 'scripts/build-platform.mjs'), '001 Sandboard', process.argv.includes('--pack-only') ? ['--pack-only'] : []);
 await build(path.join(interviewWeb, 'scripts/build.mjs'), '002 编程面试知识指南');
+await build(path.join(aihotWeb, 'scripts/build.mjs'), '013 AIHOT 信源与资讯引擎研究');
 const site = path.resolve(ROOT, '.cache/pages-site');
 if (path.dirname(site) !== path.resolve(ROOT, '.cache') || path.basename(site) !== 'pages-site') throw new Error('发布目录越界。');
 await rm(site, { recursive: true, force: true });
 await mkdir(path.join(site, 'assets'), { recursive: true });
 await cp(path.join(app, '.cache/platform-site'), path.join(site, '001-sandboard'), { recursive: true });
 await cp(path.join(interviewWeb, 'dist'), path.join(site, '002-interview-guide'), { recursive: true });
+await cp(path.join(aihotWeb, 'dist'), path.join(site, '013-aihot'), { recursive: true });
 // README uses the guide cover; the website keeps its original demo figure.
 const original = {
   image: 'assets/original-fine-v2.jpg',
@@ -63,6 +68,18 @@ if (!mapBytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10
 const interviewReport = JSON.parse(await readFile(path.join(site, '002-interview-guide/coverage.json'), 'utf8'));
 const mapWidth = mapBytes.readUInt32BE(16);
 const mapHeight = mapBytes.readUInt32BE(20);
+const aihotEntrance = './013-aihot/';
+const aihotMap = `${aihotEntrance}assets/aihot-overview.png`;
+const aihotMapBytes = await readFile(path.join(site, '013-aihot/assets/aihot-overview.png'));
+if (!aihotMapBytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) throw new Error('013 完整引导图必须是有效 PNG。');
+const aihotMapWidth = aihotMapBytes.readUInt32BE(16);
+const aihotMapHeight = aihotMapBytes.readUInt32BE(20);
+const aihotPreview = `${aihotEntrance}assets/aihot-preview.jpg`;
+await access(path.join(site, '013-aihot/assets/aihot-preview.jpg'));
+const aihotReport = JSON.parse(await readFile(path.join(site, '013-aihot/data/research.json'), 'utf8'));
+const aihotBaseline = aihotReport.meta?.commit;
+if (typeof aihotBaseline !== 'string' || !/^[0-9a-f]{40}$/.test(aihotBaseline)) throw new Error('013 研究资料缺少完整基线提交。');
+if (aihotReport.meta?.upstream !== aihot.upstream) throw new Error('013 研究资料与项目索引的上游来源不一致。');
 const projectRows = projects.map(published => {
   const upstreamName = new URL(published.upstream).pathname.split('/').filter(Boolean).at(-1);
   const local = `./${published.id}-${published.slug}/`;
@@ -74,15 +91,17 @@ const html = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><met
 :root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#141310;color:#ece5d7}*{box-sizing:border-box}body{margin:0}main{max-width:1200px;margin:auto;padding:36px 28px 70px}a{color:#f0c37d;text-decoration:none}a:hover{text-decoration:underline}nav{display:flex;gap:20px;justify-content:space-between;font-size:14px;border-bottom:1px solid #393328;padding-bottom:22px}.eyebrow{color:#cfaa72;font-size:13px;letter-spacing:.16em;margin-top:50px}h1{font-size:clamp(32px,5vw,58px);line-height:1.2;max-width:850px;margin:20px 0}p{line-height:1.9;color:#c9c0ae}.lead{max-width:900px;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 40px}.button{padding:13px 18px;border:1px solid #807052;border-radius:6px}.button.primary{background:#e1b673;color:#201a11;border-color:#e1b673}.table-wrap{overflow:auto;border:1px solid #454033;border-radius:8px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.8}th,td{text-align:left;padding:16px;vertical-align:top;border-bottom:1px solid #393328}th{color:#b5a787;background:#211e18}td.summary{min-width:310px}.visual{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin:35px 0}figure{margin:0;border:1px solid #393328;padding:12px;border-radius:8px;background:#1b1915}figure img{display:block;width:100%;height:auto;border-radius:4px}figcaption{color:#a89d89;line-height:1.8;font-size:13px;margin-top:12px}.guide-frame{display:block;border-radius:4px}.guide-frame img{width:100%;height:auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.entry{display:flex;flex-direction:column;gap:12px;border:1px solid #494033;border-radius:8px;padding:20px;background:#201c16}.entry span{font-size:13px;line-height:1.7;color:#b6aa97}.number{font-size:13px;color:#cba972}article{border-top:1px solid #393328;padding:25px 0 13px;margin-top:24px}article h2{font-size:23px;margin:12px 0}.project-block{margin-top:64px;scroll-margin-top:24px}.project-heading{font-size:clamp(25px,4vw,38px);line-height:1.35}.project-map{max-width:900px;margin:28px auto}.project-map img{height:auto;object-fit:contain}.research-text{margin-top:30px}.research-text summary{cursor:pointer;color:#f0c37d;padding:16px;border:1px solid #494033;border-radius:6px}footer{overflow-wrap:anywhere;border-top:1px solid #393328;margin-top:40px;padding-top:24px;color:#958b79;font-size:13px;line-height:1.9}@media(max-width:700px){main{padding:24px 17px 45px}.visual,.grid{grid-template-columns:1fr}.eyebrow{margin-top:35px}.lead{font-size:16px}nav{font-size:12px;gap:10px}}
 </style></head><body><main>
 <nav><span>GitHub 项目研究集</span><a href="${repository}">仓库与研究文档 ↗</a></nav>
-<div class="eyebrow">OPEN SOURCE · RESEARCH · REAL EXPERIENCE</div><h1>GitHub 项目研究集</h1><p class="lead">先看清开源项目的能力与原理，再通过完整引导图、实际体验和研究依据选择下一步。这里汇总已发布的沙画平台与中文编程面试知识指南。</p>
-<div class="actions"><a class="button primary" href="${entrance}art/home/">001 · 光阴沙画平台 ↗</a><a class="button primary" href="${interviewEntrance}#research">002 · 面试知识研究 ↗</a><a class="button" href="#published-projects">项目摘要与完整引导图</a></div>
+<div class="eyebrow">OPEN SOURCE · RESEARCH · REAL EXPERIENCE</div><h1>GitHub 项目研究集</h1><p class="lead">先看清开源项目的能力与原理，再通过完整引导图、实际体验和研究依据选择下一步。这里汇总已发布的沙画平台、中文编程面试知识指南与 AIHOT 信源和资讯引擎研究。</p>
+<div class="actions"><a class="button primary" href="${entrance}art/home/">001 · 光阴沙画平台 ↗</a><a class="button primary" href="${interviewEntrance}#research">002 · 面试知识研究 ↗</a><a class="button primary" href="${aihotEntrance}">013 · AIHOT 信源与资讯研究 ↗</a><a class="button" href="#published-projects">项目摘要与完整引导图</a></div>
 <h2 id="published-projects">已发布的项目研究</h2><div class="table-wrap"><table><thead><tr><th>编号 / 研究</th><th>源库</th><th>摘要</th><th>Web 演示</th></tr></thead><tbody>${projectRows}</tbody></table></div>
 <section class="project-block" id="sandboard"><div class="eyebrow">001 / WEBGPU · MATERIAL · SAND ART</div><h2 class="project-heading">${escape(research.title)}</h2><p class="lead">${escape(research.intro)}</p><div class="actions"><a class="button primary" href="${entrance}art/home/">进入光阴沙画平台 ↗</a><a class="button" href="${entrance}art/research/#overview">放大阅读完整总览图</a><a class="button" href="${escape(project.upstream)}">源库 Sandboard</a></div>
 <div class="visual"><figure><a href="${entrance}original/"><img src="./assets/original.jpg" alt="${escape(original.alt)}" loading="lazy"></a><figcaption>${escape(original.caption)}<br><a href="${entrance}original/">操作 Sandboard 原版效果 ↗</a></figcaption></figure><figure><a class="guide-frame" href="${entrance}art/research/#overview"><img src="./assets/understanding.jpg" alt="Sandboard 能力、原理、输入输出、历史探索与七类产品方向的完整总览图" loading="lazy"></a><figcaption>${escape(research.guideCaption)}<br><a href="${entrance}art/research/#overview">展开全部七个章节与高清图 ↗</a></figcaption></figure></div><h2>先看效果，再看研究</h2><div class="grid">${links}</div><details class="research-text"><summary>阅读 Sandboard 能力、探索过程与研究结论</summary>${sections}</details></section>
 <section class="project-block" id="interview-guide"><div class="eyebrow">002 / KNOWLEDGE · ARCHITECTURE · LEARNING</div><h2 class="project-heading">002 · ${escape(interview.name)}</h2><p class="lead">${escape(interview.summary)}</p><p>从源库能力、模块、底层原理与使用场景了解这份指南，区分上游已有内容与我们的中文增强，再按基础、前端或后端路线进入知识主题。</p><div class="actions"><a class="button primary" href="${interviewEntrance}#research">阅读完整项目研究 ↗</a><a class="button" href="${interviewEntrance}#overview">进入中文知识地图</a><a class="button" href="${interviewEntrance}#coverage">查看逐主题覆盖核对</a><a class="button" href="${escape(interview.upstream)}">源库 guia-entrevistas-de-programacion</a></div>
 <figure class="project-map"><a class="guide-frame" href="${interviewMap}"><img src="${interviewMap}" alt="${escape(interview.coverAlt || '编程面试知识指南完整引导图：能力、模块、原理、增强内容、场景、价值、方向与边界')}" width="${mapWidth}" height="${mapHeight}" loading="lazy" decoding="async"></a><figcaption>${escape(interview.coverCaption || '本研究项目的完整理解引导图，保留全部画面，不裁切。')}<br><a href="${interviewMap}">打开完整原图</a> · <a href="${interviewEntrance}#research">在线阅读能力、原理与扩展方向 ↗</a></figcaption></figure></section>
-<footer>001 研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>Sandboard 上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">Sandboard 来源、许可与改动范围</a><br><br>002 研究基线：<a href="${escape(interview.upstream)}/tree/${escape(interviewReport.baseline.commit)}">${escape(interviewReport.baseline.commit)}</a><br>上游指南遵循 <a href="${interviewEntrance}LICENSE.upstream.txt">MIT 许可</a>；中文讲解与示例为独立补充，第三方教程仅保留资料入口。<br><a href="${repository}/blob/main/${interviewDirectory}/README.md">面试指南来源与实现说明</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer>
+<section class="project-block" id="aihot"><div class="eyebrow">013 / SOURCES · EDITORIAL · EVENTS</div><h2 class="project-heading">013 · ${escape(aihot.name)}</h2><p class="lead">${escape(aihot.summary)}</p><p>从信源清单与采集入口开始，沿着材料、精选、写作、事件归组、热度和出刊理解 AIHOT。完整研究解释模块与原理，比较使用场景、复用方向和运行边界，并保留固定提交与源码依据。</p><div class="actions"><a class="button primary" href="${aihotEntrance}">阅读完整 AIHOT 研究 ↗</a><a class="button" href="${aihotEntrance}#sources">查看 18 个示范信源</a><a class="button" href="${aihotMap}">打开完整原图</a><a class="button" href="${escape(aihot.upstream)}">源库 AIHOT</a></div>
+<figure class="project-map"><a class="guide-frame" href="${aihotMap}"><img src="${aihotPreview}" alt="${escape(aihot.coverAlt || 'AIHOT 完整引导图：能力、模块、原理、信源、使用场景、价值、复用方向与边界')}" width="${aihotMapWidth}" height="${aihotMapHeight}" loading="lazy" decoding="async"></a><figcaption>${escape(aihot.coverCaption || '复用已有完整研究引导图，预览保留全部画面，高清 PNG 保留原始字节。')}<br><a href="${aihotMap}">打开完整原图</a> · <a href="${aihotMap}" download="aihot-overview.png">下载高清引导图</a> · <a href="${aihotEntrance}">在线阅读能力、信源与复用方向 ↗</a></figcaption></figure></section>
+<footer>001 研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>Sandboard 上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">Sandboard 来源、许可与改动范围</a><br><br>002 研究基线：<a href="${escape(interview.upstream)}/tree/${escape(interviewReport.baseline.commit)}">${escape(interviewReport.baseline.commit)}</a><br>上游指南遵循 <a href="${interviewEntrance}LICENSE.upstream.txt">MIT 许可</a>；中文讲解与示例为独立补充，第三方教程仅保留资料入口。<br><a href="${repository}/blob/main/${interviewDirectory}/README.md">面试指南来源与实现说明</a><br><br>013 研究基线：<a href="${escape(aihot.upstream)}/tree/${escape(aihotBaseline)}">${escape(aihotBaseline)}</a><br>AIHOT 上游遵循 MIT 许可；研究网页保留来源和独立解读，未运行原库采集与模型服务。<br><a href="${repository}/blob/main/${aihotDirectory}/README.md">AIHOT 来源、许可与研究范围</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer>
 </main></body></html>`;
 await writeFile(path.join(site, 'index.html'), html);
 await writeFile(path.join(site, '.nojekyll'), '');
-console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试知识指南；仅发布 001、002，原版路径保留。`);
+console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试知识指南 + AIHOT 研究；仅发布 001、002、013，原版路径保留。`);

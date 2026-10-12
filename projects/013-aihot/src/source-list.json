@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "commit": "6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48",
+    "sourceCount": 18,
+    "groups": {
+      "institution": 10,
+      "media": 5,
+      "community": 3
+    },
+    "sourceUrl": "https://github.com/KKKKhazix/AIHOT/blob/6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48/industry/sources.json",
+    "researchDate": "2026-10-08",
+    "cataloguedOn": "2026-10-12",
+    "scope": "固定研究提交内的 18 个公开示范源，不代表 AIHOT 线上站的完整信源。",
+    "mappingNotes": "name、kind、tier、feedUrl、轮询间隔、tags、owner 和全文开关保留上游配置；group、homepage、format 与中文说明为本地研究补充。kind=rss 是上游适配器名称，同时处理 RSS 和 Atom。",
+    "tierNotes": "T1/T2 是 AIHOT 配置中的来源分层，不是本研究对可靠性的统一评分；原始 owner_entity_id 为空时 owner 保留 null。",
+    "checkedAt": "2026-10-12T12:58:29+08:00"
+  },
+  "sources": [
+    {
+      "id": "rss-openai-news",
+      "name": "OpenAI News",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://openai.com/news/rss.xml",
+      "homepage": "https://openai.com/news/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "focus": "模型、产品、研究、安全与公司公告。",
+      "value": "确认 OpenAI 自己发布了什么，作为模型和产品变化的一手依据。",
+      "limitations": [
+        "含公司、合作与政策公告，不能把每条内容都当作模型技术进展。",
+        "发布方对自家成果的说明需要结合独立评测理解。"
+      ],
+      "owner": "openai",
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-google-deepmind",
+      "name": "Google DeepMind",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://deepmind.google/blog/rss.xml",
+      "homepage": "https://deepmind.google/blog/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "focus": "前沿模型、机器人、科学 AI、安全和研究进展。",
+      "value": "跟踪 Google 核心 AI 模型与研究项目的一手发布。",
+      "limitations": [
+        "与 Google Research 同属 Google，不能视为两个独立机构的交叉验证。",
+        "有些文章跳转至 Google 其他官方域名；内容也含产品发布和组织动态。"
+      ],
+      "owner": "google",
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-google-research",
+      "name": "Google Research",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://research.google/blog/rss/",
+      "homepage": "https://research.google/blog/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方",
+        "研究"
+      ],
+      "focus": "算法、模型、数据集、应用研究及计算机科学。",
+      "value": "理解研究方法，发现论文、数据集和可复用工具。",
+      "limitations": [
+        "与 Google DeepMind 同属 Google，部分事件可能交叉报道。",
+        "范围包含量子、网络、软件系统等非纯 AI 研究，需要相关性筛选。"
+      ],
+      "owner": "google",
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-hugging-face",
+      "name": "Hugging Face Blog",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://huggingface.co/blog/feed.xml",
+      "homepage": "https://huggingface.co/blog",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方",
+        "开源"
+      ],
+      "focus": "开放模型、工具库、数据集、推理优化和实践教程。",
+      "value": "连接开放模型生态，把研究发布与开发者实践联系起来。",
+      "limitations": [
+        "站点含社区、合作组织文章；应保留实际作者和发布机构，不能一律当作平台官方观点。",
+        "介绍模型与工具不等于验证了性能、许可证或部署适用性。"
+      ],
+      "owner": "hugging-face",
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-microsoft-research",
+      "name": "Microsoft Research",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://www.microsoft.com/en-us/research/feed/",
+      "homepage": "https://www.microsoft.com/en-us/research/blog/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方",
+        "研究"
+      ],
+      "focus": "研究论文、模型、Agent、机器人和科学应用。",
+      "value": "发现新研究方法、开源项目及科学应用的技术解释。",
+      "limitations": [
+        "与 GitHub 属于同一公司集团，机构视角不完全独立。",
+        "也包含实验室、人员和活动动态，且并非微软全部产品新闻。"
+      ],
+      "owner": "microsoft",
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-nvidia-blog",
+      "name": "NVIDIA Blog",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://blogs.nvidia.com/feed/",
+      "homepage": "https://blogs.nvidia.com/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "focus": "GPU、AI 基础设施、机器人和产业应用。",
+      "value": "了解算力平台、软件生态和产业落地案例的一手动态。",
+      "limitations": [
+        "总博客含游戏、员工和公司新闻，并非纯 AI 订阅。",
+        "厂商案例与性能表述需要核对适用硬件、测试条件和商业背景。"
+      ],
+      "owner": "nvidia",
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-aws-ml",
+      "name": "AWS Machine Learning Blog",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "homepage": "https://aws.amazon.com/blogs/machine-learning/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方",
+        "教程"
+      ],
+      "focus": "Bedrock、SageMaker、Agent 和企业 AI 应用教程。",
+      "value": "从参考架构、示例和部署流程理解 AI 工程落地。",
+      "limitations": [
+        "内容围绕 AWS 技术栈与客户案例，存在平台视角。",
+        "教程往往依赖云服务、权限及版本，不能直接等同于可免费运行。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-github-ai",
+      "name": "GitHub Blog · AI & ML",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://github.blog/ai-and-ml/feed/",
+      "homepage": "https://github.blog/ai-and-ml/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "focus": "Copilot、AI 编程、开发实践与模型应用。",
+      "value": "研究 AI 如何进入开发者工作流及真实工程实践。",
+      "limitations": [
+        "GitHub 属于微软集团；与 Microsoft Research 的机构来源存在关联。",
+        "内容兼有产品推广，不能当作全行业中立的工具比较。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-mistral",
+      "name": "Mistral AI",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://mistral.ai/news/rss",
+      "homepage": "https://mistral.ai/news/",
+      "intervalMinutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "focus": "模型、产品、工程、企业方案和公司公告。",
+      "value": "补充欧洲模型厂商的产品与技术一手信息。",
+      "limitations": [
+        "开放权重或开源情况须逐个模型核对许可证，不能概括所有产品。",
+        "含融资、合作与市场扩展，需区别于技术进展。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-bair",
+      "name": "Berkeley AI Research",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "institution",
+      "tier": "T1",
+      "feedUrl": "https://bair.berkeley.edu/blog/feed.xml",
+      "homepage": "https://bair.berkeley.edu/blog/",
+      "intervalMinutes": 180,
+      "tags": [
+        "研究"
+      ],
+      "focus": "研究者讲解论文、强化学习、机器人、模型与系统。",
+      "value": "理解研究动机、方法和实验，发现论文与实现入口。",
+      "limitations": [
+        "研究博客不是全行业新闻流，发布节奏取决于研究成果。",
+        "论文及实验结论仍需查看原始方法、数据和适用条件。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-the-verge-ai",
+      "name": "The Verge · AI",
+      "kind": "rss",
+      "format": "Atom",
+      "group": "media",
+      "tier": "T2",
+      "feedUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "homepage": "https://www.theverge.com/ai-artificial-intelligence",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "focus": "AI 产品、科技公司、政策与社会影响新闻。",
+      "value": "补充用户视角、产品影响和争议事件的报道。",
+      "limitations": [
+        "媒体报道常复述官方发布，与一手源可能重复。",
+        "应检查引述与原始链接，区分报道、评论和已确认事实。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-techcrunch-ai",
+      "name": "TechCrunch · AI",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "media",
+      "tier": "T2",
+      "feedUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "homepage": "https://techcrunch.com/category/artificial-intelligence/",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "focus": "AI 公司、创业、融资、产品和商业竞争。",
+      "value": "观察 AI 创业生态、商业变化与产品落地。",
+      "limitations": [
+        "偏商业和创业视角，研究细节通常不是重点。",
+        "公司声明与融资消息需区别于技术能力的独立验证。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-ars-technica-ai",
+      "name": "Ars Technica · AI",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "media",
+      "tier": "T2",
+      "feedUrl": "https://arstechnica.com/ai/feed/",
+      "homepage": "https://arstechnica.com/ai/",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "focus": "AI 技术解释、产品测试、风险与行业新闻。",
+      "value": "通过技术报道补充发布背景、实际效果和问题。",
+      "limitations": [
+        "仍需追溯论文、官方公告与测试条件。",
+        "与其他媒体和官方源对同一事件的报道可能重合。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-mit-tech-review-ai",
+      "name": "MIT Technology Review · AI",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "media",
+      "tier": "T2",
+      "feedUrl": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "homepage": "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "intervalMinutes": 120,
+      "tags": [
+        "媒体"
+      ],
+      "focus": "AI 研究趋势、产业、治理及社会影响的深度报道。",
+      "value": "提供较长周期的背景分析，补充即时新闻的语境。",
+      "limitations": [
+        "属于科技媒体报道，不应当作 MIT 实验室的研究原始发布。",
+        "部分内容可能需要订阅，Feed 字段不保证提供文章全文。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-the-decoder",
+      "name": "The Decoder",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "media",
+      "tier": "T2",
+      "feedUrl": "https://the-decoder.com/feed/",
+      "homepage": "https://the-decoder.com/",
+      "intervalMinutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "focus": "模型发布、论文解读、AI 工具和行业动态。",
+      "value": "集中跟踪 AI 消息并寻找关联的原始发布或论文。",
+      "limitations": [
+        "二次报道和解读需要与原始来源核对。",
+        "报道数量和热度不等于技术成果质量。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-simon-willison",
+      "name": "Simon Willison",
+      "kind": "rss",
+      "format": "Atom",
+      "group": "community",
+      "tier": "T2",
+      "feedUrl": "https://simonwillison.net/atom/everything/",
+      "homepage": "https://simonwillison.net/",
+      "intervalMinutes": 120,
+      "tags": [
+        "个人"
+      ],
+      "focus": "LLM 实践、AI 编程、工具测试、链接与个人笔记。",
+      "value": "从具体实验和代码了解工具行为、限制与开发经验。",
+      "limitations": [
+        "Everything Feed 包含非 AI 技术和个人内容，需要筛选。",
+        "个人测试有上下文和时间边界，不代表完整评测。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-import-ai",
+      "name": "Import AI",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "community",
+      "tier": "T2",
+      "feedUrl": "https://importai.substack.com/feed",
+      "homepage": "https://importai.substack.com/",
+      "intervalMinutes": 180,
+      "tags": [
+        "个人",
+        "周刊"
+      ],
+      "focus": "AI 研究、政策、安全及产业趋势的周刊整理。",
+      "value": "把零散研究与政策变化放在较长周期的观察中。",
+      "limitations": [
+        "属于作者编辑和观点选择，不是论文原始数据库。",
+        "周刊节奏意味着时效性与即时公告不同，应继续追溯原始材料。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    },
+    {
+      "id": "rss-latent-space",
+      "name": "Latent Space",
+      "kind": "rss",
+      "format": "RSS",
+      "group": "community",
+      "tier": "T2",
+      "feedUrl": "https://www.latent.space/feed",
+      "homepage": "https://www.latent.space/",
+      "intervalMinutes": 180,
+      "tags": [
+        "个人"
+      ],
+      "focus": "AI 工程、开发者工具、访谈与播客。",
+      "value": "了解工程师及实践者的经验、技术选择和生态变化。",
+      "limitations": [
+        "访谈和播客中的观点与产品声明需要另行验证。",
+        "音视频内容和文字摘要可能不等价，Feed 不保证完整转录。"
+      ],
+      "owner": null,
+      "displayFulltext": false,
+      "syndicateFulltext": false
+    }
+  ]
+}

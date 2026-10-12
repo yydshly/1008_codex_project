@@ -1,5 +1,26 @@
 # 多 Web 演示部署与记录
 
+<!-- AIHOT_PUBLICATION:START -->
+## AIHOT 中文研究网页（2026-10-12）
+
+013 接入现有 GitHub Pages Actions 工作流，统一构建和发布 001、002、013。独立静态研究页涵盖能力、模块、原理、18 个示范信源、六种获取方式、场景、价值、复用路线、扩展方向和边界；采用已有完整引导图，高清 PNG 原始字节保持一致。实际网址在部署成功并验证后登记。
+
+本项目网页需要 Node.js 22+，无第三方依赖；上游 AIHOT 自托管运行要求按其固定版本文档另行满足。这里没有部署上游 PostgreSQL、worker、模型、X/微信供应商或采集 API。
+
+```powershell
+npm.cmd run build --prefix projects/013-aihot/web
+node projects/013-aihot/web/scripts/audit.mjs --built
+npm.cmd run preview --prefix projects/013-aihot/web
+```
+
+独立产物：`projects/013-aihot/web/dist/`；预览端口 4213，子路径 `/1008_codex_project/013-aihot/`。正文和信源在构建时进入 HTML，关闭 JavaScript 仍可阅读；增强脚本提供搜索、类别与格式筛选、订阅复制、引导图放大和章节导航。页面下载包含研究 JSON、信源 JSON/CSV、上游原配置、单次 Feed 检查和许可记录。
+
+根 `npm run build:site` 把整个产物复制到 `.cache/pages-site/013-aihot/`；`scripts/validate-site.mjs` 检查发布允许名单、既有项目、完整摘要、11 章节、18 信源与原图一致性。CI 同时运行本项目内容审计；本地另核验桌面、390/320 像素手机、直接锚点、禁用脚本和所有增强交互。
+
+18 个公开示范 Feed 本次均 HTTP 200 且可解析（16 RSS、2 Atom）；单次订阅检查不等于完整正文提取或上游整条模型管线运行。研究固定提交为 `6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48`，源库 MIT 与 NOTICE 保留在子项目。
+
+<!-- AIHOT_PUBLICATION:END -->
+
 <!-- INTERVIEW_GUIDE_PUBLICATION:START -->
 ## 编程面试知识指南公开发布（2026-10-12）
 

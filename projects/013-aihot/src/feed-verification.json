@@ -1,0 +1,715 @@
+{
+  "meta": {
+    "commit": "6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48",
+    "clientDate": "2026-10-12",
+    "timezone": "Asia/Shanghai (+08:00)",
+    "startedAt": "2026-10-12T12:58:24+08:00",
+    "checkedAt": "2026-10-12T12:58:29+08:00",
+    "measuredTime": "2026-10-12T12:58:29+08:00",
+    "clientDateMatchesMeasuredDate": true,
+    "sourceCount": 18,
+    "statusCounts": {
+      "ok": 18
+    },
+    "method": "Python 标准库 urllib + ElementTree；只访问公开 Feed，无模型或付费 API 调用。",
+    "requestLimits": {
+      "timeoutSeconds": 15,
+      "maxResponseBytes": 2097152,
+      "maxWorkers": 6,
+      "attemptsPerFeed": 1
+    },
+    "timeNote": "用户日期与实测的 +08:00 日期一致。",
+    "limitations": [
+      "单次检查只说明此环境在记录时间收到的结果；失败不等于信源失效。",
+      "itemCount 是当前响应中的条目数，不是该信源的历史总量。",
+      "bodyFields 仅统计字段出现和字符数；可能包含 HTML，不能证明字段是完整正文，也不代表再发布许可。"
+    ]
+  },
+  "results": [
+    {
+      "id": "rss-openai-news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "checkedAt": "2026-10-12T12:58:24+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://openai.com/news/rss.xml",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 1287,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 1181,
+          "entriesWithNonemptyField": 1181,
+          "maximumCharacters": 683
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "text/xml; charset=utf-8",
+      "responseBytes": 784414,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.344
+    },
+    {
+      "id": "rss-google-deepmind",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "checkedAt": "2026-10-12T12:58:24+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://deepmind.google/blog/rss.xml",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 100,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 100,
+          "entriesWithNonemptyField": 69,
+          "maximumCharacters": 215
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "text/xml",
+      "responseBytes": 18785,
+      "decodedBytes": 69499,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.641
+    },
+    {
+      "id": "rss-google-research",
+      "name": "Google Research",
+      "url": "https://research.google/blog/rss/",
+      "checkedAt": "2026-10-12T12:58:24+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://research.google/blog/rss/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 100,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 99,
+          "entriesWithNonemptyField": 99,
+          "maximumCharacters": 44
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=utf-8",
+      "responseBytes": 78487,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.156
+    },
+    {
+      "id": "rss-hugging-face",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "checkedAt": "2026-10-12T12:58:24+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://huggingface.co/blog/feed.xml",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 876,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=utf-8",
+      "responseBytes": 258580,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.281
+    },
+    {
+      "id": "rss-microsoft-research",
+      "name": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/feed/",
+      "checkedAt": "2026-10-12T12:58:24+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://www.microsoft.com/en-us/research/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 10,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 813
+        },
+        "content:encoded": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 57232
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 263286,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 2.219
+    },
+    {
+      "id": "rss-nvidia-blog",
+      "name": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/feed/",
+      "checkedAt": "2026-10-12T12:58:24+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://blogs.nvidia.com/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 18,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 18,
+          "entriesWithNonemptyField": 18,
+          "maximumCharacters": 410
+        },
+        "content:encoded": {
+          "entriesWithField": 18,
+          "entriesWithNonemptyField": 18,
+          "maximumCharacters": 21679
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 253884,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.891
+    },
+    {
+      "id": "rss-aws-ml",
+      "name": "AWS Machine Learning Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "checkedAt": "2026-10-12T12:58:25+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 20,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 369
+        },
+        "content:encoded": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 59935
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml;charset=UTF-8",
+      "responseBytes": 529755,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.141
+    },
+    {
+      "id": "rss-github-ai",
+      "name": "GitHub Blog · AI & ML",
+      "url": "https://github.blog/ai-and-ml/feed/",
+      "checkedAt": "2026-10-12T12:58:25+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://github.blog/ai-and-ml/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 10,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 498
+        },
+        "content:encoded": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 813426
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 1210133,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.375
+    },
+    {
+      "id": "rss-mistral",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai/news/rss",
+      "checkedAt": "2026-10-12T12:58:25+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://mistral.ai/news/rss",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 89,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 27,
+          "entriesWithNonemptyField": 27,
+          "maximumCharacters": 173
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "text/plain; charset=UTF-8",
+      "responseBytes": 25702,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.0
+    },
+    {
+      "id": "rss-bair",
+      "name": "Berkeley AI Research",
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "checkedAt": "2026-10-12T12:58:25+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://bair.berkeley.edu/blog/feed.xml",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 10,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 48794
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/xml",
+      "responseBytes": 289139,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 3.625
+    },
+    {
+      "id": "rss-the-verge-ai",
+      "name": "The Verge · AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "checkedAt": "2026-10-12T12:58:26+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "format": "Atom",
+      "expectedFormat": "Atom",
+      "itemCount": 10,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 382
+        },
+        "content": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 2293
+        }
+      },
+      "contentType": "application/xml; charset=UTF-8",
+      "responseBytes": 30345,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 0.828
+    },
+    {
+      "id": "rss-techcrunch-ai",
+      "name": "TechCrunch · AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "checkedAt": "2026-10-12T12:58:26+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 20,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 450
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 19189,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 0.719
+    },
+    {
+      "id": "rss-ars-technica-ai",
+      "name": "Ars Technica · AI",
+      "url": "https://arstechnica.com/ai/feed/",
+      "checkedAt": "2026-10-12T12:58:26+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://arstechnica.com/ai/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 20,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 93
+        },
+        "content:encoded": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 3283
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 77585,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.156
+    },
+    {
+      "id": "rss-mit-tech-review-ai",
+      "name": "MIT Technology Review · AI",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "checkedAt": "2026-10-12T12:58:26+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 10,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 380
+        },
+        "content:encoded": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 36539
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 153630,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 0.828
+    },
+    {
+      "id": "rss-the-decoder",
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/feed/",
+      "checkedAt": "2026-10-12T12:58:26+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://the-decoder.com/feed/",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 10,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 10,
+          "entriesWithNonemptyField": 10,
+          "maximumCharacters": 1046
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "responseBytes": 21256,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 2.094
+    },
+    {
+      "id": "rss-simon-willison",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "checkedAt": "2026-10-12T12:58:27+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://simonwillison.net/atom/everything/",
+      "format": "Atom",
+      "expectedFormat": "Atom",
+      "itemCount": 30,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content:encoded": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "summary": {
+          "entriesWithField": 30,
+          "entriesWithNonemptyField": 30,
+          "maximumCharacters": 9472
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/xml; charset=utf-8",
+      "responseBytes": 93719,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.016
+    },
+    {
+      "id": "rss-import-ai",
+      "name": "Import AI",
+      "url": "https://importai.substack.com/feed",
+      "checkedAt": "2026-10-12T12:58:27+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://importai.substack.com/feed",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 20,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 67
+        },
+        "content:encoded": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 40903
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/xml; charset=utf-8",
+      "responseBytes": 464633,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 1.218
+    },
+    {
+      "id": "rss-latent-space",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/feed",
+      "checkedAt": "2026-10-12T12:58:27+08:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "finalUrl": "https://www.latent.space/feed",
+      "format": "RSS",
+      "expectedFormat": "RSS",
+      "itemCount": 20,
+      "bodyFields": {
+        "description": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 225
+        },
+        "content:encoded": {
+          "entriesWithField": 20,
+          "entriesWithNonemptyField": 20,
+          "maximumCharacters": 155834
+        },
+        "summary": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        },
+        "content": {
+          "entriesWithField": 0,
+          "entriesWithNonemptyField": 0,
+          "maximumCharacters": 0
+        }
+      },
+      "contentType": "application/xml; charset=utf-8",
+      "responseBytes": 1030265,
+      "formatMatchesCatalog": true,
+      "durationSeconds": 2.266
+    }
+  ]
+}

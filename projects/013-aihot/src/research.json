@@ -1,0 +1,1373 @@
+{
+  "meta": {
+    "title": "AIHOT 信源与资讯引擎研究",
+    "upstream": "https://github.com/KKKKhazix/AIHOT",
+    "commit": "6e67a9d9e8d87b95b8118a8a0b328a9bebd2bb48",
+    "researchDate": "2026-10-12",
+    "originalResearchDate": "2026-10-08",
+    "license": "MIT；AIHOT 名称与 Logo 不在授权范围内；第三方内容另受其许可约束",
+    "description": "基于固定源码快照的中文研究：解释 18 个公开示范订阅源、六种接入方式、精选与事件数据流、公开接口、复用价值和扩展边界。保留 2026-10-08 引导图；本页未运行上游后端或付费模型。"
+  },
+  "summaryItems": [
+    {
+      "title": "能力",
+      "text": "把多源资讯采集、预筛、评分、结构化、中文写作、事件归组、热度与定期出刊串成可自托管的资讯流水线。"
+    },
+    {
+      "title": "模块",
+      "text": "api、worker、web 三个进程；sources/content/editorial/events/publication/reports 等业务模块；site 与 industry 分离站点身份和行业判断。"
+    },
+    {
+      "title": "原理",
+      "text": "先确定可用材料与发布时间，再由同一评分模型独立评两次；报道 report → 一次发生 fact → 持续事件 story，公开出口统一经过 publication。"
+    },
+    {
+      "title": "信源",
+      "text": "18 个示范源全部使用 rss 适配器：10 个机构与技术生态源、5 个媒体、3 个作者与社区源。适配器兼容 RSS、Atom 和 RDF，不包含线上完整运营名单。"
+    },
+    {
+      "title": "获取",
+      "text": "订阅解析与正文补取是两层；另支持网页 CSS、JSON 字段映射、X/SocialData、公众号/Dajiala 与外部推送。扩展入口需要自行配置，并非现成示范源。"
+    },
+    {
+      "title": "场景",
+      "text": "行业晨报、产品与竞品监测、开发者资讯、团队情报入口、垂直内容站，以及向 Agent 提供可追溯的资讯。"
+    },
+    {
+      "title": "价值",
+      "text": "减少重复阅读与手工编报，把编辑经验写成可评测的筛选标准；源质量、标注与持续运营决定最终效果。"
+    },
+    {
+      "title": "复用",
+      "text": "既可只借用来源清单和采集配置，也可复用正文清洗、事件模型、评测方法、公开范围控制，或部署完整引擎。"
+    },
+    {
+      "title": "方向",
+      "text": "中文行业包、人工审稿、多租户、个性化、更多通知渠道和带出处的问答可在此基础上开发；这些是规划，不是当前已交付的能力。"
+    },
+    {
+      "title": "边界",
+      "text": "模型评分不是事实核验；热度不是全网热搜；全文获取不代表转载授权；GitHub Pages 研究页不提供上游数据库、采集或模型服务。"
+    },
+    {
+      "title": "验证",
+      "text": "结论来自文档与固定提交源码阅读。保留 10 月 8 日观察基线，10 月 12 日整理归档；本地研究网页构建与浏览器核验另记，不把阅读当作端到端运行。"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "collection",
+      "title": "六种可配置采集入口",
+      "description": "按信源配置定时读取，或接收外部脚本提交的条目，统一进入资料处理链。",
+      "details": [
+        "rss 兼容 RSS 2.0、Atom、RDF；web_list 解析 HTML/CSS 或指定的列表格式；json_list 映射接口字段。",
+        "x_search 使用 SocialData 搜索，mp_account 使用极致了 Dajiala；external 接收带认证的 HTTP 推送。",
+        "后台可新建、暂停、试抓受支持的类型、查看失败原因；抓取频率根据近期产出调整。",
+        "18 个自带示范源全部是 rss，扩展入口不等于已经提供相应账号或公众号名单。"
+      ],
+      "evidence": [
+        {
+          "label": "信源适配器",
+          "path": "packages/backend/src/sources/"
+        },
+        {
+          "label": "配置与频率规则",
+          "path": "docs/sources.md"
+        },
+        {
+          "label": "18 个示范源",
+          "path": "industry/sources.json"
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "title": "资料身份、日期与正文处理",
+      "description": "在调用模型之前处理 URL 身份、内容修订、旧文归档和可用正文。",
+      "details": [
+        "同一 URL 与内容按照统一身份规则判重；补齐正文会生成新的材料修订，避免沿用旧输入的分析结果。",
+        "普通 HTML 先用 Readability 提取并清洗；按配置与预算尝试 Jina 作为正文补取降级。",
+        "没有可信发布时间的资料先不进入公开池；新信源首次导入与发现时已经很旧的资料按原文时间归档。",
+        "视频播放页不当作文章正文，不提供通用音频转写或视频理解；有订阅文字时使用其文字材料。"
+      ],
+      "evidence": [
+        {
+          "label": "身份与修订",
+          "path": "packages/backend/src/content/materials.ts"
+        },
+        {
+          "label": "正文提取",
+          "path": "packages/backend/src/content/extract.ts"
+        },
+        {
+          "label": "日期与回灌规则",
+          "path": "docs/sources.md"
+        }
+      ]
+    },
+    {
+      "id": "selection",
+      "title": "行业预筛与两次注意力评分",
+      "description": "将行业编辑的取舍写进提示词，并用信源分级门槛作最终筛选的一部分。",
+      "details": [
+        "预筛只阻断明显无关的 BLOCK；PASS 与 UNKNOWN 在有足够材料时继续，普通文章不能仅凭标题评分或写文案。",
+        "runScores 选定同一个 score model，使用同一提示词与输入依次独立调用两次；不是默认用两个不同模型投票。",
+        "每次 attentionScore 为 0–100 整数；两次之和至少达到 2 × 门槛才够分，显示分数是平均值向下取整。",
+        "默认 T1=60、T1_5=65、T2=76，未配置门槛的分级不参与精选评分；understandFloor=50 控制未入选资料的写法。",
+        "五轴是提示词中的内部计算：实质份量、信息增量、证据强度、共振面、可用性。代码只验证最终 attentionScore，不接收或逐轴复算。",
+        "够分仍须确认归组、新闻身份和信息增量，不能把评分结果等同于立即公开精选。"
+      ],
+      "evidence": [
+        {
+          "label": "双评分调用与输出校验",
+          "path": "packages/backend/src/editorial/analyze.ts"
+        },
+        {
+          "label": "五轴和权重",
+          "path": "industry/prompts/selection-score.md"
+        },
+        {
+          "label": "门槛",
+          "path": "industry/selection.ts"
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "中文标题、摘要、理由与翻译",
+      "description": "按价值层级生成读者文案，同时保留来源与身份约束。",
+      "details": [
+        "先结构化，再写标题摘要；入选与平均分高于 understandFloor 的内容走内容理解，其余使用较简短的摘要流程。",
+        "结构化单独抽取分类、标签、主体公司、事实与原文前提；页面分类来自结构化结果，不由写作步骤自由决定。",
+        "标题摘要带公司身份词校验，降低写入原文没有提到的实体的风险；这不是对所有事实的完备验证。",
+        "没有正文或只有链接的可展示 X 原帖保留链接、图片与引用，不凭空写摘要或翻译；取得实际长文时按材料处理。",
+        "精选全文可翻译；能否公开原文和译文仍须遵守信源的全文展示与再分发开关。"
+      ],
+      "evidence": [
+        {
+          "label": "分析、写作与翻译",
+          "path": "packages/backend/src/editorial/"
+        },
+        {
+          "label": "结构化契约",
+          "path": "industry/prompts/structure.md"
+        },
+        {
+          "label": "原文和译文出口",
+          "path": "packages/backend/src/publication/detail.ts"
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "title": "报道、事实与持续事件归组",
+      "description": "把多篇报道的一次发布折叠，并把该发布的后续进展挂到同一事件。",
+      "details": [
+        "article/report 是来源材料；fact 表示一次具体发生；story 连接相关事实构成事件脉络。",
+        "SAME_OCCURRENCE 表示同一次发生，SAME_STORY 表示同一事件的直接进展；同一公司或话题不自动合并。",
+        "候选窗口为最近 14 天发现的报道；普通报道优先向量召回，无向量配置可用文字重合度降级，同 URL 和 native 引用另提供候选。",
+        "模型判断候选关系与是否带来新信息；需要复核的合并可配置独立 groupReview model。",
+        "综合稿只作为提及多个事件的材料，不能因一篇文章把本来无关的事情串成一个事件；人工归属优先于模型。"
+      ],
+      "evidence": [
+        {
+          "label": "归组写入与人工优先",
+          "path": "packages/backend/src/events/group.ts"
+        },
+        {
+          "label": "14 天召回与文字降级",
+          "path": "packages/backend/src/events/recall.ts"
+        },
+        {
+          "label": "四类关系",
+          "path": "docs/grouping.md"
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "title": "按事件计算独立参与方热度",
+      "description": "衡量已接入来源中有多少独立参与方在谈论一件事，并给出时间衰减与趋势。",
+      "details": [
+        "热度窗口 48 小时；每个独立 participant 只贡献一次，以该方最近证据时间计算，24 小时半衰期。",
+        "同一机构的多个渠道可通过 owner_entity_id 合并；媒体矩阵可通过 signal_group_id 合并；指定社区源按作者识别参与方。",
+        "一家公司发十篇、重复抓取同一条，不会被算作十个独立参与方。",
+        "hot_signal 是讨论证据，只附着已有事实/事件，不自行创建事件；无 native 回复/引用时依赖向量召回，不使用普通报道的文字降级。",
+        "与 6 小时前作比较，并考虑采集落后和新加入来源的可比性；趋势可为 unknown，不能强行当作真实热度上涨。",
+        "这反映你的接入源覆盖，不等于全网讨论人数、社交浏览量或全球热搜。"
+      ],
+      "evidence": [
+        {
+          "label": "48/24/6 小时热度规则",
+          "path": "packages/backend/src/events/hot.ts"
+        },
+        {
+          "label": "讨论信号归组",
+          "path": "packages/backend/src/events/group.ts"
+        },
+        {
+          "label": "公开榜单再校验",
+          "path": "packages/backend/src/publication/hot.ts"
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "日报、周报、月报的规则化出刊",
+      "description": "将已确认资讯编成固定刊期，降低跨来源、跨天重复与自由生成的风险。",
+      "details": [
+        "默认北京时间日报每天 08:00、周报每周一 10:00、月报每月 1 日 10:30；site/site.ts 可配置。",
+        "日报按规则编排，不调用模型：一件事一条，优先选权威代表报道，近期已报事件只在有合适新进展时跟进。",
+        "日报最多 12 件正文、10 条快讯，同一信源正文最多 2 条；头条与今日看点来自排序后的现有条目。",
+        "周报取最多 20 件、月报最多 30 件，由对应日报去重汇编；模型只写总述及栏目导读，不负责增删资讯条目。",
+        "总述出现不受条目支持的指定名称或数字时会舍弃或降级为模板；这是有限的内容约束，不是语义事实的全量校验。",
+        "每半小时检查刊期；停机或失败后补刊，已出刊默认不重写，显式重生成保留修订记录。"
+      ],
+      "evidence": [
+        {
+          "label": "候选与规则编排",
+          "path": "packages/backend/src/reports/edition.ts"
+        },
+        {
+          "label": "出刊与总述约束",
+          "path": "packages/backend/src/reports/compose.ts"
+        },
+        {
+          "label": "定时调度",
+          "path": "apps/worker/src/schedules.ts"
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "主题、检索与事件阅读",
+      "description": "让读者从公司、方向、内容形态和事件时间线进入资讯。",
+      "details": [
+        "company 主题按主体公司收录；field 与 genre 按受控标签归类，分类与同义词由行业包维护。",
+        "提供标题摘要搜索和全文相关搜索入口；各出口的历史范围与参数上限须按接口说明使用。",
+        "事件页将代表报道、后续事实、时间线与综述组织起来，可查看其他来源与原文。",
+        "收藏、已读等读者状态存于浏览器；公开阅读匿名，后台管理员独立鉴权。"
+      ],
+      "evidence": [
+        {
+          "label": "主题归属",
+          "path": "packages/backend/src/publication/topics.ts"
+        },
+        {
+          "label": "事件公开读取",
+          "path": "packages/backend/src/publication/stories.ts"
+        },
+        {
+          "label": "阅读页面",
+          "path": "apps/web/app/routes/"
+        },
+        {
+          "label": "本地阅读状态",
+          "path": "apps/web/app/lib/local-state.ts"
+        }
+      ]
+    },
+    {
+      "id": "outlets",
+      "title": "网页、RSS、API 与 Agent 出口",
+      "description": "用一套公开内容规则提供给人类读者、订阅器和 Agent。",
+      "details": [
+        "公开出口包括精选/全部/全文/日报/周报/月报 RSS、API v1、MCP、Agent Markdown、llms.txt、站点地图与分享图。",
+        "publication 统一可见范围、公开时间、精选席位、证据和全文许可；原文页、译文页、Markdown 也走同一读取层。",
+        "精选网页可折成包含多报道的阅读组；API、精选 RSS 与同步出口每条 fact 只保留一个代表报道。",
+        "代表优先级包括官方一手、身份匹配的官方账号，再比较正文、分数与时间；一手不意味着宣传效果已经独立核验。",
+        "打开页面只读已存结果，不触发新模型调用；撤回与当前许可会影响所有出口，不能让缓存无限延长旧内容寿命。"
+      ],
+      "evidence": [
+        {
+          "label": "统一公开范围",
+          "path": "packages/backend/src/publication/scope.ts"
+        },
+        {
+          "label": "代表报道",
+          "path": "packages/backend/src/publication/representative.ts"
+        },
+        {
+          "label": "原文与 Markdown",
+          "path": "packages/backend/src/publication/detail.ts"
+        },
+        {
+          "label": "各类出口路由",
+          "path": "apps/api/src/routes/"
+        }
+      ]
+    },
+    {
+      "id": "evaluation",
+      "title": "精选、关系与综述评测",
+      "description": "用自己的样本检验编辑标准和模型选择，而不是只凭样例观感调提示词。",
+      "details": [
+        "SelectBench 对标注为该选/不该选的资料运行预筛与双评分，比较门槛、模型、错误类型。",
+        "建议 100–200 条真实样本，包含边界难例；开发集用于调标准，留出集用于最终检查。",
+        "不仅看成功输出的准确率、查准率、查全率与 F1，也看覆盖率和把失败算入分母的完整准确率。",
+        "关系评测测试成对报道的四类关系，不重新运行召回；因此不能把关系指标当作整条聚簇链路准确率。",
+        "综述评测在同一批事件上对比现有与候选提示词；更改提示词或模型不会自动重算所有历史资料。"
+      ],
+      "evidence": [
+        {
+          "label": "精选评测入口",
+          "path": "scripts/eval-selection.ts"
+        },
+        {
+          "label": "关系评测入口",
+          "path": "scripts/eval-relations.ts"
+        },
+        {
+          "label": "综述评测入口",
+          "path": "scripts/eval-story-digests.ts"
+        },
+        {
+          "label": "指标与校准",
+          "path": "docs/selection.md"
+        }
+      ]
+    },
+    {
+      "id": "costs",
+      "title": "付费回执、调用上限与阶段恢复",
+      "description": "记录请求与结果，让任务重试、成本监控和中断恢复有依据。",
+      "details": [
+        "模型、向量、SocialData、Dajiala、Jina 请求经过 providers 层；回执先存结果再由业务使用，重试可复用已完成结果。",
+        "每分钟、每小时、每日的付费请求上限可熔断；这是调用数控制，不是精确人民币预算或无损持续服务保证。",
+        "请求结果不明时进入待核对状态，符合恢复规则才放行重试；进程被提前终止仍可能造成额外费用。",
+        "后台记录成功率、耗时、token 与运行状态；每个处理阶段可单独选择模型。",
+        "作者示范首次导入 152 条约 930 次模型调用，仅是其试跑样例；月费取决于采集量、正文长度、模型单价与翻译/归组需求，本研究未实测。"
+      ],
+      "evidence": [
+        {
+          "label": "付费回执与上限",
+          "path": "packages/backend/src/providers/receipts.ts"
+        },
+        {
+          "label": "恢复流程",
+          "path": "packages/backend/src/operations/recover.ts"
+        },
+        {
+          "label": "模型统计",
+          "path": "packages/backend/src/admin/models.ts"
+        },
+        {
+          "label": "成本说明",
+          "path": "docs/deploy.md"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "后台诊断、通知与运维",
+      "description": "支持管理员维护信源、处理错例、修正归属、查看告警并备份数据。",
+      "details": [
+        "后台提供信源配置、内容诊断、重新评估/归组、模型切换、评测结果、运行记录与审计。",
+        "人工修改通过所属业务模块提交，避免后台直接改状态导致公开结果与恢复记录不一致。",
+        "可配置飞书内容通知与运营告警；渠道、凭据、开关未配置时不发送。",
+        "可配置 S3 兼容存储的备份、定期清理与 IndexNow；均需真实部署及相应外部条件。",
+        "安全阀只有显式 true 才开启；生产部署需正确密钥、鉴权、代理与持久化，不是免维护软件。"
+      ],
+      "evidence": [
+        {
+          "label": "后台模块",
+          "path": "packages/backend/src/admin/"
+        },
+        {
+          "label": "飞书通知",
+          "path": "packages/backend/src/notify/"
+        },
+        {
+          "label": "备份与告警",
+          "path": "packages/backend/src/operations/"
+        },
+        {
+          "label": "部署要求",
+          "path": "docs/deploy.md"
+        }
+      ]
+    },
+    {
+      "id": "customization",
+      "title": "站点身份、行业包与模块插口",
+      "description": "在保留通用引擎的同时替换来源、行业判断、品牌，并添加自己的业务功能。",
+      "details": [
+        "site/ 管站名、文案、品牌、接口身份、出刊时间与默认模型；industry/ 管分类、主题、信源、提示词与门槛。",
+        "信源文件用于种子导入，后续以后台运营；从 JSON 删除来源不会自动删除数据库里的已存在来源。",
+        "modules/<名称>/ 可包含后端、接口、页面、迁移和测试，通过 site/modules/ 清单启用。",
+        "当前框架提供模块插口，但不附带线上专属模型榜、Codex 重置监控或主题大事记模块。",
+        "换行业要修改事实结构、词表、选择口味和标签边界，并校准，不能只换站名。"
+      ],
+      "evidence": [
+        {
+          "label": "站点配置",
+          "path": "site/"
+        },
+        {
+          "label": "行业包",
+          "path": "industry/"
+        },
+        {
+          "label": "模块契约",
+          "path": "packages/contracts/src/modules.ts"
+        },
+        {
+          "label": "行业迁移步骤",
+          "path": "docs/customize.md"
+        },
+        {
+          "label": "开源与线上边界",
+          "path": "README.md"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "sources",
+      "name": "信源 sources",
+      "path": "packages/backend/src/sources/",
+      "role": "把不同入口转成统一候选资料，并管理采集状态。",
+      "details": [
+        "RSS/Atom/RDF、网页列表、JSON、X 与公众号读取器。",
+        "配置键白名单、日期解析、过滤与详情补齐。",
+        "抓取频率调整、健康记录和定时采集；external 走独立 ingest 入口。"
+      ]
+    },
+    {
+      "id": "content",
+      "name": "资料 content",
+      "path": "packages/backend/src/content/",
+      "role": "负责原始材料身份、正文、修订和安全展示材料。",
+      "details": [
+        "materials 判重与修订，extract 做 Readability/Jina 正文提取。",
+        "清洗 HTML、处理 Markdown、原帖、引用、图片和安全视频。",
+        "来源原文保存在资料层；对外原文/译文展示仍经过 publication。"
+      ]
+    },
+    {
+      "id": "editorial",
+      "name": "编辑 editorial",
+      "path": "packages/backend/src/editorial/",
+      "role": "运行预筛、双评分、结构化、写作和翻译。",
+      "details": [
+        "analyze 组织步骤与保存分析；models 决定每步模型。",
+        "prompts 从行业包加载并以内容哈希标记版本。",
+        "writing/vocabulary 限制身份、标签和中文输出；translate 管全文翻译。"
+      ]
+    },
+    {
+      "id": "events",
+      "name": "事件 events",
+      "path": "packages/backend/src/events/",
+      "role": "建立 report → fact → story 的关系，计算热度与综述。",
+      "details": [
+        "recall 召回候选，relate 判关系，group 写归属与信息增量决定。",
+        "merge/consolidate 处理事件合并，corrections 保留人工修正。",
+        "hot 汇总独立参与方，digest 生成事件综述。"
+      ]
+    },
+    {
+      "id": "publication",
+      "name": "公开读取 publication",
+      "path": "packages/backend/src/publication/",
+      "role": "所有公开出口共享可见范围、精选代表、证据与许可。",
+      "details": [
+        "scope/rules/publish 统一公开规则与席位。",
+        "detail 同时管读者正文、原文、翻译与 Markdown。",
+        "items/stories/topics/hot/reports/feeds/v1/agent 提供各出口数据。",
+        "当前撤回、来源角色与全文授权优先于旧缓存或历史引用。"
+      ]
+    },
+    {
+      "id": "reports",
+      "name": "刊期 reports",
+      "path": "packages/backend/src/reports/",
+      "role": "按规则挑选资讯，生成固定日报与汇编周月报。",
+      "details": [
+        "edition 组织候选、事件去重、代表条目及栏目。",
+        "compose 管时间窗口、补刊、总述与修订。",
+        "correct 处理更正及相应报告输出。"
+      ]
+    },
+    {
+      "id": "providers",
+      "name": "服务 providers",
+      "path": "packages/backend/src/providers/",
+      "role": "统一模型、向量和第三方采集服务的请求边界。",
+      "details": [
+        "llm 适配 OpenAI 兼容接口；embeddings 提供候选召回向量。",
+        "socialdata/dajiala/jina 分别连接 X、公众号与页面提取。",
+        "receipts 保存付费结果、上限和重试状态，不把凭据交给网页。"
+      ]
+    },
+    {
+      "id": "notify",
+      "name": "通知 notify",
+      "path": "packages/backend/src/notify/",
+      "role": "组织飞书精选内容推送与投递记录。",
+      "details": [
+        "selected/selected-content 选择和格式化可投递内容。",
+        "deliver 跟踪投递，feishu 处理渠道请求。",
+        "通知受安全阀、权限和配置限制；不是默认发送到所有渠道。"
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "运营 operations",
+      "path": "packages/backend/src/operations/",
+      "role": "维护任务健康、备份、告警、清理与发现。",
+      "details": [
+        "recover/watch/heartbeat 跟踪中断和积压。",
+        "alerts/reports 组织运营告警与信源健康摘要。",
+        "backup/retention/indexnow 负责可配置备份、保留策略与搜索引擎提交。"
+      ]
+    },
+    {
+      "id": "admin",
+      "name": "后台 admin",
+      "path": "packages/backend/src/admin/",
+      "role": "让管理员管理来源、错例、模型、内容与运行。",
+      "details": [
+        "sources/content/models/settings/runs/selectbench 提供管理能力。",
+        "auth 管鉴权，所有后台写操作应经业务模块维护其状态。",
+        "运行日志、付费回执与人工决策用于解释处理结果。"
+      ]
+    },
+    {
+      "id": "api",
+      "name": "API 进程",
+      "path": "apps/api/",
+      "role": "Fastify 路由层提供内部网站接口、公开出口和后台接口。",
+      "details": [
+        "/api/site/ 给 SSR 前端；/api/v1/ 给公开程序。",
+        "RSS、MCP、Agent Markdown、图片与分享图也由 api 提供。",
+        "/api/ingest/items 以专用 Bearer token 接收外部资料。"
+      ]
+    },
+    {
+      "id": "worker",
+      "name": "Worker 进程",
+      "path": "apps/worker/",
+      "role": "执行采集、模型处理、事件归组与定时任务。",
+      "details": [
+        "使用 PostgreSQL 上的 pg-boss 队列，不在读者访问时调用模型。",
+        "北京时间排程：采集调度、积压恢复、热度、出刊、备份与告警。",
+        "持久化工作记录与回执支持重启后继续未完成阶段。"
+      ]
+    },
+    {
+      "id": "web",
+      "name": "Web 进程",
+      "path": "apps/web/",
+      "role": "React Router SSR 页面通过 HTTP 读取 api。",
+      "details": [
+        "首页、全部动态、热门、事件、主题、搜索、报告和后台。",
+        "不直接访问数据库或模型 key。",
+        "浏览器保存读者的收藏/已读，后台会话与公开阅读分开。"
+      ]
+    },
+    {
+      "id": "contracts",
+      "name": "共享契约 contracts",
+      "path": "packages/contracts/",
+      "role": "定义跨进程类型、模块插口、时间和公共接口常量。",
+      "details": [
+        "admin/site/mcp/modules 等契约供前后端共用。",
+        "任务载荷也有类型约束；类型不能替代运行时校验或真实服务测试。"
+      ]
+    },
+    {
+      "id": "config",
+      "name": "站点与行业配置",
+      "path": "site/",
+      "role": "隔离可复用引擎与运营者自己的身份、品牌、规则。",
+      "details": [
+        "site/site.ts：站名、文案、出刊时间、公开类别和接口身份。",
+        "site/models.ts：具名模型与各步骤默认模型。",
+        "industry/：分类、受控标签、主题、来源、提示词和入选门槛。",
+        "site/modules/：模块清单；页面条款和隐私说明是上线前应重写的模板。"
+      ]
+    },
+    {
+      "id": "extension",
+      "name": "站点专属 modules 插口",
+      "path": "modules/",
+      "role": "承载框架之外的业务，而不是把每个行业功能写死进引擎。",
+      "details": [
+        "module.ts 注册地址；server.ts 注册后端插口；web.tsx 注册网页插口。",
+        "模块可有迁移、测试、定时任务及 Agent 能力。",
+        "当前目录提供扩展位置，线上专属模块并未全部开源。"
+      ]
+    },
+    {
+      "id": "data",
+      "name": "数据库、任务与脚本",
+      "path": "database/migrations/",
+      "role": "维护数据结构、迁移顺序与研究/运行入口。",
+      "details": [
+        "PostgreSQL 存资料、分析、事实、事件、公开投影、报告、回执与运行记录。",
+        "packages/backend/src/jobs/ 维护任务队列和各阶段工作。",
+        "scripts/ 提供初始化、迁移、种子导入、评测与 smoke 检查；tests/ 包含本地假服务测试。",
+        "本研究只读源码，没有执行这些上游数据库或模型脚本。"
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "id": "ingest",
+      "title": "01 · 获取候选",
+      "description": "定时读取已配置来源或接收认证推送，将入口差异收敛成候选资料。",
+      "details": [
+        "18 个示范源是订阅源；扩展类型分别有自己的配置契约。",
+        "先检查选出的条目是否为真实资讯、URL 和日期是否有效；预览不等于完成生产处理。"
+      ],
+      "evidence": [
+        {
+          "label": "采集主流程",
+          "path": "packages/backend/src/sources/collect.ts"
+        },
+        {
+          "label": "推送入库",
+          "path": "packages/backend/src/ingest/items.ts"
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "title": "02 · 判重、补正文与确定时间",
+      "description": "在新材料修订上分析，避免旧文、未知日期和页面碎片冒充新资讯。",
+      "details": [
+        "URL/内容判重，按规则补元数据与正文；正文更新使旧分析失效。",
+        "未知发布时间先不公开；首次导入和过期材料进入归档。",
+        "Readability → 按需 Jina；视频播放页不做通用正文提取。"
+      ],
+      "evidence": [
+        {
+          "label": "材料修订",
+          "path": "packages/backend/src/content/materials.ts"
+        },
+        {
+          "label": "正文补取",
+          "path": "packages/backend/src/content/extract.ts"
+        },
+        {
+          "label": "旧文规则",
+          "path": "docs/sources.md"
+        }
+      ]
+    },
+    {
+      "id": "prefilter",
+      "title": "03 · 行业预筛",
+      "description": "宽召回地判断是否属于行业，把明显无关材料挡在公开出口之外。",
+      "details": [
+        "BLOCK 停止；PASS/UNKNOWN 在材料足够时继续。",
+        "普通文章只有标题、没有正文/订阅摘要/帖子文字时等待补齐，不凭标题生成内容。"
+      ],
+      "evidence": [
+        {
+          "label": "预筛提示词",
+          "path": "industry/prompts/prefilter.md"
+        },
+        {
+          "label": "材料不足与预筛控制",
+          "path": "packages/backend/src/editorial/analyze.ts"
+        }
+      ]
+    },
+    {
+      "id": "score-structure",
+      "title": "04 · 两次评分与结构化",
+      "description": "注意力评分决定是否够门槛，结构化提供事实、主体、分类和标签。",
+      "details": [
+        "同一模型、同一输入独立两次，score1 + score2 ≥ 2 × threshold。",
+        "五轴与类型权重只写在提示词；程序只校验最终整数分数。",
+        "结构化和评分可并行；scope 的实际取值为 single/composite/unknown，材料范围影响后续新闻身份。"
+      ],
+      "evidence": [
+        {
+          "label": "评分与结构化",
+          "path": "packages/backend/src/editorial/analyze.ts"
+        },
+        {
+          "label": "内部五轴",
+          "path": "industry/prompts/selection-score.md"
+        },
+        {
+          "label": "事实结构",
+          "path": "industry/prompts/structure.md"
+        }
+      ]
+    },
+    {
+      "id": "copy",
+      "title": "05 · 中文文案与可选翻译",
+      "description": "使用确认过的材料和结构结果写标题、摘要与理由，保留原文链接。",
+      "details": [
+        "高价值与接近门槛的走内容理解，其余写简短摘要。",
+        "空文字/纯链接原帖保留原样展示，不让写作模型编补正文。",
+        "全文翻译是独立步骤，公开与再分发仍受来源许可约束。"
+      ],
+      "evidence": [
+        {
+          "label": "中文写作",
+          "path": "packages/backend/src/editorial/writing.ts"
+        },
+        {
+          "label": "翻译",
+          "path": "packages/backend/src/editorial/translate.ts"
+        },
+        {
+          "label": "正文许可",
+          "path": "packages/backend/src/publication/detail.ts"
+        }
+      ]
+    },
+    {
+      "id": "relation",
+      "title": "06 · report → fact → story",
+      "description": "用候选召回加模型关系判断区分重复报道、事件进展与无关消息。",
+      "details": [
+        "普通报道在 14 天候选池中用向量或文字降级召回；同 URL/native 引用提供额外关系证据。",
+        "同次发生归为 fact，直接后续进展挂在 story 下；ROUNDUP 只作提及，人工归属不被模型覆盖。",
+        "归组确认前不自动进入精选；高分但没有新信息也不等于精选增量。"
+      ],
+      "evidence": [
+        {
+          "label": "候选召回",
+          "path": "packages/backend/src/events/recall.ts"
+        },
+        {
+          "label": "关系与新闻去重",
+          "path": "packages/backend/src/events/group.ts"
+        },
+        {
+          "label": "关系契约",
+          "path": "packages/backend/src/events/relate.ts"
+        }
+      ]
+    },
+    {
+      "id": "public",
+      "title": "07 · 统一公开投影与精选代表",
+      "description": "publication 为各出口形成一致的可见、许可、精选与证据口径。",
+      "details": [
+        "网页阅读组可包含多报道；机器精选出口一条 fact 一个席位，由代表报道出面。",
+        "公开原文、译文、摘要、Markdown 都检查当前公开范围和许可。",
+        "隐藏、撤回、来源角色与修订影响出口；不绕过该层直接把数据库原文发布出去。"
+      ],
+      "evidence": [
+        {
+          "label": "公开投影",
+          "path": "packages/backend/src/publication/publish.ts"
+        },
+        {
+          "label": "公共谓词",
+          "path": "packages/backend/src/publication/scope.ts"
+        },
+        {
+          "label": "原文与译文",
+          "path": "packages/backend/src/publication/detail.ts"
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "title": "08 · 热度与事件综述",
+      "description": "按已接入的独立参与方汇总事件关注度，为读者提供事件来龙去脉。",
+      "details": [
+        "48 小时窗口，participant 去重，24 小时半衰期，6 小时趋势比较。",
+        "讨论信号优先 native 引用；否则依赖向量，不使用普通报道的文字降级，也不独立创建事件。",
+        "事件综述由证据生成；热度与模型评分是不同指标。"
+      ],
+      "evidence": [
+        {
+          "label": "热度",
+          "path": "packages/backend/src/events/hot.ts"
+        },
+        {
+          "label": "讨论信号",
+          "path": "packages/backend/src/events/group.ts"
+        },
+        {
+          "label": "综述",
+          "path": "packages/backend/src/events/digest.ts"
+        }
+      ]
+    },
+    {
+      "id": "edition",
+      "title": "09 · 固定刊期与多出口分发",
+      "description": "按规则出日报，汇编周月报，通过网页、订阅与 Agent 接口供下游使用。",
+      "details": [
+        "日报无模型编报；周月报模型只写总述和栏目导读。",
+        "已出刊默认保持写作内容，当前撤回和公开证据仍须重新检查。",
+        "打开公开页面只读已存结果；通知、备份和运营告警是后台任务。"
+      ],
+      "evidence": [
+        {
+          "label": "报告生成",
+          "path": "packages/backend/src/reports/"
+        },
+        {
+          "label": "公开出口",
+          "path": "packages/backend/src/publication/"
+        },
+        {
+          "label": "定时任务",
+          "path": "apps/worker/src/schedules.ts"
+        }
+      ]
+    }
+  ],
+  "acquisition": [
+    {
+      "id": "rss",
+      "name": "RSS / Atom / RDF 订阅",
+      "mechanism": "rss 适配器请求 XML，解析条目标题、链接、发布时间、摘要及可用 content，并套用来源过滤与元数据补齐。",
+      "requirements": "发布者提供可访问订阅地址；通常不需采集服务 key。模型处理仍需要另行配置模型。",
+      "example": "{\n  \"feedUrl\": \"https://openai.com/news/rss.xml\",\n  \"_aihot\": {\n    \"initialBackfillLimit\": 8\n  }\n}",
+      "notes": [
+        "这是 OpenAI News 的示范配置形式；所有 18 个自带源都走 rss，Simon Willison 使用 Atom 地址。",
+        "summaryIsBody 仅在确认摘要就是全文时打开；订阅全文可能只提供 teaser，不保证取得完整正文。",
+        "可按分类、URL 前缀、噪声词和 publishedAfter 过滤；固定起点必须是完整 UTC 时间。",
+        "RSS 可公开访问不代表全文可转载；默认只发布摘要和原文链接。"
+      ],
+      "evidence": [
+        {
+          "label": "XML 解析",
+          "path": "packages/backend/src/sources/rss.ts"
+        },
+        {
+          "label": "允许的配置键",
+          "path": "packages/backend/src/sources/config-keys.ts"
+        },
+        {
+          "label": "真实示范源",
+          "path": "industry/sources.json"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "name": "网页列表 web_list",
+      "mechanism": "读取普通 HTTP HTML，用 CSS 选择器定位每条新闻、链接、标题和日期；另有显式配置的 Markdown、Docusaurus 与 Intercom 更新日志解析方式。",
+      "requirements": "可访问列表页与稳定选择器；需要动态渲染时按需配置 Jina，或改用 RSS/JSON/外部采集。",
+      "example": "{\n  \"url\": \"https://example.com/news\",\n  \"parseMode\": \"html\",\n  \"itemSelector\": \".news-list > .news-item\",\n  \"linkSelector\": \"h2 a\",\n  \"titleSelector\": \"h2 a\",\n  \"publishedAtSelector\": \"time\",\n  \"allowUrlPrefixes\": [\n    \"https://example.com/posts/\"\n  ]\n}",
+      "notes": [
+        "example.com 和 CSS 选择器是教学占位，不是已经可用的运营来源。",
+        "itemSelector 应选每条新闻，不能选整个列表容器；未知配置键会被拒绝。",
+        "普通 HTML 模式不执行 JavaScript；浏览器看得到但响应里没有的节点不能靠换选择器产生。",
+        "列表读取要走 Jina 时需显式配置其地址与 parseMode；正文提取的 Readability/Jina 降级是另一个阶段，不可混淆。",
+        "detail 可配置日期、标题或摘要补齐；预览请求也可能产生 Jina 费用。"
+      ],
+      "evidence": [
+        {
+          "label": "列表解析",
+          "path": "packages/backend/src/sources/web-list.ts"
+        },
+        {
+          "label": "可检查的教学 HTML",
+          "path": "docs/examples/sources/news.html"
+        },
+        {
+          "label": "选择器与 Jina 用法",
+          "path": "docs/sources.md"
+        }
+      ]
+    },
+    {
+      "id": "json",
+      "name": "JSON 接口 json_list",
+      "mechanism": "请求结构化接口，以 itemsPath 找数组，字段路径和 urlTemplate 映射每条资讯；支持指定请求方法、头和 JSON 请求体。",
+      "requirements": "合法可访问的 JSON 接口及已确认字段结构；凭据应按部署方式安全配置，不能提交真实 key。",
+      "example": "{\n  \"url\": \"https://example.com/api/news\",\n  \"mode\": \"json_api\",\n  \"itemsPath\": \"data.items\",\n  \"titlePaths\": [\n    \"title\"\n  ],\n  \"urlTemplate\": \"{raw:url}\",\n  \"summaryPaths\": [\n    \"summary\"\n  ],\n  \"publishedAtPath\": \"published_at\",\n  \"externalIdPath\": \"id\"\n}",
+      "notes": [
+        "字段路径是点分隔路径，不是 JSONPath；不写 $ 或 [*]。",
+        "urlTemplate 要产出完整 HTTP(S) URL，JSON 相对链接不会像网页链接那样自动补齐。",
+        "接口顶层就是数组时省略 itemsPath；字段路径不对会明确报错。",
+        "带凭据的 JSON 请求只跟随同源重定向；跨源搬迁应更新配置。",
+        "示例接口与字段来自 docs 的虚构示例，实际来源需先核对响应。"
+      ],
+      "evidence": [
+        {
+          "label": "JSON 读取与映射",
+          "path": "packages/backend/src/sources/json-list.ts"
+        },
+        {
+          "label": "字段白名单",
+          "path": "packages/backend/src/sources/config-keys.ts"
+        },
+        {
+          "label": "教学 JSON",
+          "path": "docs/examples/sources/news.json"
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "name": "X 账号 / 搜索 x_search",
+      "mechanism": "通过 SocialData 的搜索接口查询配置的账号或条件，读取帖子文字、媒体和原生引用；生产可将普通账号分批合并搜索。",
+      "requirements": "SOCIALDATA_API_KEY；有可访问的账号/搜索结果、适当抓取频率和请求上限。",
+      "example": "{\n  \"query\": \"from:SomeAccount -filter:replies\",\n  \"searchType\": \"Latest\"\n}",
+      "notes": [
+        "SomeAccount 是占位用户名；不能把 X 个人主页 URL 当作 web_list 来替代该适配器。",
+        "按请求计费，手动预览也经付费回执与上限；不配置 key 不能获得此入口能力。",
+        "空文字/纯链接原帖可以原样展示；不调用写作或翻译模型编补不存在的正文。",
+        "hot_signal 只作讨论证据；归组有 native 引用和向量两条路径，不能独立从讨论帖生成事件。"
+      ],
+      "evidence": [
+        {
+          "label": "X 资料解析",
+          "path": "packages/backend/src/sources/x.ts"
+        },
+        {
+          "label": "SocialData 调用",
+          "path": "packages/backend/src/providers/socialdata.ts"
+        },
+        {
+          "label": "讨论归组",
+          "path": "packages/backend/src/events/group.ts"
+        }
+      ]
+    },
+    {
+      "id": "mp",
+      "name": "微信公众号 mp_account",
+      "mechanism": "通过极致了 Dajiala 按账号检查文章列表并取文章材料，统一接入判重、分析与公开规则。",
+      "requirements": "DAJIALA_KEY；正确的公众号原始 ID、nickname 和可用第三方服务；按请求计费。",
+      "example": "{\n  \"ghid\": \"gh_xxxxxxxx\",\n  \"nickname\": \"公众号名称\"\n}",
+      "notes": [
+        "此处 ghid 与昵称均为占位值；不能把字段误写成 biz/name。",
+        "当前该适配器不支持后台预览抓取，需按真实配置启用后检查运行状态。",
+        "第三方服务可用性、限额和时效影响采集，不等于框架拥有所有公众号的公开订阅。",
+        "技术上能取正文不代表获准展示或再分发；site_fulltext 与 syndicate_fulltext 默认关。"
+      ],
+      "evidence": [
+        {
+          "label": "公众号调度",
+          "path": "packages/backend/src/sources/mp.ts"
+        },
+        {
+          "label": "Dajiala 服务",
+          "path": "packages/backend/src/providers/dajiala.ts"
+        },
+        {
+          "label": "公众号契约",
+          "path": "docs/sources.md"
+        }
+      ]
+    },
+    {
+      "id": "external",
+      "name": "自建脚本 external 推送",
+      "mechanism": "自有采集器向 POST /api/ingest/items 提交 sourceId 和 items[]，共享普通入口的 URL 判重、时间规则、入队与后续归组。",
+      "requirements": "至少 16 位且非占位的 INGEST_TOKEN；Authorization: Bearer <token>；每批最多 50 个条目。",
+      "example": "POST /api/ingest/items\nAuthorization: Bearer <INGEST_TOKEN>\nContent-Type: application/json\n\n{\n  \"sourceId\": \"my-crawler\",\n  \"sourceName\": \"我的抓取脚本\",\n  \"items\": [\n    {\n      \"title\": \"原文标题\",\n      \"url\": \"https://example.com/posts/one\",\n      \"publishedAt\": \"2026-10-12T08:00:00+08:00\",\n      \"author\": \"原作者\"\n    }\n  ]\n}",
+      "notes": [
+        "该入口不是主动抓取器，也没有后台试抓；采集、身份确认与合法访问由脚本负责。",
+        "当前 items 契约是 title/url/publishedAt/author/raw 等元数据；没有通用 bodyHtml/bodyText 推送字段，不要把任意正文塞进不存在的字段。",
+        "不存在的来源自动创建为 isolated，不进公开页面；管理员改成 editorial 后才参加公开处理。",
+        "paused 来源返回 409；批量超过 50 返回 413；Docker 默认每客户端每分钟 10 次，可配置限流。",
+        "raw._aihot.backfill 可标记历史回灌；未知或旧日期不会因推送而变成今日资讯。"
+      ],
+      "evidence": [
+        {
+          "label": "认证与限流",
+          "path": "apps/api/src/routes/ingest.ts"
+        },
+        {
+          "label": "真实条目契约",
+          "path": "packages/backend/src/ingest/items.ts"
+        },
+        {
+          "label": "推送说明",
+          "path": "docs/sources.md"
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "title": "垂直行业晨报",
+      "description": "为法律、HR、医药、能源等信息量大的行业建立可解释的每日入口；这些行业包须自行开发。",
+      "workflow": "整理官方/行业信源 → 定义重要与噪声 → 标注并校准 → 按固定窗口出日报，周月报回顾。",
+      "value": "减少读者每天分散浏览和重复阅读；把编辑口味转成可检查的规则与样本。"
+    },
+    {
+      "title": "产品、竞品与发布监测",
+      "description": "持续追踪公司发布、开源、上架、政策回应和价格变化。",
+      "workflow": "官方一手源搭配媒体 → 用主体与分类整理 → report/fact/story 区分发布与后续 → 从事件页、RSS 或 API 消费。",
+      "value": "同一件发布读一次，同时保留不同来源和后续，不把每次转载当作新变化。"
+    },
+    {
+      "title": "开发者技术资讯",
+      "description": "将研究机构、工具生态、作者实践与媒体放到一条中文阅读流。",
+      "workflow": "RSS/Atom 为主 → 正文与摘要补齐 → 用可迁移方法、广泛可用性等标准筛选 → 标签与主题供检索。",
+      "value": "降低语言和源分散的阅读成本；仍需回原文核实关键方法与能力主张。"
+    },
+    {
+      "title": "团队共享情报入口",
+      "description": "为产品、技术或研究团队提供统一出处和刊期，不让每个人各做一份重复简报。",
+      "workflow": "维护可用来源 → 共享静态阅读与固定报告 → 可选飞书推送 → 管理员用错例和运行告警持续修正。",
+      "value": "减少汇总劳动，形成共同的事实入口；当前引擎不是权限分层的企业协作文档系统。"
+    },
+    {
+      "title": "Agent 的结构化资讯源",
+      "description": "让 Agent 读取已经完成筛选、归组和出刊的内容，而不是每次临时抓一堆网页。",
+      "workflow": "Agent Markdown/MCP/API 获取最新、搜索、热门和刊期 → 引用代表报道与原文 → 在下游自己的任务中使用。",
+      "value": "统一出口、减少重复消费、可追溯来源；接口提供资讯，不自动保证下游推理或投资结论。"
+    },
+    {
+      "title": "研究采集与编辑工程",
+      "description": "学习可持续的资讯产品结构，而非只研究一个抓取脚本。",
+      "workflow": "阅读适配器、回执与公开规则 → 在本地假服务上验证模块 → 小规模真实信源和人工样本评测 → 再决定是否部署。",
+      "value": "借鉴输入修订、阶段恢复、规则出刊与多出口一致性，迁移到自己的数据产品。"
+    }
+  ],
+  "reuse": [
+    {
+      "title": "只复用 18 个公开源参考",
+      "description": "无需部署完整站点，可以把来源清单作为自己的订阅与调研起点。",
+      "items": [
+        "从 industry/sources.json 读取名称、feedUrl、分级和参与方式；先检测当前可访问性及条目质量。",
+        "保留官方与媒体的角色区别；大厂公告证明发布动作，不自动证明效果优于竞争对手。",
+        "按目标读者补国内源、竞品源和专业研究源；18 个英语/海外来源不是完整行业地图。",
+        "来源名单、地址与文章版权是不同问题，复用清单不获取原文再分发权。"
+      ]
+    },
+    {
+      "title": "复用采集与正文层",
+      "description": "从入口适配与材料质量控制切入，先不做自动精选。",
+      "items": [
+        "优先 RSS/Atom，其次结构化 JSON；只有必要时维护 CSS 和动态页面服务。",
+        "参考 config-keys、日期补齐、URL 身份和材料修订，避免导航节点、旧文和错误日期进入数据池。",
+        "Readability 清洗普通文章，Jina 作为有预算与可观测的可选降级。",
+        "external 可接现有爬虫的元数据；需要全文直推时应新增有校验的契约，不能假定当前接口支持。"
+      ]
+    },
+    {
+      "title": "复用行业编辑标准与评测",
+      "description": "把领域判断写成可评测的内容规则，而不是用通用模型分数代替经验。",
+      "items": [
+        "修改 prefilter、selection-score、structure、术语与写作提示词；同时更新 taxonomy 与受控标签。",
+        "默认五轴可作为讨论框架，但权重与门槛需按本行业评测；不是经过普遍验证的价值公式。",
+        "准备 100–200 条金标，覆盖难例并保留 holdout，分别观察质量、覆盖率、成本与耗时。",
+        "关系评测、综述评测和端到端运营评测各有范围，不能用单一高分代表整站质量。"
+      ]
+    },
+    {
+      "title": "复用事件组织与热度模型",
+      "description": "将内容单位从文章升级为一次发生及持续事件，减轻重复。",
+      "items": [
+        "区分 report、fact、story；同主题不等于同事件，综合稿不是合并证据。",
+        "用向量/文字召回加关系模型，而不是简单按关键词全部合并。",
+        "为机构、多渠道和社区作者设置合理 participant 身份，避免矩阵账号制造虚假热度。",
+        "保持人工决策优先与可追踪更正；热度只表示你的来源覆盖。"
+      ]
+    },
+    {
+      "title": "复用 publication 的统一出口",
+      "description": "让网页、RSS、API 和 Agent 对公开范围、代表报道和许可有一致理解。",
+      "items": [
+        "新增出口通过 publication 读取，不另写一套 visibility/selected/fulltext 判定。",
+        "原文、译文、摘要与历史报告都检查当前撤回和授权，处理相关导读与封面。",
+        "机器精选一条 fact 一个代表，网页保留来源组；下游不要按文章数重复计算事件。",
+        "代理/CDN 按应用缓存到期重验证，不在转发时重新起算旧内容寿命。"
+      ]
+    },
+    {
+      "title": "复用完整自托管框架",
+      "description": "需要站点、后台、队列和定时报告时，采用引擎整体而不是拼许多一次性脚本。",
+      "items": [
+        "上游需要 Node.js 24.11+、PostgreSQL 16/17 或 Docker Compose，并持有模型服务凭据；云主机文档建议至少 2 核 4 GB。",
+        "更换 site 身份、industry 包、条款和自己的品牌，保留 MIT 署名与许可证。",
+        "先校准小规模资料，再设置付费请求上限、备份、告警与恢复策略。",
+        "当前本地研究网页仅需 Node.js 22+，是静态说明，不是已经启动了上游应用。"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "title": "中文与细分行业包",
+      "description": "为中文机构、专业媒体、法规公告等设计 sources、taxonomy、术语与选择标准。",
+      "prerequisite": "合法可访问的源、行业专家标注、holdout 评测和正文授权策略。",
+      "status": "规划方向；框架已有配置入口，本研究未交付可用行业包。"
+    },
+    {
+      "title": "人工审稿与纠错工作台",
+      "description": "在现有后台修正之上增加发布前人工审阅、争议事实标记及更正说明。",
+      "prerequisite": "设计待审状态、审计与发布规则，保证所有出口同时更新。",
+      "status": "规划方向；已有人工更正，不等于完整多人审稿流程。"
+    },
+    {
+      "title": "团队权限与多租户",
+      "description": "让不同团队维护独立源、标准、预算与私有结果。",
+      "prerequisite": "数据隔离、权限模型、租户级任务与费用归属，以及泄漏与迁移测试。",
+      "status": "规划方向；当前是单站管理员后台，不是现成多租户 SaaS。"
+    },
+    {
+      "title": "个人订阅与偏好",
+      "description": "在统一精选之上增加读者关注主题、邮件摘要和提醒设置。",
+      "prerequisite": "账户、隐私设计、偏好存储、订阅退订和通知预算。",
+      "status": "规划方向；现有收藏与已读仅在浏览器本机。"
+    },
+    {
+      "title": "更多通知与协作渠道",
+      "description": "增加邮件、企业微信、Slack 或其他渠道的内容投递。",
+      "prerequisite": "渠道凭据、用户授权、幂等投递、限额与失败恢复。",
+      "status": "规划方向；当前源码有飞书，不代表已支持所有渠道。"
+    },
+    {
+      "title": "带出处的研究问答",
+      "description": "让读者针对已公开事件提问，回答引用具体报道与前提。",
+      "prerequisite": "检索与上下文策略、模型预算、引用验证、回答评测及当前撤回规则。",
+      "status": "规划方向；现有 MCP/API 是资讯查询出口，不是已实现的自由问答/RAG 聊天产品。"
+    },
+    {
+      "title": "来源健康与上游变化监测",
+      "description": "对 feed、CSS、JSON 契约变化建立持续测试、错误分组和通知。",
+      "prerequisite": "真实小样本、请求频率上限、基线快照与可执行的修复策略。",
+      "status": "增强方向；现有健康告警可用，但全源长期可用性尚需持续运营验证。"
+    },
+    {
+      "title": "更多模态与专属业务模块",
+      "description": "按实际需求添加播客转写、论文库、招投标、排行榜或监控页。",
+      "prerequisite": "合法材料、模态处理服务、专属数据结构和 modules 插口；先验证收益再扩展。",
+      "status": "规划方向；当前不提供通用影音转写、联网研究代理或所有线上专属模块。"
+    }
+  ],
+  "limits": [
+    {
+      "title": "研究页与运行引擎的边界",
+      "description": "这里展示固定提交的研究、配置与图，不运行上游 api/worker/PostgreSQL，不抓取用户配置的源，不调用真实模型或付费采集服务。"
+    },
+    {
+      "title": "来源覆盖有限且会变化",
+      "description": "18 个源只是公开订阅示范，偏海外 AI 机构、媒体与作者，不包含线上完整信源与运营数据；可访问状态只是特定时点观察。"
+    },
+    {
+      "title": "评分衡量注意力，不是事实真伪",
+      "description": "两个评分都使用同一模型和标准，可能有共同偏差；五轴只是提示词内的计算要求。应以金标评测和原文核对衡量效果。"
+    },
+    {
+      "title": "配置支持不等于抓取成功",
+      "description": "动态页面、付费墙、认证、平台限制、地区网络与字段变化都可能影响获取；CSS 不执行 JavaScript，外部服务也有时效与费用。"
+    },
+    {
+      "title": "只抓到标题不能替代正文",
+      "description": "普通文章缺乏正文、摘要或帖子文字时等待材料，不凭标题写作；原帖的原样展示规则不应泛化给任意文章。"
+    },
+    {
+      "title": "归组与召回存在误差",
+      "description": "向量或文字相似只用于召回，模型判断仍可能错；讨论信号需要 native 引用或向量，不能保证无向量时所有热门讨论都参与热度。"
+    },
+    {
+      "title": "热度是可见来源的关注度",
+      "description": "participant 去重与时间衰减减少刷量，但依赖来源身份配置和采集覆盖，不表示实际浏览量、全网受众或真实重要性。"
+    },
+    {
+      "title": "模型失败会影响出刊与覆盖",
+      "description": "高分资料仍须完成去重确认；归组失败可能停在全部动态，不能因等得久就放行。只看成功样本准确率会隐藏这些失败。"
+    },
+    {
+      "title": "成本上限不是固定月费",
+      "description": "服务器、模型 token、向量、Jina、X、公众号、代理和存储均影响费用；请求次数上限能暂停调用，但不保证持续服务或精确金额。"
+    },
+    {
+      "title": "代码许可与内容授权分开",
+      "description": "MIT 允许按其条件复用代码；AIHOT 名称/Logo 不在许可范围内，字体另有许可，源文章仍属发布者，全文显示和 RSS 再分发默认关闭。"
+    },
+    {
+      "title": "完整部署需要运维",
+      "description": "上游需要数据库、队列、长期运行进程、密钥、域名/HTTPS、备份与告警；静态托管只能承载本研究页，不能替代这些组件。"
+    },
+    {
+      "title": "跨行业与业务化需再设计",
+      "description": "更换行业必须调整信源、分类、事实口径、评分标准和校准；多租户、读者账户、个性化、自由问答与更多渠道属于后续开发。"
+    }
+  ],
+  "references": [
+    {
+      "label": "上游概览与开放范围",
+      "path": "README.md",
+      "description": "作者定位、示范源、功能、技术栈及线上专属能力的边界。"
+    },
+    {
+      "label": "架构与统一读取层",
+      "path": "docs/architecture.md",
+      "description": "三进程、模块边界、publication、回执、缓存与扩展。"
+    },
+    {
+      "label": "六种信源文档",
+      "path": "docs/sources.md",
+      "description": "RSS/网页/JSON/X/公众号/推送配置、日期、授权和频率。"
+    },
+    {
+      "label": "精选与校准文档",
+      "path": "docs/selection.md",
+      "description": "双评分门槛、去重、报告编排与金标指标。"
+    },
+    {
+      "label": "事件关系与评测",
+      "path": "docs/grouping.md",
+      "description": "四类关系以及评测没有覆盖召回的范围。"
+    },
+    {
+      "label": "事件综述评测",
+      "path": "docs/story-digest-evaluation.md",
+      "description": "同一批事件比较提示词及结果。"
+    },
+    {
+      "label": "行业定制",
+      "path": "docs/customize.md",
+      "description": "站点身份、分类、源、提示词、品牌和迁移。"
+    },
+    {
+      "label": "部署与费用",
+      "path": "docs/deploy.md",
+      "description": "Docker、PostgreSQL、运维、备份与调用成本样例。"
+    },
+    {
+      "label": "18 个示范源",
+      "path": "industry/sources.json",
+      "description": "原始公开种子清单，本地 src/upstream 保留未改动摘录。"
+    },
+    {
+      "label": "分级门槛",
+      "path": "industry/selection.ts",
+      "description": "T1=60、T1_5=65、T2=76 与 understandFloor=50。"
+    },
+    {
+      "label": "五轴评分提示词",
+      "path": "industry/prompts/selection-score.md",
+      "description": "注意力分数的内部五轴、类型权重和噪声边界。"
+    },
+    {
+      "label": "结构抽取提示词",
+      "path": "industry/prompts/structure.md",
+      "description": "受控分类、事实与材料范围。"
+    },
+    {
+      "label": "行业分类与主题",
+      "path": "industry/taxonomy.ts",
+      "description": "分类、标签、实体、发行类与术语词表。"
+    },
+    {
+      "label": "站点与出刊配置",
+      "path": "site/site.ts",
+      "description": "公开身份、出刊时间、页面文案与部署设置。"
+    },
+    {
+      "label": "模型配置",
+      "path": "site/models.ts",
+      "description": "默认模型、具名模型及各步骤设置。"
+    },
+    {
+      "label": "真实配置键校验",
+      "path": "packages/backend/src/sources/config-keys.ts",
+      "description": "拒绝各适配器不支持的字段，避免误导配置。"
+    },
+    {
+      "label": "RSS/Atom/RDF 适配器",
+      "path": "packages/backend/src/sources/rss.ts",
+      "description": "XML、XHTML、摘要与内容解析。"
+    },
+    {
+      "label": "网页与 JSON 适配器",
+      "path": "packages/backend/src/sources/",
+      "description": "web-list 与 json-list 的读取、映射和日期补齐。"
+    },
+    {
+      "label": "外部推送真实契约",
+      "path": "packages/backend/src/ingest/items.ts",
+      "description": "items 元数据字段、每批上限与 isolated 来源。"
+    },
+    {
+      "label": "推送认证",
+      "path": "apps/api/src/routes/ingest.ts",
+      "description": "Bearer token、响应和可配置每客户端限流。"
+    },
+    {
+      "label": "正文提取",
+      "path": "packages/backend/src/content/extract.ts",
+      "description": "Readability、Jina、修订和视频页面边界。"
+    },
+    {
+      "label": "双评分与分析代码",
+      "path": "packages/backend/src/editorial/analyze.ts",
+      "description": "同一模型两次调用、最终分数 Schema、结构化与材料控制。"
+    },
+    {
+      "label": "候选召回代码",
+      "path": "packages/backend/src/events/recall.ts",
+      "description": "14 天候选、向量、文字重合度和 native 引用。"
+    },
+    {
+      "label": "关系归组与讨论信号",
+      "path": "packages/backend/src/events/group.ts",
+      "description": "report/fact/story、信息增量、人工优先与 signal 向量要求。"
+    },
+    {
+      "label": "热度计算",
+      "path": "packages/backend/src/events/hot.ts",
+      "description": "48 小时去重、24 小时半衰期和 6 小时可比趋势。"
+    },
+    {
+      "label": "公开范围",
+      "path": "packages/backend/src/publication/scope.ts",
+      "description": "可见性、发布时间、证据和精选代表席位共享。"
+    },
+    {
+      "label": "原文、译文与 Markdown",
+      "path": "packages/backend/src/publication/detail.ts",
+      "description": "同一公开范围与全文许可处理读者详情。"
+    },
+    {
+      "label": "代表报道",
+      "path": "packages/backend/src/publication/representative.ts",
+      "description": "机器精选单席位代表的优先级。"
+    },
+    {
+      "label": "日报编排",
+      "path": "packages/backend/src/reports/edition.ts",
+      "description": "规则挑选事件、权威代表、跟进与快讯。"
+    },
+    {
+      "label": "周月报总述与刊期",
+      "path": "packages/backend/src/reports/compose.ts",
+      "description": "固定窗口、规则汇编、有限生成与修订。"
+    },
+    {
+      "label": "付费回执",
+      "path": "packages/backend/src/providers/receipts.ts",
+      "description": "结果保存、重试、未知状态和调用次数上限。"
+    },
+    {
+      "label": "排程与恢复",
+      "path": "apps/worker/src/schedules.ts",
+      "description": "北京时间定时任务、补刊、热度与运营。"
+    },
+    {
+      "label": "模块接口",
+      "path": "packages/contracts/src/modules.ts",
+      "description": "站点专属模块可扩展的类型契约。"
+    },
+    {
+      "label": "上游测试集合",
+      "path": "tests/",
+      "description": "公开范围、采集、评分、热度、恢复等测试；本研究没有运行。"
+    },
+    {
+      "label": "代码许可证",
+      "path": "LICENSE",
+      "description": "MIT 及版权署名要求。"
+    },
+    {
+      "label": "品牌和第三方声明",
+      "path": "NOTICE",
+      "description": "AIHOT 品牌、字体及示范源文章的授权边界。"
+    }
+  ]
+}

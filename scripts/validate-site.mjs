@@ -9,6 +9,7 @@ const html = await readFile(path.join(site, 'index.html'), 'utf8');
 assert.ok(html.includes('<title>GitHub 项目研究集</title>'), '公开总入口需要项目研究集标题');
 assert.ok(html.includes('>Sandboard</a>'), '来源链接需要显示源库自己的名字');
 assert.ok(html.includes('>guia-entrevistas-de-programacion</a>'), '002 来源链接需要显示源库自己的名字');
+assert.ok(html.includes('>AIHOT</a>'), '013 来源链接需要显示源库自己的名字');
 assert.ok(!html.includes('127.0.0.1') && !html.includes('localhost'), '公开入口不引用本机地址');
 const sections = ['源库的能力与底层原理', '我们的探索与实际输入输出', '使用场景与研究价值', '可扩展产品方向与推进顺序', '当前边界与失败结论'];
 for (const title of sections) assert.ok(html.includes(title), `缺少说明：${title}`);
@@ -20,7 +21,7 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide'], '发布允许名单仅包含 001 与 002');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '013-aihot'], '发布允许名单仅包含 001、002 与 013');
 
 // Verify the copied 001 aggregate as well as its independently validated build.
 const sandboard = path.join(site, '001-sandboard');
@@ -102,7 +103,63 @@ for (const title of ['能力', '模块', '原理', '增强', '价值', '方向',
   const item = metadata?.summaryItems?.find(item => item.title === title);
   assert.ok(item && html.includes(`<strong>${escape(title)}</strong>：${escape(item.text)}`), `002 首页摘要缺少 ${title}`);
 }
+
+// AIHOT is a complete static research publication, with its original guide and source evidence.
+const aihot = path.join(site, '013-aihot');
+const aihotFiles = ['index.html', 'data/research.json', 'data/source-list.json', 'assets/aihot-overview.png', 'assets/aihot-preview.jpg'];
+for (const file of aihotFiles) {
+  const information = await stat(path.join(aihot, file));
+  assert.ok(information.isFile() && information.size > 0, `013 发布文件缺失或为空：${file}`);
+}
+const aihotHtml = await readFile(path.join(aihot, 'index.html'), 'utf8');
+assert.ok(aihotHtml.includes('AIHOT'), '013 入口标题丢失');
+assert.ok(!aihotHtml.includes('127.0.0.1') && !aihotHtml.includes('localhost'), '013 入口不引用本机地址');
+const aihotResearch = JSON.parse(await readFile(path.join(aihot, 'data/research.json'), 'utf8'));
+const aihotSourceList = JSON.parse(await readFile(path.join(aihot, 'data/source-list.json'), 'utf8'));
+const aihotSources = aihotSourceList.sources;
+assert.ok(Array.isArray(aihotSources), '013 信源资料需要完整 sources 数组');
+assert.equal(aihotSources.length, 18, '013 应保留 18 个示范信源');
+assert.equal(new Set(aihotSources.map(source => source.id)).size, 18, '013 信源 id 必须唯一');
+const aihotOriginalMap = await readFile(path.join(ROOT, 'projects/013-aihot/assets/aihot-overview.png'));
+const aihotPublishedMap = await readFile(path.join(aihot, 'assets/aihot-overview.png'));
+assert.ok(aihotPublishedMap.equals(aihotOriginalMap), '013 引导图必须与完整原图逐字节一致');
+assert.ok(html.includes('href="./013-aihot/assets/aihot-overview.png"'), '公开首页需要 013 完整原图入口');
+assert.ok(html.includes('src="./013-aihot/assets/aihot-preview.jpg"'), '公开首页需要展示 013 完整引导图的轻量预览');
+assert.ok(html.includes('href="./013-aihot/"'), '公开首页需要 013 在线研究入口');
+assert.ok(html.includes('href="./013-aihot/#sources"'), '公开首页需要 013 信源入口');
+const aihotMetadata = readCatalog().projects.find(project => project.id === '013' && project.slug === 'aihot');
+assert.match(aihotResearch.meta?.commit ?? '', /^[0-9a-f]{40}$/, '013 研究资料需要完整基线提交');
+assert.equal(aihotResearch.meta?.upstream, aihotMetadata?.upstream, '013 研究资料与项目索引的上游来源应一致');
+assert.ok(Array.isArray(aihotResearch.summaryItems) && aihotResearch.summaryItems.length > 0, '013 研究资料需要完整分项摘要');
+assert.deepEqual(aihotMetadata?.summaryItems, aihotResearch.summaryItems, '013 项目索引摘要必须与研究资料逐项一致');
+assert.equal(new Set(aihotResearch.summaryItems.map(item => item.title)).size, aihotResearch.summaryItems.length, '013 分项摘要标题必须唯一');
+for (const item of aihotResearch.summaryItems) {
+  assert.ok(typeof item.title === 'string' && item.title.trim() && typeof item.text === 'string' && item.text.trim(), '013 分项摘要标题与内容不得为空');
+  assert.ok(html.includes(`<strong>${escape(item.title)}</strong>：${escape(item.text)}`), `013 首页摘要缺少 ${item.title}`);
+}
+let aihotAssets = 0;
+for (const match of aihotHtml.matchAll(/(?:src|href)=["'](\.[^"']+)["']/g)) {
+  const relative = match[1].split(/[?#]/, 1)[0];
+  const target = path.resolve(aihot, relative.endsWith('/') ? relative + 'index.html' : relative);
+  assert.ok(target.startsWith(site + path.sep), `013 资源引用越界：${relative}`);
+  await access(target);
+  aihotAssets++;
+}
+const aihotSections = [
+  ['overview', '概览引导图'], ['capabilities', '完整能力'], ['modules', '模块架构'], ['pipeline', '处理原理'],
+  ['sources', '18个示范信源'], ['acquisition', '六种获取方式'], ['scenarios', '使用场景'], ['reuse', '复用价值'],
+  ['extensions', '扩展方向'], ['limits', '边界与判断'], ['references', '源码证据与研究记录'],
+];
+for (const [id, title] of aihotSections) {
+  assert.ok(aihotHtml.includes(`id="${id}"`), `013 静态章节缺失：${id}`);
+  assert.ok(aihotHtml.includes(title), `013 静态章节标题缺失：${title}`);
+}
+for (const key of ['capabilities', 'modules', 'pipeline', 'acquisition', 'scenarios', 'reuse', 'extensions', 'limits', 'references']) {
+  assert.ok(Object.hasOwn(aihotResearch, key), `013 研究 JSON 缺少内容模块：${key}`);
+}
 console.log(JSON.stringify({ entrance: 'index.html', sections: sections.length, checkedInternalLinks: links.size,
   publishedProjects: publishedDirectories, preservedSandboardPages: sandboardPages.length + 1,
   interview: { requiredFiles: files.length, checkedRelativeAssets: interviewAssets, topics: topics.length,
-    resourceUrls: report.summary.allUniqueResourceUrls, answers: report.summary.answerRecords, originalGuidePreserved: true } }));
+    resourceUrls: report.summary.allUniqueResourceUrls, answers: report.summary.answerRecords, originalGuidePreserved: true },
+  aihot: { requiredFiles: aihotFiles.length, checkedRelativeAssets: aihotAssets, sections: aihotSections.length,
+    sources: aihotSources.length, summaryItems: aihotResearch.summaryItems.length, originalGuidePreserved: true } }));

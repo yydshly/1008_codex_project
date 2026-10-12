@@ -95,6 +95,73 @@
         }
       ],
       "coverFull": "projects/002-interview-guide/assets/repository-map.png"
+    },
+    {
+      "id": "013",
+      "slug": "aihot",
+      "name": "AIHOT 信源与资讯引擎研究",
+      "summary": "中文研究网页与既有完整引导图，系统整理资讯采集、精选、写作、事件归组、热度和出刊能力，核对18个示范信源与六种接入方式，解释模块架构、复用价值与扩展边界。",
+      "upstream": "https://github.com/KKKKhazix/AIHOT",
+      "status": "已完成",
+      "tags": [
+        "AI",
+        "信源",
+        "资讯引擎",
+        "RSS",
+        "事件聚合",
+        "开源研究"
+      ],
+      "cover": "projects/013-aihot/assets/aihot-preview.jpg",
+      "coverAlt": "AIHOT 信源、获取与复用全景图：18个示范信源、六种接入方式、处理原理与可复用能力",
+      "coverCaption": "沿用2026-10-08生成的完整研究引导图，基于固定提交6e67a9d；2026-10-12整理发布。轻量预览保留完整画面，高清原图逐字节保留。",
+      "demo": "",
+      "summaryItems": [
+        {
+          "title": "能力",
+          "text": "把多源资讯采集、预筛、评分、结构化、中文写作、事件归组、热度与定期出刊串成可自托管的资讯流水线。"
+        },
+        {
+          "title": "模块",
+          "text": "api、worker、web 三个进程；sources/content/editorial/events/publication/reports 等业务模块；site 与 industry 分离站点身份和行业判断。"
+        },
+        {
+          "title": "原理",
+          "text": "先确定可用材料与发布时间，再由同一评分模型独立评两次；报道 report → 一次发生 fact → 持续事件 story，公开出口统一经过 publication。"
+        },
+        {
+          "title": "信源",
+          "text": "18 个示范源全部使用 rss 适配器：10 个机构与技术生态源、5 个媒体、3 个作者与社区源。适配器兼容 RSS、Atom 和 RDF，不包含线上完整运营名单。"
+        },
+        {
+          "title": "获取",
+          "text": "订阅解析与正文补取是两层；另支持网页 CSS、JSON 字段映射、X/SocialData、公众号/Dajiala 与外部推送。扩展入口需要自行配置，并非现成示范源。"
+        },
+        {
+          "title": "场景",
+          "text": "行业晨报、产品与竞品监测、开发者资讯、团队情报入口、垂直内容站，以及向 Agent 提供可追溯的资讯。"
+        },
+        {
+          "title": "价值",
+          "text": "减少重复阅读与手工编报，把编辑经验写成可评测的筛选标准；源质量、标注与持续运营决定最终效果。"
+        },
+        {
+          "title": "复用",
+          "text": "既可只借用来源清单和采集配置，也可复用正文清洗、事件模型、评测方法、公开范围控制，或部署完整引擎。"
+        },
+        {
+          "title": "方向",
+          "text": "中文行业包、人工审稿、多租户、个性化、更多通知渠道和带出处的问答可在此基础上开发；这些是规划，不是当前已交付的能力。"
+        },
+        {
+          "title": "边界",
+          "text": "模型评分不是事实核验；热度不是全网热搜；全文获取不代表转载授权；GitHub Pages 研究页不提供上游数据库、采集或模型服务。"
+        },
+        {
+          "title": "验证",
+          "text": "结论来自文档与固定提交源码阅读。保留 10 月 8 日观察基线，10 月 12 日整理归档；本地研究网页构建与浏览器核验另记，不把阅读当作端到端运行。"
+        }
+      ],
+      "coverFull": "projects/013-aihot/assets/aihot-overview.png"
     }
   ]
 }
