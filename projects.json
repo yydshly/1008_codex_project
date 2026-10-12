@@ -113,7 +113,7 @@
       "cover": "projects/003-pascal-editor/assets/pascal-summary.png",
       "coverAlt": "Pascal 完整引导图：效果与能力、参数化节点及几何更新原理、使用场景、产品价值和验证边界",
       "coverCaption": "沿用2026-10-08生成的1536×1024完整引导图，原始PNG保持一致；2026-10-12整理能力、模块、原理、价值与扩展方向。AI信息图参考真实运行截图，用途与价值属于研究分析。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
       "summaryItems": [
         {
           "title": "能力",

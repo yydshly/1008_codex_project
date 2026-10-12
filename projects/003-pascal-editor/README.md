@@ -6,7 +6,7 @@
 
 ## 项目理解网页
 
-本地运行后打开 [项目理解总结页](http://127.0.0.1:4187/1008_codex_project/003-pascal-editor/overview/)。页面汇总九类能力、八个模块、五步原理、六类场景、四条复用路线、八个扩展方向和验证边界，首屏采用已有完整引导图，提供四组真实截图、全文/JSON 下载，并可进入真实编辑器。编辑器顶部的「项目理解」可返回此页。
+已公开部署：[完整项目理解](https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/) · [操作真实编辑器](https://yydshly.github.io/1008_codex_project/003-pascal-editor/) · [线上验收记录](src/publication-verification.json)。页面汇总九类能力、八个模块、五步原理、六类场景、四条复用路线、八个扩展方向和验证边界，首屏采用已有完整引导图，提供四组真实截图、全文/JSON 下载，并可进入真实编辑器。编辑器顶部的「项目理解」可返回此页。
 
 总结页位于独立的 `/overview/` 静态路由，不加载 Pascal 3D 编辑器组件；原编辑器仍在项目根路径。页面说明依据本项目固定基线研究及实际验收，场景用途与开发建议属于分析。
 
@@ -135,7 +135,7 @@
 | 上游许可证 | MIT，`Copyright (c) 2026 Pascal Group Inc.`；保留于 [src/LICENSE.upstream](src/LICENSE.upstream) 与 [Web 许可](web/public/LICENSE.upstream.txt) |
 | Web 技术栈 | 独立 Next.js 宿主、React、Pascal 编辑器组件 |
 | 项目子路径 | `/1008_codex_project/003-pascal-editor/` |
-| 在线部署 | 尚未发布，索引 `demo` 保持为空 |
+| 在线部署 | GitHub Pages；[完整理解](https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/) 与 [真实编辑器](https://yydshly.github.io/1008_codex_project/003-pascal-editor/)；2026-10-12 Actions 发布和公开 HTTPS 验收通过 |
 
 源码 Commit 用于解释架构与记录素材出处；本地运行使用锁定的 npm 发布包，未做二者逐文件一致性核对。
 

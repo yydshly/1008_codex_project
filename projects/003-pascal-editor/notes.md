@@ -188,7 +188,17 @@ GitHub Pages 接入现有发布工作流，完整复制本项目 `out/`，单独
 
 发布提交核验发现根仓库的 SVG 换行规范会改变官方 Sofa 平面图的原始 CRLF 字节。子项目新增 `.gitattributes`，将原库素材目录与官方原始场景按原始字节保留；重新登记该文件，并核对 Git 对象与素材 manifest 一致，避免本地校验通过而 Linux 清洁检出失败。SHA-256 清单没有为了迁就换行转换而修改。
 
-## 后续验证
+## 2026-10-12 · 公开站点验收
+
+Actions [38209755142](https://github.com/yydshly/1008_codex_project/actions/runs/38209755142) 已完成清洁 `npm ci`、四项目聚合构建与全部审计，并成功部署研究提交 `98c989c62593f553bd03169d39b03814683d0a7c`。线上入口：[完整理解](https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/) · [真实编辑器](https://yydshly.github.io/1008_codex_project/003-pascal-editor/)。正式链接在公开验收通过后才登记到索引。
+
+`src/verify-publication.mjs` 对真实 HTTPS 执行只读核验：九个定位区域、十项摘要、16 个本地引用、全文及 JSON、原图尺寸与 SHA-256 全部通过。全部 460 个素材、18,843,359 字节逐一 GET，字节数和 SHA-256 均与原清单一致；统一首页及 001、002、013 入口继续 HTTP 200。结果写入 [publication-verification.json](src/publication-verification.json)。
+
+真实浏览器直接打开线上理解页，放大原图显示 1536 × 1024，关闭后进入编辑器；住宅模型、材质和工具实际显示。切换分屏出现平面房间文字与 3D 场景，渲染 DOM 有 48 个不同节点 ID，其中 8 面墙、20 件家具；3 个场景层级节点不作为渲染构件计数。编辑器控制台错误为空。通过顶部入口返回理解页成功；没有清除或还原本地用户草稿。线上截图见 [理解首屏](assets/publication/online-overview.jpg) 与 [编辑器分屏](assets/publication/online-editor-split.jpg)。
+
+这是线上装载、显示与导航验收；墙厚、保存、强制放置等编辑操作仍引用 10 月 8 日的独立本地验收记录，没有把来源变化当作这些操作已经重新逐项验收。
+
+## 后续验证范围
 
 - 扩展真实触摸设备与其他浏览器体验，继续逐项覆盖尚未验证的建造工具和导出格式；当前基础展示和上述编辑/保存/放置流程已经完成。
 - 核对当前组件在窄屏、触摸设备和其他浏览器的编辑体验。

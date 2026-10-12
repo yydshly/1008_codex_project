@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-10-12T05:56:15.442Z",
+  "deployment": {
+    "commit": "98c989c62593f553bd03169d39b03814683d0a7c",
+    "workflowUrl": "https://github.com/yydshly/1008_codex_project/actions/runs/38209755142",
+    "conclusion": "success"
+  },
+  "upstreamCommit": "c5eaf51e161ba8653204d543666f5839d6020874",
+  "runtimeVersion": "1.0.3",
+  "overview": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+  "editor": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/",
+  "counts": {
+    "capabilities": 9,
+    "modules": 8,
+    "steps": 5,
+    "useCases": 6,
+    "reuseRoutes": 4,
+    "extensions": 8,
+    "summaryItems": 10
+  },
+  "staticSections": [
+    "overview-top",
+    "capabilities",
+    "modules",
+    "principles",
+    "scenarios",
+    "value",
+    "extensions",
+    "evidence",
+    "references"
+  ],
+  "localReferences": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/research/pascal-summary.png",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/css/97bece7d8946df3c.css",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/css/b73d6095b91f4263.css",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/chunks/webpack-8c52ed222f4634ee.js",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/chunks/4bd1b696-8a4ab4fdf0ae305a.js",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/chunks/3794-8919ccc07e53fb26.js",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/chunks/main-app-1a14589b6f6a35ef.js",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/chunks/app/overview/page-c0c58a69eaab113d.js",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/research/cover.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/demos/house.json",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/research/understanding.md",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/research/research.json",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/LICENSE.upstream.txt",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/basis/LICENSE",
+      "status": 200
+    }
+  ],
+  "guide": {
+    "file": "pascal-summary.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a6106b78b83f0e65c3dea23bfdc96241a8efd3cf97349c8bd511f974e60a4cef",
+    "onlineSha256": "a6106b78b83f0e65c3dea23bfdc96241a8efd3cf97349c8bd511f974e60a4cef",
+    "originalBytesPreserved": true
+  },
+  "downloads": {
+    "markdownMatches": true,
+    "jsonMatches": true
+  },
+  "assets": {
+    "count": 460,
+    "bytes": 18843359,
+    "allSha256Match": true
+  },
+  "preservedProjects": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/home/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200
+    }
+  ],
+  "browserVerification": "See notes.md and assets/publication/ for recorded UI checks.",
+  "limits": [
+    "Static research and the real browser editor are deployed. CLI/MCP/model/cloud collaboration are not deployed.",
+    "Browser drafts are isolated by origin; localhost drafts are not automatically migrated."
+  ],
+  "browser": {
+    "checkedAt": "2026-10-12T06:00:10.137Z",
+    "overview": {
+      "directOpen": true,
+      "originalGuideDialog": {
+        "width": 1536,
+        "height": 1024
+      },
+      "enterEditor": true,
+      "returnFromEditor": true
+    },
+    "editor": {
+      "loaded": true,
+      "splitView": true,
+      "renderedNodeIds": 48,
+      "walls": 8,
+      "items": 20,
+      "consoleErrors": []
+    },
+    "screenshots": [
+      "assets/publication/online-overview.jpg",
+      "assets/publication/online-editor-split.jpg"
+    ],
+    "scope": "Online load, render, guide dialog and navigation. Editing/history/save/place operations were verified locally on 2026-10-08."
+  }
+}

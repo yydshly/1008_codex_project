@@ -15,6 +15,8 @@
 | [overview-mobile.jpg](overview-mobile.jpg) | 390 × 844，项目理解页窄屏首屏，导航、正文及真实截图可访问 |
 | [publication/overview-extensions.jpg](publication/overview-extensions.jpg) | 2026-10-12，本地生产理解页的八个扩展方向，逐项说明基础、建设内容与验收方法 |
 | [publication/overview-mobile.jpg](publication/overview-mobile.jpg) | 2026-10-12，390 × 844 完整理解页首屏，使用原始引导图；另检查 320 px 无横向溢出 |
+| [publication/online-overview.jpg](publication/online-overview.jpg) | 2026-10-12，GitHub Pages 线上完整理解页首屏，原始引导图与编辑器入口 |
+| [publication/online-editor-split.jpg](publication/online-editor-split.jpg) | 2026-10-12，GitHub Pages 线上真实编辑器住宅分屏，8 面墙、20 件家具与原生查看入口 |
 
 2026-10-12 发布整理沿用原始 1536 × 1024 PNG，SHA-256 为 `a6106b78b83f0e65c3dea23bfdc96241a8efd3cf97349c8bd511f974e60a4cef`，没有重绘或裁切。上述旧 `overview*.jpg` 保留为 10 月 8 日历史版本证据，新版截图放在 `publication/`。
 

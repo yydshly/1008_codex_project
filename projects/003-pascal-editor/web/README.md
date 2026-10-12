@@ -4,6 +4,8 @@
 
 [项目概览](../README.md) · [研究与验收记录](../notes.md) · [多 Web 部署说明](../../../docs/DEPLOYMENT.md)
 
+已上线：[完整项目理解](https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/) · [真实编辑器](https://yydshly.github.io/1008_codex_project/003-pascal-editor/)。2026-10-12 Actions 清洁安装、独立构建、场景/资源/正文审计和 Pages 部署通过；公开核验全部 460 个资源及原图 SHA-256，并实际运行住宅分屏和两页导航。验收证据见 [publication-verification.json](../src/publication-verification.json)。
+
 ## 安装与运行
 
 使用 Node.js 22 或更新版本，在仓库根目录执行：
@@ -38,7 +40,7 @@ Next.js 静态导出目录为 `out/`。生产预览仍在端口 `4187`，打开�
 
 子路径固定为 `/1008_codex_project/003-pascal-editor/`。静态构建检查须实际访问这个路径，检查刷新后的页面、`_next` 脚本/样式和场景资源，完整输出内容应一并保留。构建与交互验收的实际结果见 [notes.md](../notes.md)。
 
-根 `npm run build:site` 将完整 `out/` 复制到统一产物的 `003-pascal-editor/` 目录，并保留研究下载、素材、许可和来源说明。GitHub Pages 工作流单独安装本项目锁定依赖，再校验场景、460 个原库资源与完整静态研究正文。首次公开入口核验通过后才登记 `projects.json` 的在线 `demo`。
+根 `npm run build:site` 将完整 `out/` 复制到统一产物的 `003-pascal-editor/` 目录，并保留研究下载、素材、许可和来源说明。GitHub Pages 工作流单独安装本项目锁定依赖，再校验场景、460 个原库资源与完整静态研究正文。首次公开入口核验通过后已登记 `projects.json` 的在线 `demo`。
 
 ## 页面与场景
 

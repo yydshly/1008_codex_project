@@ -12,6 +12,16 @@
 
 研究基线用于固定阅读对象与素材出处；npm 发布包版本用于固定实际演示依赖。二者分别记录，尚未做逐文件一致性核对。
 
+## 公开发布记录
+
+2026-10-12 已部署 [完整项目理解](https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/) 与 [真实编辑器](https://yydshly.github.io/1008_codex_project/003-pascal-editor/)。[publication-verification.json](publication-verification.json) 保存 Actions、线上内容、原图、完整 460 素材校验及浏览器证据；[verify-publication.mjs](verify-publication.mjs) 可对公开站点重复只读检查。
+
+```powershell
+node projects/003-pascal-editor/src/verify-publication.mjs --commit <已成功部署的40位提交> --run <成功Actions编号>
+```
+
+该脚本不代替编辑器交互验收；UI 的实际检查与截图在 [notes.md](../notes.md) 和 [assets/publication/](../assets/README.md) 记录。后续重新执行脚本会更新 HTTP 记录，浏览器交互须另行检查。
+
 ## 引入资料的约定
 
 - 官方 `demo_1` 场景和对应资源从固定基线引入，原始 JSON 与清理/预迁移后的可加载 JSON 分别保留。可加载版为 60 节点，已显式保存两个 `roof-segment`，适配 Editor 先解析 schema 的顺序；具体来源、清理及 SHA-256 清单入口见 [assets/SOURCES.md](../assets/SOURCES.md)。

@@ -3,7 +3,7 @@
 <!-- PASCAL_PUBLICATION:START -->
 ## Pascal 完整理解网页与真实编辑器（2026-10-12）
 
-003 接入现有 GitHub Pages Actions，统一构建和发布 001、002、003、013。理解网页汇总九类能力、八个模块、五步参数更新原理、六类使用场景、四条复用路线、八个扩展方向、十项摘要与验证边界；首屏沿用原始 1536 × 1024 引导图，PNG 字节保持一致。真实编辑器保留在项目根路径，理解页在 `/overview/`，两者互相导航。首次公开 HTTPS 核验通过后登记在线索引及 `src/publication-verification.json`。
+003 已通过 GitHub Pages Actions 部署，统一构建和发布 001、002、003、013。在线入口：[完整项目理解](https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/) · [真实编辑器](https://yydshly.github.io/1008_codex_project/003-pascal-editor/) · [发布核验记录](../projects/003-pascal-editor/src/publication-verification.json)。理解网页汇总九类能力、八个模块、五步参数更新原理、六类使用场景、四条复用路线、八个扩展方向、十项摘要与验证边界；首屏沿用原始 1536 × 1024 引导图，PNG 字节保持一致。真实编辑器保留在项目根路径，理解页在 `/overview/`，两者互相导航。首次公开 HTTPS 核验通过后已登记在线索引。
 
 ```powershell
 npm.cmd ci --prefix projects/003-pascal-editor/web
@@ -19,6 +19,8 @@ npm.cmd run preview --prefix projects/003-pascal-editor/web
 根 `npm run build:site` 完整复制 `out/`，不是只复制理解页。`scripts/validate-site.mjs` 验证发布允许名单、既有项目、完整摘要、原图一致性、编辑器/下载/许可，以及全部 460 个原库资源的字节数和 SHA-256。CI 另外运行场景与研究审计，保留 Sandboard 十六个入口、面试指南和 AIHOT。
 
 本地已检查桌面、390/320 px 手机宽度、摘要展开、原图弹窗、原理切换、扩展导航和全文/JSON 下载；已有墙厚编辑、撤销重做、楼层保存刷新与还原、家具新增和多层展开记录。用途、价值与扩展方向是研究分析；本网站没有部署 CLI、MCP、模型、账号、云项目或多人协作。浏览器草稿按来源隔离，localhost 数据不会自动迁移到公网。源码基线 `c5eaf51e161ba8653204d543666f5839d6020874` 与 npm 发行包分别记录；MIT、素材来源边界及 Basis Apache 2.0 保留。
+
+线上检查覆盖完整摘要与静态章节、16 个本地引用、Markdown/JSON 下载、原图尺寸与 SHA-256、全部 460 个素材（18,843,359 字节），以及既有三个项目入口。真实浏览器打开原图弹窗、从总结进入编辑器、运行住宅分屏再返回总结；渲染 DOM 有 8 面墙、20 件家具，控制台错误为空。Git 将原始 SVG 换行归一化的问题已通过子项目 `.gitattributes` 修复，保留素材原字节而非修改 SHA 清单。详见发布记录和 `assets/publication/` 真实截图。
 
 <!-- PASCAL_PUBLICATION:END -->
 
