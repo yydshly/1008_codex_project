@@ -24,6 +24,21 @@ const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
 assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','013-aihot'], '发布允许名单仅包含 001、002、003、004 与 013');
 
+// Introductions must be readable before each guide and use the catalog text.
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '013': 'aihot' };
+const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
+for (const [id, sectionId] of Object.entries(introductionSections)) {
+  const project = readCatalog().projects.find(project => project.id === id);
+  const block = html.match(new RegExp(`<section class="project-block" id="${sectionId}">([\\s\\S]*?)</section>`))?.[1] ?? '';
+  const introduction = block.match(new RegExp(`<div class="project-introduction" data-project-introduction="${id}">([\\s\\S]*?)</div>`))?.[1] ?? '';
+  assert.ok(project?.overviewItems?.length && introduction, `${id} 需要图前项目介绍`);
+  assert.ok(block.indexOf('data-project-introduction') < block.indexOf('<figure'), `${id} 项目介绍必须出现在引导图前`);
+  assert.equal((introduction.match(/<p>/g) ?? []).length, project.overviewItems.length, `${id} 项目介绍应独立成段`);
+  for (const item of project.overviewItems) {
+    assert.ok(introduction.includes(`<strong>${escapeIntroduction(item.title)}</strong>：${escapeIntroduction(item.text)}`), `${id} 图前介绍缺少 ${item.title}`);
+  }
+}
+
 // Verify the copied 001 aggregate as well as its independently validated build.
 const sandboard = path.join(site, '001-sandboard');
 const sandboardPages = JSON.parse(await readFile(path.join(ROOT, 'projects/001-sandboard/experiments/sand-art/src/platform/pages.json'), 'utf8'));

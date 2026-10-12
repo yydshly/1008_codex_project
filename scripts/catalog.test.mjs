@@ -206,3 +206,32 @@ test('完整引导图与预览都必须是本项目素材，首页只显示一�
   }
   assert.throws(() => validateCatalog({ schemaVersion: 1, projects: [{ ...project, cover: '' }] }, root), /coverFull/);
 });
+
+test('引导介绍在图前独立成段，图注在图后；不混入索引表', () => {
+  const project = { ...entry(),
+    summaryItems: [{ title: '能力', text: '表内比较摘要' }],
+    overviewItems: [
+      { title: '定位与能力', text: '帮助读者完成真实任务' },
+      { title: '场景 *产出*', text: '首稿 | <证据>' },
+    ],
+    cover: 'projects/001-sample/assets/preview.svg',
+    coverFull: 'projects/001-sample/assets/overview.svg',
+    coverAlt: '能力图', coverCaption: '2026 年研究素材来源。',
+  };
+  validateCatalog({ schemaVersion: 1, projects: [project] }, ROOT, { requireFiles: false });
+  const rendered = renderIndex([project]);
+  const row = rendered.split('\n').find(line => line.startsWith('| 001 |'));
+  assert.ok(row.includes('表内比较摘要'));
+  assert.ok(!row.includes('帮助读者完成真实任务'));
+  assert.ok(rendered.includes('**定位与能力**：帮助读者完成真实任务\n\n**场景 \\*产出\\***：首稿 \\| \\<证据\\>'));
+  assert.ok(rendered.indexOf('帮助读者完成真实任务') < rendered.indexOf('[研究说明]'));
+  assert.ok(rendered.indexOf('[![能力图]') < rendered.indexOf(project.coverCaption));
+  assert.equal((rendered.match(/!\[/g) || []).length, 1);
+});
+
+test('拒绝格式错误的引导介绍，兼容没有介绍的旧项目', () => {
+  for (const overviewItems of [[], null, ['段落'], [{ title: '', text: '内容' }], [{ title: '能力', text: '首行\n次行' }]]) {
+    assert.throws(() => validateCatalog({ schemaVersion: 1, projects: [{ ...entry(), overviewItems }] }, ROOT, { requireFiles: false }), /overviewItems/);
+  }
+  assert.equal(validateCatalog({ schemaVersion: 1, projects: [entry()] }, ROOT, { requireFiles: false }).length, 1);
+});

@@ -66,9 +66,11 @@ export function validateCatalog(catalog, root = ROOT, { requireFiles = true } = 
     for (const field of ['name', 'summary']) {
       if (!singleLine(project[field])) errors.push(`${label}.${field} 必须是非空单行文本。`);
     }
-    if (project.summaryItems !== undefined && (!Array.isArray(project.summaryItems) || !project.summaryItems.length ||
-      project.summaryItems.some(item => !item || !singleLine(item.title) || !singleLine(item.text)))) {
-      errors.push(`${label}.summaryItems 必须是非空数组，每项的 title 和 text 必须是非空单行文本。`);
+    for (const field of ['summaryItems', 'overviewItems']) {
+      if (project[field] !== undefined && (!Array.isArray(project[field]) || !project[field].length ||
+        project[field].some(item => !item || !singleLine(item.title) || !singleLine(item.text)))) {
+        errors.push(`${label}.${field} 必须是非空数组，每项的 title 和 text 必须是非空单行文本。`);
+      }
     }
     if (!httpsUrl(project.upstream, true)) errors.push(`${label}.upstream 必须是 GitHub 仓库的 HTTPS URL。`);
     if (!STATUSES.has(project.status)) errors.push(`${label}.status 必须是待研究、研究中、已完成或已归档。`);
@@ -148,14 +150,20 @@ export function renderIndex(projects) {
   }
   for (const project of projects.filter(project => project.cover)) {
     lines.push('', `### ${project.id} · ${markdownText(project.name)}`, '');
+    if (project.overviewItems) {
+      for (const item of project.overviewItems) {
+        lines.push(`**${markdownText(item.title)}**：${markdownText(item.text)}`, '');
+      }
+    }
     const image = `![${markdownText(project.coverAlt)}](${markdownUrl(project.cover)})`;
     if (project.coverFull) {
       const directory = projectDirectory(project);
       const links = [`[研究说明](${directory}/README.md)`];
       if (project.demo) links.push(`[在线体验](${markdownUrl(project.demo)})`);
       links.push(`[高清引导图](${markdownUrl(project.coverFull)})`);
-      lines.push(markdownText(project.coverCaption), '', links.join(' · '), '',
-        `[${image}](${markdownUrl(project.coverFull)})`);
+      if (!project.overviewItems) lines.push(markdownText(project.coverCaption), '');
+      lines.push(links.join(' · '), '', `[${image}](${markdownUrl(project.coverFull)})`);
+      if (project.overviewItems) lines.push('', markdownText(project.coverCaption));
     } else {
       lines.push(image, '', markdownText(project.coverCaption));
     }
