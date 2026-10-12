@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-12T05:13:38.704Z",
+  "deployCommit": "5d902bf74dcef3700b40ac0311346923c21978ab",
+  "workflowRun": {
+    "id": 38206886463,
+    "url": "https://github.com/yydshly/1008_codex_project/actions/runs/38206886463",
+    "conclusion": "success"
+  },
+  "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+  "scope": "Static research website HTTPS and original guide verification; upstream engine not deployed",
+  "passed": true,
+  "results": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200,
+      "bytes": 20622,
+      "contentType": "text/html; charset=utf-8",
+      "homepageContainsAIHOT": true
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "bytes": 120516,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/data/research.json",
+      "status": 200,
+      "bytes": 64766,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/data/source-list.json",
+      "status": 200,
+      "bytes": 15671,
+      "contentType": "application/json; charset=utf-8",
+      "sources": 18
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/assets/aihot-overview.png",
+      "status": 200,
+      "bytes": 1712633,
+      "contentType": "image/png",
+      "sha256": "c48b5c61a72166d97aaa257545eeadd5864a42b554bb881d10f5167c82016559"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/assets/aihot-preview.jpg",
+      "status": 200,
+      "bytes": 305614,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "bytes": 460,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "bytes": 5201,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ]
+}

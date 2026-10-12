@@ -2,7 +2,7 @@
 
 AIHOT 是一个可自托管的行业资讯引擎：从已配置来源采集资料、筛选、写成中文阅读内容，再组织为事件、热度和固定刊期。本项目提供中文研究网页与来源参考，保留 2026-10-08 的完整引导图。
 
-[返回总索引](../../README.md) · [原仓库](https://github.com/KKKKhazix/AIHOT) · [研究笔记](notes.md) · [研究数据](src/research.json) · [Web 说明](web/README.md)
+[在线研究网页](https://yydshly.github.io/1008_codex_project/013-aihot/) · [返回总索引](../../README.md) · [原仓库](https://github.com/KKKKhazix/AIHOT) · [研究笔记](notes.md) · [研究数据](src/research.json) · [Web 说明](web/README.md)
 
 ## 研究对象与执行范围
 
@@ -16,7 +16,7 @@ AIHOT 是一个可自托管的行业资讯引擎：从已配置来源采集资�
 | 上游代码许可 | [MIT 原文](src/upstream/LICENSE)，另见 [NOTICE](src/upstream/NOTICE) |
 | 本地成果 | 中文研究数据、完整引导图、来源配置摘录、独立静态研究网页 |
 | 实际执行边界 | 阅读固定提交文档与源码；未运行上游后端、数据库、API 或真实模型，未调用付费采集 |
-| Web 发布 | 部署核验成功后才登记在线演示；结果以根索引与发布核验记录为准 |
+| Web 发布 | [已部署并核验的研究网页](https://yydshly.github.io/1008_codex_project/013-aihot/)；见 [发布核验记录](src/publication-verification.json) |
 
 “源码已实现”表示固定提交存在相关逻辑，不代表本研究已验证真实生产信源上的精度、长期可用性或费用。行业迁移、多租户、个性化和问答等方向均有规划标记。
 
@@ -165,7 +165,7 @@ npm.cmd run preview --prefix projects/013-aihot/web
 
 输出目录：`projects/013-aihot/web/dist/`。预览端口 `4213`，子路径 `/1008_codex_project/013-aihot/`；本地地址 `http://localhost:4213/1008_codex_project/013-aihot/`。Linux/macOS 用 `npm` 替代 `npm.cmd`。无需 .env、数据库或 API key。
 
-根目录还需 `npm.cmd run check`；索引工具有改动时运行 `npm.cmd test`。构建、浏览器、子路径及发布结果由实际执行后补记，不预写已通过。
+根目录还需 `npm.cmd run check`；索引工具有改动时运行 `npm.cmd test`。独立构建、整站验证、桌面/手机/禁用脚本浏览器核验已通过，公开 HTTPS 与原图 SHA-256 核验通过；见 [本地浏览器记录](src/browser-verification.json)、[线上浏览器记录](src/live-browser-verification.json) 与 [发布记录](src/publication-verification.json)。
 
 ## 来源、许可与本地改动
 

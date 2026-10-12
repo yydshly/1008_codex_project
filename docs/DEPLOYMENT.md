@@ -3,7 +3,7 @@
 <!-- AIHOT_PUBLICATION:START -->
 ## AIHOT 中文研究网页（2026-10-12）
 
-013 接入现有 GitHub Pages Actions 工作流，统一构建和发布 001、002、013。独立静态研究页涵盖能力、模块、原理、18 个示范信源、六种获取方式、场景、价值、复用路线、扩展方向和边界；采用已有完整引导图，高清 PNG 原始字节保持一致。实际网址在部署成功并验证后登记。
+013 接入现有 GitHub Pages Actions 工作流，统一构建和发布 001、002、013。独立静态研究页涵盖能力、模块、原理、18 个示范信源、六种获取方式、场景、价值、复用路线、扩展方向和边界；采用已有完整引导图，高清 PNG 原始字节保持一致。首次 Actions 发布成功并核验公开 HTTPS 后登记：[AIHOT 研究网页](https://yydshly.github.io/1008_codex_project/013-aihot/)，见 [发布核验记录](../projects/013-aihot/src/publication-verification.json)。
 
 本项目网页需要 Node.js 22+，无第三方依赖；上游 AIHOT 自托管运行要求按其固定版本文档另行满足。这里没有部署上游 PostgreSQL、worker、模型、X/微信供应商或采集 API。
 

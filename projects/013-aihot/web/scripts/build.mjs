@@ -68,7 +68,7 @@ await writeFile(path.join(output, 'index.html'), html);
 for (const file of ['styles.css','app.js','favicon.svg']) await cp(path.join(project, 'web', file), path.join(output, file));
 await cp(path.join(project, 'assets'), path.join(output, 'assets'), { recursive: true });
 for (const name of ['research','source-list','feed-verification']) await cp(path.join(project, 'src', name + '.json'), path.join(output, 'data', name + '.json'));
-for (const name of ['evidence-verification','content-audit','browser-verification','publication-verification']) {
+for (const name of ['evidence-verification','content-audit','browser-verification','live-browser-verification','publication-verification']) {
   try { await cp(path.join(project, 'src', name + '.json'), path.join(output, 'data', name + '.json')); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
 }

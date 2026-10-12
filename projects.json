@@ -114,7 +114,7 @@
       "cover": "projects/013-aihot/assets/aihot-preview.jpg",
       "coverAlt": "AIHOT 信源、获取与复用全景图：18个示范信源、六种接入方式、处理原理与可复用能力",
       "coverCaption": "沿用2026-10-08生成的完整研究引导图，基于固定提交6e67a9d；2026-10-12整理发布。轻量预览保留完整画面，高清原图逐字节保留。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/013-aihot/",
       "summaryItems": [
         {
           "title": "能力",
