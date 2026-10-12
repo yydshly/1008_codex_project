@@ -1,0 +1,13 @@
+{
+  "name": "ghosttrack-research-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GhostTrack 四项能力与底层原理的中文研究网页",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit.mjs",
+    "preview": "node scripts/serve.mjs --dir dist --port 4195 --base /1008_codex_project/008-ghosttrack/"
+  }
+}

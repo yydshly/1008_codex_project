@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GhostTrack 一图读懂</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#e9f0f5;color:#152c3f;font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif}.poster{width:2160px;background:#f6f9fb;padding:64px 72px 48px;margin:0 auto}h1,h2,h3,p{margin:0}p{line-height:1.65}.hero{background:#102b3d;color:#fff;padding:44px 48px 38px;border-radius:18px}.hero-top{display:flex;justify-content:space-between;align-items:center}.kicker{font-size:20px;color:#8fe3d7;letter-spacing:3px}.project-id{font-size:20px;color:#b2c8d5}.hero h1{font-size:66px;letter-spacing:-2px;line-height:1.35;margin-top:16px}.subtitle{font-size:29px;color:#c2d6df;margin-top:14px}.hero-summary{font-size:29px;line-height:1.6;margin-top:25px;border-top:1px solid #406073;padding-top:23px}.hero-summary b{color:#8ce7da}.hero-small{font-size:23px;color:#b9d1dc;margin-top:14px}.section-title{display:flex;align-items:center;gap:18px;margin:40px 0 20px}.section-title .num{font-family:Consolas,monospace;font-size:23px;color:#17796e}.section-title h2{font-size:36px;font-weight:700}.section-title .note{margin-left:auto;font-size:21px;color:#567082}.layers{display:grid;grid-template-columns:1fr 1fr 1.28fr;gap:15px}.layer{position:relative;background:#fff;border:1px solid #cedde5;border-radius:12px;padding:22px 25px}.layer:not(:last-child):after{content:"→";position:absolute;right:-23px;top:52px;color:#228e7c;z-index:1;background:#f6f9fb;padding:0 3px;font-size:27px}.label{font-size:19px;color:#4e6f83;letter-spacing:1px}.layer h3{font-size:27px;line-height:1.5;margin:7px 0}.layer p{font-size:21px;color:#4d687d}.layer:first-child{background:#e4f3ef;border-color:#b9d8cf}.layer:first-child h3{color:#10695e}.independent{font-size:23px;line-height:1.6;padding:16px 20px;border-left:4px solid #249c89;margin-top:16px;background:#eaf3f5;color:#35566a}
+.matrix{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid #cddde5;border-radius:14px;overflow:hidden}.matrix thead th{background:#163449;color:#eff9fd;text-align:left;font-size:23px;font-weight:600;padding:21px 24px;line-height:1.5}.matrix td{padding:26px 24px;vertical-align:top;line-height:1.65;font-size:24px;border-top:1px solid #d6e4e9}.matrix td+td{border-left:1px solid #e1eaef}.matrix tbody tr:first-child td{border-top:none}.matrix td:nth-child(3){background:#f2f8f6}.matrix td:nth-child(5){background:#fffaf0}.cap-head{display:flex;align-items:center;gap:12px;margin-bottom:13px}.cap-num{font-size:20px;color:#14796d;font-family:Consolas,monospace}.cap-head h3{font-size:29px;line-height:1.45}.input{font-size:22px;color:#4a687d}.function{font-family:Consolas,monospace;font-size:24px;font-weight:700;color:#175877;overflow-wrap:anywhere}.call{font-size:23px;margin-top:13px;color:#446b7e}.principle-title{font-size:26px;font-weight:700;color:#16695f;margin-bottom:11px}.matrix .outputs{font-size:24px;color:#2c5268}.matrix .limit{font-size:24px;font-weight:600;color:#75511d;margin-bottom:9px}.matrix .limit-desc{font-size:22px;color:#6d654e}.matrix p+p{margin-top:11px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.value{padding:23px 25px;background:#fff;border:1px solid #d4e1e8;border-radius:12px}.value-head{display:flex;align-items:center;gap:12px;margin-bottom:11px}.value .number{font-family:Consolas,monospace;color:#178674;font-size:21px}.value h3{font-size:27px}.value p{font-size:23px;color:#49667c}.architecture{background:#e8f4f0;border:1px solid #bfdacf;padding:24px 28px;border-radius:12px}.route{display:grid;grid-template-columns:.8fr .8fr 1fr 1.55fr 1.05fr;gap:38px;align-items:stretch}.route-node{position:relative;background:#fff;border:1px solid #c9e2d9;border-radius:8px;padding:18px 15px;display:flex;justify-content:center;align-items:center;text-align:center;font-size:25px;font-weight:600;line-height:1.5}.route-node:not(:last-child):after{content:"→";position:absolute;right:-32px;font-size:27px;color:#258875;font-weight:400}.arch-notes{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:21px}.arch-notes p{font-size:22px;color:#345b6b}.arch-notes b{color:#166a5e}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{border-top:4px solid #2b9f89;padding:19px 23px 20px;background:#fff;border-radius:0 0 10px 10px}.step h3{font-size:27px;margin-bottom:9px}.step p{font-size:22px;color:#496a7d;line-height:1.65}.step-tag{color:#147d6b;font-family:Consolas,monospace;font-size:20px;margin-right:10px}.improvement{margin-top:18px;padding:19px 23px;background:#e9f0f5;font-size:23px;line-height:1.65;color:#33566c;border-radius:8px}.improvement b{color:#142f42}.openness{display:grid;grid-template-columns:1.25fr 1fr 1.1fr;gap:20px;border:1px solid #d2e0e7;background:#fff;padding:25px 28px;border-radius:12px}.openness>div+div{border-left:1px solid #dae6eb;padding-left:25px}.openness h3{font-size:26px;margin-bottom:9px}.openness p{font-size:22px;color:#4b687e}.evidence{margin-top:30px;padding-top:25px;border-top:1px solid #c9dbe4;display:grid;grid-template-columns:1.5fr 1fr;gap:35px}.evidence p{font-size:19px;color:#587184;line-height:1.75}.evidence b{color:#27495e}.evidence .baseline{font-family:Consolas,"Microsoft YaHei",sans-serif;font-size:18px;overflow-wrap:anywhere}.evidence .disclaimer{text-align:right;font-size:21px;color:#355c70}.link{color:inherit;text-decoration:none}.type-note{color:#8b642e!important}
+@media print{body{background:white}.poster{margin:0}}
+</style>
+</head>
+<body><main class="poster" aria-label="GhostTrack 能力、底层原理与后续开发意义完整总览图">
+<header class="hero">
+  <div class="hero-top"><p class="kicker">源码研究 / 技术理解 / 独立开发</p><p class="project-id">008 · 2026.10.09</p></div>
+  <h1>GhostTrack 一图读懂</h1>
+  <p class="subtitle">能力 → 实现 → 底层原理 → 后续开发价值</p>
+  <p class="hero-summary"><b>核心判断：这是一个 Python 命令行集成壳。</b><br>核心能力来自现成服务、号码规则库和公开网页。</p>
+  <p class="hero-small">原库自己做：菜单交互、输入处理、函数调度、请求与库调用、结果打印。</p>
+</header>
+
+<div class="section-title"><span class="num">01</span><h2>先看层次：封装工具与技术来源</h2><span class="note">箭头表示调用与依赖</span></div>
+<div class="layers">
+  <div class="layer"><span class="label">原库自己的代码</span><h3>GhostTrack 封装层</h3><p>组织输入、调用与终端展示</p></div>
+  <div class="layer"><span class="label">现成 Python 工具</span><h3>requests / phonenumbers</h3><p>网络访问、号码解析与规则匹配</p></div>
+  <div class="layer"><span class="label">能力真正的来源</span><h3>在线服务 / 本地元数据 / 网页</h3><p>IP 数据库、请求来源、编号规则、HTTP 响应</p></div>
+</div>
+<p class="independent">四项查询相互独立；原库没有把手机号、IP 和账号关联成真人身份。</p>
+
+<div class="section-title"><span class="num">02</span><h2>四项能力：从输入到结果，一一对应</h2><span class="note">以下为固定源码可确认的行为</span></div>
+<table class="matrix">
+<colgroup><col style="width:14%"><col style="width:17%"><col style="width:29%"><col style="width:17%"><col style="width:23%"></colgroup>
+<thead><tr><th>能力与输入</th><th>原库怎样调用</th><th>真正的底层技术</th><th>能得到什么</th><th>怎样理解边界</th></tr></thead>
+<tbody>
+<tr><td><div class="cap-head"><span class="cap-num">01</span><h3>IP 归属</h3></div><p class="input">输入：已知 IP</p></td>
+<td><p class="function">IP_Track()</p><p class="call">HTTP 请求<br>↓<br>ipwho.is<br>↓<br>JSON 结果</p></td>
+<td><p class="principle-title">IP 地理信息数据库</p><p>将 IP / 网段与地区、网络组织关联。服务商聚合和更新数据，再查出对应记录。</p><p>完整数据库与内部定位算法不在此仓库中。</p></td>
+<td><p class="outputs">国家、地区、城市<br>估计经纬度<br>ASN、网络组织<br>运营商、时区</p></td>
+<td><p class="limit">近似归属，不是 GPS。</p><p class="limit-desc">VPN、代理和共享出口会影响解释；不能确认住址或人的位置。</p></td></tr>
+
+<tr><td><div class="cap-head"><span class="cap-num">02</span><h3>自己的<br>公网 IP</h3></div><p class="input">输入：当前网络请求</p></td>
+<td><p class="function">showIP()</p><p class="call">请求 api.ipify.org<br>↓<br>返回 IP 文本</p></td>
+<td><p class="principle-title">IP 连接来源 + NAT / 代理</p><p>外部服务器看到请求来源地址，再回显给客户端。地址转换或代理会改变对外可见的来源；多个设备可共享出口。</p></td>
+<td><p class="outputs">这次请求使用的<br>公网出口 IP</p></td>
+<td><p class="limit">出口不是设备唯一身份。</p><p class="limit-desc">后端代请求通常得到服务器 IP；该功能不自动提供地理位置。</p></td></tr>
+
+<tr><td><div class="cap-head"><span class="cap-num">03</span><h3>电话号码<br>信息</h3></div><p class="input">输入：电话号码<br>建议 +国家码<br>原版默认地区：ID</p></td>
+<td><p class="function">phoneGW()</p><p class="call">调用本地<br>phonenumbers<br>↓<br>解析与元数据查询</p></td>
+<td><p class="principle-title">编号计划 + 号码模式 + 前缀</p><p>解析国家码，校验长度与号码模式；按号码前缀匹配地区、原始运营商和可能的时区。</p><p>规则与元数据随库更新，可本地使用。</p></td>
+<td><p class="outputs">国家 / 地区描述<br>类型、运营商信息<br>可能的时区<br>标准格式<br>Valid / Possible</p></td>
+<td><p class="limit">归属不是当前位置。</p><p class="limit-desc">Valid 不等于已启用；携号转网后运营商可能变化；没有机主实名信息。</p></td></tr>
+
+<tr><td><div class="cap-head"><span class="cap-num">04</span><h3>同名账号<br>线索</h3></div><p class="input">输入：用户名</p></td>
+<td><p class="function">TrackLu()</p><p class="call">URL 模板<br>↓<br>HTTP GET<br>↓<br>检查是否为 200</p></td>
+<td><p class="principle-title">账号地址规则 + HTTP 响应</p><p>按预设账号网址访问网页；200 只说明返回了内容。</p><p>可靠检测还需检查页面正文、最终跳转地址和平台专用规则。</p></td>
+<td><p class="outputs">预设平台上的<br>候选账号网址</p><p class="input">配置 23 个不同名称<br>不是全网搜索</p></td>
+<td><p class="limit">200 也可能是提示页。</p><p class="limit-desc">登录页或错误提示页也可返回 200；同名不证明同一人，不保证账号存在或覆盖完整。</p></td></tr>
+</tbody></table>
+
+<div class="section-title"><span class="num">03</span><h2>对我后续开发的意义</h2><span class="note">以下为独立建议，非原库已有功能</span></div>
+<div class="values">
+<div class="value"><div class="value-head"><span class="number">1</span><h3>判断能力的真实范围</h3></div><p>先问“数据从哪里来、结果能证明什么”，避免把归属查询误当实时追踪。</p></div>
+<div class="value"><div class="value-head"><span class="number">2</span><h3>积累可组合的技术</h3></div><p>HTTP / JSON、API 集成、编号规则、前缀匹配、状态码与页面判定。</p></div>
+<div class="value"><div class="value-head"><span class="number">3</span><h3>找到可落地的用途</h3></div><p>网络出口和日志背景查询、电话格式校验、自己的公开用户名页面检查。</p></div>
+<div class="value"><div class="value-head"><span class="number">4</span><h3>明确开发重心</h3></div><p>基础版重在集成；可靠版重在数据质量、平台检测、错误处理和结果解释。</p></div>
+<div class="value"><div class="value-head"><span class="number">5</span><h3>让结果能够核实</h3></div><p>记录来源、查询时间、验证状态；把“候选”“未知”“失败”分别表达。</p></div>
+<div class="value"><div class="value-head"><span class="number">6</span><h3>独立实现与模块复用</h3></div><p>可用现成库和接口重写；程序、数据、接口分别看授权和使用条件。</p></div>
+</div>
+
+<div class="section-title"><span class="num">04</span><h2>如果我自己做：一种可行架构</h2><span class="note">基础能力能复现，精度取决于数据和判定</span></div>
+<div class="architecture"><div class="route">
+  <div class="route-node">浏览器界面</div><div class="route-node">自己的后端</div><div class="route-node">独立查询<br>适配器</div><div class="route-node">在线 API / 本地号码库<br>公开网页</div><div class="route-node">统一结果<br>来源 + 时间 + 说明</div>
+</div><div class="arch-notes">
+  <p><b>公网 IP 要明确查询对象：</b>浏览器直接请求 ipify 可查自己的出口；后端代请求通常得到服务器出口。</p>
+  <p><b>账号页面查询通常放后端：</b>浏览器跨站读取受 CORS 限制；后端仍需处理平台响应限制和失败状态。</p>
+</div></div>
+
+<div class="section-title"><span class="num">05</span><h2>建议推进顺序与具体改进</h2><span class="note">从能查询，走向能解释、能验证</span></div>
+<div class="steps">
+  <div class="step"><h3><span class="step-tag">STEP 1</span>四个模块独立实现</h3><p>逐项验证输入、输出和失败情况；先确认数据来源及实际覆盖范围。</p></div>
+  <div class="step"><h3><span class="step-tag">STEP 2</span>整合网页与统一结果</h3><p>统一返回结构、来源、时间和判定说明；号码解析允许选择地区。</p></div>
+  <div class="step"><h3><span class="step-tag">STEP 3</span>提高稳定性与准确性</h3><p>超时、HTTPS、失败处理、限流与缓存；加入平台专用检测规则。</p></div>
+</div>
+<p class="improvement"><b>原版值得修正的细节：</b>保留经纬度小数；检查 API 成功状态；号码使用完整 +国家码；账号判断不只看 200。<br><b>需要持续维护的部分：</b>外部数据更新、接口变化与平台页面规则，不能由包装壳保证准确。</p>
+
+<div class="section-title"><span class="num">06</span><h2>源码公开与底层开放性</h2><span class="note">以固定研究版本与官方说明为准</span></div>
+<div class="openness">
+  <div><h3>GhostTrack</h3><p>源码公开，固定版本未发现标准开源许可证；公开不等于任意复用授权。</p></div>
+  <div><h3>phonenumbers / ipify</h3><p>phonenumbers 开源，Apache 2.0；ipify 官方提供开源实现。</p></div>
+  <div><h3>ipwho.is</h3><p>通过在线接口使用；完整数据库与服务实现未随 GhostTrack 仓库提供。</p></div>
+</div>
+
+<footer class="evidence">
+  <div><p><b>研究日期：</b>2026-10-09　<b>固定源码：</b>HunxByts/GhostTrack / GhostTR.py</p><p class="baseline">Commit: a5cb8ad4c08acd803f166fb067b7dac724d6cb3d</p><p>参考：IPWHOIS.IO、ipify、libphonenumber FAQ、RFC 3022、MDN CORS、GitHub 许可说明</p></div>
+  <div><p class="disclaimer">源码与官方文档审阅；未运行上游真实查询，未逐个平台实测。</p><p class="disclaimer type-note">原创技术示意与开发建议图，非真实查询结果截图。</p></div>
+</footer>
+</main></body></html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GhostTrack 完整中文研究：四项能力、八个模块、底层原理与来源、六类场景、后续开发价值、四条复用路线、八项扩展、已有完整引导图与验证许可边界。">
+  <meta name="theme-color" content="#102738">
+  <title>GhostTrack · 能力与原理研究</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23102738'/%3E%3Cpath d='M8 10h16M8 16h10M8 22h16' stroke='%235de0d1' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#capabilities">跳到能力详解</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="GhostTrack 研究页首页"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>GhostTrack</strong><span class="brand-note">项目研究 / 008</span></a>
+    <nav aria-label="页面导航"><a href="#overview">引导图</a><a href="#capabilities">能力</a><a href="#reuse">实现路线</a><a href="#extensions">扩展</a><a class="repo-link" href="https://github.com/HunxByts/GhostTrack" target="_blank" rel="noopener noreferrer">原仓库 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow">完整理解 · 能力与原理 · 后续开发价值</p>
+        <h1 id="page-title">看懂能力来源，<br><span>规划自己的实现。</span></h1>
+        <p class="lead">GhostTrack 是一个 Python 命令行封装工具，把现成接口、号码规则库和公开网页查询组合在一起。</p>
+        <div class="meta-line"><span>README 版本 2.2</span><span>研究日期 2026.10.09</span><a href="https://github.com/HunxByts/GhostTrack/tree/a5cb8ad4c08acd803f166fb067b7dac724d6cb3d" target="_blank" rel="noopener noreferrer">提交 a5cb8ad</a></div>
+        <p class="overview-entry"><a href="#overview">阅读已有完整引导图</a><a href="#summary">12 项完整摘要</a><span>整理更新 2026.10.12</span></p>
+      </div>
+      <aside class="summary-map" aria-label="四项功能的底层来源总览">
+        <div class="map-heading"><span>能力来自哪里</span><span class="small-tag">4 项 / 3 类来源</span></div>
+        <div class="map-row"><span class="map-num">01</span><b>IP 归属</b><span class="connector" aria-hidden="true"></span><span>ipwho.is 数据库</span></div>
+        <div class="map-row"><span class="map-num">02</span><b>公网 IP</b><span class="connector" aria-hidden="true"></span><span>ipify 请求回显</span></div>
+        <div class="map-row"><span class="map-num">03</span><b>电话号码</b><span class="connector" aria-hidden="true"></span><span>phonenumbers 规则</span></div>
+        <div class="map-row"><span class="map-num">04</span><b>同名账号</b><span class="connector" aria-hidden="true"></span><span>公开网页 HTTP 响应</span></div>
+        <p>在线服务 / 本地元数据 / 公开网页</p>
+      </aside>
+    </section>
+    <!-- SUMMARY -->
+    <!-- OVERVIEW -->
+    <section id="capabilities" class="capability-section" aria-labelledby="capability-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / 能力详解</p><h2 id="capability-title">它能查什么，为什么能查？</h2></div><p>选择一项，查看完整解释</p></div>
+      <div class="capability-tabs" role="tablist" aria-label="四项查询能力"><!-- CAPABILITY_TABS --></div>
+      <div class="panels"><!-- CAPABILITY_PANELS --></div>
+      <noscript><style>.panel[hidden]{display:block!important}.panel{margin-top:1.5rem}</style><p class="no-script">JavaScript 未启用，以下顺序展示四项能力的完整说明。</p></noscript>
+    </section>
+    <!-- MODULES -->
+    <section id="architecture" class="architecture-section" aria-labelledby="architecture-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / 底层关系</p><h2 id="architecture-title">把封装层与技术来源分开看。</h2></div><p>GhostTrack 的核心价值在于集成</p></div>
+      <div class="architecture">
+        <div class="layer wrapper-layer"><div class="layer-label"><span>第 1 层</span><h3>交互与封装</h3></div><div class="layer-body"><b>GhostTrack</b><p>终端菜单 · 输入处理 · 函数调度 · 请求与库调用 · 结果打印</p></div><span class="layer-note">原库自己编写</span></div>
+        <div class="layer"><div class="layer-label"><span>第 2 层</span><h3>调用工具</h3></div><div class="layer-body tool-grid"><div><b>requests</b><p>访问在线接口和网页</p></div><div><b>phonenumbers</b><p>解析、匹配和格式化号码</p></div></div><span class="layer-note">现成 Python 库</span></div>
+        <div class="layer"><div class="layer-label"><span>第 3 层</span><h3>技术与数据</h3></div><div class="layer-body foundation-grid"><div><b>在线 IP 服务</b><p>地理数据库 / 请求来源</p></div><div><b>电话编号元数据</b><p>国家码 / 号码模式 / 前缀</p></div><div><b>平台网页</b><p>URL 命名规则 / HTTP 响应</p></div></div><span class="layer-note">能力真正的来源</span></div>
+      </div>
+      <p class="architecture-caption">四项查询在原库中彼此独立；源码没有把手机号、IP 和账号关联成身份识别系统。</p>
+    </section>
+    <section class="interpretation-section" aria-labelledby="interpretation-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / 结果解读</p><h2 id="interpretation-title">这些字段，应该怎样理解？</h2></div></div>
+      <div class="table-wrap"><table><thead><tr><th scope="col">看到的结果</th><th scope="col">它实际说明</th><th scope="col">不能据此判断</th></tr></thead><tbody>
+        <tr><th scope="row">IP 的城市 / 经纬度</th><td>地理数据库对该 IP 的关联记录</td><td>设备 GPS、具体住址、人的当前位置</td></tr>
+        <tr><th scope="row">自己的公网 IP</th><td>外部服务看到的这次请求出口</td><td>某一台局域网设备的唯一身份</td></tr>
+        <tr><th scope="row">电话 Location / Operator</th><td>号码地区描述、原始号段运营商（可用时）</td><td>当前所在地、当前运营商、机主实名</td></tr>
+        <tr><th scope="row">电话 Valid / Possible</th><td>号码模式或长度通过规则检查</td><td>号码已启用、能够接通</td></tr>
+        <tr><th scope="row">用户名网址返回 200</th><td>服务器成功返回了某个页面</td><td>账号一定存在、同名账号属于同一个人</td></tr>
+      </tbody></table></div>
+    </section>
+    <!-- APPLICATIONS -->
+    <section id="sources" class="source-section" aria-labelledby="source-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / 来源与许可</p><h2 id="source-title">源码公开，复用还要看授权。</h2></div></div>
+      <div class="license-grid">
+        <article><span class="license-status">GhostTrack</span><h3>源码可查看，未发现标准许可证</h3><p>固定提交中没有 LICENSE 文件，README 未声明标准开源许可证；程序头部有请求改写许可与署名的文字。不能仅凭 GitHub 仓库公开，就认定允许任意复制、再发布或商用。</p><a href="https://github.com/HunxByts/GhostTrack/blob/a5cb8ad4c08acd803f166fb067b7dac724d6cb3d/GhostTR.py#L1-L5" target="_blank" rel="noopener noreferrer">查看源码头部</a></article>
+        <article><span class="license-status">底层组件与本页</span><h3>库、服务和研究页各有边界</h3><p><a href="https://github.com/daviddrysdale/python-phonenumbers/blob/dev/LICENSE" target="_blank" rel="noopener noreferrer">phonenumbers 使用 Apache 2.0</a>；ipify 官方提供开源实现。ipwho.is 在此通过接口使用，完整数据库和服务实现未随 GhostTrack 提供。</p><p>本页文字、图解与网页代码为独立整理，未复制上游程序或图片；交互仅切换说明，不执行真实查询。</p></article>
+      </div>
+      <details class="platform-details"><summary>原版用户名检查配置了哪些平台？<span>23 个名称</span></summary><div class="platforms"><!-- PLATFORMS --></div><p>源码有 24 个配置条目，Snapchat 重复一次，因此有 23 个不同平台名称。这里记录固定版本的配置，不代表各网站当前都能正常查询；本次未逐个平台实测。</p></details>
+      <div class="source-list"><!-- SOURCES --></div>
+      <p class="research-scope">固定研究基线为 a5cb8ad4c08acd803f166fb067b7dac724d6cb3d，2026-10-12 重新核对原始源码和主要官方文档。验证范围为研究网页的构建、交互与发布；未运行上游真实信息查询，未逐个平台实测。扩展为开发规划。</p>
+    </section>
+  </main>
+  <footer><div><b>GhostTrack / 中文研究</b><p>008 · GitHub 项目研究集</p></div><div><a href="./research.md">研究文档</a><a href="./notes.md">验证记录</a><a href="#top">回到顶部</a></div></footer>
+</body>
+</html>

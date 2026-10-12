@@ -11,6 +11,7 @@ on:
       - 'projects/005-threejs-game-skills/**'
       - 'projects/006-easel/**'
       - 'projects/007-octogent/**'
+      - 'projects/008-ghosttrack/**'
       - 'projects/013-aihot/**'
       - 'projects.json'
       - 'scripts/**'
@@ -51,7 +52,8 @@ jobs:
           npm ci --prefix projects/005-threejs-game-skills/experiments/ink-swordsman
           npm ci --prefix projects/006-easel/web
           npm ci --prefix projects/007-octogent/web
-      - name: Build the research entrance and published projects 001, 002, 003, 004, 005, 006, 007 and 013
+          npm ci --prefix projects/008-ghosttrack/web
+      - name: Build the research entrance and published projects 001 through 008 and 013
         run: npm run build:site
       - name: Verify archive media and sixteen page links
         working-directory: projects/001-sandboard/experiments/sand-art
@@ -75,6 +77,8 @@ jobs:
         run: npm run check --prefix projects/006-easel/web
       - name: Verify Octogent complete static research, original guide and scope
         run: npm run check --prefix projects/007-octogent/web
+      - name: Verify GhostTrack static research, summaries, original guide and downloads
+        run: npm run check --prefix projects/008-ghosttrack/web
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .cache/pages-site

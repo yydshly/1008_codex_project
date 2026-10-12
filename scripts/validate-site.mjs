@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','013-aihot'], '发布允许名单包含 001、002、003、004、005、006、007 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','013-aihot'], '发布允许名单包含 001–008 与 013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -272,3 +272,20 @@ assert.ok(octogentGuide.equals(await readFile(path.join(ROOT,'projects/007-octog
 assert.ok(html.includes('src="./007-octogent/assets/octogent-understanding-map-preview.jpg"'),'007总入口使用已有完整图预览');
 for(const file of ['map.html','map.js','app.js','interactive-sections.mjs','publication.css','publication.json','understanding.md','LICENSE.upstream.txt','research.md'])await access(path.join(octogentRoot,file));
 console.log('007 Octogent完整摘要、静态正文、原图、研究资料与缩放页聚合验证通过。');
+
+const ghosttrackRoot=path.join(site,'008-ghosttrack');
+const ghosttrackPage=await readFile(path.join(ghosttrackRoot,'index.html'),'utf8');
+const ghosttrackData=JSON.parse(await readFile(path.join(ghosttrackRoot,'publication.json'),'utf8'));
+const ghosttrackMetadata=readCatalog().projects.find(project=>project.id==='008');
+assert.deepEqual(ghosttrackData.summaryItems,ghosttrackMetadata.summaryItems);
+assert.deepEqual(ghosttrackData.overviewItems,ghosttrackMetadata.overviewItems);
+for(const item of ghosttrackMetadata.summaryItems){
+ assert.ok(html.includes(`<strong>${escape(item.title)}</strong>：${escape(item.text)}`),`008总入口缺少${item.title}`);
+ assert.ok(ghosttrackPage.includes(escape(item.text)),`008静态正文缺少${item.title}`);
+}
+const ghosttrackGuide=await readFile(path.join(ghosttrackRoot,'assets/ghosttrack-overview.png'));
+assert.equal(createHash('sha256').update(ghosttrackGuide).digest('hex'),'e740c55e3b86231aa15e1bd31356c6e593723f6be287bbf37f4c51922d61283c');
+assert.ok(ghosttrackGuide.equals(await readFile(path.join(ROOT,'projects/008-ghosttrack/assets/ghosttrack-overview.png'))));
+assert.ok(html.includes('src="./008-ghosttrack/assets/ghosttrack-overview.png"'));
+for(const file of ['map.html','map.js','map.css','understanding.md','research.md','notes.md','assets/ghosttrack-overview-content.md','assets/ghosttrack-overview.html'])await access(path.join(ghosttrackRoot,file));
+console.log('008 GhostTrack完整摘要、正文、既有原图、缩放阅读与下载聚合验证通过。');
