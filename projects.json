@@ -719,7 +719,7 @@
       "cover": "projects/010-unsloth/assets/unsloth-overview.png",
       "coverAlt": "Unsloth 完整能力总览图：训练与运行、六种优化机制、七类模型、场景、H3、价值与个人实践，说明微调也是训练及从零训练未核实。",
       "coverCaption": "沿用 2026-10-09 原创完整总览图，2400 × 5091，保留原始 PNG 字节；网页补全模块、支持层级、复用与扩展。基于固定 f9718db 和官方资料，未进行 GPU 训练或性能实测。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/010-unsloth/",
       "summaryItems": [
         {
           "title": "定位",

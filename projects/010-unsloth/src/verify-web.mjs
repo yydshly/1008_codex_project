@@ -143,7 +143,7 @@ try {
     record.browserStatus='passed';record.screenshots=['assets/cover.png','assets/mobile.png'];
     await writeFile(recordPath,JSON.stringify(record,null,2)+'\n');
   }
-  console.log(JSON.stringify({ status: 'passed', checks: report, screenshots: ['assets/cover.png', 'assets/mobile.png'] }, null, 2));
+  console.log(JSON.stringify({ date:new Date().toISOString(),url:base,status:'passed',checks:report,screenshots:process.env.CAPTURE_ARTIFACTS==='false'?[]:['assets/cover.png','assets/mobile.png'] }, null, 2));
 } finally {
   await browser.close();
 }

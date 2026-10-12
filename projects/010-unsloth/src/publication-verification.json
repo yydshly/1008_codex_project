@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12T10:38:11.591Z",
+  "status": "published_and_verified",
+  "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/",
+  "mapUrl": "https://yydshly.github.io/1008_codex_project/010-unsloth/map.html",
+  "contentCommit": "771d863862b82a3418e25bc1375c19ddf2a0df5a",
+  "workflow": {
+    "id": 38236966981,
+    "url": "https://github.com/yydshly/1008_codex_project/actions/runs/38236966981",
+    "conclusion": "success"
+  },
+  "http": {
+    "checkedUrls": 29,
+    "status": "passed"
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "18 个章节、12 项摘要、8 模块、7 类模型、8 扩展、26 项来源与内部链接完整",
+      "机制与场景均可逐项切换，键盘 Home / End / 方向键可用",
+      "直接链接、刷新和浏览器返回恢复对应面板",
+      "计算器支持正常值、等长、反向长度和无效输入",
+      "FAQ、H3 详情、来源 JSON 和研究文档可访问",
+      "原图 2400 × 5091、字节数和 SHA-256 不变；阅读器 50% / 100% / 适合宽度可用",
+      "1440 / 1024 / 768 / 390 / 320 宽度无整页横向溢出；手机切换可用",
+      "禁用 JavaScript 后全部 12 个面板和说明可读",
+      "无页面脚本错误或失败资源"
+    ]
+  },
+  "guide": {
+    "file": "unsloth-overview.png",
+    "width": 2400,
+    "height": 5091,
+    "bytes": 1457393,
+    "sha256": "60cb16a2becaafa153668e0a585cac4a95fda470285dda55f438380c4921918f",
+    "created": "2026-10-09"
+  },
+  "scope": "静态研究网页、资料与完整原图；未运行模型或 GPU 训练"
+}

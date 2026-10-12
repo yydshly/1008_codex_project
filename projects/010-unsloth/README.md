@@ -2,7 +2,7 @@
 
 整理我们对 Unsloth 的完整理解，覆盖能力、模块、训练与效率原理、代表模型、使用场景、个人价值、复用和可扩展方向。沿用已有引导图，单独核对 MiniMax H3 和从零训练边界。
 
-[返回总索引](../../README.md) · [原仓库](https://github.com/unslothai/unsloth) · [完整理解](understanding.md) · [研究记录](notes.md) · [Web 说明](web/README.md)
+[在线完整研究](https://yydshly.github.io/1008_codex_project/010-unsloth/) · [可缩放一图阅读](https://yydshly.github.io/1008_codex_project/010-unsloth/map.html) · [返回总索引](../../README.md) · [原仓库](https://github.com/unslothai/unsloth) · [完整理解](understanding.md) · [研究记录](notes.md) · [Web 说明](web/README.md)
 
 ## 来源、版本与改动范围
 
@@ -14,7 +14,7 @@
 | 许可 | [Core Apache-2.0](https://github.com/unslothai/unsloth/blob/f9718db128218f43b7e0b03604baa4a9a6633028/LICENSE)；[Studio AGPL-3.0](https://github.com/unslothai/unsloth/blob/f9718db128218f43b7e0b03604baa4a9a6633028/studio/LICENSE.AGPL-3.0)；模型权重另有许可 |
 | 本地改动 | 原创中文研究、HTML/CSS/JS 网页、计算示意、原图阅读器与发布审计；没有复制或修改上游模型程序 |
 | 验证对象 | 独立研究网页、统一静态发布与原图完整性；没有模型推理、GPU 训练、性能复现或微调效果实测 |
-| 在线状态 | 发布流程接入中；实际可达后登记演示链接与发布证据 |
+| 在线状态 | [已部署并核验](https://yydshly.github.io/1008_codex_project/010-unsloth/)；正式 demo 在 HTTPS 与浏览器验证通过后登记 |
 
 官方文档与模型卡可能继续更新。源码固定到研究提交；26 项来源随网页出版，建议与未实测的效果分别标明。
 
@@ -94,3 +94,9 @@ npm.cmd run preview
 ![手机研究网页](assets/mobile.png)
 
 截图为本项目浏览器运行结果，图形来自原创 HTML/CSS。模型能力、生成效果和 GPU 性能不包含在网页验证中。
+
+## 发布核验（2026-10-12）
+
+[首次部署运行 38236966981](https://github.com/yydshly/1008_codex_project/actions/runs/38236966981)成功，内容提交为 `771d863`。公开 HTTPS 检查通过 29 个入口和资源，既有九个子项目入口保留，线上原图尺寸、字节数与 SHA-256 一致。线上真实浏览器再次验证十八章、面板与键盘、历史定位、计算、原图缩放、五档屏宽、无脚本阅读和下载，无脚本错误或失败资源。
+
+[发布记录](src/publication-verification.json) · [HTTP 记录](src/public-http-checks.json) · [浏览器记录](src/public-browser-checks.json)。这些验证只证明研究网页可用，不证明模型效果或 GPU 性能。

@@ -86,3 +86,7 @@ MiniMax 官方模型卡把 Context-IR、H3-Base、2K 再生成模块组成完整
 Microsoft Edge / Playwright 真实浏览器核验通过：十八章、模块 / 模型 / 扩展覆盖、全部机制与场景切换和键盘操作、片段直开 / 刷新 / 返回、两个计算器正常与异常输入、FAQ 与 H3 详情、原图解码 / SHA-256 / 50% / 100% / 适合宽度、五档屏宽、无脚本阅读、资料下载。无脚本错误或失败资源；真实桌面和手机截图已查看。完整逐项记录在 verification.json。
 
 独立构建、项目静态审计、根目录 npm run check 与 15 项 npm test 通过；统一发布构建和全部项目检查以实际记录为准。部署后的公开链接、工作流和资源检查另记在 src/publication-verification.json。网页验证不代表 GPU 模型运行、训练效果或官方性能倍率被复现；通用随机初始化训练流程仍未核实。
+
+## 2026-10-12 · 公开部署验证
+
+内容提交 771d863 已推送 main，GitHub Pages 工作流 38236966981 的 build / deploy 成功。公开网页为 https://yydshly.github.io/1008_codex_project/010-unsloth/，图阅读器为 https://yydshly.github.io/1008_codex_project/010-unsloth/map.html。HTTPS 验证通过 29 个入口与资源（含全部既有九个子项目），下载原图 SHA-256 一致；线上 Microsoft Edge 再次通过完整交互、五档屏宽和无 JavaScript 检查，没有失败请求或脚本错误。核验完成后登记 demo，并提交发布记录；未追加模型或 GPU 实验。

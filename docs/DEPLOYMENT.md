@@ -11,7 +11,7 @@
 
 沿用既有引导图 assets/unsloth-overview.png，2400 × 5091，1,457,393 字节，SHA-256：`60cb16a2becaafa153668e0a585cac4a95fda470285dda55f438380c4921918f`。网页、统一产物和线上下载均需核对原图完整性。
 
-GitHub Actions 增加 010 的路径触发、独立安装和审计。统一验证保留全部原项目检查，同时验证 010 的索引一致、静态章节、图前介绍、链接、资源、下载与原图。实际部署成功并验证在线后，再登记 demo 与工作流证据。
+GitHub Actions 增加 010 的路径触发、独立安装和审计。统一验证保留全部原项目检查，同时验证 010 的索引一致、静态章节、图前介绍、链接、资源、下载与原图。[在线完整研究](https://yydshly.github.io/1008_codex_project/010-unsloth/)与[原图阅读器](https://yydshly.github.io/1008_codex_project/010-unsloth/map.html)已经验证，正式 demo 在核验后登记。[首次部署运行 38236966981](https://github.com/yydshly/1008_codex_project/actions/runs/38236966981)成功；29 个公开 HTTPS 入口/资源、完整原图哈希与真实浏览器交互均通过。见[发布核验](../projects/010-unsloth/src/publication-verification.json)、[HTTP 记录](../projects/010-unsloth/src/public-http-checks.json)与[浏览器记录](../projects/010-unsloth/src/public-browser-checks.json)。
 <!-- UNSLOTH_PUBLICATION:END -->
 
 <!-- GHOSTTRACK_PUBLICATION:START -->

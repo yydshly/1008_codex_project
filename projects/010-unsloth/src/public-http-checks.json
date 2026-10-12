@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-12T10:36:39.356Z",
+  "status": "passed",
+  "scope": "公开 HTTPS 入口、静态正文、原图字节与资源；不含 GPU 验证",
+  "checkedUrls": 29,
+  "guide": {
+    "file": "unsloth-overview.png",
+    "width": 2400,
+    "height": 5091,
+    "bytes": 1457393,
+    "sha256": "60cb16a2becaafa153668e0a585cac4a95fda470285dda55f438380c4921918f",
+    "created": "2026-10-09"
+  },
+  "results": [
+    {
+      "path": "",
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200,
+      "bytes": 77639,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "001-sandboard/",
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "bytes": 460,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "002-interview-guide/",
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "bytes": 5201,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "003-pascal-editor/overview/",
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+      "status": 200,
+      "bytes": 51057,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "004-up-learning-guide/",
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200,
+      "bytes": 26383,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "005-threejs-game-skills/",
+      "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200,
+      "bytes": 35823,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "006-easel/",
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": 200,
+      "bytes": 33508,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "007-octogent/",
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+      "status": 200,
+      "bytes": 57027,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "008-ghosttrack/",
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+      "status": 200,
+      "bytes": 50545,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/",
+      "status": 200,
+      "bytes": 87404,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/app.js",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/app.js",
+      "status": 200,
+      "bytes": 5117,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/assets/cover.png",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/assets/cover.png",
+      "status": 200,
+      "bytes": 116959,
+      "contentType": "image/png"
+    },
+    {
+      "path": "010-unsloth/assets/mobile.png",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/assets/mobile.png",
+      "status": 200,
+      "bytes": 47153,
+      "contentType": "image/png"
+    },
+    {
+      "path": "010-unsloth/assets/unsloth-overview-content.md",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/assets/unsloth-overview-content.md",
+      "status": 200,
+      "bytes": 9921,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/assets/unsloth-overview-generation.json",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/assets/unsloth-overview-generation.json",
+      "status": 200,
+      "bytes": 883,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/assets/unsloth-overview.html",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/assets/unsloth-overview.html",
+      "status": 200,
+      "bytes": 16287,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/assets/unsloth-overview.png",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/assets/unsloth-overview.png",
+      "status": 200,
+      "bytes": 1457393,
+      "contentType": "image/png"
+    },
+    {
+      "path": "010-unsloth/favicon.svg",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/favicon.svg",
+      "status": 200,
+      "bytes": 229,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "010-unsloth/map.css",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/map.css",
+      "status": 200,
+      "bytes": 1040,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/map.html",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/map.html",
+      "status": 200,
+      "bytes": 1543,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/map.js",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/map.js",
+      "status": 200,
+      "bytes": 871,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/notes.md",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/notes.md",
+      "status": 200,
+      "bytes": 8742,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/publication.json",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/publication.json",
+      "status": 200,
+      "bytes": 46747,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/research.md",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/research.md",
+      "status": 200,
+      "bytes": 9428,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/sources.json",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/sources.json",
+      "status": 200,
+      "bytes": 8582,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/styles.css",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/styles.css",
+      "status": 200,
+      "bytes": 29145,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/understanding.md",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/understanding.md",
+      "status": 200,
+      "bytes": 40501,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "010-unsloth/verification.json",
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/verification.json",
+      "status": 200,
+      "bytes": 1760,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "013-aihot/",
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "bytes": 120516,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ]
+}
