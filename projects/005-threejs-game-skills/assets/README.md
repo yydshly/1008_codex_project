@@ -49,3 +49,7 @@
 | ink-integrated-mobile.png | 第二版完整 ink/ 子路径 390×844 实际开始画面，文档宽度 390，无溢出；非真实手机 |
 | ink-attack.png | 第二版生产 WebGL 完整攻击姿态与笔触刀弧，QA 状态冻结截图 |
 | ink-research-mobile.png | 完整研究页 390×844 视口截图，图文与试玩入口可读，无文档横向溢出；非真实手机 |
+
+## 2026-10-12 公开部署截图
+
+[publication/README.md](publication/README.md) 记录研究首页、手机扩展规划、两个游戏暂停状态与起始模板在公开站点的真实截图；未重绘。公开输入抽查与限制见 [publication-verification.json](../src/publication-verification.json)。

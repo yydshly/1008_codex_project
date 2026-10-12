@@ -46,5 +46,9 @@ await cp(path.join(project,'experiments/ink-swordsman/artifacts/pass-3'),path.jo
 await mkdir(path.join(destination,'data'),{recursive:true});
 await writeFile(path.join(destination,'data/publication.json'),JSON.stringify({publication,meta,summaryItems,overviewItems,moduleParts,reuseRoutes,expansionDirections},null,2)+'\n');
 for(const file of ['constraint-cases.json','verification.json','overview-web-verification.json'])await copyFile(path.join(project,'src',file),path.join(destination,'data',file));
+for(const file of ['local-publication-verification.json','publication-verification.json']){
+  try { await copyFile(path.join(project,'src',file),path.join(destination,'data',file)); }
+  catch(error){ if(error.code!=='ENOENT')throw error; }
+}
 for(const [input,output]of [['README.md','research.md'],['notes.md','notes.md'],['src/LICENSE.upstream','LICENSE.upstream.txt'],['assets/README.md','asset-sources.md']])await copyFile(path.join(project,input),path.join(destination,output));
 console.log(`独立构建完成：能力与实践总览图、原创水墨剑客与暴风港、${demos.length} 款作者演示、${skills.length} 个技能、${tools.length} 项工具、5 个约束实验与本地模板 → web/dist/`);

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-12",
+  "result": "PASS",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "server": "aggregated Pages preview",
+    "url": "http://127.0.0.1:4215/1008_codex_project/005-threejs-game-skills/",
+    "viewportWidths": [
+      1280,
+      390,
+      320
+    ]
+  },
+  "checks": {
+    "staticSummaryItems": 12,
+    "moduleParts": 4,
+    "reuseRoutes": 4,
+    "expansionDirections": 8,
+    "originalGuideLoaded": "1024×1536",
+    "guideDownloadSha256": "5f5bfe2d6c13eb3b54af20d95cffc9878eecaee2046fbae57fe457ebc5632ab6",
+    "jsonDownload": {
+      "summaryItems": 12,
+      "moduleParts": 4,
+      "expansionDirections": 8
+    },
+    "imageDialog": "原图放大、Esc关闭及焦点返回通过",
+    "horizontalOverflow": false,
+    "consoleErrors": 0
+  },
+  "limits": [
+    "手机尺寸为桌面浏览器视口模拟，未验证真机或 Safari。",
+    "历史真实输入与游戏状态测试另见各实验 artifacts。"
+  ]
+}

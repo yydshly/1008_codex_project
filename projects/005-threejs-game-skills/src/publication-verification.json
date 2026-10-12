@@ -1,0 +1,330 @@
+{
+  "date": "2026-10-12",
+  "result": "PASS",
+  "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+  "verifiedRelease": {
+    "commit": "2c087d51f71d2c088773e93011d253345f218025"
+  },
+  "workflow": {
+    "id": 38219665967,
+    "url": "https://github.com/yydshly/1008_codex_project/actions/runs/38219665967",
+    "conclusion": "success"
+  },
+  "http": {
+    "verifiedAt": "2026-10-12T07:51:04.146Z",
+    "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+    "result": "PASS",
+    "summaryItems": 12,
+    "moduleParts": 4,
+    "reuseRoutes": 4,
+    "expansionDirections": 8,
+    "playableRoutes": [
+      "starter/",
+      "play/",
+      "ink/"
+    ],
+    "preservedSites": 5,
+    "guide": {
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2749197,
+      "sha256": "5f5bfe2d6c13eb3b54af20d95cffc9878eecaee2046fbae57fe457ebc5632ab6",
+      "originalBytesPreserved": true
+    },
+    "checked": [
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 48280
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 460
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 5201
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 5635
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 26383
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 35745
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 35745
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 35745
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/app.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 8924
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/asset-sources.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 5201
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/capability-overview-v1.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2749197
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/harbor-active.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 180582
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/harbor-input-run.webm",
+        "status": 200,
+        "contentType": "video/webm",
+        "bytes": 7422933
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-active.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2839863
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-art/README.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 1634
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-input-run.webm",
+        "status": 200,
+        "contentType": "video/webm",
+        "bytes": 3729368
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ink-v1-active.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 897561
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/overview/provenance.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 1281
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/ridge-drift.jpg",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 146455
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/assets/scaffold.jpg",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 61237
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/data/publication.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 12375
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/extensions.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 10762
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/extensions.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 3478
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/favicon.svg",
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "bytes": 182
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/ink-evidence.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 6977
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/ink-practice.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 5678
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/ink/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 6388
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/ink/assets/index-BHbQxeV2.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 576078
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/ink/assets/index-BoO4_yGy.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 17936
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/LICENSE.upstream.txt",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 1073
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/notes.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 12851
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/play/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 6391
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/play/assets/index-C_HPv4sY.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 14345
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/play/assets/index-CW_LnkPV.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 594192
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/practice-evidence.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 6194
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/practice.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 7338
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/research.md",
+        "status": 200,
+        "contentType": "text/markdown; charset=utf-8",
+        "bytes": 47447
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/starter/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 1220
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/starter/assets/index-BWvg1CNC.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 563675
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/starter/assets/index-CfQDxqZt.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 2229
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/styles.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 17601
+      },
+      {
+        "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 120516
+      }
+    ],
+    "limits": [
+      "HTTP 与文件核验不代替浏览器输入、真机或音频体验验证。"
+    ]
+  },
+  "browser": {
+    "name": "Codex In-app Browser",
+    "result": "PASS",
+    "desktopWidth": 1280,
+    "mobileWidth": 390,
+    "checks": {
+      "staticSummary": 12,
+      "moduleParts": 4,
+      "extensions": 8,
+      "guideLoaded": "1024×1536",
+      "publicGuideDownloadSha256": "5f5bfe2d6c13eb3b54af20d95cffc9878eecaee2046fbae57fe457ebc5632ab6",
+      "publicJsonDownload": {
+        "summaryItems": 12,
+        "moduleParts": 4,
+        "expansionDirections": 8
+      },
+      "imageDialog": "原图放大、Esc关闭及焦点返回通过",
+      "mobileExtensions": "390px视口无整页横向溢出，扩展章节可定位阅读",
+      "ink": "开始、攻击后气息100→87、失败界面、再战及暂停通过",
+      "harbor": "开始、空格EMP就绪→9.0s冷却、Esc暂停通过",
+      "starter": "WebGL场景与0/8收集状态正常渲染",
+      "home": "005完整介绍、原始引导图与试玩链接存在",
+      "gameConsoleErrors": 0
+    },
+    "screenshots": [
+      "assets/publication/live-research.png",
+      "assets/publication/live-mobile.png",
+      "assets/publication/live-ink.png",
+      "assets/publication/live-harbor.png",
+      "assets/publication/live-starter.png"
+    ]
+  },
+  "limits": [
+    "公开浏览器核验是发布后的功能抽查，完整通关及GPU证据为各实验此前记录。",
+    "手机尺寸为桌面浏览器模拟，未验证真机、Safari或音频听感。",
+    "未进行同模型A/B收益比较，未实测Tripo/Gemini/ElevenLabs服务。",
+    "本记录固定首次核验的发布提交；后续索引与记录提交需另检查Pages状态。"
+  ]
+}

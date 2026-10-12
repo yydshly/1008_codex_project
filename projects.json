@@ -333,7 +333,7 @@
       "cover": "projects/005-threejs-game-skills/assets/capability-overview-v1.png",
       "coverAlt": "Three.js 游戏技能库中文总览：工作流程、九类能力、约束强度、两款原创游戏与水墨前后对照、使用场景和个人价值",
       "coverCaption": "沿用 2026-10-09 生成的完整 1024×1536 中文总览 PNG，2026-10-12 整理发布；参考作者与我们的实际效果图重新排版，作为解释性图文。原图字节保留，原始截图、素材署名与真实输入证据分别记录。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
       "summaryItems": [
         {
           "title": "能力",

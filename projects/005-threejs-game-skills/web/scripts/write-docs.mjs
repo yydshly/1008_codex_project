@@ -7,6 +7,12 @@ import { meta, source, demos, skills, tools, constraints } from '../content.js';
 import { overview, layers, workflow, enforcement, division, lessons, scenarios, personalValues, usageBrief } from '../extension-content.js';
 import { publication, summaryItems, moduleParts, reuseRoutes, expansionDirections } from '../publication-content.js';
 const project=fileURLToPath(new URL('../../',import.meta.url));
+let publicVerification;
+try { publicVerification=JSON.parse(await readFile(path.join(project,'src/publication-verification.json'),'utf8')); }
+catch(error) { if(error.code!=='ENOENT')throw error; }
+const deploymentStatus=publicVerification?.result==='PASS'
+  ? `已部署：[公开研究网页与三款试玩](${publication.url})。GitHub Pages 运行 [${publicVerification.workflow.id}](${publicVerification.workflow.url}) 成功，公开 HTTP 与实际浏览器核验通过后登记 demo；完整范围和限制见 [publication-verification.json](src/publication-verification.json)。`
+  : `部署目标：${publication.url}。最终公开访问与登记以 src/publication-verification.json 为准；本地构建与预期地址不代表部署成功。`;
 const clean=value=>String(value).replaceAll('|','／').replaceAll('\n',' ');
 const extensionMd=`## 一图总览：能力、原理、实践与个人价值
 
@@ -221,7 +227,7 @@ npm.cmd run preview
 
 ## 公开网页部署
 
-部署目标：${publication.url}。统一 GitHub Pages 流程完整构建 001、002、003、004、005、013；最终公开访问与登记以 src/publication-verification.json 为准。不能把本地构建或预期地址当作部署成功。
+${deploymentStatus} 统一 GitHub Pages 流程完整构建 001、002、003、004、005、013。
 
 005 需分别 npm ci 安装 web、experiments/scaffold、experiments/storm-harbor、experiments/ink-swordsman 的锁定依赖。node web/scripts/build-games.mjs 独立编译三个游戏，node web/scripts/build.mjs 打包研究页，node web/scripts/audit.mjs 检查完整静态摘要、原图、来源与试玩资源。根 npm run build:site 将整个 web/dist/ 复制到 .cache/pages-site/005-threejs-game-skills/，随后 node scripts/validate-site.mjs 验证所有已发布项目。
 

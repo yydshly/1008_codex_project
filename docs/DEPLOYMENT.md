@@ -3,7 +3,7 @@
 <!-- THREEJS_PUBLICATION:START -->
 ## Three.js 游戏技能完整理解与真实试玩（2026-10-12）
 
-005 接入现有 GitHub Pages Actions，完整构建 001、002、003、004、005、013。目标路径为 `https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/`；首次发布及公开核验完成前，索引 demo 保持为空，最终状态见该项目 src/publication-verification.json。
+005 已通过现有 GitHub Pages Actions 部署，完整保留 001、002、003、004、013。公开 [完整理解与三款试玩](https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/) 已核验并登记 demo；发布运行 [38219665967](https://github.com/yydshly/1008_codex_project/actions/runs/38219665967) 成功。42 个 HTTP 资源入口、公开原图下载哈希、十二项摘要、四层模块、八项扩展规划与三款游戏加载通过；两款原创游戏开始、真实输入、暂停通过。完整范围见 [公开核验记录](../projects/005-threejs-game-skills/src/publication-verification.json) 与 [本地核验记录](../projects/005-threejs-game-skills/src/local-publication-verification.json)。
 
 研究网页提供十二项完整摘要、四层模块、九类能力、五步制作原理、四类约束、六个使用场景、四项个人价值、四条复用路线与八项扩展规划。沿用 2026-10-09 生成的完整 1024×1536 总览图，原始 PNG 字节保留；作者原始截图、我们的历史两版、实际输入录像和素材署名分别保留。
 

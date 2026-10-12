@@ -567,7 +567,7 @@ npm.cmd run preview
 
 ## 公开网页部署
 
-部署目标：https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/。统一 GitHub Pages 流程完整构建 001、002、003、004、005、013；最终公开访问与登记以 src/publication-verification.json 为准。不能把本地构建或预期地址当作部署成功。
+已部署：[公开研究网页与三款试玩](https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/)。GitHub Pages 运行 [38219665967](https://github.com/yydshly/1008_codex_project/actions/runs/38219665967) 成功，公开 HTTP 与实际浏览器核验通过后登记 demo；完整范围和限制见 [publication-verification.json](src/publication-verification.json)。 统一 GitHub Pages 流程完整构建 001、002、003、004、005、013。
 
 005 需分别 npm ci 安装 web、experiments/scaffold、experiments/storm-harbor、experiments/ink-swordsman 的锁定依赖。node web/scripts/build-games.mjs 独立编译三个游戏，node web/scripts/build.mjs 打包研究页，node web/scripts/audit.mjs 检查完整静态摘要、原图、来源与试玩资源。根 npm run build:site 将整个 web/dist/ 复制到 .cache/pages-site/005-threejs-game-skills/，随后 node scripts/validate-site.mjs 验证所有已发布项目。
 
