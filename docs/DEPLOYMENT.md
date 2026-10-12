@@ -1,5 +1,30 @@
 # 多 Web 演示部署与记录
 
+<!-- OCTOGENT_PUBLICATION:START -->
+## Octogent 完整理解、原始全景图与多 Agent 研究（2026-10-12）
+
+007 接入现有 GitHub Pages Actions，与 001、002、003、004、005、006、013 独立构建后统一发布；本轮只新增 007。首次公开 HTTPS 和浏览器核验后再登记 `projects.json` 的 `demo`，当前处于发布准备与核验阶段。
+
+内容包含 12 项完整摘要、6 段图前介绍、8 个系统模块、5 步执行与反馈、6 类场景、业务与工程各 4 项价值、4 条复用路线和 8 项扩展建议。核心正文与能力说明进入静态 HTML，关闭脚本仍可读；JavaScript 提供六截图浏览、登录任务预设演示、机制标签和全景图缩放。根 `projects.json` 是摘要与引导介绍来源，网页和站点总入口复用相同内容。
+
+沿用已有完整 3600×10174 PNG 全景图，不裁切、不重绘或修改原始字节。SHA-256 为 `a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242`；构建、聚合和公开下载分别核对。六张作者原图、SVG、文字版、图源脚本和 MIT 许可继续保留。
+
+```powershell
+npm.cmd ci --prefix projects/007-octogent/web
+npm.cmd run build --prefix projects/007-octogent/web
+npm.cmd run check --prefix projects/007-octogent/web
+npm.cmd run index:build
+npm.cmd run check
+npm.cmd test
+npm.cmd run build:site
+node scripts/validate-site.mjs
+```
+
+Node.js 22+，研究页无第三方依赖。独立产物 `projects/007-octogent/web/dist/`，完整复制到 `.cache/pages-site/007-octogent/`，保留 `map.html`、所有脚本和样式、assets、Markdown、publication.json、记录与许可；部署子路径 `/1008_codex_project/007-octogent/`。本地预览需通过 HTTP，默认端口 4193；本轮独立工作区使用 4293 进行核验。内容版本更新脚本和 JSON 请求，PNG 原始字节不改写。
+
+CI 增加 007 允许名单、依赖安装与完整正文审计，同时继续验证既有项目。部署的是本研究静态网页，没有启动原 Octogent API、PTY、模型或 worker；研究基线固定 `07cfc4e3c7c3f9ee1fb9ceab2c89fe8715ad4254`，原应用真实任务和收益仍未端到端验证。扩展方向是研究建议，不是原库已交付的稳定能力。
+<!-- OCTOGENT_PUBLICATION:END -->
+
 <!-- EASEL_PUBLICATION:START -->
 ## Easel 完整理解、原始引导图与社媒运营研究（2026-10-12）
 

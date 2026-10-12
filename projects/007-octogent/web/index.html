@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用真实截图和可操作的任务示例，理解 Octogent 如何组织多个 Claude Code 代理：上下文、任务分配、终端、消息与 Git 工作区。">
+  <meta name="theme-color" content="#101217"><title>Octogent · 多个 AI 如何一起工作</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/octopus-favicon.svg"><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./publication.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header"><a class="brand" href="#"><img src="./assets/octopus-favicon.svg" width="32" height="32" alt=""><span>OCTOGENT<span class="brand-sub">项目研究 / 007</span></span></a><nav aria-label="页面导航"><a href="#summary">完整理解</a><a href="#overview">引导图</a><a href="#modules">模块原理</a><a href="#value">价值与复用</a></nav><a class="repo-link" href="https://github.com/hesamsheikh/octogent" target="_blank" rel="noopener noreferrer">GitHub 原仓库 <span aria-hidden="true">↗</span></a></header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow"><span class="label-line"></span> CLAUDE CODE · 多 AGENT 工作台</p><h1>让几个 AI，<br>各自干活。<br><span>一起协作。</span></h1><p class="hero-description">Claude Code 负责读代码、改文件。<br>Octogent 负责分任务、留背景、协调会话。<br>你在一个界面里看到并干预整个过程。</p><div class="hero-actions"><a class="button primary" href="#summary">阅读完整理解</a><a class="text-link" href="#workflow">用一个任务理解它</a></div><p class="hero-meta">开源 MIT <span>/</span> 本地运行 <span>/</span> Claude Code 为主</p></div>
+      <figure class="hero-visual"><div class="window-bar"><span class="window-dots" aria-hidden="true">● ● ●</span><span>三个 Claude Code 会话，并排工作</span><span class="source-badge">上游截图</span></div><button class="hero-image-button" type="button" data-open-image="1" aria-label="放大多个 Claude Code 并行终端的真实截图"><img src="./assets/preview_2.jpg" width="1662" height="852" alt="Octogent 作者截图：左侧关系画布，右侧三个并排的 Claude Code 终端"></button><figcaption><span>左边看协作关系，右边看每个 AI 的真实操作。</span><span>点击查看原图</span></figcaption></figure>
+    </section>
+    <div class="definition-strip"><div class="wrap"><p><strong>管理的对象：</strong>正在做开发工作的 AI 会话</p><p><strong>协作的依据：</strong>工作背景文件 + 明确的待办任务</p><p><strong>你的角色：</strong>查看、指导、审查结果</p></div></div>
+    <!-- PUBLICATION_INTRODUCTION -->
+<section class="section wrap" id="overview"><div class="section-heading"><div><p class="eyebrow">引导图 / 沿用已有完整图</p><h2>把能力、原理与价值放到一起看。</h2></div><p>六张真实截图与完整理解。<br>蓝色代码机制、黄色提示词、绿色验收、紫色扩展。</p></div><div class="hero-actions"><a class="button primary" href="./map.html">缩放阅读与章节跳转 ↗</a><a class="text-link" href="./assets/octogent-understanding-map.png" download>下载原始高清 PNG</a><a class="text-link" href="./assets/octogent-understanding-map.svg" download>下载 SVG</a></div><figure class="overview-guide-full"><a href="./map.html" aria-label="缩放阅读完整 Octogent 理解全景图"><img src="./assets/octogent-understanding-map-preview.jpg" width="3600" height="10174" alt="Octogent 完整理解引导图：六张真实截图、核心能力、执行与反馈链、开源研究场景、业务与工程价值、个人 Agent 库扩展路线及实现边界。" loading="lazy" decoding="async"></a><figcaption>沿用 2026-10-09 生成的完整 3600×10174 全景图，预览保持全部画面；高清 PNG 原始字节保持一致。原图来自本研究，嵌入素材为作者截图。<br><a href="./assets/octogent-understanding-map.png">打开完整原始 PNG</a> · <a href="./assets/octogent-understanding-map-content.md">图中文字与来源</a> · <a href="#evidence">研究和验证范围</a></figcaption></figure></section>
+    <section class="section wrap" id="screens"><div class="section-heading"><div><p class="eyebrow">01 / 真实效果</p><h2>先看它长什么样。</h2></div><p>六张作者提供的真实截图。<br>切换界面，了解每个区域解决什么问题。</p></div><div class="screen-tabs" role="tablist" aria-label="Octogent 界面截图"></div><div class="screen-display"><figure class="screen-figure"><button id="screen-open" type="button" aria-label="放大当前截图"><img id="screen-image" src="./assets/preview_1.jpg" width="1660" height="850" alt="Octogent 代理关系画布"></button><figcaption id="screen-caption"></figcaption></figure><div class="screen-explanation" id="screen-description" role="tabpanel" aria-label="当前截图说明"></div></div><p class="source-note">截图来自 hesamsheikh/octogent 的 static/images；图中的时间与数值属于作者当时的环境。<a href="https://github.com/hesamsheikh/octogent/tree/07cfc4e3c7c3f9ee1fb9ceab2c89fe8715ad4254/static/images" target="_blank" rel="noopener noreferrer">查看素材来源</a></p></section>
+    <div id="research-sections"></div>
+<!-- PUBLICATION_DETAILS -->
+  </main>
+  <footer class="wrap footer"><span>007 / Octogent 中文研究</span><p>研究基线 <code>07cfc4e</code> · 研究 2026-10-09 / 整理 2026-10-12 · MIT<br>截图与源码归原作者；中文讲解和交互示例由本研究项目编写。</p><a href="https://github.com/hesamsheikh/octogent" target="_blank" rel="noopener noreferrer">原仓库</a></footer>
+  <dialog id="image-dialog" aria-labelledby="image-dialog-title"><div class="dialog-bar"><h2 id="image-dialog-title">Octogent 原始截图</h2><button id="close-image" class="button" type="button" aria-label="关闭原图">关闭 <span aria-hidden="true">×</span></button></div><img id="full-image" alt=""><p id="full-caption"></p></dialog>
+</body>
+</html>

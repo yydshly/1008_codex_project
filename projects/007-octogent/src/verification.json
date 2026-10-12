@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-09",
+  "upstream": "https://github.com/hesamsheikh/octogent",
+  "commit": "07cfc4e3c7c3f9ee1fb9ceab2c89fe8715ad4254",
+  "environment": {
+    "os": "Windows",
+    "node": "22.15.0",
+    "browser": "Codex In-app Browser",
+    "mobileViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "mobileContentWidth": 375
+  },
+  "scope": "原创静态研究网页与交互；没有运行原 Octogent、调用模型或进行真实多代理测试。",
+  "understandingMap": {
+    "date": "2026-10-09",
+    "dimensions": { "width": 3600, "height": 10174 },
+    "pngBytes": 5033677,
+    "embeddedUpstreamScreenshots": 6,
+    "checkedTextCards": 36,
+    "outputs": ["PNG", "SVG", "JPEG preview", "Markdown transcript", "chapter layout JSON"],
+    "validation": [
+      "制图成功；36 个正文卡片文字高度检查通过。",
+      "Pillow 读取 PNG 尺寸正确；SVG XML 解析成功且包含六个嵌入 image。",
+      "node --check map.js、scripts/build.mjs 通过；独立生产构建通过。",
+      "桌面缩放从 100% 到 125%，图像宽度相应从 1184 到 1480；章节跳转显示原理与价值章节。",
+      "桌面 document clientWidth / scrollWidth 为 1265 / 1265；控制台没有 error 或 warn。",
+      "390×844 手机视口 document clientWidth / scrollWidth 为 375 / 375；默认 400% 与适应宽度 100% 正常。",
+      "高清图 naturalWidth / naturalHeight 为 3600 / 10174；全景图顶部入口已在研究页可见。",
+      "临时浏览器视口检查后已恢复；根 npm run check 通过。"
+    ],
+    "screenshots": ["assets/map-reader-desktop.jpg", "assets/map-reader-mobile.jpg"],
+    "boundary": "只验证原创图解、静态阅读页与源码结论；没有验证原库的真实 Agent 效果或性能。"
+  },
+  "checks": [
+    {
+      "name": "独立依赖安装",
+      "status": "passed",
+      "evidence": "npm ci 成功；无第三方依赖。"
+    },
+    {
+      "name": "JavaScript 语法",
+      "status": "passed",
+      "evidence": "node --check app.js 与 content.js 均成功。"
+    },
+    {
+      "name": "生产构建",
+      "status": "passed",
+      "evidence": "npm run build 生成 web/dist/。"
+    },
+    {
+      "name": "生产子路径资源",
+      "status": "passed",
+      "evidence": "入口、JS、CSS、六张截图、favicon、来源说明、MIT 许可、研究文档和笔记均 HTTP 200。"
+    },
+    {
+      "name": "上游素材一致性",
+      "status": "passed",
+      "evidence": "六张 JPG 的 SHA256 与固定提交浅克隆中的文件逐个一致。"
+    },
+    {
+      "name": "六个截图与放大",
+      "status": "passed",
+      "evidence": "所有标签更新对应标题，原图弹窗可打开和关闭。"
+    },
+    {
+      "name": "示例阻塞与消息",
+      "status": "passed",
+      "evidence": "前端 worker 显示 BLOCKED，Channel 展示 accessToken 约定的往返。"
+    },
+    {
+      "name": "工作区切换",
+      "status": "passed",
+      "evidence": "shared 显示主目录，worktree 显示 worker 检出目录和分支。"
+    },
+    {
+      "name": "完成与重置",
+      "status": "passed",
+      "evidence": "完成阶段 3/3、下一步禁用；重置 0/3、上一步禁用。"
+    },
+    {
+      "name": "播放与暂停",
+      "status": "passed",
+      "evidence": "自动播放进入最终阶段并显示重新播放，播放后可暂停。首次等待控件变化超时，随后页面确认已完成。"
+    },
+    {
+      "name": "能力与原理交互",
+      "status": "passed",
+      "evidence": "能力卡片可展开机制和边界；原理标签更新对应内容。"
+    },
+    {
+      "name": "键盘导航",
+      "status": "passed",
+      "evidence": "截图 ArrowRight 切到并行终端；机制桌面 ArrowDown、手机 ArrowRight 切到任务分配；tablist 方向随视口更新。"
+    },
+    {
+      "name": "响应式与资源",
+      "status": "passed",
+      "evidence": "桌面 1265/1265、390 手机视口有效宽度 375/375、320 窄屏有效宽度 305/305，scrollWidth 等于 clientWidth；无损坏图片或缺失内部锚点。"
+    },
+    {
+      "name": "浏览器控制台",
+      "status": "passed",
+      "evidence": "检查返回零条 error/warn。"
+    },
+    {
+      "name": "根索引",
+      "status": "passed",
+      "evidence": "npm run index:build、npm run check 与 git diff --check 通过；保留其他项目元数据。"
+    }
+  ],
+  "screenshots": [
+    "assets/cover.jpg",
+    "assets/workflow.jpg",
+    "assets/mobile.jpg"
+  ],
+  "limitations": [
+    "流程示例的消息、任务与测试结果为预设内容。",
+    "未验证原库在当前 Windows 环境的真实 Hook、模型调用或 Git 合并行为。",
+    "尚未在线部署，根索引 demo 保持为空。"
+  ]
+}

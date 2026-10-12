@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "scope": "完整中文研究与静态网页发布准备，不执行原 Octogent Agent 工作流",
+  "upstreamCommit": "07cfc4e3c7c3f9ee1fb9ceab2c89fe8715ad4254",
+  "checks": {
+    "independentInstall": "npm ci 通过，零第三方依赖",
+    "independentBuildAndAudit": "12摘要、6介绍、8模块、5步骤、6场景、两类各4价值、4复用、8扩展和25资源链接通过",
+    "catalog": "npm run index:build 与 npm run check 通过，仅新增007",
+    "catalogTests": "npm test：15项通过",
+    "aggregateBuild": "node scripts/build-site.mjs --pack-only 通过，复用未修改001/003生产产物，其余项目独立构建",
+    "aggregateAudit": "node scripts/validate-site.mjs 通过；八个发布目录、既有16个Sandboard入口与460个Pascal资源保留",
+    "staticReading": "完整摘要、能力、模块、原理、场景、价值、复用、扩展与来源写入HTML，静态审计通过",
+    "browserSummary": "12项摘要可展开与关闭，八模块和八扩展在DOM中存在",
+    "browserSimulation": "BLOCKED、shared路径、审查3/3与重置0/3通过",
+    "browserMap": "章节跳到个人价值，适应宽度100%，PNG naturalWidth/naturalHeight为3600/10174",
+    "browserDownload": "实际下载PNG的SHA-256与既有原图一致",
+    "responsive": "桌面1265/1265，390手机375/375，320窄屏305/305；页面scrollWidth等于clientWidth",
+    "browserResources": "已设置src的图片无损坏；控制台error/warn为空，临时视口已恢复"
+  },
+  "originalGuide": {
+    "width": 3600,
+    "height": 10174,
+    "sha256": "a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242",
+    "preserved": true
+  },
+  "screenshots": ["assets/publication/local-modules.jpg", "assets/publication/local-mobile.jpg"],
+  "fixedIssue": "本地静态服务缺少.mjs的JavaScript MIME；已补充并重启，六个截图标签与会话预设初始化恢复",
+  "limitations": ["没有实测原应用的真实Hooks、模型执行、消息可靠性与合并", "没有量化速度、成本或任务达标收益", "公共部署结果与线上证据另记"]
+}

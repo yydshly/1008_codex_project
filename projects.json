@@ -509,6 +509,103 @@
       "coverFull": "projects/006-easel/assets/capability-map.png"
     },
     {
+      "id": "007",
+      "slug": "octogent",
+      "name": "Octogent 多智能体工作台研究",
+      "summary": "完整中文研究与已有全景图说明 Claude Code 多代理工作台的八个模块、执行反馈原理、六类场景、业务与工程价值、四条复用路线和八项扩展建议；保留真实截图、协作示例与验证边界。",
+      "upstream": "https://github.com/hesamsheikh/octogent",
+      "status": "已完成",
+      "tags": [
+        "Claude Code",
+        "多智能体",
+        "任务编排",
+        "Agent 工程",
+        "上下文",
+        "Git worktree"
+      ],
+      "cover": "projects/007-octogent/assets/octogent-understanding-map-preview.jpg",
+      "coverFull": "projects/007-octogent/assets/octogent-understanding-map.png",
+      "coverAlt": "Octogent 完整理解全景图：六张真实截图、核心能力、执行反馈链、开源研究场景、业务与工程价值和个人 Agent 库扩展路线",
+      "coverCaption": "沿用2026-10-09生成的完整3600×10174全景图，PNG原始字节保持一致；截图来自hesamsheikh/octogent固定提交07cfc4e，中文整理和扩展建议为本研究原创。2026-10-12整理发布；未本地复现原应用真实多Agent任务。",
+      "demo": "",
+      "summaryItems": [
+        {
+          "title": "定位",
+          "text": "围绕Claude Code的本地多Agent工作台，将独立CLI会话组织为可观察、可干预的协作；主要管理任务、背景、终端、状态、消息与工作区。"
+        },
+        {
+          "title": "能力",
+          "text": "持久保存工作背景、从未完成待办启动单项或swarm、查看和控制并行终端、父子协调、DONE/BLOCKED通信、共享或Git worktree隔离，以及历史回看与导出。"
+        },
+        {
+          "title": "模块",
+          "text": "Tentacle上下文、Deck任务入口、Terminal运行时、Swarm父子协作、Channel通信、Hooks状态、Worktree改动隔离、UI观察复盘八部分；用量、GitHub活动与Code Intel为辅助能力。"
+        },
+        {
+          "title": "执行原理",
+          "text": "Markdown和复选框提供工作材料，模板生成任务提示词；本地Node API通过node-pty启动shell与CLI，xterm经WebSocket收发终端输入输出；实际工具执行来自Claude Code。"
+        },
+        {
+          "title": "协作原理",
+          "text": "父协调者按提示词创建worker，子终端保留parentTerminalId；Hooks反馈处理、等待与空闲，Channel在目标空闲时注入文本消息，协调者按约定审查、整合和测试。"
+        },
+        {
+          "title": "实现边界",
+          "text": "代码保证生命周期、终端关系、投递机制和数量限制；任务拆分、求助、审查与测试主要依赖提示词及人工验收。Tentacle不是权限边界，worktree不是安全沙箱。"
+        },
+        {
+          "title": "场景",
+          "text": "开源库研究、前端/API/测试协作、模块迁移、文档发布资料同步、多领域维护和Agent学习实验；适合范围清楚、交接明确、成果可检查的工作。"
+        },
+        {
+          "title": "业务价值",
+          "text": "减少注意力切换与重复补背景，沉淀可复用研究流程，让任务、改动、证据与交付物可回查；可作为个人或团队工作台起点，收益尚未量化。"
+        },
+        {
+          "title": "工程价值",
+          "text": "理解Agent的目标、上下文、工具循环、状态和成果；参考Claude Code外部CLI/PTY/Hooks接线与多Agent协作代价，学习调用、观察、控制和验收，不能据此解释模型内部推理。"
+        },
+        {
+          "title": "复用路线",
+          "text": "可先借工作方法，再运行原工作台，或抽取执行与观察接口，最终实现个人库；从一个项目、两个worker、一个审查者的任务—事件—成果—验收闭环开始。"
+        },
+        {
+          "title": "扩展方向",
+          "text": "稳定任务与依赖、持久化事件消息、恢复重建、成果协议与验收、多Provider、多项目知识复用、权限团队治理、成本质量评测八项，均为待开发建议。"
+        },
+        {
+          "title": "验证与许可",
+          "text": "固定07cfc4e，根包声明0.1.0，MIT；保留六张作者截图、原始全景图与预设登录协作示例。仅验证研究网页，未验证原应用真实协作；PTY不跨API重启、消息在内存、父终端最多9个子终端、活跃PTY默认32。"
+        }
+      ],
+      "overviewItems": [
+        {
+          "title": "定位与能力",
+          "text": "Octogent将多个独立Claude Code会话组织成可见的本地协作系统：给工作留背景和待办，从任务启动会话，观察操作、处理阻塞、交换消息并审查整合结果。它可以帮助管理真实编码会话；本研究网页展示能力与原理、真实作者截图和预设示例。"
+        },
+        {
+          "title": "模块与原理",
+          "text": "Tentacle和Deck提供文件上下文及待办入口；Terminal运行时通过node-pty启动CLI，WebSocket和xterm呈现双向终端。Swarm保存父子关系，Channel在空闲时投递消息，Hooks反馈状态，worktree隔离编辑目录，UI汇总观察。协作策略主要由提示词表达，成果需验证。"
+        },
+        {
+          "title": "场景与产出",
+          "text": "可以探索开源库研究、功能开发、模块迁移、文档同步、多领域维护和Agent学习实验。以你的研究总仓库为例，源码分析、复现取证和中文表达可分工，最终留下固定版本笔记、来源、真实截图、网页和全景图；事实确认和整体验收需要协调。"
+        },
+        {
+          "title": "业务与学习价值",
+          "text": "业务上减少追状态和重复补背景，沉淀可继续交接的流程；工程上理解Agent的目标、上下文、工具、事件、通信、工作区和验收。它是Claude Code外部调用、观察与协作的应用样本，学习模型内部或Claude Code全部实现仍需另外研究。"
+        },
+        {
+          "title": "复用与扩展",
+          "text": "可以只借文件工作法，也可运行原工作台、参考运行时接口，或做自己的Agent库。先用一个项目、两个worker、一个审查者完成可验证闭环，再建设稳定任务、事件消息持久化、恢复、验收、多Provider、多项目和权限治理；这些增强是我们的建议。"
+        },
+        {
+          "title": "验证与边界",
+          "text": "研究固定07cfc4e并保留MIT许可，沿用已生成的完整引导图。源码有Codex启动与用量接线，但文档和Hooks以Claude为主，不能证明等价协作。原应用真实工作尚未本地复现；静态网页部署不会运行模型、Octogent API或worker，也没有已量化提速与成本收益。"
+        }
+      ]
+    },
+    {
       "id": "013",
       "slug": "aihot",
       "name": "AIHOT 信源与资讯引擎研究",

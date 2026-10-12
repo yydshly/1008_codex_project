@@ -1,0 +1,13 @@
+{
+  "name": "octogent-research-exhibition",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs --dir . --port 4193 --base /1008_codex_project/007-octogent/",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit.mjs",
+    "preview": "node scripts/serve.mjs --dir dist --port 4193 --base /1008_codex_project/007-octogent/"
+  }
+}

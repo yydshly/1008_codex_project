@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','013-aihot'], '发布允许名单包含 001、002、003、004、005、006 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','013-aihot'], '发布允许名单包含 001、002、003、004、005、006、007 与 013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -255,3 +255,20 @@ assert.equal(easelCapabilities.items.length,114);
 for(const resource of ['app.js','research-view.mjs','style.css','publication.css','facts.json','verification.json','publication.json','capability-map-prompt.md','LICENSE.upstream.txt','research.md'])await access(path.join(easelRoot,resource));
 assert.ok(html.includes('>Easel</a>'),'006来源链接应使用原库名称');
 console.log('006 Easel总入口、完整理解、114技能与原图聚合验证通过。');
+
+// 007: 研究正文完整、索引一致、原始引导图未改变，不发布 Agent 运行后端。
+const octogentRoot=path.join(site,'007-octogent');
+const octogentPage=await readFile(path.join(octogentRoot,'index.html'),'utf8');
+const octogentData=JSON.parse(await readFile(path.join(octogentRoot,'publication.json'),'utf8'));
+const octogentMetadata=readCatalog().projects.find(project=>project.id==='007');
+assert.deepEqual(octogentData.summaryItems,octogentMetadata.summaryItems);
+assert.equal(octogentData.summaryItems.length,12);assert.equal(octogentData.modules.length,8);
+assert.equal(octogentData.scenarios.length,6);assert.equal(octogentData.extensions.length,8);
+for(const item of octogentMetadata.summaryItems)assert.ok(html.includes(`<strong>${escape(item.title)}</strong>：${escape(item.text)}`),`007总入口摘要缺少${item.title}`);
+for(const id of ['summary','overview','capabilities','modules','principles','scenarios','value','reuse','extensions','evidence'])assert.ok(octogentPage.includes(`id="${id}"`),`007静态章节缺少${id}`);
+const octogentGuide=await readFile(path.join(octogentRoot,'assets/octogent-understanding-map.png'));
+assert.equal(createHash('sha256').update(octogentGuide).digest('hex'),'a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242');
+assert.ok(octogentGuide.equals(await readFile(path.join(ROOT,'projects/007-octogent/assets/octogent-understanding-map.png'))));
+assert.ok(html.includes('src="./007-octogent/assets/octogent-understanding-map-preview.jpg"'),'007总入口使用已有完整图预览');
+for(const file of ['map.html','map.js','app.js','interactive-sections.mjs','publication.css','publication.json','understanding.md','LICENSE.upstream.txt','research.md'])await access(path.join(octogentRoot,file));
+console.log('007 Octogent完整摘要、静态正文、原图、研究资料与缩放页聚合验证通过。');

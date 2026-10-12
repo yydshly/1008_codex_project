@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一张图理解 Octogent 的能力、底层原理、使用设想、业务与工程价值，以及个人 Agent 库的扩展方向。">
+  <title>Octogent 全景图 · 能力、原理与个人价值</title>
+  <link rel="icon" href="./assets/octopus-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./map.css">
+  <script src="./map.js" type="module"></script>
+</head>
+<body>
+  <header class="map-header"><div><a href="./index.html#overview">← 返回研究页</a><h1>Octogent 理解全景图</h1><p>一张图串起真实效果、协作原理、你的使用场景与个人库扩展方向。</p></div><div class="downloads"><a href="./assets/octogent-understanding-map.png" download>下载高清 PNG</a><a href="./assets/octogent-understanding-map.svg" download>下载 SVG</a></div></header>
+  <main>
+    <div class="toolbar" role="group" aria-label="全景图阅读控制">
+      <div class="zoom-controls"><button type="button" id="zoom-out" aria-label="缩小图像">−</button><output id="zoom-label" aria-live="polite">150%</output><button type="button" id="zoom-in" aria-label="放大图像">+</button><button type="button" id="fit-width">适应宽度</button></div>
+      <label for="section-select">跳到章节</label><select id="section-select"><option value="0">图的开头</option></select>
+      <a class="text-version" href="./assets/octogent-understanding-map-content.md">阅读文字版</a>
+    </div>
+    <div id="map-stage" class="map-stage" role="region" aria-label="可缩放的 Octogent 全景图，区域内可上下和左右滚动" tabindex="0"><img id="understanding-map" src="./assets/octogent-understanding-map.png" alt="Octogent 全景图：六张作者真实截图、六项核心能力、UI 到 API 到 Claude Code 的执行链与反馈链、开源研究协作例子、业务和工程价值、个人 Agent 库建议及实现边界。完整文字版可从上方链接阅读。"></div>
+    <p class="map-note">蓝色：已实现机制；黄色：提示词约定；绿色：人工验收；紫色：扩展设想。截图来自作者仓库，尚未在本机验证原应用的真实多 Agent 任务。</p>
+  </main>
+  <footer>研究基线 <code>07cfc4e</code> · 2026-10-09 · <a href="https://github.com/hesamsheikh/octogent/tree/07cfc4e3c7c3f9ee1fb9ceab2c89fe8715ad4254" target="_blank" rel="noopener noreferrer">hesamsheikh/octogent</a> · 上游素材 MIT；中文整理与扩展建议为本研究原创。</footer>
+</body>
+</html>
