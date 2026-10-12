@@ -1,0 +1,194 @@
+{
+  "url": "http://127.0.0.1:4198/?qa=1",
+  "mode": "desktop",
+  "state": "won",
+  "requestedState": "won",
+  "appliedState": "won",
+  "runId": "ink-swordsman-pass-2",
+  "seed": 42,
+  "screenshotPath": "artifacts/pass-2/desktop-won.png",
+  "gpu": {
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A788) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 236,
+    "colorBuckets": 91,
+    "metrics": {
+      "colorBuckets": 121,
+      "colorEntropyBits": 4.32,
+      "edgeDensity": 0.46,
+      "luminance": {
+        "mean": 187.6,
+        "p5": 78.1,
+        "p95": 224.5,
+        "contrast": 146.5
+      },
+      "dominantColorShare": 0.264,
+      "nonBackgroundShare": 0.736
+    },
+    "renderBudget": {
+      "tier": "desktop",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 19,
+          "limit": 300,
+          "ok": true
+        },
+        {
+          "metric": "triangles",
+          "actual": 2850,
+          "limit": 750000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": 9,
+          "limit": 300,
+          "ok": true
+        },
+        {
+          "metric": "textures",
+          "actual": 3,
+          "limit": 60,
+          "ok": true
+        }
+      ],
+      "withinBudget": true
+    },
+    "diagnostics": {
+      "frame": 18,
+      "elapsed": 0,
+      "score": 3,
+      "targetScore": 3,
+      "complete": true,
+      "fail": false,
+      "mode": "won",
+      "stage": 2,
+      "hp": 5,
+      "energy": 100,
+      "parries": 7,
+      "remaining": 99,
+      "seed": 42,
+      "action": "idle",
+      "enemy": {
+        "x": 4.5,
+        "hp": 0,
+        "phase": "defeated",
+        "age": 0,
+        "duration": 1,
+        "heavy": false
+      },
+      "player": {
+        "position": {
+          "x": -4.8,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0
+      },
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "idle",
+        "enemyPose": "stage-2/idle",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            44,
+            55,
+            452,
+            515
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 0,
+          "row": 2,
+          "rect": [
+            55,
+            840,
+            319,
+            1192
+          ]
+        }
+      },
+      "renderer": {
+        "calls": 19,
+        "triangles": 2850,
+        "geometries": 9,
+        "textures": 3
+      },
+      "physics": {
+        "engine": "authored-1d-range-combat",
+        "timestep": 0.016666666666666666,
+        "colliders": 2,
+        "sensors": 2
+      },
+      "canvas": {
+        "clientWidth": 1280,
+        "clientHeight": 720,
+        "width": 1280,
+        "height": 720,
+        "dpr": 1
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "consoleErrorCount": 0,
+  "pageErrorCount": 0
+}

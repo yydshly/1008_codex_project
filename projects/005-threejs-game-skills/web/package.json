@@ -1,0 +1,10 @@
+{
+  "name": "threejs-game-skills-exhibition", "version": "1.0.0", "private": true,
+  "type": "module", "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dir dist --port 4191 --base /1008_codex_project/005-threejs-game-skills/",
+    "research:docs": "node scripts/write-docs.mjs"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "viewport": "iPhone 13 / Chromium 模拟",
+  "input": "真实鼠标指针操作方向和动作按钮；未验证真实触摸硬件",
+  "before": {
+    "x": -4.8,
+    "y": 0,
+    "z": 0
+  },
+  "after": {
+    "x": -2.532864739206404,
+    "y": 0,
+    "z": 0
+  },
+  "dodge": {
+    "action": "dodge",
+    "energy": 74.00000000000003
+  },
+  "releasedSpeed": 0.006637012441774004,
+  "settings": {
+    "muted": true,
+    "reducedMotion": true
+  },
+  "overflow": false
+}

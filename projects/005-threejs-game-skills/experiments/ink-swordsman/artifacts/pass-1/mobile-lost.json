@@ -1,0 +1,131 @@
+{
+  "url": "http://127.0.0.1:4198/?qa=1",
+  "mode": "mobile",
+  "state": "lost",
+  "requestedState": "lost",
+  "appliedState": "lost",
+  "runId": "ink-swordsman-pass-1",
+  "seed": 42,
+  "screenshotPath": "artifacts/pass-1/mobile-lost.png",
+  "gpu": {
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A788) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 664
+    },
+    "drawingBuffer": {
+      "width": 585,
+      "height": 996
+    },
+    "alphaPixels": 4111,
+    "variance": 202,
+    "colorBuckets": 38,
+    "metrics": {
+      "colorBuckets": 48,
+      "colorEntropyBits": 0.95,
+      "edgeDensity": 0.132,
+      "luminance": {
+        "mean": 218.2,
+        "p5": 81.5,
+        "p95": 231.2,
+        "contrast": 149.7
+      },
+      "dominantColorShare": 0.876,
+      "nonBackgroundShare": 0.124
+    },
+    "renderBudget": {
+      "tier": "mobile",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 115,
+          "limit": 150,
+          "ok": true
+        },
+        {
+          "metric": "triangles",
+          "actual": 7057,
+          "limit": 300000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": 90,
+          "limit": 200,
+          "ok": true
+        },
+        {
+          "metric": "textures",
+          "actual": 1,
+          "limit": 40,
+          "ok": true
+        }
+      ],
+      "withinBudget": true
+    },
+    "diagnostics": {
+      "frame": 9,
+      "elapsed": 0,
+      "score": 0,
+      "targetScore": 3,
+      "complete": false,
+      "fail": true,
+      "mode": "lost",
+      "stage": 0,
+      "hp": 0,
+      "energy": 100,
+      "parries": 0,
+      "remaining": 180,
+      "seed": 42,
+      "action": "idle",
+      "enemy": {
+        "x": 4.5,
+        "hp": 4,
+        "phase": "approach",
+        "age": 0,
+        "duration": 1,
+        "heavy": false
+      },
+      "player": {
+        "position": {
+          "x": -4.8,
+          "y": 0,
+          "z": 0
+        },
+        "speed": 0
+      },
+      "renderer": {
+        "calls": 115,
+        "triangles": 7057,
+        "geometries": 90,
+        "textures": 1
+      },
+      "physics": {
+        "engine": "authored-1d-range-combat",
+        "timestep": 0.016666666666666666,
+        "colliders": 2,
+        "sensors": 2
+      },
+      "canvas": {
+        "clientWidth": 390,
+        "clientHeight": 664,
+        "width": 585,
+        "height": 996,
+        "dpr": 1.5
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "consoleErrorCount": 0,
+  "pageErrorCount": 0
+}

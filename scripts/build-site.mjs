@@ -6,7 +6,7 @@ import { ROOT, readCatalog, validateCatalog, projectDirectory } from './catalog.
 
 // Publication is an explicit allowlist. Local research projects must not become
 // public merely because they are registered in projects.json.
-const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }, { id: '003', slug: 'pascal-editor' }, { id: '004', slug: 'up-learning-guide' }, { id: '013', slug: 'aihot' }];
+const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }, { id: '003', slug: 'pascal-editor' }, { id: '004', slug: 'up-learning-guide' }, { id: '005', slug: 'threejs-game-skills' }, { id: '013', slug: 'aihot' }];
 const catalog = readCatalog();
 if (!Array.isArray(catalog.projects)) throw new Error('发布清单缺少 projects 数组。');
 const selected = publication.map(({ id, slug }) => {
@@ -25,6 +25,7 @@ const interview = projects.find(project => project.id === '002' && project.slug 
 const pascal = projects.find(project => project.id === '003' && project.slug === 'pascal-editor');
 const aihot = projects.find(project => project.id === '013' && project.slug === 'aihot');
 const up = projects.find(project => project.id === '004' && project.slug === 'up-learning-guide');
+const threejs = projects.find(project => project.id === '005' && project.slug === 'threejs-game-skills');
 const directory = projectDirectory(project);
 const app = path.join(ROOT, directory, 'experiments/sand-art');
 const interviewDirectory = projectDirectory(interview);
@@ -35,6 +36,8 @@ const aihotDirectory = projectDirectory(aihot);
 const aihotWeb = path.join(ROOT, aihotDirectory, 'web');
 const upDirectory = projectDirectory(up);
 const upWeb = path.join(ROOT,upDirectory,'web');
+const threejsDirectory = projectDirectory(threejs);
+const threejsWeb = path.join(ROOT,threejsDirectory,'web');
 async function build(script, label, args = []) {
   await new Promise((resolve, reject) => {
     const child = spawn(process.execPath, [script, ...args], { stdio: 'inherit', windowsHide: true });
@@ -51,6 +54,8 @@ if (process.argv.includes('--pack-only')) {
 }
 await build(path.join(aihotWeb, 'scripts/build.mjs'), '013 AIHOT 信源与资讯引擎研究');
 await build(path.join(upWeb,'scripts/build.mjs'),'004 Up 完整理解与学习指南');
+await build(path.join(threejsWeb,'scripts/build-games.mjs'),'005 三个独立 Three.js 游戏');
+await build(path.join(threejsWeb,'scripts/build.mjs'),'005 完整理解与真实试玩');
 const site = path.resolve(ROOT, '.cache/pages-site');
 if (path.dirname(site) !== path.resolve(ROOT, '.cache') || path.basename(site) !== 'pages-site') throw new Error('发布目录越界。');
 await rm(site, { recursive: true, force: true });
@@ -60,6 +65,7 @@ await cp(path.join(interviewWeb, 'dist'), path.join(site, '002-interview-guide')
 await cp(path.join(pascalWeb, 'out'), path.join(site, '003-pascal-editor'), { recursive: true });
 await cp(path.join(aihotWeb, 'dist'), path.join(site, '013-aihot'), { recursive: true });
 await cp(path.join(upWeb,'dist'),path.join(site,'004-up-learning-guide'),{recursive:true});
+await cp(path.join(threejsWeb,'dist'),path.join(site,'005-threejs-game-skills'),{recursive:true});
 // README uses the guide cover; the website keeps its original demo figure.
 const original = {
   image: 'assets/original-fine-v2.jpg',
@@ -88,6 +94,9 @@ const mapWidth = mapBytes.readUInt32BE(16);
 const mapHeight = mapBytes.readUInt32BE(20);
 const aihotEntrance = './013-aihot/';
 const upEntrance = './004-up-learning-guide/';
+const threejsEntrance = './005-threejs-game-skills/';
+const threejsMap = `${threejsEntrance}assets/capability-overview-v1.png`;
+const threejsResearch = JSON.parse(await readFile(path.join(site,'005-threejs-game-skills/data/publication.json'),'utf8'));
 const upMap = `${upEntrance}research/assets/up-core-map.png`;
 const aihotMap = `${aihotEntrance}assets/aihot-overview.png`;
 const aihotMapBytes = await readFile(path.join(site, '013-aihot/assets/aihot-overview.png'));
@@ -129,8 +138,9 @@ const html = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><met
 <section class="project-block" id="up-learning-guide"><div class="eyebrow">004 / LEARNING · EVIDENCE · LIFE</div><h2 class="project-heading">004 · ${escape(up.name)}</h2>${introduction(up)}<div class="actions"><a class="button primary" href="${upEntrance}">阅读完整Up项目理解 ↗</a><a class="button" href="${upEntrance}#/map">一图理解与保存</a><a class="button" href="${upEntrance}#/guide/01-learning-system">阅读学习系统</a><a class="button" href="${escape(up.upstream)}">源库 up</a></div><figure class="project-map"><a class="guide-frame" href="${upMap}"><img src="${upMap}" alt="${escape(up.coverAlt)}" width="2400" height="1600" loading="lazy" decoding="async"></a><figcaption>${escape(up.coverCaption)}<br><a href="${upMap}">打开完整原图</a> · <a href="${upMap}" download="up-core-map.png">下载原图</a> · <a href="${upEntrance}">在线阅读能力、模块、原理与价值 ↗</a></figcaption></figure></section>
 <section class="project-block" id="aihot"><div class="eyebrow">013 / SOURCES · EDITORIAL · EVENTS</div><h2 class="project-heading">013 · ${escape(aihot.name)}</h2>${introduction(aihot)}<div class="actions"><a class="button primary" href="${aihotEntrance}">阅读完整 AIHOT 研究 ↗</a><a class="button" href="${aihotEntrance}#sources">查看 18 个示范信源</a><a class="button" href="${aihotMap}">打开完整原图</a><a class="button" href="${escape(aihot.upstream)}">源库 AIHOT</a></div>
 <figure class="project-map"><a class="guide-frame" href="${aihotMap}"><img src="${aihotPreview}" alt="${escape(aihot.coverAlt || 'AIHOT 完整引导图：能力、模块、原理、信源、使用场景、价值、复用方向与边界')}" width="${aihotMapWidth}" height="${aihotMapHeight}" loading="lazy" decoding="async"></a><figcaption>${escape(aihot.coverCaption || '复用已有完整研究引导图，预览保留全部画面，高清 PNG 保留原始字节。')}<br><a href="${aihotMap}">打开完整原图</a> · <a href="${aihotMap}" download="aihot-overview.png">下载高清引导图</a> · <a href="${aihotEntrance}">在线阅读能力、信源与复用方向 ↗</a></figcaption></figure></section>
-<footer>001 研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>Sandboard 上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">Sandboard 来源、许可与改动范围</a><br><br>002 研究基线：<a href="${escape(interview.upstream)}/tree/${escape(interviewReport.baseline.commit)}">${escape(interviewReport.baseline.commit)}</a><br>上游指南遵循 <a href="${interviewEntrance}LICENSE.upstream.txt">MIT 许可</a>；中文讲解与示例为独立补充，第三方教程仅保留资料入口。<br><a href="${repository}/blob/main/${interviewDirectory}/README.md">面试指南来源与实现说明</a><br><br>003 研究基线：<a href="https://github.com/pascalorg/editor/tree/c5eaf51e161ba8653204d543666f5839d6020874">c5eaf51e161ba8653204d543666f5839d6020874</a><br>四个运行包固定 1.0.3；上游代码 <a href="./003-pascal-editor/LICENSE.upstream.txt">MIT 许可</a>，材质独立来源和许可尚未逐项核实；Basis 解码器保留 Apache 2.0。<br><a href="https://github.com/yydshly/1008_codex_project/blob/main/projects/003-pascal-editor/README.md">Pascal 来源、许可与改动范围</a><br><br>013 研究基线：<a href="${escape(aihot.upstream)}/tree/${escape(aihotBaseline)}">${escape(aihotBaseline)}</a><br>AIHOT 上游遵循 MIT 许可；研究网页保留来源和独立解读，未运行原库采集与模型服务。<br><a href="${repository}/blob/main/${aihotDirectory}/README.md">AIHOT 来源、许可与研究范围</a><br><br>004 研究基线：<a href="https://github.com/byoungd/up/tree/35e2aa9ad3a076fe4e8405877cc560df2593838f">35e2aa9ad3a076fe4e8405877cc560df2593838f</a><br>内容原作者 byoungd and contributors；本地改写与引导图保留 <a href="${upEntrance}research/licenses/LICENSE-CONTENT.md">CC BY-NC 4.0</a>，上游程序另为MIT。本研究网页为独立实现，没有提供教学、模型服务或云同步。<br><a href="${upEntrance}#/guide/sources">Up来源、许可与验证范围</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer>
+<section class="project-block" id="threejs-game-skills"><div class="eyebrow">005 / GAME SKILLS · WORKFLOW · EVIDENCE</div><h2 class="project-heading">005 · ${escape(threejs.name)}</h2>${introduction(threejs)}<div class="actions"><a class="button primary" href="${threejsEntrance}">阅读完整能力与价值 ↗</a><a class="button" href="${threejsEntrance}ink/">试玩竹影问剑</a><a class="button" href="${threejsEntrance}play/">试玩暴风港</a><a class="button" href="${threejsEntrance}#extensions">八项扩展方向</a><a class="button" href="${escape(threejs.upstream)}">源库 threejs-game-skills</a></div><figure class="project-map"><a class="guide-frame" href="${threejsMap}"><img src="${threejsMap}" alt="${escape(threejs.coverAlt)}" width="1024" height="1536" loading="lazy" decoding="async"></a><figcaption>${escape(threejs.coverCaption)}<br><a href="${threejsMap}">打开完整原图</a> · <a href="${threejsMap}" download="capability-overview-v1.png">下载原图</a> · <a href="${threejsEntrance}">在线阅读能力、原理、实践和价值 ↗</a></figcaption></figure></section>
+<footer>005 研究基线：<a href="${escape(threejs.upstream)}/tree/${escape(threejsResearch.meta.commit)}">${escape(threejsResearch.meta.commit)}</a><br>上游代码 <a href="${threejsEntrance}LICENSE.upstream.txt">MIT 许可</a>；作者独立游戏素材不自动受源码许可覆盖。总览图、原始截图和两款实验分别说明来源与验证边界；静态站点不调用生成 API。<br><a href="${threejsEntrance}asset-sources.md">图片与素材署名</a> · <a href="${threejsEntrance}research.md">完整研究记录</a><br><br>001 研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>Sandboard 上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">Sandboard 来源、许可与改动范围</a><br><br>002 研究基线：<a href="${escape(interview.upstream)}/tree/${escape(interviewReport.baseline.commit)}">${escape(interviewReport.baseline.commit)}</a><br>上游指南遵循 <a href="${interviewEntrance}LICENSE.upstream.txt">MIT 许可</a>；中文讲解与示例为独立补充，第三方教程仅保留资料入口。<br><a href="${repository}/blob/main/${interviewDirectory}/README.md">面试指南来源与实现说明</a><br><br>003 研究基线：<a href="https://github.com/pascalorg/editor/tree/c5eaf51e161ba8653204d543666f5839d6020874">c5eaf51e161ba8653204d543666f5839d6020874</a><br>四个运行包固定 1.0.3；上游代码 <a href="./003-pascal-editor/LICENSE.upstream.txt">MIT 许可</a>，材质独立来源和许可尚未逐项核实；Basis 解码器保留 Apache 2.0。<br><a href="https://github.com/yydshly/1008_codex_project/blob/main/projects/003-pascal-editor/README.md">Pascal 来源、许可与改动范围</a><br><br>013 研究基线：<a href="${escape(aihot.upstream)}/tree/${escape(aihotBaseline)}">${escape(aihotBaseline)}</a><br>AIHOT 上游遵循 MIT 许可；研究网页保留来源和独立解读，未运行原库采集与模型服务。<br><a href="${repository}/blob/main/${aihotDirectory}/README.md">AIHOT 来源、许可与研究范围</a><br><br>004 研究基线：<a href="https://github.com/byoungd/up/tree/35e2aa9ad3a076fe4e8405877cc560df2593838f">35e2aa9ad3a076fe4e8405877cc560df2593838f</a><br>内容原作者 byoungd and contributors；本地改写与引导图保留 <a href="${upEntrance}research/licenses/LICENSE-CONTENT.md">CC BY-NC 4.0</a>，上游程序另为MIT。本研究网页为独立实现，没有提供教学、模型服务或云同步。<br><a href="${upEntrance}#/guide/sources">Up来源、许可与验证范围</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer>
 </main></body></html>`;
 await writeFile(path.join(site, 'index.html'), html);
 await writeFile(path.join(site, '.nojekyll'), '');
-console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试指南 + Pascal 总结和真实编辑器 + AIHOT 研究；仅发布 001、002、003、004、013，原版路径保留。`);
+console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试指南 + Pascal 总结和真实编辑器 + AIHOT 研究；仅发布 001、002、003、004、005、013，原版路径保留。`);

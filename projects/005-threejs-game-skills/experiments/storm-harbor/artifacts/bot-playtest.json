@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "input": "real keyboard; no progression hooks",
+  "framesAdvanced": 3626,
+  "scoreBefore": 0,
+  "scoreAfter": 6,
+  "complete": true,
+  "distanceTravelled": 218.95,
+  "timeToFirstScore": 10.033333333333411,
+  "softlockWindows": 0,
+  "remaining": 104.69999999998383,
+  "hull": 2,
+  "errors": []
+}

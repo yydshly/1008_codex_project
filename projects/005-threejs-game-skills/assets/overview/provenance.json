@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "title": "Three.js 游戏技能库 · 能力与实践总览",
+  "date": "2026-10-09",
+  "generator": "Codex 内置 image_gen",
+  "classification": "infographic-diagram",
+  "acceptedGenerations": 1,
+  "generationId": "exec-01253e7b-2cc7-44cc-91a7-7e0e190957d7",
+  "originalFile": "D:/codex/home/generated_images/01a11c67-9c33-7192-a2b6-144873e3c13a/exec-01253e7b-2cc7-44cc-91a7-7e0e190957d7.png",
+  "workspaceImage": "../capability-overview-v1.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "bytes": 2749197,
+  "prompt": "prompt.md",
+  "references": [
+    "../ridge-drift.jpg",
+    "../starship-dogfight.jpg",
+    "../harbor-active.png",
+    "../ink-active.png",
+    "../ink-v1-active.png"
+  ],
+  "source": {
+    "repository": "https://github.com/majidmanzarpour/threejs-game-skills",
+    "commit": "8286774b22a2566bf894dbc825825c16921866af",
+    "author": "Majid Manzarpour",
+    "codeLicense": "MIT"
+  },
+  "status": "已逐区查看文字、背景、九类能力与实验数据；未进行外部 API 或同模型 A/B 实测",
+  "boundary": "信息图重组参考背景，不作为原始截图或行为证据；原作素材许可独立于源码 MIT",
+  "sha256": "5f5bfe2d6c13eb3b54af20d95cffc9878eecaee2046fbae57fe457ebc5632ab6"
+}

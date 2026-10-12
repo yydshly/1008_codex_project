@@ -1,0 +1,50 @@
+import { cp, copyFile, mkdir, readFile, stat, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import { meta, demos, skills, tools, source } from '../content.js';
+import { overview } from '../extension-content.js';
+import { publication, summaryItems, overviewItems, moduleParts, reuseRoutes, expansionDirections } from '../publication-content.js';
+import { publicationMarkup } from '../render-publication.js';
+const root=fileURLToPath(new URL('../',import.meta.url));const project=path.resolve(root,'..');const destination=path.join(root,'dist');
+if(demos.length!==5||skills.length!==9||new Set(skills.map(item=>item.id)).size!==9)throw new Error('演示或技能数据不完整');
+if(!/^[a-f0-9]{40}$/.test(meta.commit))throw new Error('未固定研究提交');
+for(const demo of demos){if(new URL(demo.url).protocol!=='https:'||(await stat(path.join(project,'assets',demo.image))).size<1024)throw new Error(`演示不完整：${demo.id}`);}
+for(const skill of skills){for(const field of ['insight','mechanism','output','enforcement','limit'])if(!skill[field])throw new Error(`${skill.id} 缺少 ${field}`);for(const link of skill.paths)if(!source(link).includes(meta.commit))throw new Error('来源未固定版本');}
+for(const tool of tools)if(!tool.result||!tool.check)throw new Error(`工具验证范围缺失：${tool.file}`);
+const cases=JSON.parse(await readFile(path.join(project,'src/constraint-cases.json'),'utf8'));if(cases.cases.length!==5||cases.cases.some(item=>!item.verified))throw new Error('约束实验尚未完成');
+await stat(path.join(project,'experiments/scaffold/dist/index.html'));await stat(path.join(project,'assets/scaffold.jpg'));
+await stat(path.join(project,'experiments/storm-harbor/dist/index.html'));await stat(path.join(project,'assets/harbor-active.png'));
+await stat(path.join(project,'experiments/ink-swordsman/dist/index.html'));await stat(path.join(project,'assets/ink-active.png'));
+await stat(path.join(project,'assets',overview.image));
+await mkdir(destination,{recursive:true});
+for(const file of ['styles.css','app.js','content.js','extensions.css','extensions.js','extension-content.js','favicon.svg'])await copyFile(path.join(root,file),path.join(destination,file));
+let html=await readFile(path.join(root,'index.html'),'utf8');
+for(const [id,markup] of Object.entries(publicationMarkup)){
+  const marker=new RegExp(`(<div id="${id}" class="[^"]+">)(</div>)`);
+  if(!marker.test(html))throw new Error(`缺少静态出版位置：${id}`);
+  html=html.replace(marker,(_all,start,end)=>start+markup+end);
+}
+await writeFile(path.join(destination,'index.html'),html);
+await cp(path.join(project,'assets'),path.join(destination,'assets'),{recursive:true});
+await cp(path.join(project,'experiments/scaffold/dist'),path.join(destination,'starter'),{recursive:true});
+await cp(path.join(project,'experiments/storm-harbor/dist'),path.join(destination,'play'),{recursive:true});
+await cp(path.join(project,'experiments/ink-swordsman/dist'),path.join(destination,'ink'),{recursive:true});
+await copyFile(path.join(project,'experiments/ink-swordsman/LICENSE.upstream'),path.join(destination,'ink/LICENSE.upstream.txt'));
+await copyFile(path.join(project,'experiments/ink-swordsman/README.md'),path.join(destination,'ink-practice.md'));
+await copyFile(path.join(project,'experiments/ink-swordsman/artifacts/final-evidence.md'),path.join(destination,'ink-evidence.md'));
+await copyFile(path.join(project,'experiments/storm-harbor/LICENSE.upstream'),path.join(destination,'play/LICENSE.upstream.txt'));
+await copyFile(path.join(project,'experiments/storm-harbor/README.md'),path.join(destination,'practice.md'));
+await copyFile(path.join(project,'experiments/storm-harbor/artifacts/final-evidence.md'),path.join(destination,'practice-evidence.md'));
+await mkdir(path.join(destination,'evidence'),{recursive:true});
+for(const file of ['bot-playtest.json','simulation-tests.json','fail-retry.json','mobile-input.json','skill-usage.json','evidence.json'])await copyFile(path.join(project,'experiments/storm-harbor/artifacts',file),path.join(destination,'evidence',file));
+await cp(path.join(project,'experiments/storm-harbor/artifacts/pass-1'),path.join(destination,'evidence/pass-1'),{recursive:true});
+await mkdir(path.join(destination,'evidence/ink'),{recursive:true});
+for(const file of ['bot-playtest.json','simulation-tests.json','fail-retry.json','mobile-input.json','skill-usage.json','evidence.json'])await copyFile(path.join(project,'experiments/ink-swordsman/artifacts',file),path.join(destination,'evidence/ink',file));
+await cp(path.join(project,'experiments/ink-swordsman/artifacts/pass-1'),path.join(destination,'evidence/ink/pass-1'),{recursive:true});
+await cp(path.join(project,'experiments/ink-swordsman/artifacts/pass-2'),path.join(destination,'evidence/ink/pass-2'),{recursive:true});
+await cp(path.join(project,'experiments/ink-swordsman/artifacts/pass-3'),path.join(destination,'evidence/ink/pass-3'),{recursive:true});
+await mkdir(path.join(destination,'data'),{recursive:true});
+await writeFile(path.join(destination,'data/publication.json'),JSON.stringify({publication,meta,summaryItems,overviewItems,moduleParts,reuseRoutes,expansionDirections},null,2)+'\n');
+for(const file of ['constraint-cases.json','verification.json','overview-web-verification.json'])await copyFile(path.join(project,'src',file),path.join(destination,'data',file));
+for(const [input,output]of [['README.md','research.md'],['notes.md','notes.md'],['src/LICENSE.upstream','LICENSE.upstream.txt'],['assets/README.md','asset-sources.md']])await copyFile(path.join(project,input),path.join(destination,output));
+console.log(`独立构建完成：能力与实践总览图、原创水墨剑客与暴风港、${demos.length} 款作者演示、${skills.length} 个技能、${tools.length} 项工具、5 个约束实验与本地模板 → web/dist/`);

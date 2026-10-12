@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','013-aihot'], '发布允许名单仅包含 001、002、003、004 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','013-aihot'], '发布允许名单包含 001、002、003、004、005 与 013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -214,7 +214,21 @@ for(const item of upMetadata.summaryItems){assert(upHtml.includes(item.text),`00
 assert(html.includes('src="./004-up-learning-guide/research/assets/up-core-map.png"'),'总入口需要004原引导图');
 assert(html.includes('href="./004-up-learning-guide/"'),'总入口需要004理解网页');
 for(const file of ['app.js','understanding.mjs','research/UNDERSTANDING.md','research/assets/up-core-map.svg','research/sources/guide-manifest.json','research/licenses/LICENSE-CONTENT.md','research/licenses/LICENSE-CODE.md'])await access(path.join(up,file));
+// Three.js publishes the static research and all three playable projects.
+const threejs = path.join(site,'005-threejs-game-skills');
+const threejsHtml = await readFile(path.join(threejs,'index.html'),'utf8');
+const threejsData = JSON.parse(await readFile(path.join(threejs,'data/publication.json'),'utf8'));
+const threejsMetadata = readCatalog().projects.find(project=>project.id==='005');
+assert.deepEqual(threejsData.summaryItems,threejsMetadata.summaryItems);
+assert.deepEqual(threejsData.overviewItems,threejsMetadata.overviewItems);
+assert.equal(threejsData.summaryItems.length,12);assert.equal(threejsData.expansionDirections.length,8);
+for(const item of threejsData.summaryItems){assert(threejsHtml.includes(escape(item.text)),`005静态摘要缺少${item.title}`);assert(html.includes(`<strong>${escape(item.title)}</strong>：${escape(item.text)}`),`005总入口缺少${item.title}`);}
+assert((await readFile(path.join(threejs,'assets/capability-overview-v1.png'))).equals(await readFile(path.join(ROOT,'projects/005-threejs-game-skills/assets/capability-overview-v1.png'))),'005原引导图字节必须保留');
+assert(html.includes('src="./005-threejs-game-skills/assets/capability-overview-v1.png"'),'总入口需要005原引导图');
+for(const route of ['starter','play','ink'])await access(path.join(threejs,route,'index.html'));
+for(const file of ['research.md','LICENSE.upstream.txt','assets/ink-input-run.webm','assets/harbor-input-run.webm'])await access(path.join(threejs,file));
 console.log(JSON.stringify({ entrance: 'index.html', sections: sections.length, checkedInternalLinks: links.size,
+  threejs:{summaryItems:12,moduleParts:4,expansionDirections:8,playableRoutes:3,originalGuidePreserved:true},
   up:{summaryItems:11,understandingSections:10,pages:97,worksheets:25,originalGuidePreserved:true},
   publishedProjects: publishedDirectories, preservedSandboardPages: sandboardPages.length + 1,
   interview: { requiredFiles: files.length, checkedRelativeAssets: interviewAssets, topics: topics.length,

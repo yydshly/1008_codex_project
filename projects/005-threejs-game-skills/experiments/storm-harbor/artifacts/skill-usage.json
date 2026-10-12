@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-09",
+  "repo": "https://github.com/majidmanzarpour/threejs-game-skills",
+  "commit": "8286774b22a2566bf894dbc825825c16921866af",
+  "license": "MIT / Majid Manzarpour",
+  "scope": "制作时实际读取六个技能；脚手架、画布检查与证据检查实际执行；哈希核对证明来源一致，不单独证明遵循质量或净收益",
+  "loaded": [
+    {
+      "skill": "threejs-game-director",
+      "source": "skills/threejs-game-director/SKILL.md",
+      "sha256": "88c4810af05d20f180af993adae65632bf8b70cf35218fdd7c9a21169f1a5d6c"
+    },
+    {
+      "skill": "threejs-game-director",
+      "source": "skills/threejs-game-director/references/evidence-manifest.md",
+      "sha256": "8f6cf1771425e904de91f22dabe17cc6f2a53dee9a4039faa545a1751720b65f"
+    },
+    {
+      "skill": "threejs-gameplay-systems",
+      "source": "skills/threejs-gameplay-systems/SKILL.md",
+      "sha256": "782480029079d0ec321ee555417e901760b863fff816ff7eb5ddc650f06f014f"
+    },
+    {
+      "skill": "threejs-gameplay-systems",
+      "source": "skills/threejs-gameplay-systems/references/game-feel.md",
+      "sha256": "22659d76c279d96438080af3444677365c79922d7d192b2ab14b282d247bc072"
+    },
+    {
+      "skill": "threejs-gameplay-systems",
+      "source": "skills/threejs-gameplay-systems/references/genre-design.md",
+      "sha256": "f129772c10123d91561ea4419733542b68ce8db1c4498b8bb10b323e1a063649"
+    },
+    {
+      "skill": "threejs-gameplay-systems",
+      "source": "skills/threejs-gameplay-systems/references/physics-engine-selection.md",
+      "sha256": "8bb4380285e85fed5e3732b48d01702aa2ce421008617be3fc7b539cd75289f3"
+    },
+    {
+      "skill": "threejs-aaa-graphics-builder",
+      "source": "skills/threejs-aaa-graphics-builder/SKILL.md",
+      "sha256": "0607460dd603644d471fcad9b579b99e042ab2a939a52eaaf1000892836ce920"
+    },
+    {
+      "skill": "threejs-aaa-graphics-builder",
+      "source": "skills/threejs-aaa-graphics-builder/references/authoring-recipes.md",
+      "sha256": "88fb417aeb82adfae5f6c455ee37826e409527884298715d8383e7c7145aa71c"
+    },
+    {
+      "skill": "threejs-aaa-graphics-builder",
+      "source": "skills/threejs-aaa-graphics-builder/references/technical-art.md",
+      "sha256": "78df662afcad37ea2cae544598b65619e356edabaf502f7be085627ff237e3d5"
+    },
+    {
+      "skill": "threejs-game-ui-designer",
+      "source": "skills/threejs-game-ui-designer/SKILL.md",
+      "sha256": "190f9e29ad0b12adaaea4226bb6efa30ebdc0446ff229202a8de5f05efcf6453"
+    },
+    {
+      "skill": "threejs-game-ui-designer",
+      "source": "skills/threejs-game-ui-designer/references/ui-patterns.md",
+      "sha256": "b2e15488de6e554caf2a30fe621e23975041d07534dc15db9741ec3d84556f1b"
+    },
+    {
+      "skill": "threejs-debug-profiler",
+      "source": "skills/threejs-debug-profiler/SKILL.md",
+      "sha256": "20b1dc50ed5872698c27e03e379d8695d47e1515062ecc8589b3bb3cdcc7d27b"
+    },
+    {
+      "skill": "threejs-debug-profiler",
+      "source": "skills/threejs-debug-profiler/references/debug-playbook.md",
+      "sha256": "aae64035ce45bd4bff8fc8ad7d7dfb339c4d25cd1d1f9706a294bf7e111f1e4c"
+    },
+    {
+      "skill": "threejs-qa-release",
+      "source": "skills/threejs-qa-release/SKILL.md",
+      "sha256": "cf86ea23ea77839a81374dd66bc8f70c5284f8556398c08292e24c706c35863e"
+    },
+    {
+      "skill": "threejs-qa-release",
+      "source": "skills/threejs-qa-release/references/release-checks.md",
+      "sha256": "4af42ad68a5b7f6fc9b6c09be0df7f097bf8fc9e141a15ebd1f975939bc7ec79"
+    },
+    {
+      "skill": "threejs-qa-release",
+      "source": "skills/threejs-qa-release/references/playtest-bot.md",
+      "sha256": "4cad837055bfc6723fa350084d04cd31e6dc4144abaef54cc80febfa40ee5175"
+    },
+    {
+      "skill": "threejs-qa-release",
+      "source": "skills/threejs-qa-release/references/visual-test-harness.md",
+      "sha256": "5a3b00721d4277a9dcc91412348c79308758b278cfee8e3c4c222068ae26bed8"
+    }
+  ],
+  "retained": [
+    {
+      "local": "src/main.ts",
+      "source": "skills/threejs-gameplay-systems/assets/threejs-vite-game/src/main.ts",
+      "sha256": "ceba207d057ec157d597b0f4bc5bf99761ce5f2dd380954fdf88f15845eda92f",
+      "modified": false
+    },
+    {
+      "local": "src/core/Loop.ts",
+      "source": "skills/threejs-gameplay-systems/assets/threejs-vite-game/src/core/Loop.ts",
+      "sha256": "ae089fb602a246174ef0b0ed7d083cd0503da18d1534e1aff271aaf433716234",
+      "modified": false
+    },
+    {
+      "local": "src/core/Renderer.ts",
+      "source": "skills/threejs-gameplay-systems/assets/threejs-vite-game/src/core/Renderer.ts",
+      "sha256": "ff5ff661ff4148b3963021e0ecec41405464dde83dc42098b362bf6385d3568f",
+      "modified": false
+    },
+    {
+      "local": "src/utils/random.ts",
+      "source": "skills/threejs-gameplay-systems/assets/threejs-vite-game/src/utils/random.ts",
+      "sha256": "d7148f2d8b9a9ea92a319a2d3f2617a05f7ca3976297c4c19493445f004fe0d6",
+      "modified": false
+    },
+    {
+      "local": "scripts/inspect-threejs-canvas.mjs",
+      "source": "skills/threejs-gameplay-systems/assets/threejs-vite-game/scripts/inspect-threejs-canvas.mjs",
+      "sha256": "1f6b2adef882f9b4c28090f7b8c5f27a9e2ef22606b13a0d231db0ce38ebc8bd",
+      "modified": false
+    }
+  ],
+  "executed": [
+    {
+      "source": "skills/threejs-gameplay-systems/scripts/create_threejs_game.py",
+      "sha256": "c895cad3ea17b3b858b8d1d3c6fc79ec9f75ca06f89aaa0457b2fc9a8eb6379a"
+    },
+    {
+      "source": "skills/threejs-game-director/scripts/check_evidence.py",
+      "sha256": "48660bccc6d82a0d00ff5a0ad1159ce3ea0c5b2458cfc99313a0c6372cd8e88e"
+    }
+  ],
+  "newOrRewritten": [
+    "Game",
+    "Simulation",
+    "level",
+    "contracts",
+    "HarborWorld",
+    "HarborUI",
+    "HarborInput",
+    "HarborAudio",
+    "index.html",
+    "styles.css",
+    "harbor.spec.ts",
+    "test-simulation.mjs"
+  ],
+  "notInvoked": [
+    "threejs-3d-generator",
+    "threejs-image-generator",
+    "threejs-audio-generator"
+  ],
+  "externalApiCalls": 0
+}

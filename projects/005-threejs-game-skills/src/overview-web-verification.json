@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "status": "PASS",
+  "scope": "研究网页新增总览图、原理、我们的扩展与理解、场景和个人价值；未重新运行游戏机制套件",
+  "method": "Codex 内置浏览器中的实际 UI 操作、只读 DOM 检查、真实截图与本地子路径 HTTP 检查",
+  "url": "http://127.0.0.1:4191/1008_codex_project/005-threejs-game-skills/",
+  "poster": {
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2749197,
+    "loaded": true,
+    "downloadVerified": true
+  },
+  "checks": {
+    "desktop": {
+      "viewport": [
+        1280,
+        900
+      ],
+      "documentWidth": 1265,
+      "horizontalOverflow": false,
+      "comparisonImages": [
+        {
+          "width": 581,
+          "height": 327
+        },
+        {
+          "width": 581,
+          "height": 327
+        }
+      ]
+    },
+    "mobileViewport": {
+      "viewport": [
+        390,
+        844
+      ],
+      "documentWidth": 375,
+      "horizontalOverflow": false,
+      "comparisonImages": [
+        {
+          "width": 341.33,
+          "height": 192
+        },
+        {
+          "width": 341.33,
+          "height": 192
+        }
+      ],
+      "realDevice": false
+    },
+    "viewer": {
+      "fit": true,
+      "naturalSizeZoom": true,
+      "desktopImageWidth": 1024,
+      "mobileReaderWidth": 361,
+      "mobileScrollWidth": 1040,
+      "escapeCloses": true,
+      "focusReturns": true,
+      "bodyScrollRestored": true
+    },
+    "content": {
+      "layers": 4,
+      "workflowSteps": 5,
+      "enforcementTypes": 4,
+      "divisionRows": 4,
+      "practiceLessons": 6,
+      "scenarios": 6,
+      "personalValues": 4
+    },
+    "existingInteractions": {
+      "selected3DSkill": true,
+      "selectedSpaceDemo": true
+    },
+    "usageBrief": {
+      "expands": true,
+      "copies": true
+    },
+    "runtime": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0
+    },
+    "delivery": {
+      "localPageReferencesChecked": 26,
+      "localPageReferencesAll200": true,
+      "newFixedVersionSourcePathsChecked": 4,
+      "independentBuild": true,
+      "rootCatalogCheck": true,
+      "viewportReset": true
+    }
+  },
+  "screenshots": [
+    "../assets/overview-web-desktop.png",
+    "../assets/overview-web-mobile.png",
+    "../assets/overview-web-comparison.png",
+    "../assets/overview-web-comparison-mobile.png"
+  ],
+  "limitations": [
+    "手机检查为浏览器视口，非真实手机",
+    "总览图背景是 AI 重组的参考画面，原始截图与操作证据分别保留",
+    "没有新增同模型 A/B 或实时外部素材 API 验证"
+  ]
+}

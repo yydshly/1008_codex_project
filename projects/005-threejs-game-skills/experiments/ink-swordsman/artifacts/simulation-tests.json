@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-09",
+  "scope": "同一实际模拟；近距离机制检查设置双方位置，整轮 bot 无进度注入；仅超时分支预置剩余时间",
+  "checks": [
+    {
+      "name": "移动响应、边界与暂停冻结",
+      "passed": true
+    },
+    {
+      "name": "过早格挡会实际受伤",
+      "passed": true
+    },
+    {
+      "name": "读蓄力格挡成功、失衡反击造成三点伤害",
+      "passed": true
+    },
+    {
+      "name": "蓄力期间盲目挥剑会被防住",
+      "passed": true
+    },
+    {
+      "name": "闪避移动、避伤、消耗与冷却",
+      "passed": true
+    },
+    {
+      "name": "气息不足阻止动作，停手可恢复",
+      "passed": true
+    },
+    {
+      "name": "实际动作完成三轮交锋，无进度设置",
+      "passed": true
+    },
+    {
+      "name": "延迟接招导致失败，节奏影响结果",
+      "passed": true
+    },
+    {
+      "name": "待机实际受击失败，重开清空交锋状态",
+      "passed": true
+    },
+    {
+      "name": "超时阈值分支（仅此项预置剩余时间）",
+      "passed": true
+    }
+  ],
+  "timingComparison": {
+    "fast": {
+      "mode": "won",
+      "cleared": 3,
+      "parries": 6,
+      "elapsed": 14.03333333333361,
+      "hp": 5
+    },
+    "delayed300ms": {
+      "mode": "lost",
+      "cleared": 0,
+      "parries": 0,
+      "hp": 0
+    }
+  }
+}

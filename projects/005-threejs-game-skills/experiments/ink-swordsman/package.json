@@ -1,0 +1,29 @@
+{
+  "name": "ink-swordsman",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "playwright test",
+    "test:simulation": "node scripts/test-simulation.mjs",
+    "verify:visual": "node scripts/inspect-threejs-canvas.mjs --url http://127.0.0.1:4198/?qa=1 --manifest artifacts/evidence.json --seed 42",
+    "test:visual": "playwright test --config playwright.visual.config.ts",
+    "inspect:canvas": "node scripts/inspect-threejs-canvas.mjs"
+  },
+  "dependencies": {
+    "lil-gui": "^0.21.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.0",
+    "@types/pngjs": "^6.0.5",
+    "@types/three": "^0.184.1",
+    "pngjs": "^7.0.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.13"
+  }
+}

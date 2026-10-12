@@ -1,0 +1,16 @@
+{
+  "viewport": "iPhone 13 Chromium simulation",
+  "input": "真实鼠标指针拖动手机布局摇杆，非真实触摸硬件",
+  "before": {
+    "x": -17,
+    "y": 0.5,
+    "z": 10
+  },
+  "after": {
+    "x": -17,
+    "y": 0.5,
+    "z": 1.5860632568266764
+  },
+  "cargo": 1,
+  "releasedSpeed": 0.000013478925724466693
+}

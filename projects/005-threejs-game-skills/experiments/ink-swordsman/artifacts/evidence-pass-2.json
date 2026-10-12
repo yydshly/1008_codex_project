@@ -1,0 +1,17 @@
+{
+  "version":1,
+  "runId":"ink-swordsman-pass-2",
+  "captures":[
+    {"mode":"desktop","state":"menu","report":"artifacts/pass-2/desktop-menu.json"},
+    {"mode":"desktop","state":"active-play","report":"artifacts/pass-2/desktop-active-play.json"},
+    {"mode":"mobile","state":"active-play","report":"artifacts/pass-2/mobile-active-play.json"},
+    {"mode":"desktop","state":"windup","report":"artifacts/pass-2/desktop-windup.json"},
+    {"mode":"desktop","state":"attack","report":"artifacts/pass-2/desktop-attack.json"},
+    {"mode":"desktop","state":"parry","report":"artifacts/pass-2/desktop-parry.json"},
+    {"mode":"mobile","state":"dodge","report":"artifacts/pass-2/mobile-dodge.json"},
+    {"mode":"desktop","state":"counter","report":"artifacts/pass-2/desktop-counter.json"},
+    {"mode":"desktop","state":"late-run","report":"artifacts/pass-2/desktop-late-run.json"},
+    {"mode":"desktop","state":"won","report":"artifacts/pass-2/desktop-won.json"},
+    {"mode":"mobile","state":"lost","report":"artifacts/pass-2/mobile-lost.json"}
+  ]
+}

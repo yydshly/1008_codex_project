@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#071a28" />
+<link rel="icon" href="data:," />
+<title>暴风港 · 能源运输</title>
+</head>
+<body>
+<main id="app" data-mode="menu">
+<canvas id="game-canvas" aria-label="暴风港救援艇驾驶水域"></canvas>
+<div id="harbor-ui">
+<header class="harbor-heading"><a class="research-link" href="../" aria-label="返回研究页">↖ 研究页</a><span class="harbor-call">暴风港 <span>能源运输</span></span><button id="harbor-pause" class="icon-control" type="button" aria-label="暂停游戏" title="暂停 · Esc" hidden>Ⅱ</button></header>
+<section id="harbor-hud" aria-label="任务状态" hidden>
+<div class="survival-line instrument-plate"><div class="hull-instrument"><span class="instrument-label">艇体</span><div id="harbor-hull" role="meter" aria-label="艇体完整度" aria-valuemin="0" aria-valuemax="4"><i></i><i></i><i></i><i></i></div></div><div class="time-instrument"><span class="instrument-label">封港倒计时</span><strong id="harbor-time">150<span>s</span></strong></div></div>
+<div class="mission-line instrument-plate"><div class="delivery-instrument"><span class="instrument-label">交付</span><strong id="harbor-delivered">0<span>/6</span></strong><div id="harbor-progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="cargo-instrument"><span class="instrument-label">装载</span><strong id="harbor-cargo">0<span>/2</span></strong><div id="harbor-cargo-slots" aria-hidden="true"><i></i><i></i></div></div></div>
+<div class="engine-line instrument-plate"><div class="heat-instrument"><div class="meter-caption"><span id="harbor-heat-label">引擎热量</span><span id="harbor-heat-value">0%</span></div><div id="harbor-heat" class="linear-meter" role="meter" aria-label="引擎热量" aria-valuemin="0" aria-valuemax="100"><i></i></div></div><div class="pulse-instrument"><span>EMP</span><strong id="harbor-pulse-state">就绪</strong><div class="linear-meter"><i id="harbor-pulse-meter"></i></div></div></div>
+<p id="harbor-toast" role="status" aria-live="polite"></p>
+<div class="radar-plate"><div class="radar-caption"><span>港区简图</span><span>N ↑</span></div><canvas id="harbor-map" width="240" height="176" role="img" aria-label="港区简图：白色救援艇、青绿能源、珊瑚红巡逻机、青绿返航基地"></canvas><div class="radar-legend"><span class="home-mark">返航</span><span class="energy-mark">能源</span><span class="danger-mark">巡逻</span></div></div>
+<p class="keyboard-strip"><kbd>WASD</kbd> / 方向键 驾驶 <b>·</b> <kbd>Shift</kbd> 加速 <b>·</b> <kbd>空格</kbd> EMP <b>·</b> <kbd>Esc</kbd> 暂停</p>
+</section>
+<div id="harbor-touch" hidden><div class="stick-zone"><div id="harbor-stick" role="img" aria-label="驾驶摇杆，拖动控制方向"><span class="stick-axis horizontal"></span><span class="stick-axis vertical"></span><span class="stick-compass north">↑</span><span class="stick-compass south">↓</span><div id="harbor-knob"></div></div><span class="touch-caption">驾驶</span></div><div class="touch-actions"><button id="harbor-boost" class="touch-action boost-action" type="button" aria-label="按住加速"><span aria-hidden="true">»</span><strong>加速</strong><small>按住</small></button><button id="harbor-pulse" class="touch-action pulse-action" type="button" aria-label="释放 EMP"><span class="pulse-glyph" aria-hidden="true">◎</span><strong>EMP</strong><small id="harbor-touch-pulse-state">就绪</small></button></div></div>
+<div id="harbor-overlay" class="command-overlay"><section class="command-panel" role="dialog" aria-modal="true" aria-labelledby="harbor-menu-title" tabindex="-1">
+<div class="panel-overline"><span class="signal-light"></span><span id="harbor-menu-overline">港区应急指挥</span><span class="panel-bearing">NW / 270°</span></div>
+<h1 id="harbor-menu-title">暴风港</h1><p id="harbor-menu-subtitle" class="panel-subtitle">能源运输</p><p id="harbor-menu-message" class="mission-message">风暴即将封港。驾驶救援艇，将散落港区的六枚应急能源运回西南基地。</p>
+<div class="command-actions"><button id="harbor-primary" class="command-primary" type="button" data-intent="start">开始救援 <span aria-hidden="true">→</span></button><button id="harbor-secondary" class="command-secondary" type="button" data-intent="menu" hidden>返回指挥台</button></div>
+<div id="harbor-brief" class="mission-brief"><div class="brief-route"><span class="route-node energy-node" aria-hidden="true">◇</span><p><strong>拾取能源</strong><span>青绿信标 · 每次最多装载 2 枚</span></p></div><div class="brief-route"><span class="route-node home-node" aria-hidden="true">⌂</span><p><strong>返航交付</strong><span>西南青绿基地 · 交付修复一格艇体</span></p></div><div class="brief-route"><span class="route-node danger-node" aria-hidden="true">◎</span><p><strong>避开巡逻与平台</strong><span>加速会积热 · EMP 可短暂禁用附近巡逻机</span></p></div></div>
+<div id="harbor-result" class="result-strip" hidden><div><span>能源交付</span><strong id="harbor-result-delivered">0 / 6</strong></div><div><span>剩余时间</span><strong id="harbor-result-time">150 s</strong></div><div><span>艇体</span><strong id="harbor-result-hull">4 / 4</strong></div></div>
+<div class="setting-strip" aria-label="音效和动态设置"><button id="harbor-mute" type="button" data-intent="mute" aria-pressed="false"><span class="setting-symbol" aria-hidden="true">♫</span><span>音效</span><strong>开启</strong></button><button id="harbor-motion" type="button" data-intent="motion" aria-pressed="false"><span class="setting-symbol" aria-hidden="true">≈</span><span>减少动态</span><strong>关闭</strong></button></div>
+<p class="menu-controls"><span class="desktop-instructions">WASD / 方向键驾驶 · Shift 加速 · 空格 EMP</span><span class="mobile-instructions">左手摇杆驾驶 · 右手加速与 EMP</span></p>
+</section></div>
+</div>
+</main>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

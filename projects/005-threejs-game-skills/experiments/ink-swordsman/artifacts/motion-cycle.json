@@ -1,0 +1,573 @@
+{
+  "input": "真实键盘与只读诊断；没有暂停模拟或设置状态",
+  "samples": [
+    {
+      "name": "idle",
+      "frame": 24,
+      "time": 0.13333333333333333,
+      "action": "idle",
+      "x": -4.8,
+      "speed": 0,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "idle",
+        "enemyPose": "stage-0/idle",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            44,
+            55,
+            452,
+            515
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            83,
+            54,
+            310,
+            406
+          ]
+        }
+      }
+    },
+    {
+      "name": "walk",
+      "frame": 150,
+      "time": 0.8333333333333343,
+      "action": "idle",
+      "x": -3.222007536888697,
+      "speed": 4.695263408483473,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "walk",
+        "enemyPose": "stage-0/idle",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 1,
+          "row": 0,
+          "rect": [
+            565,
+            56,
+            975,
+            516
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            83,
+            54,
+            310,
+            406
+          ]
+        }
+      }
+    },
+    {
+      "name": "stop",
+      "frame": 250,
+      "time": 1.3833333333333333,
+      "action": "idle",
+      "x": -1.3594510992751183,
+      "speed": 0.12842125784530167,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "walk",
+        "enemyPose": "stage-0/idle",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 1,
+          "row": 0,
+          "rect": [
+            565,
+            56,
+            975,
+            516
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            83,
+            54,
+            310,
+            406
+          ]
+        }
+      }
+    },
+    {
+      "name": "attack",
+      "frame": 344,
+      "time": 1.9166666666666647,
+      "action": "attack",
+      "x": -1.3533337476818916,
+      "speed": 0.000008697809532428435,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "attack",
+        "enemyPose": "stage-0/windup",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "attack",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            45,
+            84,
+            1510,
+            951
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 1,
+          "row": 0,
+          "rect": [
+            422,
+            44,
+            736,
+            403
+          ]
+        }
+      }
+    },
+    {
+      "name": "attack-recover",
+      "frame": 414,
+      "time": 2.28333333333333,
+      "action": "idle",
+      "x": -1.3533333338970008,
+      "speed": 1.1832222084595031e-8,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "idle",
+        "enemyPose": "stage-0/windup",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            44,
+            55,
+            452,
+            515
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 1,
+          "row": 0,
+          "rect": [
+            422,
+            44,
+            736,
+            403
+          ]
+        }
+      }
+    },
+    {
+      "name": "parry",
+      "frame": 486,
+      "time": 2.666666666666662,
+      "action": "parry",
+      "x": -1.3533333333339026,
+      "speed": 1.1924341010120872e-11,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "parry",
+        "enemyPose": "stage-0/windup",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 1,
+          "row": 1,
+          "rect": [
+            590,
+            544,
+            985,
+            1000
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 1,
+          "row": 0,
+          "rect": [
+            422,
+            44,
+            736,
+            403
+          ]
+        }
+      }
+    },
+    {
+      "name": "dodge",
+      "frame": 562,
+      "time": 2.9833333333333276,
+      "action": "dodge",
+      "x": -1.9533333333333391,
+      "speed": 12,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "dodge",
+        "enemyPose": "stage-0/idle",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 0,
+          "row": 2,
+          "rect": [
+            55,
+            1081,
+            496,
+            1425
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            83,
+            54,
+            310,
+            406
+          ]
+        }
+      }
+    },
+    {
+      "name": "dodge-recover",
+      "frame": 641,
+      "time": 3.3666666666666596,
+      "action": "idle",
+      "x": -5.997438111048737,
+      "speed": 2.677561921781158,
+      "art": {
+        "ready": true,
+        "loaded": [
+          "scene",
+          "hero-atlas",
+          "enemy-atlas",
+          "hero-attack"
+        ],
+        "heroPose": "walk",
+        "enemyPose": "stage-0/idle",
+        "resources": [
+          {
+            "id": "scene",
+            "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+            "status": "loaded",
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "id": "hero-atlas",
+            "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+            "status": "loaded",
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "id": "enemy-atlas",
+            "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+            "status": "loaded",
+            "width": 1254,
+            "height": 1254
+          },
+          {
+            "id": "hero-attack",
+            "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+            "status": "loaded",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "heroCell": {
+          "source": "hero",
+          "column": 1,
+          "row": 0,
+          "rect": [
+            565,
+            56,
+            975,
+            516
+          ]
+        },
+        "enemyCell": {
+          "source": "enemy",
+          "column": 0,
+          "row": 0,
+          "rect": [
+            83,
+            54,
+            310,
+            406
+          ]
+        }
+      }
+    }
+  ]
+}

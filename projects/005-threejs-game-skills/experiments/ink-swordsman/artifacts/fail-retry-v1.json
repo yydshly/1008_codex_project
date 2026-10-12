@@ -1,0 +1,12 @@
+{
+  "input": "从卷首实际开始；不输入防御，敌人自主靠近、攻击",
+  "timeToFail": 14.933333333333655,
+  "failedHp": 0,
+  "retry": {
+    "hp": 5,
+    "score": 0,
+    "parries": 0,
+    "energy": 100,
+    "remaining": 179.98333333333332
+  }
+}

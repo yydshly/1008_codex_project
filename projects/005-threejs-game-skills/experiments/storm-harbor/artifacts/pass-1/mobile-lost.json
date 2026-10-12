@@ -1,0 +1,128 @@
+{
+  "url": "http://127.0.0.1:4197/?qa=1",
+  "mode": "mobile",
+  "state": "lost",
+  "requestedState": "lost",
+  "appliedState": "lost",
+  "runId": "storm-harbor-pass-1",
+  "seed": 42,
+  "screenshotPath": "artifacts/pass-1/mobile-lost.png",
+  "gpu": {
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A788) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 664
+    },
+    "drawingBuffer": {
+      "width": 585,
+      "height": 996
+    },
+    "alphaPixels": 4111,
+    "variance": 254,
+    "colorBuckets": 80,
+    "metrics": {
+      "colorBuckets": 100,
+      "colorEntropyBits": 3.32,
+      "edgeDensity": 0.235,
+      "luminance": {
+        "mean": 54.2,
+        "p5": 22.9,
+        "p95": 200.6,
+        "contrast": 177.7
+      },
+      "dominantColorShare": 0.275,
+      "nonBackgroundShare": 0.725
+    },
+    "renderBudget": {
+      "tier": "mobile",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 49,
+          "limit": 150,
+          "ok": true
+        },
+        {
+          "metric": "triangles",
+          "actual": 27784,
+          "limit": 300000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": 48,
+          "limit": 200,
+          "ok": true
+        },
+        {
+          "metric": "textures",
+          "actual": 3,
+          "limit": 40,
+          "ok": true
+        }
+      ],
+      "withinBudget": true
+    },
+    "diagnostics": {
+      "frame": 13,
+      "elapsed": 0.016666666666666666,
+      "score": 0,
+      "targetScore": 6,
+      "complete": false,
+      "mode": "lost",
+      "fail": true,
+      "cargo": 0,
+      "hull": 0,
+      "remaining": 149.98333333333332,
+      "heat": 0,
+      "wave": 1,
+      "hazards": [
+        {
+          "x": -6.02781709880187,
+          "z": 1.6974154824066288,
+          "stunned": 0
+        }
+      ],
+      "player": {
+        "position": {
+          "x": -17,
+          "y": 0.5,
+          "z": 10
+        },
+        "speed": 0
+      },
+      "renderer": {
+        "calls": 49,
+        "triangles": 27784,
+        "geometries": 48,
+        "textures": 3
+      },
+      "physics": {
+        "engine": "arcade-circle-aabb",
+        "timestep": 0.016666666666666666,
+        "colliders": 7,
+        "sensors": 7
+      },
+      "canvas": {
+        "clientWidth": 390,
+        "clientHeight": 664,
+        "width": 585,
+        "height": 996,
+        "dpr": 1.5
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "consoleErrorCount": 0,
+  "pageErrorCount": 0
+}

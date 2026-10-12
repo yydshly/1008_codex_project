@@ -1,5 +1,31 @@
 # 多 Web 演示部署与记录
 
+<!-- THREEJS_PUBLICATION:START -->
+## Three.js 游戏技能完整理解与真实试玩（2026-10-12）
+
+005 接入现有 GitHub Pages Actions，完整构建 001、002、003、004、005、013。目标路径为 `https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/`；首次发布及公开核验完成前，索引 demo 保持为空，最终状态见该项目 src/publication-verification.json。
+
+研究网页提供十二项完整摘要、四层模块、九类能力、五步制作原理、四类约束、六个使用场景、四项个人价值、四条复用路线与八项扩展规划。沿用 2026-10-09 生成的完整 1024×1536 总览图，原始 PNG 字节保留；作者原始截图、我们的历史两版、实际输入录像和素材署名分别保留。
+
+```powershell
+npm.cmd ci --prefix projects/005-threejs-game-skills/web
+npm.cmd ci --prefix projects/005-threejs-game-skills/experiments/scaffold
+npm.cmd ci --prefix projects/005-threejs-game-skills/experiments/storm-harbor
+npm.cmd ci --prefix projects/005-threejs-game-skills/experiments/ink-swordsman
+node projects/005-threejs-game-skills/web/scripts/build-games.mjs
+node projects/005-threejs-game-skills/web/scripts/build.mjs
+node projects/005-threejs-game-skills/web/scripts/audit.mjs
+npm.cmd run check
+npm.cmd test
+npm.cmd run build:site
+node scripts/validate-site.mjs
+```
+
+Node.js 22.12+，各游戏独立维护 Vite/TypeScript/Three.js 依赖与锁文件；研究网页无第三方运行依赖。聚合时复制完整 web/dist/ 到 .cache/pages-site/005-threejs-game-skills/，包含 starter/ 原库模板、play/ 暴风港、ink/ 竹影问剑，以及 assets、data、研究文档、许可和证据。摘要、模块、复用和扩展方向在构建时写入 HTML，原有能力切换与游戏需要 JavaScript。
+
+CI 检查完整摘要与索引一致、原图哈希、静态章节、三款游戏资源和既有五个站点。根依赖不吸收子项目依赖，发布允许名单仅增加 005。公开站点不调用 Tripo、Gemini、ElevenLabs 或模型，不提供账号、多人或云存储；历史实验验证不能代替真机、音频或同模型收益对照。扩展方向均为研究规划。
+<!-- THREEJS_PUBLICATION:END -->
+
 <!-- UP_PUBLICATION:START -->
 ## Up 完整理解与学习知识地图（2026-10-12）
 

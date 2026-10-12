@@ -1,0 +1,18 @@
+{
+  "input": "真实键盘事件；只读诊断；未调用状态设置或进度 hook",
+  "framesAdvanced": 693,
+  "scoreBefore": 0,
+  "scoreAfter": 3,
+  "complete": true,
+  "rounds": [
+    0,
+    1,
+    2
+  ],
+  "parries": 6,
+  "hp": 4,
+  "distanceTravelled": 26.086553210141524,
+  "timeToFirstScore": 4.149999999999991,
+  "remaining": 163.9666666666539,
+  "errors": []
+}

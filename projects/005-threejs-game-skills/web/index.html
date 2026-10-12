@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1019">
+  <meta name="description" content="一张图汇总 Three.js 游戏技能库的能力、原理、场景和个人价值；用暴风港、水墨剑斗及风格前后对照说明我们的真实使用与理解。">
+  <title>005 · Three.js 游戏技能研究</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./extensions.css">
+</head>
+<body>
+  <a class="skip" href="#overview">跳到内容</a>
+  <header class="site-header">
+    <a class="brand" href="#overview"><span class="brand-mark">005</span><span>Three.js 游戏技能研究</span></a>
+    <nav aria-label="研究章节"><a href="#overview">一图总览</a><a href="#summary">完整摘要</a><a href="#modules">模块结构</a><a href="#mechanism">核心原理</a><a href="#understanding">我们的理解</a><a href="#practice">真实使用</a><a href="#showcase">作者效果</a><a href="#capabilities">九类能力</a><a href="#tools">实际工具</a><a href="#boundaries">约束限制</a><a href="#scenarios">使用场景</a><a href="#value">对我的价值</a><a href="#extensions">扩展方向</a></nav>
+    <a class="repo-link" href="https://github.com/majidmanzarpour/threejs-game-skills" target="_blank" rel="noopener noreferrer">GitHub 原库</a>
+  </header>
+  <main>
+    <section id="overview" class="section-wrap overview-section" aria-labelledby="overview-title">
+      <div class="overview-layout">
+        <div class="overview-copy">
+          <p class="eyebrow">005 / 从源码研究到真实游戏</p>
+          <h1 id="overview-title">把游戏制作经验，<span>变成可复用的流程。</span></h1>
+          <p class="overview-definition">把游戏制作经验、实现配方、工程起点和验收工具，打包成 AI 可以读取、调用和迭代的制作流程。</p>
+          <p>它把作者的制作判断变成可复用资源。模型仍负责理解需求、写代码和做取舍；宿主决定可用工具，运行代码决定游戏行为。</p>
+          <div class="overview-badges"><span>9 类技能</span><span>5 款作者演示</span><span>2 款原创实验</span><span>1 次水墨风格升级</span></div>
+          <div class="overview-actions"><button class="primary" data-open-overview>放大查看总览图</button><a class="secondary" href="./assets/capability-overview-v1.png" download="Threejs游戏技能库-能力与实践总览.png">下载完整 PNG ↓</a></div>
+        </div>
+        <figure class="overview-poster"><button class="poster-open" data-open-overview aria-label="放大 Three.js 游戏技能库能力与实践总览图"><img src="./assets/capability-overview-v1.png" alt="Three.js 游戏技能库中文总览：工作流程、九类能力、约束强度、原创港口与水墨游戏、使用场景和个人价值" width="1024" height="1536" fetchpriority="high"></button><figcaption>一图总览 · AI 生成的信息图，以作者与我们的实际效果为视觉参考。图中场景经过重新排版，原始截图与操作证据见下文。<a href="./assets/overview/provenance.json">制作记录</a></figcaption></figure>
+      </div>
+      <div class="overview-reading"><h2>按这条线理解这个库</h2><div class="reading-links"><a href="#mechanism"><span>01</span>原理：文档、配方、模板和工具</a><a href="#understanding"><span>02</span>实践：我们的扩展与风格迭代</a><a href="#capabilities"><span>03</span>能力：九类技能的产物与边界</a><a href="#scenarios"><span>04</span>应用：使用场景与个人价值</a></div><p>模型提升后，通用提示的增益可能缩小；模板、工具与检查流程仍可复用。我们已验证两款游戏的实际输入与画面，尚未做同模型 A/B 来量化净收益。</p></div>
+    </section>
+    <section id="summary" class="section-wrap extension-section" aria-labelledby="summary-title">
+      <div class="section-top"><div><p class="eyebrow">2026-10-12 / 理解与发布归档</p><h2 id="summary-title">能力、原理、实践与价值，完整整理。</h2></div><p class="intro">十二项摘要连接源码事实、我们的实现、<br>已验证结果与可继续开发的方向。</p></div>
+      <div id="publication-summary" class="publication-summary"></div>
+    </section>
+    <section id="modules" class="section-wrap extension-section" aria-labelledby="modules-title">
+      <div class="section-top"><div><p class="eyebrow">模块结构 / 输入与产物</p><h2 id="modules-title">九类能力，组织在四层工程资源里。</h2></div><p class="intro">技能是任务入口；参考、脚本与模板<br>分别保存判断、执行工具和可运行工程。</p></div>
+      <div id="module-parts" class="module-parts"></div>
+      <p class="enforcement-note">各层按任务配合：导演决定制作顺序，专项技能指导实现，脚本与模板提供可执行起点，实际运行和证据检查驱动修正。<a href="#capabilities">逐项查看九类技能 →</a></p>
+    </section>
+    <section id="mechanism" class="section-wrap extension-section" aria-labelledby="mechanism-title">
+      <div class="section-top"><div><p class="eyebrow">库的本质 / 如何产生作用</p><h2 id="mechanism-title">经验进入上下文，工具进入工作流。</h2></div><p class="intro">依据固定版本源码的解释。<br>“控制”发生在指导、代码和检查三个层面。</p></div>
+      <div class="method-grid" id="method-layers"></div>
+      <h3 class="workflow-title">从需求到可玩的游戏，走完一条制作链。</h3>
+      <ol class="workflow-steps" id="workflow-steps"></ol>
+      <p class="iteration-note"><strong>↶ 验收反馈回到实现</strong><span>例如本次从“风格太简单”回到场景、角色、动作和 UI，而后重新检查真实输入与画布。</span></p>
+      <div class="enforcement-grid" id="enforcement-cards"></div>
+      <p class="enforcement-note">“有技能”并不等于内部改变了模型。文档给出约定，模板与脚本提供可执行部分；只有实际接入的代码和检查才会执行对应边界。<a href="#tools">查看脚本与本地约束实验 →</a></p>
+    </section>
+    <section id="understanding" class="section-wrap extension-section" aria-labelledby="understanding-title">
+      <div class="section-top"><div><p class="eyebrow">我们的扩展 / 从反馈中形成的理解</p><h2 id="understanding-title">从“可以玩”，到“看得出风格”。</h2></div><p class="intro">保留同一水墨游戏的两版实际画面，<br>把可见变化和背后的工程工作放在一起。</p></div>
+      <div class="comparison-figures">
+        <figure><a href="./assets/ink-v1-active.png" target="_blank" rel="noopener"><img src="./assets/ink-v1-active.png" alt="水墨第一版实际截图：简单灰色山体和几何剑客，风格辨识度有限" width="1280" height="720" loading="lazy"></a><figcaption><strong>第一版 · 几何原型</strong>已经具有接招、反击、气息和三阵胜负；人物与场景主要由简单几何构成。用户反馈：太简单，看不出风格。</figcaption></figure>
+        <figure><a href="./assets/ink-active.png" target="_blank" rel="noopener"><img src="./assets/ink-active.png" alt="水墨第二版实际截图：绘画山水、完整衣袍人物、笔触刀光、题款与朱砂界面" width="1280" height="720" loading="lazy"></a><figcaption><strong>第二版 · 素材与战斗接入</strong>内置图像工具生成山水与人物；逐姿态修正 UV、脚底和身体尺度，加入笔触反馈与统一 UI，之后重新验证。</figcaption></figure>
+      </div>
+      <p class="comparison-notice">这是同一个项目的历史迭代，额外投入了素材生成、接入与调试。它能说明风格形成需要哪些工作；没有控制资源、时间和预算，不能当作“有技能 / 无技能”的公平对照。下方两款游戏和作者原始截图可以实际查看或试玩。</p>
+      <h3 class="workflow-title">库的贡献与我们的新增实现</h3>
+      <div class="division-table-wrap"><table class="division-table"><caption class="sr-only">上游提供的制作资源与我们新增的实际实现</caption><thead><tr><th scope="col">环节</th><th scope="col">库提供</th><th scope="col">我们实现与扩展</th></tr></thead><tbody id="division-rows"></tbody></table></div>
+      <div class="lesson-grid" id="lesson-cards"></div>
+      <div class="evidence-links"><a href="./ink-practice.md">水墨制作与技能分工 ↗</a><a href="./ink-evidence.md">水墨实际验证 ↗</a><a href="./practice.md">暴风港制作与技能分工 ↗</a><a href="./practice-evidence.md">暴风港实际验证 ↗</a><a href="./assets/ink-art/README.md">生成素材、版本与问题记录 ↗</a></div>
+    </section>
+    <section id="practice" class="practice section-wrap ink-experiment">
+      <div class="section-top"><div><p class="eyebrow">第二种风格 / 水墨侧视动作</p><h2>竹影问剑：听风辨势，见招拆招。</h2></div><p class="intro">同一技能包，换一种视觉与核心循环。<br>原创剑斗场景，真实键盘完成三轮交锋。</p></div>
+      <div class="practice-layout">
+        <figure class="practice-image"><a href="./ink/" aria-label="进入竹影问剑水墨剑客游戏"><img src="./assets/ink-active.png" alt="第二版水墨剑客实际渲染：干笔山水、石台、完整衣袍人物、笔刷状态条与朱砂题款" fetchpriority="high"></a><figcaption>第二版真实 WebGL 截图 · 竹间客蓄力 · AI 绘画素材接入实际战斗</figcaption></figure>
+        <div class="practice-brief"><p class="eyebrow">三轮交锋 / 五格生命 / 气息管理</p><h2>观势、接招、反击。</h2><p>朱红蓄力接近满时格挡，让对手失衡，再出剑造成三倍伤害。过早接招会受伤；闪避可拉开距离。后两阵交替出现重斩，每次破阵恢复一格生命。</p><a class="primary" href="./ink/">试玩水墨剑客 →</a><p class="practice-controls">A / D 或 ← → 移步 · J 攻击 · K 格挡<br>L / 空格闪避 · Esc 暂停<br>手机提供方向与斩、御、闪按钮。</p><div class="practice-stats"><div><strong>3 / 3</strong><span>真实键盘完成交锋</span></div><div><strong>10 项</strong><span>模拟行为检查通过</span></div><div><strong>11 份</strong><span>第二版最终画布报告通过</span></div></div><div class="practice-links"><a href="./ink-practice.md">玩法、制作与限制</a><a href="./ink-evidence.md">实际验证证据</a><a href="#harbor">另一款：暴风港</a></div></div>
+      </div>
+      <div class="practice-methods"><article><h3>技能转化为哪些规则？</h3><p>核心循环、手感和 UI 规范落实为 0.22 秒格挡窗口、气息消耗、闪避冷却、一次破绽一次强反击。代码执行这些边界，技能文档指导设计和验收。</p></article><article><h3>风格由什么构成？</h3><p>第二版用内置图像工具生成干笔山水与完整人物姿态，接入脚底锚点、状态选帧、衣摆和笔触刀光；题款与朱砂印贯穿 UI。素材和规则具体进入游戏，模型参数没有修改。</p></article><article><h3>实际证据说明什么？</h3><p>真实键盘接招六次，完成三阵；失败重开、手机按钮、十项模拟和十一份画面检查通过。证明技能可用于另一类小游戏，尚未量化相对直接开发的收益。</p></article></div>
+      <details class="practice-replay"><summary>观看真实键盘接招与三轮通关录像</summary><video controls preload="none" playsinline poster="./assets/ink-won.png" aria-label="竹影问剑实际键盘三轮通关录屏"><source src="./assets/ink-input-run.webm" type="video/webm"><a href="./assets/ink-input-run.webm">打开通关录像</a></video><p class="caption">测试机器人读取状态，再发出实际移动、格挡与出剑按键；没有设置通关进度。截图预置状态只用于画面验收。</p></details>
+    </section>
+    <section id="harbor" class="practice section-wrap">
+      <div class="section-top"><div><p class="eyebrow">第一种风格 / 港口运输</p><h2>暴风港：把制作规范用进一局游戏。</h2></div><p class="intro">实际读取六个技能、运行脚手架和检查工具，<br>开发新的运输玩法，再用真实输入验证。</p></div>
+      <div class="practice-layout">
+        <figure class="practice-image"><a href="./play/" aria-label="进入暴风港能源运输游戏"><img src="./assets/harbor-active.png" alt="暴风港实际渲染：橙色救援艇、青绿能源、红色巡逻机、码头与状态仪表" fetchpriority="high"></a><figcaption>本实验真实 WebGL 截图 · 固定种子 42 的出航状态 · 原创程序化港口</figcaption></figure>
+        <div class="practice-brief"><p class="eyebrow">150 秒 / 六枚能源 / 每次两枚</p><h2>驾驶、回收、返航。</h2><p>风暴封港前，把散落能源送回西南基地。装满两枚就返航；交付修复艇体，巡逻机随进度增加。加速会过热，EMP 可暂时清出通道。</p><a class="primary" href="./play/">开始实际试玩 →</a><p class="practice-controls">WASD / 方向键驾驶 · Shift 加速<br>空格 EMP · Esc 暂停<br>手机布局提供摇杆与操作按钮。</p><div class="practice-stats"><div><strong>6 / 6</strong><span>真实键盘完成交付</span></div><div><strong>7 项</strong><span>模拟行为检查通过</span></div><div><strong>6 份</strong><span>实际画布报告通过</span></div></div><div class="practice-links"><a href="./practice.md">使用过程与源码分工</a><a href="./practice-evidence.md">验证证据与限制</a></div></div>
+      </div>
+      <div class="practice-methods"><article><h3>库具体提供了什么？</h3><p>Director 提供制作顺序与产物契约；gameplay 提供工程起点、手感与碰撞选型；graphics 和 UI 提供视觉层次、状态反馈和触控规范；debug / QA 提供诊断、画布检查与证据协议。</p></article><article><h3>模型还需要做什么？</h3><p>运输机制、关卡航线、港口模型、界面与音效仍由本次开发实现。技能没有自动生成这款成品。比如能源信号被雾冲淡，仍需观察实际画面并修正。</p></article><article><h3>这次证明到哪里？</h3><p>证明可以把技能用于新游戏并跑通交付。通关录像使用真实键盘，没有进度注入；六份状态截图用于画面检查。尚未做同模型对照，不能据此量化省时或品质增益。</p></article></div>
+      <details class="practice-replay"><summary>观看真实键盘通关录像（约一分钟）</summary><video controls preload="none" playsinline poster="./assets/harbor-won.png" aria-label="真实键盘输入完成六枚交付的录屏"><source src="./assets/harbor-input-run.webm" type="video/webm"><a href="./assets/harbor-input-run.webm">打开通关录像</a></video><p class="caption">自动航线使用实际键盘事件；包含暂停恢复、拾取、绕行、EMP 与三次返航。录像由测试浏览器录制，未合成。</p></details>
+    </section>
+    <section id="showcase" class="showcase section-wrap">
+      <div class="section-top"><div><p class="eyebrow">THREE.JS GAME SKILLS / 作者作品展示</p><h2>作者成品，展示另一种效果范围。</h2></div><p class="intro">五款作者演示的实际画面。<br>演示体现成品效果；技能包的增量价值需要单独评估。</p></div>
+      <div class="showcase-layout">
+        <div class="game-stage" id="game-stage"><img id="demo-image" src="./assets/ridge-drift.jpg" alt="作者霓虹漂移赛车实景" fetchpriority="high"><div class="stage-top"><span id="stage-label">作者在线演示 · 实际截图</span><button id="stop-demo" class="small-button" hidden>返回截图</button></div><span class="stage-corner">LIVE WEB GAME / SCREEN CAPTURE</span></div>
+        <aside class="game-detail"><p class="eyebrow" id="demo-genre"></p><h2 id="demo-chinese"></h2><p class="english-title" id="demo-name"></p><p id="demo-description"></p><ul class="feature-list" id="demo-features"></ul><div class="demo-actions"><button class="primary" id="play-demo">在此页试玩</button><a class="secondary" id="external-demo" target="_blank" rel="noopener noreferrer">打开作者演示</a></div><p class="game-note" id="demo-observation"></p><details class="controls"><summary>操作方式</summary><p id="demo-controls"></p></details><p class="embed-note" id="embed-note" aria-live="polite">试玩会连接作者站点；若无法嵌入，可打开原站。</p></aside>
+      </div>
+      <div class="demo-strip" id="demo-strip" role="tablist" aria-label="选择游戏演示"></div>
+      <p class="caption">截图采集于 2026-10-09，来源为作者 README 列出的在线演示。站点为动态内容，无法确认其部署与研究提交完全一致。所有作品署名 Majid Manzarpour。</p>
+    </section>
+    <section class="starter-section section-wrap" aria-labelledby="starter-title">
+      <div><p class="eyebrow">内置代码的实际起点</p><h2 id="starter-title">模板本身是什么效果？</h2><p>这里运行固定提交附带的收集物品小游戏：移动、冲刺、触控、碰撞、计分、镜头与音效已有实现。五款作者成品需要在这个起点之外继续开发。</p><p class="caption">本地修改仅涉及相对资源路径、项目名和锁文件修复；玩法保持上游实现。</p></div>
+      <div class="starter-preview"><img src="./assets/scaffold.jpg" alt="上游内置收集物品小游戏的本地运行画面" loading="lazy"><div><a class="primary" href="./starter/" target="_blank" rel="noopener">打开本地模板</a><a class="text-link" id="starter-source" target="_blank" rel="noopener noreferrer">查看模板源码</a></div></div>
+    </section>
+    <section id="capabilities" class="section-wrap capabilities-section">
+      <div class="section-top"><div><p class="eyebrow">九个技能，具体沉淀了什么</p><h2>方法、实现和工具，逐项拆开看。</h2></div><p class="intro">选择一个技能，查看它的判断、产物、实现方式和边界。</p></div>
+      <div class="capability-layout"><div class="skill-tabs" id="skill-tabs" role="tablist" aria-label="选择沉淀能力"></div><article id="skill-panel" role="tabpanel" tabindex="0"></article></div>
+    </section>
+    <section id="tools" class="section-wrap tools-section">
+      <div class="section-top"><div><p class="eyebrow">对应的硬功能</p><h2>哪些东西真的能执行？</h2></div><p class="intro">脚本、工程与测试模板提供可复用实物。<br>下面区分已运行、源码确认和外部服务未验证。</p></div>
+      <div class="table-scroll"><table class="tool-table"><caption class="sr-only">工具的输入输出、检查与本次验证范围</caption><thead><tr><th>工具 / 源码</th><th>输入与输出</th><th>实际约束</th><th>本次验证</th></tr></thead><tbody id="tool-rows"></tbody></table></div>
+      <div class="evidence-lab"><div><p class="eyebrow">约束机制的本地实验</p><h3>一个 PASS，究竟证明了什么？</h3><p>下面是对上游辅助函数和证据检查器的真实脚本实验记录。报告输入是合成测试夹具，不代表真实游戏质量或 GPU 性能。</p><div class="case-tabs" id="case-tabs" role="tablist" aria-label="选择约束实验"></div></div><div class="case-output" id="case-output" role="tabpanel" aria-live="polite"></div></div>
+      <div class="verification-grid" id="verification-grid"></div>
+    </section>
+    <section id="boundaries" class="section-wrap boundaries-section">
+      <div class="section-top"><div><p class="eyebrow">如何约束，以及约束到哪里</p><h2>指导、提示、校验的强度不同。</h2></div><p class="intro">文字规则依靠模型遵循；机器检查覆盖明确定义的契约；审美与好玩仍需观察和试玩。</p></div>
+      <div class="constraint-list" id="constraint-list"></div>
+      <div class="limitations"><h3>使用时仍需处理的限制</h3><ul><li>模型负责解释需求、写代码与取舍；技能包没有改变模型参数，也不能启用宿主未开放的工具。</li><li>Tripo、Gemini、ElevenLabs 需要可用密钥、权限和额度；本次没有调用这些付费生成服务。</li><li>自动试玩需要按游戏改写。浏览器模拟的手机布局不能证明真实手机运行性能。</li><li>本机首次 npm ci 遇到模板锁文件不一致，已在副本修复；Node 辅助测试有一项因 Windows 符号链接权限失败。</li><li>素材服务、Three.js 和浏览器版本会变化；工程、配方与 API 接口都需要维护。</li></ul></div>
+    </section>
+    <section id="scenarios" class="section-wrap extension-section" aria-labelledby="scenarios-title">
+      <div class="section-top"><div><p class="eyebrow">什么情况下适合用</p><h2 id="scenarios-title">用在规模可控、需要完整交付的交互项目。</h2></div><p class="intro">根据源码与两次实验归纳的应用判断，<br>每种场景仍有自己的验收条件。</p></div>
+      <div class="scenario-grid" id="scenario-cards"></div>
+      <p class="out-of-scope"><strong>任务变大时，需要继续补充系统。</strong>这套技能不是完整大型游戏引擎。多人网络同步、账号服务、复杂关卡与经济系统、反作弊等，需要单独设计。AAA 命名表达画面目标，不是质量认证；真机性能、素材版权与上线条件也要分别确认。</p>
+    </section>
+    <section id="value" class="section-wrap value-section">
+      <div class="section-top"><div><p class="eyebrow">直接让模型开发，区别是什么</p><h2>增量价值取决于你已提供什么。</h2></div></div>
+      <div class="personal-value-grid" id="personal-value-cards"></div>
+      <div class="comparison-grid" id="comparison-grid"></div>
+      <div class="value-conclusion"><p>基于源码的判断：通用知识提示的增益可能随模型提升而缩小；可复用的工程、服务封装和检查工具仍能减少重复搭建。是否净省时间、少返工或提高品质，需要对照实验。</p><p>建议固定同一模型、相同需求、资源、预算和时间，比较“简短需求”“详细需求与验收”“详细需求加技能包”三组，记录可玩行为、缺陷、人工纠正次数、耗时和成本。本项目没有将作者演示当作增益量化证据。</p><a id="evaluation-source" target="_blank" rel="noopener noreferrer">上游评测方法</a></div>
+      <h3 class="workflow-title">从哪条复用路线开始？</h3><div id="reuse-routes" class="reuse-routes"></div>
+      <details class="usage-example"><summary>把技能用到下一个项目：一份可以改写的需求示例</summary><p>先确定玩法、平台、风格、资源和验收，再选择相关技能。保留关键规则与证据，会比只写“使用这个库”更方便判断结果。</p><pre id="usage-brief"></pre><button class="secondary" id="copy-brief">复制需求示例</button><span class="copy-status" id="copy-brief-status" role="status"></span></details>
+    </section>
+    <section id="extensions" class="section-wrap extension-section" aria-labelledby="extensions-title">
+      <div class="section-top"><div><p class="eyebrow">可扩展方向 / 研究规划</p><h2 id="extensions-title">把一次实验，逐步变成自己的制作体系。</h2></div><p class="intro">八项方向说明切入点、要补充的工作<br>和先验证什么；均为后续开发规划。</p></div>
+      <div id="expansion-directions" class="expansion-directions"></div>
+    </section>
+    <footer class="section-wrap"><div><strong>005 · Three.js 游戏技能研究</strong><p>原作者 Majid Manzarpour · MIT 源码 · 研究基线 2026-10-09 · 整理发布 2026-10-12</p><p>固定提交 <code>8286774b22a2566bf894dbc825825c16921866af</code></p></div><div class="footer-links"><a href="./research.md">完整研究文档</a><a href="./data/publication.json" download>理解与摘要 JSON</a><a href="./notes.md">复现记录与限制</a><a href="./LICENSE.upstream.txt">上游许可</a><a href="./asset-sources.md">图片与素材来源</a><a href="./assets/capability-overview-v1.png" download>下载总览图</a><a href="../">返回研究集首页</a></div></footer>
+  </main>
+  <dialog id="overview-viewer" class="overview-viewer" aria-labelledby="viewer-title"><div class="viewer-layout"><div class="viewer-toolbar"><h2 id="viewer-title">Three.js 游戏技能库 · 能力与实践总览</h2><button class="small-button" id="overview-zoom" aria-pressed="false">按原图放大</button><a class="small-button" href="./assets/capability-overview-v1.png" download="Threejs游戏技能库-能力与实践总览.png">下载 PNG ↓</a><button class="small-button" id="overview-close" autofocus>关闭 ✕</button></div><div class="overview-scroll" id="overview-scroll" tabindex="0" aria-label="总览图阅读区域，放大后可滚动查看"><img src="./assets/capability-overview-v1.png" alt="完整中文总览图，覆盖库的定义、流程、九类能力、我们的两款游戏、应用场景和价值" width="1024" height="1536"></div><p class="viewer-hint">按原图放大后，可滚动或触屏滑动阅读。Esc 关闭；完整文字说明与来源在网页各章节。</p></div></dialog>
+  <noscript><p class="noscript">交互展示需要 JavaScript。可以阅读 <a href="./research.md">完整研究文档</a>。</p></noscript>
+  <script type="module" src="./app.js"></script>
+  <script type="module" src="./extensions.js"></script>
+</body>
+</html>

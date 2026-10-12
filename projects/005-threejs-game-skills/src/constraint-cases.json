@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-09",
+  "kind": "上游真实工具 + 合成契约夹具；非真实 GPU 检查",
+  "cases": [
+    {
+      "id": "valid",
+      "name": "清单一致",
+      "result": "PASS",
+      "tone": "pass",
+      "input": "合成检查报告与真实已有截图组成测试夹具；run ID、视口、状态与文件一致。",
+      "output": "  ok    <fixture>\\capture.json (desktop/active-play) non-blank\r\n\r\nEvidence check passed: 1 artifact(s) confirmed.\r\n",
+      "meaning": "脚本确认清单和记录一致。这份合成报告没有运行游戏，PASS 因此不能证明真实操作或质量。",
+      "verified": true
+    },
+    {
+      "id": "stale",
+      "name": "旧 run ID",
+      "result": "REJECT",
+      "tone": "reject",
+      "input": "清单要求 research-005，报告仍标记 old-run。",
+      "output": "  FAIL  inspector <fixture>\\capture.json mismatches declared capture: runId\r\n\r\nEvidence check failed: 1 problem(s), 0 confirmed.\r\n",
+      "meaning": "机器会拒绝不属于声明批次的报告；它通过字段匹配检查，并不读取源码变化来判断真正的新旧。",
+      "verified": true
+    },
+    {
+      "id": "missing",
+      "name": "缺少手机报告",
+      "result": "REJECT",
+      "tone": "reject",
+      "input": "清单另外声明手机游玩状态，但对应报告没有生成。",
+      "output": "  ok    <fixture>\\capture.json (desktop/active-play) non-blank\r\n  FAIL  cannot read declared capture <fixture>\\missing-mobile.json: [Errno 2] No such file or directory: 'F:\\\\codex_project\\\\1008_codex_project\\\\projects\\\\005-threejs-game-skills\\\\.cache\\\\constraint-fixture\\\\missing-mobile.json'\r\n\r\nEvidence check failed: 1 problem(s), 1 confirmed.\r\n",
+      "meaning": "声明的覆盖会被检查。清单本身由开发者编写，未声明的必要状态仍可能漏检。",
+      "verified": true
+    },
+    {
+      "id": "ack",
+      "name": "状态确认错误",
+      "result": "REJECT",
+      "tone": "reject",
+      "input": "请求 active-play，模拟钩子返回 wrong-state。这里只验证接口契约，没有打开浏览器。",
+      "output": "setState(\"active-play\") must acknowledge {state: \"active-play\"}",
+      "meaning": "错误确认会被拒绝；正确字符串依然不能证明该场景忠实实现。",
+      "verified": true
+    },
+    {
+      "id": "budget",
+      "name": "超预算仍 PASS",
+      "result": "PASS + WARNING",
+      "tone": "warn",
+      "input": "合成报告中画布正常、没有错误，但绘制次数 500 超过建议 300。",
+      "output": "PASS desktop active-play run=research-005 over-budget=calls:500>300 report=synthetic-report.json",
+      "meaning": "PASS 条件不包含资源预算；超预算是提示。开发者仍需解释取舍并测试目标设备。",
+      "verified": true
+    }
+  ]
+}

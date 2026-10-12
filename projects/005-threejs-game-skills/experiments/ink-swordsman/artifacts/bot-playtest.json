@@ -1,0 +1,81 @@
+{
+  "input": "真实键盘事件；只读诊断；未调用状态设置或进度 hook",
+  "framesAdvanced": 1979,
+  "scoreBefore": 0,
+  "scoreAfter": 3,
+  "complete": true,
+  "rounds": [
+    0,
+    1,
+    2
+  ],
+  "parries": 6,
+  "hp": 5,
+  "distanceTravelled": 25.69333333333333,
+  "timeToFirstScore": 3.9166666666666576,
+  "remaining": 165.84999999998874,
+  "art": {
+    "ready": true,
+    "loaded": [
+      "scene",
+      "hero-atlas",
+      "enemy-atlas",
+      "hero-attack"
+    ],
+    "heroPose": "attack",
+    "enemyPose": "stage-2/idle",
+    "resources": [
+      {
+        "id": "scene",
+        "url": "http://127.0.0.1:4198/assets/scene-v2-pgn7Ap9H.png",
+        "status": "loaded",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "id": "hero-atlas",
+        "url": "http://127.0.0.1:4198/assets/hero-atlas-v3-pE-WgyF8.png",
+        "status": "loaded",
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "id": "enemy-atlas",
+        "url": "http://127.0.0.1:4198/assets/enemy-atlas-v3-AD4KIRRf.png",
+        "status": "loaded",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "id": "hero-attack",
+        "url": "http://127.0.0.1:4198/assets/hero-attack-v4-BuXxJOsX.png",
+        "status": "loaded",
+        "width": 1536,
+        "height": 1024
+      }
+    ],
+    "heroCell": {
+      "source": "attack",
+      "column": 0,
+      "row": 0,
+      "rect": [
+        45,
+        84,
+        1510,
+        951
+      ]
+    },
+    "enemyCell": {
+      "source": "enemy",
+      "column": 0,
+      "row": 2,
+      "rect": [
+        55,
+        840,
+        319,
+        1192
+      ]
+    }
+  },
+  "errors": []
+}

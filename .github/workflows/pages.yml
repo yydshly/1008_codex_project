@@ -8,6 +8,7 @@ on:
       - 'projects/002-interview-guide/**'
       - 'projects/003-pascal-editor/**'
       - 'projects/004-up-learning-guide/**'
+      - 'projects/005-threejs-game-skills/**'
       - 'projects/013-aihot/**'
       - 'projects.json'
       - 'scripts/**'
@@ -42,7 +43,11 @@ jobs:
           npm ci --prefix projects/002-interview-guide/web
           npm ci --prefix projects/003-pascal-editor/web
           npm ci --ignore-scripts --prefix projects/004-up-learning-guide/web
-      - name: Build the research entrance and published projects 001, 002, 003, 004 and 013
+          npm ci --prefix projects/005-threejs-game-skills/web
+          npm ci --prefix projects/005-threejs-game-skills/experiments/scaffold
+          npm ci --prefix projects/005-threejs-game-skills/experiments/storm-harbor
+          npm ci --prefix projects/005-threejs-game-skills/experiments/ink-swordsman
+      - name: Build the research entrance and published projects 001, 002, 003, 004, 005 and 013
         run: npm run build:site
       - name: Verify archive media and sixteen page links
         working-directory: projects/001-sandboard/experiments/sand-art
@@ -60,6 +65,8 @@ jobs:
         run: node projects/013-aihot/web/scripts/audit.mjs --built
       - name: Verify Up complete understanding, original guide and research downloads
         run: npm run check --prefix projects/004-up-learning-guide/web
+      - name: Verify Three.js summaries, original guide, three playable builds and source evidence
+        run: node projects/005-threejs-game-skills/web/scripts/audit.mjs
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .cache/pages-site
