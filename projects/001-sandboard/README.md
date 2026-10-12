@@ -5,7 +5,7 @@
 
 Sandboard 提供可触摸、可推挤、可扬起沙粒的数字沙盘。我们的研究从保留原版开始，尝试手绘工具、照片转沙画、动作成画、真实手部与纪念赠礼流程；已有可操作原型，但自然成画和真实沙画质感仍未通过验收。
 
-[源库 Sandboard](https://github.com/scottstts/Sandboard) · 固定研究提交 `489cb01e81b11ba575887f7c76760498eb41aaa8` · GPL-3.0-only。网页首次发布目标待核验；旧研究条目中的 localhost 地址保留为历史测试记录，访问当前版本使用以下统一入口。
+[源库 Sandboard](https://github.com/scottstts/Sandboard) · 固定研究提交 `489cb01e81b11ba575887f7c76760498eb41aaa8` · GPL-3.0-only。已公开部署并核验：[研究总入口](https://yydshly.github.io/1008_codex_project/)。旧研究条目中的 localhost 地址保留为历史测试记录，访问当前版本使用以下统一入口。
 
 - [统一平台首页](https://yydshly.github.io/1008_codex_project/001-sandboard/art/home/)：原版、手绘、照片、作品集与历史试验的总入口。
 - [Sandboard 原版效果](https://yydshly.github.io/1008_codex_project/001-sandboard/original/)：保留研究基线的沙床与渲染，体验沟槽、堆积和飞沙。

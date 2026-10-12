@@ -38,7 +38,7 @@ projects/001-repo-name/
 | --- | --- |
 | `id`、`slug` | 稳定编号与目录名称 |
 | `name`、`summary` | 显示名称与一句话摘要 |
-| `upstream` | 被研究的原 GitHub 仓库链接 |
+| `upstream` | 被研究的原 GitHub 仓库链接；索引来源链接自动显示源库自己的名称，例如 Sandboard |
 | `status` | `待研究`、`研究中`、`已完成` 或 `已归档` |
 | `tags` | 技术、领域或研究方向标签数组 |
 | `cover` | 相对仓库根目录的封面文件路径；无图片时为 `""` |

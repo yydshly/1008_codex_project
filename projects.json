@@ -18,7 +18,7 @@
       "cover": "projects/001-sandboard/assets/original-fine-v2.jpg",
       "coverAlt": "Sandboard 原版精细画质下的字母 A 沙槽、沙脊和椰树阴影",
       "coverCaption": "2026-10-08 本地原版精细画质实测：2560 × 1440 绘制后截图，保留上游 489cb01 的沙床与渲染算法。",
-      "demo": ""
+      "demo": "https://yydshly.github.io/1008_codex_project/001-sandboard/"
     }
   ]
 }

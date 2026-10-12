@@ -1,0 +1,376 @@
+{
+  "checkedAt": "2026-10-12T03:12:36.303Z",
+  "root": "https://yydshly.github.io/1008_codex_project/",
+  "pages": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/../original/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/atelier/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/gallery/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/hands/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/hands/contact/cup/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/keepsake/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/keepsake/composition/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/keepsake/handwork/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/keepsake/natural/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/memories/keepsake/sandlight/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/research/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/stage/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/original/",
+      "status": 200
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/art-stage-jiangnan-v7-ByuajxgR.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/atelier-C3IRcna5.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/atelier-CHMIK3Si.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/catalog-32PTsS3F.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/catalog-DlE0_icG.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/collected-grain-view-BzSJnsy7.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/composition-Bq2aEsES.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/composition-cuYkmpX7.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/contact-BDb16jJ-.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/contact-CZgnjAPj.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/cup-CoYGsFQ8.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/cup-DdhA3G5C.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/cup-material-Dy3EXozr.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/cup-score-3ThF1rTW.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/gallery-_3S-Phmq.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/gallery-B3mgSRIj.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/generated-hands-demo-Byolixa9.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/generated-hands-demo-Ce9I-Asd.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/hand-6-Up00Vk.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/hands-MzWSKcgt.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/handwork-mA7HH43e.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/home-SLB0eA9x.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-C7AawDVf.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-composition-storage-BaOy2_gH.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-CXn03MBT.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-DZ9WtZrJ.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-natural-model-Kw7hqR8Y.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-natural-storage-CEJQ8C7S.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-sandlight-storage-MRBI2ysK.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/keepsake-storage-BXHExiZG.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/material-BprIqTCQ.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/media-O42S7bko.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/memories-BAeQ6-iz.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/memories-BTxJlxET.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/model-Dsuhsko9.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/natural-DdbpVRVf.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/natural-window-score-Ck5EWcaj.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/navigation-BVA3RVPc.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/photo-surface-QXGNrAgb.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/research-BnPKlGCa.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/research-CsGyzj-K.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/sample-window-DcSdKhEg.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/sandlight-CJGTJLCw.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/stage-HkCctpcA.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/stage-qZNh0e0A.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/storage-Cq5g0WUv.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/structured-painting-8HRGgo5j.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/studio-D2r-7TR_.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/studio-DP2JLIXq.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/webm-duration-I3Ph_UzZ.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/logo.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/research-records/CC-BY-3.0.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/research-records/GPL-3.0.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/original/assets/index-De1zIDoc.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/original/assets/index-XOwJmO8A.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/original/logo.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/assets/original.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/assets/understanding.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  ],
+  "overview": {
+    "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/art/assets/overview-BhdkQXDH.png",
+    "bytes": 23331794,
+    "sha256": "038be268d03b4c0e33c5f4a963d69c2f322d115caaa767d5d5a4f6fb1fd48ca1",
+    "contentType": "image/png"
+  }
+}

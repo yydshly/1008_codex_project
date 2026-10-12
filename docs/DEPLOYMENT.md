@@ -3,7 +3,7 @@
 <!-- SANDBOARD_PUBLICATION:START -->
 ## Sandboard 首次公开发布（2026-10-12）
 
-发布方式为 GitHub Pages 自定义 Actions 工作流，当前部署目标待首次访问核验。站点根入口是 `https://yydshly.github.io/1008_codex_project/`，Sandboard 子路径是 `https://yydshly.github.io/1008_codex_project/001-sandboard/`。其他尚未提交的子项目不纳入本次发布，既有编号和本地内容保留。
+发布方式为 GitHub Pages 自定义 Actions 工作流，已完成首次部署并核验 HTTPS 页面、全部十六功能入口、直接引用资源和高清图。站点根入口是 `https://yydshly.github.io/1008_codex_project/`，Sandboard 子路径是 `https://yydshly.github.io/1008_codex_project/001-sandboard/`。其他尚未提交的子项目不纳入本次发布，既有编号和本地内容保留。
 
 - 仓库总览页说明源库能力、原理、价值、实际输入输出、扩展方向与边界，并链接真实截图和完整引导图。
 - `001-sandboard/` 跳转 `art/home/`；`original/` 保存 Sandboard 原版，`art/` 保留工作室及其余十四页，共十六功能入口。

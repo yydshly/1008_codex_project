@@ -12,7 +12,7 @@
 
 | 序号 | 项目 / 来源 | 研究摘要 | 状态 | 演示 |
 | --- | --- | --- | --- | --- |
-| 001 | [Sandboard 交互沙盘](projects/001-sandboard/README.md) · [Sandboard](https://github.com/scottstts/Sandboard) | Sandboard 是 WebGPU 交互沙盘：高度场与邻域输运呈现沟槽、堆积和飞沙，适合触控创作与材料研究。我们保留原版，扩展七工具手绘、照片沙画、动作回放和纪念赠礼原型；可继续探索教学、展演与创作工具，真实成画质感仍待验收。 | 研究中 | — |
+| 001 | [Sandboard 交互沙盘](projects/001-sandboard/README.md) · [Sandboard](https://github.com/scottstts/Sandboard) | Sandboard 是 WebGPU 交互沙盘：高度场与邻域输运呈现沟槽、堆积和飞沙，适合触控创作与材料研究。我们保留原版，扩展七工具手绘、照片沙画、动作回放和纪念赠礼原型；可继续探索教学、展演与创作工具，真实成画质感仍待验收。 | 研究中 | [访问](https://yydshly.github.io/1008_codex_project/001-sandboard/) |
 
 ### 001 · Sandboard 交互沙盘
 
@@ -27,7 +27,7 @@
 
 Sandboard 提供可触摸、可推挤、可扬起沙粒的数字沙盘。我们的研究从保留原版开始，尝试手绘工具、照片转沙画、动作成画、真实手部与纪念赠礼流程；已有可操作原型，但自然成画和真实沙画质感仍未通过验收。
 
-发布目标：`https://yydshly.github.io/1008_codex_project/001-sandboard/`，待首次部署后核验并登记索引。以下入口对应保留的原版与全部探索页面。
+已公开部署并核验：[研究总入口](https://yydshly.github.io/1008_codex_project/) · [光阴沙画平台](https://yydshly.github.io/1008_codex_project/001-sandboard/)。以下入口对应保留的原版与全部探索页面。
 
 - [统一平台首页](https://yydshly.github.io/1008_codex_project/001-sandboard/art/home/)：原版、手绘、照片、作品集与历史试验的总入口。
 - [Sandboard 原版效果](https://yydshly.github.io/1008_codex_project/001-sandboard/original/)：保留研究基线的沙床与渲染，体验沟槽、堆积和飞沙。
@@ -104,7 +104,7 @@ npm run check        # 检查编号、目录、链接字段与首页同步情况
 - [多个 Web 的部署方式](docs/DEPLOYMENT.md)
 - [子项目模板](templates/project/README.md)
 
-Web 演示可按项目分别构建，再统一发布到 GitHub Pages 的不同子路径，也可以链接外部部署。目前尚未添加研究项目或发布 Web 演示。
+已上线 [研究总入口](https://yydshly.github.io/1008_codex_project/) 与 [001 · Sandboard 完整平台](https://yydshly.github.io/1008_codex_project/001-sandboard/)，包含原版沙盘、手绘工具、照片创作、作品集与历次试验。其他项目按各自说明研究和独立构建，在线地址仅在实际部署核验后登记。
 
 ## 来源与许可
 
