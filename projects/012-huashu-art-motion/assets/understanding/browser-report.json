@@ -1,0 +1,200 @@
+{
+  "date": "2026-10-09",
+  "base": "http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/",
+  "checks": [
+    {
+      "name": "研究首页接入总览与三种阅读入口",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "主导航可跳到理解总览",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "首屏明确工具包定位",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "首页桌面无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "原有35种风格与9种语法完整",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "橡皮管深链接与原版引擎可用",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "从风格展示可回顾理解",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "高清阅读页可从首页进入",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "阅读页直接刷新正常",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "生产路径高清PNG内容类型与字节一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "PNG真实尺寸为3200×8524",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "初始适应宽度可完整浏览",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "放大改变图像宽度并允许横向查看",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "键盘可放大到200%",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "400%放大边界与按钮状态",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "适应宽度恢复图像和滚动位置",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "下载真实完整PNG而非HTML",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "七部分文字解释完整",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "完整能力解释可展开且有源码依据",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "价值判断标明同模型对比与待验证范围",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "来源固定到研究提交",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "阅读页相对资源 ../assets/favicon.svg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "阅读页相对资源 ./overview.css",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "阅读页相对资源 ../#understanding",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "阅读页相对资源 ../scenarios/",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "阅读页相对资源 ../assets/understanding/overview.png",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "阅读页相对资源 ./overview.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "阅读页桌面无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机首页总览入口正常",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机首页无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机阅读页无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机放大局限于图像滚动容器",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无JavaScript仍可查看总览与全部文字",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无JavaScript原生折叠内容可展开",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无JavaScript手机布局无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "没有页面脚本错误",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "没有失败资源",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "png": {
+    "file": "assets/understanding/overview.png",
+    "width": 3200,
+    "height": 8524,
+    "bytes": 4210861,
+    "sha256": "36c93996b411490a1562e0601fe5aa15b7d02617d6855dbd42a88ed2c42f3c45"
+  }
+}

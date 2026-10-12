@@ -1,0 +1,6 @@
+# 固定上游副本按原始字节保存，Windows/Linux 都能核对来源 SHA。
+src/upstream-engine/** -text -whitespace
+src/references/** -text -whitespace
+src/LICENSE.upstream.txt -text -whitespace
+src/README.upstream.md -text -whitespace
+assets/production/CC-BY-4.0.txt -whitespace

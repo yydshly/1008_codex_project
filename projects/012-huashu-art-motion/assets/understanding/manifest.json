@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-09",
+  "upstream": "https://github.com/alchaincyf/huashu-art-motion",
+  "commit": "57d67608ab458f57d9b153b1a2831b921e22498b",
+  "method": "原创HTML/CSS版式，Chromium像素渲染；未生成新美术、未修改原版素材",
+  "output": {
+    "file": "assets/understanding/overview.png",
+    "width": 3200,
+    "height": 8524,
+    "bytes": 4210861,
+    "sha256": "36c93996b411490a1562e0601fe5aa15b7d02617d6855dbd42a88ed2c42f3c45"
+  },
+  "inputs": [
+    {
+      "file": "assets/styles/09_postimp.jpg",
+      "sha256": "e86acd7fc0cab6b03187c1d4f818496cdeacbf3b25c88c639bf6c69f221b3be2",
+      "origin": "固定上游场景本机渲染"
+    },
+    {
+      "file": "assets/styles/17_ink.jpg",
+      "sha256": "bd01ab118b0f738e0440f0931afbf17c6c96ad5d50bb9215fd8f63c74e2fb455",
+      "origin": "固定上游场景本机渲染"
+    },
+    {
+      "file": "assets/styles/33_rubberhose.jpg",
+      "sha256": "3fe9054bb5bb164665c684c014af17621000c8a17d54c4bbf1be977b6ac74c92",
+      "origin": "固定上游场景本机渲染"
+    },
+    {
+      "file": "assets/upstream/动画语法/y3_whiteboard_总览.jpg",
+      "sha256": "cc28d7e021d8bc094387f4e65627ad940417459250502e586e3f2fe9603ae841",
+      "origin": "作者解说示范截图，仅作Skill研究说明"
+    },
+    {
+      "file": "assets/upstream/动画语法/y2_vox_总览.jpg",
+      "sha256": "f70957fa84faf280eb29c4231d4bfddc0c43b07a23155b2d64ce83493359c765",
+      "origin": "作者解说示范截图，仅作Skill研究说明"
+    }
+  ],
+  "content": {
+    "capabilities": 9,
+    "styles": 35,
+    "grammars": 9,
+    "parameterizedGrammars": 8,
+    "scenarios": 6,
+    "extensions": 4,
+    "sections": 7
+  },
+  "layout": {
+    "width": 1600,
+    "horizontalOverflow": false,
+    "capabilities": 9,
+    "styleGroups": 6,
+    "grammars": 9,
+    "scenarios": 6,
+    "sections": 7,
+    "missingImages": [],
+    "blocks": [
+      {
+        "title": "如何从内容得到视频",
+        "height": 265
+      },
+      {
+        "title": "包含哪些能力",
+        "height": 768
+      },
+      {
+        "title": "艺术方向与解说表达",
+        "height": 755
+      },
+      {
+        "title": "可实现的场景目标",
+        "height": 549
+      },
+      {
+        "title": "与直接调用模型相比，增加了什么",
+        "height": 441
+      },
+      {
+        "title": "可扩展价值与意义",
+        "height": 313
+      },
+      {
+        "title": "回顾时需要记住的边界",
+        "height": 497
+      }
+    ]
+  },
+  "limitations": [
+    "尚未完成同任务、同模型的有库 / 无库对照，不能据此断言显著提质或节省多少时间。",
+    "图中艺术静帧为固定上游代码本机渲染；解说截图来自作者示范，仅作该 Skill 研究说明。"
+  ]
+}

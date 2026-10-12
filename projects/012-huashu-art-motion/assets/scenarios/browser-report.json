@@ -1,0 +1,518 @@
+{
+  "date": "2026-10-09",
+  "url": "http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/scenarios/",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "七个完整场景卡",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "historyH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "history成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "lifeH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "life成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travelH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "travel成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "productH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "product成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "dataH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "data成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotionH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "emotion成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive标题、地址与状态一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive实际播放使画面和时间变化",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive章节定位12.8秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive滑块保持请求时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive实际MP4与MIME",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactiveH.264真实解码960×540 / 18秒",
+      "passed": true,
+      "details": {
+        "width": 960,
+        "height": 540,
+        "duration": 18
+      }
+    },
+    {
+      "name": "interactive成片可以定位到13.4秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "视频HTTP范围请求",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "导览深链接刷新",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "接管后角色状态为自由探索",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "远处物品禁止提前查看",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "方向键真实移动到银杏叶附近",
+      "passed": true,
+      "details": 478.55750000000035
+    },
+    {
+      "name": "空格查看物品并记录",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "走到花朵附近",
+      "passed": true,
+      "details": 734.2919999999999
+    },
+    {
+      "name": "点击查看花朵记录",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "切换展馆改变实际画面与路线",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "两条路线四个发现保留",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "桌面无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机无水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机按钮按住实际行走",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "相对资源 ../assets/favicon.svg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./style.css",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/travel.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../scenario-research.md",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/history.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/history.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/life.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/life.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/travel.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/product.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/product.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/data.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/data.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/emotion.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/emotion.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/interactive.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../assets/scenarios/interactive.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../engine/lib/util.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../engine/lib/motion.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../engine/lib/paint.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../engine/lib/kit.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ../engine/lib/brush.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./app.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "无脚本错误",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "无失败资源",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "scope": "7片H.264解码与时间定位；全部实时播放与章节；键盘、按钮移动和两条路线四个物品实际查看；桌面与手机。"
+}

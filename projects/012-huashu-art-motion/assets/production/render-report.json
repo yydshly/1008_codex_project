@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-09",
+  "url": "http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/scenarios/?render=1",
+  "browser": "151.0.7922.34",
+  "results": [
+    {
+      "id": "travel",
+      "title": "把世界，走成自己的风景",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        -1147753010,
+        -1757982270,
+        1853442207,
+        -212071468,
+        -598724529,
+        717204499,
+        -111103437,
+        -931213416,
+        -1858709131,
+        2040595378,
+        -1496698275,
+        -1581802212
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 59886,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 17165528,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=f02fe96f3a8b6f76512e29fec18b479023a9ea685cfac937ec5238a32f58d1f6",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    },
+    {
+      "id": "life",
+      "title": "每一步，都是新的自己",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        2108422369,
+        1579600449,
+        -716302042,
+        29991638,
+        64712456,
+        493224454,
+        -265024486,
+        -1293107404,
+        -1184635429,
+        -1907574866,
+        -2097609870,
+        1279296387
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 69101,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 17057499,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=9fa70c8714d10c323fae719cc32c69978291e748b9e217f1cdc30778581e83a0",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    },
+    {
+      "id": "history",
+      "title": "计算，把世界一步步打开",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        -1814343946,
+        -1461591851,
+        955202785,
+        530880050,
+        -363506436,
+        1494539498,
+        1366416085,
+        974268926,
+        -659458893,
+        2016723840,
+        -155404658,
+        51586497
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 70337,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 15010052,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=0ba1c968334e80e0ee7b27621b3e768a0e575d0b67cab93da05f2586de0e9670",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    },
+    {
+      "id": "product",
+      "title": "从一个想法，到一起完成",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        -1628882761,
+        -976630284,
+        1364429643,
+        -604432673,
+        1715569502,
+        2020289590,
+        -113968439,
+        661247045,
+        -857725840,
+        -1465763893,
+        1562930219,
+        689316543
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 54332,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 5192526,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=256f69631b22a89acf462cdfd774d322f9223d6be079cb0f19b10a690d2f159b",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    },
+    {
+      "id": "data",
+      "title": "看见增长，也看懂增长",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        2106459171,
+        -1296558710,
+        1500814244,
+        -1707763769,
+        805819352,
+        370705936,
+        866387302,
+        -1233508758,
+        -792735917,
+        -2009259443,
+        502858739,
+        1696546679
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 38210,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 2643922,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=3ea0cf0b3897f454cf3fcba1baaa701cb21479c25c09fc4e9bc6ceda860366a2",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    },
+    {
+      "id": "emotion",
+      "title": "雨停之后，仍有光",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        1800141137,
+        -103667658,
+        -1180694097,
+        2095014398,
+        1880847308,
+        -1783456289,
+        -1224000065,
+        -862618321,
+        1641988455,
+        -1175352911,
+        -556901141,
+        -560987064
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 59812,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 22044749,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=12231728cdc113115bfc365519e1df55af4138173da6485a185700612c66e83c",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    },
+    {
+      "id": "interactive",
+      "title": "在一座园里，发现四种美",
+      "duration": 30,
+      "deterministic": true,
+      "hashes": [
+        -1226441209,
+        -980672088,
+        1200631454,
+        -1353396143,
+        579749726,
+        -548394024,
+        1216395970,
+        2009528969,
+        1260634508,
+        1632984908,
+        -694327413,
+        -2102582934
+      ],
+      "frames": 720,
+      "fps": 24,
+      "width": 1920,
+      "height": 1080,
+      "exportMs": 65156,
+      "seconds": 30,
+      "audio": "aac",
+      "bytes": 5679942,
+      "attribution": "Music: Dreamer by Kevin MacLeod (incompetech.com). CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Adapted: 20-50s excerpt, normalized loudness and fades. New visual scenes and compositing by this research project.",
+      "creditsRemuxStreamHashes": {
+        "video": "SHA256=4a37789f916559e2e2df18b80d2a805982cc116614cc687e38e38e08293eba04",
+        "audio": "SHA256=e9acc7b2279599b91385c5d0331ea397f44d4e0d0d3f876055c38b49c4ee1e70"
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "7部30秒MP4，1920×1080，24fps；真实录制配乐CC BY 4.0；素材分层和透明动作帧合成。"
+}

@@ -1,0 +1,375 @@
+{
+  "date": "2026-10-12T12:29:09.575Z",
+  "base": "http://127.0.0.1:4222/1008_codex_project/012-huashu-art-motion/",
+  "passed": true,
+  "guide": {
+    "file": "assets/understanding/overview.png",
+    "width": 3200,
+    "height": 8524,
+    "bytes": 4210861,
+    "sha256": "36c93996b411490a1562e0601fe5aa15b7d02617d6855dbd42a88ed2c42f3c45"
+  },
+  "browserChecks": 29,
+  "httpChecks": 31,
+  "runId": "",
+  "runUrl": "",
+  "commit": "",
+  "scope": "静态研究、原图、真实引擎、视频解码、浏览器交互与既有入口；不代表外部模型或成片审美验收",
+  "browser": {
+    "date": "2026-10-12T12:29:09.575Z",
+    "base": "http://127.0.0.1:4222/1008_codex_project/012-huashu-art-motion/",
+    "passed": true,
+    "checks": [
+      {
+        "name": "线上/本地引导图 SHA、尺寸与字节完整保留",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "首页六段完整引导在图前展示",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "35 风格与九种解说资料完整",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "原版橡皮管深链接实际运行",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "桌面首页没有横向溢出",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "从首页进入原图阅读器",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "十二摘要九模块十七库四复用八扩展均在静态 HTML",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "原始七部分解释保留",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "默认原图适宽",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "按钮放大到150%",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "键盘缩放到200%",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "放大后仅图像容器滚动",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "键盘复位",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "真实下载 PNG 字节一致",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "模块源码链接固定研究提交",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "场景作品可解码，时长30秒与1080p",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "章节跳转真实视频时间",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "七部作品可直接下载",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "新增文化导览可进入实际探索",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "键盘行走与附近物品发现实际生效",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "390px 阅读完整文字无页面横向溢出",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "390px 放大仅图内横向滚动",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "390px 首页无横向溢出",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "320px 阅读完整文字无页面横向溢出",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "320px 放大仅图内横向滚动",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "320px 首页无横向溢出",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "无脚本可读摘要、模块与扩展",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "无脚本仍可展开能力依据",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "真实流程无脚本错误和资源失败",
+        "passed": true,
+        "details": {
+          "errors": [],
+          "failures": []
+        }
+      }
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "http": {
+    "date": "2026-10-12T12:29:09.575Z",
+    "base": "http://127.0.0.1:4222/1008_codex_project/012-huashu-art-motion/",
+    "passed": true,
+    "checks": [
+      {
+        "file": "scenarios/",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "overview/",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "data/understanding.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "notes.md",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "data/publication.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "data/research.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "production-research.md",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "research.md",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "LICENSE.upstream.txt",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "engine/lib/fonts/LICENSES.md",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "engine/index.html",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "engine/lib/fonts/AlfaSlabOne-400.woff",
+        "status": 200,
+        "type": "font/woff",
+        "passed": true
+      },
+      {
+        "file": "engine/lib/fonts/OFL.txt",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "assets/production/CREDITS.md",
+        "status": 200,
+        "type": "text/plain; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "source-manifest.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "engine/engine.js",
+        "status": 200,
+        "type": "text/javascript; charset=utf-8",
+        "passed": true
+      },
+      {
+        "file": "assets/production/product.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/data.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/life.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/history.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/travel.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/emotion.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/interactive.jpg",
+        "status": 200,
+        "type": "image/jpeg",
+        "passed": true
+      },
+      {
+        "file": "assets/production/travel.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/17165528",
+        "passed": true
+      },
+      {
+        "file": "assets/production/life.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/17057499",
+        "passed": true
+      },
+      {
+        "file": "assets/production/history.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/15010052",
+        "passed": true
+      },
+      {
+        "file": "assets/production/product.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/5192526",
+        "passed": true
+      },
+      {
+        "file": "assets/production/data.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/2643922",
+        "passed": true
+      },
+      {
+        "file": "assets/production/emotion.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/22044749",
+        "passed": true
+      },
+      {
+        "file": "assets/production/interactive.mp4",
+        "status": 206,
+        "type": "video/mp4",
+        "contentRange": "bytes 0-63/5679942",
+        "passed": true
+      }
+    ]
+  }
+}

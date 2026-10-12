@@ -1,0 +1,13 @@
+{
+  "name": "huashu-art-motion-research",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "艺术动画能力研究与35种原版Canvas艺术风格展示。",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}

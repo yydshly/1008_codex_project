@@ -1,5 +1,34 @@
 # 多 Web 演示部署与记录
 
+<!-- HUASHU_PUBLICATION:START -->
+## Huashu 完整理解、原始引导图与场景效果（2026-10-12）
+
+012 沿用现有 GitHub Pages Actions，保留其余项目独立构建和入口。发布中文静态研究、35 个原版 Canvas 场景、九种解说资料和七部独立制作的 30 秒 1080p 作品。网页本身不调用模型或语音服务。
+
+内容包含十二项摘要、六段图前引导、九项能力、九个职责模块、17 个代码库、六个制作机制、六类场景、四条复用路线和八个扩展方向。每个扩展写明输入、交付目标、新增工程和验收依据。事实按上游 57d67608ab458f57d9b153b1a2831b921e22498b 核对；价值与模型提升影响是研究判断，尚无同模型对照收益。
+
+沿用 assets/understanding/overview.png，3200×8524，4210861 字节，SHA-256：36c93996b411490a1562e0601fe5aa15b7d02617d6855dbd42a88ed2c42f3c45。不重新生成、裁切或覆盖原图。overview/ 支持 100%–400% 缩放、下载、手机与无脚本文字阅读；补全的模块、原理和复用说明不改变既有图。
+
+~~~powershell
+npm.cmd run build --prefix projects/012-huashu-art-motion/web
+npm.cmd run check --prefix projects/012-huashu-art-motion/web
+npm.cmd run index:build
+npm.cmd run check
+npm.cmd test
+npm.cmd run build:site
+node scripts/validate-site.mjs
+~~~
+
+Node.js 22+，012 独立网页没有第三方依赖，无需 npm ci。完整 web/dist/ 复制至 .cache/pages-site/012-huashu-art-motion/；所有页面、字体和媒体采用相对资源路径。CI 检查摘要同源、固定引擎完整性、原图字节、35 场景、七部 MP4、脚本语法与 HTML 资源。真实浏览器核验另见 src/verify-publication.mjs。
+
+MIT 代码与文档、OFL 字体分别保留许可；作者人物与解说素材仅作 Skill 示范研究，配乐保留 Kevin MacLeod / CC BY 4.0 署名。新增美术与作品是本研究独立制作，不能作为原库稳定品质优势证据。
+
+本次已接入统一构建；公开 demo 仅在实际部署并核验后登记。
+
+[完整研究网页](https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/) · [高清图与完整理解](https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/overview/) · [七部新增作品](https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/scenarios/) · [原图](../projects/012-huashu-art-motion/assets/understanding/overview.png)
+<!-- HUASHU_PUBLICATION:END -->
+
+
 <!-- AITO_EARN_PUBLICATION:START -->
 ## AiToEarn 完整理解、原始引导图与真实图文（2026-10-12）
 
@@ -358,3 +387,9 @@ export default defineConfig({
 GitHub Pages 托管静态 HTML、CSS 和 JavaScript，动态后端需要部署到外部服务。前端可放在 Pages，后端运行在适合该项目的平台，或把完整应用部署到外部平台，再将实际演示 URL 写入 `demo`。[GitHub Pages 托管范围](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 
 在子项目 README 说明前后端部署位置、接口地址配置、运行依赖及可用功能。仅有 GitHub 仓库链接、构建产物或规划地址时，`demo` 继续保持为空。
+
+## 012 · Huashu 艺术动画与风格研究
+
+[完整发布说明见本文开头](#huashu-完整理解原始引导图与场景效果2026-10-12)。本地可用 `npm.cmd run preview --prefix projects/012-huashu-art-motion/web`，默认 http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/ 。完整 dist/ 发布至 .cache/pages-site/012-huashu-art-motion/，保留 engine/、assets/、data/、研究文档和许可。
+
+历史研究记录（2026-10-09）：35 个场景、34 个转场、七部实际影片与 37 项原图阅读流程已分别验证。新增作品是本研究独立制作，媒体来源与配乐署名保留；其品质不能全部归因于原库。2026-10-12 发布核验、全面摘要及后续状态以本文开头的 HUASHU_PUBLICATION 记录为准。

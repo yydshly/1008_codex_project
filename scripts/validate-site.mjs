@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','009-cove','010-unsloth','011-aitoearn','013-aihot'], '发布允许名单包含 001–011 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','009-cove','010-unsloth','011-aitoearn','012-huashu-art-motion','013-aihot'], '发布允许名单包含 001–013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '009':'cove', '010':'unsloth', '011':'aitoearn', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '009':'cove', '010':'unsloth', '011':'aitoearn', '012':'huashu-art-motion', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -307,3 +307,8 @@ assert.ok(html.includes('>cove</a>'),'009 来源链接使用原库名');
 // Validate the exact copied 011 artifact, including its original guide.
 const {audit:auditAiToEarn}=await import('../projects/011-aitoearn/web/scripts/audit.mjs');
 await auditAiToEarn(path.join(site,'011-aitoearn'));
+const {audit:auditHuashu}=await import('../projects/012-huashu-art-motion/web/scripts/audit.mjs');
+await auditHuashu(path.join(site,'012-huashu-art-motion'));
+const huashuMetadata=readCatalog().projects.find(project=>project.id==='012');
+for(const item of huashuMetadata.summaryItems)assert.ok(html.includes('<strong>'+escapeIntroduction(item.title)+'</strong>：'+escapeIntroduction(item.text)),'012 总入口缺少摘要 '+item.title);
+assert.ok(html.includes('src="./012-huashu-art-motion/assets/understanding/overview.png"'),'012 总入口必须使用已有完整引导图');

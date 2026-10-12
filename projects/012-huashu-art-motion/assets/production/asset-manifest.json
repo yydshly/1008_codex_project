@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-09",
+  "route": "生成美术素材与透明动作帧 → 分层合成与场景动画 → 1080p逐帧出片",
+  "assets": {
+    "traveler-atlas": {
+      "file": "traveler-atlas.png",
+      "width": 1224,
+      "height": 1285,
+      "mode": "RGBA",
+      "sha256": "658e5bd3ae11e5a1a2949bf8f391302e7368ccb38140f9df51f311d2698e0d9b",
+      "transparentFraction": 0.6825176114544391
+    },
+    "history-worlds": {
+      "file": "history-worlds.png",
+      "width": 1079,
+      "height": 1458,
+      "mode": "RGB",
+      "sha256": "358aea959da627ab1d5a9152cd9e38b778891290b26360bbc72b9ca289349f00"
+    },
+    "life-worlds": {
+      "file": "life-worlds.png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGB",
+      "sha256": "1fd450fc91436725d6d625c1bb032f590c51113c6f4b9b125755dcf144d6b075"
+    },
+    "travel-worlds": {
+      "file": "travel-worlds.png",
+      "width": 1082,
+      "height": 1453,
+      "mode": "RGB",
+      "sha256": "13cce31d6b5d421a9529f3b48853a12720a3599d349c7522da8835d2063e464a"
+    },
+    "emotion-worlds": {
+      "file": "emotion-worlds.png",
+      "width": 1086,
+      "height": 1448,
+      "mode": "RGB",
+      "sha256": "6d37a95de906cfe68f904b3d3897ba3162e0c00cc7d98090e6eb9fd16a559ea8"
+    },
+    "garden-museum": {
+      "file": "garden-museum.png",
+      "width": 1979,
+      "height": 795,
+      "mode": "RGB",
+      "sha256": "278c0913ebd782c68378b0409d224d1dc28f1001a0b1cb336f1a22284a499c28"
+    },
+    "foliage-atlas": {
+      "file": "foliage-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "e444187d9332f6dc345985bb7ec6a885d88961d156dea0001d0f3f5b74f25a28",
+      "transparentFraction": 0.45732879638671875
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "source": [
+        68,
+        6,
+        198,
+        297
+      ],
+      "anchor": [
+        85.0,
+        297
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 297
+    },
+    {
+      "index": 1,
+      "source": [
+        386,
+        5,
+        164,
+        297
+      ],
+      "anchor": [
+        73.0,
+        297
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 297
+    },
+    {
+      "index": 2,
+      "source": [
+        681,
+        6,
+        138,
+        296
+      ],
+      "anchor": [
+        84.0,
+        296
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 296
+    },
+    {
+      "index": 3,
+      "source": [
+        998,
+        6,
+        187,
+        299
+      ],
+      "anchor": [
+        73.0,
+        299
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 299
+    },
+    {
+      "index": 4,
+      "source": [
+        68,
+        328,
+        206,
+        298
+      ],
+      "anchor": [
+        85.0,
+        298
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 298
+    },
+    {
+      "index": 5,
+      "source": [
+        394,
+        327,
+        163,
+        297
+      ],
+      "anchor": [
+        65.0,
+        297
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 297
+    },
+    {
+      "index": 6,
+      "source": [
+        682,
+        328,
+        137,
+        297
+      ],
+      "anchor": [
+        83.0,
+        297
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 297
+    },
+    {
+      "index": 7,
+      "source": [
+        995,
+        329,
+        198,
+        296
+      ],
+      "anchor": [
+        76.0,
+        296
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 296
+    },
+    {
+      "index": 8,
+      "source": [
+        75,
+        646,
+        135,
+        303
+      ],
+      "anchor": [
+        78.0,
+        303
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 303
+    },
+    {
+      "index": 9,
+      "source": [
+        391,
+        646,
+        210,
+        302
+      ],
+      "anchor": [
+        68.0,
+        302
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 302
+    },
+    {
+      "index": 10,
+      "source": [
+        668,
+        645,
+        215,
+        304
+      ],
+      "anchor": [
+        97.0,
+        304
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 304
+    },
+    {
+      "index": 11,
+      "source": [
+        1010,
+        646,
+        128,
+        301
+      ],
+      "anchor": [
+        61.0,
+        301
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 301
+    },
+    {
+      "index": 12,
+      "source": [
+        71,
+        1045,
+        170,
+        207
+      ],
+      "anchor": [
+        82.0,
+        207
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 207
+    },
+    {
+      "index": 13,
+      "source": [
+        380,
+        972,
+        150,
+        285
+      ],
+      "anchor": [
+        79.0,
+        285
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 285
+    },
+    {
+      "index": 14,
+      "source": [
+        647,
+        964,
+        246,
+        293
+      ],
+      "anchor": [
+        118.0,
+        293
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 293
+    },
+    {
+      "index": 15,
+      "source": [
+        968,
+        969,
+        209,
+        297
+      ],
+      "anchor": [
+        103.0,
+        297
+      ],
+      "cellHeight": 321.25,
+      "visibleHeight": 297
+    }
+  ],
+  "imageEdits": "无程序改图；只读取alpha和尺寸，画布按来源区域取帧。"
+}

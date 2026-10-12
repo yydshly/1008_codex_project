@@ -1,0 +1,68 @@
+// 端到端检查交付影片本身与用户观看/探索流程，保留真实截图和执行记录。
+import {createRequire} from 'node:module';
+import {writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/yun68/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),out=path.join(root,'assets/production');
+const url=process.env.RESEARCH_URL||'http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/scenarios/';
+const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1440,height:1080}}),page=await context.newPage();
+const checks=[],errors=[],failures=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failures.push({status:r.status(),url:r.url()});});
+const check=(name,passed,details=null)=>{checks.push({name,passed,details});if(!passed)throw new Error(name+': '+JSON.stringify(details));};
+const pause=async p=>{if(await p.evaluate(()=>scenarioDemo.state.playing))await p.locator('#play').click();};
+await page.goto(url,{waitUntil:'networkidle'});await page.waitForFunction(()=>window.scenarioDemo?.ready);
+check('七个作品卡与新版入口',await page.locator('.card').count()===7&&await page.title()==='应用作品集 · 艺术动画的七种场景');
+for(const s of await page.evaluate(()=>scenarioDemo.catalog)){
+  await page.locator('.scenario-nav [data-scene="'+s.id+'"]').click();await page.waitForFunction(()=>document.querySelector('video').readyState>=2);await pause(page);
+  check(s.id+'标题与深链接',await page.locator('#scene-title').textContent()===s.title&&page.url().endsWith('#scene='+s.id));
+  const meta=await page.locator('video').evaluate(v=>({width:v.videoWidth,height:v.videoHeight,duration:v.duration}));
+  check(s.id+'真实1080p / 30秒视频解码',meta.width===1920&&meta.height===1080&&Math.abs(meta.duration-30)<.1,meta);
+  await page.locator('#play').click();await page.waitForFunction(()=>document.querySelector('video').currentTime>.35);await page.locator('#play').click();
+  const at=await page.locator('video').evaluate(v=>v.currentTime);await page.waitForTimeout(120);
+  check(s.id+'播放推进与暂停稳定',at>.35&&Math.abs((await page.locator('video').evaluate(v=>v.currentTime))-at)<.01);
+  await page.locator('[data-chapter="2"]').click();await page.waitForFunction(()=>{const v=document.querySelector('video');return !v.seeking&&Math.abs(v.currentTime-21.1)<.05;});
+  check(s.id+'第三章节定位21.1秒',true);
+  const frameTime=await page.locator('#time').evaluate(e=>new Promise(resolve=>{document.querySelector('video').requestVideoFrameCallback((_,m)=>resolve(m.mediaTime));e.value='12.5';e.dispatchEvent(new Event('input',{bubbles:true}));}));
+  await page.waitForFunction(()=>{const v=document.querySelector('video');return !v.seeking&&Math.abs(v.currentTime-12.5)<.05;});
+  const error=await page.evaluate(id=>{
+    const v=document.querySelector('video'),c=document.createElement('canvas');c.width=1920;c.height=1080;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(v,0,0);const a=g.getImageData(0,0,1920,1080).data;
+    scenarioDemo.draw(id,12.5);g.drawImage(scenarioDemo.canvas,0,0);const b=g.getImageData(0,0,1920,1080).data;let sum=0;for(let i=0;i<a.length;i++)if(i%4!==3)sum+=Math.abs(a[i]-b[i]);return sum/(1920*1080*3);
+  },s.id);
+  check(s.id+'实际解码帧与同时间合成一致',error<6&&Math.abs(frameTime-12.5)<.05,{meanRgbError:error,decodedMediaTime:frameTime});
+  await page.locator('#canvas-mode').click();const before=await page.evaluate(()=>scenarioDemo.canvas.toDataURL());await page.locator('#play').click();await page.waitForTimeout(330);await page.locator('#play').click();
+  check(s.id+'合成画面实际运动',before!==await page.evaluate(()=>scenarioDemo.canvas.toDataURL()));
+  await page.locator('#video-mode').click();
+}
+await page.locator('#music').click();check('用户开启成片配乐',!(await page.locator('video').evaluate(v=>v.muted)));await page.locator('#music').click();
+const range=await context.request.get(new URL('../assets/production/travel.mp4',url).href,{headers:{Range:'bytes=100-199'}});
+check('MP4 MIME与HTTP范围请求',range.status()===206&&(await range.body()).length===100&&range.headers()['content-type']==='video/mp4');
+await page.goto(url+'#scene=interactive',{waitUntil:'networkidle'});await page.waitForFunction(()=>scenarioDemo?.ready);await page.locator('#take-control').click();
+check('开始探索切换真实合成场景',await page.evaluate(()=>!!scenarioDemo.state.manual&&scenarioDemo.state.mode==='canvas'));
+check('远处对象不能提前查看',await page.locator('[data-find="leaf"]').isDisabled()&&!(await page.evaluate(()=>scenarioDemo.inspect('vase'))));
+await page.keyboard.down('ArrowRight');await page.waitForFunction(()=>scenarioDemo.state.manual.x>490);await page.keyboard.up('ArrowRight');await page.keyboard.press(' ');
+check('键盘行走、空格查看银杏叶',await page.evaluate(()=>scenarioDemo.state.manual.collected.leaf));
+await page.keyboard.down('ArrowRight');await page.waitForFunction(()=>scenarioDemo.state.manual.x>720);await page.keyboard.up('ArrowRight');await page.locator('[data-find="flower"]').click();
+check('走近花朵后查看并持续记录',await page.evaluate(()=>scenarioDemo.state.manual.collected.leaf&&scenarioDemo.state.manual.collected.flower));
+const x=await page.evaluate(()=>scenarioDemo.state.manual.x);await page.locator('[data-route="museum"]').click();await page.waitForTimeout(250);const next=await page.evaluate(()=>scenarioDemo.state.manual.x);
+check('路线选择沿石路行走',next>x+10&&next<x+160,{before:x,after:next});
+await page.waitForFunction(()=>scenarioDemo.state.manual.target===null,{timeout:15000});await page.locator('[data-find="vase"]').click();
+const r=await page.locator('#scene-canvas').boundingBox();await page.mouse.click(r.x+1740/1920*r.width,r.y+383/1080*r.height);
+check('展亭两个对象与四个发现记录',await page.evaluate(()=>Object.values(scenarioDemo.state.manual.collected).every(Boolean)));
+await page.screenshot({path:path.join(out,'interactive-desktop.jpg'),type:'jpeg',quality:94});
+await page.goto(url+'#scene=travel',{waitUntil:'networkidle'});await page.waitForFunction(()=>scenarioDemo.state.id==='travel'&&document.querySelector('video').readyState>=2);await pause(page);await page.locator('#video-mode').click();await page.evaluate(()=>scenarioDemo.seek(14.3));await page.waitForFunction(()=>!document.querySelector('video').seeking);
+check('同页深链接切换真实作品',await page.locator('#scene-title').textContent()==='把世界，走成自己的风景');
+await page.setViewportSize({width:1440,height:1320});
+await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));check('桌面没有水平溢出',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+await page.screenshot({path:path.join(out,'desktop.jpg'),type:'jpeg',quality:94});
+const mobile=await context.newPage();await mobile.setViewportSize({width:390,height:844});mobile.on('pageerror',e=>errors.push(e.message));await mobile.goto(url+'#scene=travel',{waitUntil:'networkidle'});await mobile.waitForFunction(()=>scenarioDemo?.ready);await pause(mobile);await mobile.evaluate(()=>scenarioDemo.seek(4.6));await mobile.waitForFunction(()=>!document.querySelector('video').seeking);
+check('手机没有水平溢出',await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await mobile.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await mobile.screenshot({path:path.join(out,'mobile.jpg'),type:'jpeg',quality:94});
+await mobile.locator('.scenario-nav [data-scene="interactive"]').click();await mobile.locator('#take-control').click();await mobile.locator('#walk-right').scrollIntoViewIfNeeded();
+const initial=await mobile.evaluate(()=>scenarioDemo.state.manual.x),b=await mobile.locator('#walk-right').boundingBox();await mobile.mouse.move(b.x+b.width/2,b.y+b.height/2);await mobile.mouse.down();await mobile.waitForTimeout(550);await mobile.mouse.up();
+check('手机方向按钮按住实际行走',(await mobile.evaluate(()=>scenarioDemo.state.manual.x))>initial+60);
+const refs=await page.evaluate(()=>[...new Set([...document.querySelectorAll('a[href],link[href],script[src],img[src],audio[src]')].map(e=>e.getAttribute('href')||e.getAttribute('src')).filter(s=>s?.startsWith('.')))]);
+for(const ref of refs){const response=await context.request.get(new URL(ref,url).href);check('可访问的相对资源 '+ref,response.ok(),response.status());}
+const nojs=await browser.newContext({javaScriptEnabled:false}),np=await nojs.newPage();await np.goto(url);check('关闭脚本仍可打开七片成片链接',await np.locator('.card a').count()===7);await nojs.close();
+check('无浏览器脚本错误',errors.length===0,errors);check('无失败资源',failures.length===0,failures);
+await writeFile(path.join(out,'browser-report.json'),JSON.stringify({date:'2026-10-09',url,browser:await browser.version(),checks,errors,failures,scope:'7部实际视频解码与同时间合成对照；播放、暂停、章节、音轨、下载资源、范围请求；键盘与手机按钮行走、真实热点四个发现、路线连续行走；桌面与手机截图。'},null,2)+'\n');
+await browser.close();console.log('作品版端到端验证通过：'+checks.length+'项。');

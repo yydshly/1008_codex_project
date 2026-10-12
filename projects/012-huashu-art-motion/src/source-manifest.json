@@ -1,0 +1,1375 @@
+{
+  "upstream": "https://github.com/alchaincyf/huashu-art-motion",
+  "commit": "57d67608ab458f57d9b153b1a2831b921e22498b",
+  "date": "2026-10-09",
+  "version": "固定提交；当前提交没有对应tag",
+  "scope": "原创研究文档、展示宿主、静帧生成及浏览器验证；上游场景、引擎、字体和参考文档未修改。",
+  "attribution": "alchaincyf / 花叔；艺术史穿越构图与少女＋猫设定起源于Tak的Art History Speedrun，未引入其原片画面或音频。",
+  "files": [
+    {
+      "local": "src/upstream-engine/engine.js",
+      "upstream": "scripts/engine/engine.js",
+      "sha256": "b7fd70575868b889cc07b2a080236b2373284044be3f9e9b66711babd3e6b041",
+      "bytes": 16247,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/eras.js",
+      "upstream": "scripts/engine/eras.js",
+      "sha256": "0a3b5080c64cc719e4de70bff7bb59e195482787bd04c10f1696446574866d6e",
+      "bytes": 6179,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/eras_gallery.js",
+      "upstream": "scripts/engine/eras_gallery.js",
+      "sha256": "9a4f2723cc5f28d68e3b79c520e2a102c9f728bf40fac2b084ce52716e549d76",
+      "bytes": 15021,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/index.html",
+      "upstream": "scripts/engine/index.html",
+      "sha256": "37bc589ff4290753297a4344a0cade12d42a2a79dacb568bd1dae0f40c4dd45b",
+      "bytes": 2004,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/brush.js",
+      "upstream": "scripts/engine/lib/brush.js",
+      "sha256": "1fb65fb89dc0e263abf0d3c0a5ceddcc7b26f783624f1bf7ffa2be495bbf83b8",
+      "bytes": 11999,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/camera.js",
+      "upstream": "scripts/engine/lib/camera.js",
+      "sha256": "8ebf92f37dcdff9cac953f64e2e17b2b7d4be10c0e9f742b34868e643de7f692",
+      "bytes": 5452,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/chart.js",
+      "upstream": "scripts/engine/lib/chart.js",
+      "sha256": "9d4463c514fe86cdbcd5ed22d92238af469c799460800e4c1eb9fb4b5d7314cb",
+      "bytes": 11022,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/collage.js",
+      "upstream": "scripts/engine/lib/collage.js",
+      "sha256": "b2d23618f1ceb9bb8557e9f92a3e7dde53ba5933341a5c0714399fdf19ef27e4",
+      "bytes": 9069,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/diagram.js",
+      "upstream": "scripts/engine/lib/diagram.js",
+      "sha256": "c02208b114a2a37e003f29c9947ccc88a5578767f87b48c01d4f1bceceebeca4",
+      "bytes": 20344,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/AlfaSlabOne-400.woff",
+      "upstream": "scripts/engine/lib/fonts/AlfaSlabOne-400.woff",
+      "sha256": "2f8b04d3eada32d7047255260a0e81ab74938fada1aad154f5653850a68aebe8",
+      "bytes": 41728,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Anton-400.woff",
+      "upstream": "scripts/engine/lib/fonts/Anton-400.woff",
+      "sha256": "791375bdbed00de4a3aad4811291220ead0e1405d6f8b5bdbf109798c8359ac5",
+      "bytes": 61460,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/ArchivoBlack-400.woff",
+      "upstream": "scripts/engine/lib/fonts/ArchivoBlack-400.woff",
+      "sha256": "c029965cfbc3cbb79431babf56d0fee6bc185f366c4fc2a0957817137d374c95",
+      "bytes": 38316,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Bangers-400.woff",
+      "upstream": "scripts/engine/lib/fonts/Bangers-400.woff",
+      "sha256": "62f0a30b1d48cc21bb35b084ae5d17ad22135df5dc4c18f3f591fc5443eddf39",
+      "bytes": 43808,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Caveat-600.woff",
+      "upstream": "scripts/engine/lib/fonts/Caveat-600.woff",
+      "sha256": "7a101c766f28866c5aa36ebbce5cfedcea2601f2439d3b16694b9c8eee75e9dc",
+      "bytes": 132264,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Cinzel-400.woff",
+      "upstream": "scripts/engine/lib/fonts/Cinzel-400.woff",
+      "sha256": "39c4e70ca598e2c0d78d355cd5fbe37017353a5de3008787a03e0d30a2d715ad",
+      "bytes": 22812,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Cinzel-700.woff",
+      "upstream": "scripts/engine/lib/fonts/Cinzel-700.woff",
+      "sha256": "1bb7ec5b84ee97a9eae36528d5bae3bfeddf035c19842fc1740ce44c09fac4ad",
+      "bytes": 24288,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/cmunrm.woff",
+      "upstream": "scripts/engine/lib/fonts/cmunrm.woff",
+      "sha256": "32115abbbfb231586813333bfa5a234f4dc7f28b27df7260f42f81146ccd9097",
+      "bytes": 123340,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/cmunti.woff",
+      "upstream": "scripts/engine/lib/fonts/cmunti.woff",
+      "sha256": "d9a02b7b67874c62f47f9c9a0914c115972ab77d43e82a163baf0888eb5d4a2d",
+      "bytes": 158668,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/CormorantGaramond-500.woff",
+      "upstream": "scripts/engine/lib/fonts/CormorantGaramond-500.woff",
+      "sha256": "f25b87d41579955733df25af8319b168d704b5333d8ac53e991fac442e7a9844",
+      "bytes": 90464,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/CormorantGaramond-500i.woff",
+      "upstream": "scripts/engine/lib/fonts/CormorantGaramond-500i.woff",
+      "sha256": "0ab1e72da6037d218386d9a6e148d7f5b0357e1965abf743aef30d641a5e2874",
+      "bytes": 93400,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/CormorantGaramond-700.woff",
+      "upstream": "scripts/engine/lib/fonts/CormorantGaramond-700.woff",
+      "sha256": "6417fd78440278f109d84cf00283fbf9b91b6d639fc5afd208a121ae7c636e61",
+      "bytes": 87248,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/EBGaramond-400.woff",
+      "upstream": "scripts/engine/lib/fonts/EBGaramond-400.woff",
+      "sha256": "61ea4fa656e4ec2c6103483625f0d6a2e1571c2be57015063b73f23392b3ff98",
+      "bytes": 162740,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/EBGaramond-400i.woff",
+      "upstream": "scripts/engine/lib/fonts/EBGaramond-400i.woff",
+      "sha256": "413c5879fa73e5e168dcb59e8e692b24049756c5b961fcd8adee3db2e1624ef4",
+      "bytes": 151904,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/EBGaramond-600.woff",
+      "upstream": "scripts/engine/lib/fonts/EBGaramond-600.woff",
+      "sha256": "d0ecbbe1d933b68d32ef2629e9a46673ae5eff5ce9c04cd7f4c012504da33a11",
+      "bytes": 179028,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Exo2-800i.woff",
+      "upstream": "scripts/engine/lib/fonts/Exo2-800i.woff",
+      "sha256": "8296afc88a371a81345e07d852a06e45ae401d5793866fd9a7f351daf523740a",
+      "bytes": 60124,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/GochiHand-400.woff",
+      "upstream": "scripts/engine/lib/fonts/GochiHand-400.woff",
+      "sha256": "152552ee5c95ec30b75edf3ba42f3406925462ea1a52d4c049d22f550f10167a",
+      "bytes": 23640,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/IMFellEnglish-400.woff",
+      "upstream": "scripts/engine/lib/fonts/IMFellEnglish-400.woff",
+      "sha256": "b915ee6c7034491df57eed8153ec2a5c3ee1ba55788a96737465d4c3239bd2a0",
+      "bytes": 108052,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/IMFellEnglish-400i.woff",
+      "upstream": "scripts/engine/lib/fonts/IMFellEnglish-400i.woff",
+      "sha256": "7c6064b4e7ca80d131a01b9133ddaf11978d43bc954eb0d1c1dd1391371c56d6",
+      "bytes": 111628,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/index.json",
+      "upstream": "scripts/engine/lib/fonts/index.json",
+      "sha256": "a0870057845b502a11037acef99b6e9cbc3994fdb5149caf3aac036140dbfbb1",
+      "bytes": 1972,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Inter-var.woff",
+      "upstream": "scripts/engine/lib/fonts/Inter-var.woff",
+      "sha256": "a54bc9f6ba847df43752bfb35f63aa1599ccc113b58c23bfa07c4dc88976647b",
+      "bytes": 126688,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/JosefinSans-700.woff",
+      "upstream": "scripts/engine/lib/fonts/JosefinSans-700.woff",
+      "sha256": "1e9f0aab2caa768ead521a88be3ea118d47c29a3ae052f9b5d0c2af0d6a8eb8d",
+      "bytes": 26564,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Kalam-700.woff",
+      "upstream": "scripts/engine/lib/fonts/Kalam-700.woff",
+      "sha256": "53b9c2a4260ba9a1320d2a92c6dbd532fa509bdeda0897580611a9f16f1a2bda",
+      "bytes": 186044,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/LibreBaskerville-400.woff",
+      "upstream": "scripts/engine/lib/fonts/LibreBaskerville-400.woff",
+      "sha256": "e5134e031d30b4dcc76f3806701cafe92ff4ed5b8b6271d06d63ca3ee7af9bc4",
+      "bytes": 46628,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/LibreBaskerville-700.woff",
+      "upstream": "scripts/engine/lib/fonts/LibreBaskerville-700.woff",
+      "sha256": "57b9986d47ab6d7ea1964d5693c56b5e5e97c889e31ba9546815de365d356dab",
+      "bytes": 47524,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/LICENSES.md",
+      "upstream": "scripts/engine/lib/fonts/LICENSES.md",
+      "sha256": "9f437c332471f719042a56d49a680c33a765ab3064c74947c39c62a612705648",
+      "bytes": 4538,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/LilitaOne-400.woff",
+      "upstream": "scripts/engine/lib/fonts/LilitaOne-400.woff",
+      "sha256": "8f4283865fad7cbb92e3b9e8ec6e48ab1225f7fb2eaa9c75741ff46d4f230456",
+      "bytes": 14372,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/LXGWWenKai-500.woff",
+      "upstream": "scripts/engine/lib/fonts/LXGWWenKai-500.woff",
+      "sha256": "734bd187392579417ac83effe31d37b9de43c7b290bcb400800456511ed79e8f",
+      "bytes": 2098296,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Marcellus-400.woff",
+      "upstream": "scripts/engine/lib/fonts/Marcellus-400.woff",
+      "sha256": "9893ac05a03ff1e80ecf97f73853bff1378edfdec633b6c3a67ae7c33d7018e7",
+      "bytes": 22320,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSansSC-500.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSansSC-500.woff",
+      "sha256": "928d841b1ec663ebce82593568cbc19749fe652f88b8ec960723b7d87b551512",
+      "bytes": 1416188,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSansSC-700.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSansSC-700.woff",
+      "sha256": "dd0d39a9780eb995c499af0c20cca93b1dfdda865da70871a20890b3e406b968",
+      "bytes": 1425340,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSansSC-800.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSansSC-800.woff",
+      "sha256": "b57f9c645b1a4967a3c8914ed41f24d109394a8175e36af08f93e40803e84664",
+      "bytes": 1426988,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSansSC-900.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSansSC-900.woff",
+      "sha256": "d2d8a42438b18b65b6577434df4e41bb08c6b5051281757849af00ab743bb58f",
+      "bytes": 1394104,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSansSC-sub.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSansSC-sub.woff",
+      "sha256": "f29be895b3e7002432e6d94756a163936e9586843864740b1fc172b1859e462d",
+      "bytes": 331188,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSerifJP-600.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSerifJP-600.woff",
+      "sha256": "dce02fcc08d8629226ef017472eef25b5bc152d1c32a742075fcda8f351f87d0",
+      "bytes": 4415000,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/NotoSerifSC-sub.woff",
+      "upstream": "scripts/engine/lib/fonts/NotoSerifSC-sub.woff",
+      "sha256": "be59f4f630f0fac191dbc6e8d6945da681e5613df7602b2cef8ca7049fa19b66",
+      "bytes": 435560,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/OFL.txt",
+      "upstream": "scripts/engine/lib/fonts/OFL.txt",
+      "sha256": "9992d96f64c6ea41c83b578bf02c22c7fddc17843b5fd0650301728c800e0f65",
+      "bytes": 4524,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/PlayfairDisplay-400i.woff",
+      "upstream": "scripts/engine/lib/fonts/PlayfairDisplay-400i.woff",
+      "sha256": "30cbe57e84bc719727dc54814f708eb9fa2d05a06f04d8c196b1466ecacb74d8",
+      "bytes": 50928,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/PlayfairDisplay-700.woff",
+      "upstream": "scripts/engine/lib/fonts/PlayfairDisplay-700.woff",
+      "sha256": "2644f0e3c7c8f79e9d0c56ad22d246294c7c2b21ea884a7a2b1a10261cb95469",
+      "bytes": 55652,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/PlayfairDisplay-700i.woff",
+      "upstream": "scripts/engine/lib/fonts/PlayfairDisplay-700i.woff",
+      "sha256": "f263323db61a414618d9cafe489d0e18adf6682cd36baa45239ed804fe26fcf1",
+      "bytes": 53612,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Poppins-600.woff",
+      "upstream": "scripts/engine/lib/fonts/Poppins-600.woff",
+      "sha256": "952d2591178ef0c2dea37fb2c14f01e18433c8d59db10f6365c9e1ca9e8efe2a",
+      "bytes": 66232,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Poppins-700.woff",
+      "upstream": "scripts/engine/lib/fonts/Poppins-700.woff",
+      "sha256": "282b1ac42689074c38c62378b1412544f5ab11b91ba145ce56c54802496b7d86",
+      "bytes": 65616,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Poppins-800.woff",
+      "upstream": "scripts/engine/lib/fonts/Poppins-800.woff",
+      "sha256": "4c2bd05974d03c8058b14a452b2d0d869420b1671a22c35d52da4d58864e46a6",
+      "bytes": 65344,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/PressStart2P-400.woff",
+      "upstream": "scripts/engine/lib/fonts/PressStart2P-400.woff",
+      "sha256": "f831461d0239882019837f2b1cfea598743768f89c0b052102a1fd55050f5ca1",
+      "bytes": 36184,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Righteous-400.woff",
+      "upstream": "scripts/engine/lib/fonts/Righteous-400.woff",
+      "sha256": "374317573c47429a8d87b5c862abc96572e90eef1a445439cc329d2768022121",
+      "bytes": 21028,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/RobotoCondensed-var.woff",
+      "upstream": "scripts/engine/lib/fonts/RobotoCondensed-var.woff",
+      "sha256": "d149ef1478076ad3f201676de2f58d11de18257590d9faeee2318fa3bc4b90e6",
+      "bytes": 94036,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/Rye-400.woff",
+      "upstream": "scripts/engine/lib/fonts/Rye-400.woff",
+      "sha256": "2b6ae29cb40d75d69b547e7544f4ad540c5a641e7268df578a9bbc062376070e",
+      "bytes": 62848,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts/UnifrakturMaguntia-400.woff",
+      "upstream": "scripts/engine/lib/fonts/UnifrakturMaguntia-400.woff",
+      "sha256": "af995e1259780861fd6b8bb3dada5cb1272fc2fd24dbb2ba5b7cc4411ffde566",
+      "bytes": 39076,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/fonts.js",
+      "upstream": "scripts/engine/lib/fonts.js",
+      "sha256": "329efaab384c5555bdb118a4375f641eea84b468669d121557769867274e0f7b",
+      "bytes": 4498,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/kit.js",
+      "upstream": "scripts/engine/lib/kit.js",
+      "sha256": "eed62e8b9c176d885f8f16e63c34d08447a54d7cf2478b1145bcb51a187ee415",
+      "bytes": 6633,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/motion.js",
+      "upstream": "scripts/engine/lib/motion.js",
+      "sha256": "fd90ddedbc80221f046f06a6c8c6d2c97c0edb1ab2d8f007c63c2720e60c7655",
+      "bytes": 7994,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/paint.js",
+      "upstream": "scripts/engine/lib/paint.js",
+      "sha256": "93b838b5d08e53abe35228da4e62fdf5cbe8dcb916e821b8c4672bb441dd2ff1",
+      "bytes": 15539,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/post.js",
+      "upstream": "scripts/engine/lib/post.js",
+      "sha256": "e586bcc5775078f5e970f799f8158454a54ada9489ecf7255d83d555031fbdf5",
+      "bytes": 10047,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/render.js",
+      "upstream": "scripts/engine/lib/render.js",
+      "sha256": "f9bef36682aad07977d733b04ba3e483931056e57e0879d343b455717fba8abb",
+      "bytes": 17503,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/rig.js",
+      "upstream": "scripts/engine/lib/rig.js",
+      "sha256": "f874b6888c2b883473a546e6ccd7c32b08c85df06156f8cb78b0f64481dd954c",
+      "bytes": 34547,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/rig_huashu.js",
+      "upstream": "scripts/engine/lib/rig_huashu.js",
+      "sha256": "4dd2651658f51fa35a3c47aadff6eb3049dcc8cb997fed17ebc90035ce744910",
+      "bytes": 13879,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/toon.js",
+      "upstream": "scripts/engine/lib/toon.js",
+      "sha256": "0dde087b1adbd82310b7302f14821fdca92618eb03b32a62ee2dd50e09bb07dd",
+      "bytes": 13347,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/typo.js",
+      "upstream": "scripts/engine/lib/typo.js",
+      "sha256": "04acce9c9036f5fc80662c4460dcbe2dbe2851e5aee7fd024cb3c567c4e76f0e",
+      "bytes": 10120,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/ui.js",
+      "upstream": "scripts/engine/lib/ui.js",
+      "sha256": "ad9527cf23a8b2ab71483de00dd3648ee42dada729507ca56bacd414f0bf788a",
+      "bytes": 10689,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/lib/util.js",
+      "upstream": "scripts/engine/lib/util.js",
+      "sha256": "fc7a37e867d72c73d5ea3143188d036e940c2ad451ec85c546c25cefcc8e2445",
+      "bytes": 6498,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/01_cave.js",
+      "upstream": "scripts/engine/scenes/01_cave.js",
+      "sha256": "9ec753ff0e043aad579ecce9fbcccd47d38fbf65aaa28609a50322eaa8ce052c",
+      "bytes": 31781,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/02_egypt.js",
+      "upstream": "scripts/engine/scenes/02_egypt.js",
+      "sha256": "de8a0bbfb3b75ee682396bc291af9d6630ac38ba6559939c555bff6e410b7839",
+      "bytes": 50542,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/03_greek.js",
+      "upstream": "scripts/engine/scenes/03_greek.js",
+      "sha256": "46ba01fb59f0294c1287abf8f5c1a86a7ff1fc4bf714cd5864425957e103b086",
+      "bytes": 41192,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/04_roman.js",
+      "upstream": "scripts/engine/scenes/04_roman.js",
+      "sha256": "697e76700a4a1bf40185893f7956b88ca156b9b86a4e605d4f057395cb703fe9",
+      "bytes": 48166,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/05_gothic.js",
+      "upstream": "scripts/engine/scenes/05_gothic.js",
+      "sha256": "2c84522e92a92424148ea7e2868f688901ac8a3864135e0363f7fb5eff51d07b",
+      "bytes": 40948,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/06_renaissance.js",
+      "upstream": "scripts/engine/scenes/06_renaissance.js",
+      "sha256": "1e9ec630009c77f2eb10de1d36817101fc8a7e63fc9faf31b8fc4b9ec9ff379e",
+      "bytes": 31775,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/08_impressionism.js",
+      "upstream": "scripts/engine/scenes/08_impressionism.js",
+      "sha256": "1a7485ac3d4498f14e84497f6b8a44491b7d171fc37bbbfddc3e5c5450755c5b",
+      "bytes": 21114,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/09_postimp.js",
+      "upstream": "scripts/engine/scenes/09_postimp.js",
+      "sha256": "f66a082551b1dd9f5e86139f6550c4b3ea55e6983e0a697cb8d8f8a37b29fe27",
+      "bytes": 16482,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/10_nouveau.js",
+      "upstream": "scripts/engine/scenes/10_nouveau.js",
+      "sha256": "fe8c5f4ec754ba25a4ca73968050983774314cff2407d7faf124630b34cbfc94",
+      "bytes": 30715,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/11_cubism.js",
+      "upstream": "scripts/engine/scenes/11_cubism.js",
+      "sha256": "3711241c8d6af401e098ec8e1b268656eed5202760acb6df8aa265b4bdaf69cb",
+      "bytes": 27693,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/12_bauhaus.js",
+      "upstream": "scripts/engine/scenes/12_bauhaus.js",
+      "sha256": "644563686c1836ef6f20e55c2f97e75c56e4563f0cd7574b010aeb33b2292c7a",
+      "bytes": 17749,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/13_pop.js",
+      "upstream": "scripts/engine/scenes/13_pop.js",
+      "sha256": "534fd9f61b082e4ec79b7aba23448083dc3e86fa6f6cd370cdc355f61713047d",
+      "bytes": 24916,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/14_8bit.js",
+      "upstream": "scripts/engine/scenes/14_8bit.js",
+      "sha256": "d592dba924e6ff896b1e22143a9e3f944c696b81f1259a80fcbe8cfdf8a5abaa",
+      "bytes": 17377,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/15_raytrace.js",
+      "upstream": "scripts/engine/scenes/15_raytrace.js",
+      "sha256": "8429282ffd3ba071fdd0b87230f7ef2a38f5193c421a6a9b4960c1481c81ecd6",
+      "bytes": 26094,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/16_2026.js",
+      "upstream": "scripts/engine/scenes/16_2026.js",
+      "sha256": "c06bb25f95b48a08bdb0f1a8868bdb7a85f6ba849bc5da98da17201aab1e4048",
+      "bytes": 50619,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/17_ink.js",
+      "upstream": "scripts/engine/scenes/17_ink.js",
+      "sha256": "1616d4d99ed329ba5d9419af5b76892fc2865ac862fdb2955f68b1eb75c0f8e4",
+      "bytes": 23055,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/18_klimt.js",
+      "upstream": "scripts/engine/scenes/18_klimt.js",
+      "sha256": "de29f20a4eaaaf156f17fe4f90f68cc98b19376af3bc54ef1a09aface02043f6",
+      "bytes": 21062,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/19_munch.js",
+      "upstream": "scripts/engine/scenes/19_munch.js",
+      "sha256": "32e458aeac146ab4c9516842083f09c96435eec37de2082451d626b67481f4be",
+      "bytes": 13546,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/20_dunhuang.js",
+      "upstream": "scripts/engine/scenes/20_dunhuang.js",
+      "sha256": "ab9917250a418677514796bc606ba6e7e26e77534eac14960a381ed4da6c2737",
+      "bytes": 21803,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/21_kusama.js",
+      "upstream": "scripts/engine/scenes/21_kusama.js",
+      "sha256": "11521bd4b33e5e16bf3f613b744a02f26d995e4e5f8e9c6a07888d823b509172",
+      "bytes": 12059,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/22_constructivism.js",
+      "upstream": "scripts/engine/scenes/22_constructivism.js",
+      "sha256": "8fc219609cfd8df64cca9082e4d3d434e30d35e7887df16e08e732fa19b22180",
+      "bytes": 16510,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/23_dali.js",
+      "upstream": "scripts/engine/scenes/23_dali.js",
+      "sha256": "d39bd999c704cae16ac282459a2a37bc2f630f91da4102248472af33c333e499",
+      "bytes": 21067,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/24_hopper.js",
+      "upstream": "scripts/engine/scenes/24_hopper.js",
+      "sha256": "1a4b787eadfb2df30c978b9353eb01249aa32a3295b5d3df07edf44759ef0804",
+      "bytes": 13769,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/25_ghibli.js",
+      "upstream": "scripts/engine/scenes/25_ghibli.js",
+      "sha256": "de8ef7de4700e5ebfb17f71506d78b495af9ed8faecc54bb3f55cfe57ba4f201",
+      "bytes": 22951,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/26_vaporwave.js",
+      "upstream": "scripts/engine/scenes/26_vaporwave.js",
+      "sha256": "47968ecc2e10e0746615f1699c1951896ec9e8dd77563f4df4f5a4db8c9a1af5",
+      "bytes": 17261,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/27_kirby.js",
+      "upstream": "scripts/engine/scenes/27_kirby.js",
+      "sha256": "c4015eccf1e55f97fd7272fda67937eeeeecb8cb3957f8c7b4ea863f3be89119",
+      "bytes": 22149,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/28_monet.js",
+      "upstream": "scripts/engine/scenes/28_monet.js",
+      "sha256": "25c4314800643eb67b9d7d9e8cc5603d84a18de17766f6f8539d4279214021ad",
+      "bytes": 17498,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/29_seurat.js",
+      "upstream": "scripts/engine/scenes/29_seurat.js",
+      "sha256": "38fc8ec4d4ac63c52e5765fa985690e92fae7df8b1a6501ed23a54cadf65fe77",
+      "bytes": 11164,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/30_matisse.js",
+      "upstream": "scripts/engine/scenes/30_matisse.js",
+      "sha256": "947b51ddd67976d053d632523827137dc8cf219e1e5a23e0aed4098413834b64",
+      "bytes": 13938,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/31_haring.js",
+      "upstream": "scripts/engine/scenes/31_haring.js",
+      "sha256": "4e1b26a61e194aba16e483dbbe0b26b20efa5d02921eab043a124f40b7d09859",
+      "bytes": 10424,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/32_rembrandt.js",
+      "upstream": "scripts/engine/scenes/32_rembrandt.js",
+      "sha256": "07573efa8d944ce2aa9227889ef5529d3fada8f234ff2909711fd0072887459a",
+      "bytes": 21003,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/33_rubberhose.js",
+      "upstream": "scripts/engine/scenes/33_rubberhose.js",
+      "sha256": "f2cae5b8e5d6a628826352fe35698960545cae0fab78f61bca8d6cabe63679b3",
+      "bytes": 18445,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/34_shadowpuppet.js",
+      "upstream": "scripts/engine/scenes/34_shadowpuppet.js",
+      "sha256": "0a966f4c1815293f7a8b234d1e5bfda73d38c0a20544f9b9a7b4188d24e4117b",
+      "bytes": 18247,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/35_shinkai.js",
+      "upstream": "scripts/engine/scenes/35_shinkai.js",
+      "sha256": "4df1199ea8fd34cb9e0c088ed869269531cda8547c77482780dba0f741711b02",
+      "bytes": 22339,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/36_picasso_blue.js",
+      "upstream": "scripts/engine/scenes/36_picasso_blue.js",
+      "sha256": "ef37afa987da16b4b6aaef13c646f1cd72af0de81518e9caec02817f6332f94a",
+      "bytes": 11688,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/scenes/index.js",
+      "upstream": "scripts/engine/scenes/index.js",
+      "sha256": "bd40b61f3a404e900915808e55e49916952d950f353f5bdd7a4feb175084e525",
+      "bytes": 2467,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/upstream-engine/transitions.js",
+      "upstream": "scripts/engine/transitions.js",
+      "sha256": "6b15844cdef06574037893cb378adc8430999d284c35507febbd596216d491a0",
+      "bytes": 69992,
+      "license": "MIT；lib/fonts/遵循各自OFL，见LICENSES.md",
+      "modified": false
+    },
+    {
+      "local": "src/references/01-拆解.md",
+      "upstream": "references/01-拆解.md",
+      "sha256": "1325629d957d22fa8274ac5003ee18479017f265bec35e99eb8d064f11cce6da",
+      "bytes": 4747,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/02-机制.md",
+      "upstream": "references/02-机制.md",
+      "sha256": "fc95cf167607061467a9cb00f8b4a29e6026b6bbabf4625a71d582b31ff63cf0",
+      "bytes": 4853,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/03-一帧先行四条路线.md",
+      "upstream": "references/03-一帧先行四条路线.md",
+      "sha256": "3536d57f0ac399e6a0664d6a716467e1a8d6c845de3d8c028c5af2cef387dc20",
+      "bytes": 4474,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/04-纯代码绘制.md",
+      "upstream": "references/04-纯代码绘制.md",
+      "sha256": "44dbc538af454ec51e11a4dd213e9fe3f14cdbfb04e84e39b7f9d61cd182ec25",
+      "bytes": 11214,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/08-风格作者规范.md",
+      "upstream": "references/08-风格作者规范.md",
+      "sha256": "cb780b3b32af7c3cc7a4efed8e7f91c3c51d8a2a1a7b25d73eeb34c9a7d19f18",
+      "bytes": 5102,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/09-视频动画语法.md",
+      "upstream": "references/09-视频动画语法.md",
+      "sha256": "6c9b7dfb30d680e1c24d46faf7743f494af894d24d0592780eb8fac36ba9f9aa",
+      "bytes": 42964,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/10-角色.md",
+      "upstream": "references/10-角色.md",
+      "sha256": "d33fc10eec45c25e3b8c8acb92b7df771fee1849f86aae59e595bb3e562301e8",
+      "bytes": 3439,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/11-长卷穿越片.md",
+      "upstream": "references/11-长卷穿越片.md",
+      "sha256": "27202053fa3cda597e08d3bb8dbfc9ee18eff28ef9f70d13f61e86cd1ebf9aca",
+      "bytes": 4293,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/12-口播整片与经验回流.md",
+      "upstream": "references/12-口播整片与经验回流.md",
+      "sha256": "c4c0c3f085b235c9dda10e6351973d6a286c064ded29ba67de7ae88ab011dd5e",
+      "bytes": 2249,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/capabilities.md",
+      "upstream": "references/capabilities.md",
+      "sha256": "e17a36373ca7ed26b9e87ca13b27226236de68999c219e0f31e542e4cfefbbea",
+      "bytes": 7437,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/compatibility.md",
+      "upstream": "references/compatibility.md",
+      "sha256": "109b1298cabe79c4a6a508231c112bab09e55b7aebbf0ac4c8363567277be718",
+      "bytes": 3045,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/images.md",
+      "upstream": "references/images.md",
+      "sha256": "01cfeef0f81752c2b841a121c9e409e0388804cf1f04cefd1a574f4891feed19",
+      "bytes": 5885,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/01_cave.md",
+      "upstream": "references/风格配方/01_cave.md",
+      "sha256": "f3a5a84f21cb8c2ee1126037d6054c5eaacff7eb91590927b20adf8c105a313b",
+      "bytes": 7171,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/02_egypt.md",
+      "upstream": "references/风格配方/02_egypt.md",
+      "sha256": "f765e10edf22e60182350d49680c78d0e2240530dae78ef24120fe0ddb233e2a",
+      "bytes": 9016,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/03_greek.md",
+      "upstream": "references/风格配方/03_greek.md",
+      "sha256": "c00e9d742e2b3bec1820a58876d6e8e771a76a821d4a6d14c568bd6f6da6d0bc",
+      "bytes": 8983,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/04_roman.md",
+      "upstream": "references/风格配方/04_roman.md",
+      "sha256": "0478c7581da67805eca43d395a9fc5773fb46a9ce4a83a9d8328b2c8a10fb144",
+      "bytes": 12433,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/05_gothic.md",
+      "upstream": "references/风格配方/05_gothic.md",
+      "sha256": "75a61a1639ddb7712445ae2c81ceed0bb32298e0314571eaf3a06ac7a21a7adf",
+      "bytes": 4243,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/06_renaissance.md",
+      "upstream": "references/风格配方/06_renaissance.md",
+      "sha256": "2c628f96e9b850b06ac959c561a7db7fac7ee87095dcd8ff96c15d2163ed6281",
+      "bytes": 4185,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/08_impressionism.md",
+      "upstream": "references/风格配方/08_impressionism.md",
+      "sha256": "6403fe80b8cb45c1f621b32e8ea0aee2940b7d83ba2b3b6fe8d3e37e92b97292",
+      "bytes": 4244,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/09_postimp.md",
+      "upstream": "references/风格配方/09_postimp.md",
+      "sha256": "9c9642253506519d4b60304b72e1a5a9de14fad17f3219dc0a9ea51e30386749",
+      "bytes": 1524,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/10_nouveau.md",
+      "upstream": "references/风格配方/10_nouveau.md",
+      "sha256": "c8180110e1948de2bf5f5253b03a4c335386952141cfae6b8cea5610d4243116",
+      "bytes": 5134,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/11_cubism.md",
+      "upstream": "references/风格配方/11_cubism.md",
+      "sha256": "9ec38d5d349a1f4e86c7f5db9d0021e172e7285f287e48b38d71b09f2eb0e98c",
+      "bytes": 5435,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/12_bauhaus.md",
+      "upstream": "references/风格配方/12_bauhaus.md",
+      "sha256": "d6710220ba593f140ab3618cb029af9c024f9623082eea5fdd8b86e98ec231e7",
+      "bytes": 4465,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/13_pop.md",
+      "upstream": "references/风格配方/13_pop.md",
+      "sha256": "456286596d1ee8ee58ec547275f77808fef8d284c4c81962e54913f62661a499",
+      "bytes": 4322,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/14_8bit.md",
+      "upstream": "references/风格配方/14_8bit.md",
+      "sha256": "4dee286d185c032435abaa93d344bb943fff70be8c10179ba33b22aeeb4356d2",
+      "bytes": 2858,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/15_raytrace.md",
+      "upstream": "references/风格配方/15_raytrace.md",
+      "sha256": "b3477570eca3cb14101f7a3d13d8240a7c836fe5af692440bb30bfbef1f2467c",
+      "bytes": 3238,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/16_2026.md",
+      "upstream": "references/风格配方/16_2026.md",
+      "sha256": "0934c1a3a88fab4720f3430215c6e395d10b4487983003e5b6e1276e035c219c",
+      "bytes": 5863,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/17_ink.md",
+      "upstream": "references/风格配方/17_ink.md",
+      "sha256": "5ccd214815f0054e80abbf9f195dfe281a544fb56b51a1d10afcfbdc2f48a0f0",
+      "bytes": 4492,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/18_klimt.md",
+      "upstream": "references/风格配方/18_klimt.md",
+      "sha256": "282d16813194c50ef26101ed8ac9a7a8eb897a4da5bf007f260d90134bd4b094",
+      "bytes": 2882,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/19_munch.md",
+      "upstream": "references/风格配方/19_munch.md",
+      "sha256": "1c09a88d65b2cd64034ec5a1947ff76a61e29930f405bbc510350d8b7d1e3997",
+      "bytes": 2880,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/20_dunhuang.md",
+      "upstream": "references/风格配方/20_dunhuang.md",
+      "sha256": "529a66f4e5b974c022da9e284bcc66d3f311f7c6c8eacb368f3f902031016b23",
+      "bytes": 3121,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/21_kusama.md",
+      "upstream": "references/风格配方/21_kusama.md",
+      "sha256": "099badbeb820f162b1008edd270b19f96cc13bdfbdc9f790d36997ea6db213ff",
+      "bytes": 2300,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/22_constructivism.md",
+      "upstream": "references/风格配方/22_constructivism.md",
+      "sha256": "54b2d53f0e2e153991cf0ebf81dbaab8de9a9e0a54bea5ca84e34e6b8b8a869b",
+      "bytes": 3994,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/23_dali.md",
+      "upstream": "references/风格配方/23_dali.md",
+      "sha256": "8e4b2161e511d56c6917b57b50f67a06baae8c5136734797fa28c7c999ea7081",
+      "bytes": 3508,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/24_hopper.md",
+      "upstream": "references/风格配方/24_hopper.md",
+      "sha256": "c4d27f38bc068f21e1c9242befafaf93d4ef8840d494d0c11a3869b63cec184d",
+      "bytes": 2895,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/25_ghibli.md",
+      "upstream": "references/风格配方/25_ghibli.md",
+      "sha256": "fea2b1211fd36b2b036bc6850158975dd46f124eee893d5e9e8342554cb55735",
+      "bytes": 3686,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/26_vaporwave.md",
+      "upstream": "references/风格配方/26_vaporwave.md",
+      "sha256": "7c1faf208d1b9e009cf3aba69264398d79f1fc297dd296b839a58426322a90a1",
+      "bytes": 3167,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/27_kirby.md",
+      "upstream": "references/风格配方/27_kirby.md",
+      "sha256": "a0c2624b1d012a13460fd05f49be66d2bcfb07a6507b029e00d7d813b1496be9",
+      "bytes": 3426,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/28_monet.md",
+      "upstream": "references/风格配方/28_monet.md",
+      "sha256": "cfef9c56a784c7b97004b372146dc0e988fbde515cabe1326d7a427f11de67df",
+      "bytes": 2876,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/29_seurat.md",
+      "upstream": "references/风格配方/29_seurat.md",
+      "sha256": "5a313ee5c0058ae1f044045810375a15ad6ab0f785592de4c0f1a6e584e45904",
+      "bytes": 2994,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/30_matisse.md",
+      "upstream": "references/风格配方/30_matisse.md",
+      "sha256": "66a52e478e3efe1b65c32e06fba6ab5f23c64f2310eddd3c1e9066478da7e6f8",
+      "bytes": 2535,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/31_haring.md",
+      "upstream": "references/风格配方/31_haring.md",
+      "sha256": "d5f67b79b05585dcf673f733112ba42d96351bf182580e8d54c736ee1abb882e",
+      "bytes": 2016,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/32_rembrandt.md",
+      "upstream": "references/风格配方/32_rembrandt.md",
+      "sha256": "db3dafff17fa45931b30c4c6c686d763875f68785279d818c08d5dacd3884467",
+      "bytes": 2929,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/33_rubberhose.md",
+      "upstream": "references/风格配方/33_rubberhose.md",
+      "sha256": "43caf717e51b30acf967f8d0d7ea48a2ac2101686ca13573964a4ee06127975f",
+      "bytes": 2514,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/34_shadowpuppet.md",
+      "upstream": "references/风格配方/34_shadowpuppet.md",
+      "sha256": "5fc320f69ab623b6a8d06a0697e17c8202d6139a3056bedd6711b5fb58d747a4",
+      "bytes": 3173,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/35_shinkai.md",
+      "upstream": "references/风格配方/35_shinkai.md",
+      "sha256": "2da6807639b3e65d8acd66e89ff8f20329c595cd4371c88f07218895a2dc6c3e",
+      "bytes": 3379,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/36_picasso_blue.md",
+      "upstream": "references/风格配方/36_picasso_blue.md",
+      "sha256": "82f4e817ad9066e5ba7e2c5111fdd25ea3ca7dc85d5b4b34f4fcf9d37a0969e6",
+      "bytes": 2764,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/INDEX.md",
+      "upstream": "references/风格配方/INDEX.md",
+      "sha256": "620d4f09b0036bfba5f6c8f095a95c3e1886101b8adf6fbdef5f79143f474820",
+      "bytes": 8383,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/_转场_迁移测试.md",
+      "upstream": "references/风格配方/_转场_迁移测试.md",
+      "sha256": "305ae1ceabfea70b8f292314d295895ff59858ed5cdc17e4a19f4783cbee6ff5",
+      "bytes": 7116,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/references/风格配方/_音轨_艺术史速通.md",
+      "upstream": "references/风格配方/_音轨_艺术史速通.md",
+      "sha256": "b425b184287fa9718e8ed47ffc93789b8cfff924fd5ddc82c8ff8f774669dffb",
+      "bytes": 11979,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/LICENSE.upstream.txt",
+      "upstream": "LICENSE",
+      "sha256": "fd164d60e753fd14343e54d03b0c104a292546761bc5866e371de4a02035659c",
+      "bytes": 1107,
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "local": "src/README.upstream.md",
+      "upstream": "README.md",
+      "sha256": "0d22d4cf2919d8c212c58c1fc4513ea604934f41137057ebd5efef1e8496e44a",
+      "bytes": 14837,
+      "license": "MIT文档；素材例外见README",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/styles-overview.jpg",
+      "upstream": "assets/全风格总览.jpg",
+      "sha256": "99512979c3ffd709ace498647cca95b4a31e45ebe435c0ce77f9522470f93f7e",
+      "bytes": 1615447,
+      "license": "包含作者角色的总览图仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/monet.gif",
+      "upstream": "assets/showcase/monet.gif",
+      "sha256": "524e4e69ce9a2eecad6bdb2709db6587ba49aed59843a164f5e9c5b90b7a33c2",
+      "bytes": 5351144,
+      "license": "作者角色与示范素材仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/egypt.gif",
+      "upstream": "assets/showcase/egypt.gif",
+      "sha256": "256b946e2543192153f276dc46e0af98837c934ddb9e2e2c0c9843f0557cd54b",
+      "bytes": 4965668,
+      "license": "作者角色与示范素材仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/pixel.gif",
+      "upstream": "assets/showcase/pixel.gif",
+      "sha256": "3eec9eb90adfa528ee7e660bb00a81128a07dcedada6273395bb623014a12db1",
+      "bytes": 2652588,
+      "license": "作者角色与示范素材仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/t1_3b1b_总览.jpg",
+      "upstream": "assets/动画语法/t1_3b1b_总览.jpg",
+      "sha256": "eeb77f3fb238b503612ad0075b17fa2a1315c629457eecdfd8f043e33ebc410a",
+      "bytes": 229006,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/t2_keynote_ui_总览.jpg",
+      "upstream": "assets/动画语法/t2_keynote_ui_总览.jpg",
+      "sha256": "2f7cb8e070512210ca4f1fccb7e86742658946f33af90fd17b84e997cb9785b9",
+      "bytes": 202632,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/t3_finance_chart_总览.jpg",
+      "upstream": "assets/动画语法/t3_finance_chart_总览.jpg",
+      "sha256": "4a761592ff73623cba1a1c065ba98a9f6fa46ff016735671f82fb3cb22ec7ee0",
+      "bytes": 185012,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/y1_kurzgesagt_总览.jpg",
+      "upstream": "assets/动画语法/y1_kurzgesagt_总览.jpg",
+      "sha256": "c76e685e90dc1b99e741d126c495086006e1393be4f8a16145677af457e05235",
+      "bytes": 176587,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/y2_vox_总览.jpg",
+      "upstream": "assets/动画语法/y2_vox_总览.jpg",
+      "sha256": "f70957fa84faf280eb29c4231d4bfddc0c43b07a23155b2d64ce83493359c765",
+      "bytes": 318800,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/y3_whiteboard_总览.jpg",
+      "upstream": "assets/动画语法/y3_whiteboard_总览.jpg",
+      "sha256": "cc28d7e021d8bc094387f4e65627ad940417459250502e586e3f2fe9603ae841",
+      "bytes": 143612,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/y4_storytime_总览.jpg",
+      "upstream": "assets/动画语法/y4_storytime_总览.jpg",
+      "sha256": "6cc308bee5624a6e11f063185af67bb1625332a44aabedb22f1329b1f60cfdc5",
+      "bytes": 152838,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    },
+    {
+      "local": "assets/upstream/动画语法/y5_kinetic_type_总览.jpg",
+      "upstream": "assets/动画语法/y5_kinetic_type_总览.jpg",
+      "sha256": "fbc1612a831eeaa05f03bdef32b477dc459769834f57ad6331517ebfb92651b9",
+      "bytes": 135213,
+      "license": "作者示范截图；包含作者角色时仅用于Skill示范",
+      "modified": false
+    }
+  ],
+  "generatedMedia": {
+    "styles": "assets/styles/*.jpg：原版Canvas代码于本机渲染，720×405，局部时间0.70秒，无角标；详见render-verification.json",
+    "cover": "assets/cover.jpg：本研究生产网页真实浏览器截图"
+  },
+  "omitted": "未复制作者人物帧库、口播整片、Arphic笔顺数据和付费媒体凭证。"
+}

@@ -1,0 +1,663 @@
+{
+  "date": "2026-10-09",
+  "url": "http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/",
+  "browser": "151.0.7922.34",
+  "desktop": [
+    1440,
+    1080
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    {
+      "name": "35种静态风格卡完整",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "6类能力与9种解说语法",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "默认梵高原版场景",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "类别筛选8种古代传统",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "组合搜索找到水墨",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "零结果提示",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "切换莫奈画面与地址",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "下一帧实际改变Canvas",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "进入转场改变Canvas",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "播放按钮切换暂停状态",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "暂停冻结时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "键盘可调画面时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "连续浏览进入全片模式",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "末段时长不受引擎哨兵值影响",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "水墨深链接可直接打开",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "深链接刷新保留风格",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "相对资源 ./assets/favicon.svg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./styles.css",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./scenarios/",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/17_ink.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./engine/index.html?film=gallery&render=1",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/styles-overview.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/01_cave.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/02_egypt.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/03_greek.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/04_roman.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/05_gothic.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/06_renaissance.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/08_impressionism.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/09_postimp.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/10_nouveau.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/11_cubism.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/12_bauhaus.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/13_pop.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/14_8bit.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/15_raytrace.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/16_2026.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/18_klimt.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/19_munch.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/20_dunhuang.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/21_kusama.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/22_constructivism.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/23_dali.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/24_hopper.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/25_ghibli.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/26_vaporwave.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/27_kirby.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/28_monet.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/29_seurat.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/30_matisse.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/31_haring.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/32_rembrandt.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/33_rubberhose.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/34_shadowpuppet.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/35_shinkai.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/styles/36_picasso_blue.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/y1_kurzgesagt_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/y2_vox_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/y3_whiteboard_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/y4_storytime_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/y5_kinetic_type_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/t1_3b1b_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/t2_keynote_ui_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/动画语法/t3_finance_chart_总览.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/monet.gif",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/egypt.gif",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./assets/upstream/pixel.gif",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./research.md",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./notes.md",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./source-manifest.json",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./LICENSE.upstream.txt",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./engine/lib/fonts/LICENSES.md",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "相对资源 ./app.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "图像类型 ./assets/styles/17_ink.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/01_cave.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/02_egypt.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/03_greek.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/04_roman.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/05_gothic.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/06_renaissance.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/08_impressionism.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/09_postimp.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/10_nouveau.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/11_cubism.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/12_bauhaus.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/13_pop.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/14_8bit.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/15_raytrace.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/16_2026.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/17_ink.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/18_klimt.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/19_munch.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/20_dunhuang.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/21_kusama.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/22_constructivism.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/23_dali.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/24_hopper.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/25_ghibli.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/26_vaporwave.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/27_kirby.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/28_monet.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/29_seurat.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/30_matisse.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/31_haring.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/32_rembrandt.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/33_rubberhose.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/34_shadowpuppet.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/35_shinkai.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/styles/36_picasso_blue.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/y1_kurzgesagt_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/y2_vox_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/y3_whiteboard_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/y4_storytime_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/y5_kinetic_type_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/t1_3b1b_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/t2_keynote_ui_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/动画语法/t3_finance_chart_总览.jpg",
+      "passed": true,
+      "details": "image/jpeg"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/monet.gif",
+      "passed": true,
+      "details": "image/gif"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/egypt.gif",
+      "passed": true,
+      "details": "image/gif"
+    },
+    {
+      "name": "图像类型 ./assets/upstream/pixel.gif",
+      "passed": true,
+      "details": "image/gif"
+    },
+    {
+      "name": "桌面没有水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机深链接播放包豪斯",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机没有水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机搜索可用",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机切换画面",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无JavaScript仍有完整内容",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无JavaScript没有水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "没有浏览器脚本错误",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "没有失败页面资源",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "scope": "真实生产子路径；35原版场景另由render-verification.json验证；未调用媒体生成或执行视频编码。"
+}

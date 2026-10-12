@@ -1,0 +1,467 @@
+{
+  "date": "2026-10-09",
+  "url": "http://127.0.0.1:4212/1008_codex_project/012-huashu-art-motion/scenarios/",
+  "browser": "151.0.7922.34",
+  "checks": [
+    {
+      "name": "七个作品卡与新版入口",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "travel播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "travel实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 2.5467283950617285,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "travel合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "life播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "life实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 2.276180073302469,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "life合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "history播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "history实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 2.118424318415638,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "history合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "product播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 1.0193148791152264,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "product合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "data播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 1.762487461419753,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "data合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "emotion播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "emotion实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 2.2592944637345678,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "emotion合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive标题与深链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive真实1080p / 30秒视频解码",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1080,
+        "duration": 30
+      }
+    },
+    {
+      "name": "interactive播放推进与暂停稳定",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive第三章节定位21.1秒",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "interactive实际解码帧与同时间合成一致",
+      "passed": true,
+      "details": {
+        "meanRgbError": 2.8343539416152264,
+        "decodedMediaTime": 12.5
+      }
+    },
+    {
+      "name": "interactive合成画面实际运动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "用户开启成片配乐",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "MP4 MIME与HTTP范围请求",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "开始探索切换真实合成场景",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "远处对象不能提前查看",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "键盘行走、空格查看银杏叶",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "走近花朵后查看并持续记录",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "路线选择沿石路行走",
+      "passed": true,
+      "details": {
+        "before": 721.2949999999992,
+        "after": 786.4769999999995
+      }
+    },
+    {
+      "name": "展亭两个对象与四个发现记录",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "同页深链接切换真实作品",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "桌面没有水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机没有水平溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "手机方向按钮按住实际行走",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "可访问的相对资源 ../assets/favicon.svg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ./production-style.css",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/travel.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/CREDITS.md",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../production-research.md",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/travel.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/life.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/life.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/history.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/history.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/product.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/product.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/data.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/data.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/emotion.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/emotion.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/interactive.jpg",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/interactive.mp4",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../assets/production/dreamer-30s.m4a",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../engine/lib/util.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ../engine/lib/motion.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "可访问的相对资源 ./production-app.js",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "关闭脚本仍可打开七片成片链接",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无浏览器脚本错误",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "无失败资源",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "scope": "7部实际视频解码与同时间合成对照；播放、暂停、章节、音轨、下载资源、范围请求；键盘与手机按钮行走、真实热点四个发现、路线连续行走；桌面与手机截图。"
+}

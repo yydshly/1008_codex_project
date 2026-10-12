@@ -15,6 +15,7 @@ on:
       - 'projects/009-cove/**'
       - 'projects/010-unsloth/**'
       - 'projects/011-aitoearn/**'
+      - 'projects/012-huashu-art-motion/**'
       - '.agents/skills/aitoearn-gpt-content/**'
       - 'projects/013-aihot/**'
       - 'projects.json'
@@ -60,7 +61,7 @@ jobs:
           npm ci --prefix projects/009-cove/web
           npm ci --prefix projects/010-unsloth/web
           npm ci --prefix projects/011-aitoearn/web
-      - name: Build the research entrance and published projects 001 through 011 and 013
+      - name: Build the research entrance and published projects 001 through 013
         run: npm run build:site
       - name: Verify archive media and sixteen page links
         working-directory: projects/001-sandboard/experiments/sand-art
@@ -92,6 +93,8 @@ jobs:
         run: npm run check --prefix projects/009-cove/web
       - name: Verify AiToEarn complete research, actual images, summaries and original guide
         run: npm run check --prefix projects/011-aitoearn/web
+      - name: Verify Huashu complete research, engine assets, films and unchanged original guide
+        run: npm run check --prefix projects/012-huashu-art-motion/web
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .cache/pages-site
