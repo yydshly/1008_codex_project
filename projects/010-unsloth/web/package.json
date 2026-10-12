@@ -1,0 +1,13 @@
+{
+  "name": "unsloth-research-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Unsloth 能力、训练原理与使用边界的中文交互研究网页",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit.mjs",
+    "preview": "node scripts/serve.mjs --dir dist --port 4197 --base /1008_codex_project/010-unsloth/"
+  }
+}

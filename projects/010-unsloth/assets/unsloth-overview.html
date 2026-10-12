@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Unsloth 能力全景图</title><style>
+:root{font-family:"Microsoft YaHei","Segoe UI",sans-serif;color:#17291e;background:#eef2e9;font-synthesis:none}*{box-sizing:border-box}body{margin:0}p,h1,h2,h3,figure{margin:0}.poster{width:1600px;padding:48px 54px 36px;background:#f7f9f4}.topline{display:flex;justify-content:space-between;align-items:center;color:#4b7456;font-size:17px;letter-spacing:1px;border-bottom:1px solid #d1ddca;padding-bottom:17px}.topline b{font-weight:600}.header{display:flex;justify-content:space-between;align-items:center;padding:28px 0 20px;gap:32px}h1{font-size:66px;line-height:1.3;letter-spacing:-1px;font-weight:800}.subtitle{font-size:29px;color:#336844;margin-top:8px}.badge{flex-shrink:0;color:#d4f4b4;background:#182d20;border-radius:16px;padding:20px 25px;font-size:20px;text-align:center;line-height:1.7}.badge small{display:block;color:#aec1a5;font-size:16px}.scope{border-radius:17px;background:#193021;color:#f3f9ed;padding:25px 29px}.scope h2{font-size:27px;color:#c4ef95;margin-bottom:12px}.scope p{font-size:22px;line-height:1.75;color:#e2eadb}.scope p+p{margin-top:5px}.scope strong{color:#d7f6b7}.scope .minor{font-size:19px;color:#b8c9ac}.workflow-label{font-size:17px;color:#58734f;margin:23px 0 12px}.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:25px}.node{border:1px solid #cbd9c2;border-radius:12px;padding:15px 12px;text-align:center;background:white;position:relative;display:flex;flex-direction:column;justify-content:center;min-height:85px}.node b{font-size:22px;line-height:1.5}.node small{font-size:16px;color:#76836a;margin-top:3px}.node:not(:last-child):after{content:'→';position:absolute;right:-22px;top:27px;color:#6b9a56;font-size:24px}.node.accent{background:#e7f3d9;border-color:#99be7b}.flow-note{font-size:17px;color:#65755c;text-align:center;margin:12px 0 25px}.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:21px}.card{border:1px solid #d1dcc9;border-radius:17px;background:white;padding:24px 26px;min-width:0}.card-head{display:flex;align-items:center;gap:13px;border-bottom:1px solid #e1e8dc;padding-bottom:14px;margin-bottom:17px}.number{width:38px;height:38px;display:grid;place-items:center;background:#e6f3d8;border-radius:9px;color:#3d6a32;font-size:18px;font-weight:750;flex-shrink:0}h2{font-size:27px;line-height:1.5;font-weight:750}.rows{display:flex;flex-direction:column;gap:12px}.item{display:grid;grid-template-columns:128px minmax(0,1fr);gap:11px;font-size:21px;line-height:1.65}.item b{color:#345f3b;font-weight:650}.item p{color:#4a5746}.item em{font-style:normal;color:#243f2a;font-weight:650}.lead{font-size:18px;color:#768469;margin-bottom:13px}.footnote{font-size:18px;line-height:1.7;color:#6d7b62;margin-top:14px;border-top:1px dashed #d6dfcf;padding-top:12px}.principles .item{grid-template-columns:136px minmax(0,1fr);font-size:20px}.math{background:#f0f5e9;border-radius:11px;padding:14px 17px;margin-top:17px}.math-top{display:flex;align-items:center;gap:16px;margin-bottom:8px}.weight-diagram{display:flex;align-items:center;gap:11px;flex-shrink:0}.matrix{display:grid;grid-template-columns:repeat(5,8px);gap:3px}.matrix i{height:8px;background:#99b48b;border-radius:1px}.rank{width:8px;height:49px;background:repeating-linear-gradient(to bottom,#80b654 0px,#80b654 7px,#f0f5e9 7px,#f0f5e9 10px)}.rank.horizontal{width:48px;height:8px;background:repeating-linear-gradient(to right,#80b654 0px,#80b654 7px,#f0f5e9 7px,#f0f5e9 10px)}.math b{font-size:22px;color:#305b32}.math p{font-size:18px;line-height:1.7;color:#5b6e4e}.math strong{color:#345e2d}.models .item{grid-template-columns:105px minmax(0,1fr);font-size:20px}.scenarios .item{grid-template-columns:115px minmax(0,1fr);font-size:20px}.h3{grid-column:1/-1;background:#e8f1df;border-color:#bfd3ae;padding:23px 27px}.h3-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}.h3-heading h2{font-size:25px}.h3-heading small{font-size:16px;color:#567245}.h3-grid{display:grid;grid-template-columns:1.12fr 1.2fr 1fr;gap:25px;margin-top:15px}.h3-grid>div+div{border-left:1px solid #c3d3b4;padding-left:25px}.h3 h3{font-size:21px;color:#31572d;margin-bottom:6px}.h3 p{font-size:19px;line-height:1.75;color:#53674a}.h3 strong{color:#315b2d}.values .item,.personal .item{grid-template-columns:110px minmax(0,1fr);font-size:20px}.mini-case{padding:13px 17px;background:#edf5e5;border-radius:10px;font-size:18px;line-height:1.8;margin-top:15px;color:#526848}.mini-case b{color:#355b2e}.limits ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}.limits li{font-size:20px;line-height:1.65;color:#52604b;padding-left:17px;position:relative}.limits li:before{content:'·';position:absolute;left:0;color:#5f864e;font-weight:800}.limits strong{color:#334f32}.decision .item{grid-template-columns:275px minmax(0,1fr);font-size:20px;padding:8px 0;border-bottom:1px solid #edf0e8;position:relative}.decision .item:last-child{border-bottom:0}.decision .item p:before{content:'→ ';color:#81a866}.last-workflow{background:#1b3022;color:#dceccf;border-radius:13px;padding:20px 25px;margin-top:23px}.last-workflow h3{font-size:20px;color:#c4ec9d;margin-bottom:10px}.last-workflow p{font-size:19px;line-height:1.85;word-spacing:3px}.footer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 20px;font-size:15px;color:#728166;margin-top:18px;line-height:1.75}.footer p:last-child{grid-column:1/-1;color:#5e7553}.footer code{font-family:Consolas,monospace}a{color:inherit}@media print{body{background:#fff}.poster{width:100%;padding:20px}.card{break-inside:avoid}}
+</style></head><body><main class="poster">
+<div class="topline"><b>OPEN MODEL RESEARCH / 010</b><span>2026.10.09 · 固定源码与官方资料研究</span></div>
+<header class="header"><div><h1>Unsloth 能力全景图</h1><p class="subtitle">让已有模型，更适合你的任务</p></div><div class="badge">模型训练与运行优化工具<small>Core / Studio / Desktop</small></div></header>
+<div class="scope"><h2>主要路径：加载已有模型 → 量化运行或微调 → 保存与部署</h2><p><strong>微调也是训练。</strong>支持 LoRA、全参数微调、继续预训练与偏好 / 强化学习。</p><p class="minor">从零造模型：本次未核实通用随机初始化的完整入口；H3 已确认的现成训练路径是微调。</p></div>
+<p class="workflow-label">从模型到你的应用</p><div class="flow"><div class="node"><b>基础模型＋任务数据</b><small>已有权重与合适的样例</small></div><div class="node accent"><b>Unsloth 适配与优化</b><small>方法、计算与资源调度</small></div><div class="node"><b>训练与评估</b><small>更新参数，独立验证</small></div><div class="node"><b>适配器 / 模型权重</b><small>保存与兼容格式导出</small></div><div class="node"><b>接入你的应用</b><small>网页、接口与业务流程</small></div></div><p class="flow-note">加载不学习新任务；量化改变数值表示；微调根据数据更新参数。</p>
+<div class="grid">
+<section id="map-01" class="card"><div class="card-head"><span class="number">01</span><h2>能力是什么</h2></div><div class="rows">
+<div class="item"><b>加载与推理</b><p>使用已有权重回答问题、生成内容。</p></div>
+<div class="item"><b>量化与运行</b><p>压缩权重，匹配 GGUF / 低精度后端。</p></div>
+<div class="item"><b>LoRA / QLoRA</b><p>训练少量增量，定制任务、风格与输出习惯。</p></div>
+<div class="item"><b>全参数微调</b><p>从已有权重开始，更新全部或大部分参数。</p></div>
+<div class="item"><b>继续预训练</b><p>用原始语料继续学习领域表达与语言。</p></div>
+<div class="item"><b>DPO / GRPO</b><p>用偏好样例或奖励调整行为；评分仍需设计。</p></div>
+<div class="item"><b>多模态与导出</b><p>按模型支持处理视觉、语音、图像、音视频和向量任务；保存与部署结果。</p></div>
+</div><p class="footnote">总体能力来自不同工作流。不是每个模型、后端和硬件都支持每一种训练方法。</p></section>
+<section id="map-02" class="card principles"><div class="card-head"><span class="number">02</span><h2>底层原理有哪些</h2></div><div class="rows">
+<div class="item"><b>低秩适配</b><p><em>W = W₀ + sBA</em>；冻结基础参数，学习小增量。</p></div>
+<div class="item"><b>QLoRA</b><p>基础权重量化存储，适配器单独训练。</p></div>
+<div class="item"><b>Triton＋定制反向</b><p>融合热点运算，减少临时张量和内存搬运。</p></div>
+<div class="item"><b>检查点 / 分块 / 卸载</b><p>重算或分段处理中间结果，降低显存峰值。</p></div>
+<div class="item"><b>Padding-free / Packing</b><p>减少填充位置，正确保留训练样本边界。</p></div>
+<div class="item"><b>RL 资源复用</b><p>交替安排生成与更新，复用权重并调度缓存。</p></div>
+</div><div class="math"><div class="math-top"><div class="weight-diagram" aria-hidden="true"><div class="matrix"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>＋</span><i class="rank"></i><span>×</span><i class="rank horizontal"></i></div><b>d = 4096，r = 16</b></div><p>完整矩阵 d² = 16,777,216；增量 2dr = 131,072</p><p>约 <strong>0.78%</strong>：单个矩阵的参数比例，<strong>不是整次训练显存比例</strong>。</p></div></section>
+<section id="map-03" class="card models"><div class="card-head"><span class="number">03</span><h2>可适配哪些模型</h2></div><p class="lead">代表例子，具体版本与后端需逐项核对</p><div class="rows">
+<div class="item"><b>文本模型</b><p>Qwen、Llama、Gemma、Phi、Mistral</p></div>
+<div class="item"><b>专门架构</b><p>gpt-oss、Qwen MoE、DeepSeek 蒸馏模型</p></div>
+<div class="item"><b>视觉语言</b><p>Qwen-VL、Llama Vision、Gemma 3</p></div>
+<div class="item"><b>语音任务</b><p>Whisper 识别；Orpheus / CSM 生成</p></div>
+<div class="item"><b>图像生成</b><p>FLUX、Qwen-Image 等；训练支持另查</p></div>
+<div class="item"><b>音视频生成</b><p>MiniMax H3：量化运行＋专用 LoRA</p></div>
+<div class="item"><b>向量模型</b><p>EmbeddingGemma 等领域检索适配</p></div>
+</div><p class="footnote">能下载 ≠ 能运行 ≠ 能训练 ≠ 每种训练方法都支持。量化目录不是全部训练能力的承诺。</p></section>
+<section id="map-04" class="card scenarios"><div class="card-head"><span class="number">04</span><h2>可使用场景</h2></div><div class="rows">
+<div class="item"><b>客服与流程</b><p>学习话术、术语和服务步骤。</p></div>
+<div class="item"><b>分类与抽取</b><p>工单标签、订单字段、结构化 JSON。</p></div>
+<div class="item"><b>代码任务</b><p>学习规范；用测试给可验证任务评分。</p></div>
+<div class="item"><b>领域适配</b><p>用语料继续预训练，再做任务微调。</p></div>
+<div class="item"><b>视觉与语音</b><p>票据问答、识别任务、语音风格。</p></div>
+<div class="item"><b>音视频风格</b><p>用对应素材尝试训练 H3 适配器。</p></div>
+<div class="item"><b>动态知识问答</b><p>先检索最新资料，按需叠加行为微调。</p></div>
+</div><p class="footnote">场景是基于机制的应用判断。先评估原模型，再验证微调是否改善具体任务。</p></section>
+<section class="card h3"><div class="h3-heading"><h2>MiniMax H3｜一个具体例子</h2><small>专用音视频训练路径 · 固定提交 f9718db</small></div><div class="h3-grid"><div><h3>运行现成能力</h3><p>加载基础权重、编码器与 VAE，生成视频和声音。<strong>运行与微调是两套成本。</strong></p></div><div><h3>微调音视频</h3><p>有有效音轨的视频＋文字描述 → 联合音视频 LoRA → 新适配器。当前固定 <strong>22 帧，约 0.92 秒</strong>；长片需切片对齐描述。</p></div><div><h3>资源与精度边界</h3><p>整流程资源参考约 <strong>80GB+</strong>，未本机实测。<strong>FP8 推理包不等于 FP8 可训练</strong>，当前训练配置有专门限制。</p></div></div></section>
+<section id="map-05" class="card values"><div class="card-head"><span class="number">05</span><h2>优点与实际价值</h2></div><div class="rows">
+<div class="item"><b>少显存</b><p>降低训练参数与中间结果的开销。</p></div>
+<div class="item"><b>快迭代</b><p>减少重复计算，更快比较训练方案。</p></div>
+<div class="item"><b>适配器复用</b><p>在兼容底座上保存不同任务的增量。</p></div>
+<div class="item"><b>本地掌控</b><p>在合适硬件上保留数据与运行控制。</p></div>
+<div class="item"><b>生态连接</b><p>衔接 PyTorch、Transformers、PEFT 和训练工具。</p></div>
+<div class="item"><b>交付价值</b><p>把通用模型变成可评估的任务组件。</p></div>
+</div><p class="footnote">效率改善依赖模型、GPU、精度、长度与软件版本；效率提高不等于任务效果自动提高。</p></section>
+<section id="map-06" class="card personal"><div class="card-head"><span class="number">06</span><h2>对你的意义</h2></div><p class="lead">结合本仓库的 GitHub 研究、网页原型与内容项目</p><div class="rows">
+<div class="item"><b>GitHub 研究</b><p>建立可复用的小模型实验与评估记录。</p></div>
+<div class="item"><b>网页原型</b><p>为应用提供可控的本地模型服务。</p></div>
+<div class="item"><b>内容制作</b><p>尝试统一文案结构、语音或视觉风格。</p></div>
+<div class="item"><b>数据积累</b><p>把你认可的输入输出整理为训练资产。</p></div>
+<div class="item"><b>投入顺序</b><p>模型接入与提示词 → RAG → 任务微调。</p></div>
+<div class="item"><b>首次实验</b><p>小模型＋单一任务＋独立测试集。</p></div>
+</div><div class="mini-case"><b>例如：</b>研究摘要结构或字段抽取。比较原模型与微调结果，检查事实、格式和原有能力；最新资料仍通过检索提供。</div></section>
+<section id="map-07" class="card limits"><div class="card-head"><span class="number">07</span><h2>容易混淆的边界</h2></div><ul>
+<li><strong>二次训练</strong>更新参数；<strong>二次开发</strong>编写接口、网页和业务流程。</li>
+<li>全参数微调仍可从旧权重开始，<strong>并不等于从零训练</strong>。</li>
+<li>上传文档不等于自动学会；知识检索通常不改权重。</li>
+<li>远程 API 不提供权重时，不能直接修改远程模型。</li>
+<li>量化文件体积不等于完整训练显存；工具和模型许可需分别核对。</li>
+</ul></section>
+<section id="map-08" class="card decision"><div class="card-head"><span class="number">08</span><h2>怎么判断是否值得用</h2></div><div class="rows">
+<div class="item"><b>只是调用现成能力</b><p>先加载与推理</p></div>
+<div class="item"><b>事实频繁变化</b><p>先检索 / 业务接口</p></div>
+<div class="item"><b>格式与行为反复不稳定</b><p>准备样例，尝试微调</p></div>
+<div class="item"><b>需要新模型的基础能力</b><p>单独设计从零训练工程</p></div>
+<div class="item"><b>缺少数据和评估</b><p>先补齐，再扩大训练</p></div>
+</div></section>
+</div><div class="last-workflow"><h3>一次有意义的微调，按这条顺序落地</h3><p>明确任务 → 原模型基线 → 数据清洗 → 训练 / 测试划分 → 小规模微调 → 对比退化 → 保存与接入</p></div>
+<footer class="footer"><p>来源：官方文档、模型目录、LoRA / QLoRA 论文与 H3 源码；完整链接见 010 研究网页。</p><p><code>unslothai/unsloth · f9718db</code></p><p>Core：Apache-2.0 · Studio 对应组件：AGPL-3.0 · 权重许可另核对。本图为研究整理；性能、微调效果与 H3 训练尚未本机实测。</p></footer>
+</main></body></html>

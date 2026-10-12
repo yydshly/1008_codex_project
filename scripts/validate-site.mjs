@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','013-aihot'], '发布允许名单包含 001–008 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','010-unsloth','013-aihot'], '发布允许名单包含 001–008、010 与 013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '010':'unsloth', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -289,3 +289,11 @@ assert.ok(ghosttrackGuide.equals(await readFile(path.join(ROOT,'projects/008-gho
 assert.ok(html.includes('src="./008-ghosttrack/assets/ghosttrack-overview.png"'));
 for(const file of ['map.html','map.js','map.css','understanding.md','research.md','notes.md','assets/ghosttrack-overview-content.md','assets/ghosttrack-overview.html'])await access(path.join(ghosttrackRoot,file));
 console.log('008 GhostTrack完整摘要、正文、既有原图、缩放阅读与下载聚合验证通过。');
+
+// 010 独立审计同样应用于复制后的统一发布产物。
+const { auditUnsloth } = await import('../projects/010-unsloth/web/scripts/audit.mjs');
+await auditUnsloth(path.join(site,'010-unsloth'));
+const unslothMetadata=readCatalog().projects.find(project=>project.id==='010');
+for(const item of unslothMetadata.summaryItems)assert.ok(html.includes(`<strong>${escapeIntroduction(item.title)}</strong>：${escapeIntroduction(item.text)}`),`010 总入口缺少摘要 ${item.title}`);
+assert.ok(html.includes('src="./010-unsloth/assets/unsloth-overview.png"'),'010 总入口使用已有完整引导图');
+assert.ok(html.includes('>unsloth</a>'),'010 来源链接使用原库名');

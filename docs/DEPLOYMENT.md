@@ -1,5 +1,19 @@
 # 多 Web 演示部署与记录
 
+<!-- UNSLOTH_PUBLICATION:START -->
+## Unsloth 完整理解与既有总览图发布（2026-10-12）
+
+010 是静态研究子项目，新增到明确发布允许名单，保留 001–008 与 013。Python 模型服务、GPU 训练和推理不部署到 GitHub Pages。
+
+独立构建：`npm run build --prefix projects/010-unsloth/web`；完整审计：`npm run check --prefix projects/010-unsloth/web`。统一构建使用 `npm run build:site`，产物在 `.cache/pages-site/010-unsloth/`；入口、map.html、publication.json、understanding.md、来源和验证记录均采用子路径资源。
+
+索引十二项摘要与图前六段介绍由 publication.mjs 对齐；网页十八章补全八模块、六机制、七类模型、六场景、六项价值、四条复用、三步实践与八项扩展。扩展为建议；微调属于训练，从随机初始化获得全新模型的通用入口尚未核实。H3 当前训练路径是加载已有权重的音视频 LoRA，数据、窗口、精度和资源条件分别说明。
+
+沿用既有引导图 assets/unsloth-overview.png，2400 × 5091，1,457,393 字节，SHA-256：`60cb16a2becaafa153668e0a585cac4a95fda470285dda55f438380c4921918f`。网页、统一产物和线上下载均需核对原图完整性。
+
+GitHub Actions 增加 010 的路径触发、独立安装和审计。统一验证保留全部原项目检查，同时验证 010 的索引一致、静态章节、图前介绍、链接、资源、下载与原图。实际部署成功并验证在线后，再登记 demo 与工作流证据。
+<!-- UNSLOTH_PUBLICATION:END -->
+
 <!-- GHOSTTRACK_PUBLICATION:START -->
 ## GhostTrack 完整理解与既有总览图发布（2026-10-12）
 

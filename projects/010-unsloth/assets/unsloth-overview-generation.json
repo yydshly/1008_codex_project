@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-09",
+  "method": "原创 HTML / CSS 排版，Playwright 1.62.1 + Microsoft Edge 导出 PNG",
+  "upstreamCommit": "f9718db128218f43b7e0b03604baa4a9a6633028",
+  "file": "unsloth-overview.png",
+  "width": 2400,
+  "height": 5091,
+  "bytes": 1457393,
+  "sha256": "60cb16a2becaafa153668e0a585cac4a95fda470285dda55f438380c4921918f",
+  "checks": {
+    "modules": 8,
+    "modelRows": 7,
+    "overflow": 0,
+    "errors": 0
+  },
+  "priorImagegenAttempt": {
+    "result": "failed",
+    "message": "image generation failed: network error: error sending request",
+    "prompt": "unsloth-overview-imagegen-attempt.txt",
+    "fallbackApiUsed": false
+  },
+  "modelTrainingExecuted": false,
+  "visualReview": {
+    "completed": true,
+    "findings": "完整实际图片已查看：中文、模型名称、公式、八模块、七类模型及 H3 限定条件清晰可读。"
+  }
+}

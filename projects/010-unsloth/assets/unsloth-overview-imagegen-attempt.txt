@@ -1,0 +1,117 @@
+Use case: infographic-diagram.
+Asset type: one comprehensive Chinese educational infographic, saved as the Unsloth research project's overview.
+Create ONE exceptionally crisp high-resolution portrait infographic, approximately 2400 × 3600 pixels, 2:3 ratio. This is a readable technical knowledge map, not a decorative illustration. Match the existing research page's calm cream/white background, deep forest-green headings, lime green accents, dark ink body text. Clean Chinese sans-serif typography, precise grid, subtle outlines, numbered modules and small schematic icons. Main title huge; body generously sized, readable at full resolution. All text must be typeset accurately in Simplified Chinese. Use diagrams, arrows, rows and parallel cards to organize the exact content below. Do not put quotation marks around the content. No watermark, no fake logos, no sloth mascot. Do not invent facts, performance guarantees, benchmark percentages or model support.
+
+Composition: top title and prominent scope clarification, then a full-width process diagram; below that two columns with the eight numbered content modules, balancing heights; a full-width H3 note between the model/scenario row and the value/personal row; bottom decision workflow and limitations/source footer. Keep substantial margins, clear reading order, and every requested section. This is dense but highly readable: prioritize text integrity over ornamental decoration. A single flat image, not photos of a poster.
+
+Exact title/subtitle:
+"Unsloth 能力全景图"
+"让已有模型，更适合你的任务"
+"模型训练与运行优化工具 · Core / Studio / Desktop"
+
+Prominent conceptual banner:
+"主要路径：加载已有模型 → 量化运行或微调 → 保存与部署"
+"微调也是训练：支持 LoRA、全参数微调、继续预训练与偏好 / 强化学习。"
+"从零造模型：本次未核实通用随机初始化的完整入口；H3 已确认的现成训练路径是微调。"
+
+Process diagram, five connected nodes:
+"基础模型＋任务数据" → "Unsloth 适配与优化" → "训练与评估" → "适配器 / 模型权重" → "接入你的应用"
+Annotation: "加载不学习新任务；量化改变数值表示；微调根据数据更新参数。"
+
+Module 01:
+"01｜能力是什么"
+"加载与推理：使用已有权重回答、生成内容"
+"量化与运行：压缩权重，匹配 GGUF / 低精度后端"
+"LoRA / QLoRA：训练少量增量，定制任务与风格"
+"全参数微调：从已有权重开始，更新全部或大部分参数"
+"继续预训练：用原始语料继续学习领域与语言"
+"DPO / GRPO：用偏好样例或奖励调整行为"
+"多模态与导出：按模型支持处理视觉、语音、图像与音视频"
+
+Module 02:
+"02｜底层原理有哪些"
+"低秩适配：W = W₀ + sBA；冻结基础参数、学习增量"
+"QLoRA：基础权重量化存储，适配器单独训练"
+"Triton＋定制反向：融合热点运算，减少临时张量和搬运"
+"检查点 / 分块 / 卸载：重算或分段处理，降低显存峰值"
+"Padding-free / Packing：减少填充位置，保留样本边界"
+"RL 资源复用：交替安排生成与更新，共享权重和缓存"
+Small math inset with clear labeled matrix diagram:
+"d = 4096，r = 16"
+"完整矩阵：d² = 16,777,216"
+"LoRA 增量：2dr = 131,072，约 0.78%"
+"这是单个矩阵的参数比例，不是整次训练显存比例。"
+
+Module 03:
+"03｜可适配哪些模型"
+"代表例子，具体版本与后端需逐项核对"
+"文本模型｜Qwen、Llama、Gemma、Phi、Mistral"
+"专门架构｜gpt-oss、Qwen MoE、DeepSeek 蒸馏模型"
+"视觉语言｜Qwen-VL、Llama Vision、Gemma 3"
+"语音任务｜Whisper 识别；Orpheus / CSM 生成"
+"图像生成｜FLUX、Qwen-Image 等；训练支持另查"
+"音视频生成｜MiniMax H3：量化运行＋专用 LoRA"
+"向量模型｜EmbeddingGemma 等领域检索适配"
+"能下载 ≠ 能运行 ≠ 能训练 ≠ 每种训练方法都支持"
+
+Module 04:
+"04｜可使用场景"
+"客服与流程：学习话术、术语、服务步骤"
+"分类与抽取：工单标签、订单字段、结构化 JSON"
+"代码任务：学习规范；用测试为可验证任务评分"
+"领域适配：用语料继续预训练，再做任务微调"
+"视觉与语音：票据问答、识别任务、语音风格"
+"音视频风格：用对应素材尝试训练 H3 适配器"
+"动态知识问答：先检索最新资料，按需叠加行为微调"
+
+Full-width H3 special box:
+"MiniMax H3｜一个具体例子"
+"运行：加载基础权重、编码器与 VAE → 生成视频和声音"
+"微调：有有效音轨的视频＋文字描述 → 联合音视频 LoRA → 新适配器"
+"当前源码：固定 22 帧，约 0.92 秒；较长视频需预先切片对齐描述。"
+"整流程资源参考约 80GB+，未本机实测；FP8 推理包不等于 FP8 可训练。"
+
+Module 05:
+"05｜优点与实际价值"
+"少显存：降低训练参数与中间结果的开销"
+"快迭代：减少重复计算，更快比较训练方案"
+"适配器复用：同一底座保存不同任务增量"
+"本地掌控：在合适硬件上保留数据与运行控制"
+"生态连接：衔接 PyTorch、Transformers、PEFT 与训练工具"
+"交付价值：把通用模型变成可评估的任务组件"
+"效率改善依赖模型、GPU、精度、长度与软件版本。"
+
+Module 06:
+"06｜对你的意义"
+"GitHub 研究：建立可复用的小模型实验与评估记录"
+"网页原型：为你的应用提供可控的本地模型服务"
+"内容制作：尝试统一文案结构、语音或视觉风格"
+"数据积累：把你认可的输入输出整理为训练资产"
+"投入顺序：先模型接入与提示词，再 RAG，再任务微调"
+"第一次实验：小模型＋单一任务＋独立测试集"
+"目标是提高具体任务表现；微调效果需要比较验证。"
+
+Module 07:
+"07｜容易混淆的边界"
+"二次训练：更新参数；二次开发：编写接口、网页与业务流程"
+"全参数微调仍可从旧权重开始，并不等于从零训练"
+"上传文档不等于自动学会；知识检索通常不改权重"
+"远程 API 不提供权重时，不能用它直接修改远程模型"
+"量化文件体积不等于完整训练显存，模型许可需另核对"
+
+Module 08:
+"08｜怎么判断是否值得用"
+"只是调用现成能力 → 先加载与推理"
+"事实频繁变化 → 先检索 / 业务接口"
+"输出格式与行为反复不稳定 → 准备样例，尝试微调"
+"需要新模型的基础能力 → 单独设计从零训练工程"
+"缺少高质量数据和评估 → 先补齐，再扩大训练"
+
+Bottom workflow:
+"明确任务 → 原模型基线 → 数据清洗 → 训练 / 测试划分 → 小规模微调 → 对比退化 → 保存与接入"
+Footer:
+"资料基线：2026-10-09 · unslothai/unsloth · f9718db"
+"来源：官方文档、模型目录、LoRA / QLoRA 论文与 H3 源码；完整链接见 010 研究网页。"
+"本图为研究整理；模型性能、微调效果与 H3 训练尚未本机实测。"
+
+Mandatory accuracy: do NOT print “不支持训练模型” or “只能加载和微调” as a true assertion. Make the clarification that fine-tuning is itself training very prominent. Every section above must remain represented; avoid repeating or dropping numbered headings.
