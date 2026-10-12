@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-12T12:43:10.915Z",
+  "base": "https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/",
+  "passed": true,
+  "checks": [
+    {
+      "name": "线上/本地引导图 SHA、尺寸与字节完整保留",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "公开总入口含完整十二摘要及既有引导图",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "首页六段完整引导在图前展示",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "35 风格与九种解说资料完整",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "原版橡皮管深链接实际运行",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "桌面首页没有横向溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "从首页进入原图阅读器",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "十二摘要九模块十七库四复用八扩展均在静态 HTML",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "原始七部分解释保留",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "默认原图适宽",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "按钮放大到150%",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "键盘缩放到200%",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "放大后仅图像容器滚动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "键盘复位",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "真实下载 PNG 字节一致",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "模块源码链接固定研究提交",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "场景作品可解码，时长30秒与1080p",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "章节跳转真实视频时间",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "七部作品可直接下载",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "新增文化导览可进入实际探索",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "键盘行走与附近物品发现实际生效",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px 阅读完整文字无页面横向溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px 放大仅图内横向滚动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "390px 首页无横向溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "320px 阅读完整文字无页面横向溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "320px 放大仅图内横向滚动",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "320px 首页无横向溢出",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无脚本可读摘要、模块与扩展",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "无脚本仍可展开能力依据",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "真实流程无脚本错误和资源失败",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "errors": [],
+  "failures": []
+}

@@ -1,5 +1,14 @@
 # 来源与实验代码
 
+本次完整整理与发布：`update-publication.mjs` 从网页同源内容同步根索引、项目研究文档与归属 012 的部署记录；`verify-publication.mjs` 可核验本地或公开子路径，检查原图、静态资源、真实浏览器流程和视频加载。公开核验通过后才登记 `demo`；记录保存为 `publication-verification.json`、`public-http-checks.json` 与 `public-browser-checks.json`。旧验证结果按原始研究日期保留。
+
+~~~powershell
+node src/verify-publication.mjs --base https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/ --run <实际部署运行ID> --commit <实际部署提交>
+node src/update-publication.mjs
+~~~
+
+浏览器复核需要本机 Playwright，可用环境变量 `PLAYWRIGHT_MODULE` 指定模块位置；这些工具不是网页的运行依赖。`.gitattributes` 保持固定上游副本的原始字节，避免跨系统换行影响来源哈希。
+
 上游：https://github.com/alchaincyf/huashu-art-motion
 
 固定提交：`57d67608ab458f57d9b153b1a2831b921e22498b`。

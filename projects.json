@@ -1009,7 +1009,7 @@
       "cover": "projects/012-huashu-art-motion/assets/understanding/overview.png",
       "coverAlt": "Huashu 完整能力与价值引导图：原版艺术效果、Skill 制作链路、能力、风格、解说、场景、模型对比与扩展方向",
       "coverCaption": "沿用 2026-10-09 生成的完整 3200×8524 PNG，2026-10-12 整理发布，原图字节与 SHA-256 保持不变。图含固定上游代码静帧与作者解说研究截图；网页补全模块、机制、复用和八条扩展路线，事实、独立制作与建议分别说明。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/",
       "summaryItems": [
         {
           "title": "核心定位",

@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-12T12:43:10.916Z",
+  "base": "https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/",
+  "passed": true,
+  "checks": [
+    {
+      "file": "data/publication.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "engine/lib/fonts/AlfaSlabOne-400.woff",
+      "status": 200,
+      "type": "font/woff",
+      "passed": true
+    },
+    {
+      "file": "engine/lib/fonts/LICENSES.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "assets/production/product.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "assets/production/history.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "data/research.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "engine/index.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "assets/production/emotion.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "overview/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "assets/production/travel.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "LICENSE.upstream.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "data/understanding.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "source-manifest.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "engine/engine.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "assets/production/interactive.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "notes.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "scenarios/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "research.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "engine/lib/fonts/OFL.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "assets/production/CREDITS.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "production-research.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8",
+      "passed": true
+    },
+    {
+      "file": "assets/production/life.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "assets/production/data.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "passed": true
+    },
+    {
+      "file": "assets/production/travel.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/17165528",
+      "passed": true
+    },
+    {
+      "file": "assets/production/life.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/17057499",
+      "passed": true
+    },
+    {
+      "file": "assets/production/history.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/15010052",
+      "passed": true
+    },
+    {
+      "file": "assets/production/product.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/5192526",
+      "passed": true
+    },
+    {
+      "file": "assets/production/data.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/2643922",
+      "passed": true
+    },
+    {
+      "file": "assets/production/emotion.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/22044749",
+      "passed": true
+    },
+    {
+      "file": "assets/production/interactive.mp4",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/5679942",
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/009-cove/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/010-unsloth/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/011-aitoearn/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "file": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200,
+      "passed": true
+    }
+  ]
+}

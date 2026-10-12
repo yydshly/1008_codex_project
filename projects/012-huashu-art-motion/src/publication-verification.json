@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-12T12:43:10.916Z",
+  "base": "https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/",
+  "passed": true,
+  "guide": {
+    "file": "assets/understanding/overview.png",
+    "width": 3200,
+    "height": 8524,
+    "bytes": 4210861,
+    "sha256": "36c93996b411490a1562e0601fe5aa15b7d02617d6855dbd42a88ed2c42f3c45"
+  },
+  "browserChecks": 30,
+  "httpChecks": 44,
+  "runId": "38249747137",
+  "runUrl": "https://github.com/yydshly/1008_codex_project/actions/runs/38249747137",
+  "commit": "c4f18bdb35ff54f836c1fef7d8a07ffaddd45ea6",
+  "scope": "静态研究、原图、真实引擎、视频解码、浏览器交互与既有入口；不代表外部模型或成片审美验收"
+}

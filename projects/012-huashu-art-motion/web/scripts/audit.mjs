@@ -41,6 +41,13 @@ export async function audit(dist=path.join(web,'dist')){
  async function syntax(dir){for(const f of await readdir(dir,{withFileTypes:true})){if(f.isDirectory())await syntax(path.join(dir,f.name));else if(/\.(?:m?js)$/.test(f.name)){const result=spawnSync(process.execPath,['--check',path.join(dir,f.name)],{encoding:'utf8',windowsHide:true});assert.equal(result.status,0,result.stderr);}}}
  await syntax(dist);
  for(const f of ['research.md','notes.md','production-research.md','LICENSE.upstream.txt','source-manifest.json','engine/lib/fonts/LICENSES.md','engine/lib/fonts/OFL.txt'])await access(path.join(dist,f));
+ if(catalog.demo){
+  for(const f of ['publication-verification.json','public-http-checks.json','public-browser-checks.json']){
+   const record=JSON.parse(await readFile(path.join(dist,'data',f),'utf8'));
+   assert.equal(record.base,catalog.demo);assert.equal(record.passed,true);
+   if(record.checks)assert.ok(record.checks.length&&record.checks.every(c=>c.passed),'公开核验记录有失败项 '+f);
+  }
+ }
  return {passed:true,guide,styles:35,grammars:9,modules:9,libraries:17,reuse:4,extensions:8,films:7,baseline:publication.meta.commit};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){console.log(JSON.stringify(await audit(),null,2));}

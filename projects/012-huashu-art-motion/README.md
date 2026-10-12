@@ -3,7 +3,7 @@
 <!-- HUASHU_PUBLICATION:START -->
 [完整研究网页](https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/) · [高清图与完整理解](https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/overview/) · [七部新增作品](https://yydshly.github.io/1008_codex_project/012-huashu-art-motion/scenarios/) · [原图](assets/understanding/overview.png)
 
-本次已接入统一构建；公开 demo 仅在实际部署并核验后登记。
+公开网页已实际核验；30 项真实浏览器检查、44 项页面与媒体检查通过，既有项目入口正常，原图哈希一致。部署运行：[38249747137](https://github.com/yydshly/1008_codex_project/actions/runs/38249747137)。详见 [发布记录](src/publication-verification.json)、[HTTP 明细](src/public-http-checks.json)、[浏览器明细](src/public-browser-checks.json)。
 
 ## 完整理解与复用路线（2026-10-12）
 
