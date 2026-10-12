@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','013-aihot'], '发布允许名单包含 001、002、003、004、005 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','013-aihot'], '发布允许名单包含 001、002、003、004、005、006 与 013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -237,3 +237,21 @@ console.log(JSON.stringify({ entrance: 'index.html', sections: sections.length, 
     sources: aihotSources.length, summaryItems: aihotResearch.summaryItems.length, originalGuidePreserved: true },
   pascal: { researchSections: 8, summaryItems: pascalMetadata.summaryItems.length, originalGuidePreserved: true,
     editorPreserved: true, verifiedLibraryAssets: manifest.assets.length } }));
+
+// 006: 静态完整理解、资源和生成原图是本次发布的核心契约。
+const easelRoot=path.join(site,'006-easel');
+const easelPage=await readFile(path.join(easelRoot,'index.html'),'utf8');
+const easelPublication=JSON.parse(await readFile(path.join(easelRoot,'publication.json'),'utf8'));
+assert.equal(easelPublication.summaryItems.length,12);
+assert.equal(easelPublication.overviewItems.length,6);
+assert.equal(easelPublication.flow.length,7);
+assert.equal(easelPublication.extensions.length,8);
+assert.equal(easelPublication.meta.commit,'fb80ae6dd6fc26f5553efcb293ee6d93ef253f02');
+assert.ok(easelPage.includes('data-publication-introduction')&&easelPage.includes('data-system-module')&&easelPage.includes('data-extension'));
+const easelMapBytes=await readFile(path.join(easelRoot,'capability-map.png'));
+assert.equal(createHash('sha256').update(easelMapBytes).digest('hex'),'41a28113c166c901143ac01abedb05e6ac7a72f5d4b3add507510d615fe35152');
+const easelCapabilities=JSON.parse(await readFile(path.join(easelRoot,'capabilities.json'),'utf8'));
+assert.equal(easelCapabilities.items.length,114);
+for(const resource of ['app.js','research-view.mjs','style.css','publication.css','facts.json','verification.json','publication.json','capability-map-prompt.md','LICENSE.upstream.txt','research.md'])await access(path.join(easelRoot,resource));
+assert.ok(html.includes('>Easel</a>'),'006来源链接应使用原库名称');
+console.log('006 Easel总入口、完整理解、114技能与原图聚合验证通过。');

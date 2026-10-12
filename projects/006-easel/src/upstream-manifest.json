@@ -1,0 +1,3337 @@
+{
+  "repository": "https://github.com/ZJU-REAL/Easel",
+  "commit": "fb80ae6dd6fc26f5553efcb293ee6d93ef253f02",
+  "date": "2026-10-09",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 26690,
+      "sha256": "938ffc201dbc7f217ee84db6e1b35dab3a8a498a1aace9122ca7e886b5311b5c"
+    },
+    {
+      "path": "WECHAT_OA_INTEGRATION.md",
+      "bytes": 7506,
+      "sha256": "94e3370f1864c2fd8eb3c3ef93a9953aa108e4251380f67ae81ff6a0869f5897"
+    },
+    {
+      "path": "docs/ACKNOWLEDGMENTS.md",
+      "bytes": 10681,
+      "sha256": "560de0e7f0bd57e03e76ccbb58b07abe2225513b3bfb3947ad4c7ea817a83e51"
+    },
+    {
+      "path": "docs/SKILL-SPEC.md",
+      "bytes": 8642,
+      "sha256": "d4e61de7073ab69976b3e76d94aeb2c67d95f5f5559fdbe6f1b022460fc67caf"
+    },
+    {
+      "path": "docs/known-issues.md",
+      "bytes": 3480,
+      "sha256": "5fda10495e9b9ada0e5e49c9da56ef56b74ed92d4ff5a2698394370e8eec0270"
+    },
+    {
+      "path": "docs/known-issues_EN.md",
+      "bytes": 2523,
+      "sha256": "782a5f99903987ea34d6c8c282b58321fad3abeb8ada8340e4f1a230c991982f"
+    },
+    {
+      "path": "docs/prompt-stack.md",
+      "bytes": 3412,
+      "sha256": "9e9fd2242fd6d46f817036c6aaab2ae8a75dac081a35a090e4778e4a27b84c9a"
+    },
+    {
+      "path": "docs/skill-function-mapping.md",
+      "bytes": 24646,
+      "sha256": "241dabe314d81ed53ec3c03fd8eec5f8fd7c0f3b6b354eded6acc65de76c19db"
+    },
+    {
+      "path": "easel/__init__.py",
+      "bytes": 74,
+      "sha256": "f32ee53b4ea03b9c1f7feb26b275fc4b0510223be027ebfccb9de0a097761a6a"
+    },
+    {
+      "path": "easel/__main__.py",
+      "bytes": 114,
+      "sha256": "bba321e3d320fb60018beb5066b4159e67feb2a89d77c12dfb7e4f199a0c0414"
+    },
+    {
+      "path": "easel/cli.py",
+      "bytes": 7721,
+      "sha256": "b2678d8171b95e277e6ab1d9793eda75986bda8a61135f0e473644c3dcb0e843"
+    },
+    {
+      "path": "easel/commands/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "easel/commands/doctor.py",
+      "bytes": 15045,
+      "sha256": "508e4314efb32eeca3b1b912685f2aaa6022b8f582b56c8c3049964e82e3db46"
+    },
+    {
+      "path": "easel/commands/gateway.py",
+      "bytes": 670,
+      "sha256": "0269383effe3642c40a6d5f2542f49e8bc3e052dc2b3bfcf2cf4c84fdd42b87c"
+    },
+    {
+      "path": "easel/commands/ping.py",
+      "bytes": 2768,
+      "sha256": "c26f5069ed0cd42f1185591a1c61d96dac484e6b2ee557b4ae1a835aa7ddaafe"
+    },
+    {
+      "path": "easel/commands/skill.py",
+      "bytes": 6308,
+      "sha256": "f845b007a10d29bc936f7c056e3b9d9210b7a06d1a82a4ca28b548a49d68af62"
+    },
+    {
+      "path": "easel/gateway_endpoint.py",
+      "bytes": 7303,
+      "sha256": "6d250f5d4f50535f7cabe05151e2ca5d2def24f4e3cacef0d2d30c5667214eda"
+    },
+    {
+      "path": "easel/gateway_questions.py",
+      "bytes": 15272,
+      "sha256": "7e8d67c4e81b19a060467ee4032125af45400192b9c2cdd900d9245eed1f3d79"
+    },
+    {
+      "path": "easel/local_agents.py",
+      "bytes": 9442,
+      "sha256": "8cfa5c716f16e1ec3fcbe563ba98ed42b99811f3039943e3dff7d405aa090971"
+    },
+    {
+      "path": "easel/openclaw_cmd.py",
+      "bytes": 5564,
+      "sha256": "8f68a91520a6fb0b5781f3de9aff9bbe88cc4475055f4c4013933551702fa4f9"
+    },
+    {
+      "path": "easel/openclaw_workspace.py",
+      "bytes": 7109,
+      "sha256": "2096778f22d375965b33df77d4eb29e87892d5e7463f28ba84210928b9570220"
+    },
+    {
+      "path": "easel/persona.py",
+      "bytes": 4342,
+      "sha256": "bb8f43f6e478d440acb67bc69ee7fa1d3f4e1353e18385071eba4771fc4ae1b0"
+    },
+    {
+      "path": "easel/timeouts.py",
+      "bytes": 785,
+      "sha256": "ad7e10da961ab3cd5cd0b75039ba0e9d9a3f6af41d69e7de56e4a0da02f8da5d"
+    },
+    {
+      "path": "openclaw/openclaw.json5",
+      "bytes": 1215,
+      "sha256": "cd308a908ab51107eecda66d174e56af221dda149ec17347e37158de257ae05f"
+    },
+    {
+      "path": "openclaw/sync.sh",
+      "bytes": 7663,
+      "sha256": "9ea53cbc031271dc788295466720edf0c2cfec0af8fd549ecd62e640ebc7232a"
+    },
+    {
+      "path": "openclaw/workspace/AGENTS.md",
+      "bytes": 9595,
+      "sha256": "a4940908c413fd56d3c5fc0de65ed8df53e6457cbb4a5efd19d71bcfb8093911"
+    },
+    {
+      "path": "openclaw/workspace/SOUL.md",
+      "bytes": 2669,
+      "sha256": "318b09683c03d9686d8d6c1af18cae0183d38a095bda6075fd2a878b997d34b5"
+    },
+    {
+      "path": "profiles/_template/README.md",
+      "bytes": 3096,
+      "sha256": "f3a39afe68111a0f311ac5232df6e7dc418dc9e973298163fd46510aaf2f909a"
+    },
+    {
+      "path": "profiles/_template/audience.md",
+      "bytes": 280,
+      "sha256": "abdf18686b51935f751a1147265005673d7245420f47cd34858316def90765da"
+    },
+    {
+      "path": "profiles/_template/identity.md",
+      "bytes": 216,
+      "sha256": "0305695ae563feadf579b6d4f374d987a9d71c62d13648474114878fbe35bf04"
+    },
+    {
+      "path": "profiles/_template/memory.md",
+      "bytes": 593,
+      "sha256": "3b74fc96303f970b785755e698e33aec8b43b7a5016637f9edc7207980fdbc83"
+    },
+    {
+      "path": "profiles/_template/platforms.md",
+      "bytes": 698,
+      "sha256": "6fd2c502ec4be9f0c6a9ceea43951422e7da782945c2a1d0393bea722a881bf6"
+    },
+    {
+      "path": "profiles/_template/preferences.md",
+      "bytes": 249,
+      "sha256": "e4f5259fc847c2723ae58f065a9011da0420fa89ea4bc1963b0e6e413fb17e44"
+    },
+    {
+      "path": "profiles/_template/style.md",
+      "bytes": 495,
+      "sha256": "dddd6b12a9029824382ef73a12565ebf47e7301d31a649d7a514e950c81fdd75"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1456,
+      "sha256": "d12506f4b0ac6a874707a121d6d68cb9f61aa0a93b8ebafbc819671fcd9f063e"
+    },
+    {
+      "path": "skills/openclaw/ai-image-gen/EASEL-META.md",
+      "bytes": 2123,
+      "sha256": "b71b59dda1bcb4b90e1e2cdbfa973c94f475f9dd5ca254deebb6bf6c855ca6b9"
+    },
+    {
+      "path": "skills/openclaw/ai-image-gen/SKILL.md",
+      "bytes": 5164,
+      "sha256": "707bdfae68d1d6ed0978e6f8257c082f85adb51839173881b56c1dbaf308810b"
+    },
+    {
+      "path": "skills/openclaw/ai-music/EASEL-META.md",
+      "bytes": 1220,
+      "sha256": "c3504e928029e2467c24b76c0998ab7e76bdc02b5fddec3345075f8cfa649b52"
+    },
+    {
+      "path": "skills/openclaw/ai-music/SKILL.md",
+      "bytes": 5432,
+      "sha256": "8d0968aeaa3fcf836a2b48895d3c0d0c0b1ac6ac9420ee293e4f264d9f52e571"
+    },
+    {
+      "path": "skills/openclaw/ai-video-gen/EASEL-META.md",
+      "bytes": 1246,
+      "sha256": "1207f5530463af4a895dc1e44fb2a80b220d9ca249ca39f00a83b8ee48c6de46"
+    },
+    {
+      "path": "skills/openclaw/ai-video-gen/SKILL.md",
+      "bytes": 5523,
+      "sha256": "a0922e47099430022ca9c6376379281714bf330a9388908dad8977a94cbaa6f7"
+    },
+    {
+      "path": "skills/openclaw/asset-manager/EASEL-META.md",
+      "bytes": 1476,
+      "sha256": "90127186ceec644a79c50755749481196d2f80502731c68860b56ceb1c416d9c"
+    },
+    {
+      "path": "skills/openclaw/asset-manager/SKILL.md",
+      "bytes": 5822,
+      "sha256": "48978ff5c6f5c8908b16149376084d8c04fa2a8c508d5334339015017b972c05"
+    },
+    {
+      "path": "skills/openclaw/asset-manager/scripts/assets.py",
+      "bytes": 17859,
+      "sha256": "33512eafa3896624b1a5cc57a39264c49e6577975798eaaabd1a8d48f8d19fc1"
+    },
+    {
+      "path": "skills/openclaw/audio-denoise/EASEL-META.md",
+      "bytes": 710,
+      "sha256": "e2a30654fb069bb3ccef5b786735fe191ed7a3bbf12caa8b7003bcf6f99d0336"
+    },
+    {
+      "path": "skills/openclaw/audio-denoise/SKILL.md",
+      "bytes": 4840,
+      "sha256": "97b79956fc00f9c3cd0058e5aa2af455c9ede144efe3d4270f61ab9d036078c2"
+    },
+    {
+      "path": "skills/openclaw/audio-editing/EASEL-META.md",
+      "bytes": 568,
+      "sha256": "750174158a964369a204daf1ef1955ebdf86872d7d362ec9fde052a8a0deb26e"
+    },
+    {
+      "path": "skills/openclaw/audio-editing/SKILL.md",
+      "bytes": 4456,
+      "sha256": "96869103fe5d1835d79a7a43c49ccecc3c419dbe3473399e3b11c729161a12fa"
+    },
+    {
+      "path": "skills/openclaw/audio-mix/SKILL.md",
+      "bytes": 3299,
+      "sha256": "f4a017f4c6ca0142144f9227f4e8e38f526eb0d1caae2ae34ff372f081baf03d"
+    },
+    {
+      "path": "skills/openclaw/audio-visualizer/SKILL.md",
+      "bytes": 3756,
+      "sha256": "d8d007d2de8c43eb8dcbe842b50912917dcc8018204f9838ed9bed3ff1a71df7"
+    },
+    {
+      "path": "skills/openclaw/auto-short-video/EASEL-META.md",
+      "bytes": 1261,
+      "sha256": "040f32c9dbfd63d79931ef7ed51e14deb192083ca7c6a86c596ea11301b478d9"
+    },
+    {
+      "path": "skills/openclaw/auto-short-video/SKILL.md",
+      "bytes": 5098,
+      "sha256": "b5d4b4dd62d9f0de1285885622b31344ebbee327199db593f100f92eaf220e1f"
+    },
+    {
+      "path": "skills/openclaw/auto-short-video/scripts/assemble.py",
+      "bytes": 34299,
+      "sha256": "08359a03f4fd40101aef7dfc8b7f58183d735827756815e7b3d2f63d0087470b"
+    },
+    {
+      "path": "skills/openclaw/auto-subtitle/EASEL-META.md",
+      "bytes": 738,
+      "sha256": "64a8626df00ab688c950951b098cff60bd58978496bec37b57084f3e00de026b"
+    },
+    {
+      "path": "skills/openclaw/auto-subtitle/SKILL.md",
+      "bytes": 5155,
+      "sha256": "e718686f62effe30740d500f587fd950eea11ecaedb025288e54dce55d1c348f"
+    },
+    {
+      "path": "skills/openclaw/batch-process/SKILL.md",
+      "bytes": 3332,
+      "sha256": "86e85cdbf537235c9389efec85c5dff65778b6dd98b5a47c138e421643137c6f"
+    },
+    {
+      "path": "skills/openclaw/beat-sync-video/SKILL.md",
+      "bytes": 3721,
+      "sha256": "5b2fcc29de48f1fd724e4d8dd39351d52fa0e062f39024241e18cc5327129a5f"
+    },
+    {
+      "path": "skills/openclaw/card-design/EASEL-META.md",
+      "bytes": 1781,
+      "sha256": "6935e57d6f70300f7acc4298cbd6682af77cf34127fe41f8b2206645530021f4"
+    },
+    {
+      "path": "skills/openclaw/card-design/SKILL.md",
+      "bytes": 4969,
+      "sha256": "d6a15e78dcdec135549e6985e69298e202bf9390f4aaf80bf7e6cdfd3aa5bf4d"
+    },
+    {
+      "path": "skills/openclaw/card-design/references/anti-ai-slop.md",
+      "bytes": 3442,
+      "sha256": "1f7812a50a87d3cf440b76d894e66eae48da6de7c6543a174a3fe5db1e1d60ba"
+    },
+    {
+      "path": "skills/openclaw/card-design/references/card-recipes.md",
+      "bytes": 4108,
+      "sha256": "d999552eca32f12fe7d9093bcbf94fa6a261d7b3923fcb79d783cb3708015747"
+    },
+    {
+      "path": "skills/openclaw/card-design/references/layout-laws.md",
+      "bytes": 3490,
+      "sha256": "3e17ce36fa072c4d67df9f784eecf2f65064f34f414f50cf4c7bb2a96ac6cec9"
+    },
+    {
+      "path": "skills/openclaw/card-design/references/palettes.md",
+      "bytes": 3063,
+      "sha256": "9669cb74ab5d3cb7e769dde67329bf0b6fec7505d0fb4082c7863564feb350a6"
+    },
+    {
+      "path": "skills/openclaw/card-design/references/styles.md",
+      "bytes": 8019,
+      "sha256": "54f5c037f4d008fe8eea95bd99bf78c0ea5b7cf33510f515a2e3385647c6469c"
+    },
+    {
+      "path": "skills/openclaw/card-design/references/typography.md",
+      "bytes": 2544,
+      "sha256": "b6bfa2650ee4bda18e70d43be5f1935785099b8f18721eefb7ed17717f25ba1b"
+    },
+    {
+      "path": "skills/openclaw/card-design/scripts/card_audit.py",
+      "bytes": 8901,
+      "sha256": "7c80025120cfce0e41e1645717d0e56a961f858981aaf6f982332b231b524ccb"
+    },
+    {
+      "path": "skills/openclaw/card-quote/EASEL-META.md",
+      "bytes": 617,
+      "sha256": "bf2cbaaacc3cd2152ac0cabb6a4471f2569421bdbbc17f159a601cfa577be8be"
+    },
+    {
+      "path": "skills/openclaw/card-quote/SKILL.md",
+      "bytes": 3241,
+      "sha256": "0d251a308c285a611c8f0cae567d4b0a40ed7a8e2337570351703df176e76cde"
+    },
+    {
+      "path": "skills/openclaw/card-quote/example.md",
+      "bytes": 119,
+      "sha256": "b0050e4b74eb94849db705418e630c41f5d259d1ca03002677cff94644ed9b10"
+    },
+    {
+      "path": "skills/openclaw/card-xiaohongshu/EASEL-META.md",
+      "bytes": 378,
+      "sha256": "6e93969e1bb348053781a94f2f66db8cd7a512555c8d5f9300c9e4894714eeb5"
+    },
+    {
+      "path": "skills/openclaw/card-xiaohongshu/SKILL.md",
+      "bytes": 5148,
+      "sha256": "331d17f7f2aa0e8b2878266399b3e605938ec98d2070afcf38a246167fee27d3"
+    },
+    {
+      "path": "skills/openclaw/card-xiaohongshu/example.md",
+      "bytes": 945,
+      "sha256": "cdb8a511a5f45f1804834fd9ad799513b7ff5442eea1af62a6a2fbf445381a70"
+    },
+    {
+      "path": "skills/openclaw/chart-visualization/EASEL-META.md",
+      "bytes": 1026,
+      "sha256": "7fe90d18d727575817234bc06741464793d8488436e9046ca4646cb6543978bb"
+    },
+    {
+      "path": "skills/openclaw/chart-visualization/SKILL.md",
+      "bytes": 6048,
+      "sha256": "24f7e38128ee58aedf66bbbeab406fb0409a32bd89add15b0907d44ecf210c5e"
+    },
+    {
+      "path": "skills/openclaw/clipify/EASEL-META.md",
+      "bytes": 623,
+      "sha256": "74302e0ff7ad0a5351e0b52e849b6b3dff8a4ee74f46590e6724c2b50d049d37"
+    },
+    {
+      "path": "skills/openclaw/clipify/SKILL.md",
+      "bytes": 9147,
+      "sha256": "690ee973cac903d7a17c24966acd25997f346434a22c6563759104f83d7f96bd"
+    },
+    {
+      "path": "skills/openclaw/clipify/scripts/analyze.py",
+      "bytes": 2236,
+      "sha256": "ab7cb93c75f6acc76d16366388631b45e026681fec4a47203e4059cfec80839d"
+    },
+    {
+      "path": "skills/openclaw/clipify/scripts/audio_align.py",
+      "bytes": 951,
+      "sha256": "993bda6388817963391e0220b8b3159be418bb58ff5be76b5cafaed588c1b1ef"
+    },
+    {
+      "path": "skills/openclaw/clipify/scripts/build_ass.py",
+      "bytes": 2699,
+      "sha256": "c3b3f0e28313c605af9f2298df4c775994d4f6df0dfb114e255a8aee98bd9cf2"
+    },
+    {
+      "path": "skills/openclaw/clipify/scripts/build_pan.py",
+      "bytes": 524,
+      "sha256": "9aa0b1649b26907dbd2359c72c1abb363df2787bee9c72a909db02727269bb0a"
+    },
+    {
+      "path": "skills/openclaw/comparison-card/EASEL-META.md",
+      "bytes": 920,
+      "sha256": "3d27039eaaa24a10230898f311c89e4673295089f500242acf337ef7885f429f"
+    },
+    {
+      "path": "skills/openclaw/comparison-card/SKILL.md",
+      "bytes": 4893,
+      "sha256": "2e007b6f3573acbb013d04beacb95672baf7d0ab8a324b70e38cb0b5d039b0aa"
+    },
+    {
+      "path": "skills/openclaw/copywriting/EASEL-META.md",
+      "bytes": 1825,
+      "sha256": "c3ef9933d2cb53da7549aa3464f2464d3e6f985503575e0a50e1e2597ea1d037"
+    },
+    {
+      "path": "skills/openclaw/copywriting/SKILL.md",
+      "bytes": 6840,
+      "sha256": "603bd2e71cdf82535ff425808d4397641c038094861a1eb509c06916dc63496e"
+    },
+    {
+      "path": "skills/openclaw/copywriting/references/copy-frameworks.md",
+      "bytes": 3697,
+      "sha256": "2ba2958487abbb9fe146b626212574ffb67d3df7997e6a1ad3e31073b91f9218"
+    },
+    {
+      "path": "skills/openclaw/copywriting/references/natural-transitions.md",
+      "bytes": 2594,
+      "sha256": "ee17c2960c06011d163183c4c6682608b20a2b4ef299573797af386c9260768a"
+    },
+    {
+      "path": "skills/openclaw/copywriting/references/writing-style-rules.md",
+      "bytes": 1595,
+      "sha256": "24d132b2eca3257ce9ece07ea10cf270bd1e4d9feb763020ae7af57dd3c5813b"
+    },
+    {
+      "path": "skills/openclaw/data-report/EASEL-META.md",
+      "bytes": 1530,
+      "sha256": "a3e76416f5730c17d7fa09328d9facd293eb2daa015f558320ca83cbda69395f"
+    },
+    {
+      "path": "skills/openclaw/data-report/SKILL.md",
+      "bytes": 3498,
+      "sha256": "56f511a83c6e114b19fa3027f43a3bbad419acb440ebbaac32e56f03f4a3ad74"
+    },
+    {
+      "path": "skills/openclaw/data-report/scripts/report.py",
+      "bytes": 22250,
+      "sha256": "693cde2e23f072fc4d24a6e4802fee028f2f8724119bae2f33259a1bf98d0490"
+    },
+    {
+      "path": "skills/openclaw/doc-convert/SKILL.md",
+      "bytes": 2131,
+      "sha256": "39aa44770c79e736b0d5c297df9ee85e6b5509f87d04b7c110c1000177ddafef"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/EASEL-META.md",
+      "bytes": 1533,
+      "sha256": "f8bbe1ccaeca96d5e1f94ea8a630ca4b3c31db6176845b16bd35d50fa1e1be04"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/SKILL.md",
+      "bytes": 7690,
+      "sha256": "e1e3c6acd890fb447b04c2e8d6d835072cf36c28d3d83213ecf423a19e3c5874"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/references/campaign-style-lock.md",
+      "bytes": 2735,
+      "sha256": "9a3edf2b32a0179e3c838939873b047ad51c07ab0d3392f6a3265d0e28debae4"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/references/image-gen-rules.md",
+      "bytes": 5393,
+      "sha256": "3fbf423977519abb59dedbd8a150e11a869fcd74bb7f101eb8decefa3f6e0429"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/references/pdp-sequences.md",
+      "bytes": 12113,
+      "sha256": "2addc541d8d4256032d475e23852f1d0743d0eebdabc7ef7e7696c0bf0c33a5b"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/references/templates.md",
+      "bytes": 2702,
+      "sha256": "9c2312602a39929696c4c6e9785bf70e80d7c3f899d94fe85dab1248f909cd9e"
+    },
+    {
+      "path": "skills/openclaw/ecom-details-image/scripts/generate_image.py",
+      "bytes": 18698,
+      "sha256": "8c2e8b0abce66b45bd473fac60635649486ef80a63f137d5249b168e5a6daf5b"
+    },
+    {
+      "path": "skills/openclaw/green-screen/SKILL.md",
+      "bytes": 3267,
+      "sha256": "516f15c58eefa9e398ee972bd00b2f1e37cb9b5c5309bb427cbab3f47764d785"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/CONTRIBUTING.md",
+      "bytes": 2082,
+      "sha256": "b3e68fac545a3e186e8e3642501967296944792c91a679fefcba9a1e0610a620"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/EASEL-META.md",
+      "bytes": 1085,
+      "sha256": "1062e097cfbb213d8f7ee8727cdaaa649b6f90cfa1c192c5868eadb1c8864493"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/LICENSE",
+      "bytes": 34992,
+      "sha256": "50a026dd82963794599f540477cd913345a42eb1028c53c1b53f772abec4c191"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/README.en.md",
+      "bytes": 15943,
+      "sha256": "10f3398b97738daa1baea052fcaf52c3083691f2502d8949e8376fc7eaa7fe63"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/README.md",
+      "bytes": 20234,
+      "sha256": "0bbc4d1e49c7d97729997e633e0528fbb8d628abe4d8d9de476a255b3559ab45"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/SKILL.md",
+      "bytes": 18232,
+      "sha256": "a9fdf8177fbb6829c8e3a145c87c68615b3b1e3cd4a9d3e618f3c88f6822f7c7"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-amber-orange.md",
+      "bytes": 22560,
+      "sha256": "71bc790a7ad68eb7ffc0bea737cdab4deb2703c69ebec2d9eed8d97a63de216e"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-caramel-brown.md",
+      "bytes": 23700,
+      "sha256": "871e5720f5d6b53c9d25ac4e83d9b4019b5b53da46ab60cf658ac8bec8158a58"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-card-notes.md",
+      "bytes": 34743,
+      "sha256": "a30bec1f43df5bb781efb91065291c99954aaecdf9f07927f6800b4c3eba40cb"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-cream-warmth.md",
+      "bytes": 22614,
+      "sha256": "a3f3543f28dc6043808321a387270d5afd99ce1f3d8d0c39192b2b95dfff7100"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-data-infographic.md",
+      "bytes": 35687,
+      "sha256": "d7d2506121fa545bec6d4b2a26c9302cceaa46eb436a9d2c39cf16d56cbc6c74"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-editorial-feature.md",
+      "bytes": 26317,
+      "sha256": "1ab80621607bb477d2cd0d3b959dd0465474f1d01510b6cc866e8988f61c4c13"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-elegant-purple.md",
+      "bytes": 21386,
+      "sha256": "44211d5b6ff0acd3d787f8fe5c92b461616637e737ec383b731a3b2fa0b48d95"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-emerald-tech.md",
+      "bytes": 24307,
+      "sha256": "8a70cd2ad942527136daffbfe575028bf04970b75b26520b5500ea4ffa47da9b"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-indigo-business.md",
+      "bytes": 21397,
+      "sha256": "9c538bb36396b005a0f896f08c0b375aa3b7aca4fe96ff3e9501b14d61b27460"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-mist-blue.md",
+      "bytes": 26108,
+      "sha256": "d421ef12fe48d822d7f87edf765bed0f8556331eea50c1d79c2c6bfda7413213"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-mono-black.md",
+      "bytes": 20191,
+      "sha256": "6d3d01890710bebb13b6c089a57177de0fdcc8793d93c85eb432830bbe62cfe4"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-morandi.md",
+      "bytes": 25651,
+      "sha256": "20b2a1d78aa959747dce216a2b928aac0bdc2f0a2a4b49c875052669f868f339"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-rose-pink.md",
+      "bytes": 24005,
+      "sha256": "06ff00e5aafbf19dde876ad0912ded7402fcd71db1af92cc6601b5dcea36445f"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-sky-blue.md",
+      "bytes": 14318,
+      "sha256": "1c40b7a5155495f1bae678733c08354d8e0f570cd8b995776ce8afd1cbeff767"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-slate-minimal.md",
+      "bytes": 22766,
+      "sha256": "ff34dcea37e7464941e2f9a14dab70b24f583f0c8c8291709e0c2e1e78a35ce0"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-terminal.md",
+      "bytes": 28270,
+      "sha256": "f20c2c7ed2c10558532b4ed7f649fe7466165da268b9f47b5c4cdc2415bb01ac"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/archive/themes-v1/theme-terracotta-tech.md",
+      "bytes": 21739,
+      "sha256": "98270bd442cba29625019e6024dfcfeb17686517234bba67865ea77f9b2611a9"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/assets/sample-article.md",
+      "bytes": 2815,
+      "sha256": "773c642ca26fba3b7e40afaeee561c514d49caee7e6bc086e88a586e329128d3"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/docs/all-themes.md",
+      "bytes": 1991,
+      "sha256": "9ca222de680f1f76b5035a914b760a1cbcbd5eda79fec943dae33a1f597dc131"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/docs/gallery/sample-article.md",
+      "bytes": 2815,
+      "sha256": "773c642ca26fba3b7e40afaeee561c514d49caee7e6bc086e88a586e329128d3"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/common-components.md",
+      "bytes": 11620,
+      "sha256": "6daf8125af6d11ad955df4090f58f6f0c2518b8d745c28093429ab1b8d5b322c"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/eval-cases.md",
+      "bytes": 5690,
+      "sha256": "626067b3e746fa6b97073ffc7ea7143ccfaa0ec620ecb9fc3894b05830151337"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/format-normalize.md",
+      "bytes": 4497,
+      "sha256": "b9ac42e90970155c4654ee765ad6ac483562c34e80cf962be117e8c6ab7bf421"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-generator.md",
+      "bytes": 25935,
+      "sha256": "a42f0d9e5aab15346ce7c12d160c6fd903d8ac1ff2f501a01b86b10b5befb39a"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-graphite-minimal.md",
+      "bytes": 33530,
+      "sha256": "8c0a7a99961d9a9cba62d5fe9da29309c515540b1eeed88584da2e3dbf15de96"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-index.md",
+      "bytes": 3218,
+      "sha256": "b865d0abd50c346d11b643f749ef2b4292d907913a6c7ad899b74c59e2e2c0e8"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-moyu-green.md",
+      "bytes": 44166,
+      "sha256": "88c3661d8b42d83126793ee693b20e1946d38a23da568accedd8a4aea83186f8"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-moyu-ticket.md",
+      "bytes": 24054,
+      "sha256": "1272ca6739d26110d56e6909eed46f498b0132daa3b35354f908986776866da4"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-olive-journal.md",
+      "bytes": 56689,
+      "sha256": "aa7effb32d595b0768a05734c541f1059703860cec00ac699fa4d2bde43b0ee3"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-red-white.md",
+      "bytes": 29053,
+      "sha256": "109107819c450de517d6ddc91bb00335fd249f0b8befddb54fded1cdf9c19837"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/references/theme-zen-whitespace.md",
+      "bytes": 23833,
+      "sha256": "e186e9ba6843871d7ff9921a8d3d03531cf6284eb16bdc86fbf06d777de98929"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/scripts/component_lint.py",
+      "bytes": 3864,
+      "sha256": "75acb18c8620b61d452d629c09d939c9bdca4aee24e05f4f291e06998bc4fdd8"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/scripts/extract_docx.py",
+      "bytes": 6304,
+      "sha256": "6e8911372006913770eb6279c1a9e3dd3d204bc79d64e68872ccbf65aecb0707"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/scripts/validate_gzh_html.py",
+      "bytes": 7190,
+      "sha256": "de21aa3decac10c6ef89040bdc4e19930dbed33d6ccf7bc963b744c53da01185"
+    },
+    {
+      "path": "skills/openclaw/gzh-design/scripts/wrap_preview.py",
+      "bytes": 3501,
+      "sha256": "3f3c4d48a7fd2e6781d5d831d9221122ac2df0983d4d2a6665dd903e72cc95c1"
+    },
+    {
+      "path": "skills/openclaw/image-editing/EASEL-META.md",
+      "bytes": 644,
+      "sha256": "e3239c8225d1a46ec06e4efcce883c1dce1b8cfd89880903459c2a806060bd83"
+    },
+    {
+      "path": "skills/openclaw/image-editing/SKILL.md",
+      "bytes": 5869,
+      "sha256": "c9ab01ceb15ac4e92e2e8279e163eba9ec30fd035606aadda97c2c20bbb6432d"
+    },
+    {
+      "path": "skills/openclaw/image-editing/references/platform-sizes.md",
+      "bytes": 1653,
+      "sha256": "5a7fd7106a84a5de2b337ee41bb7e6616cf447fad09a3f9d9eace45ba3185f3b"
+    },
+    {
+      "path": "skills/openclaw/image-enhance/SKILL.md",
+      "bytes": 2997,
+      "sha256": "b46c6e6a5e7c810831a27aa94c1e2f81e4f8ee04459eccbe96f268d9bed16a35"
+    },
+    {
+      "path": "skills/openclaw/infographic/EASEL-META.md",
+      "bytes": 1532,
+      "sha256": "ecd60a91b51688c0ce9e09a481e0169b949e8f5e25be06093d11e2cb82384c60"
+    },
+    {
+      "path": "skills/openclaw/infographic/SKILL.md",
+      "bytes": 4447,
+      "sha256": "c94d5d670de903e743630e088e342e6e15f6ea67954feac3e56183633fba133d"
+    },
+    {
+      "path": "skills/openclaw/infographic/references/antv-templates.md",
+      "bytes": 5719,
+      "sha256": "4c5f357451dbda573ea9c46c0c27c29f271a61248438920bc82aaa3931cfa55e"
+    },
+    {
+      "path": "skills/openclaw/infographic/references/gif-charts.md",
+      "bytes": 3216,
+      "sha256": "24af2e2fc5367dc68e2201300474687590e7e9b6318b4d425fcc931e1be6244c"
+    },
+    {
+      "path": "skills/openclaw/infographic/scripts/gif_chart.py",
+      "bytes": 21790,
+      "sha256": "07ed04c386d37300941195fba691dd8434565088483de1e0c9e6933dd84d7d31"
+    },
+    {
+      "path": "skills/openclaw/meme-generator/SKILL.md",
+      "bytes": 3167,
+      "sha256": "fe6939f92ed372521b9fa1e538ece9223e0d2011a6f1b14ed4d0f549aeee71fb"
+    },
+    {
+      "path": "skills/openclaw/mindmap/SKILL.md",
+      "bytes": 2570,
+      "sha256": "5410ab7ffe820a901449d902c95265612e0beba158507533a829e1ba17332a1c"
+    },
+    {
+      "path": "skills/openclaw/multi-voice-dubbing/EASEL-META.md",
+      "bytes": 1684,
+      "sha256": "0abf3b8ed4028769e08837498bae2c369e1a42febb2c0c264ca59b912b8ccb80"
+    },
+    {
+      "path": "skills/openclaw/multi-voice-dubbing/SKILL.md",
+      "bytes": 7756,
+      "sha256": "e64e4b9e78d99518163e69c385da646822bb936ba289fe9d422da301909ca89d"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/EASEL-META.md",
+      "bytes": 1554,
+      "sha256": "13655fb644ab4a69d66e9f2363895985e4453b329c42451186e6025e1c75029d"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/SKILL.md",
+      "bytes": 7260,
+      "sha256": "6f90221fd90d5801e3d056bfd8f6c0e2be4bc5584e0019f441465cec1b1edda4"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/references/consistency-rules.md",
+      "bytes": 3515,
+      "sha256": "68156d648cb99598ae3ef007a3b25240bfa050a1ba6ec90a7785ff832bb9790c"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/references/platform-specs.md",
+      "bytes": 2915,
+      "sha256": "1c8e906dddbd00ab2213bcb654f101c79e9d9f57d24f5c6c50b1815d2fef4682"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/references/scene-card-schema.md",
+      "bytes": 2128,
+      "sha256": "5bf1ce38d76757c740324cafa300d89c884ac8a56cf1ef03e6a6c90a35415a44"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/references/web-novel-methodology.md",
+      "bytes": 3676,
+      "sha256": "4e60b6b5a1dc886a68e1af9e9e3ec27fd2f9295719e26ddaf55b55c0ec4c427f"
+    },
+    {
+      "path": "skills/openclaw/novel-writer/scripts/novel_ops.py",
+      "bytes": 13655,
+      "sha256": "72a8a9dd139a25b8680d86d51c50cfd63b2df63258d6a6a3e828a820358bc39e"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/EASEL-META.md",
+      "bytes": 2113,
+      "sha256": "56e2f3e39dbbaab0cd74a3ae1eaa7bba4a6f51b3d3461b069ea2ab428ad3eced"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/SKILL.md",
+      "bytes": 9868,
+      "sha256": "5ccf7747707ed8f5d8a06af8e0a1dec061a44d82200d0e98206ec29072df626d"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/references/explain-methodology.md",
+      "bytes": 3299,
+      "sha256": "3d2f75b0b4c85cb772af64d63ae68996e7c5af5d5b591dab1ea6681078d18400"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/references/paper-distill-schema.md",
+      "bytes": 2800,
+      "sha256": "cabb616b84549b7148a6b1f135584805e3752c03d12040f83a7bdc82bf185e77"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/references/platform-adapt.md",
+      "bytes": 2360,
+      "sha256": "03a2a5cf16f983f0833f2942966a1a87d0fc85bb05c93cf27ff73d4ea67a8e06"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/references/slide-design.md",
+      "bytes": 11807,
+      "sha256": "9a0387346256dccfd6f35cc9be66d41edbd3dedd637e61c0e8df9e0941beb910"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/references/video-storyboard.md",
+      "bytes": 3171,
+      "sha256": "ce326b7eb72001d879b71ff7f0225b4871a887eeecf2baadbeddc8e187cd8c48"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/scripts/paper_ingest.py",
+      "bytes": 19585,
+      "sha256": "a995c2cfa82115271a75f33d08fbf3f5ead4368e05955c5ff938eca4518a7841"
+    },
+    {
+      "path": "skills/openclaw/paper-explainer/scripts/render_slides.py",
+      "bytes": 49664,
+      "sha256": "656c56c9032527c2680d19476b6047339a3314035fd92f4475edc4f413752b83"
+    },
+    {
+      "path": "skills/openclaw/post-formatter/EASEL-META.md",
+      "bytes": 1782,
+      "sha256": "854b10e5511b76ddc1f8d481388258a2c6b67ea0f47e186b5b52ecba5546128d"
+    },
+    {
+      "path": "skills/openclaw/post-formatter/SKILL.md",
+      "bytes": 4116,
+      "sha256": "7a337ac31fc4b8ba6f2139a5ac34c056319cb00442e3016cfbf941b48bbec8f3"
+    },
+    {
+      "path": "skills/openclaw/post-formatter/references/formatting.md",
+      "bytes": 2841,
+      "sha256": "3796fb16a169226a2cf55a9fc32ee48e90cfe47a93f3db72e167e59387ed1aa6"
+    },
+    {
+      "path": "skills/openclaw/post-formatter/references/frameworks.md",
+      "bytes": 1481,
+      "sha256": "f7e599d0a3223ec6443971e85e93936cfc554d047a2f1ff3a8c0a16fa40a5cf9"
+    },
+    {
+      "path": "skills/openclaw/poster-hero/EASEL-META.md",
+      "bytes": 373,
+      "sha256": "e87029ad918501ae325c8daa0d4a52633219239c73cddbfad95efb961edebfeb"
+    },
+    {
+      "path": "skills/openclaw/poster-hero/SKILL.md",
+      "bytes": 4450,
+      "sha256": "2607fbbccbb06a9df8b48666c7192bcc09cff9866ac0e7346b79e7f3c6e6ffa0"
+    },
+    {
+      "path": "skills/openclaw/poster-hero/example.md",
+      "bytes": 263,
+      "sha256": "0982f9bcee85358c23aa823131e8c80e555d0abd56135950dc18462d85f1831a"
+    },
+    {
+      "path": "skills/openclaw/remove-bg/SKILL.md",
+      "bytes": 3370,
+      "sha256": "6a5d23ee1f2c333e5314f0a59b8a97de45b22e9764241e0058be46ca833b3dce"
+    },
+    {
+      "path": "skills/openclaw/roi-calculator/EASEL-META.md",
+      "bytes": 1263,
+      "sha256": "25fce1d6550ca7f766093d877c5fadaabbf4e5a8dd2168d2cd93f583b18969b8"
+    },
+    {
+      "path": "skills/openclaw/roi-calculator/SKILL.md",
+      "bytes": 7843,
+      "sha256": "03f7da4a41f333c26c633477ea2d8c93d5760af25d5fe1fe9aaa09e03a474114"
+    },
+    {
+      "path": "skills/openclaw/roi-calculator/references/benchmarks.md",
+      "bytes": 3735,
+      "sha256": "75f1d748d149486c7e1b41b25629982bae0dfe9028e930b538981b238058138a"
+    },
+    {
+      "path": "skills/openclaw/roi-calculator/scripts/calc.py",
+      "bytes": 7445,
+      "sha256": "19401158a55c02866c36e56bc7336aa71630ddc83560b24fe7b99fcbcfd37844"
+    },
+    {
+      "path": "skills/openclaw/short-drama/EASEL-META.md",
+      "bytes": 2920,
+      "sha256": "da26796481a3aa3f8c5dc8c2fc9baa3fcf3908f074cb13c2072204df7c40fef7"
+    },
+    {
+      "path": "skills/openclaw/short-drama/SKILL.md",
+      "bytes": 24714,
+      "sha256": "67d61b77b4ec81c0b95713010b3e413ded2d7d9f3c7b031a5ffe3ff55188e111"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/causal-beats.md",
+      "bytes": 3270,
+      "sha256": "2e03c19bc08b8beef7a0c273d415a33074a7bd6ae7633f25a3d45b1f814b5431"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/character-consistency.md",
+      "bytes": 3427,
+      "sha256": "7d21bab868394fcae940d927eda202d0a0e19037995e95334bb71d127e5f4d79"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/dialogue-craft.md",
+      "bytes": 4260,
+      "sha256": "7ea2f0d72902c942189968a0d3edf93a0cd4e6afd5b72686ac98e299dea21e1f"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/drama-review-rubric.md",
+      "bytes": 5177,
+      "sha256": "92114f405b34b25854cecc47f0a30558f6f3d96b1329905d1b70b7db6efb6ecf"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/four-act-drama.md",
+      "bytes": 2719,
+      "sha256": "42d2f0b0fbbba10b41d99853e2540b0a31fa20f145b44cf524cf7e7b7313c12d"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/genre-hooks-handbook.md",
+      "bytes": 5556,
+      "sha256": "5b6fdac3cd695f2bde7b27a983bcf3da245cc51193f3138731bee8deadbe6f21"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/native-audio-workflow.md",
+      "bytes": 6265,
+      "sha256": "ff4fd55268d6c5b77694260018f24fc0adb603b5f770da4cfa48ca4bf5c53ee1"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/satisfaction-and-villain.md",
+      "bytes": 3913,
+      "sha256": "da2d8443eb3fc1e9152ccf79a87c15fa0d2b3076b2d4f605cb65022dbaf1e0e7"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/series-bible-schema.md",
+      "bytes": 5598,
+      "sha256": "9aa80bb6fae86893f8f79ef6f155d061f968cbf7bffe447be4c26e9ca6f02ceb"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/shot-prompt-format.md",
+      "bytes": 6593,
+      "sha256": "ddb727d0f4c0f64970e2a36191b38eaed54df7ac7c8fe675af183fa1a236e587"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/story-engine.md",
+      "bytes": 5961,
+      "sha256": "dd388e247bbf16dd4384ba3f6764439d0580c06323616e4777baa8fe89ab5e5c"
+    },
+    {
+      "path": "skills/openclaw/short-drama/references/vertical-pacing.md",
+      "bytes": 2029,
+      "sha256": "8f6977f5ab253a2891c18e7178d2758afe870491433c05fb4a2bfc19f100fce3"
+    },
+    {
+      "path": "skills/openclaw/short-drama/scripts/drama_ops.py",
+      "bytes": 41777,
+      "sha256": "a58338f060c10a826008e6934901725db7fcd91015640a5a54a004f15bbdc8e1"
+    },
+    {
+      "path": "skills/openclaw/short-drama/scripts/dubbing.py",
+      "bytes": 47168,
+      "sha256": "6b5c97c30da2085e679f56d1bef5606cfc3d83be5f61c4bf6ae9b578c8c9c4ba"
+    },
+    {
+      "path": "skills/openclaw/skill-account-diagnosis/EASEL-META.md",
+      "bytes": 850,
+      "sha256": "203b2717e9d2ff08627f3a1de5ba0067ecadb1da294783b3d69942881f791bcc"
+    },
+    {
+      "path": "skills/openclaw/skill-account-diagnosis/SKILL.md",
+      "bytes": 3558,
+      "sha256": "d77c6d7f4de6681c52f4eaaa6ce708a98690c8f0e0e93d15749ae575865be821"
+    },
+    {
+      "path": "skills/openclaw/skill-account-diagnosis/references/diagnosis-framework.md",
+      "bytes": 3355,
+      "sha256": "fd5f70de39541dab3790c014f700fb313abc1e32873d4cc33340b0fe283d9d41"
+    },
+    {
+      "path": "skills/openclaw/skill-algorithm-updates/EASEL-META.md",
+      "bytes": 613,
+      "sha256": "f53b68371e8e36302f918780edc61b1090e77e9c893d038d399e7abf61d10cf1"
+    },
+    {
+      "path": "skills/openclaw/skill-algorithm-updates/SKILL.md",
+      "bytes": 5052,
+      "sha256": "5bca22eb33be75b7cdad50cf63af45ca121c35e64814a66a5d64b3f5ecd4eca1"
+    },
+    {
+      "path": "skills/openclaw/skill-algorithm-updates/references/algorithm-vocabulary.md",
+      "bytes": 5368,
+      "sha256": "dbf8f271f703c991bba1bf8e778af9ffb5df0438feb54db7d892b8537f137999"
+    },
+    {
+      "path": "skills/openclaw/skill-algorithm-updates/references/platform-sources.md",
+      "bytes": 3677,
+      "sha256": "19ea552aff8cefcfd6f23c0939fd51958a54d14e2823ee5f61062466589c58df"
+    },
+    {
+      "path": "skills/openclaw/skill-article-outline/EASEL-META.md",
+      "bytes": 307,
+      "sha256": "984907b4a362a4479e664614495d3cb90b6ef6f842d9ad853bba3a73f00cd3c1"
+    },
+    {
+      "path": "skills/openclaw/skill-article-outline/SKILL.md",
+      "bytes": 4944,
+      "sha256": "b12d2790f0998b70bbfcb93d017dfbe0ad0f3c974df0ff2b4c8aed32ab4ee54a"
+    },
+    {
+      "path": "skills/openclaw/skill-audience-profiler/EASEL-META.md",
+      "bytes": 405,
+      "sha256": "0416abdf4ba87365b914061df2e5471c302eb399f4ce2a7d9ba23aa394756624"
+    },
+    {
+      "path": "skills/openclaw/skill-audience-profiler/SKILL.md",
+      "bytes": 3408,
+      "sha256": "4a71ff39bddb7e09a8f56072bde0483056329df050b90713f50fc4662a18b77b"
+    },
+    {
+      "path": "skills/openclaw/skill-audience-profiler/references/profiling-frameworks.md",
+      "bytes": 4119,
+      "sha256": "ab2dfa4fe590db6e8bf0bcc519fb730fa39670e8729c723fc25c4930b5e7f523"
+    },
+    {
+      "path": "skills/openclaw/skill-bilibili-upload/EASEL-META.md",
+      "bytes": 598,
+      "sha256": "204646392d88249f8bd298be8a78a3908b8d1b81996f5fa15afeba9c1ffe8163"
+    },
+    {
+      "path": "skills/openclaw/skill-bilibili-upload/SKILL.md",
+      "bytes": 3682,
+      "sha256": "2041ce0e784d0de2d929163128e4897b0d58b6ecbd879b34ae1e6857837150a8"
+    },
+    {
+      "path": "skills/openclaw/skill-bilibili-upload/scripts/bili_upload.py",
+      "bytes": 12565,
+      "sha256": "1767cd622d14a5fb996b5f42dd6796a52f9e391c10edec73e0533fffff8d19d0"
+    },
+    {
+      "path": "skills/openclaw/skill-brand-onboarding/EASEL-META.md",
+      "bytes": 308,
+      "sha256": "a4786d326086c8d63f18104723c4f3177ba5385d47ff449e29e4708ca041771f"
+    },
+    {
+      "path": "skills/openclaw/skill-brand-onboarding/SKILL.md",
+      "bytes": 5807,
+      "sha256": "ee1cb152c66ad64a78d866ee96ff10966a2c6d58c55e58956a176d49d1f19d41"
+    },
+    {
+      "path": "skills/openclaw/skill-brand-onboarding/references/profile-templates.md",
+      "bytes": 2454,
+      "sha256": "075034fe617fb584a909540ce9320c1f29b048cead5be743f2460be7644294cb"
+    },
+    {
+      "path": "skills/openclaw/skill-campaign-planner/EASEL-META.md",
+      "bytes": 726,
+      "sha256": "52a67f1f76c12e28a232089aaabb32a7f490af6fd9cdc0d1acc8c4c90f5011ed"
+    },
+    {
+      "path": "skills/openclaw/skill-campaign-planner/SKILL.md",
+      "bytes": 4050,
+      "sha256": "f089e69bc70f4a704c8767764da1aec40d9b9e74fe59a433e4c674237e9af577"
+    },
+    {
+      "path": "skills/openclaw/skill-campaign-planner/references/campaign-frameworks.md",
+      "bytes": 4420,
+      "sha256": "71225861bb784dfc0bf5a9d6458b77c3f16e1e5a8727f8ef2b8c631ac68e368d"
+    },
+    {
+      "path": "skills/openclaw/skill-carousel-planner/EASEL-META.md",
+      "bytes": 308,
+      "sha256": "97f07c6bb6afe3197a0be852771ef34712fa0bc1bd514b33ceb3302ea7ded1aa"
+    },
+    {
+      "path": "skills/openclaw/skill-carousel-planner/SKILL.md",
+      "bytes": 5995,
+      "sha256": "f4069cf74addb10c9302592ec39e85e7fc2d83dc95345f50321ac924cd2e5316"
+    },
+    {
+      "path": "skills/openclaw/skill-carousel-planner/references/format-specs.md",
+      "bytes": 2127,
+      "sha256": "3b6888e98f7c0ee3b5ca6985ca0f5411a129a036fa09e39bd4113ff0ae0a4c09"
+    },
+    {
+      "path": "skills/openclaw/skill-carousel-planner/references/hook-library.md",
+      "bytes": 3279,
+      "sha256": "ab351f8f0f5d43861856192ea5fff1a175891eb95ae44873afdfbb90519e3551"
+    },
+    {
+      "path": "skills/openclaw/skill-carousel-planner/references/scoring-system.md",
+      "bytes": 4422,
+      "sha256": "ace93a356f7ec6805ab9f98e7be28583394ddbce09f88867e255ffc190132802"
+    },
+    {
+      "path": "skills/openclaw/skill-channels-upload/EASEL-META.md",
+      "bytes": 611,
+      "sha256": "6279cbb5ebe1b939bd93e21cd87d7eda7a0b059d38120e7df221143fec874fb0"
+    },
+    {
+      "path": "skills/openclaw/skill-channels-upload/SKILL.md",
+      "bytes": 2119,
+      "sha256": "30787f34b78671bb8c5396be17a7a4e2dcced7660b6ecb7b92ee2fbd6be3263a"
+    },
+    {
+      "path": "skills/openclaw/skill-collab-proposal/EASEL-META.md",
+      "bytes": 346,
+      "sha256": "0b30caa48df0b1664bb79fad8c42d5191c9d3571dae3fb0e487447a8e2414e56"
+    },
+    {
+      "path": "skills/openclaw/skill-collab-proposal/SKILL.md",
+      "bytes": 6035,
+      "sha256": "a080f8d0deff7af23c268330bbc82ad96ad8642a3d568f58f142e78f76f688f8"
+    },
+    {
+      "path": "skills/openclaw/skill-collab-proposal/references/kol-pricing-guide.md",
+      "bytes": 8027,
+      "sha256": "db4fc32059c20108bd89afd558d53296c4bcd9f4c33534e6c1007b405ccb4590"
+    },
+    {
+      "path": "skills/openclaw/skill-collab-proposal/references/proposal-templates.md",
+      "bytes": 1938,
+      "sha256": "67a958b73a100e5a6813fbdd71d73e22e3d00b40f76a41e8e8016ad2784c2e71"
+    },
+    {
+      "path": "skills/openclaw/skill-comment-insights/SKILL.md",
+      "bytes": 3119,
+      "sha256": "cac062ad1ddf1a7c9286226a4296e352b1f6d2666d880f9e2a9ac7a5615fad47"
+    },
+    {
+      "path": "skills/openclaw/skill-comment-insights/scripts/comment_insights.py",
+      "bytes": 11630,
+      "sha256": "d26759c0296d47415abb5449f3ac73da405d40f68b0631c056703a7c1fada24c"
+    },
+    {
+      "path": "skills/openclaw/skill-community-ops/EASEL-META.md",
+      "bytes": 620,
+      "sha256": "d2fc1ef6d4e7f29ac99d9d064ccfbe142fcd78e3302efdf343914ca3bfc2b3e2"
+    },
+    {
+      "path": "skills/openclaw/skill-community-ops/SKILL.md",
+      "bytes": 6032,
+      "sha256": "8858e2bf657582ed0897289ce757f3d68a6fb3d0c83703a6839817d404e9b119"
+    },
+    {
+      "path": "skills/openclaw/skill-community-ops/references/crisis-grading.md",
+      "bytes": 6396,
+      "sha256": "d390ade68ca7ce77c499a4f2015eac8e5cb0cf3c02271d6f1f83b33a01c60c55"
+    },
+    {
+      "path": "skills/openclaw/skill-community-ops/references/platform-comment-ecology.md",
+      "bytes": 3829,
+      "sha256": "5bb21a8901d597ee6042a0334d7614ace05def6f873b9ecc9ec0c286c61a52db"
+    },
+    {
+      "path": "skills/openclaw/skill-community-ops/references/reply-playbook.md",
+      "bytes": 5237,
+      "sha256": "a07db83d794bbbc710eb7cbe9727aaae1038c2b128ad41cbe2ca3ba1455621e0"
+    },
+    {
+      "path": "skills/openclaw/skill-community-ops/references/topic-mining.md",
+      "bytes": 2226,
+      "sha256": "9bd3645878a50cc80f165c8610b29cb126c0becdbf55d74d6c3557c0b0155dbc"
+    },
+    {
+      "path": "skills/openclaw/skill-competitor-analysis/EASEL-META.md",
+      "bytes": 2543,
+      "sha256": "b17e9935219027f25d55492c5dd4371611faf5a9003f587d03659a35f14e711c"
+    },
+    {
+      "path": "skills/openclaw/skill-competitor-analysis/SKILL.md",
+      "bytes": 6853,
+      "sha256": "f7326a2f97d824fc0b25541fcb37186cdb64feac1b3227d6ea0fbd77a216bea3"
+    },
+    {
+      "path": "skills/openclaw/skill-competitor-analysis/references/analysis-templates.md",
+      "bytes": 3515,
+      "sha256": "dddbf9ee82f9c7ff7779835ed9b918a2ab568a7fed68890318c0846eab52856c"
+    },
+    {
+      "path": "skills/openclaw/skill-competitor-analysis/references/data-collection.md",
+      "bytes": 3148,
+      "sha256": "6fd9031c651819fc65e418acddab8aa7c0af9e4cd566cfa3fbe51b526ffa3929"
+    },
+    {
+      "path": "skills/openclaw/skill-competitor-analysis/references/viral-patterns.md",
+      "bytes": 3816,
+      "sha256": "316900b418eeee2128a5eb5a61b458996dedbf3c7157f01995bb3e155af5a2b8"
+    },
+    {
+      "path": "skills/openclaw/skill-content-calendar-log/EASEL-META.md",
+      "bytes": 994,
+      "sha256": "702a5c013344a08824dc9c2a8b6bc2679b36690fa4e41edc87ca7e3908d20ec7"
+    },
+    {
+      "path": "skills/openclaw/skill-content-calendar-log/SKILL.md",
+      "bytes": 4494,
+      "sha256": "7aa24b0fab1fe283a0dc50d47c15bd4db4370c92c1355d6d64d2171a5c05d3b6"
+    },
+    {
+      "path": "skills/openclaw/skill-content-calendar/EASEL-META.md",
+      "bytes": 420,
+      "sha256": "a10a610b546ceefc94de26cfa19cdae20fd0d1298895f57135e6108e8ca8b0fd"
+    },
+    {
+      "path": "skills/openclaw/skill-content-calendar/SKILL.md",
+      "bytes": 6891,
+      "sha256": "a53e97724e588cffe7daf1f31122ad0ddec8250683dd31ef7b72c8fa839033bb"
+    },
+    {
+      "path": "skills/openclaw/skill-content-calendar/references/content-mix-guide.md",
+      "bytes": 1299,
+      "sha256": "7783a5e34498cf715e5188db3ae656c0a7ea9ffdc7defcaa81ea88a16097d76c"
+    },
+    {
+      "path": "skills/openclaw/skill-content-gap-analysis/EASEL-META.md",
+      "bytes": 2297,
+      "sha256": "dfd51773d2651e894d951f39457c0eacd3df11bd6dad99a727cb929bcca351b3"
+    },
+    {
+      "path": "skills/openclaw/skill-content-gap-analysis/SKILL.md",
+      "bytes": 7750,
+      "sha256": "0ff94f5bbae3274dd4f373824360ed544a60ff39653fe41d32a34d900c30dbd8"
+    },
+    {
+      "path": "skills/openclaw/skill-content-gap-analysis/references/demand-signals.md",
+      "bytes": 2805,
+      "sha256": "dc1dfda521bbae627f605feb27301c0954d9508ce48afff5775dc736802b3a8b"
+    },
+    {
+      "path": "skills/openclaw/skill-content-gap-analysis/references/scoring-model.md",
+      "bytes": 1975,
+      "sha256": "f5a56c95b9c1829e71db47ad77fa885779868e517e2c0b11c2531bec5a643b8f"
+    },
+    {
+      "path": "skills/openclaw/skill-content-matrix/EASEL-META.md",
+      "bytes": 306,
+      "sha256": "aec55927c4c1e24602343e2befdfda1db50631bac30a041e8fef2ceb8921fee3"
+    },
+    {
+      "path": "skills/openclaw/skill-content-matrix/SKILL.md",
+      "bytes": 4746,
+      "sha256": "afa2fa959b401789665b83e82dbdb6222e8b6b5bf84ef39d32597deedadac373"
+    },
+    {
+      "path": "skills/openclaw/skill-content-matrix/references/content-formats.md",
+      "bytes": 4021,
+      "sha256": "856221de7f5954e53c60e75ffa846755011503f37537350a38ebe513df27c35f"
+    },
+    {
+      "path": "skills/openclaw/skill-content-postmortem/EASEL-META.md",
+      "bytes": 1426,
+      "sha256": "c01e8fcde595dc91ae51eccae02337e75df930d9f4474a46fc669696add0eeda"
+    },
+    {
+      "path": "skills/openclaw/skill-content-postmortem/SKILL.md",
+      "bytes": 8109,
+      "sha256": "12e302fde93ca328dabf61eb0343a3c4d9cb8cd374d4daf8517f1b04c3c96b28"
+    },
+    {
+      "path": "skills/openclaw/skill-content-postmortem/references/postmortem-dimensions.md",
+      "bytes": 1937,
+      "sha256": "e3414b55adc7018cad391092b90bf3dc8b50c27e1f2b1551770d723f40349cc7"
+    },
+    {
+      "path": "skills/openclaw/skill-content-postmortem/scripts/aggregate.py",
+      "bytes": 8493,
+      "sha256": "9ca0e8577d97cf4d280d6daf02fc55ae2d13eee18c4dd4066ffb749c880a6e4b"
+    },
+    {
+      "path": "skills/openclaw/skill-content-repurposing/EASEL-META.md",
+      "bytes": 314,
+      "sha256": "5de3dae6c9ae1c2b8774aeab7e6e6c9b5f8bf389d88c3df75f4687a9bb2245ec"
+    },
+    {
+      "path": "skills/openclaw/skill-content-repurposing/SKILL.md",
+      "bytes": 4555,
+      "sha256": "a4bc7efea46141eb3b871a7737b24e34df3c426cef9e66206e4ab123289fce9c"
+    },
+    {
+      "path": "skills/openclaw/skill-content-repurposing/references/conversion-recipes.md",
+      "bytes": 8926,
+      "sha256": "246fb126f3977b5e8fd5ea3f5e03ea46c7c90567efd307fc2204953df7b461e6"
+    },
+    {
+      "path": "skills/openclaw/skill-content-repurposing/references/platform-specs.md",
+      "bytes": 6493,
+      "sha256": "ac98eea5a18b63573b2afbb346fd2db1667c7b0d74616c68e06b6e611843bf11"
+    },
+    {
+      "path": "skills/openclaw/skill-content-strategy/EASEL-META.md",
+      "bytes": 308,
+      "sha256": "4463f6b338ed68db93482e425b510510dbdc26de856a674056aff061d69c8da0"
+    },
+    {
+      "path": "skills/openclaw/skill-content-strategy/SKILL.md",
+      "bytes": 5691,
+      "sha256": "a9b5e09375cf9ee4f1ba1a2a7e51f53bcad10aa5340f3d247cc47324e8d0e0d6"
+    },
+    {
+      "path": "skills/openclaw/skill-content-strategy/references/strategy-frameworks.md",
+      "bytes": 3229,
+      "sha256": "2a73c6e74ea453b4c3ff503ba0fdca8a015c5e27bf7a6444bdbf2f1bb3d5d6f9"
+    },
+    {
+      "path": "skills/openclaw/skill-cross-platform-diff/EASEL-META.md",
+      "bytes": 1105,
+      "sha256": "94ff163f80972dc71c0394f759cfb3e1b7cb158ce7ab52768b21d325a6573f16"
+    },
+    {
+      "path": "skills/openclaw/skill-cross-platform-diff/SKILL.md",
+      "bytes": 6481,
+      "sha256": "e33aaa2de4ea9daeb10e0fbeb10358d81a247e22db282cd2aa24c6daed9b3d8f"
+    },
+    {
+      "path": "skills/openclaw/skill-cross-platform-diff/references/platform-traits.md",
+      "bytes": 8842,
+      "sha256": "69b8ac005bed561486a4f5ebf0ded2fadfdeefbd74485c55a4aa790d8a591a53"
+    },
+    {
+      "path": "skills/openclaw/skill-cross-platform-publish/EASEL-META.md",
+      "bytes": 588,
+      "sha256": "62a682d6fd8f2f8452630d51fd9e04139e8fced230d7799c03b8caa221c795c5"
+    },
+    {
+      "path": "skills/openclaw/skill-cross-platform-publish/SKILL.md",
+      "bytes": 4398,
+      "sha256": "d31956fea02eb6c3476dbd5c998909e047abc509318da858ffd6eb0ffc6ec856"
+    },
+    {
+      "path": "skills/openclaw/skill-cross-platform-publish/scripts/publish_dispatch.py",
+      "bytes": 8372,
+      "sha256": "af6e77568056c1381ca55a3c815e11e43491aabf32e4d91712dc07eee1f9e2e5"
+    },
+    {
+      "path": "skills/openclaw/skill-data-tracker/EASEL-META.md",
+      "bytes": 817,
+      "sha256": "5a52b46ae10ddf9b12f2b6a902137460c06981c1362a88258942adb3b9ae44ee"
+    },
+    {
+      "path": "skills/openclaw/skill-data-tracker/SKILL.md",
+      "bytes": 7696,
+      "sha256": "ecc48db697aef8e2f4e8ac7f863bfbcbbd8f047cd4ff1298b99d546d8604530d"
+    },
+    {
+      "path": "skills/openclaw/skill-data-tracker/scripts/track.py",
+      "bytes": 15285,
+      "sha256": "b5d6be3ef054383860f32c87ef5273bbe1a6a1ae62755c39b4ee46b546422901"
+    },
+    {
+      "path": "skills/openclaw/skill-douyin-upload/EASEL-META.md",
+      "bytes": 2138,
+      "sha256": "1ef2e726132bec4ab6d5bc1f57705c8b6eb48464b1322773b0a5762b9a79ee9f"
+    },
+    {
+      "path": "skills/openclaw/skill-douyin-upload/SKILL.md",
+      "bytes": 10680,
+      "sha256": "f653c75ba5f32e305cf1c4ab95d260f5943c9553844a7f668b76a37919b87bb5"
+    },
+    {
+      "path": "skills/openclaw/skill-event-calendar/EASEL-META.md",
+      "bytes": 2751,
+      "sha256": "171fe55b6025c781696ad646ca0ba64e5d72514a978ce4d1558ce1daae498c9c"
+    },
+    {
+      "path": "skills/openclaw/skill-event-calendar/SKILL.md",
+      "bytes": 6829,
+      "sha256": "8e7981d5bd737ad157f035dd69d75f3d674b4fc35f6488696a0612ca1c8250c4"
+    },
+    {
+      "path": "skills/openclaw/skill-event-calendar/references/events-china.md",
+      "bytes": 12344,
+      "sha256": "f18e4310417e5e05e0fe51ee107b80a3b033fb1c4b8fd6bad6e3536e3bf29b3b"
+    },
+    {
+      "path": "skills/openclaw/skill-event-calendar/scripts/lunar.py",
+      "bytes": 11384,
+      "sha256": "d4e2b059b4eb735b20b6a2f88656c4b3657632f8a20e6fd4a77b9c5a7267cff1"
+    },
+    {
+      "path": "skills/openclaw/skill-hook-generator/EASEL-META.md",
+      "bytes": 306,
+      "sha256": "127e3be88709e0e8ce0c2dd69250de96868f2c0e8e4cece4fd2c63b5af2351c5"
+    },
+    {
+      "path": "skills/openclaw/skill-hook-generator/SKILL.md",
+      "bytes": 3409,
+      "sha256": "37c86328f0cb21e5e03726f3f6396d6e1983e82eb9e6a8813d583df780fbd1b7"
+    },
+    {
+      "path": "skills/openclaw/skill-hook-generator/references/hook-formulas.md",
+      "bytes": 1816,
+      "sha256": "e224b92477bc8426f9673c901c51388aad2b3e025a48617630c8901a98ca2cba"
+    },
+    {
+      "path": "skills/openclaw/skill-kuaishou-upload/EASEL-META.md",
+      "bytes": 608,
+      "sha256": "4acb7929c78d85252135cdc0b38dc474d8151b106ecabda6db5912bc2def4c13"
+    },
+    {
+      "path": "skills/openclaw/skill-kuaishou-upload/SKILL.md",
+      "bytes": 5877,
+      "sha256": "1ccc3435ae27707f3368f98c57f5e2a94bffde9a0822ef39314246ba743b0bcc"
+    },
+    {
+      "path": "skills/openclaw/skill-livestream/EASEL-META.md",
+      "bytes": 705,
+      "sha256": "b6e50ef1135948e2d679db2a966c26b1f3d973f9d3edd2f411c33b8598923d21"
+    },
+    {
+      "path": "skills/openclaw/skill-livestream/SKILL.md",
+      "bytes": 4047,
+      "sha256": "70249cf742fcc2f48837ec3432eec71b7a9a4edf10b5ebe94beb9634db88ed64"
+    },
+    {
+      "path": "skills/openclaw/skill-livestream/references/livestream-playbook.md",
+      "bytes": 3488,
+      "sha256": "1c5c5af6a73bdd671ba11fda192a03d6fd6382bd4fcc1708f365e8648066c926"
+    },
+    {
+      "path": "skills/openclaw/skill-livestream/references/output-template.md",
+      "bytes": 1495,
+      "sha256": "7594311b200a8a5d113ce42fa8f03c25cf78d2ddea003e19b034d537de5c22df"
+    },
+    {
+      "path": "skills/openclaw/skill-my-account/EASEL-META.md",
+      "bytes": 2852,
+      "sha256": "13cba5126bc727cdb63e4345e62508c9452a0785557bf0e81471ce99424367ca"
+    },
+    {
+      "path": "skills/openclaw/skill-my-account/SKILL.md",
+      "bytes": 4955,
+      "sha256": "335832cc29559dcc8a61018d818d53104ca86ffa0d094dd6aed035b6e72b6880"
+    },
+    {
+      "path": "skills/openclaw/skill-my-account/references/commands.md",
+      "bytes": 4381,
+      "sha256": "1a3aa0863d0d94f0d16afdb3a867e52a84cc910096695df8759df0e29f52bdd8"
+    },
+    {
+      "path": "skills/openclaw/skill-news-intelligence/EASEL-META.md",
+      "bytes": 2968,
+      "sha256": "0210faa19bb5b1af0aed0729b04d5675cd544ef86d32aa08abdfd0b2aafcc06a"
+    },
+    {
+      "path": "skills/openclaw/skill-news-intelligence/SKILL.md",
+      "bytes": 5638,
+      "sha256": "b013d89ecd3a39db80e2320c1a9afa5380c952ac20bee750dc8cd17fa90079f2"
+    },
+    {
+      "path": "skills/openclaw/skill-news-intelligence/scripts/daily_briefing.py",
+      "bytes": 5267,
+      "sha256": "bca2263c2fc951da80d8f434619886bda7726298f337271d890374fe920ef88c"
+    },
+    {
+      "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+      "bytes": 12245,
+      "sha256": "b83a39b3c53bf8b0eef17becf536f0221fe1bc95cf16f5826f3b5b82f04d7282"
+    },
+    {
+      "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+      "bytes": 4255,
+      "sha256": "80f7a89cb686d7e63a3eac1c1fc7c1d05be716520c44b9f2fd43d9a4e13829b3"
+    },
+    {
+      "path": "skills/openclaw/skill-persona-check/EASEL-META.md",
+      "bytes": 1087,
+      "sha256": "8c7cabefe03b3a78b0e201ec83646e9bb0bdcfff4181286e7c3eeaf33ecf1579"
+    },
+    {
+      "path": "skills/openclaw/skill-persona-check/SKILL.md",
+      "bytes": 7160,
+      "sha256": "ee6e4a9e7137eba47245f1accb9e6f5d85e530a6cd79f0c6701302989a7ec7c7"
+    },
+    {
+      "path": "skills/openclaw/skill-positioning-analysis/EASEL-META.md",
+      "bytes": 601,
+      "sha256": "15a06c0c169ef6a6dcaf223e3fb717a4e1e7c2b187c7e3d7ad876aa21d4a7fd8"
+    },
+    {
+      "path": "skills/openclaw/skill-positioning-analysis/SKILL.md",
+      "bytes": 3853,
+      "sha256": "5514307c88bb82db9a67787899a1b4040f6a35d03389a93a9680fe407a8b436e"
+    },
+    {
+      "path": "skills/openclaw/skill-positioning-analysis/references/positioning-frameworks.md",
+      "bytes": 3814,
+      "sha256": "ac01cd12c6eac36054151f5c92a348fde55a8a0af35a54414e90a44533bdd5b9"
+    },
+    {
+      "path": "skills/openclaw/skill-post-scorer/EASEL-META.md",
+      "bytes": 1214,
+      "sha256": "3574fee074ac876ed38093aba8de9ba219a019588454ab5e116cd1a00869b1d8"
+    },
+    {
+      "path": "skills/openclaw/skill-post-scorer/SKILL.md",
+      "bytes": 6152,
+      "sha256": "3042e344ee8dd74b0a16cfa273a496946ef20e162f704169caf630971d3eb3da"
+    },
+    {
+      "path": "skills/openclaw/skill-post-scorer/references/fallback-benchmarks.md",
+      "bytes": 4014,
+      "sha256": "18d82709a5281d3db58407206ccfa6ae2c184755867e8f0d6d64f8e8385afda0"
+    },
+    {
+      "path": "skills/openclaw/skill-post-scorer/references/scoring-criteria.md",
+      "bytes": 4888,
+      "sha256": "4734ad7466ccbdc3a75f2158133b94afbca719b957581abea4755e39bbb59f4f"
+    },
+    {
+      "path": "skills/openclaw/skill-post-scorer/scripts/score.py",
+      "bytes": 4084,
+      "sha256": "8c01d4f95b2f6a5173a270558fb3b31c91c53de8306646e6236ae022b8cd5f84"
+    },
+    {
+      "path": "skills/openclaw/skill-profile-builder/EASEL-META.md",
+      "bytes": 814,
+      "sha256": "2e4c065f7337ed1379a2ef577c44b7ac2c7bb6eb314dab78641463cf4cd80ec4"
+    },
+    {
+      "path": "skills/openclaw/skill-profile-builder/SKILL.md",
+      "bytes": 4024,
+      "sha256": "63174301c0fcc40e4552e443cf08609edec88050d45b34f3c8b5f4895138a011"
+    },
+    {
+      "path": "skills/openclaw/skill-profile-builder/references/onboarding-questions.md",
+      "bytes": 1963,
+      "sha256": "c7820c4d4866543a39977ef9ab1f102a37dc9e97cdab13640fc5063a67d72a24"
+    },
+    {
+      "path": "skills/openclaw/skill-profile-builder/references/social-link-analysis.md",
+      "bytes": 1971,
+      "sha256": "0d210b20101bc17d0494756e05c3fb15b02975c8d4e5da5f62b553edc4794ea3"
+    },
+    {
+      "path": "skills/openclaw/skill-profile-manager/EASEL-META.md",
+      "bytes": 804,
+      "sha256": "27340647825c64b6c1d4f13a35f168e4dcc1dcced87a6cbb4b27ced35a5e3a98"
+    },
+    {
+      "path": "skills/openclaw/skill-profile-manager/SKILL.md",
+      "bytes": 5644,
+      "sha256": "69227dbb1af9b4b01aa1485483f57b2c603b4e587afa217ee51a23149b54ca51"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-analytics/EASEL-META.md",
+      "bytes": 600,
+      "sha256": "f5957e7787387fa724d69c4759349213126b6d5e9477ba3c85ac6c95420728bd"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-analytics/SKILL.md",
+      "bytes": 8429,
+      "sha256": "b2ea682a95a92f45f9656da9c7e9d8d3e7a5c42924306f0ec88f519c4e487600"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-analytics/references/follower-log-schema.md",
+      "bytes": 2524,
+      "sha256": "e0f30eade9efeaa74ffa910ee00adf39f40ed0c4bc9c5f5bcf38b6a7a12a505c"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-analytics/scripts/analyze.py",
+      "bytes": 13852,
+      "sha256": "478eee27a0383f00c1dd36e5f10f0341fe5602a4b4d3b0a7d0d31661b0d5d9b4"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-checklist/EASEL-META.md",
+      "bytes": 1129,
+      "sha256": "3bff34b9fa9c1957e41dfdbabe027bf09dcb1d1f83e2240f8ab4545b16673adb"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-checklist/SKILL.md",
+      "bytes": 5473,
+      "sha256": "3b1b4427487d75a33d01da037ee5bf6fbd3ab7942edd25c9a14eb3e2bee4186b"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-log/EASEL-META.md",
+      "bytes": 834,
+      "sha256": "6494b05e3ee81388fc87ff2dbc140511572f608f51e697235a79658975021339"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-log/SKILL.md",
+      "bytes": 6395,
+      "sha256": "44b5b56aed913582079d4226ed9059642405ad13195cd2d4cb4cd503f99e12ac"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-log/scripts/log.py",
+      "bytes": 9703,
+      "sha256": "a0b44936d3c69db92c369d963fb30d7b1f45cd357f45a6a50e829faf7143efb6"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-notify/EASEL-META.md",
+      "bytes": 538,
+      "sha256": "82fecfc1017fb9ac3232d7dee5328984c9093b7939203f1108b600d1bdc7ea8f"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-notify/SKILL.md",
+      "bytes": 2778,
+      "sha256": "23940d5ab578cb1a68787b2b844059efae87734112071e19e3c2a6f493ace4a4"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-notify/scripts/notify.py",
+      "bytes": 8342,
+      "sha256": "ab353f095bb54e5b83674c2691d7dc31b529160cfdd09eb6d39ee122fda77e83"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-scheduler/EASEL-META.md",
+      "bytes": 553,
+      "sha256": "ec036c6d29b73105a7ea4801f6080e428cf8920d60762d52fdbb14417d227a06"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-scheduler/SKILL.md",
+      "bytes": 3092,
+      "sha256": "ccede176bb62cb133fb0f6dfe83c0d22fdc00e55d45f5cc4a152d191d67bc429"
+    },
+    {
+      "path": "skills/openclaw/skill-publish-scheduler/scripts/publish_queue.py",
+      "bytes": 11569,
+      "sha256": "018321e521dd844eaeae63bd689573d4aa9786f7a463ee594b5fda351fa29f4a"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/EASEL-META.md",
+      "bytes": 522,
+      "sha256": "4f7baed04fb64a85dd74870296d39fb4c91c2d0e0fd6aaa33ff329d32f562a57"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/SKILL.md",
+      "bytes": 2525,
+      "sha256": "1202b426093b4a59933266c408fcc0cd6ce692d8279b33f9d0f2dfa70e0168fb"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/general-rules.md",
+      "bytes": 1853,
+      "sha256": "817f97d44ab4892892961ffece856739ea9d78a45904a625634df9e3d3bd888f"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/platform-bilibili.md",
+      "bytes": 1300,
+      "sha256": "3f3e5db1dd86d998732d0add15ff7915be4747e9cc806ceb122d7aaf57010727"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/platform-douyin.md",
+      "bytes": 1353,
+      "sha256": "9c914b728911a7a6749ec7a90f1d50a1c6403527aee0c0ea4abfea272514f96f"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/platform-xiaohongshu.md",
+      "bytes": 1318,
+      "sha256": "f70953b0a9e3bb37bfb46cd0d66e867b8e3c18b7a7ddd9fbab8d372b79c29f46"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/review-dimensions.md",
+      "bytes": 1105,
+      "sha256": "17c7df2b14f84d9b1329ba575508c18d6cfa428e38aa65629486de09fa1294f9"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/review-levels.md",
+      "bytes": 1139,
+      "sha256": "f09b53c41d82da319b7b3e26f818ff4bf7a4d06777d49cb036acce24f83ab803"
+    },
+    {
+      "path": "skills/openclaw/skill-quality-gate/references/rework-rules.md",
+      "bytes": 903,
+      "sha256": "8c6de5af03bd15751ec34e2a629b9ba7aa39d30a5f6a9e10032412e57949a891"
+    },
+    {
+      "path": "skills/openclaw/skill-risk-scanner/EASEL-META.md",
+      "bytes": 537,
+      "sha256": "1517bd0348366a764c0ae2a97f022d932c8ed8a19911b0f24576aa8aea4aa6f0"
+    },
+    {
+      "path": "skills/openclaw/skill-risk-scanner/SKILL.md",
+      "bytes": 8089,
+      "sha256": "e30054b433f06bf74f0765dc22740036a68e9f2cadc7f4d01c42dd9b203773fb"
+    },
+    {
+      "path": "skills/openclaw/skill-risk-scanner/references/copyright-guide.md",
+      "bytes": 9814,
+      "sha256": "63b109709d7b9133147996663b1383524dfd243eb5fbfc29ba0b3bba57a50573"
+    },
+    {
+      "path": "skills/openclaw/skill-risk-scanner/references/washing-patterns.md",
+      "bytes": 2341,
+      "sha256": "486d2c228f9323371d98c9fd9deb96b9497eab5776a17af2a9e34adf13792113"
+    },
+    {
+      "path": "skills/openclaw/skill-rss-aggregator/SKILL.md",
+      "bytes": 2732,
+      "sha256": "d8779cd2e27bba1e1773e3233a7e73b58ac00211171d99aa558b2e8440b86481"
+    },
+    {
+      "path": "skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py",
+      "bytes": 11286,
+      "sha256": "9639b6a454678c9297ffe292f9ef741cfb5ffde06f18498133372a1b20af4555"
+    },
+    {
+      "path": "skills/openclaw/skill-seo-quality/EASEL-META.md",
+      "bytes": 1758,
+      "sha256": "44d5f86344a0baafb2fc3488959075648ccaa80f45ac95e28f948c6df56cf12a"
+    },
+    {
+      "path": "skills/openclaw/skill-seo-quality/SKILL.md",
+      "bytes": 5370,
+      "sha256": "33786d102a1bca071ffd4256cc6bcc8d0d1a5c58c6903716ca565ab850bc0159"
+    },
+    {
+      "path": "skills/openclaw/skill-seo-quality/references/platform-search.md",
+      "bytes": 5601,
+      "sha256": "f0f47d27fd2165e4555bf08b8c5ae9752f8fa545d160087741193e4fa6780437"
+    },
+    {
+      "path": "skills/openclaw/skill-seo-quality/references/web-blog-seo.md",
+      "bytes": 2921,
+      "sha256": "2944a4838818936e8abd751809c9cc0ceffdc590dad003463cc3777b1338270b"
+    },
+    {
+      "path": "skills/openclaw/skill-short-link/EASEL-META.md",
+      "bytes": 520,
+      "sha256": "38cd1048d1b9ca8356aff0c23ba48f6b51b440158edf1697a49a91d4d202f789"
+    },
+    {
+      "path": "skills/openclaw/skill-short-link/SKILL.md",
+      "bytes": 2413,
+      "sha256": "fff51ba683d0a2277cd66c7c5c784824b147d4a9ffa9b590bab7aedfe466e091"
+    },
+    {
+      "path": "skills/openclaw/skill-short-link/scripts/shortlink.py",
+      "bytes": 7231,
+      "sha256": "3966e14ae163c58dc385202d10fcd56b69b445c54a2a50158e4d671affbd762b"
+    },
+    {
+      "path": "skills/openclaw/skill-social-performance-review/EASEL-META.md",
+      "bytes": 484,
+      "sha256": "7389436a7d94698a48c5e1efd585052c71b1c5ec04c91b391101beb5ad1bb8e1"
+    },
+    {
+      "path": "skills/openclaw/skill-social-performance-review/SKILL.md",
+      "bytes": 8605,
+      "sha256": "879037433e797f62d62e52ad793fe55f247be9d787e0f28e0d4d8e4f145d310d"
+    },
+    {
+      "path": "skills/openclaw/skill-social-performance-review/references/analysis-framework.md",
+      "bytes": 3916,
+      "sha256": "aa49e1cc1147e092653fbb36018b9c120372ada489dfc2bf64c4dbbbf47750cd"
+    },
+    {
+      "path": "skills/openclaw/skill-social-performance-review/references/benchmarks.md",
+      "bytes": 7640,
+      "sha256": "b9012605d026ceb6a882307a82658746acf19e2d95be9defec853f9d6c688306"
+    },
+    {
+      "path": "skills/openclaw/skill-social-performance-review/references/report-template.md",
+      "bytes": 2127,
+      "sha256": "86a9ab47cc37bc0e4bb06f28f756f408f2c0e247d48dbaab5d9fc8b9600d4aec"
+    },
+    {
+      "path": "skills/openclaw/skill-social-performance-review/scripts/review.py",
+      "bytes": 8301,
+      "sha256": "6f395d421c10ab51c36e9eec9203e74a2da01294038a3bd21c3eb9bf07ed69e5"
+    },
+    {
+      "path": "skills/openclaw/skill-strategy-advisor/EASEL-META.md",
+      "bytes": 799,
+      "sha256": "c37413e67b169b57b7c63bf3d18ec2fd5c0828c431747697fe8cc700cadfdcea"
+    },
+    {
+      "path": "skills/openclaw/skill-strategy-advisor/SKILL.md",
+      "bytes": 6070,
+      "sha256": "8a8e73323b87c2caa18bda9cd8c91b550250ea9006303e3fe5c78c30637ee7a3"
+    },
+    {
+      "path": "skills/openclaw/skill-strategy-advisor/references/platform-benchmarks.md",
+      "bytes": 2150,
+      "sha256": "9c13945761786c1fb14eb318992236636059fea35e9f9f9d63b24a1d5083156b"
+    },
+    {
+      "path": "skills/openclaw/skill-topic-evaluator/EASEL-META.md",
+      "bytes": 656,
+      "sha256": "085910f198cd39525852e04026e897f8f377f56dab3fdeef167800d5beab92c3"
+    },
+    {
+      "path": "skills/openclaw/skill-topic-evaluator/SKILL.md",
+      "bytes": 5968,
+      "sha256": "0e1d24d42650a598842899b38cdf64b609a1a97a3435bd8398b586e1e2f82c98"
+    },
+    {
+      "path": "skills/openclaw/skill-trend-rider/EASEL-META.md",
+      "bytes": 596,
+      "sha256": "f40ee811cc8279671ddf3d78cc7d7670d5764ee72d87cf0edd4bc6ce1f82fc32"
+    },
+    {
+      "path": "skills/openclaw/skill-trend-rider/SKILL.md",
+      "bytes": 6478,
+      "sha256": "c435b001ae5879671a125a3728a402a709109de81218c0e220e42aca848e633e"
+    },
+    {
+      "path": "skills/openclaw/skill-trending-topics/EASEL-META.md",
+      "bytes": 440,
+      "sha256": "51c892f093093094ffe4382d3470c0c4a04a20f3005343686a1c538a70c38fc5"
+    },
+    {
+      "path": "skills/openclaw/skill-trending-topics/SKILL.md",
+      "bytes": 4078,
+      "sha256": "af5e4fc9b2d26dedc9c7aa4b247e718f3d8710c34dc822c84a0639c426356022"
+    },
+    {
+      "path": "skills/openclaw/skill-ugc-discovery/EASEL-META.md",
+      "bytes": 800,
+      "sha256": "a5d54dded354af49a72aefc991df1e29cbe31857fe2f2d67a32a8e21e707c7d4"
+    },
+    {
+      "path": "skills/openclaw/skill-ugc-discovery/SKILL.md",
+      "bytes": 5087,
+      "sha256": "a88d0bbf2effc943e05e291cc1ab2e0487cb4076ff2fe875c05807c570c2de6a"
+    },
+    {
+      "path": "skills/openclaw/skill-voice-builder/EASEL-META.md",
+      "bytes": 2667,
+      "sha256": "d8f36e03669953fec99e18d2d5d3848d9d07c0696be2543d94493f87298bb191"
+    },
+    {
+      "path": "skills/openclaw/skill-voice-builder/SKILL.md",
+      "bytes": 4780,
+      "sha256": "22ff695da7fc6085d76156e2e1ebe5feeefe12273db9fda3478ecb17ba0035ea"
+    },
+    {
+      "path": "skills/openclaw/skill-voice-builder/references/interview-questions.md",
+      "bytes": 2870,
+      "sha256": "4d20217197b143f64928299f99ea3e20483544aea44bba07de0d58f0e8150ea9"
+    },
+    {
+      "path": "skills/openclaw/skill-voice-builder/references/sample-content.md",
+      "bytes": 2990,
+      "sha256": "0fb36c9f9ede592e80f6aa03814c8f613bc047cb9432f56b7354d4a4ffdf9ebb"
+    },
+    {
+      "path": "skills/openclaw/skill-voice-builder/references/voice-analysis-dimensions.md",
+      "bytes": 2706,
+      "sha256": "1085dd946e9c38d37358fa5265dd808c8c87d9573f626314a3e629c906a6e863"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/EASEL-META.md",
+      "bytes": 2572,
+      "sha256": "b8d74bfff87002e059891f2f69101806b29d2384d7c0d07a23d4848b7d8781f3"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/SKILL.md",
+      "bytes": 11699,
+      "sha256": "c080c22ff433ddff71af53e16b3b849cc2ca73a7ffb65627fd5c9fe6727264c1"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/assets/image-styles/README.md",
+      "bytes": 30159,
+      "sha256": "868f1673f47b9e901213364f13d2983bf7501716f14b2d2e150ae2f161ac3e1b"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/assets/theme-previews/README.md",
+      "bytes": 1697,
+      "sha256": "c3ec666463264a565cc6e214bb3b95546b25948851a866af8a9803546dd3c4ec"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/assets/theme-previews/sample.md",
+      "bytes": 2696,
+      "sha256": "42b0ab4440a4368ebcda28552fa78abacd1026520c57af37fca00df4ee273881"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/anti-ai-checklist.md",
+      "bytes": 3509,
+      "sha256": "125a52d0e89ae6635ee6d53d56dfc2ae8ebaab7d35557e2d4c5592fa5075b3c1"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/api_reference.md",
+      "bytes": 3238,
+      "sha256": "8fa8d16405787b36f0eec9455ead815e381300ed89521a517e9cc2b8235b686f"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/article-structures.md",
+      "bytes": 3226,
+      "sha256": "379dcb5c03bf5fd4e872e7c48801bff3fbafc956344da4c1abfe2730bedfdad6"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/errors.md",
+      "bytes": 1154,
+      "sha256": "79e9f7fa8ad1cb2da22d1ede5c71f8e8665a45016f0b54b302a9e1feb484c80a"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/image-styles-guide.md",
+      "bytes": 3631,
+      "sha256": "32690d0a6d7be3bff64a718fe5b9ad36b754e1dd2defb149f9619e72fd15c37e"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/inline-markup.md",
+      "bytes": 1730,
+      "sha256": "c5aca2787e6238d9066e0750d3d754b377974b094f56f5b0e2417d9ab78d8113"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/multi-platform-sync.md",
+      "bytes": 2683,
+      "sha256": "1f636e3f99afc0427261d3815113e9977f8d87738bb5ad4de9ba2b56fbfd3b24"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/newspic-mode.md",
+      "bytes": 5818,
+      "sha256": "3edb55ad41d8ac0b0e66598de3a9754768a2c5b85326ec62072113309a645d59"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/themes.md",
+      "bytes": 1842,
+      "sha256": "4d3744ac36a8b54b909f7d348f1c43cb90b161e95198d17858b6c1bd2c39f4da"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/references/typeset-card.md",
+      "bytes": 4216,
+      "sha256": "7cba6e1b182a6118ca320f0274f5db329b2f654ba66d6ac2174bc08d13158bcb"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/ai_score.py",
+      "bytes": 15587,
+      "sha256": "19feb1909c4e75706c34951fa8a0db9866f5c4519f78454c3f59aa1e51c87912"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/api.py",
+      "bytes": 12895,
+      "sha256": "63718f271f9cb5881c45d87181ec48329a9589a0aef9879eff1939bd0b1ff1d1"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/baoyu_image_gen.ts",
+      "bytes": 5656,
+      "sha256": "b0cfe111ff85fadbaaca105f76548978718500ec529d9c2a67b6b65250ca1930"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/baoyu_image_gen_core.ts",
+      "bytes": 11765,
+      "sha256": "4e144adc506a777a70974200bcb355bde9e5906472f4dcb3d317f9f3f87b6be5"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/config.py",
+      "bytes": 12002,
+      "sha256": "4457cfb24632eeff2c3ab8db9c979e4679833e20982c0feb9cde6092bc019f6f"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/generate_image.py",
+      "bytes": 4452,
+      "sha256": "6d8030ed9448ff95da065065bcc67ca7ec38b887c4f4231f36c4f4dcdcd6f453"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/html_converter.py",
+      "bytes": 23865,
+      "sha256": "054bb6a58dfef4d1af86600e47b2b17e63f0fae08a55f7dcc1a6027a7d4d6cf5"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/image_handler.py",
+      "bytes": 17961,
+      "sha256": "f3610c68f077ed9804eccb202822a99c39288672ad2258e4a84fa8da8c75e5a4"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/multi_publish.py",
+      "bytes": 14528,
+      "sha256": "0bafcc5cb5595d62b57226d1b5239cfc5703b15c89296af7636882031f4803bf"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/newspic_build.py",
+      "bytes": 14331,
+      "sha256": "102f8902893f8cc166abfae706819d4f8c25f0d117d296eb771c848aa4c1f29d"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/publish.py",
+      "bytes": 36534,
+      "sha256": "6c2d65bac4fa37e4918c5bb71317b6cdc134701123f74c87aeed4d9d5ebd38eb"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/sync_pages.sh",
+      "bytes": 994,
+      "sha256": "549b4b484eb06814c89be8b90457abc80a5dc2be89efe55095d7159833e38980"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/wechat_api.py",
+      "bytes": 6150,
+      "sha256": "cb2cd703311c3065fb727f352808e47a6eb695b2cacfcc40832bf0c4f11878c1"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/scripts/wechat_token.py",
+      "bytes": 5201,
+      "sha256": "4e61cd87d9b26ae75b7642c8834fcf90b24d17dcfa837b53c43c64237542af59"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/tests/conftest.py",
+      "bytes": 4151,
+      "sha256": "8760dbd10b48a5a80714d76658cdec5da09e47ccd35094be7f1229645ef1a57c"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/tests/test_ai_score.py",
+      "bytes": 8304,
+      "sha256": "bd605057f8a62b22ba87353ea4712c38a741538be6a89ed2451fb28166813d49"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/tests/test_config.py",
+      "bytes": 7565,
+      "sha256": "63bbc0a20cd1f62165e67c5f5d207d0dd71f8bbda1383e0f54bc52a21667d70d"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/tests/test_config_integration.py",
+      "bytes": 9932,
+      "sha256": "a94f2be6f41024c3295d1a5bef62168f4f1023fb0698396c5d7004e3c04f180c"
+    },
+    {
+      "path": "skills/openclaw/skill-wechat-publisher/tests/test_html_converter.py",
+      "bytes": 10439,
+      "sha256": "ddd8cf024798579d564792de636de2459c54e366a8a5835cb35091af48f0eec3"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/EASEL-META.md",
+      "bytes": 2159,
+      "sha256": "83b8f1378eb3b1b6b477fb300ab0697850cd2bbcc72107aa21b017a624f52066"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/SKILL.md",
+      "bytes": 5108,
+      "sha256": "a377eb67dee28044ffc236f9e06952398d8e4cf6b8f3f49f2fc37d21756256d3"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/references/commands.md",
+      "bytes": 4479,
+      "sha256": "d488d4d0b2b04e7a6506eb10947350e451b34415e43e6384063f9f307359846e"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/references/modules.md",
+      "bytes": 6316,
+      "sha256": "fdd2481cb04c84ae633f97f3a9b11a2e745d58641d6c53d00b51e74454541160"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/references/platform-signals.md",
+      "bytes": 1749,
+      "sha256": "98cd949069dac7deccc148a90210dec62164a90b820289a9aa2a70b6c466e216"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/references/research-loop.md",
+      "bytes": 8383,
+      "sha256": "40ef0c8ff538d5b27c5083932497804a350cceb9a9b61609c42e5fe88e379d9e"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/references/technical-reference.md",
+      "bytes": 3937,
+      "sha256": "74354ea9fb0618d82384923d6854e5d29fe008cb089e9da6e093e740fff78c96"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/cli.ts",
+      "bytes": 78675,
+      "sha256": "9dd296202bb3047f191f841102b0e1791834fb9be30bf4ec74f955304ad5d189"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/analyze.ts",
+      "bytes": 20458,
+      "sha256": "65f67e654c8405903f1bdd82fc7d89b35b2cebb56d05545c08b5c85c7b7804fc"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/cdp-cookies.ts",
+      "bytes": 13405,
+      "sha256": "9baedee6bed8426cdc621bb7130e0d7514dbe6f5d059a508da15290b8034ce14"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/client.ts",
+      "bytes": 22781,
+      "sha256": "d0ad2a2a91ebf9a6defeae2bb177f4db1210ac9bf5d47688867e0ebed11066a4"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/cookies.ts",
+      "bytes": 13605,
+      "sha256": "648b3c3e67ce273b13da63a9d563fd6354ff7862ad7aa385be63388bb33cd31a"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/creator-signing.ts",
+      "bytes": 1805,
+      "sha256": "bd1f0fb05578fe07547b5357a28591d1c4858e502391caa1e662028afb291499"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/detect.ts",
+      "bytes": 6769,
+      "sha256": "e66f2532795cd2324f086df1750150c4a957bddc4bad05c2d1df35251084d551"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/fingerprint-data.ts",
+      "bytes": 2376,
+      "sha256": "e728748f6c083d54d0d92c5997ef9c304fe879b8ea5659b091c041f99271ffbd"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/health.ts",
+      "bytes": 5631,
+      "sha256": "fc558d9a0eb5ab80dd1f2eaf662dd47bbd2a942f45575b9c6f02633d8f5234a2"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/platform.ts",
+      "bytes": 2751,
+      "sha256": "f90f03f1ae09ea81b02ced9a863eeafc7dbc8a440b91c761eb0bc0b639c6fa48"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/render.ts",
+      "bytes": 19962,
+      "sha256": "42ec25bc7c5d9091d7edb7e5a87269796e08ee107a7f23f30dd448a7acd882e7"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/reply-strategy.ts",
+      "bytes": 6099,
+      "sha256": "9302fa350bbc1583a07f756b42b64eb6c9aa0573ab6d759d65914953d9292a6b"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/signing.ts",
+      "bytes": 21612,
+      "sha256": "9a62562cfd84e82bffe270ca55876f2101593dbac1d42d6e61f51a1210c537f9"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/template.ts",
+      "bytes": 8176,
+      "sha256": "5d633f07c8f8b254986674d769793956b98ef9aca023a9f171c0ea9705fe4051"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-analyzer/src/lib/url.ts",
+      "bytes": 1826,
+      "sha256": "18a3a0c51f0c8d8af14280134ca985075e028eadbd9593604138d19d929b09aa"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-comment-reply/EASEL-META.md",
+      "bytes": 3828,
+      "sha256": "ad63994780ffaedbedb1ab3c601a272c3be408ffa8e2de5b65419e695dfc3748"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-comment-reply/SKILL.md",
+      "bytes": 6571,
+      "sha256": "33e6d7795762994d1a8294e68f63c47d79210a85e030892dab8b4d58b95b5cc4"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-comment-reply/references/commands.md",
+      "bytes": 5994,
+      "sha256": "dc2d7e4a5e3c5a20a0e0bc8093c2a399ec338ff30cadfd1bb6d3576d3cd3fb8a"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-publisher/AGENTS.md",
+      "bytes": 1702,
+      "sha256": "fa5e4bf8e80eed2f107482768a5808ad1886b025fd50ef70f14145b05e24266a"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-publisher/EASEL-META.md",
+      "bytes": 3393,
+      "sha256": "af1a3f5805be738256b836913b8d40f6ff91396344b55e2fa6c0a2532877d717"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-publisher/SKILL.md",
+      "bytes": 5280,
+      "sha256": "e3a0bcfd13123504ec997280d70c7c32e0fdde71f256d5a88f4a5b1e60945a4d"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-publisher/references/commands.md",
+      "bytes": 3941,
+      "sha256": "8d8dde9a4f5996fc0b3011b2691e7c7d82b15a77244687bd9d259fc66bcba873"
+    },
+    {
+      "path": "skills/openclaw/skill-xhs-publisher/todo.md",
+      "bytes": 813,
+      "sha256": "925691b4f03e09cae5ac74ec4242aa25ff2587896ffe8f6c0b9bc6c019ceb3d8"
+    },
+    {
+      "path": "skills/openclaw/skill-zhihu-answer/EASEL-META.md",
+      "bytes": 1397,
+      "sha256": "56ea6425784f0060866ba20c44aee25a26fb25701b98e1605fbd4fa5ea85b393"
+    },
+    {
+      "path": "skills/openclaw/skill-zhihu-answer/SKILL.md",
+      "bytes": 7309,
+      "sha256": "42ed18a04c0128f5d84342da08ef98b79fd83eefb3940e9cb433ad94bae5006b"
+    },
+    {
+      "path": "skills/openclaw/skill-zhihu-answer/references/commands.md",
+      "bytes": 3001,
+      "sha256": "a1a3fe421033111db62f7b482188e39970405c99630cb59bd394e64898b9f523"
+    },
+    {
+      "path": "skills/openclaw/skill-zhihu-publisher/EASEL-META.md",
+      "bytes": 608,
+      "sha256": "3dec83de0c7e2fd933e0f31a339ad367db7a9afd81ab66a5c3b9f2fe4d7f1478"
+    },
+    {
+      "path": "skills/openclaw/skill-zhihu-publisher/SKILL.md",
+      "bytes": 2061,
+      "sha256": "b1f160e0e7e90763b02af90fe6ac10f93469d6b9f23e933acd75858700b01a2b"
+    },
+    {
+      "path": "skills/openclaw/slideshow-video/SKILL.md",
+      "bytes": 4004,
+      "sha256": "cdd931ee0124421e471018f16bd0b807072a839c823ef1e8601284118a57c921"
+    },
+    {
+      "path": "skills/openclaw/social-content/EASEL-META.md",
+      "bytes": 2277,
+      "sha256": "9294584b4d7340c26fefd3f3a3ae1c4f777452e0b07f6bd5ce06160bf9b786bc"
+    },
+    {
+      "path": "skills/openclaw/social-content/SKILL.md",
+      "bytes": 5974,
+      "sha256": "6daf1c20b2c68d6637e4e4d9a6f5eb6c5ee01a53fc3d2b9c426197d1be2661f5"
+    },
+    {
+      "path": "skills/openclaw/social-content/references/content-formats.md",
+      "bytes": 3210,
+      "sha256": "aa428c0998882db906128b431a94cb9c68ae6da215a50fb451a0e49eac0886e7"
+    },
+    {
+      "path": "skills/openclaw/social-content/references/hashtag-strategy.md",
+      "bytes": 2013,
+      "sha256": "96883c9b87fbc0eae62932938420ea7c6f2a8de38e93bd0a1a8f096ae8c1866f"
+    },
+    {
+      "path": "skills/openclaw/social-content/references/platform-specs.md",
+      "bytes": 4212,
+      "sha256": "f9ab5e99acfdca30126e316298f1196130c618d2a1829ce88fb0fac0b43ad5f6"
+    },
+    {
+      "path": "skills/openclaw/style-transfer/EASEL-META.md",
+      "bytes": 814,
+      "sha256": "40e3e2790dd98d286ed058c38ef7ffba5444e96bf887503485881a181d537e43"
+    },
+    {
+      "path": "skills/openclaw/style-transfer/SKILL.md",
+      "bytes": 4563,
+      "sha256": "0fae73efa9722ca116a90bb4824b8d43ce5d53f9e54f7299933391478c63fdff"
+    },
+    {
+      "path": "skills/openclaw/style-transfer/references/style-rules.md",
+      "bytes": 1554,
+      "sha256": "985a1362fda66649bf2cac37d0cad7e081aa1941d32f1998bf1ef1f9d57050dd"
+    },
+    {
+      "path": "skills/openclaw/subtitle-translate/SKILL.md",
+      "bytes": 5023,
+      "sha256": "9e19d8a44da30a858afde13e72109d7b1701f9ddf52b8727ed9711d148bac542"
+    },
+    {
+      "path": "skills/openclaw/template-library/EASEL-META.md",
+      "bytes": 1523,
+      "sha256": "6a4ffc6ee46bafad4b6c8c73d96dc8fc3f05a6f88a032fc9b2e99268acf3903d"
+    },
+    {
+      "path": "skills/openclaw/template-library/SKILL.md",
+      "bytes": 6542,
+      "sha256": "39ae5e7b3dbf86439b9cafcecf6d8cbcc5a1341f8fbe14afc07b92e9a7d0029a"
+    },
+    {
+      "path": "skills/openclaw/template-library/scripts/templates.py",
+      "bytes": 12984,
+      "sha256": "5f1e237b38ff54c27fe9a5954b3043686194188be719a8bf9116e1d777211ae1"
+    },
+    {
+      "path": "skills/openclaw/text-condenser/EASEL-META.md",
+      "bytes": 876,
+      "sha256": "de33938e83c7512b2199be5dce2a79a2e4d47218ed91f889324138cb504e16c7"
+    },
+    {
+      "path": "skills/openclaw/text-condenser/SKILL.md",
+      "bytes": 5135,
+      "sha256": "f9ee36b2495e18055daa4a7e104cbb931aebc72c6b513f08a4b3ff9b22a54920"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/EASEL-META.md",
+      "bytes": 724,
+      "sha256": "ebadaa5816192ba6635cfbc57a3673ec674c5f5e4536431d62b05a6899cef557"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/SKILL.md",
+      "bytes": 4664,
+      "sha256": "6576f47f0176d6d5f86fe176138bd7b36f956b84d3799174d35abeae15b72fcb"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/references/checklist.md",
+      "bytes": 1728,
+      "sha256": "db143b969b45b0933fe6eb772992890d1472d036a6c887fc98665e4fb48da43c"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/references/content-refresh.md",
+      "bytes": 2303,
+      "sha256": "f616f60bcc55cae4770bd25a191476651d3fc7a4a3cfa0901330e846634b4adc"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/references/phrases-to-remove.md",
+      "bytes": 2915,
+      "sha256": "4ca1b7e97123b5c67eff3dc97e5e977332e0b24021265c1553888a93ec33fa93"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/references/plain-english-alternatives.md",
+      "bytes": 8258,
+      "sha256": "df4f820d4c63ae8a517c64a243c101658352cd07d002355bf3c97de0a00f3775"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/references/structures-to-avoid.md",
+      "bytes": 5257,
+      "sha256": "13fa980180e760e7c190a609d63ea75a1dfbdb989cf250999c65d89a67d08d22"
+    },
+    {
+      "path": "skills/openclaw/text-polisher/references/zh-ai-markers.md",
+      "bytes": 7211,
+      "sha256": "be5df850e460e934e3714d3899fb4a03dca6c433861de47bd91d4deb1e5435c7"
+    },
+    {
+      "path": "skills/openclaw/tts-voiceover/EASEL-META.md",
+      "bytes": 692,
+      "sha256": "f460a08f078bc77b17398e2d0ff6e31bc6f392736dc01f21b5e59f34636fc559"
+    },
+    {
+      "path": "skills/openclaw/tts-voiceover/SKILL.md",
+      "bytes": 5552,
+      "sha256": "94887d59a022cf4065027a592ddec716d70bbc8bbddbbec7a86620623856fc1e"
+    },
+    {
+      "path": "skills/openclaw/video-chapters/SKILL.md",
+      "bytes": 3578,
+      "sha256": "2af4df61055c537de7e4ef54a6a468b929c49e4f1c21e7cdc88da658fe8714f3"
+    },
+    {
+      "path": "skills/openclaw/video-editing/EASEL-META.md",
+      "bytes": 1218,
+      "sha256": "42ae544ade643d41055462f99a2de2dc6f7f2c922bc712d91dc53e1d2f2b5a81"
+    },
+    {
+      "path": "skills/openclaw/video-editing/SKILL.md",
+      "bytes": 5230,
+      "sha256": "7b9326f76186c853a9aec8d1e95dc52cca979c00bb750208bc7fcf1f5a72dd7a"
+    },
+    {
+      "path": "skills/openclaw/video-highlights/SKILL.md",
+      "bytes": 4061,
+      "sha256": "89f3837adb405c120c0f74acb9553a0c8f1704a2c930bd4bf169312e2d6dfca7"
+    },
+    {
+      "path": "skills/openclaw/video-intro-outro/SKILL.md",
+      "bytes": 4347,
+      "sha256": "6253014abf50f9ed0b23de0d88874e62c52e3304efe41682ece1fb146ac0cfd6"
+    },
+    {
+      "path": "skills/openclaw/video-production/EASEL-META.md",
+      "bytes": 717,
+      "sha256": "63d4b8196fa27739462e5597eb955d88a546c2add2fa4c7d3fcd935017d2cabb"
+    },
+    {
+      "path": "skills/openclaw/video-production/SKILL.md",
+      "bytes": 7836,
+      "sha256": "11c89bdc8127a1f77d3408272b9d66cef38d9dfc8fbc414e9c6d34db2e227435"
+    },
+    {
+      "path": "skills/openclaw/video-production/scripts/video_pipeline.py",
+      "bytes": 13910,
+      "sha256": "bcea1bcbc5d229dc25203d895505da754cf74ba82e753c69e797c6f98a89a5df"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/VENDOR.md",
+      "bytes": 3973,
+      "sha256": "da0233aff8c9bdf009967453d5d4c30fc7ed8277b178d16838e9c71c87fe31a2"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/.gitattributes",
+      "bytes": 12,
+      "sha256": "e753774a5c6c845d5b43db5e4e133c8b7308c233f036517be1e2ae01cb068790"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/.gitignore",
+      "bytes": 307,
+      "sha256": "b92368105483c04a35c79679fd8f46e7083e774b7ccc57fa00fea0b223c38424"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/ATTRIBUTIONS.md",
+      "bytes": 1424,
+      "sha256": "94b31c000a9b770a692b8d27138b5f7982b4fd0561ec1b029f0953c0217568ea"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/CHANGELOG.md",
+      "bytes": 6380,
+      "sha256": "fa734037914e22acc93443b814b9c9bf5deedfec545559adb7d0d7329542bcda"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/INTERFACE.md",
+      "bytes": 3597,
+      "sha256": "a8585d0114840f8eaa52b9e9fd8cc35b25fd913557762b0997ba1183912f914c"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/LICENSE",
+      "bytes": 1067,
+      "sha256": "ea4ff6a19a2fc2f57a859aaea119440f23c053f5acdc74da4fd58320bab0346b"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/PITFALLS.md",
+      "bytes": 8608,
+      "sha256": "f20dd19bcdd39ffac5fb90206ad502d2f44f2f14f51cd5a4f0e9c05e7c29265b"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/README.md",
+      "bytes": 4445,
+      "sha256": "19ff14608b9df3995088d3785e8f0d44fee67ca89617699ab1b7dff55a419b6f"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/VERSION",
+      "bytes": 6,
+      "sha256": "d5d1d767be9218f02ebda081a83a2b2fede85055e910e5a94a09329966486fcc"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fonts/README.md",
+      "bytes": 519,
+      "sha256": "42a4da6e65e719fa090bfdc0caf6a7b2a381d6e64b0d2419dc08e2af54940951"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxAurora.tsx",
+      "bytes": 3479,
+      "sha256": "70208ee14c37c385bdd573ac2b7c89b8e39f7a016f5bb5ba56b42f8bbaef0257"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxBehindMask.tsx",
+      "bytes": 3484,
+      "sha256": "210595baea388473b43d7ebdd3268e123e5201a2e96b335e4153996a7b758a73"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxCardA.tsx",
+      "bytes": 8324,
+      "sha256": "348ea3c76ac0a819d6fedaa5b2f487648f9a9af934de1787cd21f1b978fa4b21"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxCardB.tsx",
+      "bytes": 15790,
+      "sha256": "899a5f6ef315dff558576144eba7b1cf5aa0332f836fd3feafe0a868a41a2637"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxCards.tsx",
+      "bytes": 4647,
+      "sha256": "cd9ec6d8a5c54617b56bb38d63fe8c9940fa6ad85594541e204e24f9fed782bb"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxDataCard.tsx",
+      "bytes": 4856,
+      "sha256": "132091e2f0b1539ff6d956b75bcc8f3d7e330cfb27b9ce91ed1bc0e19a15eb0d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxFireflies.tsx",
+      "bytes": 2649,
+      "sha256": "59849436059e44121fdaf839ca77999757c6e9eda048692cba0dc60ce31673d8"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxKinetic.tsx",
+      "bytes": 5227,
+      "sha256": "d8d2aa20a5987eb85dda2476ce91dd85f9b45e52ac6c66ef233eb1e77299af47"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxLeak.tsx",
+      "bytes": 1226,
+      "sha256": "be92787096af14175da0dfc77647b30cfe814e1b6d69a33219847f11fa812738"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxMatch.tsx",
+      "bytes": 5328,
+      "sha256": "9adc1e20f003e87bec6b6a2868245194948f217b4749b71a23573cbea95f6afe"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxPanel3D.tsx",
+      "bytes": 5142,
+      "sha256": "b3cc723f1156175c43fa0a1d6429c44b60746546bc43bcf588a037a6771249b9"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxShatter.tsx",
+      "bytes": 3443,
+      "sha256": "b6f64648497e1411d69727b6ddec29b801bb04c296873ef39e42cf5bc7ee3171"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxStockData.tsx",
+      "bytes": 4853,
+      "sha256": "c0e415e3882424138a4360ca35f65d9cfd823d419e6c1b132ee456bc43bbffae"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxStockFireflies.tsx",
+      "bytes": 2523,
+      "sha256": "02ecffba26c412d27fd74e941d40094bd2e81fb62e4b30c19ac4d4f2c6a5f7a4"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxStockLeak.tsx",
+      "bytes": 1212,
+      "sha256": "acee3f45c0d86a7b40b8c640df2aeff2d7ea6adbb23bcfd646ae7194243199cb"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxStockWords.tsx",
+      "bytes": 2326,
+      "sha256": "f9921314fc4ab502c2ed36a2f828bf7eb8707390e8c3f74d79a6bfdfbff426d1"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxSwitch.tsx",
+      "bytes": 2553,
+      "sha256": "24b93ee66c8f678e74119f006c72441f12280f125fbadb19bd25c70264ad5a40"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxText.tsx",
+      "bytes": 3219,
+      "sha256": "633d621277fc029bfa15882e30b3d692d2885e60b2a24650b9fe11b0cf87dcdd"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/FxWords.tsx",
+      "bytes": 2108,
+      "sha256": "6a324faa2f8f1d4b54a449d5938f0661ea67d6a7d60af9e0600e0ee5f14d4c0f"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/fx/common.tsx",
+      "bytes": 1741,
+      "sha256": "3bf6b5fe5d89444839bbe9a77f2fdb807a2ee062c5a80f19817ccf467a417a0e"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/luts/README.md",
+      "bytes": 566,
+      "sha256": "76d5fb6ad323ae9f7b220d70de2eebdfdda0c1ffca2db83c34e16a7323d5c50a"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/assets/sfx/README.md",
+      "bytes": 379,
+      "sha256": "9020c198c5b01360a18b6854166e44e3d69c186edcd124553b44b50f463bbbad"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/deps/DEPS.md",
+      "bytes": 1664,
+      "sha256": "3a2254912fd48c3eb87b3d8f9c1596cd565a9abfc7d2b27748b5eada84806c05"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/deps/bootstrap.sh",
+      "bytes": 2155,
+      "sha256": "70d23ba5d047641515e7f476dfc63fe34dd67e9a4a4114e41a47b3b6f881f0f0"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/aggregate.py",
+      "bytes": 5740,
+      "sha256": "634c90e0e83731f96bfbc8490828a1884c28f81aa3ca169bc810abbb66d82a7d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_audio.py",
+      "bytes": 1445,
+      "sha256": "a855adc171f309b69c2ce45eca267722ab0e21b4c04b6f12820c8216b84adc0d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_dup.py",
+      "bytes": 3327,
+      "sha256": "5c9a114afb932ccb7ee9185460570a6492c26d621b1f5799f65fa3bc8872a6c2"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_frames.py",
+      "bytes": 4001,
+      "sha256": "01a10036d2928c0545bbf7808dbeb83b2041f6ea605460ac373cf25a03e5539c"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_layout.py",
+      "bytes": 2527,
+      "sha256": "7fac0dbaa2600c7d32efcafe0754ca7e6f58bd83eb43c8a63af04ae6421cc00d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_match.py",
+      "bytes": 4081,
+      "sha256": "8d2dfcb637319bce4601037af3811bd9befa22ca84d32c72244e568d14becf85"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_meta.py",
+      "bytes": 2101,
+      "sha256": "f821acefc0e9dfb0b1bed64ab786527dbcbe5886cbcffdde458eda1dae7d6c87"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_timeline.py",
+      "bytes": 2703,
+      "sha256": "091afb60b0c3a9f8b67b15ae7b7e07c53c5b6471fc1ee54120f6a6c76219d3d1"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/gates/check_transitions.py",
+      "bytes": 3063,
+      "sha256": "96de0e6d735989c66097807ac8c1850983c41367e2666bf488e91e973467d6d9"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/pipeline/RUNBOOK.md",
+      "bytes": 5164,
+      "sha256": "50818a4197eaa54201b7c7a851cd2475c404f79522145e80d0c312f179175086"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/pipeline/ask.py",
+      "bytes": 5157,
+      "sha256": "31334dbd368f60faceec2c56ebe351317e6578ef5fb66843b7f20932b59811dd"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/pipeline/doctor.py",
+      "bytes": 2003,
+      "sha256": "89de103f54fb2eb7f9950b6cae8e916caa3c49b3c382ea65fb865581f28944b4"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/pipeline/run.py",
+      "bytes": 30800,
+      "sha256": "96decbf03afbd14f1e6063ee664b98d96d391b4699d136be54ce9c680040fc1d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/references/design-baseline.md",
+      "bytes": 2898,
+      "sha256": "80f9e179f51eb869553666cfc8745878bc61a5f2c4bffadbb5516207780caa1d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/references/fx-usage.md",
+      "bytes": 5843,
+      "sha256": "c24e5cad9ff355a99de54873732ff0a73c5a2da1c9772bc4dc9a0028f79f1c62"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/references/quality-mechanisms.md",
+      "bytes": 10203,
+      "sha256": "15a282c064be1b320323b3efd71da2757d94dfc2ad7845bc9ec04e4ebea7ddfa"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/references/remotion-pipeline-SNAPSHOT.md",
+      "bytes": 27140,
+      "sha256": "9b761d38bbdabd114bcb479ea37031ae88fc31541b6ed77186062a98f0ec58b8"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/README.md",
+      "bytes": 1849,
+      "sha256": "08b40da6cb384ed9c2a00efd75b1fd53873b8ce17d03ae24c96767a8b9b2a4f2"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/build_scenes_data.py",
+      "bytes": 1980,
+      "sha256": "a069075951a3289a8ed0bf6d4740e0ac034779ff23807bff75d62cccbcb298e4"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/check_sync.py",
+      "bytes": 3358,
+      "sha256": "1f08b139bcffbe3eb9a7d77f1a479ab0b07707b82c2a17ad0295812c038a69bd"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_mixkit.py",
+      "bytes": 909,
+      "sha256": "90ffdf359d9a6592d14d222a759df1720c8dc2e561a9b001501f5366e728900d"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_mixkit2.py",
+      "bytes": 1023,
+      "sha256": "246d32c34974671343d381c9bc15965338af95819efba4d6f87cb865488517af"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_mixkit3.py",
+      "bytes": 934,
+      "sha256": "91654a0a8f67257d3623710ddf1ecd15d488bb517f0cb65ba22906c8474045b3"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_sfx.py",
+      "bytes": 2144,
+      "sha256": "ec44a74e1f12421a183660a906d5a691a86f2056eb7373f02c4aed5e1bdd6793"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_stock.py",
+      "bytes": 1983,
+      "sha256": "6d302862be1d9a9dbed6a3e05608fb2cc1df34ff0b2449cdfa632625ea88ba23"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_stock2.py",
+      "bytes": 2829,
+      "sha256": "4333cfade76c338c76c84192b6e97da28c31333964fab994763a1db80461cdce"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_stock3.py",
+      "bytes": 3368,
+      "sha256": "bee0bde92fb7b3d7c4bdd3c7f6e6cc5705d4c906d7528e5d29bd183a037b5fa6"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fetch_whisper_model.py",
+      "bytes": 1663,
+      "sha256": "54e2e6aec153bf04d8f47d2b333ebdd96b846a6ef44407c1e3a69570db9b3b88"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/fx5_frames.py",
+      "bytes": 1525,
+      "sha256": "33ba7a76890ccdc3694d67cc970e63d42d780cb201a9099c2a50bb2ef055763e"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/grade_demo.py",
+      "bytes": 3048,
+      "sha256": "2e3fff87451201af804186891140246496f32dd4d103d4ab5da43ea49b2953f5"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/make_masks.py",
+      "bytes": 1330,
+      "sha256": "ef63d963e1655d1c8b80922964a50c5bdbc915e56aba6a2254f9b0f8a9ae3744"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/make_review_pack.py",
+      "bytes": 3453,
+      "sha256": "fce7bd8e422aa203f06480505295fbdd10e6566e8c4e6afd07ba0352408ac5b0"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/parse_mixkit.py",
+      "bytes": 742,
+      "sha256": "43052d7ef09b2667f1715560520785f57c11b9035ab991a6e884979337e9b743"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/parse_mixkit_sfx.py",
+      "bytes": 667,
+      "sha256": "f376459b5e70fdee720f3d92f4ad30d73b363f66bb3c8edf49bed4c1b8ec0b58"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/render_slideshow.py",
+      "bytes": 15703,
+      "sha256": "bf7429579f4270556800a0bae5d3755b946406324c3feed8c2e76021c6625f3b"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/rvm_matte.py",
+      "bytes": 2360,
+      "sha256": "0abb26d68280489e5f78d9ac2871586b7e0935525343ba7c71f0baafaf1f9865"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/see.py",
+      "bytes": 7601,
+      "sha256": "5e73be66c1b874246ebac260841abd861f2b7d68b4b2e39702488e9aafe0221c"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/srt_to_transcript.py",
+      "bytes": 3759,
+      "sha256": "09e139c62e7971c34828bcc29fb30d7a646da8d44812016341c33542c1463cdd"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/transcode_material.py",
+      "bytes": 2860,
+      "sha256": "7e6942cd8af28079d4845fe0bc870b4a4e6b4f2b3c1c2860e250ad1891e85051"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/transcode_stock.py",
+      "bytes": 1362,
+      "sha256": "074c028362aeeb2b9d688a2fbadb61b271d194e7892ec65099f2a3618b232c83"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/transcribe.py",
+      "bytes": 2301,
+      "sha256": "dd779d7935a88a6df5a970bc2af003cf5c907687ffbcee629c37947dfc47632b"
+    },
+    {
+      "path": "skills/openclaw/video-production/vendor/video-pipeline-sdk/tools/transcribe_api.py",
+      "bytes": 7121,
+      "sha256": "0320b207eab1e6e6854b4e962b323a03568a04d778ffbf1d29580293fde92bcb"
+    },
+    {
+      "path": "skills/openclaw/video-reframe/SKILL.md",
+      "bytes": 3427,
+      "sha256": "1d25307796b9b7b849aa0374d814c25d7c540e31ac45602fe587c13163d4cf33"
+    },
+    {
+      "path": "skills/openclaw/video-script/EASEL-META.md",
+      "bytes": 574,
+      "sha256": "e50adca557ee4cbccc02a6b7d5f901e4a7fa05c6ccee4e4e25f34c2ad87e0def"
+    },
+    {
+      "path": "skills/openclaw/video-script/SKILL.md",
+      "bytes": 6342,
+      "sha256": "3b06a2078a62ff2b2e329d540afbe914390b6e9b042afbc0b3336baecfcc71d7"
+    },
+    {
+      "path": "skills/openclaw/video-script/references/retention-scripting-guide.md",
+      "bytes": 8041,
+      "sha256": "94c1d001abe8818f9749d6be5b2050744c0eec15cdb4c3c428a221d6c1d4b558"
+    },
+    {
+      "path": "skills/openclaw/video-strategy/EASEL-META.md",
+      "bytes": 482,
+      "sha256": "a119a230e9465ef2a4be77e96eb66464c07393a04d9618f7caef99e7bdeb6493"
+    },
+    {
+      "path": "skills/openclaw/video-strategy/SKILL.md",
+      "bytes": 7102,
+      "sha256": "b265bc9ff1a3a8c7bc8df2ecda2695ca0b05e0bc455cca3969a5fc2961f3a37b"
+    },
+    {
+      "path": "skills/openclaw/video-strategy/references/ai-video-prompting.md",
+      "bytes": 5258,
+      "sha256": "210eaecc05367aacbaf35660ed7352809e31fb326123d0cfd6ab03c09681d13e"
+    },
+    {
+      "path": "skills/openclaw/video-strategy/references/edit-anatomy.md",
+      "bytes": 7530,
+      "sha256": "ad802a1565dd56f920650c27f90e6ab979353253828ec19ce9d906d4ccf18e53"
+    },
+    {
+      "path": "skills/openclaw/video-to-article/SKILL.md",
+      "bytes": 4176,
+      "sha256": "3540fb23de64149dac97beaa66a6a28363664aa782ea1f5e0ca88e8c8ed1ce37"
+    },
+    {
+      "path": "skills/openclaw/voice-clone/SKILL.md",
+      "bytes": 4397,
+      "sha256": "e14727b4df587818e9154c452580b816a6d5f50ea57f2f4328ba2eb795bffc3f"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/EASEL-META.md",
+      "bytes": 554,
+      "sha256": "b5d22c6fa21bf9d45e69da380c8eb837db3b9111e476a11219f68799dad54361"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/SKILL.md",
+      "bytes": 8171,
+      "sha256": "1372ff820d2734eae58f70374b3c8bc6d36542143aca4f11868fe99284103ac8"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/references/image-sourcing.md",
+      "bytes": 3870,
+      "sha256": "57d1c4712e57e0d2ca879899a58776d6c94a9097739a9fe153efc0cd49f1272a"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/references/material-intake.md",
+      "bytes": 5358,
+      "sha256": "df2cd7a33b1ffe7d4da0dcd9910c6a5ee8271362d64676367333d07bba488e30"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/references/meta-schema.md",
+      "bytes": 4703,
+      "sha256": "b4997f9f24baa1326ed2898f7b3a897417c9f2fc027b4ea2a688957818a153d4"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/references/output-spec.md",
+      "bytes": 2371,
+      "sha256": "e144968528d988c1073048ba6add3651c30549cf35a84a081634f56c415eecdf"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/references/reference-search.md",
+      "bytes": 2972,
+      "sha256": "9c86b4ab0d4675443b15d52e478fe266968c80b8bfb29193c314cac958ff2146"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/references/xiaohongshu-viral-methodology.md",
+      "bytes": 7514,
+      "sha256": "efe368b3a3b4cf8406cf18b57e39aa29cb71f034c3ab7ce91c4565b02b4145a0"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/scripts/analyze_material.py",
+      "bytes": 4990,
+      "sha256": "7f39adebda74396a716d5a41e205b7a707877238e8339a7d3ecf41bd85f5e9ec"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/scripts/collage_3x4.py",
+      "bytes": 3460,
+      "sha256": "7b2b3e91f7c0b272d97864ca08e26b2c1ef867ee59ed3fd859be03f23094e6d8"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/scripts/crop_watermark.py",
+      "bytes": 1653,
+      "sha256": "d520cf7fc28938fe89349ceb15a9b0ee97bbb529d9f081d3f62742252ca5bd46"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/scripts/normalize_slug.py",
+      "bytes": 2156,
+      "sha256": "49bcd0e28f57d4c6a4d3d2c95c895b9ec76a0ec9ca54b096bd23af9dd97d20ff"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/scripts/text_on_image.py",
+      "bytes": 5134,
+      "sha256": "a4c561520a3e5dea880a932d21728dee16ff374e0eebd28b66e1011732972157"
+    },
+    {
+      "path": "skills/openclaw/xhs-note-creator/scripts/validate_meta.py",
+      "bytes": 5974,
+      "sha256": "b9fc8d92401e9d9b7f23181470b8eb9838abb2ba22ba8aabbb26985c76868542"
+    },
+    {
+      "path": "skills/shared/README.md",
+      "bytes": 3252,
+      "sha256": "f7e28049c93ea9b3a8252605bec81492c0eeaf221844ba94a43f1cea927e7175"
+    },
+    {
+      "path": "skills/shared/hotlist-apis.md",
+      "bytes": 3273,
+      "sha256": "468cc3292c4dc0d2365f1945d58cb355fcef82dd5b607be01be3c96ee6006b7f"
+    },
+    {
+      "path": "skills/shared/pillar-and-cadence.md",
+      "bytes": 4153,
+      "sha256": "64cc5bd57275607582a6ac611e8ef10145cc3c07e136ddc7964142bfe7855977"
+    },
+    {
+      "path": "skills/shared/references/copy-frameworks.md",
+      "bytes": 3641,
+      "sha256": "4c91441b07110e74eba1e1fd58ee04747459288dc6fbc2855a98866407c709e8"
+    },
+    {
+      "path": "skills/shared/references/hook-title-formulas.md",
+      "bytes": 4115,
+      "sha256": "2ab48324ec63cfc5bab2b6b658bdc8855552bcd21a1d73d5b82c9f6ef45c74af"
+    },
+    {
+      "path": "skills/shared/references/voice-casting.md",
+      "bytes": 13948,
+      "sha256": "8be7dce135669344e8b784301a2b39aeffe6b9dd446daecc2556d6c2752eb62d"
+    },
+    {
+      "path": "skills/shared/scoring-dimensions.md",
+      "bytes": 4009,
+      "sha256": "cd795151aa837b754e634a6df94030a7d1b02ed96047679a77e363923b0ac94a"
+    },
+    {
+      "path": "skills/shared/scripts/account_stats.py",
+      "bytes": 48135,
+      "sha256": "472b1fbeb139ba4a760aa452e1a732ae2d57261040f0216d0e326ed0616e1bc8"
+    },
+    {
+      "path": "skills/shared/scripts/ai_image.py",
+      "bytes": 36706,
+      "sha256": "99a2d477c8baabc210bbc005e74f8f2b223fafadd165849474102d6cb8dfea41"
+    },
+    {
+      "path": "skills/shared/scripts/ai_music.py",
+      "bytes": 21197,
+      "sha256": "3b72ba99049dfaed3d6937b2e4430d4ff99ecb14a3b7dcc584c271d933caf36b"
+    },
+    {
+      "path": "skills/shared/scripts/ai_video.py",
+      "bytes": 42889,
+      "sha256": "f0e54b2504b15f1ae162d8b04741f2f3ea4c1a35e488819d273ca4ce6a45fae6"
+    },
+    {
+      "path": "skills/shared/scripts/asr.py",
+      "bytes": 20606,
+      "sha256": "f9dddbeae9a148baf5abd8c3e5a0e8bb920f05581b6eee66d77d00b5c0522d2f"
+    },
+    {
+      "path": "skills/shared/scripts/audio_mix.py",
+      "bytes": 9537,
+      "sha256": "202c1c5aae521da4e27e921ef897bbcc59f9c52e98aaedbaedbdc0acd9132899"
+    },
+    {
+      "path": "skills/shared/scripts/audio_ops.py",
+      "bytes": 17935,
+      "sha256": "39d471309044f6356ff85201b890dd75f56e61d817db8f55f54709b140474a78"
+    },
+    {
+      "path": "skills/shared/scripts/audio_viz.py",
+      "bytes": 9946,
+      "sha256": "2f804deb0e0c32a448f65055321f9ca1ea6841a3cf3851045ce29827a59fb6d1"
+    },
+    {
+      "path": "skills/shared/scripts/batch_process.py",
+      "bytes": 7846,
+      "sha256": "002a89cb18497ef2e9c12702ecf0e48df295d069e898a76f6f93626fe4e2f403"
+    },
+    {
+      "path": "skills/shared/scripts/beatsync.py",
+      "bytes": 12136,
+      "sha256": "c67509e4c43d2d1dfb1db7c35c05a138a0f4c2a61cbfc4e7a2b1d5f52459749b"
+    },
+    {
+      "path": "skills/shared/scripts/bili_login.py",
+      "bytes": 14700,
+      "sha256": "7cc40fd24830680cbf32681475baae0edb0ca410bdcc809c4ba3a2360bab97eb"
+    },
+    {
+      "path": "skills/shared/scripts/calendar_ops.py",
+      "bytes": 26526,
+      "sha256": "edf4fe0b3c49bd760abd05f92c7038f9e88524eb3bff633fdb6f625b29c0188b"
+    },
+    {
+      "path": "skills/shared/scripts/chromakey.py",
+      "bytes": 9347,
+      "sha256": "6239c40c7f500fe9589129e1e7564136682d6aff61b1dfb93f78075a3109313f"
+    },
+    {
+      "path": "skills/shared/scripts/content_guard.py",
+      "bytes": 21848,
+      "sha256": "f459c857f7aa841b63f0050a65a59957022a6f1da3749e6ace62f1a7c734b866"
+    },
+    {
+      "path": "skills/shared/scripts/doc_convert.py",
+      "bytes": 8026,
+      "sha256": "2f5ec5866280a2e758ac6ebdcccbe66757027a8277b48245450b1e6b61867d0b"
+    },
+    {
+      "path": "skills/shared/scripts/douyin_publish.py",
+      "bytes": 76086,
+      "sha256": "cc15ecc1462d367fea8f0b5afb9387f282433b6d8d49ee6eccfb028dcc6ac1c0"
+    },
+    {
+      "path": "skills/shared/scripts/fix_timing.py",
+      "bytes": 6300,
+      "sha256": "61f28b3152621c7304d27ff350d0b7f88207b4140a5b2fe1c26d5d97916a4f31"
+    },
+    {
+      "path": "skills/shared/scripts/highlight_cut.py",
+      "bytes": 11727,
+      "sha256": "280373d10b84db1afe2abd0ddfb6e716fc9da357f499c126b0359b5a0389853b"
+    },
+    {
+      "path": "skills/shared/scripts/human_pace.py",
+      "bytes": 2495,
+      "sha256": "621c1a194e5870a6ae3069b2d4c73f94bedeadbd58ab88111acdae9c045cb19a"
+    },
+    {
+      "path": "skills/shared/scripts/image_ops.py",
+      "bytes": 25375,
+      "sha256": "9594561d9d6d2b4140b79ed27bbf0fa33a6d80cb79dbbe81ebbb0f252c4d4c12"
+    },
+    {
+      "path": "skills/shared/scripts/img_enhance.py",
+      "bytes": 7072,
+      "sha256": "44c7e03513bb5ba436368b1d12f1da83a98935bf613f9d6d2eafec0307d4b161"
+    },
+    {
+      "path": "skills/shared/scripts/install_tool.py",
+      "bytes": 28082,
+      "sha256": "f0d25f2b31558ae18791fedd3c2b2dd786d259ad04f88d23bd9c88f733639b65"
+    },
+    {
+      "path": "skills/shared/scripts/intro_outro.py",
+      "bytes": 18250,
+      "sha256": "1e559e2b67a65fc0f117d82084eed5229d34ab978d067a1eab714c52ff0b44b3"
+    },
+    {
+      "path": "skills/shared/scripts/login_state.py",
+      "bytes": 2522,
+      "sha256": "172a4c42fb1b78a0c3fa93d29ce9820b5b76767fcffac2292d71c7d43b1d5693"
+    },
+    {
+      "path": "skills/shared/scripts/manifest.py",
+      "bytes": 16727,
+      "sha256": "84f12643ee833696107caaaf2b4fcc82c11b5755c2ade49d770fa14cda8cc58c"
+    },
+    {
+      "path": "skills/shared/scripts/meme_ops.py",
+      "bytes": 10027,
+      "sha256": "ba99c14b3f7b80ca675f238e5c5e5962b2ff7697237b1f7c47c7061fc4a87fee"
+    },
+    {
+      "path": "skills/shared/scripts/mindmap.py",
+      "bytes": 6668,
+      "sha256": "ade411654af7224cd23b550fe5dcac4599d53db6ad6f1f7c348387566323cb2b"
+    },
+    {
+      "path": "skills/shared/scripts/model_registry.py",
+      "bytes": 12510,
+      "sha256": "5f56a35018ed81f4b167a3bfbe952a1aca29a65dcff269ab11675d8f9fe38cc9"
+    },
+    {
+      "path": "skills/shared/scripts/multivoice.py",
+      "bytes": 59517,
+      "sha256": "3f995902695573a6c2d2550c277112b0aa5063466d48f34953fec1d4da7223d1"
+    },
+    {
+      "path": "skills/shared/scripts/output_paths.py",
+      "bytes": 3628,
+      "sha256": "00672d9b6129acae8c0e08764f6b6d5787f501326b077b396734e942bb197139"
+    },
+    {
+      "path": "skills/shared/scripts/persona_gate.py",
+      "bytes": 7278,
+      "sha256": "028bd5d5302f65032f4f8a64d9a6efe38869ffd76afae703ecf4083199982e87"
+    },
+    {
+      "path": "skills/shared/scripts/platform_readback.py",
+      "bytes": 41251,
+      "sha256": "b86b69802debf79b89d64ec682de2de792d05308f42d4e79ec567150154a2bf9"
+    },
+    {
+      "path": "skills/shared/scripts/reframe.py",
+      "bytes": 10736,
+      "sha256": "4808ca8bf674c76928d8c9e1566e61e921fae807d4b5b824ec21b9129663232d"
+    },
+    {
+      "path": "skills/shared/scripts/remove_bg.py",
+      "bytes": 8190,
+      "sha256": "677a219feafb0582f32aec49e78f4f46d5a862c2e4050e7c8477957c14dd2bea"
+    },
+    {
+      "path": "skills/shared/scripts/render_card.py",
+      "bytes": 8268,
+      "sha256": "fcc5d0d7a877bded9e056a8faea2ce487d35231de07f6b0407d22eec81eb83ac"
+    },
+    {
+      "path": "skills/shared/scripts/slideshow.py",
+      "bytes": 14438,
+      "sha256": "9cd0703150b9b13ac74db45bad6b08b03c996cd50b2d8233aa69dc54666efe07"
+    },
+    {
+      "path": "skills/shared/scripts/social_stats.py",
+      "bytes": 12609,
+      "sha256": "2bc184bfa59ff40aaf9f5e704915662f43714c27330ad0157a2b9626fee9abda"
+    },
+    {
+      "path": "skills/shared/scripts/subtitle_ops.py",
+      "bytes": 23795,
+      "sha256": "d190eabc5b21aec49d96584bd42126259b0fb92fc3c491fd32d3364ad98e8203"
+    },
+    {
+      "path": "skills/shared/scripts/tts.py",
+      "bytes": 21144,
+      "sha256": "8f55b95a3b1f125960766f0dc9cbcf07d46c67856a2fb02bfd6245e218e88cbd"
+    },
+    {
+      "path": "skills/shared/scripts/video_ops.py",
+      "bytes": 30357,
+      "sha256": "aa67f3f221b719e665ae318c46e265ce9d107be7ee565293b86a2554894fae26"
+    },
+    {
+      "path": "skills/shared/scripts/voice_clone.py",
+      "bytes": 29055,
+      "sha256": "02f90564f12ea9509949326ed3faa247d665e0ca16233f945ab454df03f397f3"
+    },
+    {
+      "path": "skills/shared/scripts/web_publisher.py",
+      "bytes": 85581,
+      "sha256": "de0db840e62dc6e3e2e7e4a8fa48ab39cfc53271944650b8b3bec3cc4dc194b5"
+    },
+    {
+      "path": "skills/shared/scripts/weixin_mp_stats.py",
+      "bytes": 33769,
+      "sha256": "f2e307d052c6e4f34d4f6279e7d4a1da66f9870faa11c3c1ed6ab5789d535f99"
+    },
+    {
+      "path": "skills/shared/scripts/wordcount.py",
+      "bytes": 7513,
+      "sha256": "67a5be020d330dd32479907cad8de14b728fd9418b557fd64c5638799c92da0d"
+    },
+    {
+      "path": "skills/shared/scripts/xhs_comment.py",
+      "bytes": 48656,
+      "sha256": "80d68486fb44a18c229dd5059c7d0acaef9d99e6e38ec08c3e2c993eb8249a92"
+    },
+    {
+      "path": "skills/shared/scripts/xhs_publish.py",
+      "bytes": 47674,
+      "sha256": "50d79533d11211c08dfbd425cad40a7bbc067d6dd7f384d99f716e9d4c994c77"
+    },
+    {
+      "path": "skills/shared/scripts/zhihu_answer.py",
+      "bytes": 13868,
+      "sha256": "3510bca30b42a1fc178b78f051c62f24a1b8c9305f3e28c774a1eee1a1e47531"
+    },
+    {
+      "path": "skills/shared/scripts/zhihu_comments_fetch.py",
+      "bytes": 4013,
+      "sha256": "afb96d17e36ddc8095ede27e107697c714c6053d47430313c4fc1ed1a5e1dc37"
+    },
+    {
+      "path": "web/app.py",
+      "bytes": 208015,
+      "sha256": "d6d17aec35c126e341db41a902cd063e674341dd65e987a79377920b6c2f0eaa"
+    },
+    {
+      "path": "web/frontend/src/App.tsx",
+      "bytes": 37280,
+      "sha256": "e598f980587fc24aaa3a82e1fabfc76e9ab088dabe4603cfeff52a04e01cb348"
+    },
+    {
+      "path": "web/frontend/src/components/AccountsPage.tsx",
+      "bytes": 21601,
+      "sha256": "9c1a35d52456759806001d867e7a37fd115412fb5eb3b8a420a3e1d55ec5dc65"
+    },
+    {
+      "path": "web/frontend/src/components/BreakdownPage.tsx",
+      "bytes": 3444,
+      "sha256": "adceec292b57ffa37f25a9288b0651106401c8b98967d80f7799e828bbed2d8a"
+    },
+    {
+      "path": "web/frontend/src/components/BrushEntry.tsx",
+      "bytes": 5863,
+      "sha256": "bf4c7d8f83ec2653e97cd27c839525b5920c962b1d7ba3f2c228af5c79dcd570"
+    },
+    {
+      "path": "web/frontend/src/components/CalendarPage.tsx",
+      "bytes": 15243,
+      "sha256": "a644b084af87afc98b486e0775abe9471df575bdd31aaa36b2d161199b383317"
+    },
+    {
+      "path": "web/frontend/src/components/ChatPage.tsx",
+      "bytes": 11520,
+      "sha256": "c754f2bc888282f7f40b44e7a22e18a11df6f8ce1d1b86f295ebfbc15cbd711c"
+    },
+    {
+      "path": "web/frontend/src/components/DashboardPage.tsx",
+      "bytes": 17358,
+      "sha256": "c6dca6892645f913c73f66e595463b0448533aefd7f6fcb039dbc402cf63b608"
+    },
+    {
+      "path": "web/frontend/src/components/EnvBoard.tsx",
+      "bytes": 8025,
+      "sha256": "ea9513016e77050b47823cd73bf0280beca217266e2919db3996ce355f877080"
+    },
+    {
+      "path": "web/frontend/src/components/ErrorBoundary.tsx",
+      "bytes": 1462,
+      "sha256": "41c090b3865f2cfbce7d6ddc1acd0b898537250760ebd1cf9e313d7d026d2059"
+    },
+    {
+      "path": "web/frontend/src/components/IdeasPage.tsx",
+      "bytes": 6749,
+      "sha256": "4af0477232048c934f97fed3b6bd718b4bf8b8b9cf2e4e47ac7e160f3e22a0f9"
+    },
+    {
+      "path": "web/frontend/src/components/MessageBubble.tsx",
+      "bytes": 5142,
+      "sha256": "6b983d1f44dbcefa507b7968f84a923e1d942f75fd6ffcfd44eb9183d087a368"
+    },
+    {
+      "path": "web/frontend/src/components/OnboardingWizard.tsx",
+      "bytes": 10951,
+      "sha256": "8201bee1e17f1148bde57fc29420850f847e665bc2ef865a3d100b9dcafea528"
+    },
+    {
+      "path": "web/frontend/src/components/OutputsPage.tsx",
+      "bytes": 15498,
+      "sha256": "a0f05868a9633057c29d788f136aec99a2e45b64e561a2005955e6b669e58184"
+    },
+    {
+      "path": "web/frontend/src/components/ProfilePage.tsx",
+      "bytes": 9847,
+      "sha256": "a90c9c229fa421b4c729f4014c93266ec179e8c8568e5a012f95048e55f92947"
+    },
+    {
+      "path": "web/frontend/src/components/PublishPage.tsx",
+      "bytes": 25233,
+      "sha256": "13ae5f0a4c59b35ae8e2beec8d3adb37b796d44b892d13daa6c089fa7da27403"
+    },
+    {
+      "path": "web/frontend/src/components/QuestionCards.tsx",
+      "bytes": 7646,
+      "sha256": "7fef7508d072387b3f1f3e7e13ba4d8b2cc42e3d0615d5a42d47fdc37d072ccc"
+    },
+    {
+      "path": "web/frontend/src/components/SettingsPanel.tsx",
+      "bytes": 42247,
+      "sha256": "8786c8e676b93efbf230908633353d64828a8f526f5bf42f86d5fc9e9c7a2001"
+    },
+    {
+      "path": "web/frontend/src/components/Sidebar.tsx",
+      "bytes": 6981,
+      "sha256": "98dc28518d2b460ba5a82b8b6cda996f8aed915ff904ddc7a31bc35682b6e69f"
+    },
+    {
+      "path": "web/frontend/src/components/SkillDrawer.tsx",
+      "bytes": 10729,
+      "sha256": "315ffdd1bd52de0fd2a5edb24dce93e82db5d1a8f4309a9320b666546f067547"
+    },
+    {
+      "path": "web/frontend/src/components/SkillPage.tsx",
+      "bytes": 7231,
+      "sha256": "0ea4fa00a119a70a3eb2044718912892dcf067cf672aef16fb5fe33f4838213a"
+    },
+    {
+      "path": "web/frontend/src/components/SubNav.tsx",
+      "bytes": 1308,
+      "sha256": "5d057964a93518664d1b7637d110b3b8ead2c2f15ce5d72a55dc49fbcd3d883c"
+    },
+    {
+      "path": "web/frontend/src/components/ThemeToggle.tsx",
+      "bytes": 2398,
+      "sha256": "126681a63136e432077691c0740f49405e91f025c5a32c61c21d9fbe4eeacb4b"
+    },
+    {
+      "path": "web/frontend/src/components/TrendsPage.tsx",
+      "bytes": 4392,
+      "sha256": "5804389db41d939fff95518f90e836d1ddcc0dd6118e827056adfa964d4712f4"
+    },
+    {
+      "path": "web/frontend/src/components/icons.tsx",
+      "bytes": 9375,
+      "sha256": "82e401d5a80a0c8acf7a032022ee04a771354da2c1ccc04b626ea4994dbfcc96"
+    },
+    {
+      "path": "web/frontend/src/components/settingsIcons.tsx",
+      "bytes": 5198,
+      "sha256": "f719d9783d66892a5aab13ee837e1e9a367ea510d39275441b53e4b62504bda8"
+    },
+    {
+      "path": "web/frontend/src/lib/api.ts",
+      "bytes": 30781,
+      "sha256": "da6900cb8257d2c3d8f50799b4aef3f025af5909180e9d1b3285fb8679ef05be"
+    },
+    {
+      "path": "web/frontend/src/lib/capabilityMenu.ts",
+      "bytes": 49200,
+      "sha256": "499eb48ca1935d76b02bba681477e23c88594924c3dffe228da16275d8a7f92b"
+    },
+    {
+      "path": "web/frontend/src/lib/linkifyOutputs.ts",
+      "bytes": 5904,
+      "sha256": "7d2b8b32fbf215d17a85737124f2366af2a3afd6084534baff0684302e5cef9f"
+    },
+    {
+      "path": "web/frontend/src/lib/sanitize.ts",
+      "bytes": 386,
+      "sha256": "dfb4a133fefe77bebb9aea1e078f170d26e52f18dc6e55d19c9194c89f4cf713"
+    },
+    {
+      "path": "web/frontend/src/lib/skillDisplayNames.ts",
+      "bytes": 5054,
+      "sha256": "8ac5dffffbd177ae9ae8ee97ab6029e4e29679297c728c93f819343e56eeb2b9"
+    },
+    {
+      "path": "web/frontend/src/lib/store.ts",
+      "bytes": 12490,
+      "sha256": "c5c7266ffbf1c739437bf9abe21380d6142f3b61f09aa53ab9e0f7bb6612661e"
+    },
+    {
+      "path": "web/frontend/src/lib/whoami.ts",
+      "bytes": 2686,
+      "sha256": "e14207e2338fe3d2e56ffb4d8375e8545ff3ea42e1a725eff8bd39d0f63f1155"
+    },
+    {
+      "path": "web/frontend/src/main.tsx",
+      "bytes": 537,
+      "sha256": "8b191db4ebd16ab8a5c3233be80dc2f8df888da5f4ff1934297ea10ed333b1f5"
+    }
+  ]
+}

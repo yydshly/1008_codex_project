@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-12",
+  "baseline": "fb80ae6dd6fc26f5553efcb293ee6d93ef253f02",
+  "guideSha256": "41a28113c166c901143ac01abedb05e6ac7a72f5d4b3add507510d615fe35152",
+  "targetUrl": "https://yydshly.github.io/1008_codex_project/006-easel/",
+  "status": "locally_verified",
+  "local": {
+    "contentAudit": "passed",
+    "summaryItems": 12,
+    "overviewItems": 6,
+    "flow": 7,
+    "modules": 8,
+    "skills": 114,
+    "scenarios": 6,
+    "values": 4,
+    "reuseRoutes": 4,
+    "extensions": 8,
+    "browser": {
+      "engine": "Codex In-app Browser",
+      "entry": "http://127.0.0.1:4216/1008_codex_project/006-easel/",
+      "navigationChapters": 6,
+      "summaryItems": 12,
+      "overviewParagraphs": 6,
+      "flow": 7,
+      "skillSearch": "rss_digest -> 1/114",
+      "skillDetail": "RSS能力与原理、完整原文可读",
+      "newsSources": 11,
+      "rssDemo": "6条输入->3条输出，顺序1/2/5",
+      "evidence": "5项通过、1项Windows上游自检失败",
+      "mobile": [
+        {
+          "width": 390,
+          "scrollWidth": 375
+        },
+        {
+          "width": 320,
+          "scrollWidth": 305
+        }
+      ],
+      "consoleErrors": 0,
+      "screenshot": "assets/publication/local-mobile.png"
+    },
+    "siteBuild": "passed: projects001-006and013",
+    "aggregateValidation": "passed",
+    "catalogCheck": "passed",
+    "rootTests": "15/15 passed"
+  },
+  "remote": null,
+  "scope": "验证静态研究网站和原始引导图；未运行原Easel付费生成、社媒登录或真实发布。"
+}

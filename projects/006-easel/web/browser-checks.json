@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09",
+  "commit": "fb80ae6dd6fc26f5553efcb293ee6d93ef253f02",
+  "url": "http://127.0.0.1:4206/1008_codex_project/006-easel/",
+  "method": "Codex In-app Browser 实际生产网页交互；DOM 与真实截图核对",
+  "checks": [
+    {"name": "五个章节与固定提交链接", "status": "pass"},
+    {"name": "完整技能目录及发现层筛选", "status": "pass", "observed": "全部 114 项，发现层 9 项"},
+    {"name": "全文检索与筛选后刷新", "status": "pass", "observed": "skill-news-intelligence 命中 2 项（含 RSS 文档提及），刷新后仍 2 项；rss_digest 命中 1 项"},
+    {"name": "技能详情原理／流程／完整原文", "status": "pass", "observed": "行业情报流程分区与 3048 字符原文可读，源码链接固定提交"},
+    {"name": "来源分类与搜索", "status": "pass", "observed": "Web 热榜 6 条，资讯 11 条，搜索 aihot 后 1 条并显示 24h 规则"},
+    {"name": "三条离线样本规则", "status": "pass", "observed": "资讯 smart_fill 得 5 条含 2 条补充；RSS 得 3 条顺序 1/2/5；热榜前 3 条顺序 1/2/3 且禁用关键词"},
+    {"name": "核验章节及控制台", "status": "pass", "observed": "6 项记录；未捕获应用 console error 或 warn"},
+    {"name": "手机 390×844 视口", "status": "pass", "observed": "实际可用布局宽 375（滚动条占位），概览／搜索／制作 body scrollWidth 375；详情宽约 336.67、scrollWidth 320，无横向溢出；已恢复默认视口"},
+    {"name": "真实截图与交付标签页", "status": "pass", "observed": "cover.jpg、search.jpg、mobile.jpg 保存在 assets；网页标签页保留"}
+  ],
+  "scope": "这是研究网页的可用性验证，未测试原 Easel 付费生成、社媒登录或真实发布。"
+}

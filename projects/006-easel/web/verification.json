@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-08T18:11:41.755932+00:00",
+  "platform": "win32",
+  "python": "3.10.11",
+  "commit": "fb80ae6dd6fc26f5553efcb293ee6d93ef253f02",
+  "results": [
+    {
+      "name": "跨平台派发约束与路由",
+      "path": "skills/openclaw/skill-cross-platform-publish/scripts/publish_dispatch.py",
+      "status": "pass",
+      "exitCode": 0,
+      "detail": "✅ selftest 通过（约束检查/告警/路由/plan）\n\npublish_dispatch 自检 ..."
+    },
+    {
+      "name": "排期队列导入、到期计算与状态",
+      "path": "skills/openclaw/skill-publish-scheduler/scripts/publish_queue.py",
+      "status": "pass",
+      "exitCode": 0,
+      "detail": "✅ 导入 3 条 → <USER_HOME>\\AppData\\Local\\Temp\\tmp6wmfndh3\\q.json（队列共 3 条）\n✅ #1 → done\n✅ 已加入 #4：2026-07-02 08:00 · wechat · art.md\n✅ selftest 通过（import/due 计算/mark 流转/add/时间解析）\n\npublish_queue 自检 ..."
+    },
+    {
+      "name": "农历换算锚点",
+      "path": "skills/openclaw/skill-event-calendar/scripts/lunar.py",
+      "status": "pass",
+      "exitCode": 0,
+      "detail": "[PASS] 2025 春节: got=2025-01-29 exp=2025-01-29\n[PASS] 2024 春节: got=2024-02-10 exp=2024-02-10\n[PASS] 2023 春节: got=2023-01-22 exp=2023-01-22\n[PASS] 2025 中秋: got=2025-10-06 exp=2025-10-06\n[PASS] 2024 中秋: got=2024-09-17 exp=2024-09-17\n[PASS] 2025 端午: got=2025-05-31 exp=2025-05-31\n[PASS] 2023 闰二月初一: got=2023-03-22 exp=2023-03-22\n[PASS] festival 春节 2025: got=2025-01-29 exp=2025-01-29\n[PASS] festival 中秋 2025: got=2025-10-06 exp=2025-10-06\n[PASS] festival 除夕 2025: got=2025-01-28 exp=2025-01-28\n[PASS] festival 腊八 2025: got=2025-01-07 exp=2025-01-07\n[PASS] s2l(2025-01-29): got=(2025, 1, 1, False) exp=(2025, 1, 1, False)\n[PASS] s2l(2025-10-06): got=(2025, 8, 15, False) exp=(2025, 8, 15, False)\n[PASS] s2l(2023-03-22): got=(2023, 2, 1, True) exp=(2023, 2, 1, True)\n[PASS] 2000-2050 每日往返一致"
+    },
+    {
+      "name": "上游 RSS 原始自检（Windows）",
+      "path": "skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py",
+      "status": "fail",
+      "exitCode": 1,
+      "detail": "✅ <USER_HOME>\\AppData\\Local\\Temp\\tmp4ms0861m\\d.json（0 条，来自 2 个源）\n\nrss_digest 自检 ...\n  ⚠️ 拉取失败 file://<USER_HOME>\\AppData\\Local\\Temp\\tmp4ms0861m\\a.xml: <urlopen error [WinError 3] 系统找不到指定的路径。: ''>\n  ⚠️ 拉取失败 file://<USER_HOME>\\AppData\\Local\\Temp\\tmp4ms0861m\\b.xml: <urlopen error [WinError 3] 系统找不到指定的路径。: ''>\nTraceback (most recent call last):\n  File \"upstream\\skills\\openclaw\\skill-rss-aggregator\\scripts\\rss_digest.py\", line 281, in <module>\n    sys.exit(main())\n  File \"upstream\\skills\\openclaw\\skill-rss-aggregator\\scripts\\rss_digest.py\", line 277, in main\n    return a.func(a)\n  File \"upstream\\skills\\openclaw\\skill-rss-aggregator\\scripts\\rss_digest.py\", line 244, in cmd_selftest\n    assert any(\"大模型\" in t for t in titles), f\"关键词过滤后应含大模型条目：{titles}\"\nAssertionError: 关键词过滤后应含大模型条目：[]"
+    },
+    {
+      "name": "RSS 正确 Windows URI＋摘要命中／时间窗／去重／缺日期保留",
+      "path": "skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py",
+      "status": "pass",
+      "exitCode": 0,
+      "detail": "调用原 cmd_fetch，以 Path.as_uri() 提供本地 feed。5 条输入 → 2 条输出：摘要命中保留；重复链接、过期与无关键词排除；缺日期保留。原文件未修改。"
+    },
+    {
+      "name": "资讯真实过滤函数：只匹配标题、转义关键词、日期 fail-open",
+      "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+      "status": "pass",
+      "exitCode": 0,
+      "detail": "AST 原样提取 filter_items/filter_by_hours 并运行；AI 摘要命中不能使标题过滤通过；AI+ 被当成字面子串；无效日期保留、过期日期排除。未运行联网抓取器。"
+    }
+  ],
+  "scope": "已读取全部 114 个 SKILL 文档并核对核心调用路径。上述为离线实验；未实时探测各资讯／热榜源，未端到端运行全部技能，未调用付费模型，未登录账号或真实发布。",
+  "rssFailure": "上游自检将 Windows 路径拼为 file://C:\\...，urlopen 拉取失败，导致后续断言失败。正确 Path.as_uri() 的原创实验通过；不能将该自检失败等同网络 RSS 核心过滤失败。"
+}

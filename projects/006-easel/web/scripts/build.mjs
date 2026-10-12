@@ -1,0 +1,38 @@
+import {readFile,writeFile,mkdir,copyFile,rm} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {renderStaticLanding} from '../research-view.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const out=path.join(root,'dist');
+if(path.dirname(out)!==root)throw new Error('构建路径不在项目内');
+const [caps,facts,verification,publication]=await Promise.all(['capabilities.json','facts.json','verification.json','publication.json'].map(async name=>JSON.parse(await readFile(path.join(root,name),'utf8'))));
+if(caps.items.length!==114||new Set(caps.items.map(x=>x.id)).size!==114)throw new Error('114 项技能覆盖错误');
+for(const x of caps.items){if(!x.description||!x.mechanism||!x.document)throw new Error('技能资料不完整: '+x.id);}
+for(const x of facts.layers){if(caps.items.filter(s=>s.layer===x.id).length!==x.count)throw new Error('层级数量错误: '+x.id);}
+if(facts.sources.filter(x=>x.group==='hot').length!==6||facts.sources.filter(x=>x.group==='news').length!==11)throw new Error('源数量错误');
+if(caps.commit!==facts.commit||verification.commit!==facts.commit)throw new Error('提交基线不一致');
+if(verification.results.filter(x=>x.status==='pass').length!==5||verification.results.filter(x=>x.status==='fail').length!==1)throw new Error('核验结果缺失或已改变，需同步研究说明');
+const catalog=JSON.parse(await readFile(path.resolve(root,'../../../projects.json'),'utf8'));
+const project=catalog.projects.find(x=>x.id==='006'&&x.slug==='easel');
+assert.ok(project,'索引缺少006 Easel');
+for(const field of ['summary','summaryItems','overviewItems'])assert.deepEqual(publication[field],project[field],`网页和唯一索引数据源的${field}不一致`);
+assert.equal(publication.meta.commit,facts.commit);
+assert.equal(publication.summaryItems.length,12);assert.equal(publication.overviewItems.length,6);
+const guide=await readFile(path.join(root,'../assets/capability-map.png'));
+assert.equal(createHash('sha256').update(guide).digest('hex'),publication.meta.guide.sha256,'必须沿用完整原始引导图');
+assert.equal(guide.readUInt32BE(16),publication.meta.guide.width);assert.equal(guide.readUInt32BE(20),publication.meta.guide.height);
+for(const item of publication.flow)for(const id of item.skills)assert.ok(caps.items.some(x=>x.id===id),`流程引用的技能不存在: ${id}`);
+await rm(out,{recursive:true,force:true});await mkdir(out,{recursive:true});
+for(const file of ['style.css','publication.css','app.js','research-view.mjs','favicon.svg','capabilities.json','facts.json','verification.json','publication.json'])await copyFile(path.join(root,file),path.join(out,file));
+const template=await readFile(path.join(root,'index.html'),'utf8');
+assert.ok(template.includes('<!-- EASEL_STATIC:START -->'),'缺少静态理解构建标记');
+await writeFile(path.join(out,'index.html'),template.replace(/<!-- EASEL_STATIC:START -->[\s\S]*?<!-- EASEL_STATIC:END -->/,`<!-- EASEL_STATIC:START -->${renderStaticLanding(publication,facts)}<!-- EASEL_STATIC:END -->`));
+await copyFile(path.join(root,'browser-checks.json'),path.join(out,'browser-checks.json'));
+await copyFile(path.join(root,'../src/LICENSE.upstream'),path.join(out,'LICENSE.upstream.txt'));
+await copyFile(path.join(root,'../README.md'),path.join(out,'research.md'));
+await copyFile(path.join(root,'../assets/capability-map.png'),path.join(out,'capability-map.png'));
+await copyFile(path.join(root,'../assets/capability-map-prompt.md'),path.join(out,'capability-map-prompt.md'));
+await writeFile(path.join(out,'build-info.json'),JSON.stringify({commit:facts.commit,skills:114,layers:facts.layers.map(x=>[x.id,x.count]),sources:27,summaryItems:12,overviewItems:6,flow:7,scenarios:6,values:4,reuseRoutes:4,extensions:8,guideSha256:publication.meta.guide.sha256,builtAt:new Date().toISOString()},null,2));
+console.log('构建通过：114 个技能、6 个层级、27 条来源路径，固定提交与离线核验一致。');

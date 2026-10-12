@@ -1,0 +1,1323 @@
+{
+  "commit": "fb80ae6dd6fc26f5553efcb293ee6d93ef253f02",
+  "date": "2026-10-09",
+  "repository": "https://github.com/ZJU-REAL/Easel",
+  "license": "Apache-2.0",
+  "layers": [
+    {
+      "id": "general",
+      "name": "基础与画像",
+      "count": 6,
+      "description": "访谈、账号取数、六维文件、模板和产物管理，为所有任务提供上下文。",
+      "flow": "用户输入／公开资料 → 画像 Markdown、记忆与素材索引"
+    },
+    {
+      "id": "discover",
+      "name": "发现与检索",
+      "count": 9,
+      "description": "热榜、资讯、RSS、竞品、UGC 与规则研究；程序取数和 Agent 分析有不同边界。",
+      "flow": "原始信息 → 带来源的情报、节点和候选选题"
+    },
+    {
+      "id": "plan",
+      "name": "策划与定位",
+      "count": 16,
+      "description": "定位、受众、选题矩阵、钩子、大纲、活动和日历，主体由 Agent 按规则组织。",
+      "flow": "画像＋资料 → 内容策略、结构、排期和执行方案"
+    },
+    {
+      "id": "produce",
+      "name": "内容与媒体制作",
+      "count": 52,
+      "description": "文案及视觉、图像、音频、视频、短剧和论文解读；脚本封装媒体处理与模型客户端。",
+      "flow": "脚本／素材 → 图文、音频、字幕、视频与项目文件"
+    },
+    {
+      "id": "publish",
+      "name": "检查与分发",
+      "count": 20,
+      "description": "改编、风险与质量检查、平台发布、排期、通知和评论运营；必须看具体入口的执行方式。",
+      "flow": "成品＋登录态 → 预检、派发计划、平台稿件或草稿"
+    },
+    {
+      "id": "attribute",
+      "name": "数据与复盘",
+      "count": 11,
+      "description": "快照、日志、指标计算、评论洞察、内容复盘和策略迭代；效果数据需要真实采集。",
+      "flow": "真实表现＋历史 → 统计、解释、建议与可批准的记忆更新"
+    }
+  ],
+  "sources": [
+    {
+      "id": "weibo",
+      "group": "hot",
+      "name": "微博",
+      "key": "weibo",
+      "url": "https://60s.viki.moe/v2/weibo",
+      "backup": "https://v2.xxapi.cn/api/weibohot",
+      "method": "第三方聚合 JSON · urllib GET · 8 秒超时",
+      "parse": "兼容 data 数组，或 data.data／data.list；取标题、热度、链接字段，跳过空标题。",
+      "filter": "允许的平台 key → 主源／备用 → 300 秒缓存 → 保留原顺序 → 前 1–30 条；Web 不按画像或关键词筛选。",
+      "limits": "不是官方平台授权 API。主源失败尝试已配置备用；全部失败可用旧缓存，否则空列表。updated 是本次响应时间。",
+      "auth": "此获取接口不需 key／社媒登录；依赖聚合服务",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4137,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4137"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4162,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4162"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "id": "douyin",
+      "group": "hot",
+      "name": "抖音",
+      "key": "douyin",
+      "url": "https://60s.viki.moe/v2/douyin",
+      "backup": "https://v2.xxapi.cn/api/douyinhot",
+      "method": "第三方聚合 JSON · urllib GET · 8 秒超时",
+      "parse": "兼容 data 数组，或 data.data／data.list；取标题、热度、链接字段，跳过空标题。",
+      "filter": "允许的平台 key → 主源／备用 → 300 秒缓存 → 保留原顺序 → 前 1–30 条；Web 不按画像或关键词筛选。",
+      "limits": "不是官方平台授权 API。主源失败尝试已配置备用；全部失败可用旧缓存，否则空列表。updated 是本次响应时间。",
+      "auth": "此获取接口不需 key／社媒登录；依赖聚合服务",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4137,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4137"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4162,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4162"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "id": "zhihu",
+      "group": "hot",
+      "name": "知乎",
+      "key": "zhihu",
+      "url": "https://60s.viki.moe/v2/zhihu",
+      "backup": "",
+      "method": "第三方聚合 JSON · urllib GET · 8 秒超时",
+      "parse": "兼容 data 数组，或 data.data／data.list；取标题、热度、链接字段，跳过空标题。",
+      "filter": "允许的平台 key → 主源／备用 → 300 秒缓存 → 保留原顺序 → 前 1–30 条；Web 不按画像或关键词筛选。",
+      "limits": "不是官方平台授权 API。主源失败尝试已配置备用；全部失败可用旧缓存，否则空列表。updated 是本次响应时间。",
+      "auth": "此获取接口不需 key／社媒登录；依赖聚合服务",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4137,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4137"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4162,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4162"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "id": "bilibili",
+      "group": "hot",
+      "name": "哔哩哔哩",
+      "key": "bilibili",
+      "url": "https://60s.viki.moe/v2/bili",
+      "backup": "https://v2.xxapi.cn/api/bilibilihot",
+      "method": "第三方聚合 JSON · urllib GET · 8 秒超时",
+      "parse": "兼容 data 数组，或 data.data／data.list；取标题、热度、链接字段，跳过空标题。",
+      "filter": "允许的平台 key → 主源／备用 → 300 秒缓存 → 保留原顺序 → 前 1–30 条；Web 不按画像或关键词筛选。",
+      "limits": "不是官方平台授权 API。主源失败尝试已配置备用；全部失败可用旧缓存，否则空列表。updated 是本次响应时间。",
+      "auth": "此获取接口不需 key／社媒登录；依赖聚合服务",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4137,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4137"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4162,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4162"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "id": "baidu",
+      "group": "hot",
+      "name": "百度",
+      "key": "baidu",
+      "url": "https://60s.viki.moe/v2/baidu/hot",
+      "backup": "https://v2.xxapi.cn/api/baiduhot",
+      "method": "第三方聚合 JSON · urllib GET · 8 秒超时",
+      "parse": "兼容 data 数组，或 data.data／data.list；取标题、热度、链接字段，跳过空标题。",
+      "filter": "允许的平台 key → 主源／备用 → 300 秒缓存 → 保留原顺序 → 前 1–30 条；Web 不按画像或关键词筛选。",
+      "limits": "不是官方平台授权 API。主源失败尝试已配置备用；全部失败可用旧缓存，否则空列表。updated 是本次响应时间。",
+      "auth": "此获取接口不需 key／社媒登录；依赖聚合服务",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4137,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4137"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4162,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4162"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "id": "toutiao",
+      "group": "hot",
+      "name": "今日头条",
+      "key": "toutiao",
+      "url": "https://60s.viki.moe/v2/toutiao",
+      "backup": "",
+      "method": "第三方聚合 JSON · urllib GET · 8 秒超时",
+      "parse": "兼容 data 数组，或 data.data／data.list；取标题、热度、链接字段，跳过空标题。",
+      "filter": "允许的平台 key → 主源／备用 → 300 秒缓存 → 保留原顺序 → 前 1–30 条；Web 不按画像或关键词筛选。",
+      "limits": "不是官方平台授权 API。主源失败尝试已配置备用；全部失败可用旧缓存，否则空列表。updated 是本次响应时间。",
+      "auth": "此获取接口不需 key／社媒登录；依赖聚合服务",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4137,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4137"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4162,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4162"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "id": "woshipm",
+      "group": "news",
+      "name": "人人都是产品经理",
+      "key": "woshipm",
+      "url": "https://www.woshipm.com/feed",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "自媒体／运营；无内置统一时间窗。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "huxiu",
+      "group": "news",
+      "name": "虎嗅",
+      "key": "huxiu",
+      "url": "https://www.huxiu.com/rss/0.xml",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "商业／科技／消费；无内置统一时间窗。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "tmtpost",
+      "group": "news",
+      "name": "钛媒体",
+      "key": "tmtpost",
+      "url": "https://www.tmtpost.com/feed",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "科技／商业；无内置统一时间窗。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "geekpark",
+      "group": "news",
+      "name": "极客公园",
+      "key": "geekpark",
+      "url": "http://www.geekpark.net/rss",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "科技／数码；无内置统一时间窗。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "sspai",
+      "group": "news",
+      "name": "少数派",
+      "key": "sspai",
+      "url": "https://sspai.com/feed",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "数码／效率／生活方式；无内置统一时间窗。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "infoq_cn",
+      "group": "news",
+      "name": "InfoQ 中文",
+      "key": "infoq_cn",
+      "url": "https://www.infoq.cn/feed.xml",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "技术／开发；无内置统一时间窗。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "aihot",
+      "group": "news",
+      "name": "AIHOT",
+      "key": "aihot",
+      "url": "https://aihot.virxact.com/rss",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "AI 资讯；24 小时；时间解析失败仍保留。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "thepaper",
+      "group": "news",
+      "name": "澎湃新闻（FeedX 转接）",
+      "key": "thepaper",
+      "url": "https://feedx.net/rss/thepaper.xml",
+      "backup": "",
+      "method": "RSS／Atom · requests GET · BeautifulSoup 解析",
+      "parse": "抓 item／entry，读取标题、link／guid、发布时间、摘要（最多 300 字符）；先取 max(limit×4,30) 条。",
+      "filter": "时事／社会；48 小时；时间解析失败仍保留。多个关键词只匹配标题，忽略大小写、逗号 OR，再按单源 limit 截取。",
+      "limits": "RSS 获取失败重试三次再返回空。原 rss_parser 使用 verify=False；本研究网页不执行该抓取。不是全网搜索，也没有统一去重／排序。",
+      "auth": "不需模型 key；公开 feed，部分源是第三方转接",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 168,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L168"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 157,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L157"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/rss_parser.py",
+          "line": 94,
+          "label": "rss_parser.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/rss_parser.py#L94"
+        }
+      ]
+    },
+    {
+      "id": "36kr",
+      "group": "news",
+      "name": "36氪快讯",
+      "key": "36kr",
+      "url": "https://36kr.com/newsflashes",
+      "backup": "",
+      "method": "HTML · requests GET · 10 秒超时",
+      "parse": "BeautifulSoup 选择 .newsflash-item，再取 .item-title、href 和 .time；页面结构变动会抓空。",
+      "filter": "标题关键词子串匹配，逗号 OR，忽略大小写，再截 limit；没有画像语义检索，也没有通用时间窗。",
+      "limits": "抓取异常返回空列表。HTML／内部 JSON 接口可能受改版、反爬和地域影响。",
+      "auth": "代码不要求 key／登录",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 86,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L86"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 41,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L41"
+        }
+      ]
+    },
+    {
+      "id": "wallstreetcn",
+      "group": "news",
+      "name": "华尔街见闻",
+      "key": "wallstreetcn",
+      "url": "https://api-one.wallstcn.com/apiv1/content/information-flow?channel=global-channel&accept=article&limit=30",
+      "backup": "",
+      "method": "站点 JSON · requests GET · 10 秒超时",
+      "parse": "data.items.resource 中取 title／content_short、uri 和 display_time；没有通用全文抓取。",
+      "filter": "标题关键词子串匹配，逗号 OR，忽略大小写，再截 limit；没有画像语义检索，也没有通用时间窗。",
+      "limits": "抓取异常返回空列表。HTML／内部 JSON 接口可能受改版、反爬和地域影响。",
+      "auth": "代码不要求 key／登录",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 112,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L112"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 41,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L41"
+        }
+      ]
+    },
+    {
+      "id": "tencent",
+      "group": "news",
+      "name": "腾讯新闻",
+      "key": "tencent",
+      "url": "https://i.news.qq.com/web_backend/v2/getTagInfo?tagId=aEWqxLtdgmQ%3D",
+      "backup": "",
+      "method": "站点 JSON · requests GET + Referer · 10 秒超时",
+      "parse": "读 data.tabs[0].articleList，取 title、url／link_info 与 pub_time／publish_time；依赖接口字段不变。",
+      "filter": "标题关键词子串匹配，逗号 OR，忽略大小写，再截 limit；没有画像语义检索，也没有通用时间窗。",
+      "limits": "抓取异常返回空列表。HTML／内部 JSON 接口可能受改版、反爬和地域影响。",
+      "auth": "代码不要求 key／登录",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 134,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L134"
+        },
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 41,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L41"
+        }
+      ]
+    },
+    {
+      "id": "ref-rednote",
+      "group": "reference",
+      "name": "小红书热榜",
+      "key": "rednote",
+      "url": "https://60s.viki.moe/v2/rednote",
+      "backup": "",
+      "method": "hotlist-apis.md 列出的可选 web_fetch 端点",
+      "parse": "文档参考；具体结构需调用时核验。",
+      "filter": "未接入 Web 六源 TREND_SOURCES；也不属于 fetch_news.py 的 11 个 source key。",
+      "limits": "文档里的“已验证”是作者记录，本研究没有将它转成当前可用性保证。",
+      "auth": "文档称无需 key",
+      "evidence": [
+        {
+          "path": "skills/shared/hotlist-apis.md",
+          "line": 19,
+          "label": "hotlist-apis.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/hotlist-apis.md#L19"
+        }
+      ]
+    },
+    {
+      "id": "ref-60s",
+      "group": "reference",
+      "name": "每日新闻",
+      "key": "60s",
+      "url": "https://60s.viki.moe/v2/60s",
+      "backup": "",
+      "method": "hotlist-apis.md 列出的可选 web_fetch 端点",
+      "parse": "文档参考；具体结构需调用时核验。",
+      "filter": "未接入 Web 六源 TREND_SOURCES；也不属于 fetch_news.py 的 11 个 source key。",
+      "limits": "文档里的“已验证”是作者记录，本研究没有将它转成当前可用性保证。",
+      "auth": "文档称无需 key",
+      "evidence": [
+        {
+          "path": "skills/shared/hotlist-apis.md",
+          "line": 7,
+          "label": "hotlist-apis.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/hotlist-apis.md#L7"
+        }
+      ]
+    },
+    {
+      "id": "ref-it-news",
+      "group": "reference",
+      "name": "IT 资讯",
+      "key": "it-news",
+      "url": "https://60s.viki.moe/v2/it-news",
+      "backup": "",
+      "method": "hotlist-apis.md 列出的可选 web_fetch 端点",
+      "parse": "文档参考；具体结构需调用时核验。",
+      "filter": "未接入 Web 六源 TREND_SOURCES；也不属于 fetch_news.py 的 11 个 source key。",
+      "limits": "文档里的“已验证”是作者记录，本研究没有将它转成当前可用性保证。",
+      "auth": "文档称无需 key",
+      "evidence": [
+        {
+          "path": "skills/shared/hotlist-apis.md",
+          "line": 23,
+          "label": "hotlist-apis.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/hotlist-apis.md#L23"
+        }
+      ]
+    },
+    {
+      "id": "ref-ai-news",
+      "group": "reference",
+      "name": "AI 资讯",
+      "key": "ai-news",
+      "url": "https://60s.viki.moe/v2/ai-news",
+      "backup": "",
+      "method": "hotlist-apis.md 列出的可选 web_fetch 端点",
+      "parse": "文档参考；具体结构需调用时核验。",
+      "filter": "未接入 Web 六源 TREND_SOURCES；也不属于 fetch_news.py 的 11 个 source key。",
+      "limits": "文档里的“已验证”是作者记录，本研究没有将它转成当前可用性保证。",
+      "auth": "文档称无需 key",
+      "evidence": [
+        {
+          "path": "skills/shared/hotlist-apis.md",
+          "line": 24,
+          "label": "hotlist-apis.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/hotlist-apis.md#L24"
+        }
+      ]
+    },
+    {
+      "id": "ref-03c3",
+      "group": "reference",
+      "name": "03c3 每日早报",
+      "key": "03c3",
+      "url": "https://api.03c3.cn/api/zb",
+      "backup": "",
+      "method": "文档补充来源",
+      "parse": "只在热榜参考文档列出。",
+      "filter": "没有 Web 或资讯脚本接入。",
+      "limits": "作者注明不稳定；研究未实时请求。",
+      "auth": "公共接口",
+      "evidence": [
+        {
+          "path": "skills/shared/hotlist-apis.md",
+          "line": 90,
+          "label": "hotlist-apis.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/hotlist-apis.md#L90"
+        }
+      ]
+    },
+    {
+      "id": "custom-rss",
+      "group": "custom",
+      "name": "用户自定义 RSS／Atom",
+      "key": "--url / --feeds",
+      "url": "用户提供订阅 URL 或每行一个 URL 的文本清单",
+      "backup": "",
+      "method": "urllib GET → XML ElementTree（纯标准库）",
+      "parse": "RSS2／Atom 解析；摘要清洗 HTML，提取标题、链接、发布时间。",
+      "filter": "标题＋摘要关键词 OR → 最近 N 天（--since）→ 链接去重 → 解析日期降序 → limit。空标题跳过，日期无效时保留。",
+      "limits": "只访问指定 feed，不自动发现所有网站 RSS；无语义召回或自动 Newsletter 邮箱读取。",
+      "auth": "公开订阅 URL；私有订阅取决于用户提供的 URL",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py",
+          "line": 73,
+          "label": "rss_digest.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py#L73"
+        },
+        {
+          "path": "skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py",
+          "line": 138,
+          "label": "rss_digest.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-rss-aggregator/scripts/rss_digest.py#L138"
+        }
+      ]
+    },
+    {
+      "id": "web-search",
+      "group": "agent",
+      "name": "开放网页研究",
+      "key": "web-search",
+      "url": "按任务输入／运行时配置确定",
+      "backup": "",
+      "method": "OpenClaw 提供的 web_search／web_fetch",
+      "parse": "按关键词／site: 查询候选 → 获取页面 → 交叉核对 → Agent 总结与评级。",
+      "filter": "Agent 按 SKILL 判断相关度、真实性和用途；需实际执行文档要求。",
+      "limits": "用于竞品、UGC、算法更新、需求研究等；搜索提供商由实际 OpenClaw 运行配置决定，不是仓库固定的全网爬虫。",
+      "auth": "依路径可能需要模型服务、外网或登录态",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-ugc-discovery/SKILL.md",
+          "line": 1,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-ugc-discovery/SKILL.md#L1"
+        }
+      ]
+    },
+    {
+      "id": "own-account",
+      "group": "agent",
+      "name": "自己的已登录账号",
+      "key": "own-account",
+      "url": "按任务输入／运行时配置确定",
+      "backup": "",
+      "method": "account_stats.py + 平台持久化登录态",
+      "parse": "读取身份、粉丝、作品及平台公开给自己的指标；各平台字段不同。",
+      "filter": "Agent 按 SKILL 判断相关度、真实性和用途；需实际执行文档要求。",
+      "limits": "需要登录、cookie 或会话；不能推广成能获取任何竞品的后台完播／转化数据。",
+      "auth": "依路径可能需要模型服务、外网或登录态",
+      "evidence": [
+        {
+          "path": "skills/shared/scripts/account_stats.py",
+          "line": 1,
+          "label": "account_stats.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/account_stats.py#L1"
+        }
+      ]
+    },
+    {
+      "id": "redbook",
+      "group": "agent",
+      "name": "小红书外部分析 CLI",
+      "key": "redbook",
+      "url": "按任务输入／运行时配置确定",
+      "backup": "",
+      "method": "@lucasygu/redbook · redbook search/read/analyze-viral",
+      "parse": "搜索笔记、读取笔记、互动和账号报告，逻辑由外部 npm 包提供。",
+      "filter": "Agent 按 SKILL 判断相关度、真实性和用途；需实际执行文档要求。",
+      "limits": "文档注明 macOS、Node 22+ 与 Chrome cookie／钥匙串依赖；当前 Windows 环境未运行。",
+      "auth": "依路径可能需要模型服务、外网或登录态",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-xhs-analyzer/SKILL.md",
+          "line": 1,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-xhs-analyzer/SKILL.md#L1"
+        }
+      ]
+    },
+    {
+      "id": "paper",
+      "group": "agent",
+      "name": "用户文档与论文输入",
+      "key": "paper",
+      "url": "按任务输入／运行时配置确定",
+      "backup": "",
+      "method": "本地素材／arXiv／PDF → paper_ingest.py",
+      "parse": "论文文字与图表整理后，由 Agent 解读并制成图文／讲解视频。",
+      "filter": "Agent 按 SKILL 判断相关度、真实性和用途；需实际执行文档要求。",
+      "limits": "这是定向资料输入，不是全学术库持续索引；PDF 解析和解读仍需核对。",
+      "auth": "依路径可能需要模型服务、外网或登录态",
+      "evidence": [
+        {
+          "path": "skills/openclaw/paper-explainer/scripts/paper_ingest.py",
+          "line": 1,
+          "label": "paper_ingest.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/paper-explainer/scripts/paper_ingest.py#L1"
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "title": "账号画像",
+      "tech": "identity / style / audience / platforms / preferences / memory",
+      "text": "六份 Markdown 文件分别保存定位、风格、受众、平台、偏好和记忆。Web 表单确定性生成初稿，再后台增强；每轮传画像名和路径，由 Agent 读取。",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4076,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4076"
+        },
+        {
+          "path": "easel/persona.py",
+          "line": 58,
+          "label": "persona.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/easel/persona.py#L58"
+        }
+      ]
+    },
+    {
+      "title": "Agent 编排",
+      "tech": "OpenClaw + SKILL.md",
+      "text": "CLI 和 Web 把“请执行 /技能”及输入交给 OpenClaw subprocess。任务可按需组合发现、策划、制作、发布与复盘，不强制每次跑完整五步。",
+      "evidence": [
+        {
+          "path": "easel/commands/skill.py",
+          "line": 143,
+          "label": "skill.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/easel/commands/skill.py#L143"
+        },
+        {
+          "path": "web/app.py",
+          "line": 872,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L872"
+        }
+      ]
+    },
+    {
+      "title": "工作台与数据",
+      "tech": "React / TypeScript + FastAPI",
+      "text": "会话流、模型与画像配置、内容库、媒体预览、热榜、选题池、内容日历、登录与发布中心。后端连接文件、Agent 和工具；不是静态宣传站。",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        },
+        {
+          "path": "web/app.py",
+          "line": 4319,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4319"
+        }
+      ]
+    },
+    {
+      "title": "文字与知识创作",
+      "tech": "LLM + 字数 / 状态脚本",
+      "text": "语言模型负责文案、脚本、策略与解释。Python 固化字数、状态和统计，帮助跨章、跨镜续作；没有附带自训练文本基础模型。",
+      "evidence": [
+        {
+          "path": "skills/openclaw/video-script/SKILL.md",
+          "line": 1,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/video-script/SKILL.md#L1"
+        },
+        {
+          "path": "skills/shared/scripts/wordcount.py",
+          "line": 1,
+          "label": "wordcount.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/wordcount.py#L1"
+        }
+      ]
+    },
+    {
+      "title": "确定性媒体",
+      "tech": "FFmpeg / Pillow / Chromium",
+      "text": "FFmpeg 做音视频处理与合成；Pillow 做图片操作；HTML/CSS 在 Chromium 中截图成卡片。ASR、去背景等另用本地模型。",
+      "evidence": [
+        {
+          "path": "skills/shared/scripts/video_ops.py",
+          "line": 1,
+          "label": "video_ops.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/video_ops.py#L1"
+        },
+        {
+          "path": "skills/shared/scripts/render_card.py",
+          "line": 1,
+          "label": "render_card.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/render_card.py#L1"
+        }
+      ]
+    },
+    {
+      "title": "生成模型适配",
+      "tech": "图片 / 视频 / TTS / 音乐 provider",
+      "text": "统一脚本读取环境配置，向外部服务提交任务、轮询、下载。能力依赖服务开放、模型、费用和 key；内网 MaaS 路线不是普遍可用接口。",
+      "evidence": [
+        {
+          "path": "skills/shared/scripts/ai_video.py",
+          "line": 1,
+          "label": "ai_video.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/ai_video.py#L1"
+        },
+        {
+          "path": "skills/shared/scripts/model_registry.py",
+          "line": 1,
+          "label": "model_registry.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/model_registry.py#L1"
+        }
+      ]
+    },
+    {
+      "title": "原片包装产线",
+      "tech": "video-pipeline-sdk + Remotion",
+      "text": "薄壳转发给仓库内置 SDK；带运行态、问题／作答、程序质量门、设计表与预览人审停点。与 FFmpeg 配图短视频是两条不同路线。",
+      "evidence": [
+        {
+          "path": "skills/openclaw/video-production/scripts/video_pipeline.py",
+          "line": 1,
+          "label": "video_pipeline.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/video-production/scripts/video_pipeline.py#L1"
+        },
+        {
+          "path": "skills/openclaw/video-production/SKILL.md",
+          "line": 1,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/video-production/SKILL.md#L1"
+        }
+      ]
+    },
+    {
+      "title": "平台分发与复盘",
+      "tech": "Playwright / biliup / 公众号草稿",
+      "text": "发布按平台走不同适配器，成功后记录日历和日志。再从真实数据计算表现，Agent 给改进建议；长期记忆写回需按规则征求用户同意。",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 3874,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L3874"
+        },
+        {
+          "path": "openclaw/workspace/AGENTS.md",
+          "line": 94,
+          "label": "AGENTS.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/openclaw/workspace/AGENTS.md#L94"
+        }
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "number": "01",
+      "title": "定账号方向",
+      "text": "收集自述、目标、平台、喜好与红线；读可访问账号资料。输出六维画像，可手动修改。",
+      "mode": "确定性文件＋Agent 增强",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 3996,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L3996"
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "获取与筛选",
+      "text": "热榜／新闻／RSS 的程序路径先返回条目；Agent 再读画像、评价相关度和时效、给选题理由。",
+      "mode": "程序过滤＋Agent 判断",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 41,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L41"
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "title": "脚本与分镜",
+      "text": "video-script 按时长和平台写 Hook、时间轴、台词、镜头、字幕与封面；auto-short-video 将其整理成 storyboard。",
+      "mode": "Agent 生成＋字数检查",
+      "evidence": [
+        {
+          "path": "skills/openclaw/video-script/SKILL.md",
+          "line": 1,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/video-script/SKILL.md#L1"
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "title": "生成和合成",
+      "text": "可选卡片／AI 图／AI 片段；云 TTS 或 Edge 配音，ASR／SRT 字幕与 BGM，FFmpeg 合成 MP4。已有原片包装另走 Remotion SDK。",
+      "mode": "工具执行＋外部模型",
+      "evidence": [
+        {
+          "path": "skills/openclaw/auto-short-video/scripts/assemble.py",
+          "line": 1,
+          "label": "assemble.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/auto-short-video/scripts/assemble.py#L1"
+        }
+      ]
+    },
+    {
+      "number": "05",
+      "title": "预览与发布",
+      "text": "Web 可先点一稿多改；发布点击后预检母版标题正文、显示报告，再弹确认，随后分别调用选中平台。",
+      "mode": "用户确认＋平台适配器",
+      "evidence": [
+        {
+          "path": "web/frontend/src/components/PublishPage.tsx",
+          "line": 177,
+          "label": "PublishPage.tsx",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/frontend/src/components/PublishPage.tsx#L177"
+        }
+      ]
+    },
+    {
+      "number": "06",
+      "title": "记录与迭代",
+      "text": "回写发布记录与日历，取真实指标做统计和复盘；经验是否写入长期画像记忆需按工作区规则确认。",
+      "mode": "文件记录＋统计＋Agent",
+      "evidence": [
+        {
+          "path": "openclaw/workspace/AGENTS.md",
+          "line": 94,
+          "label": "AGENTS.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/openclaw/workspace/AGENTS.md#L94"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "title": "“定方向后搜索、制作、发布”是否成立？",
+      "text": "可以作为一种任务组合。账号画像是上下文，Agent 依任务选择技能。CLI／Web 没有把这五步写成每次必须执行的固定流水线。",
+      "evidence": [
+        {
+          "path": "easel/commands/skill.py",
+          "line": 143,
+          "label": "skill.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/easel/commands/skill.py#L143"
+        }
+      ]
+    },
+    {
+      "title": "114 个技能 ≠ 114 个都已端到端实测",
+      "text": "按目录逐项计数：6＋9＋16＋52＋20＋11。README 徽章为 113，能力地图创作层为 51；本页以固定提交实际 SKILL.md 为准。",
+      "evidence": [
+        {
+          "path": "docs/skill-function-mapping.md",
+          "line": 1,
+          "label": "skill-function-mapping.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/docs/skill-function-mapping.md#L1"
+        }
+      ]
+    },
+    {
+      "title": "画像不会自动进入热榜接口过滤",
+      "text": "TrendsPage 默认选微博／抖音／知乎，Web API 只接 platforms 和 limit。相关度高／中／低和二创建议是 trending SKILL 对 Agent 的要求。",
+      "evidence": [
+        {
+          "path": "web/app.py",
+          "line": 4197,
+          "label": "app.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/app.py#L4197"
+        }
+      ]
+    },
+    {
+      "title": "命中太少会放宽资讯关键词",
+      "text": "fetch_news.py 命中少于 5 条时再无关键词抓取，补足并打 smart_fill；这些补充项不能当作严格关键词命中。",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+          "line": 263,
+          "label": "fetch_news.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L263"
+        }
+      ]
+    },
+    {
+      "title": "低人设分不会阻断 Web 发布",
+      "text": "persona_gate 总是 publish_allowed=true；Web 展示预检并让用户确认，即使预检异常也可继续。媒体和凭证 guard 是另外的程序约束。",
+      "evidence": [
+        {
+          "path": "skills/shared/scripts/persona_gate.py",
+          "line": 50,
+          "label": "persona_gate.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/shared/scripts/persona_gate.py#L50"
+        }
+      ]
+    },
+    {
+      "title": "预检覆盖母版，不等于逐平台复检",
+      "text": "Web performPrecheck 使用 title／body；publishAll 发送各平台 effective 版本。改编后的覆盖文案与媒体不由这次母版预检完整检查。",
+      "evidence": [
+        {
+          "path": "web/frontend/src/components/PublishPage.tsx",
+          "line": 151,
+          "label": "PublishPage.tsx",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/web/frontend/src/components/PublishPage.tsx#L151"
+        }
+      ]
+    },
+    {
+      "title": "公众号默认是草稿；排期不是守护服务",
+      "text": "Web 公众号路线明确返回草稿箱；publish_queue run --exec 输出派发计划，真实发稿由上层执行，周期唤醒需 cron／外部调度。",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-publish-scheduler/scripts/publish_queue.py",
+          "line": 14,
+          "label": "publish_queue.py",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-publish-scheduler/scripts/publish_queue.py#L14"
+        }
+      ]
+    },
+    {
+      "title": "参考模板不等于运行配置",
+      "text": "openclaw.json5 文件头标明 setup 从不应用该模板，配置可能漂移。搜索提供商、模型和 Gateway 行为需看实际运行配置，不能由模板示例推断。",
+      "evidence": [
+        {
+          "path": "openclaw/openclaw.json5",
+          "line": 1,
+          "label": "openclaw.json5",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/openclaw/openclaw.json5#L1"
+        }
+      ]
+    }
+  ],
+  "filterRules": [
+    [
+      "Web 热榜",
+      "无关键词／画像参数",
+      "无源发布时间判断",
+      "不额外去重、不重新按热度排序",
+      "原顺序前 1–30 条；缓存 300 秒；失败可旧缓存"
+    ],
+    [
+      "资讯 fetch_news",
+      "仅标题；逗号 OR；忽略大小写",
+      "只有 AIHOT 24h、澎湃 48h；解析失败保留",
+      "普通合并无统一去重／排序；补充时按标题＋URL 去重",
+      "每源 limit；不足 5 条放宽关键词打 smart_fill"
+    ],
+    [
+      "自定义 rss_digest",
+      "标题＋摘要；逗号 OR；忽略大小写",
+      "--since N 天；解析失败保留",
+      "按链接去重，解析时间降序",
+      "空标题跳过；最后统一 limit"
+    ],
+    [
+      "Agent 深层分析",
+      "读画像、需求和内容语义再评价",
+      "按文档核对时效和证据",
+      "依据具体 Skill 归纳与排序",
+      "文档规则依赖 Agent 实际执行；不是后端硬过滤"
+    ]
+  ],
+  "agentResearch": [
+    {
+      "title": "UGC：按品牌、平台与问题组合查询",
+      "text": "先用 identity.md 扩展账号／品牌／产品关键词，再按 platforms.md 选活跃平台。每平台执行 2–3 组搜索；高相关 URL 交给 WebFetch 获取摘要和可访问互动信息。去重、正／中／负面分类、价值排序由 Agent 按文档完成。",
+      "queries": [
+        "{账号名} 推荐 / 测评；{品牌名} 体验",
+        "{账号名} site:xiaohongshu.com；{账号名} site:bilibili.com",
+        "#{账号名}# site:weibo.com；{品牌名} 值得买吗 / 吐槽 / 避坑"
+      ],
+      "boundary": "不是各社媒平台的完整站内索引。搜索覆盖、页面可访问性和时间范围有限；文档要求逐条附 URL，情感分析与事实分开，空结果如实报告。",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-ugc-discovery/SKILL.md",
+          "line": 46,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-ugc-discovery/SKILL.md#L46"
+        },
+        {
+          "path": "skills/openclaw/skill-ugc-discovery/SKILL.md",
+          "line": 75,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-ugc-discovery/SKILL.md#L75"
+        }
+      ]
+    },
+    {
+      "title": "算法规则：查询 → 抓取 → 分级核对",
+      "text": "按画像或用户选择平台，每平台做 2–3 组 web_search；将最相关的 3–5 个结果交给 web_fetch，提取规则变化、生效时间和官方原文。按时间倒序报告，分开标注官方确认、行业报道和未经证实的社区感知。",
+      "queries": [
+        "{平台名} 算法 更新 {当前年}；{平台名} 推荐机制 变化 创作者",
+        "{平台名} 内容审核 规则 变化；{平台名} 变现 政策 更新",
+        "社媒平台 算法 变化 {当前年}，限定 newrank.cn / woshipm.com / 36kr.com"
+      ],
+      "boundary": "下面的域名来自上游参考文档（标注更新于 2026-07），是搜索目标和证据候选，不是已接入的专用 API，也未在本研究中逐站验证当前状态。实际搜索服务由 OpenClaw 运行配置提供。",
+      "evidence": [
+        {
+          "path": "skills/openclaw/skill-algorithm-updates/SKILL.md",
+          "line": 60,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-algorithm-updates/SKILL.md#L60"
+        },
+        {
+          "path": "skills/openclaw/skill-algorithm-updates/SKILL.md",
+          "line": 83,
+          "label": "SKILL.md",
+          "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-algorithm-updates/SKILL.md#L83"
+        }
+      ]
+    }
+  ],
+  "ruleSources": [
+    [
+      "抖音",
+      "creator.douyin.com；trust.douyin.com；business.oceanengine.com"
+    ],
+    [
+      "小红书",
+      "creator.xiaohongshu.com；business.xiaohongshu.com"
+    ],
+    [
+      "B 站",
+      "member.bilibili.com；space.bilibili.com/37090048；创作中心公告"
+    ],
+    [
+      "微博",
+      "me.weibo.com；@微博管理员"
+    ],
+    [
+      "知乎",
+      "zhihu.com/creator；@知乎小管家"
+    ],
+    [
+      "视频号",
+      "channels.weixin.qq.com；公众号“微信公开课”"
+    ],
+    [
+      "第三方参考",
+      "newrank.cn；woshipm.com；36kr.com；caasdata.com；chanmama.com；qiangua.com；公众号“刺猬公社”"
+    ]
+  ],
+  "ruleSourcesEvidence": [
+    {
+      "path": "skills/openclaw/skill-algorithm-updates/references/platform-sources.md",
+      "line": 1,
+      "label": "platform-sources.md",
+      "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-algorithm-updates/references/platform-sources.md#L1"
+    }
+  ],
+  "briefings": [
+    [
+      "creator",
+      "创作者情报",
+      "人人都是产品经理、虎嗅、36氪、AIHOT"
+    ],
+    [
+      "tech_digital",
+      "科技数码",
+      "少数派、极客公园、36氪、钛媒体、InfoQ"
+    ],
+    [
+      "business",
+      "商业财经",
+      "华尔街见闻、虎嗅、钛媒体、36氪（融资／IPO 等词）"
+    ],
+    [
+      "ai",
+      "AI 资讯",
+      "AIHOT、InfoQ（AI／大模型／LLM／Agent）"
+    ],
+    [
+      "topics",
+      "话题素材",
+      "澎湃、腾讯新闻、虎嗅"
+    ]
+  ],
+  "deep": {
+    "text": "--deep 对条目 URL 另发 GET（5 秒超时、10 线程），删 script/style/nav/footer/header 后提取网页文本，截前 3000 字符；不是完整全文提取保证。",
+    "evidence": [
+      {
+        "path": "skills/openclaw/skill-news-intelligence/scripts/fetch_news.py",
+        "line": 51,
+        "label": "fetch_news.py",
+        "url": "https://github.com/ZJU-REAL/Easel/blob/fb80ae6dd6fc26f5553efcb293ee6d93ef253f02/skills/openclaw/skill-news-intelligence/scripts/fetch_news.py#L51"
+      }
+    ]
+  },
+  "scenarios": [
+    [
+      "垂类账号日常运营",
+      "用画像确定领域与语气，资讯／RSS 建候选选题，策划与制作成内容，再预览发布。适合有明确定位、能提供真实反馈的个人或小团队。"
+    ],
+    [
+      "知识图文与论文解读",
+      "把文章／PDF／arXiv 转成卡片、公众号排版或讲解视频；HTML 文字排版和素材文件便于修改及复用。"
+    ],
+    [
+      "已有视频再利用",
+      "口播、直播和讲座可转录、切片、重包装、转图文；按素材选择 FFmpeg 工具或 Remotion 产线。"
+    ],
+    [
+      "多平台分发与复盘",
+      "复用母版内容但保留平台版本与登录条件，集中记录发布、指标与评论；需要人工把关稿件与回读结果。"
+    ]
+  ]
+}
