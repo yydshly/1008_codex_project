@@ -12,7 +12,7 @@ const root = path.resolve(fileURLToPath(new URL('../',import.meta.url)), options
 const port = Number(options.get('--port') || 4194);
 const base = options.get('--base') || '/';
 if (!base.startsWith('/') || !base.endsWith('/') || !Number.isInteger(port) || port<1 || port>65535) throw new Error('无效端口或子路径');
-const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8','.svg':'image/svg+xml','.png':'image/png'};
+const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.md':'text/plain; charset=utf-8','.svg':'image/svg+xml','.png':'image/png'};
 http.createServer(async(req,res)=>{
   try {
     const url = new URL(req.url,`http://127.0.0.1:${port}`);

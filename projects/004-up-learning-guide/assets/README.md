@@ -14,3 +14,5 @@
 - [up-core-map-prompt.md](up-core-map-prompt.md)：设计内容规范、内置生成尝试提示词、最终制作方式、文字版阅读顺序、来源与许可说明。
 
 图中“核心方向 → 三类能力 → 六步行动闭环 → 五项价值观 → 底部三问”是研究编排。原作者与贡献者为 byoungd and contributors，研究提交为35e2aa9。改写内容保留CC BY-NC 4.0条件；本图不是上游原始图示，也不表示作者背书。
+
+2026-10-12发布整理继续使用同一PNG，SHA-256为68d76ca3f2c88580d5e5bd20c6cbf79ae344ce650663467bcac95d53925924b6，见[sources/guide-manifest.json](../sources/guide-manifest.json)。publication/中的local-desktop.png和local-mobile.png是本次完整理解页的真实浏览器截图，没有重新生成或裁切引导图。

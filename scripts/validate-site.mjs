@@ -22,7 +22,7 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '013-aihot'], '发布允许名单仅包含 001、002、003 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','013-aihot'], '发布允许名单仅包含 001、002、003、004 与 013');
 
 // Verify the copied 001 aggregate as well as its independently validated build.
 const sandboard = path.join(site, '001-sandboard');
@@ -184,7 +184,23 @@ await access(path.join(pascal, 'research/research.json'));
 await access(path.join(pascal, 'research/understanding.md'));
 await access(path.join(pascal, 'LICENSE.upstream.txt'));
 
+// Up publishes its complete research with the same original guide and no backend.
+const up = path.join(site,'004-up-learning-guide');
+const upHtml = await readFile(path.join(up,'index.html'),'utf8');
+const upData = JSON.parse(await readFile(path.join(up,'data/content.json'),'utf8'));
+const upMetadata = readCatalog().projects.find(project=>project.id==='004');
+const upGuideOriginal = await readFile(path.join(ROOT,'projects/004-up-learning-guide/assets/up-core-map.png'));
+assert((await readFile(path.join(up,'research/assets/up-core-map.png'))).equals(upGuideOriginal),'004必须保留原引导图字节');
+assert.equal(upData.pages.length,97);
+assert.equal(upData.worksheets.length,25);
+assert.equal(upData.summaryItems.length,11);
+assert.equal(upData.understanding.toc.filter(heading=>heading.depth===2).length,10);
+for(const item of upMetadata.summaryItems){assert(upHtml.includes(item.text),`004静态网页缺少${item.title}`);assert(html.includes(`<strong>${escape(item.title)}</strong>：${escape(item.text)}`),`004总入口缺少${item.title}`);}
+assert(html.includes('src="./004-up-learning-guide/research/assets/up-core-map.png"'),'总入口需要004原引导图');
+assert(html.includes('href="./004-up-learning-guide/"'),'总入口需要004理解网页');
+for(const file of ['app.js','understanding.mjs','research/UNDERSTANDING.md','research/assets/up-core-map.svg','research/sources/guide-manifest.json','research/licenses/LICENSE-CONTENT.md','research/licenses/LICENSE-CODE.md'])await access(path.join(up,file));
 console.log(JSON.stringify({ entrance: 'index.html', sections: sections.length, checkedInternalLinks: links.size,
+  up:{summaryItems:11,understandingSections:10,pages:97,worksheets:25,originalGuidePreserved:true},
   publishedProjects: publishedDirectories, preservedSandboardPages: sandboardPages.length + 1,
   interview: { requiredFiles: files.length, checkedRelativeAssets: interviewAssets, topics: topics.length,
     resourceUrls: report.summary.allUniqueResourceUrls, answers: report.summary.answerRecords, originalGuidePreserved: true },

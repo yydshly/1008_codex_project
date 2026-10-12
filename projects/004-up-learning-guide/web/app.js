@@ -1,3 +1,4 @@
+import { understandingHtml } from './understanding.mjs';
 const main = document.querySelector('#main');
 const escape = value => String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 const routeLink = (id, section='') => `#/guide/${id}${section ? `?section=${encodeURIComponent(section)}` : ''}`;
@@ -20,6 +21,7 @@ const topicRows = () => data.guides.filter(guide=>guide.id!=='sources').map(guid
 
 function renderOverview(){
   main.innerHTML = `<section class="intro"><div><div class="eyebrow">004 / 开放内容研究</div><h1>Up 的能力与<em>知识地图</em></h1><p class="lead">一套以真实任务、反馈和证据为核心的终身学习指南。<br>从英语训练到 AI 协作，从作品交付到生活复盘。</p><div class="intro-actions"><a class="button primary" href="${routeLink('01-learning-system')}">阅读方法原理</a><a class="button light" href="#/catalog">浏览全部内容</a></div></div><div class="intro-note"><span class="note-label">关于这个项目</span><strong>个人经历，让方法有来路。<br>行动与证据，让方法可检验。</strong>双语书稿、工具模板和出版代码共同组成 Up；读者通过自己的实践把内容用起来。</div></section>
+  ${understandingHtml(data)}
   <div class="metrics"><div class="metric"><strong>97</strong><span>原文页面完整对应</span></div><div class="metric"><strong>7</strong><span>中文详细专题</span></div><div class="metric"><strong>25</strong><span>工作纸使用说明</span></div><div class="metric"><strong>392</strong><span>分组技术词条</span></div></div>
   <section><div class="section-title"><h2><small>CAPABILITIES</small>这个库能帮你做什么？</h2><a href="#/topics">展开全部专题</a></div><div class="capabilities">
   <article class="capability"><div class="cap-number">01 / LANGUAGE</div><h3>训练可用的英语</h3><p>从真实沟通任务诊断起点，把词汇、语法和听读说写，练到能够独立使用。</p><ul><li class="tag">词汇八维</li><li class="tag">听读五遍</li><li class="tag">求职与协作</li></ul><a class="text-link" href="${routeLink('02-english')}">阅读英语训练</a></article>
@@ -141,6 +143,7 @@ function initializeSearch(){
   const results=document.querySelector('#search-results');
   const status=document.querySelector('#search-status');
   const records=[
+    ...data.understanding.chunks.map(chunk=>({type:'完整理解',title:chunk.title||'Up完整理解',text:chunk.text,href:`#/overview${chunk.id?`?section=${chunk.id}`:''}`})),
     {type:'理解导图',title:'一图理解 · 核心能力与价值观',text:'用真实任务学习，用证据判断成长。英语、AI与真实项目、生活与长期成长。定义任务、保存首版、定向练习、接受反馈、复测迁移、更新状态。真实、诚实、主体性、可持续、负责。',href:'#/map'},
     ...data.guides.flatMap(guide=>guide.chunks.map(chunk=>({type:'专题正文',title:chunk.title?`${guide.label} · ${chunk.title}`:guide.title,text:chunk.text,href:routeLink(guide.id,chunk.id)}))),
     ...data.pages.map(page=>({type:'原文目录',title:page.title,text:page.summary,href:`#/catalog?q=${encodeURIComponent(page.title)}`})),
@@ -195,7 +198,9 @@ function renderRoute(){
   if(view==='guide')renderGuide(parts[1],parsed.searchParams);
   else if(views[view])views[view](parsed.searchParams);
   else renderMissing();
-  if(!parsed.searchParams.has('section'))window.scrollTo({top:0,behavior:'instant'});
+  const section=parsed.searchParams.get('section');
+  if(section&&view!=='guide')requestAnimationFrame(()=>{const node=document.getElementById(section);const details=node?.closest('details');if(details)details.open=true;node?.scrollIntoView({behavior:'instant',block:'start'});});
+  else if(!section)window.scrollTo({top:0,behavior:'instant'});
 }
 window.addEventListener('hashchange',()=>data && renderRoute());
 async function init(){

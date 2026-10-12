@@ -611,4 +611,3 @@ Rust类型、所有权、借用、生命周期、错误和并发相关英文术�
 AI辅助开发中的需求、上下文、工具、测试、版本与交付相关英语术语清单。用于沟通和查文档，不把词汇熟悉度当工程可靠性；全部源词见附录。
 
 [固定版本原文](https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/VibeCoding.md) · [英文对应](https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/VibeCoding.md) · [本地专题](../guides/07-glossary-and-resources.md)
-

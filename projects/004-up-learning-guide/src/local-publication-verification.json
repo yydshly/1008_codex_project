@@ -1,0 +1,47 @@
+{
+  "base": "http://127.0.0.1:4224/1008_codex_project/004-up-learning-guide/",
+  "verifiedAt": "2026-10-12T06:24:31.793Z",
+  "guide": {
+    "file": "assets/up-core-map.png",
+    "width": 2400,
+    "height": 1600,
+    "sha256": "68d76ca3f2c88580d5e5bd20c6cbf79ae344ce650663467bcac95d53925924b6",
+    "created": "2026-10-09",
+    "publicationPrepared": "2026-10-12",
+    "upstream": "https://github.com/byoungd/up",
+    "baseline": "35e2aa9ad3a076fe4e8405877cc560df2593838f",
+    "scope": "沿用已有完整PNG，像素、文字与原始字节不变；源内容研究归纳与改写",
+    "attribution": "byoungd and contributors",
+    "contentLicense": "CC BY-NC 4.0"
+  },
+  "checks": {
+    "summaryItems": 11,
+    "coverage": {
+      "guides": 7,
+      "sourcePage": 1,
+      "pages": 97,
+      "worksheets": 25,
+      "wordEntries": 392,
+      "resources": 67
+    },
+    "guideBytesPreserved": true,
+    "downloads": 15,
+    "searchAndDeepRefresh": true,
+    "methodTabs": true,
+    "actualDownload": true,
+    "originalPopup": true,
+    "mobile": [
+      {
+        "width": 390,
+        "scroll": 390
+      },
+      {
+        "width": 320,
+        "scroll": 320
+      }
+    ],
+    "noJavaScript": true
+  },
+  "errors": [],
+  "passed": true
+}

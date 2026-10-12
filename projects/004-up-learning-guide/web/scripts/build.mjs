@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
+import { staticOverview } from '../understanding.mjs';
 
 const web = fileURLToPath(new URL('../', import.meta.url));
 const project = path.resolve(web, '..');
@@ -23,9 +24,9 @@ const guides = [
   ['sources', '来源、版本与许可', '原始作者、研究改写、验证范围与复用条件。', '固定版本 · 证据边界 · CC BY-NC', '来源与许可'],
 ];
 const guidePaths = new Map(guides.map(([id]) => [id === 'sources' ? 'SOURCES.md' : `guides/${id}.md`, id]));
-const special = { 'sources/coverage.md': '/catalog', 'sources/resources.md': '/resources', 'sources/word-lists.md': '/words', 'README.md': '/overview' };
+const special = { 'sources/coverage.md': '/catalog', 'sources/resources.md': '/resources', 'sources/word-lists.md': '/words', 'README.md': '/overview', 'UNDERSTANDING.md': '/overview' };
 const plain = html => html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAll('&gt;', '>').trim();
-const render = (raw, file) => {
+const render = (raw, file, prefix='section') => {
   const marked = new Marked({ gfm: true, breaks: false, walkTokens(token) {
     if (token.type !== 'link' || /^(https?:|mailto:|#)/.test(token.href)) return;
     const target = path.posix.normalize(path.posix.join(path.posix.dirname(file), token.href.split('#')[0]));
@@ -37,7 +38,7 @@ const render = (raw, file) => {
   let html = marked.parse(body);
   const toc = [];
   html = html.replace(/<h([2-6])>([\s\S]*?)<\/h\1>/g, (_, depth, title) => {
-    const id = `section-${toc.length + 1}`;
+    const id = `${prefix}-${toc.length + 1}`;
     toc.push({ id, depth: Number(depth), title: plain(title) });
     return `<h${depth} id="${id}">${title}</h${depth}>`;
   }).replace(/<a href="(https?:[^\"]+)"/g, '<a target="_blank" rel="noopener noreferrer" href="$1"');
@@ -68,15 +69,22 @@ const worksheets = inventory.items.filter(item => item.source.startsWith('docs/t
   const category = number <= 4 ? '定位与计划' : number <= 8 ? '节律与证据' : number <= 15 ? '英语训练' : number === 25 ? '生活与恢复' : 'AI 与交付';
   return { ...item, stem, number, category, section: section.id, label: section.title.replace(/^\d+ · /, '') };
 }).sort((a,b) => a.number - b.number);
+const metadata = JSON.parse(await fs.readFile(path.resolve(project,'../../projects.json'),'utf8')).projects.find(item=>item.id==='004'&&item.slug==='up-learning-guide');
+if (!metadata?.summaryItems?.length) throw new Error('004缺少完整摘要');
+const understandingRaw = await fs.readFile(path.join(project,'UNDERSTANDING.md'),'utf8');
+const understanding = {file:'UNDERSTANDING.md',characters:understandingRaw.length,...render(understandingRaw,'UNDERSTANDING.md','understanding')};
 const content = { commit: inventory.commit, researchDate: inventory.researchDate, counts: inventory.counts,
+  summaryItems:metadata.summaryItems,understanding,
   groups: inventory.groups, pages: inventory.items, guides: documents, worksheets,
   resources: resources.resources, wordLists: wordLists.wordLists };
 await fs.writeFile(path.join(dist, 'data/content.json'), JSON.stringify(content), 'utf8');
-for (const file of ['index.html', 'app.js', 'styles.css']) await fs.copyFile(path.join(web, file), path.join(dist, file));
+const template = await fs.readFile(path.join(web,'index.html'),'utf8');
+await fs.writeFile(path.join(dist,'index.html'),template.replace(/<main id="main" tabindex="-1">[\s\S]*?<\/main>/,`<main id="main" tabindex="-1">${staticOverview(content)}</main>`));
+for (const file of ['app.js', 'styles.css','understanding.mjs']) await fs.copyFile(path.join(web, file), path.join(dist, file));
 for (const directory of ['guides','sources','licenses']) {
   await fs.cp(path.join(project, directory), path.join(dist,'research',directory), { recursive: true });
 }
-for (const file of ['README.md','SOURCES.md','notes.md']) await fs.copyFile(path.join(project,file), path.join(dist,'research',file));
+for (const file of ['README.md','UNDERSTANDING.md','SOURCES.md','notes.md']) await fs.copyFile(path.join(project,file), path.join(dist,'research',file));
 await fs.mkdir(path.join(dist,'research/web'),{recursive:true});
 await fs.copyFile(path.join(web,'README.md'),path.join(dist,'research/web/README.md'));
 await fs.cp(path.join(project,'assets'),path.join(dist,'research/assets'),{recursive:true});
