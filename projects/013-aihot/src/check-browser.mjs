@@ -48,6 +48,9 @@ try {
   for (const width of [390,320]) {
     await page.setViewportSize({width,height:844});
     await page.goto(url+'#sources',{waitUntil:'networkidle'});
+    // An anchor-only navigation can retain the prior filter selection.
+    // Reset each viewport's initial state instead of assuming a fresh page.
+    await page.locator('#reset-filters').click();
     assert.equal(await page.locator('[data-source-id]:visible').count(),18);
     const widths = await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:window.innerWidth}));
     assert.ok(widths.document <= widths.viewport, `页面横向溢出 ${width}: ${JSON.stringify(widths)}`);

@@ -1,0 +1,40 @@
+{
+  "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+  "checkedAt": "2026-10-12T05:14:58.786Z",
+  "checks": {
+    "desktop": {
+      "sources": 18,
+      "sections": 11,
+      "search": true,
+      "category": true,
+      "atomFilter": true,
+      "emptyState": true,
+      "reset": true,
+      "clipboard": true,
+      "guideDialog": true,
+      "guideZoom": true,
+      "escapeClose": true,
+      "guideDimensions": {
+        "width": 1448,
+        "height": 1086
+      }
+    },
+    "mobile390": {
+      "subpathAndAnchor": true,
+      "noHorizontalOverflow": true,
+      "category": true
+    },
+    "mobile320": {
+      "subpathAndAnchor": true,
+      "noHorizontalOverflow": true,
+      "category": true
+    },
+    "withoutJS": {
+      "allSourcesReadable": true,
+      "allAdaptersReadable": true,
+      "guideDirectLink": true
+    }
+  },
+  "errors": [],
+  "passed": true
+}
