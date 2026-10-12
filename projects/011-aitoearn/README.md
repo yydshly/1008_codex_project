@@ -6,7 +6,7 @@
 - 研究提交：[3581f511293236044e56fad67958cfcea0def6b5](https://github.com/yikart/AiToEarn/commit/3581f511293236044e56fad67958cfcea0def6b5)，提交时间2026-09-18，研究日期2026-10-09。
 - 许可证：MIT，Copyright (c) 2025 AiToEarn。[保留原文](src/LICENSE.upstream.txt)。
 - 覆盖：32项能力、13个技能、14个平台、6层原理、3个流程、6类场景、6项个人价值、10项边界；74份文档/代码与6张真实上游图片有SHA-256记录。
-- 网页：已接入统一 GitHub Pages 发布流程；公开访问通过后登记在线入口。
+- 在线：[完整能力、模块与原理](https://yydshly.github.io/1008_codex_project/011-aitoearn/) · [原图阅读器](https://yydshly.github.io/1008_codex_project/011-aitoearn/map.html) · [真实图文](https://yydshly.github.io/1008_codex_project/011-aitoearn/#real-demo)。
 - 真实实测：安装13个原版技能与GPT适配入口，已完成3张实际生成图、中文文案和本地图文草稿。进入网页“真实效果实测”查看成品、下载与记录。
 
 ## 完整理解与发布范围
@@ -96,3 +96,7 @@ npm.cmd run preview
 2026-10-09真实浏览器截图。已验证桌面/手机交互、锚点刷新与子路径资源，验证细节见notes.md。
 
 新增图像工具执行和人工画质审阅实测；没有授权社交账号、真实发布或业务反馈，工具未返回计费金额，不能据此推导收入、调用价格或节省时间比例。
+
+## 公开发布核验
+
+2026-10-12 已通过既有GitHub Pages发布。首次[部署运行](https://github.com/yydshly/1008_codex_project/actions/runs/38244805400)的干净Linux构建、全部审计和部署成功；37个011公开页面/资源、11个既有项目与研究总入口通过，原图与三张真实图哈希一致。真实浏览器核验18章、摘要、搜索、真实图片放大、原图缩放、手机目录、390/320布局与深链接刷新；详细范围见[src/publication-verification.json](src/publication-verification.json)、[HTTP记录](src/public-http-checks.json)与[浏览器记录](src/public-browser-checks.json)。源码研究和图文实测仍固定于3581f51，发布不代表视频加工、社交发布或推广结算已完成。

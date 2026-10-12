@@ -39,6 +39,7 @@ await cp(path.join(project,'assets'),path.join(dist,'assets'),{recursive:true});
 await cp(path.join(project,'src/source-manifest.json'),path.join(dist,'source-manifest.json'));
 await cp(path.join(project,'src/implementation-inventory.json'),path.join(dist,'implementation-inventory.json'));
 await cp(path.join(project,'src/skill-installation.json'),path.join(dist,'skill-installation.json'));
+if(catalog.demo){for(const [source,target]of [['publication-verification.json','verification.json'],['public-http-checks.json','public-http-checks.json'],['public-browser-checks.json','public-browser-checks.json']])await cp(path.join(project,'src',source),path.join(dist,target));}
 await cp(path.join(project,'experiments/research-to-post'),path.join(dist,'experiment'),{recursive:true,filter:src=>!src.endsWith('pack-demo.mjs')});
 await cp(path.join(project,'src/LICENSE.upstream.txt'),path.join(dist,'LICENSE.upstream.txt'));
 for(const file of ['research.md','notes.md'])await cp(path.join(project,file),path.join(dist,file));

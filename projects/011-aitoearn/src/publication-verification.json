@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-12",
+  "passed": true,
+  "publicUrl": "https://yydshly.github.io/1008_codex_project/011-aitoearn/",
+  "firstDeployment": {
+    "runId": 38244805400,
+    "url": "https://github.com/yydshly/1008_codex_project/actions/runs/38244805400",
+    "commit": "05d91452361d321adfa61c447b7e9c6b7dfb0010",
+    "conclusion": "success"
+  },
+  "baseline": "3581f511293236044e56fad67958cfcea0def6b5",
+  "guidePreserved": true,
+  "content": {
+    "sections": 18,
+    "summaries": 12,
+    "introductions": 6,
+    "capabilities": 32,
+    "skills": 13,
+    "platforms": 14,
+    "modules": 8,
+    "mechanisms": 6,
+    "scenarios": 6,
+    "values": 6,
+    "reuse": 4,
+    "extensions": 8
+  },
+  "localChecks": [
+    "独立构建及审计",
+    "npm run check",
+    "npm test（15通过）",
+    "全站完整构建",
+    "node scripts/validate-site.mjs"
+  ],
+  "publicChecks": {
+    "http": "public-http-checks.json",
+    "browser": "public-browser-checks.json"
+  },
+  "scope": "静态研究网页与既有真实图文档案；未运行原AiToEarn后台、视频加工、账号授权、社交发布或结算",
+  "unrelatedWork": "保留012等其他未提交本地研究，未纳入本次远端提交"
+}

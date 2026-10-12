@@ -1,0 +1,328 @@
+{
+  "checkedAt": "2026-10-12T11:55:01.178Z",
+  "passed": true,
+  "base": "https://yydshly.github.io/1008_codex_project/011-aitoearn/",
+  "scope": "公开研究入口、资源、实际图片与原图完整性；不验证上游模型、云加工或社交发布",
+  "resources": 37,
+  "preservedProjects": 11,
+  "root": {
+    "url": "https://yydshly.github.io/1008_codex_project/",
+    "status": 200
+  },
+  "checks": [
+    {
+      "file": "",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/",
+      "status": 200,
+      "bytes": 218315,
+      "sha256": "e98568691ae5986c1f13e992f2e54c6b94d1af4a93bf0377572909e891ff5185"
+    },
+    {
+      "file": "map.html",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/map.html",
+      "status": 200,
+      "bytes": 1500,
+      "sha256": "61167bb70e533898f36e4d2465740b79eb06b9162db2b2cc09f5ab2c9454cab3"
+    },
+    {
+      "file": "styles.css",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/styles.css",
+      "status": 200,
+      "bytes": 38882,
+      "sha256": "495f81fd57b918f61caea4adba6a40bf16bef6c19fd389e92d1c04a27f797e19"
+    },
+    {
+      "file": "app.js",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/app.js",
+      "status": 200,
+      "bytes": 6692,
+      "sha256": "48f20ab7cf9fc453972d9828cea70228955669fdc422ca8d3a40f8f2826cba65"
+    },
+    {
+      "file": "content.js",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/content.js",
+      "status": 200,
+      "bytes": 38399,
+      "sha256": "0f02b5c83580c8f14792c9acb60ecfeae742f14b861adf8f10fc9d0f2f6dc80f"
+    },
+    {
+      "file": "render.js",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/render.js",
+      "status": 200,
+      "bytes": 31095,
+      "sha256": "4770f15a15058d07ab0ef073253dd97204314532156dc47d5276ac4dd6c76040"
+    },
+    {
+      "file": "demo-render.js",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/demo-render.js",
+      "status": 200,
+      "bytes": 7070,
+      "sha256": "d41ab96f29462851c542128da6415cf713c97eb36ea81477789698485956c68e"
+    },
+    {
+      "file": "publication.js",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/publication.js",
+      "status": 200,
+      "bytes": 16327,
+      "sha256": "a91ec9875be6cff1b55902a21835a5f00aa31e0d8b87e571c02b93db6dbd8821"
+    },
+    {
+      "file": "map.js",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/map.js",
+      "status": 200,
+      "bytes": 932,
+      "sha256": "f8a614c1a2a0e3bef1098c0ab54042d32859fca6314608af1de32fc30783f7ad"
+    },
+    {
+      "file": "publication.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/publication.json",
+      "status": 200,
+      "bytes": 21735,
+      "sha256": "f9ee1a405304325e5fd79f9d6c8549b0acd438d2e6d2103297d9a462648b2918"
+    },
+    {
+      "file": "understanding.md",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/understanding.md",
+      "status": 200,
+      "bytes": 22229,
+      "sha256": "ae334306e6232d2efe53aea5827e28bf8031c55764e3554cedb06fa2c899ac5b"
+    },
+    {
+      "file": "research.md",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/research.md",
+      "status": 200,
+      "bytes": 66781,
+      "sha256": "2df68b10ef9a3461cb99115c6e43ec2a31ff14f40c579c758148be352b118a8b"
+    },
+    {
+      "file": "notes.md",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/notes.md",
+      "status": 200,
+      "bytes": 8978,
+      "sha256": "3cfdaae2f65fc94f1778d3c1d6dff02497ebefe25388b8e0a72076a8c6fdd139"
+    },
+    {
+      "file": "source-manifest.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/source-manifest.json",
+      "status": 200,
+      "bytes": 42819,
+      "sha256": "cf58ed98befe73e3c2ef168ac793aac203cc96a3d81244f48e945ee947956da6"
+    },
+    {
+      "file": "implementation-inventory.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/implementation-inventory.json",
+      "status": 200,
+      "bytes": 14224,
+      "sha256": "1afe752cb00cb3e52fb657508f5b9c102aa959d974a57340171e6a9fa40f5236"
+    },
+    {
+      "file": "skill-installation.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/skill-installation.json",
+      "status": 200,
+      "bytes": 7473,
+      "sha256": "9434fd3b95fee5483f88dd7caf19c053fb858f50dddb1a6759f38a1df1433223"
+    },
+    {
+      "file": "LICENSE.upstream.txt",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/LICENSE.upstream.txt",
+      "status": 200,
+      "bytes": 1065,
+      "sha256": "70794088c6dca47c5d7db9874cfa6dd67f56f9562deee2a56efb916af8d3f4a8"
+    },
+    {
+      "file": "assets/aitoearn-overview.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/aitoearn-overview.png",
+      "status": 200,
+      "bytes": 2234580,
+      "sha256": "3e44a35a22c3bd73482172bbeebe72b81775e0419a4fd18b16031d343761a973"
+    },
+    {
+      "file": "assets/aitoearn-overview.md",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/aitoearn-overview.md",
+      "status": 200,
+      "bytes": 5785,
+      "sha256": "8fc9c67c267c02f53e80c3928bd8fb195b0aa7a9cc121eb41b093ea03c2bc5d5"
+    },
+    {
+      "file": "assets/aitoearn-overview-record.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/aitoearn-overview-record.json",
+      "status": 200,
+      "bytes": 3042,
+      "sha256": "fcfaf94c3166631fddfb531741fe5b9a2f39a0babdf8f4907ae1c67a090c1824"
+    },
+    {
+      "file": "assets/aitoearn-overview-prompt.txt",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/aitoearn-overview-prompt.txt",
+      "status": 200,
+      "bytes": 8194,
+      "sha256": "b7dcab61ec1806c145c269da39b86100c9e322ec253e24652c4d1480536448b7"
+    },
+    {
+      "file": "experiment/README.md",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/README.md",
+      "status": 200,
+      "bytes": 5132,
+      "sha256": "001243bf280ab0130ba7dae1aeeac2a460e60ba934db941b4c1e8a2f9f0c8062"
+    },
+    {
+      "file": "experiment/run.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/run.json",
+      "status": 200,
+      "bytes": 6977,
+      "sha256": "800a491747a42ee402f76b7cded00ac205c6937a000c33281c9e47068308c45e"
+    },
+    {
+      "file": "experiment/draft.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/draft.json",
+      "status": 200,
+      "bytes": 2246,
+      "sha256": "3cbe2673f2b11de54432f5aa46a2c91e953ffa8f13888c372c0210582710668b"
+    },
+    {
+      "file": "experiment/draft.md",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/draft.md",
+      "status": 200,
+      "bytes": 1356,
+      "sha256": "0f0d2b562befdb15d51c632afd4dbd19091e77209d813bcce77304267aed6289"
+    },
+    {
+      "file": "experiment/prompts.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/prompts.json",
+      "status": 200,
+      "bytes": 3661,
+      "sha256": "6126998820001065b937d0ddafe10e6fdde776d055d7089f7c33b2facecacd06"
+    },
+    {
+      "file": "experiment/generation-calls.json",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/generation-calls.json",
+      "status": 200,
+      "bytes": 5998,
+      "sha256": "dc7b17ff5f16985f1fe744921c6ff1add9fa0cd21081c985d2401873fdd89665"
+    },
+    {
+      "file": "experiment/output-bundle.zip",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/experiment/output-bundle.zip",
+      "status": 200,
+      "bytes": 6288568,
+      "sha256": "a012ccf6a4ccd5eb49d01b8d3f90364ebff5d9da2034dda1654e4eed2b697a6f"
+    },
+    {
+      "file": "assets/research-to-post/card-01.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/research-to-post/card-01.png",
+      "status": 200,
+      "bytes": 2001167,
+      "sha256": "c3393f1c0b6efadfd44667ad09c3abb6cf9873dec4a27aedac052f10627237a8"
+    },
+    {
+      "file": "assets/research-to-post/card-02.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/research-to-post/card-02.png",
+      "status": 200,
+      "bytes": 2139188,
+      "sha256": "b7d8966b4be2b888a0a1313b6d633c690faf1b369a856470034d7b9fe0582510"
+    },
+    {
+      "file": "assets/research-to-post/card-03.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/research-to-post/card-03.png",
+      "status": 200,
+      "bytes": 2399689,
+      "sha256": "7272897510fb155bd96a1c9a6427b22084286b2a7c5e841b737d3a245a949ba9"
+    },
+    {
+      "file": "assets/author-create.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/author-create.png",
+      "status": 200,
+      "bytes": 926854,
+      "sha256": "5f21ce1b010791dfbde47af391bab5d57ced6ef3b3586b68212ea36a66bba8ac"
+    },
+    {
+      "file": "assets/author-publish.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/author-publish.png",
+      "status": 200,
+      "bytes": 37869,
+      "sha256": "10ab448cd8f214a1972c99b1374e82045f08ed7d7411cc4bf04fad024209eb78"
+    },
+    {
+      "file": "assets/author-channels.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/author-channels.png",
+      "status": 200,
+      "bytes": 64945,
+      "sha256": "f9545684ca37cf01e33f1f4f976a746e41d477d7620871d8759dc44934d547df"
+    },
+    {
+      "file": "assets/author-engage.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/author-engage.png",
+      "status": 200,
+      "bytes": 278072,
+      "sha256": "c05f77a776f470187b2d1ec47b248476803389932a33a339e3df8c2190d43f89"
+    },
+    {
+      "file": "assets/author-monetize.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/author-monetize.png",
+      "status": 200,
+      "bytes": 86967,
+      "sha256": "d67a8bb8d57da74778eccf3caf16691a82cd98e769fc047f91395e7a7d8757cd"
+    },
+    {
+      "file": "assets/example-restaurant.png",
+      "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/assets/example-restaurant.png",
+      "status": 200,
+      "bytes": 1657827,
+      "sha256": "d513845fe4cc3da9227835ea4852819335b823f8a864ed8511608e35a62c5f64"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/",
+      "status": 200,
+      "kind": "preserved-project"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "kind": "preserved-project"
+    }
+  ]
+}

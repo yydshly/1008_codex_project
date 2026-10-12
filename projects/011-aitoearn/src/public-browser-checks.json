@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-12T11:55:13.799Z",
+  "passed": true,
+  "url": "https://yydshly.github.io/1008_codex_project/011-aitoearn/",
+  "viewportReset": true,
+  "checks": [
+    {
+      "extensions": 8,
+      "modules": 8,
+      "overflow": false,
+      "sections": 18,
+      "summaries": 12,
+      "test": "公开静态正文"
+    },
+    {
+      "test": "字幕搜索",
+      "result": "显示 2 / 32 项能力"
+    },
+    {
+      "test": "重置搜索",
+      "result": "显示 32 / 32 项能力"
+    },
+    {
+      "test": "真实图片放大",
+      "result": "×\nSkill 不是全部 · 本次真实生成\n\n所需中英文标签清晰，四部分与配对说明正确，连线和桌面组成原理插画。未将画面当作原产品截图。\n\n下载本次生成的原图 ↓"
+    },
+    {
+      "native": [
+        941,
+        1672
+      ],
+      "scale": "100%",
+      "test": "原图100%阅读",
+      "width": 941
+    },
+    {
+      "scale": "50%",
+      "test": "原图50%阅读",
+      "width": 470.5
+    },
+    {
+      "overflow": false,
+      "scale": "适宽 36%",
+      "test": "390手机原图"
+    },
+    {
+      "heading": "八个可扩展方向",
+      "menuExpanded": "false",
+      "overflow": false,
+      "test": "390手机目录和扩展",
+      "width": 390
+    },
+    {
+      "hash": "#extensions",
+      "heading": "八个可扩展方向",
+      "test": "扩展深链接刷新"
+    },
+    {
+      "overflow": false,
+      "test": "320手机布局",
+      "width": 320
+    }
+  ],
+  "scope": "公开研究网页和原图交互；不验证原业务后台",
+  "screenshots": [
+    "assets/public-web.jpg",
+    "assets/public-mobile.jpg"
+  ]
+}

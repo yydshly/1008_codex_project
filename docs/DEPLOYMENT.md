@@ -22,10 +22,8 @@ node scripts/validate-site.mjs
 
 Node.js22+，网页无第三方运行依赖。完整web/dist/复制至.cache/pages-site/011-aitoearn/，默认子路径/1008_codex_project/011-aitoearn/。相对资源与锚点、静态HTML、map.html、publication.json、understanding.md、来源清单、许可与experiment/成品包保留。CI增加011路径、独立安装和内容/原图审计，同时核验既有项目。
 
-固定研究提交3581f511293236044e56fad67958cfcea0def6b5，MIT。13原版技能及GPT适配保留；本次图文只验证2技能方法与真实图像工具/本地草稿，没有运行原后台、视频处理、账号授权或社交发布。先公开部署核验，再登记demo与发布证据。
+固定研究提交3581f511293236044e56fad67958cfcea0def6b5，MIT。13原版技能及GPT适配保留；本次图文只验证2技能方法与真实图像工具/本地草稿，没有运行原后台、视频处理、账号授权或社交发布。[公开完整研究](https://yydshly.github.io/1008_codex_project/011-aitoearn/)与[原图阅读器](https://yydshly.github.io/1008_codex_project/011-aitoearn/map.html)已核验并登记demo。[首次部署运行38244805400](https://github.com/yydshly/1008_codex_project/actions/runs/38244805400)构建、审计和部署成功；37个011页面/资源、11个既有入口和总入口通过，原图及三张实测图哈希一致。公开浏览器检查与390/320手机布局通过。见[发布核验](../projects/011-aitoearn/src/publication-verification.json)、[HTTP记录](../projects/011-aitoearn/src/public-http-checks.json)与[浏览器记录](../projects/011-aitoearn/src/public-browser-checks.json)。
 <!-- AITO_EARN_PUBLICATION:END -->
-
-
 
 <!-- COVE_PUBLICATION:START -->
 ## Cove 完整理解与既有引导图发布（2026-10-12）

@@ -17,6 +17,7 @@ export async function audit(dist=path.join(web,'dist')){
  assert.equal((html.match(/data-reuse/g)||[]).length,reuse.length);assert.equal((html.match(/data-extension/g)||[]).length,extensions.length);
  assert.ok(!html.includes('127.0.0.1')&&!html.includes('localhost'),'公开页面不依赖本机');
  assert.ok(html.includes('未实测视频或真实发布')&&html.includes('本地草稿'),'真实实测范围需明确');
+ if(catalog.demo){for(const file of ['verification.json','public-http-checks.json','public-browser-checks.json']){const record=JSON.parse(await readFile(path.join(dist,file),'utf8'));assert.equal(record.passed,true,'缺少通过的公开记录：'+file);}}
  const bytes=await readFile(path.join(dist,guide.file));assert.equal(bytes.readUInt32BE(16),guide.width);assert.equal(bytes.readUInt32BE(20),guide.height);
  assert.equal(createHash('sha256').update(bytes).digest('hex'),guide.sha256,'引导图原始字节不得改变');
  let links=0;

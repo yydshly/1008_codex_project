@@ -1,5 +1,5 @@
 // Original Chinese analysis of the fixed research baseline. Extensions are proposals.
-import {meta, refs, source} from './content.js';
+import {meta, refs, source, capabilities, skills, platforms, layers, workflows, scenarios, values, boundaries} from './content.js';
 export const guide={file:'assets/aitoearn-overview.png',width:941,height:1672,sha256:'3e44a35a22c3bd73482172bbeebe72b81775e0419a4fd18b16031d343761a973'};
 const item=(title,text,input,deliverable,acceptance,ref)=>({title,text,input,deliverable,acceptance,ref});
 export const modules=[
@@ -42,11 +42,11 @@ export const roadmap=[
  {title:'接通一个真实渠道',text:'先保存真实后台草稿，核对平台要求与授权，再跟踪从任务创建到最终作品的完整结果。'},
  {title:'最后扩展视频与反馈',text:'按实际需求接视频/翻译工具、第二渠道与指标回写，比较费用、审阅时间和真实反馈。'},
 ];
-export const facts={meta:{...meta,organized:'2026-10-12',scope:'固定研究版本的完整理解；不是上游当前版本全功能验收'},guide,modules,mechanisms,reuse,extensions,roadmap};
+export const facts={meta:{...meta,organized:'2026-10-12',scope:'固定研究版本的完整理解；不是上游当前版本全功能验收'},guide,capabilities,skills,platforms,layers,workflows,scenarios,values,boundaries,modules,mechanisms,reuse,extensions,roadmap,sources:Object.entries(refs).map(([id,path])=>({id,path,url:source(path)})),evidence:{manifest:'source-manifest.json',implementation:'implementation-inventory.json',installation:'skill-installation.json',actualRun:'experiment/run.json'}};
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cards=(items,key)=>`<div class="publication-grid">${items.map(i=>`<article class="text-card" data-${key}><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p><dl>${[['input','输入'],['deliverable','产出'],['acceptance','验收依据']].map(([k,n])=>`<div><dt>${n}</dt><dd>${esc(i[k])}</dd></div>`).join('')}</dl><a class="source-link" href="${source(i.ref)}" target="_blank" rel="noopener noreferrer">固定源码依据 ↗</a></article>`).join('')}</div>`;
 export function renderPublication(catalog,section){return {
- summary:section('understanding','02','COMPLETE UNDERSTANDING','我们的完整理解','十二项摘要覆盖能力、模块、原理、输出、接入、价值与边界；与研究集首页使用同一份项目索引。',`<div class="publication-summary">${catalog.summaryItems.map(i=>`<p><strong>${esc(i.title)}</strong><span>${esc(i.text)}</span></p>`).join('')}</div><div class="source-downloads"><a href="understanding.md" download>下载完整理解 Markdown ↓</a><a href="publication.json">结构化研究与来源 ↗</a></div>`),
+ summary:section('understanding','02','COMPLETE UNDERSTANDING','我们的完整理解','十二项摘要覆盖能力、模块、原理、输出、接入、价值与边界；与研究集首页使用同一份项目索引。',`<div class="publication-summary">${catalog.summaryItems.map(i=>`<p><strong>${esc(i.title)}</strong><span>${esc(i.text)}</span></p>`).join('')}</div><div class="source-downloads"><a href="understanding.md" download>下载完整理解 Markdown ↓</a><a href="publication.json">结构化研究与来源 ↗</a>${catalog.demo?`<a href="verification.json">公开发布核验 ↗</a><a href="public-http-checks.json">公开HTTP记录 ↗</a><a href="public-browser-checks.json">浏览器记录 ↗</a>`:""}</div>`),
  introduction:`<div class="publication-introduction" data-publication-introduction>${catalog.overviewItems.map(i=>`<p><strong>${esc(i.title)}</strong>：${esc(i.text)}</p>`).join('')}</div>`,
  modules:section('modules','08','SYSTEM MODULES','八个职责模块，构成内容运营系统','这是按职责整理的分析视图；技能目录、业务模块与工具服务分别承担不同工作。',cards(modules,'system-module')),
  mechanisms:section('mechanisms','10','EXECUTION MECHANISMS','从目标到反馈，六个执行机制','图片、视频、草稿、发布和指标是不同阶段的结果。每一步都有自己的条件与验收依据。',cards(mechanisms,'mechanism')),
