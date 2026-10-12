@@ -26,10 +26,13 @@ npm.cmd run preview
 - scripts/serve.mjs：生产产物的本地子路径预览。
 - scripts/record-sources.mjs：在固定上游 checkout 上重新生成源码路径及 SHA-256 清单，网页构建无需执行。
 - scripts/verify-browser.mjs：使用环境提供的 Playwright 模块验证生产网页；不加入运行依赖。
+- scripts/verify-http.mjs：核验公开 HTTPS 页面、下载、原图字节、摘要一致性及十个既有项目入口。
 
 支持完整总览查看 / 下载、离线图源，以及四张架构图切换、点击模块查看职责与源码，图类型支持方向键 / Home / End。小屏幕在图内部横向滚动，页面正文正常纵向阅读；SVG 可独立下载。
 
-发布准备：将整个 dist/ 复制到统一站点的 009-cove/，包括 assets/、样式、脚本、研究文档、许可证与来源清单。本次未发布在线演示。
+已发布：[完整中文研究](https://yydshly.github.io/1008_codex_project/009-cove/) · [可缩放原图](https://yydshly.github.io/1008_codex_project/009-cove/map.html)。整个 dist/ 复制到统一站点的 009-cove/，包括 assets/、样式、脚本、研究文档、许可证与来源清单。GitHub Pages 完整构建、32 项公开 HTTPS 与真实浏览器核验通过。
+
+公开核验：node scripts/verify-http.mjs；浏览器脚本也可传入公开 URL 作为第二个参数。证据保存在 ../src/public-http-checks.json 和 ../src/public-browser-checks.json。
 
 可选浏览器验收（先运行 preview）：node scripts/verify-browser.mjs <环境中的 playwright/index.mjs 绝对路径>。结果与截图保存到 ../assets/。
 

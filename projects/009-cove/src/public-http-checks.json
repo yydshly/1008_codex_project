@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-12",
+  "url": "https://yydshly.github.io/1008_codex_project/009-cove/",
+  "passed": true,
+  "guide": {
+    "width": 2700,
+    "height": 6471,
+    "bytes": 2008514,
+    "sha256": "085338220f911e14ce8c388204eb4011d60be73282bac90fe9cef5387203143f"
+  },
+  "checks": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/",
+      "status": 200,
+      "bytes": 114080,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/map.html",
+      "status": 200,
+      "bytes": 1629,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/styles.css",
+      "status": 200,
+      "bytes": 20517,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/app.js",
+      "status": 200,
+      "bytes": 2313,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/map.css",
+      "status": 200,
+      "bytes": 1040,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/map.js",
+      "status": 200,
+      "bytes": 964,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/publication.json",
+      "status": 200,
+      "bytes": 35610,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/understanding.md",
+      "status": 200,
+      "bytes": 37221,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/research.md",
+      "status": 200,
+      "bytes": 8920,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/notes.md",
+      "status": 200,
+      "bytes": 9327,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/LICENSE.upstream.txt",
+      "status": 200,
+      "bytes": 1211,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/source-manifest.json",
+      "status": 200,
+      "bytes": 12352,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/favicon.svg",
+      "status": 200,
+      "bytes": 270,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/cove-overview.png",
+      "status": 200,
+      "bytes": 2008514,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/cove-overview.html",
+      "status": 200,
+      "bytes": 32733,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/cove-overview-render.json",
+      "status": 200,
+      "bytes": 636,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/verification.json",
+      "status": 200,
+      "bytes": 1943,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/architecture-system.svg",
+      "status": 200,
+      "bytes": 9979,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/architecture-login.svg",
+      "status": 200,
+      "bytes": 7236,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/architecture-request.svg",
+      "status": 200,
+      "bytes": 7736,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/009-cove/assets/architecture-build.svg",
+      "status": 200,
+      "bytes": 6446,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200,
+      "bytes": 84301,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "bytes": 460,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "bytes": 5201,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+      "status": 200,
+      "bytes": 51057,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200,
+      "bytes": 26383,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200,
+      "bytes": 35823,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": 200,
+      "bytes": 33508,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+      "status": 200,
+      "bytes": 57027,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+      "status": 200,
+      "bytes": 50545,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/010-unsloth/",
+      "status": 200,
+      "bytes": 87404,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "bytes": 120516,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "scope": "静态中文研究网页；不运行 Cove 认证、数据库或业务后端。"
+}

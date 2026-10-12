@@ -2,7 +2,9 @@
 
 用中文网页整理 Cove 的能力、执行原理、适用场景和扩展方向，并把模板模块对应回真实源码。
 
-2026-10-12 已补全 14 章完整理解：12 项摘要、8 组模块、6 项价值、4 条复用路线、8 处扩展接口、6 步适配与8项扩展建议。沿用既有完整原图，新增缩放阅读和资料下载；已接入仓库的 GitHub Pages 流程，公开链接在核验后登记。
+2026-10-12 已补全并公开部署 14 章完整理解：12 项摘要、8 组模块、6 项价值、4 条复用路线、8 处扩展接口、6 步适配与8项扩展建议。沿用既有完整原图，新增缩放阅读和资料下载；GitHub Pages 干净 Linux 环境完整构建、32 项公开 HTTPS 与真实浏览器核验均通过。
+
+[在线完整研究](https://yydshly.github.io/1008_codex_project/009-cove/) · [可缩放原图阅读器](https://yydshly.github.io/1008_codex_project/009-cove/map.html) · [发布核验](src/publication-verification.json)
 
 [完整理解与来源](understanding.md) · [发布内容源](web/publication.mjs) · [既有完整引导图](assets/cove-overview.png)
 
@@ -20,7 +22,7 @@
 | 上游许可 | [Unlicense](https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/LICENSE)，原文保存在 [src/LICENSE.upstream.txt](src/LICENSE.upstream.txt) |
 | 本项目范围 | 原创中文分析、静态研究网页、一张完整高清总览与四张交互架构图；未修改或运行上游业务模板 |
 | 来源登记 | [源码清单与文件摘要](src/source-manifest.json) |
-| 在线演示 | 未发布；索引 demo 为空 |
+| 在线演示 | [完整中文研究](https://yydshly.github.io/1008_codex_project/009-cove/)；公开核验通过后已登记索引 demo |
 
 ## 核心理解
 
@@ -32,7 +34,7 @@ Cove 是一套预先集成的全栈起步模板。使用它创建项目，再增
 
 ## 一张图完整理解
 
-[查看 / 下载高清 PNG](assets/cove-overview.png) · [独立可编辑图源](assets/cove-overview.html) · [生成与排版检查记录](assets/cove-overview-render.json) · [网页中的总览入口](http://127.0.0.1:4209/1008_codex_project/009-cove/#summary-figure)
+[查看 / 下载高清 PNG](assets/cove-overview.png) · [独立可编辑图源](assets/cove-overview.html) · [生成与排版检查记录](assets/cove-overview-render.json) · [网页中的总览入口](https://yydshly.github.io/1008_codex_project/009-cove/#summary-figure)
 
 ![Cove 完整总览：模板定位、已有能力、六类场景、模块架构与执行机制、八处扩展入口及六步业务适配](assets/cove-overview.png)
 
@@ -57,7 +59,7 @@ Cove 是一套预先集成的全栈起步模板。使用它创建项目，再增
 
 ![中文研究网页的实际桌面截图：四种架构图切换、分层模块与详情](assets/cover.png)
 
-2026-10-09 本地生产构建截图；展示本项目原创研究网页，不是上游 Cove 应用截图。[手机截图](assets/mobile.png) · [浏览器验收记录](assets/verification.json)
+2026-10-12 公开网页的实际浏览器截图；展示本项目原创研究网页。[手机截图](assets/mobile.png) · [浏览器验收记录](src/public-browser-checks.json)
 
 ### 关键连接
 

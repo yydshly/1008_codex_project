@@ -100,7 +100,7 @@ for (const file of ['styles.css','app.js','assets/favicon.svg','research.md','no
   assert.equal(resource.status(),200,'资源缺失：'+file);
 }
 const redirect = await page.request.get(url.replace(/\/$/,''),{maxRedirects:0});
-assert.equal(redirect.status(),302);
+assert.ok([301,302,307,308].includes(redirect.status()),'子路径应重定向到带斜杠入口');
 assert.equal((await page.request.get(new URL('/outside-cove/',url).href)).status(),404);
 checks.push('固定提交源码链接全部校对；静态资源、研究文档、许可、来源清单和子路径重定向');
 
@@ -170,6 +170,8 @@ assert.equal(await staticPage.locator('[data-extension-direction]').count(),8);
 await staticPage.goto(new URL('map.html',url).href,{waitUntil:'networkidle'});
 assert.ok(await staticPage.locator('#map').evaluate(img=>img.complete&&img.naturalWidth===2700));
 await noScript.close();checks.push('禁用 JavaScript 仍有完整理解、扩展正文与完整引导图');
+assert.equal(errors.length,0,'完整流程浏览器脚本错误');
+assert.equal(failedResponses.length,0,'完整流程静态资源 HTTP 错误');
 await fs.writeFile(path.join(project,'assets/verification.json'),JSON.stringify({
   researchDate:meta.date,publicationDate:publication.meta.publicationDate,commit:meta.commit,url,checks,nodeCount,
   screenshots:[{file:'cover.png',width:1440,height:1200},{file:'architecture-desktop.png',type:'interactive architecture panel'},{file:'mobile.png',width:390,height:1050}],

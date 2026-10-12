@@ -24,7 +24,7 @@ node scripts/validate-site.mjs
 
 研究保持 e7d40d524b6526d80c803fd092f6fa8bf2029f8e 的固定基线；不是上游之后所有变化的综述。Drizzle RC、Nitro beta 和实际目标平台需由产品开发者验证；此次部署不证明真实 OAuth、数据库迁移或业务性能。
 
-公开链接和首次部署运行在 HTTPS、下载与真实浏览器核验通过后登记，证据保存于项目 src/publication-verification.json。
+[在线完整研究](https://yydshly.github.io/1008_codex_project/009-cove/)与[可缩放原图](https://yydshly.github.io/1008_codex_project/009-cove/map.html)已核验并登记 demo。[首次部署运行 38240817735](https://github.com/yydshly/1008_codex_project/actions/runs/38240817735)在干净 Linux 环境执行全站完整构建与部署，成功。32 项公开 HTTPS、原图字节和 SHA-256、四图 / 35节点、390/320 手机、两倍缩放、无脚本阅读和下载均通过，十个既有项目入口保留。见[发布核验](../projects/009-cove/src/publication-verification.json)、[HTTP 记录](../projects/009-cove/src/public-http-checks.json)与[浏览器记录](../projects/009-cove/src/public-browser-checks.json)。
 <!-- COVE_PUBLICATION:END -->
 
 <!-- UNSLOTH_PUBLICATION:START -->

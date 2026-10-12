@@ -1,5 +1,15 @@
 # Cove 研究笔记
 
+## 2026-10-12 · 公开部署与验收完成
+
+发布提交 9fac4edf0e68ea89b51b0e6cc54d4e89080fccd1 已推送远端 main；GitHub Pages 运行 38240817735 在干净 Linux 环境完成所有项目的完整构建和部署，索引检查工作流也成功。本地跨盘依赖问题没有进入发布环境。
+
+公开入口：https://yydshly.github.io/1008_codex_project/009-cove/；原图阅读器为 map.html。公开验收后登记 demo，补齐发布文档与证据。
+
+node web/scripts/verify-http.mjs 验证32个公开页面和资源：Cove正文、原图 / 图源 / 生成记录、四张SVG、文字与结构化研究、许可、统一首页和十个既有项目。首页与研究页的12项摘要一致；下载原图仍为2700×6471、2,008,514字节，SHA-256为085338220f911e14ce8c388204eb4011d60be73282bac90fe9cef5387203143f。
+
+真实 Chromium 浏览器对公开 URL 重跑全部验收：14章、35节点、四图切换、键盘、来源、下载、320/390手机、两倍缩放、锚点刷新、无脚本阅读、原图50% / 100% / 滑杆与适合宽度，全部通过；脚本与资源错误为0。公开截图更新到assets，src/public-http-checks.json与src/public-browser-checks.json保存结果，src/local-browser-checks.json保留本地记录。验收范围是静态研究网页，未运行Cove后端、真实OAuth或数据库迁移。
+
 ## 2026-10-12 · 完整理解与公开发布准备
 
 在固定源码与既有高清图上补充14章完整理解，包括12项摘要、八组模块、六项价值、四条复用、八处真实入口、六步适配和八项待开发方向。publication.mjs 保存统一内容，sync-catalog.mjs 只同步009；README索引与站点总入口复用同一摘要和引导介绍。

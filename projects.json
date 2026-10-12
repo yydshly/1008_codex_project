@@ -796,7 +796,7 @@
       "coverFull": "projects/009-cove/assets/cove-overview.png",
       "coverAlt": "Cove 完整中文引导图：模板定位、基础能力、六类场景、模块架构、执行原理、八处扩展接口和六步业务适配",
       "coverCaption": "沿用 2026-10-09 原创 2700×6471 完整 PNG；固定源码 e7d40d5，2026-10-12 补全中文理解。原图不裁切、不重绘；已有能力、配置项和建议开发分别标明，静态网站验证不代表 Cove 后端运行验证。",
-      "demo": ""
+      "demo": "https://yydshly.github.io/1008_codex_project/009-cove/"
     },
     {
       "id": "010",
