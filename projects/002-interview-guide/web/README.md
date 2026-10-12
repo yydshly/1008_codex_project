@@ -2,6 +2,8 @@
 
 独立静态网页，把固定版本的上游指南整理为可搜索、可展开阅读的中文知识地图。默认进入 `#research` 理解总览，先阅读能力、九类模块、实现原理、学习价值和扩展方向，再进入原有 `#overview` 知识索引。范围与许可见 [项目说明](../README.md)，实际验证记录见 [研究笔记](../notes.md)。
 
+已于 **2026-10-12** 发布：[在线阅读](https://yydshly.github.io/1008_codex_project/002-interview-guide/)。公开 HTTPS 和真实在线浏览器验收已通过。
+
 研究提交为 `fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed`：50 个主题、9 个分类、3 条路线；保留 273 条原始章节引用，并独立补回 3 条原文正文引用，合计 276 条记录、209 个去重资源入口。全部主题有共 113 节中文详细讲解、100 个具体误区、有效相关主题和 100 条参考答法，另有 38 个独立代码或伪代码示例。
 
 ## 运行、审计与构建
@@ -56,7 +58,7 @@ npm run preview
 
 ## 子路径检查与发布
 
-计划子路径为 `/1008_codex_project/002-interview-guide/`。构建后执行：
+公开子路径为 `/1008_codex_project/002-interview-guide/`。本地构建后执行：
 
 ```powershell
 node scripts/serve.mjs --dir dist --port 4185 --base /1008_codex_project/002-interview-guide/
@@ -70,8 +72,10 @@ node scripts/serve.mjs --dir dist --port 4185 --base /1008_codex_project/002-int
 
 **本轮真实浏览器验收（2026-10-12）**：在聚合产物的 `http://localhost:4202/1008_codex_project/002-interview-guide/` 使用 CUA 验证默认理解页、9 类 50 主题、原图完整加载、知识索引、搜索“依赖倒置”返回整洁架构与 SOLID、SOLID 深链刷新及折叠答法、覆盖页 50 项与 276 条记录 / 209 URL。320 / 390 px 手机无横向溢出，菜单打开并选择后正确关闭；控制台无 error / warn。聚合根首页正确显示两个项目。真实手机截图见 [`publication-mobile.jpg`](../assets/publication-mobile.jpg)，390 × 844 px。
 
-4202 是本次聚合产物浏览器验收的实际端口；上面的 4185 命令仍用于独立 `dist/` 子路径预览。此次验收没有逐一联网验证 209 个外部 URL；本地生产通过不代表公开 HTTPS 部署已经完成。
+4202 是本次聚合产物浏览器验收的实际端口；上面的 4185 命令仍用于独立 `dist/` 子路径预览。此次验收没有逐一联网验证 209 个外部 URL；线上验收与本地验收分别登记于下方。
 
-本次理解总览扩展需要发布完整 `dist/`，包括 `research.js`、`assets/repository-map.png`、全部既有阅读模块、覆盖报告与许可。首页、`#research`、原有知识深链接和配图均采用相对资源，可放在统一站点的 `002-interview-guide/` 子路径。
+本次已发布完整 `dist/`，包括 `research.js`、`assets/repository-map.png`、全部既有阅读模块、覆盖报告与许可。首页、`#research`、原有知识深链接和配图采用相对资源，实际部署于统一站点的 `002-interview-guide/` 子路径。
 
-公开部署与实际HTTPS验证结果由发布记录维护；本模块完成构建不自动表示已经上线。发布方式见 [部署说明](../../../docs/DEPLOYMENT.md)，实际在线验证通过后再登记根 `projects.json` 的演示 URL。
+**线上验收（2026-10-12）**：初始发布源提交为 [`7b7921ec9c4988fa0dc409f13a8b683be4b1793a`](https://github.com/yydshly/1008_codex_project/commit/7b7921ec9c4988fa0dc409f13a8b683be4b1793a)，已推送 `main`；[GitHub Actions](https://github.com/yydshly/1008_codex_project/actions/runs/38204372772) 成功。实际 HTTPS 检查 002 的 16 个文件均为 200，文本归一换行后与本地产物一致，PNG 字节完全一致；001 的 16 个功能入口也为 200。真实在线 CUA 验证默认理解页与 9 模块、完整原图、知识导航 / 搜索“依赖倒置”、SOLID 深链刷新与答法、50 项覆盖及 276 记录 / 209 URL，页面无横向溢出，控制台无 error / warn。
+
+线上桌面真实截图为 [`publication-desktop.jpg`](../assets/publication-desktop.jpg)，1265 × 712 px；`publication-mobile.jpg` 保持标为本地截图。HTTP 来源与逐文件结果见 [`../src/publication-verification.json`](../src/publication-verification.json) 的 `httpOnline`，浏览器操作记录见 [研究笔记](../notes.md)。后续链接与文档登记另行提交；初始发布源提交仍按本次实际记录保存。发布方式见 [部署说明](../../../docs/DEPLOYMENT.md)。

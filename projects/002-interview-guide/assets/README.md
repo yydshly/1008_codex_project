@@ -20,13 +20,23 @@
 | --- | --- | --- |
 | [`publication-mobile.jpg`](publication-mobile.jpg) | 手机理解总览：完整内容图、查看 / 下载入口、知识地图标题和 50 / 9 / 209 统计 | CUA 实际浏览器，本地聚合生产子路径，390 × 844 px，视口截图 |
 
-实际访问地址为 `http://localhost:4202/1008_codex_project/002-interview-guide/`。本轮完成默认理解页、知识索引、搜索、SOLID 深链与答法、覆盖清单及 320 / 390 px 手机菜单检查，控制台无 error / warn。图片属于本地生产截图；当前没有公开站点截图，不能用它表示已上线。
+实际访问地址为 `http://localhost:4202/1008_codex_project/002-interview-guide/`。本轮完成默认理解页、知识索引、搜索、SOLID 深链与答法、覆盖清单及 320 / 390 px 手机菜单检查，控制台无 error / warn。图片属于本地生产截图，不能将它归为线上截图；本轮新增在线桌面截图另列如下。
+
+## 2026-10-12 · 公开 HTTPS 桌面截图
+
+| 文件 | 实际画面 | 来源与尺寸 |
+| --- | --- | --- |
+| [`publication-desktop.jpg`](publication-desktop.jpg) | 默认理解总览：侧栏导航、50 / 9 / 209 统计、完整内容图和知识 / 覆盖入口 | CUA 真实在线浏览器，[公开 HTTPS 地址](https://yydshly.github.io/1008_codex_project/002-interview-guide/)，1265 × 712 px，视口截图 |
+
+尺寸从 JPEG 帧头实际读取，文件为 88,427 字节。在线浏览器已检查原图加载、9 模块、知识导航与搜索、SOLID 深链刷新和答法、覆盖清单；无横向溢出或控制台 error / warn。此桌面图来自公开站点；上面的 390 × 844 手机图仍是本地截图。
 
 ## 单图内容总览
 
 [`repository-map.png`](repository-map.png) 是 2026-10-08 使用内置 image_gen 工具制作的中文信息图，尺寸 **1086 × 1448 px**；它是独立内容图，不是网页截图。
 
 2026-10-12 发布准备核对原文件为 **1,917,984 字节**，项目源图、`web/assets/repository-map.png` 与 `web/dist/assets/repository-map.png` 副本一致。本轮网页加载按原比例完整展示，未裁切；此检查不改变图的生成日期、固定版本或内容口径。
+
+同日线上 PNG 与原文件精确字节一致，SHA-256 为 `78e0ae5e5a5d09fc64dc9cef6f3e1c8a857ed91f28a4ed65b9e1180c5f2385b0`。逐文件 HTTP 记录见 [`../src/publication-verification.json`](../src/publication-verification.json) 的 `httpOnline`；初始发布源为 `7b7921ec9c4988fa0dc409f13a8b683be4b1793a`。
 
 图中概括原库的面试复习、教程讲解与资源导航能力，将全部 50 篇原文按本地 9 个中文方向展示，注明 11 篇详细教程、39 篇导航及 209 个去重链接。底部单独标记本地新增的讲解、示例、误区、答法和检索功能，并说明练习、判题、算法动画与 AI 服务由外部平台提供。分类数量合计及主题名称已逐项核对；原库固定版本和许可见图底。
 

@@ -63,7 +63,7 @@
       "cover": "projects/002-interview-guide/assets/repository-map.png",
       "coverAlt": "编程面试指南完整引导图：三类核心能力、九类五十个主题、学习方式、本地中文增强与外部平台边界",
       "coverCaption": "使用我们2026-10-08生成的完整内容总览图，引导阅读原库能力与知识模块；研究说明进一步解释原理、价值和扩展方向，图中区分原库、本地新增与外部服务。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
       "summaryItems": [
         {
           "title": "能力",

@@ -2,7 +2,7 @@
 
 把一份西班牙语开源面试指南整理为可核对、可检索、能串联知识的中文学习站：先看全貌，再阅读讲解、动手实践，最后用自己的话解释技术取舍。
 
-[返回总索引](../../README.md) · [原仓库](https://github.com/DevCaress/guia-entrevistas-de-programacion) · [完整引导图](assets/repository-map.png) · [研究笔记](notes.md)
+[在线阅读](https://yydshly.github.io/1008_codex_project/002-interview-guide/) · [返回总索引](../../README.md) · [原仓库](https://github.com/DevCaress/guia-entrevistas-de-programacion) · [完整引导图](assets/repository-map.png) · [研究笔记](notes.md)
 
 [![编程面试指南完整引导图：原库能力、50篇内容与209个资源、九类知识、本地中文增强和学习步骤](assets/repository-map.png)](assets/repository-map.png)
 
@@ -20,7 +20,8 @@
 | 本轮整理 | 2026-10-12，补充完整理解、固定源码发布原理和扩展方向 |
 | 上游许可 | MIT，`Copyright (c) 2026 Daniel Enriquez`；全文见 [`src/LICENSE.upstream`](src/LICENSE.upstream) |
 | 完成范围 | 固定版汇总、中文增强、覆盖审计；2026-10-12 的聚合构建与本地生产子路径验收已通过 |
-| 发布状态 | 001 + 002 的统一产物已在本地验证；公开部署和 HTTPS 验收待完成 |
+| 发布状态 | 2026-10-12 已发布到 [GitHub Pages](https://yydshly.github.io/1008_codex_project/002-interview-guide/)，实际 HTTPS 与在线浏览器验收通过 |
+| 初始发布来源 | 已推送 `main` 的提交 [`7b7921ec9c4988fa0dc409f13a8b683be4b1793a`](https://github.com/yydshly/1008_codex_project/commit/7b7921ec9c4988fa0dc409f13a8b683be4b1793a)；[Actions 成功记录](https://github.com/yydshly/1008_codex_project/actions/runs/38204372772) |
 
 ## 原库的能力与内容
 
@@ -125,7 +126,7 @@
 | 已实现 | 全文 / 分类 / 标签 / 原文类型筛选 | 检索范围包含段落、表格、代码和答法；可区分 11 教程与 39 导航 |
 | 已实现 | 三路线、详情操作与手机阅读 | 相关主题、复制、深链、折叠答法；历史验证覆盖 320 / 390 px |
 | 本轮已实现 | 完整理解入口与引导图 | 默认理解总览、完整图 / 下载、能力与价值说明、无脚本阅读；本地生产子路径与手机验收通过 |
-| 本轮推进 | 统一静态发布 | 发布成功及在线核验后再登记演示地址 |
+| 已发布 | 统一静态发布 | 001 + 002 共同发布；实际 HTTPS、原图与在线交互验收通过 |
 | 后续可做 | 个人学习进度与间隔复习 | 增加本机记录、导出与复习队列，先定义“完成”的标准 |
 | 后续可做 | 岗位 / 水平驱动的路线 | 依据岗位权重和短板生成计划，并让用户理解排序理由 |
 | 后续可做 | 可验证的小练习 | 为少量主题增加测试型练习；执行隔离、成本和错误反馈需另行设计 |
@@ -158,15 +159,17 @@ npm run preview
 node scripts/serve.mjs --dir dist --port 4185 --base /1008_codex_project/002-interview-guide/
 ```
 
-打开 `http://localhost:4185/1008_codex_project/002-interview-guide/`。后续统一发布将产物汇入 `002-interview-guide/` 子目录，与其他已启用项目共同发布；以实际生产地址验证后登记结果。[Web 运行说明](web/README.md)与[仓库部署说明](../../docs/DEPLOYMENT.md)
+打开 `http://localhost:4185/1008_codex_project/002-interview-guide/`。统一构建已将产物汇入 `002-interview-guide/` 子目录，与 001 共同发布；[在线阅读](https://yydshly.github.io/1008_codex_project/002-interview-guide/)已完成实际验收。[Web 运行说明](web/README.md)与[仓库部署说明](../../docs/DEPLOYMENT.md)
 
 **已有验证证据属于 2026-10-08 的增强版本**：严格内容审计、生产构建和 9 组 Chromium 检查通过，包含 50 详情、表格、搜索筛选、209 资源及覆盖页、返回与深链、320 / 390 px 布局；没有控制台错误、页面错误或请求失败。它不等同于本轮部署完成，2026-10-12 的新验证与上线记录单独补入 [notes.md](notes.md)。
 
 **2026-10-12 本轮本地验收已通过**：根 `npm run check`、13 / 13 项测试、001 + 002 完整聚合构建和 `validate-site` 均成功，保留 001 的 16 个 HTML 入口。002 严格审计仍为 50 主题、209 资源、38 示例与 100 答法；原图 1086 × 1448 px、1,917,984 字节，项目 / Web / dist 副本一致。
 
-在 `http://localhost:4202/1008_codex_project/002-interview-guide/` 的真实 CUA 浏览器检查中，默认理解总览完整展示 9 类、50 主题与未裁切的原图；知识索引、搜索“依赖倒置”、SOLID 深链刷新与折叠答法、50 项覆盖清单和 276 记录 / 209 URL 均正常。320 / 390 px 手机无横向溢出，菜单打开、选项跳转与关闭正常，控制台无 error / warn；聚合首页正确显示 2 个项目。这些是本地生产产物证据，公开部署仍待核验。
+在 `http://localhost:4202/1008_codex_project/002-interview-guide/` 的真实 CUA 浏览器检查中，默认理解总览完整展示 9 类、50 主题与未裁切的原图；知识索引、搜索“依赖倒置”、SOLID 深链刷新与折叠答法、50 项覆盖清单和 276 记录 / 209 URL 均正常。320 / 390 px 手机无横向溢出，菜单打开、选项跳转与关闭正常，控制台无 error / warn；聚合首页正确显示 2 个项目。以上保留为本地生产产物证据。
 
-本轮真实手机截图见 [2026-10-12 理解总览](assets/publication-mobile.jpg)，390 × 844 px，来自上述本地子路径，当前没有在线截图。
+**2026-10-12 在线验收已通过**：002 的 16 个 HTTPS 文件均返回 200，文本按换行归一后与本地构建一致，PNG 与原图精确字节一致；001 的 16 个功能入口也返回 200。真实在线 CUA 检查通过默认理解页、9 个模块、1086 × 1448 原图、知识导航与搜索、SOLID 深链刷新和答法展开、50 项覆盖 / 276 引用 / 209 URL，未出现横向溢出或控制台 error / warn。机器记录见 [`src/publication-verification.json`](src/publication-verification.json)，真实操作与边界见 [notes.md](notes.md)。
+
+本轮[在线桌面截图](assets/publication-desktop.jpg)为 1265 × 712 px，来自公开 HTTPS 地址；[本地手机截图](assets/publication-mobile.jpg)为 390 × 844 px，仍来自 4202 本地子路径。网页实现已推送 `main`，后续链接登记与验收文档另行提交，不改变上面记录的初始发布源提交。
 
 实际网页效果另见[桌面总览](assets/cover.png)、[覆盖清单](assets/coverage.png)、[SOLID 详情](assets/engineering-detail.png)、[手机总览](assets/mobile.png)与[手机详情](assets/mobile-detail.png)。这些是 2026-10-08 的本地生产截图，不与生成引导图混为一类。
 

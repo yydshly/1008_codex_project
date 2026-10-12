@@ -3,7 +3,7 @@
 <!-- INTERVIEW_GUIDE_PUBLICATION:START -->
 ## 编程面试知识指南公开发布（2026-10-12）
 
-已接入 GitHub Pages 自定义 Actions 工作流并通过本地生产子路径核验。公开部署完成后再登记正式 HTTPS 地址；此阶段索引 demo 保持为空。
+已通过 GitHub Pages Actions 部署并核验公开 HTTPS。在线入口：[编程面试知识指南](https://yydshly.github.io/1008_codex_project/002-interview-guide/)，[统一研究首页](https://yydshly.github.io/1008_codex_project/)。实际结果见 [发布核验记录](../projects/002-interview-guide/src/publication-verification.json)。
 
 - 默认理解总览说明源库能力、九类模块、静态内容出版原理、学习与团队使用价值、扩展方向及能力边界；知识索引、学习路线、资料与覆盖页继续可用。
 - 复用我们生成的完整 1086 × 1448 PNG 引导图，原文件与网页副本逐字节一致；首页、理解页、原图查看与下载均保留全部画面。
