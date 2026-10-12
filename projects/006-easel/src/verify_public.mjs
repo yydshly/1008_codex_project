@@ -30,7 +30,7 @@ const entrance=(await get('../')).toString('utf8');
 assert.ok(entrance.includes('id="easel"')&&entrance.includes('./006-easel/capability-map.png'));
 for(const item of publication.overviewItems)assert.ok(entrance.includes(item.title),`总入口缺少${item.title}`);
 // 保留现有发布路径，防止聚合时遗漏其他项目。
-const preserved=await Promise.allSettled(['001-sandboard/','002-interview-guide/','003-pascal-editor/research/','004-up-learning-guide/','005-threejs-game-skills/','013-aihot/'].map(relative=>get('../'+relative)));
+const preserved=await Promise.allSettled(['001-sandboard/','002-interview-guide/','003-pascal-editor/overview/','004-up-learning-guide/','005-threejs-game-skills/','013-aihot/'].map(relative=>get('../'+relative)));
 for(const result of preserved)if(result.status==='rejected')throw result.reason;
 const record={checkedAt:new Date().toISOString(),url:base.href,status:'passed',skills:114,guideSha256:publication.meta.guide.sha256,staticFullUnderstanding:true,existingProjectPathsPreserved:true,resources:checked.sort((a,b)=>a.url.localeCompare(b.url)),scope:'HTTPS资源与静态内容；真实浏览器交互核验另行记录。'};
 const output=fileURLToPath(new URL('./public-http-checks.json',import.meta.url));

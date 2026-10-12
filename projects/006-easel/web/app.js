@@ -175,8 +175,8 @@ function route() {
   document.title=({overview:'项目与架构',search:'搜索与过滤',capabilities:'全部能力',production:'制作与发布',value:'场景与扩展',evidence:'源码与验证'}[view])+' · Easel 源码能力图谱';
   if(view==='search'){renderSources();demo();}
   if(view==='capabilities'){renderSkills();if(params.get('skill'))showSkill(params.get('skill'));}
-  window.scrollTo(0,0);
-  if(view==='value'&&params.get('section')==='extensions')document.getElementById('extension-directions')?.scrollIntoView();
+  window.scrollTo({top:0,left:0,behavior:'instant'});
+  if(view==='value'&&params.get('section')==='extensions')document.getElementById('extension-directions')?.scrollIntoView({behavior:'instant',block:'start'});
 }
 
 main.addEventListener('click',event=>{
