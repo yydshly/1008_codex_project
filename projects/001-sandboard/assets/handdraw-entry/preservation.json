@@ -1,0 +1,15 @@
+{
+  "checkedFiles": 526,
+  "unchangedFiles": 519,
+  "changedEntryAndUiFiles": [
+    "experiments/sand-art/src/studio.ts",
+    "experiments/sand-art/src/ui.ts",
+    "experiments/sand-art/src/memories/main.ts",
+    "experiments/sand-art/src/memories/style.css",
+    "experiments/sand-art/src/platform/home.ts",
+    "experiments/sand-art/src/platform/navigation.ts",
+    "experiments/sand-art/src/platform/pages.json"
+  ],
+  "missingFiles": [],
+  "materialInputRendererStorageAndHistoricalAssetsUnchanged": true
+}

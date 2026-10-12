@@ -1,0 +1,148 @@
+{
+  "version": "v26",
+  "date": "2026-10-10",
+  "entry": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+  "scope": "雨窗示例，保留原谱与材料，仅改观看时间、材质呈现和控制界面",
+  "production": {
+    "entries": 6,
+    "typescript": "passed",
+    "vite": "passed",
+    "contactBundle": "contact-DEcewkj1.js",
+    "warning": "既有大分块提示"
+  },
+  "tests": {
+    "command": "npm.cmd test -- --maxWorkers=2 tests/photo-study.test.ts tests/photo-timing.test.ts tests/pour.test.ts",
+    "filesPassed": 3,
+    "testsPassed": 9,
+    "scope": "材料逐值回放、灯光不改材料、投影构图、原芦苇、累计分章时间、不同帧间隔不丢步骤；最后章末UI修正通过构建与实际浏览器验证，未重跑全套历史测试"
+  },
+  "sourcePlan": {
+    "path": "projects/001-sandboard/assets/material-realism-v17/natural-window-score.json",
+    "sha256": "abaefbf0acb17709283988945cc3625391c50ce779abf4422dcb63fe4f57371d",
+    "ticks": 37826,
+    "strokes": 2042,
+    "materialResolution": [
+      768,
+      512
+    ]
+  },
+  "timing": {
+    "mode": "guided",
+    "phaseRates": [
+      6,
+      6,
+      2,
+      3,
+      18,
+      1
+    ],
+    "holdsSeconds": 0.8,
+    "holdCount": 5,
+    "plannedDurationSeconds": 72.7,
+    "allStepsExecuted": true,
+    "faceClipSeconds": 24.583333333333332,
+    "handsClipSeconds": 27.766666666666666
+  },
+  "video": {
+    "file": "actual-process.webm",
+    "codec": "vp9",
+    "width": 1858,
+    "height": 849,
+    "durationSeconds": 74.145799,
+    "frames": 2188,
+    "averageFramesPerSecond": 29.509426420774023,
+    "bytes": 18117081,
+    "openingSeconds": 0.9,
+    "endingSeconds": 0.5,
+    "decodedToLastFrame": true,
+    "firstFrame": "空台",
+    "lastFrame": "实际成品",
+    "capture": "浏览器MediaRecorder，专注俯视；末次UI修正没有改变画布或材料"
+  },
+  "browserChecks": [
+    "分章过程空台至37826步终态、实际完整录像及再次下载",
+    "同一终态同一人物近景透光与侧光PNG直接导出",
+    "面部局部1倍准确停在9085步，24.6/24.6秒，面部塑形已完成",
+    "双手与杯局部1倍准确停在10751步，27.8/27.8秒，本章已完成",
+    "专注观看及按钮/Esc退出，视口重置",
+    "390×844普通页面clientWidth=scrollWidth=375；专注模式390=390",
+    "旧取沙390步：台上89.6%，手中10.4%；旧20秒接触入口保留",
+    "旧芦苇720步：供沙余量68%，无残留手影，返回照片模式",
+    "最终照片章节定位至37826步，正确章末标题，专注模式保留为交付页面"
+  ],
+  "limitations": [
+    "三维照片视角仍只接入雨窗示例",
+    "边缘灰面偏模糊，重复细笔和修正仍来自拟合动作谱",
+    "光照与粒面为程序近似，没有真实扫描材质、逐颗碰撞或真人动作",
+    "仍加载保留的手部资源，按需拆分未实现",
+    "窄屏验证是布局及浏览器视口，不代表真实手机性能",
+    "照片输入来自此前AI虚构示例，无新增生成素材"
+  ],
+  "browserConsoleWarningAndError": [],
+  "rootCheck": {
+    "command": "npm.cmd run check",
+    "projectsPassed": 12
+  },
+  "artifacts": [
+    {
+      "file": "actual-process.webm",
+      "bytes": 18117081,
+      "sha256": "efb8dec3a6a29fd74a84ddc7cbad3970afbdb03a2d76042ebc9885de4011c3af"
+    },
+    {
+      "file": "actual-raking.png",
+      "bytes": 2196292,
+      "sha256": "29946ea61ca6931e79fe3b53968d238589ac6bbc4e715b61182b6c106d6de8fe"
+    },
+    {
+      "file": "actual-transmitted.png",
+      "bytes": 2086597,
+      "sha256": "0cabdb1755d60e420fba4f9a870d74b899968f229dc195b1da6dbe6373f87b9c"
+    },
+    {
+      "file": "page-face-chapter.jpg",
+      "bytes": 153959,
+      "sha256": "53fe203e7b85a924b50578fb684c2aec3b2e70975eb3ebaec5b6165a25a55ff1"
+    },
+    {
+      "file": "page-mobile-theater.jpg",
+      "bytes": 24852,
+      "sha256": "dcdf786521e9496b449ebc85aec8c62d04731eb6044efe3526569da0148e793c"
+    },
+    {
+      "file": "page-mobile.jpg",
+      "bytes": 63557,
+      "sha256": "02942050a33eb1875940f2dfbe1bab02ec41dbee6433adae6266e71fae04dab8"
+    },
+    {
+      "file": "page-theater.jpg",
+      "bytes": 54566,
+      "sha256": "7b03489ca1e5c45ced48faaea3ab03437e9a80b454ded9aa547fc054164a3145"
+    },
+    {
+      "file": "page.jpg",
+      "bytes": 110486,
+      "sha256": "5e892c0415af4ab2f865ee97b5e9232b009a09b2834ac0a3ae46912a1f24eb38"
+    },
+    {
+      "file": "process-frame-01.jpg",
+      "bytes": 16745,
+      "sha256": "351b9be951d2b69e9bcfde399ef02226d402f5de53366143e0d8d92cc4e5672d"
+    },
+    {
+      "file": "process-frame-02.jpg",
+      "bytes": 117880,
+      "sha256": "5b6f14688b8b0fc8025acfd757e58d3e9ca5da984b0ad48b664230c15db50f7b"
+    },
+    {
+      "file": "process-frame-03.jpg",
+      "bytes": 116910,
+      "sha256": "a812cafb70675746b9d04b6445136b3629fbd6b05ed8d3070c6d95f18c1d569b"
+    },
+    {
+      "file": "process-frame-04.jpg",
+      "bytes": 115187,
+      "sha256": "f16f6c14265f4736021c7c04faab37fa6701ca53370d08d1b9bbec62afd99091"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "routes": [
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/",
+      "heading": "把想留下的一刻，留在沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "memories",
+      "title": "光阴沙画 · 照片与记忆"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/",
+      "heading": "让你的笔迹，留在沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "legacy": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/original/",
+      "nav": true,
+      "page": "studio",
+      "title": "沙画工作室 · Sandboard"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/atelier/",
+      "heading": "垂眸 · 侧脸塑形先有沙块，再长出形体。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "legacy": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/original/",
+      "nav": true,
+      "page": "atelier",
+      "title": "沙块塑形 · 沙画创作台"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/original/",
+      "heading": "\n        sandboard\n      ",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "original",
+      "title": "001 · Sandboard 交互沙盘"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/stage/",
+      "heading": "月下江南",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "legacy": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/original/",
+      "nav": true,
+      "page": "stage",
+      "title": "月下江南 · 舞台沙画"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/",
+      "heading": "一把沙，慢慢松开。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "hands",
+      "title": "一把沙 · 手与沙试验"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+      "heading": "雨窗与茶杯，慢慢成画。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "contact",
+      "title": "雨窗与茶杯 · 无手成画"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/cup/",
+      "heading": "一杯茶，九次落笔。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "cup",
+      "title": "一杯茶 · 沙画手法小样"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/keepsake/",
+      "heading": "把回忆，慢慢画进沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "keepsake",
+      "title": "光阴沙画 · 纪念短片"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/keepsake/natural/",
+      "heading": "把回忆，慢慢画进沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "natural",
+      "title": "光阴沙画 · 杯子质感版"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/keepsake/composition/",
+      "heading": "把回忆，慢慢画进沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "composition",
+      "title": "光阴沙画 · 杯身塑形版"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/keepsake/sandlight/",
+      "heading": "把回忆，慢慢画进沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "sandlight",
+      "title": "光阴沙画 · 灯台留白版"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/keepsake/handwork/",
+      "heading": "把回忆，慢慢画进沙里。",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "handwork",
+      "title": "光阴沙画 · 局部推拢版"
+    },
+    {
+      "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/research/",
+      "heading": "沙画研究，走到了哪里？",
+      "home": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/home/",
+      "nav": true,
+      "page": "research",
+      "title": "沙画研究历程 · 光阴沙画"
+    }
+  ],
+  "mobile": {
+    "home": {
+      "bottom": 49.666666984558105,
+      "height": 44,
+      "left": 14,
+      "right": 135.42708587646484,
+      "top": 5.6666669845581055,
+      "width": 121.42708587646484,
+      "x": 14,
+      "y": 5.6666669845581055
+    },
+    "scrollWidth": 375,
+    "width": 390
+  },
+  "menu": {
+    "height": 759,
+    "links": 14,
+    "scrollHeight": 912,
+    "visible": true,
+    "width": 353
+  },
+  "filter": {
+    "keepsake": 5,
+    "v34": 1,
+    "empty": 0,
+    "total": 14
+  },
+  "originalReady": true,
+  "legacyLinksSameOrigin": true,
+  "escapedAndOutsideClosed": true
+}

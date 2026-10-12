@@ -126,7 +126,8 @@ export function renderIndex(projects) {
   for (const project of projects) {
     const directory = projectDirectory(project);
     const demo = project.demo ? `[访问](${markdownUrl(project.demo)})` : '—';
-    lines.push(`| ${project.id} | [${markdownText(project.name)}](${directory}/README.md) · [原仓库](${markdownUrl(project.upstream)}) | ${markdownText(project.summary)} | ${project.status} | ${demo} |`);
+    const upstreamName = new URL(project.upstream).pathname.split('/').filter(Boolean).at(-1);
+    lines.push(`| ${project.id} | [${markdownText(project.name)}](${directory}/README.md) · [${markdownText(upstreamName)}](${markdownUrl(project.upstream)}) | ${markdownText(project.summary)} | ${project.status} | ${demo} |`);
   }
   for (const project of projects.filter(project => project.cover)) {
     lines.push('', `### ${project.id} · ${markdownText(project.name)}`, '',

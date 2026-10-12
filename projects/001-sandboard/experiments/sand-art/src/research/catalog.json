@@ -1,0 +1,560 @@
+[
+  {
+    "id": "v1",
+    "versions": [
+      1,
+      2
+    ],
+    "group": "foundation",
+    "title": "从原版沙盘到两种创作模式",
+    "goal": "先展示 Sandboard，再验证灯箱沙画与沙床刻画。",
+    "change": "保留原版，独立扩展工具、透光与沙脊呈现。",
+    "result": "原版细沙与交互可展示，沙画仍是材料实验。",
+    "lesson": "原版复现与新增沙画应各有基线。",
+    "image": "original-fine-v2.jpg",
+    "kind": "原版实际截图",
+    "doc": "notes.md",
+    "demo": null,
+    "video": null,
+    "extra": [
+      "art-lightbox-v2.jpg",
+      "art-surface-v2.jpg"
+    ]
+  },
+  {
+    "id": "v3",
+    "versions": [
+      3,
+      4
+    ],
+    "group": "foundation",
+    "title": "创作、收藏与过程录制",
+    "goal": "让效果演示可以成为可编辑作品。",
+    "change": "增加工具、临摹、撤销、作品管理、工程与录制回放。",
+    "result": "创作与文件流程可操作；录制可回放，视觉质量未因此自动提高。",
+    "lesson": "产品操作与画面质量需要分别验收。",
+    "image": "art-gallery-v3.png",
+    "kind": "产品实际截图",
+    "doc": "notes.md",
+    "demo": "../",
+    "video": null,
+    "extra": [
+      "art-replay-v4.png"
+    ]
+  },
+  {
+    "id": "v5",
+    "versions": [
+      5,
+      6
+    ],
+    "group": "foundation",
+    "title": "一把沙的自然下落",
+    "goal": "回应撒沙过于均匀、看不到抓沙与释放的问题。",
+    "change": "有限供沙预算、落沙惯性、疏密变化，20 秒三把沙山月演示。",
+    "result": "沙从空台累积，实际过程可播放；手形仍为程序提示。",
+    "lesson": "落沙需要可见的起停、下落和余粒落定。",
+    "image": "art-natural-demo-v6.jpg",
+    "kind": "实际过程截图",
+    "doc": "notes.md",
+    "demo": "../",
+    "video": "art-natural-demo-v6.webm",
+    "extra": [
+      "art-natural-falling-v6.jpg"
+    ]
+  },
+  {
+    "id": "v7",
+    "versions": [
+      7
+    ],
+    "group": "foundation",
+    "title": "三幕舞台沙画",
+    "goal": "尝试节目式连续成画与变画。",
+    "change": "月明、江岸、归舟三幕，56 秒同一沙层演出，保留手绘。",
+    "result": "故事顺序与转场可看，造型仍过于概括。",
+    "lesson": "有时间线并不等于有成熟的画面与艺术动作。",
+    "image": "art-stage-jiangnan-v7.png",
+    "kind": "实际材料成品",
+    "doc": "experiments/sand-art/stage/RESEARCH.md",
+    "demo": "../stage/#pause",
+    "video": null,
+    "extra": [
+      "art-stage-hand-v7.jpg"
+    ]
+  },
+  {
+    "id": "v8",
+    "versions": [
+      8
+    ],
+    "group": "foundation",
+    "title": "先探索美术目标",
+    "goal": "寻找摆脱儿童式线条的造型方向。",
+    "change": "三幅 AI 美术目标与静帧分镜，另有局部手法实验。",
+    "result": "目标图更完整，但静帧分镜不是实际制作过程。",
+    "lesson": "目标样张必须与运行出来的成品分开展示。",
+    "image": "art-direction-v8/scene-1.png",
+    "kind": "AI 美术目标",
+    "doc": "experiments/sand-art/atelier/ART_DIRECTION.md",
+    "demo": "../atelier/#pause",
+    "video": null,
+    "extra": [
+      "art-direction-v8/atelier-preview-v8.jpg"
+    ]
+  },
+  {
+    "id": "v9",
+    "versions": [
+      9
+    ],
+    "group": "foundation",
+    "title": "把目标补成可操作作品",
+    "goal": "让美术方向进入真实沙层。",
+    "change": "按参考影调规划添沙和收沙，增加回放、接管、草稿和导出。",
+    "result": "可以从空台形成归舟作品，过程出现往返扫描与打印感。",
+    "lesson": "相似终态不保证制作方式可信。",
+    "image": "art-product-v9/scene-1-real.png",
+    "kind": "实际材料成品",
+    "doc": "experiments/sand-art/atelier/PRODUCT.md",
+    "demo": "../atelier/#pause",
+    "video": null,
+    "extra": []
+  },
+  {
+    "id": "v10",
+    "versions": [
+      10,
+      11
+    ],
+    "group": "foundation",
+    "title": "从描图转向局部塑形",
+    "goal": "让动作解释树、桥、人物的形成。",
+    "change": "原创连续手势，先塑沙块，再揉灰、收光；柳树、石桥、侧脸练习。",
+    "result": "造型与动作更可解释，仍有程式感与不够成熟的结构。",
+    "lesson": "复杂照片之前，先证明少量动作能形成好看的形体。",
+    "image": "art-studies-v11/portrait.png",
+    "kind": "实际材料成品",
+    "doc": "experiments/sand-art/atelier/STUDIES.md",
+    "demo": "../atelier/#pause",
+    "video": null,
+    "extra": [
+      "art-gesture-v10/gesture-process.jpg",
+      "art-studies-v11/bridge.png"
+    ]
+  },
+  {
+    "id": "v12",
+    "versions": [
+      12
+    ],
+    "group": "photo",
+    "title": "照片与记忆的产品入口",
+    "goal": "把带情绪的照片变成可以收藏和赠送的作品。",
+    "change": "本地照片转换、四种情绪色调、修画、作品集、展映、画卡与工程。",
+    "result": "保留照片细节，静态作品更清楚；这张输出来自直接影调转换。",
+    "lesson": "照片作品本身已有产品价值，不能冒充手工成画录像。",
+    "image": "photo-memory-v12/sample-sand-warm.png",
+    "kind": "照片影调转换",
+    "doc": "assets/photo-memory-v12/PROMPTS.md",
+    "demo": "../memories/#create",
+    "video": null,
+    "extra": [
+      "photo-memory-v12/exhibit.jpg",
+      "photo-memory-v12/collection.jpg"
+    ]
+  },
+  {
+    "id": "v13",
+    "versions": [
+      13
+    ],
+    "group": "photo",
+    "title": "留白人像与空台成画",
+    "goal": "让照片风格与制作过程都可查看。",
+    "change": "主体范围、背景概括、多尺度曲线供沙、揉沙与收沙。",
+    "result": "实际演出比风格预览模糊，五官、手杯结构丢失。",
+    "lesson": "增加笔数和纹理不能代替人物结构规划。",
+    "image": "photo-portrait-v13/performance.png",
+    "kind": "实际材料成品",
+    "doc": "assets/photo-portrait-v13/README.md",
+    "demo": "../memories/#process",
+    "video": null,
+    "extra": [
+      "photo-portrait-v13/style-preview.png",
+      "photo-portrait-v13/process.png"
+    ]
+  },
+  {
+    "id": "v14",
+    "versions": [
+      14
+    ],
+    "group": "photo",
+    "title": "雨窗人物 · 被认可的效果基线",
+    "goal": "先限定一张照片，恢复人物与捧杯关系。",
+    "change": "人工标注结构，1636 笔实际材料动作，分章定位、接管与收藏。",
+    "result": "人物与姿态更可辨，用户给出正面反馈；仍有背景斑块、模糊与短笔修补。",
+    "lesson": "应保留这条完整照片路线，再单独改善过程。",
+    "image": "photo-structure-v14/performance.png",
+    "kind": "实际材料成品",
+    "doc": "assets/photo-structure-v14/README.md",
+    "demo": "../memories/#study",
+    "video": null,
+    "extra": [
+      "photo-structure-v14/product-process.png",
+      "photo-structure-v14/product-exhibit.png"
+    ]
+  },
+  {
+    "id": "v15",
+    "versions": [
+      15
+    ],
+    "group": "photo",
+    "title": "为自己的照片规划演出",
+    "goal": "让不同主体位置和姿态有自己的动作。",
+    "change": "主体、脸、手、物件人工框选，后台规划与取消，工程保存演出进度。",
+    "result": "公园人物与明信片可成画，两张 AI 输入已试验；任意真实照片质量未验证。",
+    "lesson": "照片输入有价值，自动语义理解与普适画质仍需验证。",
+    "image": "photo-guided-v15/actual-performance-replay.png",
+    "kind": "实际材料成品",
+    "doc": "assets/photo-guided-v15/README.md",
+    "demo": "../memories/#postcard-study",
+    "video": null,
+    "extra": [
+      "photo-guided-v15/product-process.png",
+      "photo-guided-v15/product-exhibit.png"
+    ]
+  },
+  {
+    "id": "v16",
+    "versions": [
+      16,
+      17
+    ],
+    "group": "hands",
+    "title": "实拍手部与数字沙台",
+    "goal": "追求真实的手与沙接触，降低生成痕迹。",
+    "change": "颗粒灯箱、视频导入与标定、15 秒实拍手部小样；细笔落定减少揉糊。",
+    "result": "真实手像素可合成，仍有肤色、抠像和接触同步问题，复用短片段。",
+    "lesson": "真人素材能改善外观，但不能自动补齐多种手法。",
+    "image": "material-realism-v17/actual-hand-and-sand.png",
+    "kind": "实拍手部与数字沙合成",
+    "doc": "assets/material-realism-v17/README.md",
+    "demo": "../memories/#hands",
+    "video": null,
+    "extra": [
+      "material-realism-v17/actual-natural-window.png",
+      "material-realism-v16/actual-granular.png"
+    ]
+  },
+  {
+    "id": "v18",
+    "versions": [
+      18,
+      19
+    ],
+    "group": "hands",
+    "title": "生成手部素材的尝试",
+    "goal": "没有手部照片时，也能先验证动作小样。",
+    "change": "先使用姿态图集，再改为连续前臂纹理和小幅捻指变形，10 秒细流与散撒。",
+    "result": "可直接操作，减少跨姿态重影；仍是二维素材，动作自由度有限。",
+    "lesson": "生成一只逼真的手，和持续自然地操纵沙，是两个任务。",
+    "image": "generated-hand-v19/actual-fine-2.7s.png",
+    "kind": "生成手部与数字沙合成",
+    "doc": "assets/generated-hand-v19/README.md",
+    "demo": "../memories/hands/",
+    "video": "generated-hand-v19/actual-process.webm",
+    "extra": [
+      "generated-hand-v18/actual-pour-2.7s.png",
+      "generated-hand-v19/actual-scatter-5s.png"
+    ]
+  },
+  {
+    "id": "v20",
+    "versions": [
+      20,
+      21
+    ],
+    "group": "hands",
+    "title": "三维骨骼手与接触",
+    "goal": "尝试以关节、指缝和接触驱动沙量变化。",
+    "change": "带骨骼模型、皮肤纹理、三处指缝、有限供沙，20 秒撒沙与划线。",
+    "result": "手与沙的位置和动作可对应，手的塑料感、姿态与阴影仍明显。",
+    "lesson": "可控制的三维手不等于摄影级手部。",
+    "image": "hand-contact-v21/actual-scatter-8.5s.png",
+    "kind": "三维实验实际截图",
+    "doc": "assets/hand-contact-v21/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": "hand-contact-v20/actual-process.webm",
+    "extra": [
+      "hand-contact-v20/actual-finger-17.25s.png"
+    ]
+  },
+  {
+    "id": "v22",
+    "versions": [
+      22,
+      23
+    ],
+    "group": "hands",
+    "title": "皮肤接触、取沙与漏沙",
+    "goal": "把台上沙、掌内沙和落回台面连起来。",
+    "change": "变形皮肤接触片、腕指联动、前缘聚拢、台上取沙、翻掌与漏沙。",
+    "result": "材料去向可核算，24 秒流程可运行；掌内沙和手部仍有明显三维感。",
+    "lesson": "机制更完整，仍需同时检查最终画面的可信度。",
+    "image": "hand-contact-v23/actual-hold-close-6.5s.png",
+    "kind": "三维实验实际截图",
+    "doc": "assets/hand-contact-v23/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": "hand-contact-v23/actual-process.webm",
+    "extra": [
+      "hand-contact-v22/actual-palm-13.5s.png",
+      "hand-contact-v23/actual-fine-side-10.5s.png"
+    ]
+  },
+  {
+    "id": "v24",
+    "versions": [
+      24
+    ],
+    "group": "motion",
+    "title": "隐藏手部与改变镜头",
+    "goal": "降低不够真实的手部对画面的影响。",
+    "change": "俯视、沙粒近景、画外落沙，12 秒芦苇小样。",
+    "result": "落沙可以独立观看，图形仍简单，复杂照片尚未接入。",
+    "lesson": "无手镜头可先验证材料和制作节奏。",
+    "image": "no-hand-v24/actual-top-12s.png",
+    "kind": "实际材料成品",
+    "doc": "assets/no-hand-v24/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": "no-hand-v24/actual-process.webm",
+    "extra": [
+      "no-hand-v24/actual-flow-3s.png"
+    ]
+  },
+  {
+    "id": "v25",
+    "versions": [
+      25,
+      26
+    ],
+    "group": "motion",
+    "title": "完整照片的无手演出",
+    "goal": "把雨窗照片重新接回实际制作过程。",
+    "change": "2042 笔沙层动作、章节播放、人物和手杯近景、透光与侧光。",
+    "result": "完整构图重现，分章约 73 秒；仍有模糊、细部跳变与程序痕迹。",
+    "lesson": "镜头与节奏能帮助观看，不能恢复已经丢失的造型。",
+    "image": "no-hand-photo-v26/actual-transmitted.png",
+    "kind": "实际材料成品",
+    "doc": "assets/no-hand-photo-v26/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": "no-hand-photo-v25/actual-process.webm",
+    "extra": [
+      "no-hand-photo-v25/actual-face.png",
+      "no-hand-photo-v26/process-frame-02.jpg"
+    ]
+  },
+  {
+    "id": "v27",
+    "versions": [
+      27
+    ],
+    "group": "motion",
+    "title": "细部局部连续编排",
+    "goal": "减少细笔在画面里来回跳点。",
+    "change": "保留重叠笔先后关系，其余优先留在同一局部区域。",
+    "result": "换笔距离减少，但路径本身仍是短笔修补。",
+    "lesson": "重新排序能减少跳点，无法把碎笔变成长手势。",
+    "image": "no-hand-photo-v27/actual-coherent.png",
+    "kind": "实际材料成品",
+    "doc": "assets/no-hand-photo-v27/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": null,
+    "extra": []
+  },
+  {
+    "id": "v28",
+    "versions": [
+      28
+    ],
+    "group": "motion",
+    "title": "连续撒收与长曲线",
+    "goal": "缓解灰面模糊和逐点打印感。",
+    "change": "多尺度沿结构曲线添暗、收亮，连续出生粒子、渐起渐停与薄沙脊。",
+    "result": "动作更连续，人物仍有柔化；首轮缺少大灰面的候选被放弃。",
+    "lesson": "终态误差小，不代表全局画面和过程好。",
+    "image": "no-hand-photo-v28/actual-gesture.png",
+    "kind": "实际材料成品",
+    "doc": "assets/no-hand-photo-v28/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": null,
+    "extra": [
+      "no-hand-photo-v28/page-detail.jpg"
+    ]
+  },
+  {
+    "id": "v29",
+    "versions": [
+      29
+    ],
+    "group": "motion",
+    "title": "清晰结构与可见撒收",
+    "goal": "重新恢复脸、手指和杯口关键结构。",
+    "change": "从原照重新规划，细流更集中，已有沙产生贴台移出颗粒。",
+    "result": "细部更可辨，仍有短笔和算法拟合；收沙高束被压低后重录。",
+    "lesson": "让沙的去向可见，同时保留画面关键关系。",
+    "image": "no-hand-photo-v29/actual-sculpt.png",
+    "kind": "实际材料成品",
+    "doc": "assets/no-hand-photo-v29/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": "no-hand-photo-v29/actual-collect.webm",
+    "extra": [
+      "no-hand-photo-v29/collect-frame.jpg"
+    ]
+  },
+  {
+    "id": "v30",
+    "versions": [
+      30
+    ],
+    "group": "motion",
+    "title": "沿形撒收与细笔节奏",
+    "goal": "让完整细部过程更接近连续作画。",
+    "change": "沿影调延长曲线，笔内力度渐变，细部放慢，撒收片段独立慢看。",
+    "result": "完整观看约 468 秒；碎笔打印感仍未消除，速度与质量存在取舍。",
+    "lesson": "应设计可解释的主动作，而非持续修补像素误差。",
+    "image": "no-hand-photo-v30/actual-performance.png",
+    "kind": "实际材料成品",
+    "doc": "assets/no-hand-photo-v30/README.md",
+    "demo": "../memories/hands/contact/",
+    "video": "no-hand-photo-v30/actual-fine-pour.webm",
+    "extra": [
+      "no-hand-photo-v30/fine-collect-frame.jpg"
+    ]
+  },
+  {
+    "id": "v31",
+    "versions": [
+      31
+    ],
+    "group": "keepsake",
+    "title": "九个动作的茶杯小样",
+    "goal": "先以少量主动作验证撒沙、推拢与拾沙。",
+    "change": "30 秒手工编排，贴台聚堆、坡面松落、停驻和分次拾起。",
+    "result": "动作可以解释，成品仍概括；尖角沙堆与导出亮部偏白经检查修正。",
+    "lesson": "少量动作更便于验收，但简化不能牺牲造型。",
+    "image": "cup-action-v31/actual-cup.png",
+    "kind": "实际材料成品",
+    "doc": "assets/cup-action-v31/README.md",
+    "demo": "../memories/hands/contact/cup/",
+    "video": "cup-action-v31/actual-process.webm",
+    "extra": [
+      "cup-action-v31/page-hold.jpg",
+      "cup-action-v31/page-after.jpg"
+    ]
+  },
+  {
+    "id": "v32",
+    "versions": [
+      32
+    ],
+    "group": "keepsake",
+    "title": "纪念物短片的产品流程",
+    "goal": "个人纪念与赠礼：照片加故事到成片。",
+    "change": "杯子框选与选项、故事字幕、45 秒过程、WebM、海报、赠礼 HTML、草稿。",
+    "result": "产品流程跑通，照片只驱动概括轮廓，尚未还原花纹和背景。",
+    "lesson": "流程完整不能替代成片质量，也不能替代照片主线。",
+    "image": "keepsake-v32/actual-poster.png",
+    "kind": "实际材料成品",
+    "doc": "assets/keepsake-v32/README.md",
+    "demo": "../memories/keepsake/",
+    "video": null,
+    "extra": [
+      "keepsake-v32/page-input.jpg",
+      "keepsake-v32/page-delivery.jpg"
+    ]
+  },
+  {
+    "id": "v33",
+    "versions": [
+      33
+    ],
+    "group": "keepsake",
+    "title": "更细的沙与宽幅推拢",
+    "goal": "改善软灰面、远景颗粒淡化与过净亮槽。",
+    "change": "1152×768 沙层、紧致落粒、宽幅铺沙、守恒推拢、停驻后拾起。",
+    "result": "画面仍为空轮廓与散沙，杯子结构不够完整。",
+    "lesson": "颗粒更清楚并不等于作品更好看。",
+    "image": "keepsake-natural-v33/actual-poster.png",
+    "kind": "实际材料成品",
+    "doc": "assets/keepsake-natural-v33/README.md",
+    "demo": "../memories/keepsake/natural/",
+    "video": null,
+    "extra": [
+      "keepsake-natural-v33/gather-hold.png"
+    ]
+  },
+  {
+    "id": "v34",
+    "versions": [
+      34
+    ],
+    "group": "keepsake",
+    "title": "杯身灰面与明暗体积",
+    "goal": "把杯子重新画成完整形体。",
+    "change": "三次局部弧形铺沙、左侧拂光、右侧叠沙、杯口与接地灰。",
+    "result": "体积与层次有所恢复，但仍偏灰色素描，沙画感不足。",
+    "lesson": "形体、明暗、沙质感要一起保留。",
+    "image": "keepsake-composition-v34/actual-poster.png",
+    "kind": "实际材料成品",
+    "doc": "assets/keepsake-composition-v34/README.md",
+    "demo": "../memories/keepsake/composition/",
+    "video": "keepsake-composition-v34/actual-film.webm",
+    "extra": [
+      "keepsake-composition-v34/film-gather.jpg"
+    ]
+  },
+  {
+    "id": "v35",
+    "versions": [
+      35
+    ],
+    "group": "keepsake",
+    "title": "灯台留白的方向尝试",
+    "goal": "以厚沙遮光、收沙透光改善素描感。",
+    "change": "先铺厚沙，再推开杯身，保留沙脊、杯口和热气。",
+    "result": "黑白对比增强，但体积层次丢失、轮廓规整，杯子更像图标。",
+    "lesson": "增强反差与噪点可能让视觉倒退。",
+    "image": "keepsake-sandlight-v35/actual-poster.png",
+    "kind": "实际材料成品",
+    "doc": "assets/keepsake-sandlight-v35/README.md",
+    "demo": "../memories/keepsake/sandlight/",
+    "video": null,
+    "extra": [
+      "keepsake-sandlight-v35/film-pour.jpg"
+    ]
+  },
+  {
+    "id": "v36",
+    "versions": [
+      36
+    ],
+    "group": "keepsake",
+    "title": "局部推拢与定向拾沙",
+    "goal": "拆掉整块杯身一扫形成的过程。",
+    "change": "三筆弧形推拢，先聚堆、停驻，再只拾起实际移入的沙量。",
+    "result": "动作账与拾沙范围改善，最终仍图标化；用户反馈视觉继续退步。",
+    "lesson": "技术测试通过，不代表视觉过关；当前应重新校准照片作品基线。",
+    "image": "keepsake-handwork-v36/actual-poster.png",
+    "kind": "实际材料成品",
+    "doc": "assets/keepsake-handwork-v36/README.md",
+    "demo": "../memories/keepsake/handwork/",
+    "video": "keepsake-handwork-v36/actual-film.webm",
+    "extra": [
+      "keepsake-handwork-v36/film-hold.jpg",
+      "keepsake-handwork-v36/film-after.jpg"
+    ]
+  }
+]

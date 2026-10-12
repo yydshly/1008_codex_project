@@ -30,6 +30,10 @@ projects/*/upstream/
 
 # OS and editor files.
 .DS_Store
+
+# Full v30 capture exceeds GitHub's 100 MiB Git object limit.
+# Exact original is preserved locally and published as a release attachment.
+projects/001-sandboard/assets/no-hand-photo-v30/actual-process.webm
 Thumbs.db
 Desktop.ini
 .idea/

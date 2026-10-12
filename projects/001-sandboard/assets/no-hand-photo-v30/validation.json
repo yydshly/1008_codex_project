@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-10",
+  "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+  "source": {
+    "originalPhotoSHA256": "099eb0ee64a490c46f17496c7c1d9bc37ec125f81947fe8bd92dbffa33a83979",
+    "v29ScoreSHA256": "9eff1f0b2b4f3ed10ef568601bf9f59d4875173cad74f30a36e98cc3a79abe0f"
+  },
+  "generation": {
+    "materialTestPassed": true,
+    "plannerSnapshotEqualsFullReplay": true,
+    "initialIndependentTimingFixtureFailureCorrected": true,
+    "cachedRGBAUnchanged": true
+  },
+  "build": {
+    "passed": true,
+    "entries": 6,
+    "existingLargeChunkWarning": true
+  },
+  "rootCheck": {
+    "passed": true,
+    "projects": 12
+  },
+  "material": {
+    "sourceRGBA": "81ed8b02ae057fda77804c2bbcc31be4560eecaacd13594463cd85469fc22d96",
+    "preservedV29Score": "9eff1f0b2b4f3ed10ef568601bf9f59d4875173cad74f30a36e98cc3a79abe0f",
+    "strokes": 1606,
+    "tools": {
+      "pour": 894,
+      "collect": 712
+    },
+    "totalTicks": 146247,
+    "phaseStarts": [
+      0,
+      23036,
+      38823,
+      47021,
+      56414,
+      146187
+    ],
+    "guidedSeconds": 467.5900444073735,
+    "meanPathPx": 37.3635460772105,
+    "minPathPx": 3.059999999999926,
+    "fineStrokes": 988,
+    "fineMeanPathPx": 12.632672064777342,
+    "previousFineMeanPathPx": 7.685126353790624,
+    "faceTargetError": 0.043313077931714475,
+    "previousFaceTargetError": 0.049845865178028116,
+    "handsTargetError": 0.0473910276186934,
+    "previousHandsTargetError": 0.052876532746989786,
+    "mass": 271143.4634181876,
+    "supplied": 308196.09974773444,
+    "removed": 37052.63390888148,
+    "collectedFrames": 58772,
+    "pourFrames": 80064,
+    "pending": false,
+    "fineActionSeconds": {
+      "min": 0.24,
+      "mean": 0.2772012044534413,
+      "max": 0.4770400000000007
+    },
+    "timingRevision": "Final viewing schedule; material plan and final snapshot unchanged."
+  },
+  "preservation": {
+    "actualV29PNGExactMatch": true,
+    "SHA256": "e9e637af4ca9edad9ee5b18ec93fd3aa3b346fc3b57fb57f2fc88743357c508a"
+  },
+  "browser": {
+    "finePour": {
+      "startTick": 126724,
+      "endTick": 126834,
+      "pace": 0.25,
+      "endsPaused": true
+    },
+    "fineCollect": {
+      "startTick": 68803,
+      "endTick": 68906,
+      "pace": 0.25,
+      "endsPaused": true
+    },
+    "warningErrorLogs": [],
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "arrangementAndObserveButtonHeight": 44,
+      "rangeHeight": 32,
+      "viewportReset": true
+    },
+    "final": {
+      "mode": "performance",
+      "tick": 146247,
+      "pace": "guided",
+      "view": "top",
+      "focus": "face",
+      "light": "transmitted",
+      "paused": true,
+      "warningErrorLogs": []
+    },
+    "middleScreenshotTick": 115250
+  },
+  "regression": {
+    "files": 40,
+    "passed": 287,
+    "skipped": 5,
+    "seconds": 109.76,
+    "command": "npm.cmd test -- --maxWorkers=2"
+  },
+  "displaySampling": {
+    "newModeOnly": true,
+    "stableOriginCellOffset": true,
+    "maxOffsetCells": 0.7,
+    "doesNotModifyMaterial": true,
+    "restoredPositionVerified": true
+  },
+  "media": {
+    "actual-fine-pour.webm": {
+      "codec": "vp9",
+      "width": 1491,
+      "height": 943,
+      "frames": 238,
+      "seconds": 8.780199,
+      "bytes": 4699512,
+      "fullDecodePassed": true
+    },
+    "actual-fine-collect.webm": {
+      "codec": "vp9",
+      "width": 1491,
+      "height": 943,
+      "frames": 202,
+      "seconds": 8.3662,
+      "bytes": 3850342,
+      "fullDecodePassed": true
+    },
+    "actual-process.webm": {
+      "codec": "vp9",
+      "width": 1491,
+      "height": 943,
+      "frames": 13337,
+      "seconds": 471.399199,
+      "bytes": 156116609,
+      "fullDecodePassed": true,
+      "uniqueDecodedSizes": [
+        [
+          1491,
+          943
+        ]
+      ],
+      "frameSampleSeconds": [
+        0,
+        240,
+        471.149199
+      ],
+      "lastFrameDownsampledMAE": 0.0048155807461873635
+    }
+  },
+  "finalPNG": {
+    "width": 1491,
+    "height": 943,
+    "SHA256": "453d4f02e90a48be428b509f43ecdb84703a09065582001d78740a6799eb87e6"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "duration": 45.6225,
+  "frames": 1348,
+  "codec": "vp8",
+  "bytes": 13526802,
+  "fullDecode": true,
+  "lastFramePTS": 45.561,
+  "endPosterMeanRGBError": 0.008929483251633986,
+  "giftVideoMatchesDownload": true,
+  "sourcePhotoExcludedByDefault": true,
+  "inputKind": "existing AI rain-window sample; story is fictional",
+  "arbitraryRealPhotoArtQualityVerified": false
+}

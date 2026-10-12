@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="光阴沙画平台首页：照片作品、自由创作、舞台沙画、原版沙盘、手部实验、纪念短片与研究历程的统一入口。">
+  <meta name="sand-platform-root" content="../">
+  <link rel="icon" href="../logo.png" type="image/png">
+  <title>光阴沙画 · 平台首页</title>
+</head>
+<body data-platform-page="home">
+  <a class="skip" href="#main">跳到平台入口</a>
+  <main id="main">
+    <section class="hero">
+      <div><p class="eyebrow">光阴沙画 / 全部平台与研究</p><h1>把照片、故事与沙，<br>放回同一个创作空间。</h1><p class="lead">亲手画沙，或用照片留住记忆。已有作品集中收藏，之前的画台、效果与试验也都能在这里找到。</p><div class="hero-actions"><a class="button primary" id="gallery-entry">打开我的作品集 ↗</a><a class="button" id="photo-entry">用照片创作 ↗</a><a class="button" id="examples-entry">看手绘示例 ↗</a><a class="button" href="#hand-tools">直接动手画沙 ↓</a></div><p class="hero-note">手绘与照片作品可统一浏览，打开后回到原画台继续创作。收藏、展映、修画与导出等能力继续保留。</p></div>
+      <figure><img id="hero-image" width="1536" height="1024" alt="早期照片作品平台的实际展映页面，包含人物沙画、作品故事与导出入口"><figcaption>照片作品平台 · 早期实际展映页面 / v12</figcaption></figure>
+    </section>
+    <section id="hand-tools" class="hand-tools" aria-labelledby="tools-title"><div class="section-heading"><div><p class="eyebrow">亲手画 / 七种工具</p><h2 id="tools-title">拿起沙耙，画下第一笔。</h2></div><p>点击工具即进入原画台并选中它。沙面与灯箱都保留，已有草稿可以接着画。</p></div><div id="hand-tool-links" class="hand-tool-links"></div></section>
+    <section class="recommended" aria-labelledby="recommended-title"><div class="section-heading"><div><p class="eyebrow">从这些平台开始</p><h2 id="recommended-title">完整的创作入口</h2></div><p>先选择你要做的事，再进入对应工作台。</p></div><div class="recommended-grid" id="recommended-grid"></div></section>
+    <section class="quick-paths" aria-label="保留功能直达"><strong>前面的能力，也能直接打开</strong><div id="quick-links"></div></section>
+    <section class="directory" id="directory" aria-labelledby="directory-title"><div class="section-heading"><div><p class="eyebrow">15 个页面 / 所有入口保留</p><h2 id="directory-title">平台、演示与历次试验</h2></div><p>按用途查找；每个页面顶部都能回到首页或切换全部入口。</p></div><div class="controls"><div id="filters" class="filters" role="group" aria-label="按页面用途筛选"></div><label>搜索入口<input id="search" type="search" placeholder="照片、灯箱、取沙、v34…"></label></div><div class="results"><span id="result-count" role="status" aria-live="polite"></span><button id="clear" hidden>清除筛选</button></div><div class="page-grid" id="page-grid"></div><p class="empty" id="empty" hidden>没有匹配的入口，可以换一个关键词或清除筛选。</p></section>
+    <section class="journey"><div><p class="eyebrow">想了解我们走过的路</p><h2>效果、过程与理解，<br>都有记录。</h2><p>研究档案覆盖 v1–v36 的 27 项尝试，保留 11 段过程录像和三组效果对照。包含改进、失败与退步，版本号代表先后顺序。</p><a id="research-entry" class="button primary">打开研究历程 ↗</a></div><div class="journey-points"><p><span>01</span>原版沙盘 → 自由创作与三幕舞台</p><p><span>02</span>照片作品 → 实际成画与结构规划</p><p><span>03</span>实拍手部 → 生成纹理与三维接触</p><p><span>04</span>无手演出 → 连续撒收与局部塑形</p><p><span>05</span>纪念物模板 → 故事短片与赠礼</p></div></section>
+    <footer><p>作品与草稿保存在当前浏览器与当前网址中。统一作品集汇总已保存的手绘和照片作品；原画台与各版试验继续保留。</p><p>部分场景使用既有 AI 示例照片；缩略图均为所标阶段的实际网页或材料输出。当前为本地平台，真实沙画与商业成片质量仍待验收。</p><a href="https://github.com/scottstts/Sandboard">上游 Sandboard · GPLv3 ↗</a></footer>
+  </main>
+  <noscript>请启用 JavaScript 查看平台目录。你也可以打开 <a href="../memories/">照片平台</a>、<a href="../">沙画工作室</a>、<a href="../research/">研究历程</a>。</noscript>
+  <script type="module" src="../src/platform/navigation.ts"></script>
+  <script type="module" src="../src/platform/home.ts"></script>
+</body>
+</html>

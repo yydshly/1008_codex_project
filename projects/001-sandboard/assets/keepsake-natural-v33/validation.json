@@ -1,0 +1,21 @@
+{
+  "fullRegression": {
+    "files": 43,
+    "passed": 305,
+    "skipped": 6,
+    "seconds": 105.29
+  },
+  "finalProductTestsPassed": 12,
+  "buildEntries": 9,
+  "massConservation": true,
+  "deferredPickup": true,
+  "noFinalImageReplacement": true,
+  "separateDraftDatabase": true,
+  "v32FilesPreserved": 27,
+  "actualVideoExport": true,
+  "liveMakingCanvas": true,
+  "cancelKeepsPriorVideoURL": true,
+  "finalGPUWarningsOrErrors": 0,
+  "mobileViewportTestedThisTurn": false,
+  "offlineGiftPlaybackTestedThisTurn": false
+}

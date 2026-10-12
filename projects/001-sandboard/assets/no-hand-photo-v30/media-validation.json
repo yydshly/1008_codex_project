@@ -1,0 +1,41 @@
+{
+  "actual-fine-pour.webm": {
+    "codec": "vp9",
+    "width": 1491,
+    "height": 943,
+    "frames": 238,
+    "seconds": 8.780199,
+    "bytes": 4699512,
+    "fullDecodePassed": true
+  },
+  "actual-fine-collect.webm": {
+    "codec": "vp9",
+    "width": 1491,
+    "height": 943,
+    "frames": 202,
+    "seconds": 8.3662,
+    "bytes": 3850342,
+    "fullDecodePassed": true
+  },
+  "actual-process.webm": {
+    "codec": "vp9",
+    "width": 1491,
+    "height": 943,
+    "frames": 13337,
+    "seconds": 471.399199,
+    "bytes": 156116609,
+    "fullDecodePassed": true,
+    "uniqueDecodedSizes": [
+      [
+        1491,
+        943
+      ]
+    ],
+    "frameSampleSeconds": [
+      0,
+      240,
+      471.149199
+    ],
+    "lastFrameDownsampledMAE": 0.0048155807461873635
+  }
+}

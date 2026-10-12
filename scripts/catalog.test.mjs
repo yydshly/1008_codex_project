@@ -159,3 +159,10 @@ test('已编码的演示 URL 保持原有路径和查询参数', () => {
   validateCatalog({ schemaVersion: 1, projects: [project] }, ROOT, { requireFiles: false });
   assert.ok(renderIndex([project]).includes(`[访问](${demo})`));
 });
+
+test('来源链接显示源库自己的名称，兼容末尾斜线与 Markdown 转义', () => {
+  const project = { ...entry(), upstream: 'https://github.com/scottstts/Sandboard/' };
+  assert.ok(renderIndex([project]).includes('[Sandboard](https://github.com/scottstts/Sandboard/)'));
+  assert.ok(!renderIndex([project]).includes('[原仓库]'));
+  assert.ok(renderIndex([{ ...project, upstream: 'https://github.com/example/sand_board' }]).includes('[sand\\_board]'));
+});

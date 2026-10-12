@@ -1,0 +1,63 @@
+{
+  "testOrigin": "http://127.0.0.1:4274",
+  "toolSwitches": [
+    {
+      "tool": "pour",
+      "selected": "true"
+    },
+    {
+      "tool": "push",
+      "selected": "true"
+    },
+    {
+      "tool": "scrape",
+      "selected": "true"
+    },
+    {
+      "tool": "rake",
+      "selected": "true"
+    },
+    {
+      "tool": "stamp",
+      "selected": "true"
+    },
+    {
+      "tool": "smooth",
+      "selected": "true"
+    },
+    {
+      "tool": "palm",
+      "selected": "true"
+    }
+  ],
+  "reopened": {
+    "canvasLabel": "沙面绘画创作画布。当前工具沙耙，按住并拖动绘画；撒沙可以按住不动。",
+    "mode": "surface",
+    "title": "沙耙纹路 · 入口验证",
+    "tool": "rake"
+  },
+  "mobile": {
+    "links": [
+      {
+        "height": 44,
+        "href": "http://127.0.0.1:4274/1008_codex_project/001-sandboard/art/#mode=surface&tool=rake",
+        "label": "试试沙耙 ↗"
+      },
+      {
+        "height": 44,
+        "href": "http://127.0.0.1:4274/1008_codex_project/001-sandboard/art/",
+        "label": "进入手绘沙台 ↗"
+      },
+      {
+        "height": 44,
+        "href": "http://127.0.0.1:4274/1008_codex_project/001-sandboard/art/#gallery",
+        "label": "打开手绘作品集 ↗"
+      }
+    ],
+    "scrollWidth": 375,
+    "width": 390
+  },
+  "homeRakeLinkWorked": true,
+  "photosAndHanddrawGalleryRoundTrip": true,
+  "warningsAndErrors": []
+}

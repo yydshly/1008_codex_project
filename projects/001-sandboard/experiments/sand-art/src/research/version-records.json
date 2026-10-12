@@ -1,0 +1,146 @@
+{
+  "1": {
+    "doc": "notes.md",
+    "record": "v1.md"
+  },
+  "2": {
+    "doc": "notes.md",
+    "record": "v1.md"
+  },
+  "3": {
+    "doc": "notes.md",
+    "record": "v3.md"
+  },
+  "4": {
+    "doc": "notes.md",
+    "record": "v3.md"
+  },
+  "5": {
+    "doc": "notes.md",
+    "record": "v5.md"
+  },
+  "6": {
+    "doc": "notes.md",
+    "record": "v5.md"
+  },
+  "7": {
+    "doc": "experiments/sand-art/stage/RESEARCH.md",
+    "record": "v7.md"
+  },
+  "8": {
+    "doc": "experiments/sand-art/atelier/ART_DIRECTION.md",
+    "record": "v8.md"
+  },
+  "9": {
+    "doc": "experiments/sand-art/atelier/PRODUCT.md",
+    "record": "v9.md"
+  },
+  "10": {
+    "doc": "experiments/sand-art/atelier/GESTURES.md",
+    "record": "version-v10.md"
+  },
+  "11": {
+    "doc": "experiments/sand-art/atelier/STUDIES.md",
+    "record": "v10.md"
+  },
+  "12": {
+    "doc": "assets/photo-memory-v12/PROMPTS.md",
+    "record": "v12.md"
+  },
+  "13": {
+    "doc": "assets/photo-portrait-v13/README.md",
+    "record": "v13.md"
+  },
+  "14": {
+    "doc": "assets/photo-structure-v14/README.md",
+    "record": "v14.md"
+  },
+  "15": {
+    "doc": "assets/photo-guided-v15/README.md",
+    "record": "v15.md"
+  },
+  "16": {
+    "doc": "assets/material-realism-v16/README.md",
+    "record": "version-v16.md"
+  },
+  "17": {
+    "doc": "assets/material-realism-v17/README.md",
+    "record": "v16.md"
+  },
+  "18": {
+    "doc": "assets/generated-hand-v18/README.md",
+    "record": "version-v18.md"
+  },
+  "19": {
+    "doc": "assets/generated-hand-v19/README.md",
+    "record": "v18.md"
+  },
+  "20": {
+    "doc": "assets/hand-contact-v20/README.md",
+    "record": "version-v20.md"
+  },
+  "21": {
+    "doc": "assets/hand-contact-v21/README.md",
+    "record": "v20.md"
+  },
+  "22": {
+    "doc": "assets/hand-contact-v22/README.md",
+    "record": "version-v22.md"
+  },
+  "23": {
+    "doc": "assets/hand-contact-v23/README.md",
+    "record": "v22.md"
+  },
+  "24": {
+    "doc": "assets/no-hand-v24/README.md",
+    "record": "v24.md"
+  },
+  "25": {
+    "doc": "assets/no-hand-photo-v25/README.md",
+    "record": "version-v25.md"
+  },
+  "26": {
+    "doc": "assets/no-hand-photo-v26/README.md",
+    "record": "v25.md"
+  },
+  "27": {
+    "doc": "assets/no-hand-photo-v27/README.md",
+    "record": "v27.md"
+  },
+  "28": {
+    "doc": "assets/no-hand-photo-v28/README.md",
+    "record": "v28.md"
+  },
+  "29": {
+    "doc": "assets/no-hand-photo-v29/README.md",
+    "record": "v29.md"
+  },
+  "30": {
+    "doc": "assets/no-hand-photo-v30/README.md",
+    "record": "v30.md"
+  },
+  "31": {
+    "doc": "assets/cup-action-v31/README.md",
+    "record": "v31.md"
+  },
+  "32": {
+    "doc": "assets/keepsake-v32/README.md",
+    "record": "v32.md"
+  },
+  "33": {
+    "doc": "assets/keepsake-natural-v33/README.md",
+    "record": "v33.md"
+  },
+  "34": {
+    "doc": "assets/keepsake-composition-v34/README.md",
+    "record": "v34.md"
+  },
+  "35": {
+    "doc": "assets/keepsake-sandlight-v35/README.md",
+    "record": "v35.md"
+  },
+  "36": {
+    "doc": "assets/keepsake-handwork-v36/README.md",
+    "record": "v36.md"
+  }
+}

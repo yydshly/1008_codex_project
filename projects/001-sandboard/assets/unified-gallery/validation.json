@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-10",
+  "testOrigin": "http://127.0.0.1:4274",
+  "gallery": {
+    "total": 2,
+    "hand": 1,
+    "photo": 1,
+    "filters": true,
+    "storySearch": true,
+    "emptyReset": true,
+    "preview": true,
+    "manualRestore": true,
+    "photoRestore": true,
+    "photoExhibit": true
+  },
+  "toolEntries": [
+    {
+      "tool": "rake",
+      "selected": "rake",
+      "mode": "surface",
+      "passed": true
+    },
+    {
+      "tool": "pour",
+      "selected": "pour",
+      "mode": "lightbox",
+      "passed": true
+    },
+    {
+      "tool": "push",
+      "selected": "push",
+      "mode": "surface",
+      "passed": true
+    },
+    {
+      "tool": "scrape",
+      "selected": "scrape",
+      "mode": "surface",
+      "passed": true
+    },
+    {
+      "tool": "stamp",
+      "selected": "stamp",
+      "mode": "surface",
+      "passed": true
+    },
+    {
+      "tool": "smooth",
+      "selected": "smooth",
+      "mode": "surface",
+      "passed": true
+    },
+    {
+      "tool": "palm",
+      "selected": "palm",
+      "mode": "surface",
+      "passed": true
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 375,
+    "allFunctionalLinks": 15
+  },
+  "userOrigin": {
+    "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/gallery/",
+    "collectionReadOnly": true,
+    "total": 5,
+    "hand": 0,
+    "photo": 5
+  },
+  "tests": {
+    "files": 4,
+    "passed": 14
+  },
+  "platform": {
+    "functionalPages": 15,
+    "totalPages": 16
+  },
+  "archive": {
+    "versions": 36,
+    "attempts": 27,
+    "videos": 11,
+    "selectedMedia": 76
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "codec": "vp8",
+  "dimensions": [
+    1396,
+    930
+  ],
+  "seconds": 31.016199,
+  "frames": 926,
+  "bytes": 10812961,
+  "allFramesSameSize": true,
+  "fullDecodePassed": true,
+  "endVsPNGMeanRGBError96x64": 0.0018297249455337691,
+  "lastDecodedFrameTimestamp": 30.945,
+  "gatherInspectionPassed": true
+}

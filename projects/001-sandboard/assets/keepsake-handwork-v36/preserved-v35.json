@@ -1,0 +1,110 @@
+[
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-material.ts",
+    "sha256": "70804D6E290D1F9D262F9E30A300520E5A3AA694BFD38C28165F3591F7A8F724"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-model.ts",
+    "sha256": "D64D93A0FFDFF9EE78A46410315BFAE8E1779A410C1912DD1EDED7D8ABE93DFD"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-page.ts",
+    "sha256": "B9AF7A5DD883467B2CEFBEE97642B8DBE756DC7EBA1B606095A3484F892DD39B"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-sand.ts",
+    "sha256": "0299CFD1D77236F5051721239770346E40C1946E70D7A0149DA82E20A2962010"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-scene.ts",
+    "sha256": "3C65C5B6F3707D67F805C5385F77C176DC9FAC494A0646CE966B25FEA727B4DE"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-storage.ts",
+    "sha256": "78760732D8A515BAFB6D5DAA1CE9A80385B178B5D5F231D80D9F428FFFEA50B0"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-sandlight-surface.ts",
+    "sha256": "418BF138900A288BEFB4C6B013B43D5DC2B6840DCCC275FDE82B097C8D6F0E87"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\actual-film.webm",
+    "sha256": "09D8A4D3F822CF6242BD5ED47520A5E5AC73D1B3A47D43A7DDC314346CF6FADA"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\actual-poster.png",
+    "sha256": "B7F5FB42549C38B2C401D78060074D914EDBFFB779617AB4F2600744B0BF7428"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\candidate-one.png",
+    "sha256": "0823C6662ADA6F8BBEDBF94072510D72C55F7E61ADA24CE2F58E05F88D35310C"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\candidate-two.png",
+    "sha256": "636F2B3371580980D3E3E4E91DD48A6A4CB08DDF6FCDDAA1C8DE739A468BD4B4"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\film-final.jpg",
+    "sha256": "FF6983F3D4CBF34938B595724E525EE68635585A2E35724A375923E3FA165D89"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\film-gather.jpg",
+    "sha256": "4117FBDB2FAC8292A1041EC07067656E81EF3BCA5F3BE1E7D704E2C271CAD272"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\film-intro.jpg",
+    "sha256": "37269DF66866C10E41789B106E14DE10D7103B670E0FCE0822898C49E698E449"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\film-pour.jpg",
+    "sha256": "6B2023EC812829E0328CB4E75C0517105E4E65B453546ADDC3C8820275BC5AF5"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\gift.html",
+    "sha256": "D063C044F82FF2A70476F46CCEA2DD12E75DCE64FF58DD4A4221FFAB25A06B9A"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\media-validation.json",
+    "sha256": "5F3243507566D0131E4125641A4B947BF8A749213B95EF51EF56B414201795D9"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\page-delivery.png",
+    "sha256": "0BFF0F175A407CB3E7891A246D9373294D10AD79F7FC54AFD9A2544AEABB7FBF"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\page-preview.png",
+    "sha256": "636F2B3371580980D3E3E4E91DD48A6A4CB08DDF6FCDDAA1C8DE739A468BD4B4"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\preservation.json",
+    "sha256": "3104BA378FF74015CF381FC14E170C64731F58142996BBDE68D791081F2FE88C"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\preserved-v34.json",
+    "sha256": "B6604C7EA72AAA3E616F4EF39E35443638B301918C73E5942F5D551BEC970B81"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\README.md",
+    "sha256": "0692CF1EDD0E0A3E2E6889332AD81AE767DEB318EBC99E0E1F5E10DC61933D0F"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\sample.sandmemory.json",
+    "sha256": "A4CC4533EF9268F36044CA126070FF7EA85E9B2B23097206775734F418C22626"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\SHA256SUMS",
+    "sha256": "730F148BCEB1371F56D511C57B43C618359214619AB6D8D9891EB1D4CFDA8001"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-sandlight-v35\\validation.json",
+    "sha256": "8829DF571F57B1E2EAC850E1B4F3FDC0F509E9829739B91A83934CC65071CF4F"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\memories\\keepsake\\sandlight\\index.html",
+    "sha256": "78A5806FCF4B85BCAC20F0ECF6BEE7C839BF33C9077678B972CF62DA60C521C9"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\memories\\keepsake\\sandlight\\README.md",
+    "sha256": "CB4645013489C56EDAB36802E7ADA9B67CFFD0CBBCD76EE3CAFD3CEBD0C37D13"
+  }
+]

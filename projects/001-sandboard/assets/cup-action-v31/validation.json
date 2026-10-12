@@ -1,0 +1,46 @@
+{
+  "oldVersion": 30,
+  "allSavedHashesUnchanged": true,
+  "files": [
+    "actual-fine-collect.webm",
+    "actual-fine-pour.webm",
+    "actual-performance.png",
+    "actual-preserved-v29.png",
+    "actual-process.webm",
+    "fine-collect-frame.jpg",
+    "fine-pour-frame.jpg",
+    "generation-progress.json",
+    "material-validation.json",
+    "media-validation.json",
+    "page-fine-collect.jpg",
+    "page-fine-pour.jpg",
+    "page-mobile.jpg",
+    "page-process.jpg",
+    "page.jpg",
+    "performance-window-score.json",
+    "process-frame-01.jpg",
+    "process-frame-02.jpg",
+    "process-frame-03.jpg",
+    "README.md",
+    "validation.json"
+  ],
+  "materialTests": {
+    "filesPassed": 41,
+    "testsPassed": 294,
+    "testsSkipped": 6,
+    "seconds": 102.09
+  },
+  "build": "TypeScript + Vite seven entries passed",
+  "rootCheck": "12 projects passed",
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "clientWidth": 375,
+    "scrollWidth": 375,
+    "visibleButtonsAtLeast44px": true
+  },
+  "browserConsoleWarningsErrors": [],
+  "oldNewNavigationPassed": true,
+  "preciseGatherComparisonPassed": true,
+  "mediaValidatedWithNormalColorDecode": true
+}

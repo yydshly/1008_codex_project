@@ -1,0 +1,29 @@
+[
+  {
+    "id": "photo",
+    "title": "照片影调与真实成画",
+    "left": "photo-memory-v12/sample-sand-warm.png",
+    "right": "photo-structure-v14/performance.png",
+    "leftLabel": "v12 · 照片影调转换",
+    "rightLabel": "v14 · 实际材料终态",
+    "note": "同一 AI 雨窗输入。左图直接建立沙层影调，右图从空台执行工具动作。清晰预览不能当作实际成画成果。"
+  },
+  {
+    "id": "cup",
+    "title": "杯子体积与灯台留白",
+    "left": "keepsake-composition-v34/actual-poster.png",
+    "right": "keepsake-handwork-v36/actual-poster.png",
+    "leftLabel": "v34 · 杯身灰面与体积",
+    "rightLabel": "v36 · 三笔推拢留白",
+    "note": "两图都是网页实际导出。后版动作机制更完整，杯身体积与层次却减弱，成品更图标化。版本增加不代表视觉提升。"
+  },
+  {
+    "id": "target",
+    "title": "美术目标与运行结果",
+    "left": "art-direction-v8/scene-1.png",
+    "right": "art-product-v9/scene-1-real.png",
+    "leftLabel": "v8 · AI 美术目标",
+    "rightLabel": "v9 · 实际材料成品",
+    "note": "左图用于美术方向，右图由真实材料工具形成。分镜、目标与可操作产品分别有不同的验收条件。"
+  }
+]

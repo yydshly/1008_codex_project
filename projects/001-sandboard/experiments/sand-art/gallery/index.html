@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="光阴沙画统一作品集：浏览手绘与照片作品，返回画台继续创作或展映。">
+  <meta name="sand-platform-root" content="../">
+  <link rel="icon" href="../logo.png" type="image/png">
+  <title>我的作品集 · 光阴沙画</title>
+</head>
+<body data-platform-page="gallery">
+  <a class="skip" href="#works">跳到作品</a>
+  <main>
+    <header class="collection-header"><div><p class="eyebrow">光阴沙画 / 私人收藏</p><h1>每一次落沙，<br>都值得留下。</h1><p class="lead">亲手画出的纹路，和照片里的记忆，放在同一个作品集。打开作品，接着画。</p></div><div class="create-links"><a class="button primary" href="../#mode=surface&amp;tool=rake">用沙耙画一幅 ↗</a><a class="button" href="../#mode=lightbox&amp;tool=pour">从撒沙开始 ↗</a><a class="button" href="../memories/#create">用照片创作 ↗</a></div></header>
+    <nav class="collection-jumps" aria-label="作品集内容"><a href="#examples">工具试画 <span id="example-count">9</span> ↓</a><a href="#history">历史作品与效果 <span id="history-count"></span> ↓</a><a href="#works">我的收藏 <span id="jump-saved-count">0</span> ↓</a></nav>
+    <section id="examples" class="example-collection" aria-labelledby="example-heading"><div class="section-heading"><div><p class="eyebrow">手绘示例 / 点开就能画</p><h2 id="example-heading">先看看，沙能怎样画。</h2></div><p>原来的沙纹园、山月沙画，以及七种工具的效果小样。点击画面，直接进入原画台试画。</p></div><label class="example-filter">查看工具<select id="example-tool"><option value="all">全部手绘示例</option><option value="rake">沙耙</option><option value="pour">撒沙</option><option value="push">推沙</option><option value="scrape">刮线</option><option value="stamp">印章</option><option value="smooth">抹平</option><option value="palm">掌形</option></select></label><div id="example-grid" class="work-grid"></div><p class="example-note">示例可直接修改，试画独立暂存；点击「保存作品」后加入你的收藏。原草稿与原示例继续保留。</p></section>
+    <section id="history" class="history-collection" aria-labelledby="history-heading">
+      <div class="section-heading"><div><p class="eyebrow">一路画过来的作品 / v1–v36</p><h2 id="history-heading">以前的画，都在这里。</h2></div><p>柳树、石桥、侧脸，早期照片成画与后来的试片。实际效果和AI参考目标有明确标记；能操作的作品可回到对应画台。</p></div>
+      <div class="history-controls"><label>作品方向<select id="history-group"><option value="all">全部方向</option><option value="foundation">原版、手绘与舞台</option><option value="photo">早期照片作品</option><option value="hands">手部与接触</option><option value="motion">无手演出</option><option value="keepsake">纪念短片</option></select></label><label>呈现类型<select id="history-kind"><option value="all">全部类型</option><option value="editable">可接管沙层</option><option value="actual">实际效果记录</option><option value="target">AI参考目标</option><option value="preview">照片影调预览</option><option value="composite">手部合成试验</option><option value="interface">平台界面记录</option></select></label><label class="history-search">查找历史作品<input id="history-search" type="search" placeholder="柳、桥、雨窗、杯子、v14…"></label></div>
+      <p id="history-result" class="history-result" role="status"></p>
+      <div id="history-grid" class="work-grid"></div><p id="history-empty" class="history-empty" hidden>没有匹配的历史作品，试试其他方向、类型或名称。</p>
+      <button id="history-more" class="button" type="button"></button>
+      <p class="example-note">这些是保留的作品、效果与过程记录，不计入你的私人收藏。实际效果指数字沙层或网页运行结果；手部合成、AI参考图和照片影调预览分别标注。</p>
+    </section>
+    <section id="works" aria-label="收藏作品"><div class="section-heading"><div><p class="eyebrow">你的私人收藏</p><h2>把作品，慢慢留住。</h2></div><p>这里是你保存的手绘和照片作品，可以打开继续创作。</p></div>
+      <div class="collection-controls"><div id="kind-filters" class="filters" role="group" aria-label="作品类型"><button data-kind="all" aria-pressed="true">全部作品 <span id="count-all">0</span></button><button data-kind="hand" aria-pressed="false">手绘作品 <span id="count-hand">0</span></button><button data-kind="photo" aria-pressed="false">照片作品 <span id="count-photo">0</span></button></div><div class="search-sort"><label class="search-label">搜索作品<input id="work-search" type="search" placeholder="作品名称、故事、画台…"></label><label>排列<select id="work-sort"><option value="newest">最近更新</option><option value="oldest">最早保存</option><option value="title">按作品名称</option></select></label></div></div>
+      <div class="collection-status"><p id="work-result" role="status" aria-live="polite">正在读取作品…</p><button id="refresh">刷新作品</button></div>
+      <div id="load-warning" class="warning" role="alert" hidden></div>
+      <div id="work-grid" class="work-grid" aria-busy="true"></div>
+      <div id="empty" class="empty" hidden><h2 id="empty-title"></h2><p id="empty-text"></p><button id="reset-filters" class="button" hidden>查看全部作品</button><a class="button primary" href="../#mode=surface&amp;tool=rake">开始手绘 ↗</a><a class="button" href="../memories/#create">开始照片创作 ↗</a></div>
+    </section>
+    <footer><p>作品保存在当前浏览器与当前网址中。此入口汇总已保存的手绘和照片作品，打开后可在原画台继续编辑、导出。</p><p>工作室、照片平台和历次效果均保留。尚未保存的草稿可回到对应画台查看。</p><div><a href="../#gallery">工作室原作品集 ↗</a><a href="../memories/#gallery">照片平台原作品集 ↗</a><a href="../home/">返回平台首页 ↗</a></div></footer>
+  </main>
+  <dialog id="preview-dialog" aria-labelledby="preview-title"><div class="preview-top"><h2 id="preview-title"></h2><button id="close-preview" aria-label="关闭作品预览">关闭 ×</button></div><img id="preview-image" alt=""><p id="preview-caption"></p><div class="preview-actions"><a id="preview-edit" class="button primary">继续创作 ↗</a><a id="preview-exhibit" class="button">展映作品 ↗</a></div></dialog>
+  <noscript>请启用 JavaScript 浏览作品集。<a href="../">手绘沙台</a> · <a href="../memories/">照片平台</a></noscript>
+  <dialog id="history-dialog" aria-labelledby="history-title"><div class="preview-top"><div><p id="history-label" class="eyebrow"></p><h2 id="history-title"></h2></div><button id="history-close" type="button">关闭 ×</button></div><img id="history-image" alt=""><video id="history-video" controls playsinline preload="none" hidden aria-label="历史作品保存的成画过程"></video><p id="history-caption"></p><p id="history-note"></p><div class="preview-actions"><button id="history-watch" class="button primary" type="button" hidden>看保存录像 ▶</button><a id="history-process" class="button">打开成画过程 ↗</a><a id="history-platform" class="button primary">打开对应画台 ↗</a><a id="history-record" class="button">来源与尝试 ↗</a></div></dialog>
+  <script type="module" src="../src/platform/navigation.ts"></script>
+  <script type="module" src="../src/gallery/main.ts"></script>
+</body>
+</html>

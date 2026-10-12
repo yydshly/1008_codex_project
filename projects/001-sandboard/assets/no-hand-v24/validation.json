@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-09",
+  "kind": "actual-browser-exports",
+  "build": "six HTML entries / TypeScript passed",
+  "tests": {
+    "files": 34,
+    "passed": 269,
+    "skipped": 2
+  },
+  "video": {
+    "codec": "vp9",
+    "width": 1060,
+    "height": 784,
+    "durationSeconds": 12.000699,
+    "frames": 354,
+    "bytes": 2862509,
+    "decode": "ffmpeg entire video passed"
+  },
+  "files": [
+    {
+      "name": "actual-flow-3s.png",
+      "bytes": 68294,
+      "sha256": "e73647ab2df780354ccfab1426df780807713a5c3f2e6f8b41359f7f50c6d741",
+      "width": 1060,
+      "height": 784
+    },
+    {
+      "name": "actual-grains-12s.png",
+      "bytes": 252548,
+      "sha256": "8e7de0c67cbcbe3d6e0cd85971d457033b65eea35bb6ebb8d438b60c43376eb7",
+      "width": 1060,
+      "height": 784
+    },
+    {
+      "name": "actual-process.webm",
+      "bytes": 2862509,
+      "sha256": "14a5d75af4a381f5559576c0bf441c2657e568c3ba8027784869711422c0c20f"
+    },
+    {
+      "name": "actual-top-12s.png",
+      "bytes": 104932,
+      "sha256": "ce57a32d9eba7cf0f21b8fe1d6768763153b4dc299dfe4d8d22fcb7aa20e16b3",
+      "width": 1060,
+      "height": 784
+    },
+    {
+      "name": "page.jpg",
+      "bytes": 35972,
+      "sha256": "1483839cdbcc06835147326b75cc252fa0f33df56b178b97ee80e13d600eded0"
+    }
+  ]
+}

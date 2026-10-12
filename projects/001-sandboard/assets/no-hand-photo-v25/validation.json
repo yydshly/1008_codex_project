@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-10",
+  "entry": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+  "mode": "雨窗与茶杯 · 无手成画",
+  "input": "此前 AI 虚构示例，未生成新照片或手部素材",
+  "plan": {
+    "file": "assets/material-realism-v17/natural-window-score.json",
+    "strokes": 2042,
+    "tools": {
+      "pour": 1359,
+      "collect": 681,
+      "rub": 2
+    },
+    "width": 768,
+    "height": 512,
+    "totalTicks": 37826,
+    "simulatedSeconds": 630.4333333333333,
+    "playbackRate": 10
+  },
+  "video": {
+    "codec": "vp9",
+    "width": 1491,
+    "height": 943,
+    "durationSeconds": 64.483199,
+    "frames": 1895,
+    "averageFps": 29.387499835422247,
+    "emptyLeadSeconds": 0.9,
+    "finalHoldSeconds": 0.5,
+    "decodedWithoutErrors": true,
+    "frameIndices": [
+      0,
+      400,
+      1000,
+      1894
+    ],
+    "firstFrameVisuallyEmpty": true,
+    "lastFrameVisuallySettled": true,
+    "downloadAgainVerified": true
+  },
+  "checks": {
+    "build": "tsc && vite build，六入口通过；保留既有大分块提示",
+    "fullSuite": {
+      "files": 35,
+      "passed": 270,
+      "skipped": 2,
+      "durationSeconds": 87.83
+    },
+    "subsequentFocusedSuite": {
+      "files": 2,
+      "passed": 6,
+      "newCameraBoundaryTest": true
+    },
+    "rootCatalog": {
+      "passed": true,
+      "projects": 12
+    },
+    "browser": {
+      "verified": [
+        "照片从空台完整成画录像",
+        "终章定位及模式返回后的回放",
+        "人物固定近景",
+        "完整台面的斜视镜头",
+        "1 倍速度切换与 10 倍预览",
+        "24 秒取沙模式 6.5 秒掌内握持",
+        "12 秒芦苇终态无残留手影",
+        "20 秒接触模式入口与控制",
+        "PNG 保存",
+        "录像生成后再次下载",
+        "390 像素窄屏的控制与下载入口"
+      ],
+      "narrowViewport": {
+        "width": 390,
+        "height": 844,
+        "clientWidth": 375,
+        "scrollWidth": 375
+      },
+      "finalConsoleWarningsOrErrors": [],
+      "temporaryViewportReset": true
+    }
+  },
+  "limits": [
+    "三维照片镜头只接入雨窗示例，自有照片仍在原照片创作页处理",
+    "沿用近台供料，未套用 29 cm 高抛",
+    "没有真人手部、逐颗碰撞或实拍材质，未达到实拍沙画质量",
+    "视口测试不是手机硬件性能测试",
+    "当前无手页仍加载保留手部资源"
+  ],
+  "files": [
+    {
+      "name": "actual-top.png",
+      "bytes": 1381327,
+      "sha256": "1e7c66accb83ab4db1a58b7e57df8e41e1f3c01acd33750823ff398906a8a772",
+      "width": 1491,
+      "height": 943
+    },
+    {
+      "name": "actual-face.png",
+      "bytes": 2304320,
+      "sha256": "5fdda2efda1dda7417106ba02aa3a05a88d98c7285baf7f44004479b5aa457d3",
+      "width": 1491,
+      "height": 943
+    },
+    {
+      "name": "actual-angle.png",
+      "bytes": 969653,
+      "sha256": "aafd9303d5e5f42be92e976cad302cbbdf8210f02962e9dd256de8b284f087d1",
+      "width": 1491,
+      "height": 943
+    },
+    {
+      "name": "actual-process.webm",
+      "bytes": 21826142,
+      "sha256": "9322c93b3aad2bd1cf4f9757c03d10b248770166404be5f0ccb1f7a007a70606"
+    },
+    {
+      "name": "page.jpg",
+      "bytes": 116133,
+      "sha256": "dd4a5b0ce420096b68c3641c5897d85d0c24485b80930b61cfb0d10817a7a1ec"
+    },
+    {
+      "name": "process-frame-01.jpg",
+      "bytes": 17632,
+      "sha256": "cfa6bd4f5cc80382755629b912b5f1d0ba7368d8c9674d862de957fba0b677c0"
+    },
+    {
+      "name": "process-frame-02.jpg",
+      "bytes": 264559,
+      "sha256": "328bbf47dabea267ba72e35b64963a6a7d4e1d8df6c97f569f80a61e7ba127bb"
+    },
+    {
+      "name": "process-frame-03.jpg",
+      "bytes": 260276,
+      "sha256": "3fd5a9be0eed41aa0fd7c1b9abdd67986e246f17b4d016f4b59c1cd3fd9f4f2b"
+    },
+    {
+      "name": "process-frame-04.jpg",
+      "bytes": 258675,
+      "sha256": "9a46ea2f27568fd50fd0d8877977f8815d267bf7dc9cb87706ade34078f40b4b"
+    }
+  ]
+}

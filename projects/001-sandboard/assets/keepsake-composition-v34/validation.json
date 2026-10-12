@@ -1,0 +1,30 @@
+{
+  "build": "TypeScript + Vite production; 10 HTML entries",
+  "focusedTests": {
+    "files": 3,
+    "passed": 18,
+    "failed": 0
+  },
+  "rootCheck": "passed; 12 registered projects",
+  "visualValidation": "actual cup preview inspected in four iterations, including local arc pours; no generated finished image overlay",
+  "upstreamAndV33Modified": false,
+  "commercialArtQualityReached": false,
+  "arbitraryRealPhotoQualityVerified": false,
+  "actualExport": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 45.6088,
+    "frames": 1264,
+    "codec": "vp8",
+    "bytes": 10041307,
+    "fullDecode": true,
+    "lastFramePTS": 45.533,
+    "endPosterMeanRGBError": 0.008632472086056645,
+    "giftVideoMatchesDownload": true,
+    "sourcePhotoExcludedByDefault": true,
+    "inputKind": "existing AI rain-window sample; story is fictional",
+    "arbitraryRealPhotoArtQualityVerified": false
+  },
+  "v33FilesUnchanged": 28,
+  "browserErrors": 0
+}

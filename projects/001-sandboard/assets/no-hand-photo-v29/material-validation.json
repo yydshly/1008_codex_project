@@ -1,0 +1,26 @@
+{
+  "sourceRGBA": "81ed8b02ae057fda77804c2bbcc31be4560eecaacd13594463cd85469fc22d96",
+  "originalScore": "abaefbf0acb17709283988945cc3625391c50ce779abf4422dcb63fe4f57371d",
+  "strokes": 1477,
+  "totalTicks": 83980,
+  "phaseStarts": [
+    0,
+    11968,
+    22016,
+    27520,
+    33956,
+    83920
+  ],
+  "meanPathPx": 19.897792823290416,
+  "minPathPx": 3.059999999999922,
+  "faceTargetError": 0.049845865178028116,
+  "previousFaceTargetError": 0.0672998568472808,
+  "handsTargetError": 0.052876532746989786,
+  "previousHandsTargetError": 0.06732324176944555,
+  "mass": 253630.17681997645,
+  "supplied": 274624.56321812765,
+  "removed": 20994.385530727945,
+  "collectedFrames": 29663,
+  "pourFrames": 47991,
+  "pending": false
+}

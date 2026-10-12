@@ -1,0 +1,24 @@
+{
+  "baselineFiles": 550,
+  "unchanged": 544,
+  "changed": [
+    "src\\studio.ts",
+    "src\\style.css",
+    "src\\ui.ts",
+    "src\\gallery\\main.ts",
+    "src\\gallery\\style.css",
+    "src\\platform\\home.ts"
+  ],
+  "missing": [],
+  "historicalAssets": 411,
+  "historicalAssetsUnchanged": true,
+  "coreUnchanged": {
+    "solver.ts": true,
+    "solver-shaders.ts": true,
+    "render.ts": true,
+    "composition.ts": true,
+    "airborne.ts": true,
+    "hand.ts": true,
+    "input.ts": true
+  }
+}

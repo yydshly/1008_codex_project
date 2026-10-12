@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-10",
+  "version": 28,
+  "page": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+  "cpu": {"files": 38, "passed": 279, "skipped": 3, "seconds": 107.34},
+  "offlineGeneration": {"passed": 3, "seconds": 68.47, "materialReplayExactlyMatches": true, "conservation": true},
+  "build": {"typescript": true, "viteEntries": 6, "subpath": "/1008_codex_project/001-sandboard/art/", "existingLargeChunkWarning": true},
+  "index": {"projects": 12, "passed": true},
+  "video": {"file": "actual-process.webm", "codec": "vp9", "width": 1491, "height": 943, "duration": 156.6405, "frames": 4599, "bytes": 45824059, "fullDecodePassed": true, "sampleFrames": [0, 2000, 4598]},
+  "preservedVersion": {"file": "actual-preserved-v27.png", "matches": "../no-hand-photo-v27/actual-coherent.png", "sha256": "722ead821c1d6ee8620324139cb30b6ba0696f3fd3bd353057075de5607a4bfa", "byteIdentical": true},
+  "comparison": {"flowTick": 40828, "v27Tick": 12638, "returnedFlowTick": 40828, "keptView": "close", "keptFocus": "hands", "keptLight": "raking", "finalFlowTick": 69436, "finalV27Tick": 37826},
+  "detail": {"start": 40108, "end": 40828, "seconds": 12, "automaticPause": true},
+  "mobile": {"viewport": [390, 844], "clientWidth": 375, "scrollWidth": 375, "arrangementButtonHeight": 44, "progressHeight": 32, "overrideReset": true},
+  "retainedModes": {"reedFinalTick": 720, "pickupInitialState": true, "contactInitialState": true, "returnedToPhoto": true, "oldHandFullVideoRetested": false},
+  "browser": {"warnings": 0, "errors": 0, "finalView": "top", "finalLight": "transmitted", "finalPace": "guided", "deliverableTab": true},
+  "limitations": ["仅固定雨窗示例采用新谱", "仍有算法修正与偏软灰面", "没有真人取沙施力源", "未运行硬件 GPU 或真实触屏验收", "未发布线上"]
+}

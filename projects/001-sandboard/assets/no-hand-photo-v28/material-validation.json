@@ -1,0 +1,13 @@
+{
+  "strokes": 1174,
+  "totalTicks": 69436,
+  "finalTargetFaceError": 0.03158415099291525,
+  "meanPathPx": 23.07938245315164,
+  "minPathPx": 4.079999999999899,
+  "faceDifference": 0.029252305108318832,
+  "handsDifference": 0.02491866787638105,
+  "faceEdgeRatio": 2.4660001951218664,
+  "mass": 235881.63046762985,
+  "supplied": 261306.86342863782,
+  "removed": 25425.231925331198
+}

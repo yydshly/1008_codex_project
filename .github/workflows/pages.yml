@@ -1,0 +1,63 @@
+name: Deploy research website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/001-sandboard/**'
+      - 'projects.json'
+      - 'scripts/**'
+      - 'package.json'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - uses: actions/configure-pages@v5
+      - name: Validate project catalog and source labels
+        run: |
+          npm run check
+          npm test
+      - name: Install independent demo dependencies
+        run: |
+          npm ci --prefix projects/001-sandboard/web
+          npm ci --prefix projects/001-sandboard/experiments/sand-art
+      - name: Build all preserved Sandboard pages and research entrance
+        run: npm run build:site
+      - name: Verify archive media and sixteen page links
+        working-directory: projects/001-sandboard/experiments/sand-art
+        run: |
+          node scripts/validate-platform.mjs
+          node scripts/validate-research.mjs --built
+      - name: Verify public summary and guide links
+        run: node scripts/validate-site.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .cache/pages-site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

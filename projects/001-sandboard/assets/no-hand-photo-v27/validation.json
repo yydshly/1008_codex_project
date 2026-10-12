@@ -1,0 +1,64 @@
+{
+  "version": "v27",
+  "date": "2026-10-10",
+  "entry": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+  "scope": "只重新编排最后的细笔落定段；原版、材料执行和旧模式保留",
+  "sourcePlanSHA256": "abaefbf0acb17709283988945cc3625391c50ce779abf4422dcb63fe4f57371d",
+  "production": {
+    "entries": 6,
+    "typescript": "passed",
+    "vite": "passed",
+    "contactBundle": "contact-DQWL9ZdH.js",
+    "warning": "既有大分块提示"
+  },
+  "tests": {
+    "command": "npm.cmd test -- --maxWorkers=2 tests/photo-choreography.test.ts tests/photo-study.test.ts tests/photo-timing.test.ts tests/pour.test.ts",
+    "filesPassed": 4,
+    "testsPassed": 12,
+    "fullSuite": "未运行",
+    "materialComparison": "choreography-validation.json"
+  },
+  "recording": {
+    "file": "actual-process.webm",
+    "mode": "局部连续 / 俯视 / 透光 / 分章节奏",
+    "codec": "vp9",
+    "width": 1858,
+    "height": 849,
+    "durationSeconds": 74.176,
+    "frames": 2165,
+    "sizeBytes": 17974999,
+    "averageFPS": 29.1873,
+    "decode": "ffmpeg 全片到末帧无错误",
+    "extractedFrameNumbers": [0, 1200, 2164]
+  },
+  "finalComparison": {
+    "files": ["actual-coherent.png", "actual-original.png"],
+    "tick": 37826,
+    "view": "俯视",
+    "lighting": "透光",
+    "sameProgressSwitch": "passed",
+    "coherentCheckpointCacheOnReturn": "passed"
+  },
+  "browser": {
+    "completeRecordingAndRedownload": "passed",
+    "detailOriginalAndCoherent": {
+      "startTick": 14065,
+      "endTick": 14785,
+      "durationSeconds": 12,
+      "automaticStop": "passed",
+      "segmentCompletionLabel": "passed"
+    },
+    "sameProgressCloseViewRakingLightSwitch": "passed at tick 14785",
+    "mobile": {"viewportWidth":390,"viewportHeight":844,"clientWidth":375,"scrollWidth":375,"overrideReset":true},
+    "retainedModes": {
+      "pour": "终态 720 步，供沙余量 68%",
+      "pickup": "初态及控制核对，台上 100%，手中 0%；本轮未重播全片",
+      "contact": "初态及控制核对，20 秒入口可返回；本轮未重播全片"
+    },
+    "consoleWarningsAndErrors": [],
+    "final": "局部连续、透光、俯视、分章节奏、37826 步暂停；演示标签保留"
+  },
+  "repositoryCheck": "npm.cmd run check，12 项目通过",
+  "source": "此前 AI 虚构雨窗示例；不向渲染器传入原照或成品遮罩",
+  "deployment": "仅本地预览，未公开发布"
+}

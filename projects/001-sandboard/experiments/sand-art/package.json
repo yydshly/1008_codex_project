@@ -1,0 +1,31 @@
+{
+  "name": "sandboard-sand-art",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run --config vitest.config.ts",
+    "test:gpu": "vitest run --config vitest.gpu.config.ts",
+    "build:platform": "node scripts/build-platform.mjs",
+    "preview:platform": "vite preview --outDir .cache/platform-site --base /1008_codex_project/001-sandboard/ --host 127.0.0.1 --port 4174 --strictPort"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "@types/three": "^0.186.0",
+    "@webgpu/types": "^0.1.72",
+    "fake-indexeddb": "^6.2.5",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0",
+    "webgpu": "^0.6.0"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}

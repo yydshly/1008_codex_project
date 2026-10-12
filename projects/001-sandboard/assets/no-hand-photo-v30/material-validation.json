@@ -1,0 +1,40 @@
+{
+  "sourceRGBA": "81ed8b02ae057fda77804c2bbcc31be4560eecaacd13594463cd85469fc22d96",
+  "preservedV29Score": "9eff1f0b2b4f3ed10ef568601bf9f59d4875173cad74f30a36e98cc3a79abe0f",
+  "strokes": 1606,
+  "tools": {
+    "pour": 894,
+    "collect": 712
+  },
+  "totalTicks": 146247,
+  "phaseStarts": [
+    0,
+    23036,
+    38823,
+    47021,
+    56414,
+    146187
+  ],
+  "guidedSeconds": 467.5900444073735,
+  "meanPathPx": 37.3635460772105,
+  "minPathPx": 3.059999999999926,
+  "fineStrokes": 988,
+  "fineMeanPathPx": 12.632672064777342,
+  "previousFineMeanPathPx": 7.685126353790624,
+  "faceTargetError": 0.043313077931714475,
+  "previousFaceTargetError": 0.049845865178028116,
+  "handsTargetError": 0.0473910276186934,
+  "previousHandsTargetError": 0.052876532746989786,
+  "mass": 271143.4634181876,
+  "supplied": 308196.09974773444,
+  "removed": 37052.63390888148,
+  "collectedFrames": 58772,
+  "pourFrames": 80064,
+  "pending": false,
+  "fineActionSeconds": {
+    "min": 0.24,
+    "mean": 0.2772012044534413,
+    "max": 0.4770400000000007
+  },
+  "timingRevision": "Final viewing schedule; material plan and final snapshot unchanged."
+}

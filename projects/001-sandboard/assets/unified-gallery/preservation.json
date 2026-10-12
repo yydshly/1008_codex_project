@@ -1,0 +1,16 @@
+{
+  "scope": "src and all existing project assets; new files excluded",
+  "unchanged": 527,
+  "beforeCount": 535,
+  "missing": [],
+  "changed": [
+    "src\\studio.ts",
+    "src\\ui.ts",
+    "src\\memories\\main.ts",
+    "src\\memories\\storage.ts",
+    "src\\platform\\home.css",
+    "src\\platform\\home.ts",
+    "src\\platform\\navigation.ts",
+    "src\\platform\\pages.json"
+  ]
+}

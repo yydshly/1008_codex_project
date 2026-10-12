@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-12",
+  "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/research/#overview",
+  "desktop": {
+    "initialFullImageSrc": null,
+    "previewLoaded": true,
+    "loadedImage": [
+      3200,
+      15811
+    ],
+    "detailZoom": "50%",
+    "principleScroll": 2421.333,
+    "productScroll": 5686,
+    "escapeCloses": true,
+    "focusReturnsTo": "overview-open",
+    "fullSrcCleared": true,
+    "homeDeepLink": true,
+    "pageErrors": []
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "dialogWidth": 378,
+    "pageOverflow": false,
+    "imageComplete": true,
+    "initialFit": "10%",
+    "detailZoom": "50%",
+    "explorationScroll": 3745.333,
+    "draggedScrollLeft": 175.333,
+    "draggedScrollTop": 3820.667,
+    "plusMinus": true,
+    "closeClearsSrc": true
+  },
+  "notes": [
+    "初次手机截图捕获到 PNG 尚在加载；待网络完成后复查、截图覆盖为完整显示。",
+    "桌面与手机均为本机浏览器检查，不代表真实移动设备和全部浏览器。"
+  ]
+}

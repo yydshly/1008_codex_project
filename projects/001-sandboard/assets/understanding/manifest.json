@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-12",
+  "upstream": "https://github.com/scottstts/Sandboard",
+  "commit": "489cb01e81b11ba575887f7c76760498eb41aaa8",
+  "inputs": [
+    {
+      "file": "assets/original-fine-v2.jpg",
+      "kind": "原版本地实测截图",
+      "sha256": "3cc9263ac7ced9a583c7b06deecb3183560c5500040f0c19e16b9f9f2543f39f"
+    },
+    {
+      "file": "assets/handdraw-examples/rake.png",
+      "kind": "七工具沙耙示例的实际材料导出",
+      "sha256": "1c0001aacb483ac4fb14f5987ee19ee0cee8776fc44176032721e61c5786931c"
+    },
+    {
+      "file": "assets/art-stage-jiangnan-v7.png",
+      "kind": "v7 实际沙层导出",
+      "sha256": "104501fc08eb7d1dc6121b3fad035a08317ee5c0381e1ed710713806c5e66414"
+    },
+    {
+      "file": "assets/art-direction-v8/scene-1.png",
+      "kind": "v8 AI 美术目标，非实际成品",
+      "sha256": "fe6534f4dd65b64ccf273de735b1cd7592e5e3aafe29394c6a5a905bc7839e24"
+    },
+    {
+      "file": "assets/art-studies-v11/bridge.png",
+      "kind": "v11 实际沙层导出",
+      "sha256": "64cbca0df84694d82ab22721aa200f887b0d8006b4d7c95a134b91dedf3c0943"
+    },
+    {
+      "file": "assets/photo-memory-v12/sample-window.png",
+      "kind": "AI 虚构输入照片，非用户照片",
+      "sha256": "099eb0ee64a490c46f17496c7c1d9bc37ec125f81947fe8bd92dbffa33a83979"
+    },
+    {
+      "file": "assets/photo-memory-v12/sample-sand-warm.png",
+      "kind": "v12 直接影调转换预览",
+      "sha256": "292d7559408e2fbfe533537dca0409adda4e3a6273548f75eb9b017da7ff6545"
+    },
+    {
+      "file": "assets/photo-structure-v14/performance.png",
+      "kind": "v14 实际材料成品，输入为 AI 示例照片",
+      "sha256": "7d65f752cfc4ba8c1744d3ef208253d14ca4041ef6887a8440874449378d4bc6"
+    },
+    {
+      "file": "assets/hand-contact-v23/actual-hold-close-6.5s.png",
+      "kind": "v23 三维接触实测帧，非真人",
+      "sha256": "c2409a7fe2cb7fef752f71981642e9416b9a0041002b282ba6ee58033623cf96"
+    },
+    {
+      "file": "assets/no-hand-photo-v30/actual-performance.png",
+      "kind": "v30 无手照片材料实测",
+      "sha256": "453d4f02e90a48be428b509f43ecdb84703a09065582001d78740a6799eb87e6"
+    },
+    {
+      "file": "assets/keepsake-v32/actual-poster.png",
+      "kind": "v32 浏览器实际纪念海报",
+      "sha256": "2258e17a7e1b0392c4cd682b85232ed763f4d927a1619fa5af543f5aaff9c1d0"
+    },
+    {
+      "file": "assets/keepsake-handwork-v36/actual-poster.png",
+      "kind": "v36 实际纪念海报，视觉未通过验收",
+      "sha256": "cb40030e0e0f1f980e3d21a2b8250b3736e9a72be1b2542428f2cabd2cff9876"
+    },
+    {
+      "file": "assets/understanding/material-principle.png",
+      "kind": "本次 imagegen 生成的原理示意，不是算法实测",
+      "sha256": "75b531f4a40368df8e4ca1839141f50f066dae24996696f9d962d76cc6dc810e"
+    }
+  ],
+  "sections": 7,
+  "method": "HTML/CSS 精确中文排版；历史素材原样嵌入；imagegen 仅生成原理示意",
+  "output": {
+    "file": "assets/understanding/overview.png",
+    "format": "png",
+    "width": 3200,
+    "height": 15811,
+    "bytes": 23331794,
+    "sha256": "038be268d03b4c0e33c5f4a963d69c2f322d115caaa767d5d5a4f6fb1fd48ca1"
+  },
+  "layout": {
+    "height": 15811,
+    "sections": [
+      {
+        "height": 1367,
+        "title": "源库能力：把操作变成沙的变化",
+        "y": 1845
+      },
+      {
+        "height": 1671,
+        "title": "输入 → 制作 → 输出：两条创作路径",
+        "y": 3212
+      },
+      {
+        "height": 2647,
+        "title": "底层原理：材料状态、动作时间与视觉表达",
+        "y": 4883
+      },
+      {
+        "height": 2249,
+        "title": "我们的探索：效果、能力与走过的弯路",
+        "y": 7530
+      },
+      {
+        "height": 1633,
+        "title": "为什么有些版本反而变差：要同时审成品与过程",
+        "y": 9779
+      },
+      {
+        "height": 2277,
+        "title": "可扩展的产品方向：先确认用途，再增加能力",
+        "y": 11412
+      },
+      {
+        "height": 1421,
+        "title": "下一步如何产品化：先做出一段值得看的作品",
+        "y": 13688
+      }
+    ],
+    "width": 3200
+  },
+  "verification": {
+    "existingInputsUnchanged": true,
+    "builtPngMatches": true,
+    "builtTextMatches": true,
+    "archive": {
+      "versions": 36,
+      "attempts": 27,
+      "videos": 11
+    },
+    "platformPages": 16,
+    "rootCheck": true,
+    "browserReport": "browser-report.json"
+  },
+  "browserScreenshotFormat": "原完整截图由浏览器返回 JPEG；以 Sharp 转为 PNG，预览另存 JPEG",
+  "limits": [
+    "没有重新生成历史效果，没有修改原版、沙层、动作和作品存储。",
+    "原理图由内置 imagegen 生成并标注；全部实际效果来自既有素材。",
+    "完整照片成片、摄影级真实感、通用真实照片适配仍需验收。"
+  ]
+}

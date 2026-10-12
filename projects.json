@@ -1,4 +1,24 @@
 {
   "schemaVersion": 1,
-  "projects": []
+  "projects": [
+    {
+      "id": "001",
+      "slug": "sandboard",
+      "name": "Sandboard 交互沙盘",
+      "summary": "Sandboard 是 WebGPU 交互沙盘：高度场与邻域输运呈现沟槽、堆积和飞沙，适合触控创作与材料研究。我们保留原版，扩展七工具手绘、照片沙画、动作回放和纪念赠礼原型；可继续探索教学、展演与创作工具，真实成画质感仍待验收。",
+      "upstream": "https://github.com/scottstts/Sandboard",
+      "status": "研究中",
+      "tags": [
+        "WebGPU",
+        "颗粒模拟",
+        "交互沙盘",
+        "沙画",
+        "材料实验"
+      ],
+      "cover": "projects/001-sandboard/assets/original-fine-v2.jpg",
+      "coverAlt": "Sandboard 原版精细画质下的字母 A 沙槽、沙脊和椰树阴影",
+      "coverCaption": "2026-10-08 本地原版精细画质实测：2560 × 1440 绘制后截图，保留上游 489cb01 的沙床与渲染算法。",
+      "demo": ""
+    }
+  ]
 }

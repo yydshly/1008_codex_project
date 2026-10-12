@@ -1,0 +1,118 @@
+[
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-material.ts",
+    "sha256": "58D497EE143CFD9B9040561864DF2894B6C641A8A5AEFAECE1159501B17B919D"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-model.ts",
+    "sha256": "A8B67CBEDC8E3D29CCA5581A89579F5410298F9323B0A99A6FDBBB850C7A8D9A"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-page.ts",
+    "sha256": "15D13F086956AE84F89AB7ABC80991970773754523B427C204888923E68B8438"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-sand.ts",
+    "sha256": "1B7C9A320256ED71AF9024A1CF3F787B05DAAC8D2AF8CC391B12381B9531B8E1"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-scene.ts",
+    "sha256": "390AA57B72CD0C57D710E956EE564275DBCCF6187110C76C69F715D9D21A3CC0"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-storage.ts",
+    "sha256": "01736CE1A97C057E9BD4BDD0EDA9AB13CD282B96B1D101285588BFC7B50B908F"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\src\\memories\\keepsake-composition-surface.ts",
+    "sha256": "DBA6340B81A86CE58C9C6638C75BC6D0665758322B300116081BE74D6612CBCE"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\actual-film.webm",
+    "sha256": "F328A67E6FBD4063035195EE1D93D8FE1EAE04827F6B5ACA5FBD6D520E8C991A"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\actual-poster.png",
+    "sha256": "35A039E39D25B49C3B925720809B534F6F1825D5DCED4E74069DA566455C1B4B"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\candidate-local-arcs.png",
+    "sha256": "E1F2346FBBF2AFCA24E0F2A9BB257A6E6CABA3BC74C2373438AA36B82D93BB19"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\candidate-page.png",
+    "sha256": "B643C214BC13BD948C26A67ADC3034D20423E4BC5D7EF4C8585A2FAF985E6C1F"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\candidate-three.png",
+    "sha256": "AB2638D4DBB3C08269418A3524597CDDB7384D82E65004C9E2A682068CA5F50D"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\candidate-two.png",
+    "sha256": "058DBE33F71B2BA6A4CCF95BB153C7EE7E7E626069DA6AB93B9D2E0710288664"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\film-final.jpg",
+    "sha256": "AE076D74BCCB136CDDDFDE176561454D60A3C8EE2AB28193CB46D7AC952926EF"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\film-gather.jpg",
+    "sha256": "F41AF84399CEBB2A7F1A21BD8932B424913A9168EBC6EF537BE0619E6C259EF6"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\film-intro.jpg",
+    "sha256": "F1E2B31B57F7F279278969DC6723BF4F3C552A62AE376AC96FE80D6C27ECD7DF"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\film-pour.jpg",
+    "sha256": "0E7B91092E3E2F107768FDC5439D327BBFD379BAA85073C1EBE85307DAFD36EC"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\gift.html",
+    "sha256": "8C3AAA1DB3E183E2B8190EFDD1B6B83E8CBD91E66D59E237D959B596F18EDF47"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\media-validation.json",
+    "sha256": "5577740CB82E5587588AA6A5FF8E10C8501A443FCC452685A906BAED0808E43C"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\page-delivery.png",
+    "sha256": "0D275BFB4AB45767BDEE0B3713A6AC7C0156CB86342A618EC374B9BBE6ACB48C"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\page-preview.png",
+    "sha256": "C8A67A7308F2CC423623E02EF7A6E8259A7F166747BE2E190BB8BE263A459450"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\preservation.json",
+    "sha256": "F9912E33DC1310826CADF7A442463A1D1ACDE83420FF0E31E2EA7BA8C3ECAA31"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\preserved-v33.json",
+    "sha256": "2DD9D2D64460914C0B809FB419B83643CFE4F1D7E6BE361E2960320CA2136269"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\README.md",
+    "sha256": "AB04D1E4939B522FE9E46909643C81C177222F0CF9CA8C57A5C1ECA73C76250C"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\sample.sandmemory.json",
+    "sha256": "A4CC4533EF9268F36044CA126070FF7EA85E9B2B23097206775734F418C22626"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\SHA256SUMS",
+    "sha256": "15BD0F5514B56869990A697EAB949E77DFD270F2AFC0154ECB5599D2249EE7AF"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\assets\\keepsake-composition-v34\\validation.json",
+    "sha256": "96C9A2677D0BBF388B0C02919CED1422F3781672D21B8529CD25904AA23F947C"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\memories\\keepsake\\composition\\index.html",
+    "sha256": "1B1AFCD6D4212983F3DEF65A96B9DBC5C7158CD3DF1545A987EA25845EC43CD6"
+  },
+  {
+    "path": "F:\\codex_project\\1008_codex_project\\projects\\001-sandboard\\experiments\\sand-art\\memories\\keepsake\\composition\\README.md",
+    "sha256": "4AC9AFD1ECB4053235B41AAFAC745DD453E4EEDC7CF305E5AC73FD36AD68C563"
+  }
+]

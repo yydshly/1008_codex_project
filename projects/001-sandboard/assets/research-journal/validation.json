@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-10",
+  "route": "/1008_codex_project/001-sandboard/art/research/",
+  "coverage": {
+    "versions": 36,
+    "attempts": 27,
+    "groups": 5,
+    "videos": 11,
+    "selectedMedia": 76,
+    "individualRecordOverrides": 6
+  },
+  "preservation": {
+    "checkedFiles": 488,
+    "changed": 0,
+    "scope": "既有 sand-art/src 核心源码与项目 assets 文件；主页面与新增档案代码未纳入此保留基线"
+  },
+  "browser": {
+    "initialCards": 27,
+    "versionRows": 36,
+    "initialVideoSrc": null,
+    "photoFilterCards": 4,
+    "v23SearchCards": 1,
+    "emptySearchAndReset": true,
+    "dialogNextImageAndEscape": true,
+    "compareKeyboardValues": [
+      "0%",
+      "100%",
+      "1%"
+    ],
+    "navigationFromHandworkAndMemories": true,
+    "sourceMarkdownDownload": true,
+    "viewportTest": {
+      "width": 390,
+      "height": 844,
+      "initialClientWidth": 375,
+      "initialScrollWidth": 375,
+      "modalClientWidth": 390,
+      "modalScrollWidth": 390,
+      "dialogClientWidth": 353,
+      "dialogScrollWidth": 353,
+      "reset": true
+    },
+    "media": [
+      {
+        "version": "v36",
+        "duration": 45.625599,
+        "width": 1920,
+        "height": 1080,
+        "readyState": 4,
+        "played": true,
+        "error": null
+      },
+      {
+        "version": "v25",
+        "duration": 64.483199,
+        "width": 1491,
+        "height": 943,
+        "readyState": 4,
+        "played": true,
+        "error": null
+      },
+      {
+        "version": "v29",
+        "duration": 5.7021,
+        "width": 1491,
+        "readyState": 4,
+        "kind": "单笔片段",
+        "error": null
+      }
+    ],
+    "consoleWarningErrorCount": 0
+  },
+  "limits": [
+    "没有重新运行全部旧模拟或验证任意真实照片",
+    "手机检查为浏览器视口，不是真实移动硬件",
+    "没有重新全量解码全部历史影片",
+    "没有外部发布"
+  ]
+}

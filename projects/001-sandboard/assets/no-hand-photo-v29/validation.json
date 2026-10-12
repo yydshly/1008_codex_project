@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-10",
+  "url": "http://127.0.0.1:4174/1008_codex_project/001-sandboard/art/memories/hands/contact/",
+  "source": {
+    "samplePhotoSHA256": "099eb0ee64a490c46f17496c7c1d9bc37ec125f81947fe8bd92dbffa33a83979",
+    "v28ScoreSHA256": "24b71ceea6f62b6e90f6de49e884ceda0d9daf0d9b8c71f31b5017422b58e35a",
+    "originalScoreSHA256": "abaefbf0acb17709283988945cc3625391c50ce779abf4422dcb63fe4f57371d"
+  },
+  "generation": {
+    "file": "tests/sculpt-photo.test.ts",
+    "passed": 4,
+    "seconds": 72.92,
+    "finalReplayMatchesPlanner": true,
+    "pending": false
+  },
+  "regression": {
+    "files": 39,
+    "passed": 282,
+    "skipped": 4,
+    "seconds": 82.58,
+    "command": "npm.cmd test -- --maxWorkers=2"
+  },
+  "build": {
+    "passed": true,
+    "entries": 6,
+    "existingLargeChunkWarning": true
+  },
+  "rootCheck": {
+    "passed": true,
+    "projects": 12
+  },
+  "material": {
+    "sourceRGBA": "81ed8b02ae057fda77804c2bbcc31be4560eecaacd13594463cd85469fc22d96",
+    "originalScore": "abaefbf0acb17709283988945cc3625391c50ce779abf4422dcb63fe4f57371d",
+    "strokes": 1477,
+    "totalTicks": 83980,
+    "phaseStarts": [
+      0,
+      11968,
+      22016,
+      27520,
+      33956,
+      83920
+    ],
+    "meanPathPx": 19.897792823290416,
+    "minPathPx": 3.059999999999922,
+    "faceTargetError": 0.049845865178028116,
+    "previousFaceTargetError": 0.0672998568472808,
+    "handsTargetError": 0.052876532746989786,
+    "previousHandsTargetError": 0.06732324176944555,
+    "mass": 253630.17681997645,
+    "supplied": 274624.56321812765,
+    "removed": 20994.385530727945,
+    "collectedFrames": 29663,
+    "pourFrames": 47991,
+    "pending": false
+  },
+  "media": {
+    "actual-process.webm": {
+      "codec": "vp9",
+      "width": 1491,
+      "height": 943,
+      "seconds": 207.0275,
+      "frames": 6092,
+      "bytes": 64030703,
+      "fullDecodePassed": true
+    },
+    "actual-pour.webm": {
+      "codec": "vp9",
+      "width": 1491,
+      "height": 943,
+      "seconds": 5.6991,
+      "frames": 144,
+      "bytes": 3246774,
+      "fullDecodePassed": true,
+      "startTick": 24512,
+      "endTick": 24576,
+      "pace": 0.25
+    },
+    "actual-collect.webm": {
+      "codec": "vp9",
+      "width": 1491,
+      "height": 943,
+      "seconds": 5.7021,
+      "frames": 151,
+      "bytes": 3250838,
+      "fullDecodePassed": true,
+      "startTick": 22016,
+      "endTick": 22080,
+      "pace": 0.25,
+      "pendingAtEnd": false
+    }
+  },
+  "preservation": {
+    "v28PNGMatchesPrevious": true,
+    "sha256": "edf7c9f570e8a9b776ca82002b0445829da5b101f872715a6cca07b2b699b8f6",
+    "v28GuidedSeconds": 155.1,
+    "originalAndV27ScoresUnchanged": true
+  },
+  "browser": {
+    "detail": {
+      "start": 35880,
+      "end": 36600,
+      "seconds": 12,
+      "oldV28Tick": 40308,
+      "returnedTick": 36600,
+      "focus": "hands",
+      "light": "raking",
+      "view": "close"
+    },
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "buttonsHeight": 44,
+      "rangeHeight": 32,
+      "overrideReset": true
+    },
+    "oldModes": "芦苇末章定位、取沙与接触初态、返回照片核对；未重录旧手部全片",
+    "warningOrErrorLogs": [],
+    "final": {
+      "arrangement": "sculpt",
+      "tick": 83980,
+      "canvas": [
+        1491,
+        943
+      ],
+      "pace": "guided",
+      "view": "top",
+      "light": "transmitted"
+    }
+  },
+  "limits": [
+    "仅固定 AI 雨窗示例；任意照片仍走原流程",
+    "收沙是低幅运动学近似，无真实手碰撞或颗粒碰撞",
+    "细部有短笔修正；未达实拍或大师表演质量",
+    "未执行硬件 GPU、真实手机或线上发布验收"
+  ]
+}

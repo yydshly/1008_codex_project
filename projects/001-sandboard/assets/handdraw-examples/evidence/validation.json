@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-10",
+  "origin": "http://127.0.0.1:4274/1008_codex_project/001-sandboard/",
+  "exampleCount": 9,
+  "tools": [
+    "rake",
+    "pour",
+    "push",
+    "scrape",
+    "stamp",
+    "smooth",
+    "palm"
+  ],
+  "preservedPresets": [
+    "zen",
+    "moon"
+  ],
+  "actualPreviewLoaded": 9,
+  "rakeFilter": 2,
+  "pourFilter": 2,
+  "originalHandWorks": 1,
+  "originalPhotoWorks": 1,
+  "savedTrialHandWorks": 2,
+  "savedTrialPhotoWorks": 1,
+  "savedTrialReloads": true,
+  "originalDraftMatches": true,
+  "restoreSurvivesImmediateNavigation": true,
+  "savedCopyPreservedAfterRestore": true,
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "mobilePageWidth": 375,
+  "mobileCanvasWithinViewport": true,
+  "tests": {
+    "files": 4,
+    "passed": 14
+  },
+  "platformPages": 16,
+  "historicalMediaFilesUnchanged": 411
+}

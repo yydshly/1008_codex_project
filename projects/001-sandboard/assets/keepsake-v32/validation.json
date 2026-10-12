@@ -1,0 +1,40 @@
+{
+  "version": 32,
+  "productionBase": "/1008_codex_project/001-sandboard/art/",
+  "entries": 8,
+  "regression": {
+    "files": 42,
+    "passed": 300,
+    "skipped": 6,
+    "seconds": 89.34,
+    "timeoutMs": 30000
+  },
+  "finalFocusedProductTests": 6,
+  "browser": {
+    "photoFileChooserUpload": true,
+    "sampleSourceLabel": true,
+    "dragComposition": true,
+    "optionalHandleAndSaucer": true,
+    "emptyInputValidation": true,
+    "localDraftReload": true,
+    "projectExportImport": true,
+    "invalidProjectPreservesDraft": true,
+    "actualVideoReadyState": 4,
+    "actualVideoPlayingObserved": true,
+    "cancelKeepsPreviousVideo": true,
+    "cancelRestoresDeliverySummary": true,
+    "phone": {
+      "viewport": 390,
+      "client": 375,
+      "scroll": 375
+    },
+    "fileProtocolGiftPreview": "blocked by browser policy; no workaround attempted"
+  },
+  "limits": [
+    "Cup silhouette template only; manual composition required",
+    "Existing AI sample and fictional story used in verification",
+    "Arbitrary real photo art quality not verified",
+    "No audio, MP4, cloud sharing or payment",
+    "Video held in page memory; draft persists locally"
+  ]
+}

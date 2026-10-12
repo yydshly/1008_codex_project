@@ -1,0 +1,26 @@
+{
+  "originalDraft": {
+    "state": true,
+    "referenceState": true,
+    "settings": true,
+    "title": true,
+    "conversion": true,
+    "referenceImage": true
+  },
+  "trialRefresh": {
+    "state": false,
+    "referenceState": true,
+    "settings": true,
+    "title": true,
+    "conversion": true,
+    "referenceImage": true,
+    "sandThickness": true,
+    "maxChannelDifference": [
+      0.0,
+      0.00126606784760952,
+      4.329466303952752e-17,
+      7.797216873906142e-17
+    ],
+    "note": "静止后活动通道按原求解器衰减；沙厚度、参考沙床、工具和作品名称一致。"
+  }
+}

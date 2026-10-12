@@ -11,6 +11,7 @@
     "project:add": "node scripts/new-project.mjs",
     "index:build": "node scripts/project-index.mjs",
     "index:check": "node scripts/project-index.mjs --check",
+    "build:site": "node scripts/build-site.mjs",
     "check": "node scripts/project-index.mjs --check",
     "test": "node --test scripts/catalog.test.mjs"
   }
