@@ -2,7 +2,7 @@
 
 **Up 的核心能力，是把英语学习、AI 协作、真实项目和生活复盘组织成一套可以执行、保存证据、复测并持续调整的方法。**它通过中英双语网站、电子书和可复制工作纸发布内容。个人经历解释方法的来路，训练章节给出操作步骤，模板帮助读者把步骤用进自己的任务。
 
-[返回总索引](../../README.md) · [本地中文网页](http://127.0.0.1:4194/1008_codex_project/004-up-learning-guide/) · [原仓库](https://github.com/byoungd/up) · [上游在线版](https://byoungd.github.io/up/) · [完整逐页目录](sources/coverage.md) · [研究记录](notes.md)
+[在线完整理解](https://yydshly.github.io/1008_codex_project/004-up-learning-guide/) · [完整理解文档](UNDERSTANDING.md) · [返回总索引](../../README.md) · [本地中文网页](http://127.0.0.1:4194/1008_codex_project/004-up-learning-guide/) · [原仓库](https://github.com/byoungd/up) · [上游在线版](https://byoungd.github.io/up/) · [完整逐页目录](sources/coverage.md) · [研究记录](notes.md)
 
 ## 我们的完整理解
 
@@ -73,7 +73,7 @@
 
 ## 一图理解核心方向与价值观
 
-[网页阅读与保存原图](http://127.0.0.1:4194/1008_codex_project/004-up-learning-guide/#/map) · [原图](assets/up-core-map.png) · [文字版与生成记录](assets/up-core-map-prompt.md)
+[网页阅读与保存原图](https://yydshly.github.io/1008_codex_project/004-up-learning-guide/#/map) · [原图](assets/up-core-map.png) · [文字版与生成记录](assets/up-core-map-prompt.md)
 
 ![Up学习与成长行动图：真实任务与成长证据为核心，英语、AI项目和生活成长为能力范围，六步闭环连接真实、诚实、主体性、可持续和负责五项价值观](assets/up-core-map.png)
 
@@ -95,7 +95,7 @@ npm.cmd run check
 npm.cmd run preview
 ```
 
-生产产物为 `web/dist/`。已验证 `/1008_codex_project/004-up-learning-guide/` 子路径、深链接刷新与390px手机布局；当前提供本机预览，未发布在线站点。
+生产产物为 `web/dist/`。已验证 `/1008_codex_project/004-up-learning-guide/` 子路径、深链接刷新与390px手机布局；已通过GitHub Pages部署并核验公开HTTPS，在线入口为[Up完整理解](https://yydshly.github.io/1008_codex_project/004-up-learning-guide/)；本地预览继续可用。
 
 ## 阅读与维护
 

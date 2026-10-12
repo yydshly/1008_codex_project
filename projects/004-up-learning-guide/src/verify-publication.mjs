@@ -93,7 +93,6 @@ try{
  result.checks.noJavaScript=true;
  assert.deepEqual(result.errors,[]);
  result.passed=true;
- await fs.writeFile(path.join(project,'src',name+'-publication-verification.json'),JSON.stringify(result,null,2)+'\n');
+ await fs.writeFile(path.join(project,'src',name==='publication'?'publication-verification.json':name+'-publication-verification.json'),JSON.stringify(result,null,2)+'\n');
  console.log(JSON.stringify(result,null,2));
 }finally{await browser.close()}
-

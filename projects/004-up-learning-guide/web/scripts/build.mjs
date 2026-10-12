@@ -88,4 +88,8 @@ for (const file of ['README.md','UNDERSTANDING.md','SOURCES.md','notes.md']) awa
 await fs.mkdir(path.join(dist,'research/web'),{recursive:true});
 await fs.copyFile(path.join(web,'README.md'),path.join(dist,'research/web/README.md'));
 await fs.cp(path.join(project,'assets'),path.join(dist,'research/assets'),{recursive:true});
+await fs.mkdir(path.join(dist,'research/src'),{recursive:true});
+for(const file of ['local-publication-verification.json','publication-verification.json','public-entrance-verification.json']){
+  try{await fs.copyFile(path.join(project,'src',file),path.join(dist,'research/src',file));}catch(error){if(error.code!=='ENOENT')throw error;}
+}
 console.log(`网页已构建：${documents.length-1}篇专题、${content.pages.length}页目录、${worksheets.length}张工作纸、${content.counts.wordListEntries}个词条、${content.resources.length}个引用链接。`);

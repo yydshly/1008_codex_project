@@ -3,7 +3,7 @@
 <!-- UP_PUBLICATION:START -->
 ## Up 完整理解与学习知识地图（2026-10-12）
 
-004接入现有GitHub Pages Actions统一发布流程，与001、002、003和013一起构建；公开访问核验后再登记demo。完整理解提供十一项摘要、十个章节、八个待开发方向，七篇专题、97页目录、25张工作纸、392个分组词条与67个引用继续完整保留。
+004已通过GitHub Pages Actions部署，与001、002、003和013一起构建；公开HTTPS与真实浏览器核验通过后已登记[在线完整理解](https://yydshly.github.io/1008_codex_project/004-up-learning-guide/)和[一图阅读](https://yydshly.github.io/1008_codex_project/004-up-learning-guide/#/map)。完整理解提供十一项摘要、十个章节、八个待开发方向，七篇专题、97页目录、25张工作纸、392个分组词条与67个引用继续完整保留。
 
 沿用我们2026-10-09生成的2400×1600完整PNG，引导图SHA-256为68d76ca3f2c88580d5e5bd20c6cbf79ae344ce650663467bcac95d53925924b6，构建、聚合与浏览器下载检查原始字节一致。摘要覆盖能力、模块、方法与技术原理、本地实现、五项价值观、场景、复用价值、扩展方向、边界和来源许可；扩展为研究规划，网站提供静态阅读与资料，不部署模型或教学后端。
 
@@ -19,7 +19,7 @@ node scripts/validate-site.mjs
 
 Node.js22+，marked18.1.0为本项目独立构建依赖。独立产物web/dist/，聚合产物.cache/pages-site/004-up-learning-guide/；必须保留data、research、许可、PNG/SVG与完整理解Markdown。资源相对引用，hash路由支持专题和完整理解段落刷新。十一项摘要与十章正文进入静态HTML，JavaScript提供搜索、筛选和六步切换。
 
-本地真实浏览器已核验原图、15个资料入口、实际下载、搜索定位、深链接刷新、390/320px手机与无脚本阅读，无控制台异常。长表格最小宽度导致手机页面撑宽的问题已修复，表格在内容区域内滚动。见[本地核验记录](../projects/004-up-learning-guide/src/local-publication-verification.json)与[研究记录](../projects/004-up-learning-guide/notes.md)。
+本地真实浏览器已核验原图、15个资料入口、实际下载、搜索定位、深链接刷新、390/320px手机与无脚本阅读，无控制台异常。长表格最小宽度导致手机页面撑宽的问题已修复，表格在内容区域内滚动。见[本地核验记录](../projects/004-up-learning-guide/src/local-publication-verification.json)、[公开核验记录](../projects/004-up-learning-guide/src/publication-verification.json)与[研究记录](../projects/004-up-learning-guide/notes.md)。发布运行[38213482999](https://github.com/yydshly/1008_codex_project/actions/runs/38213482999)成功，公开页面、下载与PNG哈希均通过。
 
 固定上游35e2aa9ad3a076fe4e8405877cc560df2593838f；byoungd and contributors内容与本地改写CC BY-NC4.0，上游程序MIT，第三方素材保留独立来源。网页验证不等于上游完整出版构建或个人学习效果验证。
 <!-- UP_PUBLICATION:END -->

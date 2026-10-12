@@ -121,3 +121,11 @@ node scripts/qa-browser.mjs <已有Playwright包的package.json绝对路径>
 真实浏览器验证十一项摘要、十章正文、原图尺寸/哈希、十五资料入口、实际PNG下载、原图新标签、扩展正文检索、段落直接刷新、六步切换、目录与工作纸、390/320px手机导航以及无脚本阅读，结果见src/local-publication-verification.json。初查长表格min-width:420px导致手机展开正文后超宽；限定表格容器并在内部滚动后全部通过。真实截图在assets/publication/。
 
 公开发布使用现有GitHub Pages Actions工作流，首次部署和HTTPS核验结果后续追加；只有核验成功后登记在线demo。研究与上游commit保持2026-10-09基线，不声称运行上游完整站点/电子书构建或验证个人学习效果。
+
+### 公开部署与HTTPS核验
+
+完成公开部署的提交为8ac2fffa4151c9eb92410c652560d456e0757e6f，Actions运行38213482999的build与deploy均成功。地址为https://yydshly.github.io/1008_codex_project/004-up-learning-guide/，2026-10-12公开浏览器核验通过后登记demo；记录在src/publication-verification.json，真实截图为assets/publication/publication-desktop.png与publication-mobile.png。
+
+公开检查：十一项摘要、十章完整理解、七篇专题与来源页、97页目录、25张工作纸、392个分组词条、67个资源；十五个资料下载返回200。原PNG尺寸与SHA-256、实际下载文件字节一致；搜索定位、详情展开、段落刷新、六步切换、手机菜单、390/320px无横向溢出与无脚本阅读全部通过，无控制台错误。公开校验与本地出版验证分别记录，不替代学习效果或上游运行验证。
+
+首次提交c13fbe0误用了主工作区，带入了旧版Up和只在本地存在的005—012项目索引，CI因缺少这些目录失败。随后以8ac2fff新提交补齐完整整理并恢复仅含可用源码的公开索引，保留历史、不强推。其他本地研究目录与索引继续保留在主工作区，不作为本次网页发布范围。

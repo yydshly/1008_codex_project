@@ -45,7 +45,7 @@ npm.cmd run preview
 node scripts/qa-browser.mjs <Playwright包的package.json绝对路径>
 ```
 
-验证记录见[notes.md](../notes.md)。本轮已检查生产构建、子路径、交互、手机阅读与截图；没有发布在线站点。
+验证记录见[notes.md](../notes.md)。已通过GitHub Pages公开部署，核验HTTPS正文、原图字节、15个资料入口、搜索、刷新、下载、390/320px手机与无脚本阅读；[在线完整理解](https://yydshly.github.io/1008_codex_project/004-up-learning-guide/)，详见[公开浏览器记录](../src/publication-verification.json)。
 
 未来统一发布时，将完整 `dist/` 放入站点的 `004-up-learning-guide/` 子目录，含 `data/` 和 `research/`，详见[总仓库部署约定](../../../docs/DEPLOYMENT.md)。换子路径时无需重写页面资源或hash路由，但预览服务的 `--base` 应与检查路径一致。
 

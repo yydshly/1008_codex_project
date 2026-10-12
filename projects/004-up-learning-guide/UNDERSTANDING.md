@@ -146,4 +146,3 @@ AI可以解释、提问、反馈和辅助制作，但它的成品不能替代学
 上游内容与本地改写保留[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)和byoungd and contributors署名；上游代码另按[MIT](licenses/LICENSE-CODE.md)。上游MIT不会把正文变成可自由商用内容，也不自动决定本研究原创网页代码的许可。第三方素材按各自来源处理。
 
 本地网页的构建、检索、下载、图片字节、子路径和浏览器流程可以实际验证；这不等于已经运行上游完整出版构建、验证个人学习效果或部署模型服务。最新发布结果见[研究与部署记录](notes.md)。
-

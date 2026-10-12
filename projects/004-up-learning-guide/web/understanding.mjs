@@ -13,4 +13,3 @@ export function understandingHtml(data){
 export function staticOverview(data){
   return `<section class="intro"><div><div class="eyebrow">004 / 开放内容研究</div><h1>Up 的能力与<em>知识地图</em></h1><p class="lead">一套以真实任务、反馈和证据为核心的终身学习指南。<br>从英语训练到AI协作，从作品交付到生活复盘。</p></div><div class="intro-note"><span class="note-label">关于这个项目</span><strong>个人经历，让方法有来路。<br>行动与证据，让方法可检验。</strong>双语书稿、工作纸与出版代码帮助读者实践。</div></section>${understandingHtml(data)}<noscript><section class="prose"><h2>详细专题下载</h2><p>本页完整摘要与章节支持直接阅读。详细资料可以保存到自己的文件中。</p><ul>${data.guides.map(guide=>`<li><a href="./research/${escape(guide.file)}" download>${escape(guide.title)}</a></li>`).join('')}</ul></section></noscript>`;
 }
-

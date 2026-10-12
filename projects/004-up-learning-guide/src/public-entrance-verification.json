@@ -1,0 +1,35 @@
+{
+  "base": "https://yydshly.github.io/1008_codex_project/",
+  "checkedAt": "2026-10-12T06:45:30.602Z",
+  "records": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200
+    }
+  ],
+  "passed": true
+}
