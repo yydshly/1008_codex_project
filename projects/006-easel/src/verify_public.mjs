@@ -25,6 +25,10 @@ const remotePublication=JSON.parse(files['publication.json']);
 for(const key of ['summary','summaryItems','overviewItems','flow','scenarios','values','reuseRoutes','extensions'])assert.deepEqual(remotePublication[key],publication[key],key);
 assert.equal(remotePublication.meta.commit,publication.meta.commit);
 assert.equal(JSON.parse(files['capabilities.json']).items.length,114);
+const buildInfo=JSON.parse(files['build-info.json']);
+assert.match(buildInfo.resourceVersion,/^[0-9a-f]{16}$/);
+assert.ok(html.includes(`./app.js?v=${buildInfo.resourceVersion}`)&&html.includes(`./publication.css?v=${buildInfo.resourceVersion}`));
+assert.ok(files['app.js'].toString().includes(`const resourceVersion = '${buildInfo.resourceVersion}';`));
 assert.equal(createHash('sha256').update(files['capability-map.png']).digest('hex'),publication.meta.guide.sha256);
 const entrance=(await get('../')).toString('utf8');
 assert.ok(entrance.includes('id="easel"')&&entrance.includes('./006-easel/capability-map.png'));
@@ -32,7 +36,7 @@ for(const item of publication.overviewItems)assert.ok(entrance.includes(item.tit
 // 保留现有发布路径，防止聚合时遗漏其他项目。
 const preserved=await Promise.allSettled(['001-sandboard/','002-interview-guide/','003-pascal-editor/overview/','004-up-learning-guide/','005-threejs-game-skills/','013-aihot/'].map(relative=>get('../'+relative)));
 for(const result of preserved)if(result.status==='rejected')throw result.reason;
-const record={checkedAt:new Date().toISOString(),url:base.href,status:'passed',skills:114,guideSha256:publication.meta.guide.sha256,staticFullUnderstanding:true,existingProjectPathsPreserved:true,resources:checked.sort((a,b)=>a.url.localeCompare(b.url)),scope:'HTTPS资源与静态内容；真实浏览器交互核验另行记录。'};
+const record={checkedAt:new Date().toISOString(),url:base.href,status:'passed',resourceVersion:buildInfo.resourceVersion,skills:114,guideSha256:publication.meta.guide.sha256,staticFullUnderstanding:true,existingProjectPathsPreserved:true,resources:checked.sort((a,b)=>a.url.localeCompare(b.url)),scope:'HTTPS资源与静态内容；真实浏览器交互核验另行记录。'};
 const output=fileURLToPath(new URL('./public-http-checks.json',import.meta.url));
 await writeFile(output,JSON.stringify(record,null,2)+'\n');
 console.log(`公开HTTPS通过：${checked.length}个资源/入口、114技能、完整理解与原图哈希；记录 ${output}`);

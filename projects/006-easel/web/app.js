@@ -1,4 +1,5 @@
 import {renderUnderstanding,renderGuide,renderValuePage} from './research-view.mjs';
+const resourceVersion = ''; // 生产构建注入内容哈希，避免旧缓存混用。
 const $ = (selector, root = document) => root.querySelector(selector);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let facts, skills, verification, publication;
@@ -202,7 +203,7 @@ dialog.addEventListener('click',event=>{
 });
 $('.skip').addEventListener('click',event=>{event.preventDefault();main.focus();});
 try {
-  const responses=await Promise.all(['facts.json','capabilities.json','verification.json','publication.json'].map(x=>fetch('./'+x)));
+  const responses=await Promise.all(['facts.json','capabilities.json','verification.json','publication.json'].map(x=>fetch('./'+x+(resourceVersion?'?v='+resourceVersion:''))));
   if(responses.some(x=>!x.ok))throw new Error('研究资料加载失败');
   [facts,{items:skills},verification,publication]=await Promise.all(responses.map(x=>x.json()));
   window.addEventListener('hashchange',route);route();

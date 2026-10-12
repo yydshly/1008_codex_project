@@ -25,14 +25,20 @@ assert.equal(createHash('sha256').update(guide).digest('hex'),publication.meta.g
 assert.equal(guide.readUInt32BE(16),publication.meta.guide.width);assert.equal(guide.readUInt32BE(20),publication.meta.guide.height);
 for(const item of publication.flow)for(const id of item.skills)assert.ok(caps.items.some(x=>x.id===id),`流程引用的技能不存在: ${id}`);
 await rm(out,{recursive:true,force:true});await mkdir(out,{recursive:true});
-for(const file of ['style.css','publication.css','app.js','research-view.mjs','favicon.svg','capabilities.json','facts.json','verification.json','publication.json'])await copyFile(path.join(root,file),path.join(out,file));
+const runtimeFiles=['style.css','publication.css','app.js','research-view.mjs','favicon.svg','capabilities.json','facts.json','verification.json','publication.json'];
+const versionHash=createHash('sha256');
+for(const file of runtimeFiles){const bytes=await readFile(path.join(root,file));versionHash.update(file).update(bytes);await writeFile(path.join(out,file),bytes);}
+const resourceVersion=versionHash.digest('hex').slice(0,16);
+const application=(await readFile(path.join(root,'app.js'),'utf8')).replace("from './research-view.mjs'",`from './research-view.mjs?v=${resourceVersion}'`).replace("const resourceVersion = '';",`const resourceVersion = '${resourceVersion}';`);
+await writeFile(path.join(out,'app.js'),application);
 const template=await readFile(path.join(root,'index.html'),'utf8');
 assert.ok(template.includes('<!-- EASEL_STATIC:START -->'),'缺少静态理解构建标记');
-await writeFile(path.join(out,'index.html'),template.replace(/<!-- EASEL_STATIC:START -->[\s\S]*?<!-- EASEL_STATIC:END -->/,`<!-- EASEL_STATIC:START -->${renderStaticLanding(publication,facts)}<!-- EASEL_STATIC:END -->`));
+const html=template.replace(/<!-- EASEL_STATIC:START -->[\s\S]*?<!-- EASEL_STATIC:END -->/,`<!-- EASEL_STATIC:START -->${renderStaticLanding(publication,facts)}<!-- EASEL_STATIC:END -->`).replace(/((?:src|href)="\.\/(?:app\.js|style\.css|publication\.css|favicon\.svg))"/g,`$1?v=${resourceVersion}"`);
+await writeFile(path.join(out,'index.html'),html);
 await copyFile(path.join(root,'browser-checks.json'),path.join(out,'browser-checks.json'));
 await copyFile(path.join(root,'../src/LICENSE.upstream'),path.join(out,'LICENSE.upstream.txt'));
 await copyFile(path.join(root,'../README.md'),path.join(out,'research.md'));
 await copyFile(path.join(root,'../assets/capability-map.png'),path.join(out,'capability-map.png'));
 await copyFile(path.join(root,'../assets/capability-map-prompt.md'),path.join(out,'capability-map-prompt.md'));
-await writeFile(path.join(out,'build-info.json'),JSON.stringify({commit:facts.commit,skills:114,layers:facts.layers.map(x=>[x.id,x.count]),sources:27,summaryItems:12,overviewItems:6,flow:7,scenarios:6,values:4,reuseRoutes:4,extensions:8,guideSha256:publication.meta.guide.sha256,builtAt:new Date().toISOString()},null,2));
+await writeFile(path.join(out,'build-info.json'),JSON.stringify({commit:facts.commit,resourceVersion,skills:114,layers:facts.layers.map(x=>[x.id,x.count]),sources:27,summaryItems:12,overviewItems:6,flow:7,scenarios:6,values:4,reuseRoutes:4,extensions:8,guideSha256:publication.meta.guide.sha256,builtAt:new Date().toISOString()},null,2));
 console.log('构建通过：114 个技能、6 个层级、27 条来源路径，固定提交与离线核验一致。');

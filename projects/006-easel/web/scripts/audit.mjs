@@ -31,5 +31,8 @@ const catalog=JSON.parse(await readFile(path.resolve(root,'../../../projects.jso
 const project=catalog.projects.find(x=>x.id==='006');
 for(const field of ['summary','summaryItems','overviewItems'])assert.deepEqual(pub[field],project[field],`索引与发布资料${field}不一致`);
 for(const asset of ['app.js','research-view.mjs','style.css','publication.css','favicon.svg','facts.json','capabilities.json','verification.json','browser-checks.json','research.md','LICENSE.upstream.txt','capability-map-prompt.md'])await access(path.join(out,asset));
-for(const match of html.matchAll(/(?:src|href)="(\.\/[^"#]+)"/g))await access(path.resolve(out,match[1]));
+for(const match of html.matchAll(/(?:src|href)="(\.\/[^"#]+)"/g))await access(path.resolve(out,match[1].split('?')[0]));
+const info=await load('build-info.json');assert.match(info.resourceVersion,/^[0-9a-f]{16}$/);
+assert.ok(html.includes(`./publication.css?v=${info.resourceVersion}`)&&html.includes(`./app.js?v=${info.resourceVersion}`),'运行资源应随内容版本更新');
+const app=await readFile(path.join(out,'app.js'),'utf8');assert.ok(app.includes(`./research-view.mjs?v=${info.resourceVersion}`)&&app.includes(`const resourceVersion = '${info.resourceVersion}';`));
 console.log('Easel发布审计通过：12项摘要、6段图前介绍、7环节、8模块、114技能、6场景、4价值、4复用、8扩展，原图与资源完整。');
