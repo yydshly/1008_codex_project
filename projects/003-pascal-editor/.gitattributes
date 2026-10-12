@@ -1,0 +1,7 @@
+# Preserve exact upstream bytes recorded in the asset SHA-256 manifest.
+web/public/items/** -text
+web/public/material/** -text
+web/public/icons/** -text
+web/public/audios/** -text
+web/public/basis/** -text
+web/public/demos/upstream-demo_1.json -text

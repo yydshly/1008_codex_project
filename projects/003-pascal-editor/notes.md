@@ -186,6 +186,8 @@ KTX2 使用本项目 Three.js `0.186.0` 附带的 `basis_transcoder.js` 与 `bas
 
 GitHub Pages 接入现有发布工作流，完整复制本项目 `out/`，单独清洁安装和校验 Pascal 依赖。实际公开入口、Actions 结果、HTTP 与线上浏览器证据在首次发布成功后写入 `src/publication-verification.json` 并登记索引。
 
+发布提交核验发现根仓库的 SVG 换行规范会改变官方 Sofa 平面图的原始 CRLF 字节。子项目新增 `.gitattributes`，将原库素材目录与官方原始场景按原始字节保留；重新登记该文件，并核对 Git 对象与素材 manifest 一致，避免本地校验通过而 Linux 清洁检出失败。SHA-256 清单没有为了迁就换行转换而修改。
+
 ## 后续验证
 
 - 扩展真实触摸设备与其他浏览器体验，继续逐项覆盖尚未验证的建造工具和导出格式；当前基础展示和上述编辑/保存/放置流程已经完成。
