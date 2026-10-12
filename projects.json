@@ -622,7 +622,7 @@
       "cover": "projects/008-ghosttrack/assets/ghosttrack-overview.png",
       "coverAlt": "GhostTrack 完整总览图：封装层、四项能力及底层技术、输出边界、后续开发价值、架构、推进顺序和许可",
       "coverCaption": "沿用 2026-10-09 原创完整 2160×3853 总览图，原始 PNG 字节保持一致；基于固定提交 a5cb8ad 的源码研究，独立开发建议另标，不是实际查询结果。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
       "summaryItems": [
         {
           "title": "定位",

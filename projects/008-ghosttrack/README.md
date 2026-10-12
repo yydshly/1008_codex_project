@@ -2,7 +2,7 @@
 
 完整中文网页整理四项能力、八个分析模块、底层技术与数据来源、六类场景、六项开发价值、四条独立实现路线、八项扩展方向、结果边界及来源许可。沿用已有完整总览图，新增可缩放阅读与完整 Markdown / JSON 下载。
 
-[完整理解与十二项摘要](UNDERSTANDING.md) · [发布方式与核验](PUBLICATION.md)
+[在线完整研究](https://yydshly.github.io/1008_codex_project/008-ghosttrack/) · [可缩放一图阅读](https://yydshly.github.io/1008_codex_project/008-ghosttrack/map.html) · [完整理解与十二项摘要](UNDERSTANDING.md) · [发布方式与核验](PUBLICATION.md)
 
 [返回总索引](../../README.md) · [原仓库](https://github.com/HunxByts/GhostTrack) · [研究笔记](notes.md)
 
@@ -20,7 +20,7 @@
 | 上游许可证 | 固定提交未发现 `LICENSE` 文件，README 未声明标准许可证；源码头部有改写许可与署名要求 |
 | 改动范围 | 独立中文研究文档、原创静态网页与构建/预览脚本；未复制或修改上游程序、图片 |
 | 验证范围 | 固定源码审阅，以及本页的本地构建与交互；不代表原库外部接口和所有平台已实测可用 |
-| 在线发布 | 接入 GitHub Pages；首次发布后核验公开 HTTPS 再登记 demo，见 PUBLICATION.md |
+| 在线发布 | [完整研究](https://yydshly.github.io/1008_codex_project/008-ghosttrack/) · [缩放一图阅读](https://yydshly.github.io/1008_codex_project/008-ghosttrack/map.html)，公开核验通过 |
 
 ## 四项能力与对应原理
 
@@ -98,3 +98,5 @@ npm.cmd run preview
 ## 2026-10-12 完整整理与发布
 
 十二项摘要及六段图前介绍与根索引一致，详见 [完整理解](UNDERSTANDING.md)。新增内容区分原版功能、我们的研究网页交付与未来规划；本页没有新增真实查询服务。重新读取固定提交原始文件为315行，已校正函数源码行号，既有图不改动。完整发布和浏览器核验结果记录在本项目 src/ 与研究笔记。
+
+公开发布成功：[首次部署运行38232724055](https://github.com/yydshly/1008_codex_project/actions/runs/38232724055)。32个HTTPS入口/资源、原图下载SHA-256、桌面/手机与交互均通过，既有八项目入口保留；正式demo核验后登记。见[发布核验](src/publication-verification.json)、[HTTP记录](src/public-http-checks.json)与[浏览器记录](src/public-browser-checks.json)。

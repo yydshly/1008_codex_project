@@ -109,3 +109,6 @@ IP 在线接口的运行稳定性、具体号码元数据覆盖情况、各用�
 本地核验使用 Node.js22.15.0、系统 Chrome 与已有 Playwright。独立构建、内容审计、根 npm run check 和15项 npm test通过。统一构建首次因004本地缺少marked依赖失败；按其锁文件独立安装后重新聚合通过，003与001使用已有完整产物（--pack-only），005三款游戏重新独立构建。统一校验覆盖九项目、原图、下载与既有资源；CI发布会执行完整构建。
 
 真实浏览器核验四能力、键盘、刷新/后退、23个平台名称、原图尺寸、100%/适合宽度/滑杆与真实下载哈希、390/320手机、200%字号、无脚本正文；无脚本异常或外部查询请求。320px首屏来源摘要固定最小宽度导致溢出，已修正并复验。记录见src/local-browser-checks.json，实际截图在assets/publication/。
+
+
+首次 GitHub Pages 运行38232724055完成构建与部署，catalog运行38232724005也成功。随后32个公开HTTPS资源/入口核验通过，在线真实浏览器原图下载、缩放、能力/键盘/刷新/后退、390/320px、200%字号与无脚本检查通过，无脚本错误和外部查询请求。核验后登记demo，结果见src/publication-verification.json、public-http-checks.json、public-browser-checks.json。

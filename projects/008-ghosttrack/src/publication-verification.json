@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-12T09:59:03.422Z",
+  "publishedUrl": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+  "mapUrl": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/map.html",
+  "sourceCommit": "081befe91e5386b33418612f76868d2f1d480798",
+  "researchCommit": "a5cb8ad4c08acd803f166fb067b7dac724d6cb3d",
+  "deployment": {
+    "id": 38232724055,
+    "url": "https://github.com/yydshly/1008_codex_project/actions/runs/38232724055",
+    "status": "completed",
+    "conclusion": "success",
+    "fullIndependentBuild": true
+  },
+  "catalogCi": {
+    "id": 38232724005,
+    "conclusion": "success"
+  },
+  "scope": {
+    "summaryItems": 12,
+    "overviewItems": 6,
+    "capabilities": 4,
+    "modules": 8,
+    "scenarios": 6,
+    "values": 6,
+    "reuseRoutes": 4,
+    "roadmapSteps": 3,
+    "extensions": 8,
+    "realQueryService": false
+  },
+  "guide": {
+    "file": "ghosttrack-overview.png",
+    "width": 2160,
+    "height": 3853,
+    "sha256": "e740c55e3b86231aa15e1bd31356c6e593723f6be287bbf37f4c51922d61283c"
+  },
+  "http": {
+    "passed": true,
+    "resources": 32,
+    "record": "public-http-checks.json"
+  },
+  "browser": {
+    "passed": true,
+    "record": "public-browser-checks.json",
+    "checks": [
+      "12摘要、8模块、8扩展、原图尺寸、4能力切换、键盘、深链接刷新、后退、平台明细",
+      "缩放100%/适合宽度/滑杆、横向滚动与真实PNG下载SHA-256",
+      "390/320px手机正文、能力切换、图页缩放与无外部横向溢出",
+      "200%字号布局",
+      "关闭JavaScript仍显示四项能力及完整正文"
+    ]
+  },
+  "limitations": [
+    "未运行上游真实查询或逐个平台实测",
+    "后端、并发、缓存等扩展为规划",
+    "上游没有标准LICENSE；未复制上游程序或素材"
+  ],
+  "unrelatedProjectsPreserved": true
+}

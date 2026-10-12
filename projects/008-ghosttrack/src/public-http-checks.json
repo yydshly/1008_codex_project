@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-12T09:57:26.430Z",
+  "base": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+  "passed": true,
+  "checks": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+      "status": 200,
+      "bytes": 50545,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/map.html",
+      "status": 200,
+      "bytes": 1413,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/map.js",
+      "status": 200,
+      "bytes": 872,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/map.css",
+      "status": 200,
+      "bytes": 1027,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/styles.css",
+      "status": 200,
+      "bytes": 17344,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/app.js",
+      "status": 200,
+      "bytes": 1480,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/publication.json",
+      "status": 200,
+      "bytes": 30488,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/research.md",
+      "status": 200,
+      "bytes": 8707,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/understanding.md",
+      "status": 200,
+      "bytes": 21490,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/README.md",
+      "status": 200,
+      "bytes": 8707,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/UNDERSTANDING.md",
+      "status": 200,
+      "bytes": 21490,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/PUBLICATION.md",
+      "status": 200,
+      "bytes": 2142,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/notes.md",
+      "status": 200,
+      "bytes": 9467,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/ghosttrack-overview.png",
+      "status": 200,
+      "bytes": 968299,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/ghosttrack-overview.html",
+      "status": 200,
+      "bytes": 15511,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/ghosttrack-overview-content.md",
+      "status": 200,
+      "bytes": 4740,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/ghosttrack-overview-prompt.txt",
+      "status": 200,
+      "bytes": 5945,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/README.md",
+      "status": 200,
+      "bytes": 1754,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/cover.png",
+      "status": 200,
+      "bytes": 137265,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/publication/desktop.png",
+      "status": 200,
+      "bytes": 146177,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/assets/publication/mobile.png",
+      "status": 200,
+      "bytes": 50318,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/styles.css?v=12f36201443b",
+      "status": 200,
+      "bytes": 17344,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/app.js?v=12f36201443b",
+      "status": 200,
+      "bytes": 1480,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/",
+      "status": 200,
+      "bytes": 70656,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200,
+      "bytes": 460,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200,
+      "bytes": 5201,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/",
+      "status": 200,
+      "bytes": 5635,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200,
+      "bytes": 26383,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200,
+      "bytes": 35823,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": 200,
+      "bytes": 33508,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+      "status": 200,
+      "bytes": 57027,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200,
+      "bytes": 120516,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "originalGuide": {
+    "width": 2160,
+    "height": 3853,
+    "sha256": "e740c55e3b86231aa15e1bd31356c6e593723f6be287bbf37f4c51922d61283c"
+  },
+  "summaryItems": 12,
+  "preservedExistingProjects": 8
+}

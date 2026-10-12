@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-12T09:56:54.547Z",
+  "base": "https://yydshly.github.io/1008_codex_project/008-ghosttrack/",
+  "scope": "研究网页交付；不测试真实查询",
+  "checks": [
+    "12摘要、8模块、8扩展、原图尺寸、4能力切换、键盘、深链接刷新、后退、平台明细",
+    "缩放100%/适合宽度/滑杆、横向滚动与真实PNG下载SHA-256",
+    "390/320px手机正文、能力切换、图页缩放与无外部横向溢出",
+    "200%字号布局",
+    "关闭JavaScript仍显示四项能力及完整正文"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "passed": true
+}

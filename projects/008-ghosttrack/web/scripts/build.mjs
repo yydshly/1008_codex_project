@@ -1,5 +1,5 @@
 // 本项目原创、零第三方依赖：将研究数据生成静态 HTML，保留子路径兼容性。
-import { copyFile, cp, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { meta, capabilities, platforms, sources } from '../content.js';
@@ -38,4 +38,6 @@ const data = { meta, ...publication, capabilities, platforms, sources };
 await writeFile(path.join(output,'publication.json'),JSON.stringify(data,null,2)+'\n');
 await copyFile(path.join(project,'UNDERSTANDING.md'),path.join(output,'understanding.md'));
 for(const file of ['README.md','UNDERSTANDING.md','PUBLICATION.md']) await copyFile(path.join(project,file),path.join(output,file));
+await mkdir(path.join(output,'src'),{recursive:true});
+for(const file of await readdir(path.join(project,'src'))) if(file.endsWith('.json')) await copyFile(path.join(project,'src',file),path.join(output,'src',file));
 console.log(`GhostTrack 研究网页已构建：${output}；4 项能力，${platforms.length} 个配置平台，${sources.length} 项来源。`);
