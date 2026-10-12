@@ -1,0 +1,14 @@
+{
+  "name": "interview-guide-knowledge-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "固定上游版本的中文编程面试知识汇总网页。",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "audit": "node scripts/audit-content.mjs --require-enrichment",
+    "dev": "node scripts/serve.mjs --port 4184",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dir dist --port 4184"
+  }
+}

@@ -46,6 +46,55 @@
         }
       ],
       "coverFull": "projects/001-sandboard/assets/understanding/overview.png"
+    },
+    {
+      "id": "002",
+      "slug": "interview-guide",
+      "name": "编程面试知识指南",
+      "summary": "以50篇原文、209个资料入口构建中文面试知识地图，说明九类模块、静态出版与知识组织原理、学习价值和扩展方向；新增113节讲解、38个示例和100条答法，保留固定来源与逐主题审计。",
+      "upstream": "https://github.com/DevCaress/guia-entrevistas-de-programacion",
+      "status": "已完成",
+      "tags": [
+        "面试准备",
+        "中文知识汇总",
+        "学习路线",
+        "静态网页"
+      ],
+      "cover": "projects/002-interview-guide/assets/repository-map.png",
+      "coverAlt": "编程面试指南完整引导图：三类核心能力、九类五十个主题、学习方式、本地中文增强与外部平台边界",
+      "coverCaption": "使用我们2026-10-08生成的完整内容总览图，引导阅读原库能力与知识模块；研究说明进一步解释原理、价值和扩展方向，图中区分原库、本地新增与外部服务。",
+      "demo": "",
+      "summaryItems": [
+        {
+          "title": "能力",
+          "text": "面试复习与资源导航：50篇原文、209个资料入口，含11篇教程与39篇导航。"
+        },
+        {
+          "title": "模块",
+          "text": "工程、算法、语言框架、架构、系统设计、数据访问、交付、面试与AI九个方向。"
+        },
+        {
+          "title": "原理",
+          "text": "Astro将校验过的MDX静态出版；本地通过固定快照、主题关联、全文检索和覆盖审计组织知识。"
+        },
+        {
+          "title": "增强",
+          "text": "113节中文讲解、38个示例、100个误区与100条答法；检索筛选、三条路线与完整引导图。"
+        },
+        {
+          "title": "价值",
+          "text": "查漏复习、组织面试表达、对照技术栈，也可作为团队培训和可追溯知识库的起点。"
+        },
+        {
+          "title": "方向",
+          "text": "学习进度、错题与间隔复习、上游差异和外链监测；可选AI问答需提供出处与验证。"
+        },
+        {
+          "title": "边界",
+          "text": "第三方判题、算法动画与AI/MCP仅为资料入口；本站无代码运行、判题或模拟面试服务。"
+        }
+      ],
+      "coverFull": "projects/002-interview-guide/assets/repository-map.png"
     }
   ]
 }

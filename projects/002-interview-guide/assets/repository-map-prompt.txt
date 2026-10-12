@@ -1,0 +1,120 @@
+编程面试指南内容总览图 — 生成记录
+日期：2026-10-08
+生成方式：内置 image_gen 工具；初次生成后使用相同工具作定点修正。
+输出：repository-map.png
+原文基线：fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed
+内容依据：../src/upstream-guide.json、../web/content.js 与项目 README。
+独立内容图，非真实网页截图；9 分类是本地中文重组。
+
+初次生成提示词：
+Use case: infographic-diagram
+Create ONE polished, high-resolution Chinese educational infographic, portrait 3:4 approximately 2400×3200, for a GitHub repository knowledge summary. This is a final information poster, not a screenshot, mockup, or photograph. All requested Chinese text must be accurate, legible, and spelled verbatim. Use generous margins, clear typographic hierarchy, excellent dark-text contrast, thin dividers, understated line icons, ivory paper background, deep forest green headings, and a few muted teal/ochre accents. Attractive editorial knowledge-map layout, no decorative characters, no fake logos, no watermark. Allocate most of the image to nine content panels; make technical text easily readable. Avoid microtype. Do not omit any of the 50 topic names listed below.
+
+Composition, top to bottom:
+1. Header and positioning statement.
+2. Three compact capability columns, then an original-repository statistics row.
+3. A large 3×3 grid of nine numbered knowledge panels with topic counts. Each panel title is bold. Split long lists into short readable lines. Each topic named below is an individual original source page; exactly 50 pages total.
+4. Small practical study flow.
+5. A visually distinct full-width green-tinted section explicitly labelled as LOCAL enhancement, so these added features cannot be mistaken for upstream functionality.
+6. Source/version and a small, readable scope note.
+
+EXACT TEXT TO INCLUDE:
+Header:
+"编程面试指南"
+"一张图看懂：能力与内容"
+"DevCaress / guia-entrevistas-de-programacion"
+Positioning:
+"西班牙语为主的开源面试学习指南与资源导航站"
+"帮助梳理知识、理解概念、按技术栈复习并找到进一步学习的资料。"
+
+Capability headings and captions:
+"系统复习" / "按主题建立面试知识清单"
+"教程讲解" / "学习工程原则、语言机制与代码示例"
+"资源导航" / "连接文档、题库、算法可视化与技术文章"
+
+Statistics row:
+"原库内容"
+"50 篇原文"
+"11 篇详细教程 + 39 篇资源或问题导航"
+"209 个去重资源链接"
+Grid section heading:
+"包含哪些内容？"
+Grid subheading:
+"以下按本地中文整理的 9 个方向归类，共 50 个主题"
+
+Nine panels, place in this exact reading order:
+"01 工程原则 · 9"
+"整洁架构与依赖规则 · 整洁代码"
+"DRY · GRASP · KISS · 迪米特法则"
+"SOLID 五原则 · YAGNI · 设计模式"
+
+"02 算法与数据结构 · 5"
+"算法实现 · 复杂度与 Big-O"
+"数据结构 · 算法练习资源"
+"算法可视化资源"
+
+"03 语言与框架 · 12"
+"C++ · Java · JavaScript · TypeScript"
+"Python · PHP · Dart"
+"Angular · React · Vue"
+"Django · Flutter"
+
+"04 软件架构 · 9"
+"软件架构总览 · 后端架构 · 前端架构"
+"整洁架构实践：Express · Java · PHP"
+"Python · React · Vue"
+
+"05 系统设计 · 1"
+"系统设计面试"
+"通过问题与资料入口组织复习"
+
+"06 数据库与数据访问 · 2"
+"数据库基础"
+"ORM 与数据访问"
+
+"07 协作与交付 · 4"
+"持续集成与交付 · 容器与编排"
+"Git 与版本控制 · Git 协作流程"
+
+"08 面试专题 · 7"
+"面试资源总索引 · 前端复习 · 后端复习"
+"JavaScript 面试 · 原型链"
+"call / apply / bind · JavaScript 对象创建"
+
+"09 开发者 AI · 1"
+"开发者 AI 资源"
+"AI 工具与 MCP 学习入口"
+
+Study flow:
+"如何使用"
+"基础复习 → 按岗位与技术栈深入 → 跳转资料练习 → 准备面试表达"
+
+Local enhancement section, with a distinct label:
+"本地中文增强版 · 独立新增"
+"113 节讲解 · 38 个示例 · 100 个误区 · 100 条参考答法"
+"全文检索 · 标签筛选 · 3 条学习路线 · 逐主题覆盖核对"
+"这些学习辅助功能由本地子项目新增。"
+
+Footer:
+"来源：github.com/DevCaress/guia-entrevistas-de-programacion"
+"固定版本：fb5f7af · 核对日期：2026-10-08 · 上游许可：MIT"
+"能力边界：练习、判题、算法动画与 AI 服务由外部平台提供。"
+
+Important accuracy constraints:
+- The nine-category organization is local Chinese regrouping, not a claim about upstream categories.
+- 209 includes both original metadata links and original body links after URL deduplication.
+- Do not depict an AI chatbot, a running MCP server, online code evaluation, or algorithm animations as built-in repository functions.
+- Do not label the local 113/38/100/100 or 3 study routes as original repository features.
+- Every panel count must be correct and sum to 50.
+- Preserve technical capitalization, C++, Big-O, ORM, DRY, GRASP, KISS, SOLID, YAGNI, JavaScript, TypeScript, MCP.
+- Render only one image, with all content visibly organized and no text clipping.
+
+最终定点修正提示词：
+Edit this existing infographic with minimal precise changes. Keep all existing correct Chinese and English content, layout, typography, colors, illustrations, 50-topic grid, original statistics, local-enhancement strip and provenance exactly as they are. Do not redesign or regenerate the content. Preserve high resolution and make text legible.
+
+Make ONLY these three targeted changes:
+1. In the second grid panel numbered "02", ensure its full heading is visibly and exactly "算法与数据结构 · 5". The current topic-count number 5 is missing/crowded out. Remove the small network icon in that panel's upper-right corner and use that space for the full heading, or put the small label "5 个主题" visibly below its heading. Do not change its 5 topic lines. Every other category count must remain as before.
+2. Remove the small English decorative slogan "Better Questions A Brighter You" beside the top-right book illustration. Keep the illustration itself.
+3. Remove the handwritten decorative Chinese slogan at the bottom-right corner, below the leaf. Keep the repository source, fixed version, date, MIT label and ability-boundary note.
+
+All other text and content must stay exactly unchanged. Return ONE complete corrected infographic, no cropping, no new content, no watermarks.

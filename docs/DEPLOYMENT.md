@@ -1,4 +1,35 @@
-# 多 Web 演示部署规划
+# 多 Web 演示部署与记录
+
+<!-- INTERVIEW_GUIDE_PUBLICATION:START -->
+## 编程面试知识指南公开发布（2026-10-12）
+
+已接入 GitHub Pages 自定义 Actions 工作流并通过本地生产子路径核验。公开部署完成后再登记正式 HTTPS 地址；此阶段索引 demo 保持为空。
+
+- 默认理解总览说明源库能力、九类模块、静态内容出版原理、学习与团队使用价值、扩展方向及能力边界；知识索引、学习路线、资料与覆盖页继续可用。
+- 复用我们生成的完整 1086 × 1448 PNG 引导图，原文件与网页副本逐字节一致；首页、理解页、原图查看与下载均保留全部画面。
+- 固定研究提交包含 50 篇 MDX、11 篇教程与 39 篇导航。保留 209 个去重资源入口，新增 113 节中文讲解、38 个示例、100 个误区与 100 条答法；不是在线判题或代码执行服务。
+- 根构建显式只发布 001 与 002，将完整 002 web/dist/ 复制到 .cache/pages-site/002-interview-guide/，包含所有模块、覆盖报告、PNG 与 MIT 许可；保留 Sandboard 的十六功能入口与媒体。
+- 002 独立使用 Node.js 内置模块，无第三方构建依赖、服务端或 API 密钥。相对资源与 Hash 路由支持项目子路径、直接主题链接和刷新。
+- 本地聚合构建、独立严格审计、根索引检查、13 项索引测试通过；真实浏览器检查理解页、检索、SOLID 深链、答法、覆盖页和 320/390 px 手机菜单，无横向溢出及控制台错误。
+
+复现发布构建（仓库根目录，Node.js 22.12+）：
+
+~~~powershell
+npm.cmd ci --prefix projects/001-sandboard/web
+npm.cmd ci --prefix projects/001-sandboard/experiments/sand-art
+npm.cmd ci --prefix projects/002-interview-guide/web
+npm.cmd run check
+npm.cmd test
+npm.cmd run build:site
+node scripts/validate-site.mjs
+$aggregateSite = (Resolve-Path .cache/pages-site).Path
+node projects/002-interview-guide/web/scripts/serve.mjs --dir $aggregateSite --port 4202 --base /1008_codex_project/
+~~~
+
+聚合预览使用已解析的绝对目录；独立预览可使用 --dir dist --base /1008_codex_project/002-interview-guide/。001 额外媒体验证由 Actions 中的 validate-platform.mjs 和 validate-research.mjs --built 执行。
+
+未来可增加学习进度与错题、间隔复习、上游差异与外链监测；AI 问答属于待开发方向，应先设计来源引用与验证。当前站点只提供静态阅读和资料导航。
+<!-- INTERVIEW_GUIDE_PUBLICATION:END -->
 
 <!-- SANDBOARD_PUBLICATION:START -->
 ## Sandboard 首次公开发布（2026-10-12）
@@ -30,7 +61,7 @@ node projects/001-sandboard/experiments/sand-art/scripts/validate-research.mjs -
 参考：[GitHub Pages 自定义工作流官方说明](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
 <!-- SANDBOARD_PUBLICATION:END -->
 
-当前初始化只预留项目的 `web/` 目录和索引中的 `demo` 字段，尚未配置或发布 GitHub Pages，也没有可用的在线演示地址。第一个 Web 项目完成构建和验证后，再添加统一发布流程。
+以下为仓库初始化时的部署规划与历史说明；实际已发布项目及当前构建方式以上方发布记录为准。
 
 ## 一个站点，多个项目路径
 

@@ -1,25 +1,46 @@
 // Aggregate independently built projects; the root has no frontend dependencies.
-import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { access, cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { ROOT, readCatalog, validateCatalog, projectDirectory } from './catalog.mjs';
 
-const projects = validateCatalog(readCatalog());
+// Publication is an explicit allowlist. Local research projects must not become
+// public merely because they are registered in projects.json.
+const publication = [{ id: '001', slug: 'sandboard' }, { id: '002', slug: 'interview-guide' }];
+const catalog = readCatalog();
+if (!Array.isArray(catalog.projects)) throw new Error('发布清单缺少 projects 数组。');
+const selected = publication.map(({ id, slug }) => {
+  const matches = catalog.projects.filter(project => project.id === id && project.slug === slug);
+  if (matches.length !== 1) throw new Error(`发布清单需要唯一的 ${id} ${slug}。`);
+  return matches[0];
+});
+const projects = validateCatalog({ schemaVersion: catalog.schemaVersion, projects: selected }, ROOT, { requireFiles: false });
+for (const published of projects) {
+  const directory = path.join(ROOT, projectDirectory(published));
+  await access(path.join(directory, 'README.md'));
+  await access(path.join(directory, 'web'));
+}
 const project = projects.find(project => project.id === '001' && project.slug === 'sandboard');
-if (!project) throw new Error('发布清单缺少 001 Sandboard。');
+const interview = projects.find(project => project.id === '002' && project.slug === 'interview-guide');
 const directory = projectDirectory(project);
 const app = path.join(ROOT, directory, 'experiments/sand-art');
-await new Promise((resolve, reject) => {
-  const script = path.join(app, 'scripts/build-platform.mjs');
-  const child = spawn(process.execPath, [script, ...(process.argv.includes('--pack-only') ? ['--pack-only'] : [])], { stdio: 'inherit', windowsHide: true });
-  child.on('error', reject);
-  child.on('exit', code => code === 0 ? resolve() : reject(new Error(`子项目构建失败 (${code})`)));
-});
+const interviewDirectory = projectDirectory(interview);
+const interviewWeb = path.join(ROOT, interviewDirectory, 'web');
+async function build(script, label, args = []) {
+  await new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, [script, ...args], { stdio: 'inherit', windowsHide: true });
+    child.on('error', reject);
+    child.on('exit', code => code === 0 ? resolve() : reject(new Error(`${label}构建失败 (${code})`)));
+  });
+}
+await build(path.join(app, 'scripts/build-platform.mjs'), '001 Sandboard', process.argv.includes('--pack-only') ? ['--pack-only'] : []);
+await build(path.join(interviewWeb, 'scripts/build.mjs'), '002 编程面试知识指南');
 const site = path.resolve(ROOT, '.cache/pages-site');
 if (path.dirname(site) !== path.resolve(ROOT, '.cache') || path.basename(site) !== 'pages-site') throw new Error('发布目录越界。');
 await rm(site, { recursive: true, force: true });
 await mkdir(path.join(site, 'assets'), { recursive: true });
 await cp(path.join(app, '.cache/platform-site'), path.join(site, '001-sandboard'), { recursive: true });
+await cp(path.join(interviewWeb, 'dist'), path.join(site, '002-interview-guide'), { recursive: true });
 // README uses the guide cover; the website keeps its original demo figure.
 const original = {
   image: 'assets/original-fine-v2.jpg',
@@ -31,15 +52,37 @@ await cp(path.join(ROOT, directory, 'assets/understanding/preview.jpg'), path.jo
 const research = JSON.parse(await readFile(path.join(ROOT, directory, 'assets/understanding/publication.json'), 'utf8'));
 const escape = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const repository = 'https://github.com/yydshly/1008_codex_project';
-const summary = project.summaryItems
-  ? project.summaryItems.map(item => `<strong>${escape(item.title)}</strong>：${escape(item.text)}`).join('<br>')
-  : escape(project.summary);
+const summary = published => published.summaryItems
+  ? published.summaryItems.map(item => `<strong>${escape(item.title)}</strong>：${escape(item.text)}`).join('<br>')
+  : escape(published.summary);
 const entrance = './001-sandboard/';
+const interviewEntrance = './002-interview-guide/';
+const interviewMap = `${interviewEntrance}assets/repository-map.png`;
+const mapBytes = await readFile(path.join(site, '002-interview-guide/assets/repository-map.png'));
+if (!mapBytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) throw new Error('002 完整引导图必须是有效 PNG。');
+const interviewReport = JSON.parse(await readFile(path.join(site, '002-interview-guide/coverage.json'), 'utf8'));
+const mapWidth = mapBytes.readUInt32BE(16);
+const mapHeight = mapBytes.readUInt32BE(20);
+const projectRows = projects.map(published => {
+  const upstreamName = new URL(published.upstream).pathname.split('/').filter(Boolean).at(-1);
+  const local = `./${published.id}-${published.slug}/`;
+  return `<tr><td>${escape(published.id)}<br><a href="${repository}/blob/main/${projectDirectory(published)}/README.md">${escape(published.name)}</a></td><td><a href="${escape(published.upstream)}">${escape(upstreamName)}</a></td><td class="summary">${summary(published)}</td><td><a href="${local}">在线体验 ↗</a></td></tr>`;
+}).join('');
 const links = research.entries.map(entry => `<a class="entry" href="${entrance}${escape(entry.path)}"><strong>${escape(entry.label)} ↗</strong><span>${escape(entry.note)}</span></a>`).join('');
 const sections = research.sections.map((section, index) => `<article><span class="number">0${index + 1}</span><h2>${escape(section.title)}</h2><p>${escape(section.text)}</p></article>`).join('');
-const html = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escape(project.summary)}"><title>Sandboard · 沙画研究与产品探索</title><style>
-:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#141310;color:#ece5d7}*{box-sizing:border-box}body{margin:0}main{max-width:1200px;margin:auto;padding:36px 28px 70px}a{color:#f0c37d;text-decoration:none}a:hover{text-decoration:underline}nav{display:flex;gap:20px;justify-content:space-between;font-size:14px;border-bottom:1px solid #393328;padding-bottom:22px}.eyebrow{color:#cfaa72;font-size:13px;letter-spacing:.16em;margin-top:50px}h1{font-size:clamp(32px,5vw,58px);line-height:1.2;max-width:850px;margin:20px 0}p{line-height:1.9;color:#c9c0ae}.lead{max-width:900px;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 40px}.button{padding:13px 18px;border:1px solid #807052;border-radius:6px}.button.primary{background:#e1b673;color:#201a11;border-color:#e1b673}.table-wrap{overflow:auto;border:1px solid #454033;border-radius:8px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.8}th,td{text-align:left;padding:16px;vertical-align:top;border-bottom:1px solid #393328}th{color:#b5a787;background:#211e18}td.summary{min-width:310px}.visual{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin:35px 0}figure{margin:0;border:1px solid #393328;padding:12px;border-radius:8px;background:#1b1915}figure img{display:block;width:100%;height:auto;border-radius:4px}figcaption{color:#a89d89;line-height:1.8;font-size:13px;margin-top:12px}.guide-frame{display:block;max-height:490px;overflow:hidden;border-radius:4px}.guide-frame img{width:100%;height:auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.entry{display:flex;flex-direction:column;gap:12px;border:1px solid #494033;border-radius:8px;padding:20px;background:#201c16}.entry span{font-size:13px;line-height:1.7;color:#b6aa97}.number{font-size:13px;color:#cba972}article{border-top:1px solid #393328;padding:25px 0 13px;margin-top:24px}article h2{font-size:23px;margin:12px 0}footer{border-top:1px solid #393328;margin-top:40px;padding-top:24px;color:#958b79;font-size:13px;line-height:1.9}@media(max-width:700px){main{padding:24px 17px 45px}.visual,.grid{grid-template-columns:1fr}.eyebrow{margin-top:35px}.lead{font-size:16px}.guide-frame{max-height:420px}nav{font-size:12px;gap:10px}}
-</style></head><body><main><nav><span>GitHub 项目研究集 / 001</span><a href="${repository}">仓库与研究文档 ↗</a></nav><div class="eyebrow">WEBGPU · MATERIAL · SAND ART</div><h1>${escape(research.title)}</h1><p class="lead">${escape(research.intro)}</p><div class="actions"><a class="button primary" href="${entrance}art/home/">进入光阴沙画平台 ↗</a><a class="button" href="${entrance}art/research/#overview">放大阅读完整总览图</a><a class="button" href="${escape(project.upstream)}">源库 Sandboard</a></div><div class="table-wrap"><table><thead><tr><th>编号 / 研究</th><th>源库</th><th>摘要</th><th>Web 演示</th></tr></thead><tbody><tr><td>001<br><a href="${repository}/blob/main/${directory}/README.md">${escape(project.name)}</a></td><td><a href="${escape(project.upstream)}">Sandboard</a></td><td class="summary">${summary}</td><td><a href="${entrance}">打开平台</a></td></tr></tbody></table></div><div class="visual"><figure><a href="${entrance}original/"><img src="./assets/original.jpg" alt="${escape(original.alt)}"></a><figcaption>${escape(original.caption)}<br><a href="${entrance}original/">操作 Sandboard 原版效果 ↗</a></figcaption></figure><figure><a class="guide-frame" href="${entrance}art/research/#overview"><img src="./assets/understanding.jpg" alt="Sandboard 能力、原理、输入输出、历史探索与七类产品方向的完整总览图"></a><figcaption>${escape(research.guideCaption)}<br><a href="${entrance}art/research/#overview">展开全部七个章节与高清图 ↗</a></figcaption></figure></div><h2>先看效果，再看研究</h2><div class="grid">${links}</div>${sections}<footer>研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">来源、许可与改动范围</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer></main></body></html>`;
+const html = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${escape(projects.map(published => published.summary).join(' '))}"><title>GitHub 项目研究集</title><style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#141310;color:#ece5d7}*{box-sizing:border-box}body{margin:0}main{max-width:1200px;margin:auto;padding:36px 28px 70px}a{color:#f0c37d;text-decoration:none}a:hover{text-decoration:underline}nav{display:flex;gap:20px;justify-content:space-between;font-size:14px;border-bottom:1px solid #393328;padding-bottom:22px}.eyebrow{color:#cfaa72;font-size:13px;letter-spacing:.16em;margin-top:50px}h1{font-size:clamp(32px,5vw,58px);line-height:1.2;max-width:850px;margin:20px 0}p{line-height:1.9;color:#c9c0ae}.lead{max-width:900px;font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 40px}.button{padding:13px 18px;border:1px solid #807052;border-radius:6px}.button.primary{background:#e1b673;color:#201a11;border-color:#e1b673}.table-wrap{overflow:auto;border:1px solid #454033;border-radius:8px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.8}th,td{text-align:left;padding:16px;vertical-align:top;border-bottom:1px solid #393328}th{color:#b5a787;background:#211e18}td.summary{min-width:310px}.visual{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin:35px 0}figure{margin:0;border:1px solid #393328;padding:12px;border-radius:8px;background:#1b1915}figure img{display:block;width:100%;height:auto;border-radius:4px}figcaption{color:#a89d89;line-height:1.8;font-size:13px;margin-top:12px}.guide-frame{display:block;border-radius:4px}.guide-frame img{width:100%;height:auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.entry{display:flex;flex-direction:column;gap:12px;border:1px solid #494033;border-radius:8px;padding:20px;background:#201c16}.entry span{font-size:13px;line-height:1.7;color:#b6aa97}.number{font-size:13px;color:#cba972}article{border-top:1px solid #393328;padding:25px 0 13px;margin-top:24px}article h2{font-size:23px;margin:12px 0}.project-block{margin-top:64px;scroll-margin-top:24px}.project-heading{font-size:clamp(25px,4vw,38px);line-height:1.35}.project-map{max-width:900px;margin:28px auto}.project-map img{height:auto;object-fit:contain}.research-text{margin-top:30px}.research-text summary{cursor:pointer;color:#f0c37d;padding:16px;border:1px solid #494033;border-radius:6px}footer{overflow-wrap:anywhere;border-top:1px solid #393328;margin-top:40px;padding-top:24px;color:#958b79;font-size:13px;line-height:1.9}@media(max-width:700px){main{padding:24px 17px 45px}.visual,.grid{grid-template-columns:1fr}.eyebrow{margin-top:35px}.lead{font-size:16px}nav{font-size:12px;gap:10px}}
+</style></head><body><main>
+<nav><span>GitHub 项目研究集</span><a href="${repository}">仓库与研究文档 ↗</a></nav>
+<div class="eyebrow">OPEN SOURCE · RESEARCH · REAL EXPERIENCE</div><h1>GitHub 项目研究集</h1><p class="lead">先看清开源项目的能力与原理，再通过完整引导图、实际体验和研究依据选择下一步。这里汇总已发布的沙画平台与中文编程面试知识指南。</p>
+<div class="actions"><a class="button primary" href="${entrance}art/home/">001 · 光阴沙画平台 ↗</a><a class="button primary" href="${interviewEntrance}#research">002 · 面试知识研究 ↗</a><a class="button" href="#published-projects">项目摘要与完整引导图</a></div>
+<h2 id="published-projects">已发布的项目研究</h2><div class="table-wrap"><table><thead><tr><th>编号 / 研究</th><th>源库</th><th>摘要</th><th>Web 演示</th></tr></thead><tbody>${projectRows}</tbody></table></div>
+<section class="project-block" id="sandboard"><div class="eyebrow">001 / WEBGPU · MATERIAL · SAND ART</div><h2 class="project-heading">${escape(research.title)}</h2><p class="lead">${escape(research.intro)}</p><div class="actions"><a class="button primary" href="${entrance}art/home/">进入光阴沙画平台 ↗</a><a class="button" href="${entrance}art/research/#overview">放大阅读完整总览图</a><a class="button" href="${escape(project.upstream)}">源库 Sandboard</a></div>
+<div class="visual"><figure><a href="${entrance}original/"><img src="./assets/original.jpg" alt="${escape(original.alt)}" loading="lazy"></a><figcaption>${escape(original.caption)}<br><a href="${entrance}original/">操作 Sandboard 原版效果 ↗</a></figcaption></figure><figure><a class="guide-frame" href="${entrance}art/research/#overview"><img src="./assets/understanding.jpg" alt="Sandboard 能力、原理、输入输出、历史探索与七类产品方向的完整总览图" loading="lazy"></a><figcaption>${escape(research.guideCaption)}<br><a href="${entrance}art/research/#overview">展开全部七个章节与高清图 ↗</a></figcaption></figure></div><h2>先看效果，再看研究</h2><div class="grid">${links}</div><details class="research-text"><summary>阅读 Sandboard 能力、探索过程与研究结论</summary>${sections}</details></section>
+<section class="project-block" id="interview-guide"><div class="eyebrow">002 / KNOWLEDGE · ARCHITECTURE · LEARNING</div><h2 class="project-heading">002 · ${escape(interview.name)}</h2><p class="lead">${escape(interview.summary)}</p><p>从源库能力、模块、底层原理与使用场景了解这份指南，区分上游已有内容与我们的中文增强，再按基础、前端或后端路线进入知识主题。</p><div class="actions"><a class="button primary" href="${interviewEntrance}#research">阅读完整项目研究 ↗</a><a class="button" href="${interviewEntrance}#overview">进入中文知识地图</a><a class="button" href="${interviewEntrance}#coverage">查看逐主题覆盖核对</a><a class="button" href="${escape(interview.upstream)}">源库 guia-entrevistas-de-programacion</a></div>
+<figure class="project-map"><a class="guide-frame" href="${interviewMap}"><img src="${interviewMap}" alt="${escape(interview.coverAlt || '编程面试知识指南完整引导图：能力、模块、原理、增强内容、场景、价值、方向与边界')}" width="${mapWidth}" height="${mapHeight}" loading="lazy" decoding="async"></a><figcaption>${escape(interview.coverCaption || '本研究项目的完整理解引导图，保留全部画面，不裁切。')}<br><a href="${interviewMap}">打开完整原图</a> · <a href="${interviewEntrance}#research">在线阅读能力、原理与扩展方向 ↗</a></figcaption></figure></section>
+<footer>001 研究基线：<a href="${escape(project.upstream)}/tree/${research.baseline}">${research.baseline}</a><br>Sandboard 上游和对应衍生代码遵循 ${escape(research.license)}；照片、手部与其他引用素材分别保留署名。AI 目标和材料概念图明确标注。<br><a href="${repository}/blob/main/${directory}/experiments/sand-art/ATTRIBUTION.md">Sandboard 来源、许可与改动范围</a><br><br>002 研究基线：<a href="${escape(interview.upstream)}/tree/${escape(interviewReport.baseline.commit)}">${escape(interviewReport.baseline.commit)}</a><br>上游指南遵循 <a href="${interviewEntrance}LICENSE.upstream.txt">MIT 许可</a>；中文讲解与示例为独立补充，第三方教程仅保留资料入口。<br><a href="${repository}/blob/main/${interviewDirectory}/README.md">面试指南来源与实现说明</a> · <a href="${repository}/blob/main/docs/DEPLOYMENT.md">构建与发布方式</a></footer>
+</main></body></html>`;
 await writeFile(path.join(site, 'index.html'), html);
 await writeFile(path.join(site, '.nojekyll'), '');
-console.log(`发布站点：${site}；总入口 + Sandboard 十六页，所有原版路径保留。`);
+console.log(`发布站点：${site}；总入口 + Sandboard 十六页 + 编程面试知识指南；仅发布 001、002，原版路径保留。`);

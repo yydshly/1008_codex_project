@@ -11,6 +11,7 @@
 | 序号 | 项目 / 来源 | 研究摘要 | 状态 | 演示 |
 | --- | --- | --- | --- | --- |
 | 001 | [Sandboard 交互沙盘](projects/001-sandboard/README.md) · [Sandboard](https://github.com/scottstts/Sandboard) | **能力**：WebGPU 沙盘：沟槽、堆积、飞沙。<br>**原理**：高度场、邻域输运与飞沙粒子。<br>**探索**：七工具手绘、照片成画、动作回放。<br>**价值**：触控创作、教学与材料试验。<br>**方向**：纪念赠礼、创作工具、互动展陈。<br>**进度**：原版与旧版保留；真实质感待验证。 | 研究中 | [访问](https://yydshly.github.io/1008_codex_project/001-sandboard/) |
+| 002 | [编程面试知识指南](projects/002-interview-guide/README.md) · [guia-entrevistas-de-programacion](https://github.com/DevCaress/guia-entrevistas-de-programacion) | **能力**：面试复习与资源导航：50篇原文、209个资料入口，含11篇教程与39篇导航。<br>**模块**：工程、算法、语言框架、架构、系统设计、数据访问、交付、面试与AI九个方向。<br>**原理**：Astro将校验过的MDX静态出版；本地通过固定快照、主题关联、全文检索和覆盖审计组织知识。<br>**增强**：113节中文讲解、38个示例、100个误区与100条答法；检索筛选、三条路线与完整引导图。<br>**价值**：查漏复习、组织面试表达、对照技术栈，也可作为团队培训和可追溯知识库的起点。<br>**方向**：学习进度、错题与间隔复习、上游差异和外链监测；可选AI问答需提供出处与验证。<br>**边界**：第三方判题、算法动画与AI/MCP仅为资料入口；本站无代码运行、判题或模拟面试服务。 | 已完成 | — |
 
 ### 001 · Sandboard 交互沙盘
 
@@ -19,6 +20,14 @@
 [研究说明](projects/001-sandboard/README.md) · [在线体验](https://yydshly.github.io/1008_codex_project/001-sandboard/) · [高清引导图](projects/001-sandboard/assets/understanding/overview.png)
 
 [![Sandboard 完整理解引导图：源库能力、底层原理、输入输出、真实效果、探索历程与产品方向](projects/001-sandboard/assets/understanding/preview.jpg)](projects/001-sandboard/assets/understanding/overview.png)
+
+### 002 · 编程面试知识指南
+
+使用我们2026-10-08生成的完整内容总览图，引导阅读原库能力与知识模块；研究说明进一步解释原理、价值和扩展方向，图中区分原库、本地新增与外部服务。
+
+[研究说明](projects/002-interview-guide/README.md) · [高清引导图](projects/002-interview-guide/assets/repository-map.png)
+
+[![编程面试指南完整引导图：三类核心能力、九类五十个主题、学习方式、本地中文增强与外部平台边界](projects/002-interview-guide/assets/repository-map.png)](projects/002-interview-guide/assets/repository-map.png)
 
 <!-- PROJECT_INDEX:END -->
 

@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'projects/001-sandboard/**'
+      - 'projects/002-interview-guide/**'
       - 'projects.json'
       - 'scripts/**'
       - 'package.json'
@@ -35,14 +36,15 @@ jobs:
         run: |
           npm ci --prefix projects/001-sandboard/web
           npm ci --prefix projects/001-sandboard/experiments/sand-art
-      - name: Build all preserved Sandboard pages and research entrance
+          npm ci --prefix projects/002-interview-guide/web
+      - name: Build the research entrance and published projects 001 and 002
         run: npm run build:site
       - name: Verify archive media and sixteen page links
         working-directory: projects/001-sandboard/experiments/sand-art
         run: |
           node scripts/validate-platform.mjs
           node scripts/validate-research.mjs --built
-      - name: Verify public summary and guide links
+      - name: Verify both public summaries, complete guides and interview coverage
         run: node scripts/validate-site.mjs
       - uses: actions/upload-pages-artifact@v4
         with:

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#205b4e">
+  <meta name="description" content="全面理解 DevCaress 编程面试指南的能力、九类内容、静态出版原理、学习价值和扩展方向，阅读50主题中文讲解、209资料入口及完整总览图。">
+  <title>编程面试指南 · 能力、原理与中文知识地图</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <button class="mobile-menu" id="mobile-menu" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="打开导航菜单">☰</button>
+  <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#research" aria-label="编程面试知识指南理解总览"><img src="./favicon.svg" alt="" width="36" height="36"><span>面试知识指南<small>INTERVIEW FIELDNOTES</small></span></a>
+    <div class="sidebar-label">学习工作台</div>
+    <nav class="main-nav" aria-label="主要导航">
+      <a href="#research" data-view="research"><span data-icon="book"></span>理解总览</a>
+      <a href="#overview" data-view="overview"><span data-icon="grid"></span>知识总览</a>
+      <a href="#paths" data-view="paths"><span data-icon="route"></span>学习路线</a>
+      <a href="#resources" data-view="resources"><span data-icon="link"></span>资源索引</a>
+      <a href="#coverage" data-view="coverage"><span data-icon="check"></span>内容覆盖</a>
+      <a href="#about" data-view="about"><span data-icon="info"></span>关于这个项目</a>
+    </nav>
+    <div class="sidebar-label category-label">知识分类 <span id="category-count"></span></div>
+    <nav class="category-nav" id="category-nav" aria-label="知识分类"></nav>
+    <div class="sidebar-source"><span class="source-label">OPEN SOURCE NOTES</span><p>一份指南，一张知识地图。</p><a href="https://github.com/DevCaress/guia-entrevistas-de-programacion" target="_blank" rel="noopener noreferrer">查看上游仓库 <span data-icon="external"></span></a></div>
+    <div class="sidebar-footer"><span>研究集 <strong>002</strong></span><span>中文整理版</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">开源项目研究集 <span>/</span> <strong>编程面试指南</strong></div><div class="topbar-tools"><span class="edition">2026.10 整理</span><a class="icon-button" href="https://github.com/DevCaress/guia-entrevistas-de-programacion" target="_blank" rel="noopener noreferrer" aria-label="访问 GitHub 原仓库"><span data-icon="github"></span></a></div></header>
+    <main id="main" tabindex="-1">
+      <div id="page"></div>
+      <footer class="page-footer"><span>整理自 DevCaress / guia-entrevistas-de-programacion</span><span>中文摘要 · 原始资料保留来源 <a href="#about">来源与许可</a></span></footer>
+    </main>
+  </div>
+  <dialog id="topic-dialog" aria-labelledby="topic-title"><div id="topic-detail"></div></dialog>
+  <noscript><section class="noscript research-noscript"><h1>编程面试指南：能力、内容与原理</h1><p>原库以西班牙语为主，用 Astro、MDX 和 Tailwind 出版面试学习指南与资源导航。固定版本包含50篇原文：11篇详细教程、39篇资源或问题导航，原文引用共209个去重地址。</p><figure class="research-poster"><a href="./assets/repository-map.png" target="_blank" rel="noopener noreferrer"><img src="./assets/repository-map.png" width="1086" height="1448" alt="编程面试指南完整内容图：系统复习、教程与资源导航，九类全部50主题、本地增强、使用顺序和能力边界"></a><figcaption>本项目独立生成的总览图 · 1086 × 1448 px。<a href="./assets/repository-map.png" download="interview-guide-repository-map.png">下载原图 PNG</a></figcaption></figure><h2>九个中文方向</h2><p>工程原则、算法与数据结构、语言与框架、软件架构、系统设计、数据库与数据访问、协作与交付、面试专题、开发者 AI。九类为本地中文重组。</p><h2>原理与学习价值</h2><p>原库在构建期读取 MDX 内容集合，生成章节、导航和引用的静态页面。本地增强版保存固定原文快照，用独立数据模块提供中文讲解、搜索、路线和覆盖核对，帮助建立复习范围、验证概念并组织面试表达。</p><p>本地补充113节讲解、38个示例、100个误区和100条参考答法。完整外链文章、题库判题、算法动画与 AI 服务由外部平台提供；进度收藏、细分自测与双语更新为后续研究方向。</p><p>交互搜索和主题阅读需要 JavaScript。可以先查看完整图，或阅读<a href="https://github.com/DevCaress/guia-entrevistas-de-programacion/tree/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed">固定原仓库指南</a>。</p></section></noscript>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

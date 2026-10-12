@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-12",
+  "upstreamCommit": "fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed",
+  "automated": {
+    "rootCatalog": true,
+    "rootTests": {
+      "passed": 13,
+      "total": 13
+    },
+    "independentBuild": true,
+    "aggregateBuild": true,
+    "aggregateValidation": true,
+    "topics": 50,
+    "resourceUrls": 209,
+    "examples": 38,
+    "answers": 100,
+    "originalGuidePreserved": true
+  },
+  "browserLocal": {
+    "base": "http://127.0.0.1:4202/1008_codex_project/002-interview-guide/",
+    "passed": true,
+    "checks": [
+      "默认理解总览含9类50主题与完整原图",
+      "知识索引与依赖倒置全文检索",
+      "SOLID主题深链刷新与折叠答法",
+      "覆盖页50项、276引用记录与209个URL",
+      "320px和390px无横向溢出、手机菜单开关与导航",
+      "控制台error/warn为空",
+      "聚合根入口显示两个项目"
+    ],
+    "screenshot": "../assets/publication-mobile.jpg",
+    "limitations": [
+      "本轮阅读操作以SOLID为代表；全部50主题阅读与复制检查见2026-10-08记录",
+      "没有执行示例代码或逐个验证209个第三方外链"
+    ]
+  },
+  "httpLocal": {
+    "checkedAt": "2026-10-12T04:33:30.917Z",
+    "base": "http://127.0.0.1:4202/1008_codex_project/",
+    "sourceCommit": null,
+    "actionUrl": null,
+    "rootStatus": 200,
+    "rootProjectRows": 2,
+    "sandboardPages": 16,
+    "files": [
+      {
+        "file": "index.html",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 5201,
+        "sha256": "5503e6210ae47c6a5d211e78664aabdb007aa493f697f9b3571477637832f5fb"
+      },
+      {
+        "file": "styles.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 37972,
+        "sha256": "abf145ff7dec3b47eea95e8c5a3009a839f93ff2dd8c486ae5a96b6a020abd14"
+      },
+      {
+        "file": "app.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 28408,
+        "sha256": "8a579cb710ee519f2a435d93806c1474ae303906ab9e60281d1650f06c57a346"
+      },
+      {
+        "file": "content.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 109436,
+        "sha256": "98bc4f20475f3084fc59b5e3891c4e946737203160d950069692af2dda50f881"
+      },
+      {
+        "file": "favicon.svg",
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "bytes": 268,
+        "sha256": "b67b045ab3e879ab4563fce2eda4177eeaa65f7bc6ac158cc258cb2005f302c6"
+      },
+      {
+        "file": "enrichment.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 299,
+        "sha256": "268afbae85311d422f7413a3e4a97b7627c3d2682d72abb1fe1fe1cc716a5f6e"
+      },
+      {
+        "file": "enrichment-foundations.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 72179,
+        "sha256": "f585df386a7b1c3c06e91c5ae39bd220a0e590a521bd1082394b00acb78552bd"
+      },
+      {
+        "file": "enrichment-practice.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 77577,
+        "sha256": "5b665cc893d72384527b6dc7db7b2b307de90b79a892e002d28da45d35da90fe"
+      },
+      {
+        "file": "extra-resources.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 1444,
+        "sha256": "dea468ad284e1747fa511c45b2573e09bc518e01ddbb23f13d76e64bff3675a6"
+      },
+      {
+        "file": "catalog-utils.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 2619,
+        "sha256": "dfd85d95d55cb8c65aecf64bf999dcd8803928b266bb84202354906b11d4b405"
+      },
+      {
+        "file": "reader.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 5268,
+        "sha256": "679d6e8098d9bc684e92e0acf1962b4d7ee053b807b8a99527100c79135224bb"
+      },
+      {
+        "file": "coverage-view.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 3923,
+        "sha256": "d654d1b5523b5b868d47291d35017637d227fdc9e1f8baa27828ebd5f8b2e5e5"
+      },
+      {
+        "file": "research.js",
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "bytes": 13402,
+        "sha256": "e3264fd162d4a4af7b2e011d0e7c38ca9d6f818578bbda915def8813a59dc569"
+      },
+      {
+        "file": "coverage.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 113172,
+        "sha256": "0928b93d1f54e8bce45d2308ed7ba7ec1f0f207e1f878bee2faf7426b24b33e8"
+      },
+      {
+        "file": "LICENSE.upstream.txt",
+        "status": 200,
+        "contentType": "text/plain; charset=utf-8",
+        "bytes": 1093,
+        "sha256": "ada2773b04c3d02f2b459565be7686fc064ab5d73c32b2370aafdb2632d5ea15"
+      },
+      {
+        "file": "assets/repository-map.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 1917984,
+        "sha256": "78e0ae5e5a5d09fc64dc9cef6f3e1c8a857ed91f28a4ed65b9e1180c5f2385b0"
+      }
+    ],
+    "passed": true
+  }
+}

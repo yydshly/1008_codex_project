@@ -1,0 +1,3255 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-08",
+  "repo": "https://github.com/DevCaress/guia-entrevistas-de-programacion",
+  "baseline": {
+    "commit": "fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed",
+    "date": "2026-10-08"
+  },
+  "latest": {
+    "commit": "fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed",
+    "checkedOn": "2026-10-08",
+    "guidePageCount": 50,
+    "isCurrent": true
+  },
+  "summary": {
+    "sourcePages": 50,
+    "mappedTopics": 50,
+    "frontmatterReferenceRecords": 273,
+    "frontmatterUniqueUrls": 207,
+    "bodyReferenceRecords": 3,
+    "bodyUniqueUrls": 2,
+    "bodyReferenceRecordsMapped": 3,
+    "extraResourceRecords": 3,
+    "readmeExtraResourceRecords": 2,
+    "allResourceRecords": 276,
+    "allUniqueResourceUrls": 209,
+    "sourceTutorialPages": 11,
+    "sourceResourceGuidePages": 39,
+    "sourceCodeBlocks": 44,
+    "sourceTablePages": 3,
+    "sourceTables": 5,
+    "sourceTableRows": 45,
+    "enrichedTopics": 50,
+    "enrichmentExamples": 38,
+    "answerRecords": 100
+  },
+  "methodology": {
+    "sourceKinds": "依据原文内容逐页分类：11 篇包含概念解释与代码例子的教程，其余为资源入口、目录或技术对照指南。分类不是按字符阈值自动推定。",
+    "referenceRecords": "frontmatter.references 保留逐页原记录；MDX 正文链接另外记录和关联。README 重复链接只用于对照，不重复计入资源记录。",
+    "coverageMeaning": "主题和参考记录覆盖反映固定快照的登记情况；不代表第三方资源全文、技术课程或全部面试知识的完成比例。",
+    "contentOwnership": "中文讲解、例子、常见误区与参考答法为研究项目独立补充；原文及外部资料通过固定出处访问。",
+    "validationLimit": "本工具核查结构、固定来源、引用与主题关联，不验证每个外部网址可达性，也不自动判定讲解语义或例子运行正确性。"
+  },
+  "checks": {
+    "passed": true,
+    "enrichmentComplete": true,
+    "errors": [],
+    "warnings": []
+  },
+  "pages": [
+    {
+      "id": "algorithms",
+      "title": "算法实现",
+      "originalTitle": "Algoritmos",
+      "category": "algorithms",
+      "sourcePath": "src/content/guide/algoritmos-y-estructuras-de-datos/algoritmos.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/algoritmos-y-estructuras-de-datos/algoritmos.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 156,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://github.com/TheAlgorithms/C",
+          "https://github.com/TheAlgorithms/C-Plus-Plus",
+          "https://github.com/TheAlgorithms/Go",
+          "https://github.com/TheAlgorithms/Java",
+          "https://github.com/TheAlgorithms/JavaScript",
+          "https://github.com/TheAlgorithms/PHP",
+          "https://github.com/TheAlgorithms/Python",
+          "https://github.com/TheAlgorithms/TypeScript"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "complexity",
+      "title": "复杂度与 Big-O",
+      "originalTitle": "Complejidad algoritmica",
+      "category": "algorithms",
+      "sourcePath": "src/content/guide/algoritmos-y-estructuras-de-datos/complejidad-algoritmica.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/algoritmos-y-estructuras-de-datos/complejidad-algoritmica.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 16,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Que medimos: operaciones, no segundos"
+          },
+          {
+            "level": 2,
+            "title": "Notacion Big-O"
+          },
+          {
+            "level": 2,
+            "title": "Grafico de tasas de crecimiento"
+          },
+          {
+            "level": 2,
+            "title": "Complejidad temporal (tiempo)"
+          },
+          {
+            "level": 3,
+            "title": "O(1) — Constante"
+          },
+          {
+            "level": 3,
+            "title": "O(log n) — Logaritmica"
+          },
+          {
+            "level": 3,
+            "title": "O(n) — Lineal"
+          },
+          {
+            "level": 3,
+            "title": "O(n log n) — Linealitmica"
+          },
+          {
+            "level": 3,
+            "title": "O(n^2) — Cuadratica"
+          },
+          {
+            "level": 3,
+            "title": "O(2^n) — Exponencial"
+          },
+          {
+            "level": 2,
+            "title": "Complejidad espacial (memoria)"
+          },
+          {
+            "level": 3,
+            "title": "O(1) espacio"
+          },
+          {
+            "level": 3,
+            "title": "O(n) espacio"
+          },
+          {
+            "level": 3,
+            "title": "La recursion tambien cuesta memoria"
+          },
+          {
+            "level": 2,
+            "title": "Mejor, peor y caso promedio"
+          },
+          {
+            "level": 2,
+            "title": "Como analizar tu codigo"
+          }
+        ],
+        "codeBlocks": 9,
+        "codeLanguages": [
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 12544,
+        "bodyWords": 1192,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@joseguillermo_/qué-es-la-complejidad-algorítmica-y-con-qué-se-come-2638e7fd9e8c",
+          "https://medium.com/nowports-tech/introducción-a-big-o-notation-95ecca8bd866",
+          "https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/",
+          "https://www.bigocheatsheet.com/",
+          "https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/",
+          "https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation",
+          "https://www.geeksforgeeks.org/time-complexity-and-space-complexity/",
+          "https://developer.mozilla.org/en-US/docs/Glossary/Algorithm",
+          "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+          "https://visualgo.net/en"
+        ],
+        "internalLinks": [],
+        "tableCount": 1,
+        "tableRowCount": 6,
+        "tables": [
+          {
+            "columns": [
+              "Notacion",
+              "Nombre",
+              "n = 10",
+              "n = 100",
+              "n = 1000"
+            ],
+            "rows": [
+              [
+                "O(1)",
+                "Constante",
+                "1",
+                "1",
+                "1"
+              ],
+              [
+                "O(log n)",
+                "Logaritmica",
+                "3",
+                "7",
+                "10"
+              ],
+              [
+                "O(n)",
+                "Lineal",
+                "10",
+                "100",
+                "1000"
+              ],
+              [
+                "O(n log n)",
+                "Linealitmica",
+                "33",
+                "664",
+                "9966"
+              ],
+              [
+                "O(n^2)",
+                "Cuadratica",
+                "100",
+                "10 000",
+                "1 000 000"
+              ],
+              [
+                "O(2^n)",
+                "Exponencial",
+                "1024",
+                "~1.3 x 10^30",
+                "enorme"
+              ]
+            ]
+          }
+        ]
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "data-structures",
+      "title": "数据结构",
+      "originalTitle": "Estructuras de datos",
+      "category": "algorithms",
+      "sourcePath": "src/content/guide/algoritmos-y-estructuras-de-datos/estructuras-de-datos.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/algoritmos-y-estructuras-de-datos/estructuras-de-datos.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 166,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.mygreatlearning.com/blog/data-structures-using-c/",
+          "https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/cpp-built-in-data-structures/cheatsheet",
+          "https://medium.com/edureka/data-structures-algorithms-in-java-d27e915db1c5",
+          "https://github.com/trekhleb/javascript-algorithms",
+          "https://medium.com/@london.lingo.01/discovering-php-data-structures-arrays-linked-lists-and-binary-trees-501566f83bad",
+          "https://medium.com/@rtheunissen/efficient-data-structures-for-php-7-9dda7af674cd",
+          "https://www.geeksforgeeks.org/python-data-structures/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "practice",
+      "title": "算法练习资源",
+      "originalTitle": "Practicar algoritmos",
+      "category": "algorithms",
+      "sourcePath": "src/content/guide/algoritmos-y-estructuras-de-datos/practicar-algoritmos.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/algoritmos-y-estructuras-de-datos/practicar-algoritmos.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 166,
+        "bodyWords": 24,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.codewars.com/",
+          "https://leetcode.com",
+          "https://www.hackerrank.com/",
+          "https://coderbyte.com/",
+          "https://exercism.org/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "visualgo",
+      "title": "算法可视化资源",
+      "originalTitle": "Visualgo",
+      "category": "algorithms",
+      "sourcePath": "src/content/guide/algoritmos-y-estructuras-de-datos/visualgo.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/algoritmos-y-estructuras-de-datos/visualgo.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 484,
+        "bodyWords": 56,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://visualgo.net/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "software-architecture",
+      "title": "软件架构总览",
+      "originalTitle": "Arquitectura de Software",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/arquitectura-de-software.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/arquitectura-de-software.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 8,
+        "headings": [
+          {
+            "level": 3,
+            "title": "Frontend"
+          },
+          {
+            "level": 4,
+            "title": "React Clean Architecture"
+          },
+          {
+            "level": 4,
+            "title": "Vue JS Clean Architecture"
+          },
+          {
+            "level": 3,
+            "title": "Backend"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture Express JS"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture Java"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture PHP"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture Python"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 240,
+        "bodyWords": 22,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@ktufernando/la-guía-definitiva-de-la-arquitectura-del-software-f419db9c6bf7",
+          "https://nescalro.medium.com/entendiendo-a-la-arquitectura-limpia-7877ad3a0a47",
+          "https://medium.com/@maniakhitoccori/los-10-patrones-comunes-de-arquitectura-de-software-d8b9047edf0b",
+          "https://medium.com/@edusalguero/arquitectura-hexagonal-59834bb44b7f",
+          "https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35",
+          "https://softwarecrafters.io/react/arquitectura-hexagonal-frontend",
+          "https://codigoencasa.com/arquitecturas-frontend-enfoque-modular-simple/",
+          "https://medium.com/@johnadjanohoun/a-comprehensive-guide-to-modern-frontend-architecture-patterns-eb39debbd503",
+          "https://xurxodev.com/frontend-clean_architecture/",
+          "https://dev.to/dennysjmarquez/la-arquitectura-hexagonal-un-enfoque-para-desarrollar-aplicaciones-robustas-en-react-angular-y-vue-con-ejemplos-de-codigo-l4l",
+          "https://eduardo-ottaviani.medium.com/a-definitive-guide-to-front-end-clean-architecture-3a62418becb4",
+          "https://www.paradigmadigital.com/dev/introduccion-arquitectura-microfrontends-ejemplo-react/",
+          "https://devjaime.medium.com/microfrontend-4eecf1498cd1",
+          "https://medium.com/appfoster/a-comprehensive-guide-to-micro-frontend-architecture-cc0e31e0c053",
+          "https://dev.to/pavanbelagatti/microservices-vs-micro-frontends-whats-the-difference-33je",
+          "https://betterprogramming.pub/clean-architecture-with-react-cc097a08b105",
+          "https://dev.to/rubemfsv/clean-architecture-applying-with-react-40h6",
+          "https://github.com/eduardomoroni/react-clean-architecture",
+          "https://paulallies.medium.com/clean-architecture-typescript-and-react-8e509098abfe",
+          "https://www.linkedin.com/pulse/clean-architecture-vuejs-ahsan-riaz/",
+          "https://github.com/thanhchungbtc/vue-shopping-clean-architecture",
+          "https://github.com/smotastic/vue-clean-architecture",
+          "https://github.com/shamscorner/bloc-vue-3-clean-pattern",
+          "https://www.linkedin.com/pulse/clean-architecture-en-node-y-express-odannys-de-la-cruz/?originalSubdomain=es",
+          "https://medium.com/@ben.dev.io/clean-architecture-in-node-js-39c3358d46f3",
+          "https://github.com/panagiop/node.js-clean-architecture",
+          "https://medium.com/@soyjuanmalopez/clean-architecture-en-la-vida-real-9da710e5ad4a",
+          "https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130",
+          "https://medium.com/unil-ci-software-engineering/clean-architecture-with-php-22de915a6c50",
+          "https://dev.to/bdelespierre/how-to-implement-clean-architecture-with-laravel-2f2i",
+          "https://medium.com/@surajit.das0320/understanding-clean-architecture-in-python-deep-dive-on-the-code-17141dc5761a",
+          "https://github.com/pcah/python-clean-architecture",
+          "https://medium.com/21buttons-tech/clean-architecture-in-django-d326a4ab86a9",
+          "https://github.com/jacob-y/django-clean-architecture"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "backend-architecture",
+      "title": "后端架构",
+      "originalTitle": "Backend",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/backend.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/backend.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 4,
+        "headings": [
+          {
+            "level": 4,
+            "title": "Clean Architecture Express JS"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture Java"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture PHP"
+          },
+          {
+            "level": 4,
+            "title": "Clean Architecture Python"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 132,
+        "bodyWords": 13,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.linkedin.com/pulse/clean-architecture-en-node-y-express-odannys-de-la-cruz/?originalSubdomain=es",
+          "https://medium.com/@ben.dev.io/clean-architecture-in-node-js-39c3358d46f3",
+          "https://github.com/panagiop/node.js-clean-architecture",
+          "https://medium.com/@soyjuanmalopez/clean-architecture-en-la-vida-real-9da710e5ad4a",
+          "https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130",
+          "https://medium.com/unil-ci-software-engineering/clean-architecture-with-php-22de915a6c50",
+          "https://dev.to/bdelespierre/how-to-implement-clean-architecture-with-laravel-2f2i",
+          "https://medium.com/@surajit.das0320/understanding-clean-architecture-in-python-deep-dive-on-the-code-17141dc5761a",
+          "https://github.com/pcah/python-clean-architecture",
+          "https://medium.com/21buttons-tech/clean-architecture-in-django-d326a4ab86a9",
+          "https://github.com/jacob-y/django-clean-architecture"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "databases",
+      "title": "数据库基础",
+      "originalTitle": "Bases de datos",
+      "category": "data",
+      "sourcePath": "src/content/guide/bases-de-datos.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/bases-de-datos.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 1,
+        "headings": [
+          {
+            "level": 3,
+            "title": "ORM's"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 9,
+        "bodyWords": 1,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://learnsql.es/blog/20-ejemplos-de-consultas-sql-basicas-para-principiantes-una-vision-completa/",
+          "https://www.softwaretestinghelp.com/database-interview-questions/",
+          "https://www.guru99.com/database-interview-questions.html",
+          "https://medium.com/codex/choosing-the-best-database-sql-vs-nosql-a816a7ec09fc",
+          "https://wildpasco.medium.com/qué-es-un-orm-backend-bee59674e1d0",
+          "https://www.freecodecamp.org/espanol/news/introduccion-a-mongoose-para-mongodb/",
+          "https://levelup.gitconnected.com/the-ultimate-guide-to-get-started-with-sequelize-orm-238588d3516e"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "angular",
+      "title": "Angular 实践",
+      "originalTitle": "Angular",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/angular.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/angular.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 153,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@mattias.trnqvist/10-best-practices-for-building-scalable-angular-applications-with-examples-efdfe2a5b4e8",
+          "https://www.tatvasoft.com/blog/angular-optimization-and-best-practices/",
+          "https://angular.io/guide/styleguide"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "cpp",
+      "title": "C++ 实践",
+      "originalTitle": "C++",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/cpp.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/cpp.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 149,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@Code_Analysis/collecting-the-best-c-practices-4b867006849f",
+          "https://programminggyan.com/5-cpp-tips-for-faster-better-code/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "dart",
+      "title": "Dart 实践",
+      "originalTitle": "Dart",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/dart.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/dart.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 150,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://dart.dev/effective-dart/design"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "django",
+      "title": "Django 实践",
+      "originalTitle": "Django",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/django.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/django.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 152,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.linkedin.com/pulse/django-best-practices-2022-akshata-murudkar/",
+          "https://medium.com/@schopade333/django-model-best-practices-c5c8a142dfc",
+          "https://betterprogramming.pub/clean-code-principles-in-django-b0563a4e12f5"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "flutter",
+      "title": "Flutter 实践",
+      "originalTitle": "Flutter",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/flutter.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/flutter.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 153,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://itnext.io/flutter-best-practices-part-1-e89467ea4823",
+          "https://articles.wesionary.team/the-dart-way-best-coding-practices-6ac693736090",
+          "https://somniosoftware.com/post/top-10-flutter-best-practices"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "java",
+      "title": "Java 实践",
+      "originalTitle": "Java",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/java.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/java.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 150,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://github.com/in28minutes/java-best-practices",
+          "https://www.developer.com/languages/javascript/java-best-practices/",
+          "https://medium.com/@alexthedev/10-best-practices-in-java-dc0b06dda858"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript 实践",
+      "originalTitle": "JavaScript",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/javascript.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/javascript.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 156,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript",
+          "https://www.w3.org/wiki/JavaScript_best_practices",
+          "https://www.w3schools.com/js/js_best_practices.asp",
+          "https://github.com/airbnb/javascript",
+          "https://code.tutsplus.com/24-javascript-best-practices-for-beginners--net-5399t"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "php",
+      "title": "PHP 实践",
+      "originalTitle": "PHP",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/php.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/php.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 149,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/techlaboratory/php-programming-best-practices-and-coding-styles-e43234446fd3",
+          "https://phpbestpractices.org/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "python",
+      "title": "Python 实践",
+      "originalTitle": "Python",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/python.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/python.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 152,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://docs.python-guide.org/writing/style/",
+          "https://aglowiditsolutions.com/blog/python-best-practices/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "react",
+      "title": "React 实践",
+      "originalTitle": "React.js",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/reactjs.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/reactjs.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 154,
+        "bodyWords": 24,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.turing.com/kb/writing-clean-react-code",
+          "https://www.freecodecamp.org/news/best-practices-for-react/#tips-to-help-you-write-better-react-code-the-cherries-on-top",
+          "https://devsmitra.medium.com/react-best-practices-and-patterns-to-reduce-code-3170f1913b26",
+          "https://technostacks.com/blog/react-best-practices/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript 实践",
+      "originalTitle": "TypeScript",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/typescript.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/typescript.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 156,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/typescript-best-practices.html",
+          "https://medium.com/@warkiringoda/typescript-best-practices-2021-a58aee199661"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "vue",
+      "title": "Vue 实践",
+      "originalTitle": "Vue.js",
+      "category": "languages",
+      "sourcePath": "src/content/guide/buenas-practicas-en/vuejs.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas-en/vuejs.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 152,
+        "bodyWords": 24,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://learnvue.co/articles/vue-best-practices",
+          "https://learn-vuejs.github.io/vue-patterns/patterns/#component-declaration"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "clean-architecture",
+      "title": "整洁架构与依赖规则",
+      "originalTitle": "Clean Architecture",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/clean-architecture.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/clean-architecture.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 6,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Las capas"
+          },
+          {
+            "level": 2,
+            "title": "La regla de dependencia"
+          },
+          {
+            "level": 2,
+            "title": "Violacion de la regla"
+          },
+          {
+            "level": 2,
+            "title": "Aplicando Clean Architecture"
+          },
+          {
+            "level": 2,
+            "title": "Errores comunes"
+          },
+          {
+            "level": 2,
+            "title": "Resumen"
+          }
+        ],
+        "codeBlocks": 2,
+        "codeLanguages": [
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 5104,
+        "bodyWords": 489,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html",
+          "https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/",
+          "https://khalilstemmler.com/wiki/dependency-rule/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "clean-code",
+      "title": "整洁代码",
+      "originalTitle": "Clean Code",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/clean-code.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/clean-code.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 156,
+        "bodyWords": 24,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://github.com/alansastre/java-clean-code",
+          "https://github.com/JuanCrg90/Clean-Code-Notes",
+          "https://github.com/andersontr15/clean-code-javascript-es",
+          "https://github.com/ryanmcdermott/clean-code-javascript#openclosed-principle-ocp",
+          "https://github.com/sryvcr/clean-code-python-es",
+          "https://github.com/zedr/clean-code-python"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "dry",
+      "title": "DRY：减少知识重复",
+      "originalTitle": "DRY — Don't Repeat Yourself",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/dry.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/dry.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 2,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Violacion del principio"
+          },
+          {
+            "level": 2,
+            "title": "Aplicando DRY"
+          }
+        ],
+        "codeBlocks": 2,
+        "codeLanguages": [
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 1471,
+        "bodyWords": 122,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://levelup.gitconnected.com/demystifying-software-development-principles-dry-kiss-yagni-solid-grasp-and-lod-8606113c0313",
+          "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/",
+          "https://refactoring.guru/extract-method"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "grasp",
+      "title": "GRASP：职责分配",
+      "originalTitle": "GRASP — General Responsibility Assignment Software Patterns",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/grasp.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/grasp.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 1,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Ejemplo: Experto en Informacion"
+          }
+        ],
+        "codeBlocks": 1,
+        "codeLanguages": [
+          "js"
+        ],
+        "bodyCharacters": 2128,
+        "bodyWords": 175,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.pearson.com/en-us/subject-catalog/p/applying-uml-and-patterns-an-introduction-to-object-oriented-analysis-and-design-and-iterative-development/P200000009412",
+          "https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "kiss",
+      "title": "KISS：保持简单",
+      "originalTitle": "KISS — Keep It Simple, Stupid",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/kiss.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/kiss.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 2,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Violacion del principio"
+          },
+          {
+            "level": 2,
+            "title": "Aplicando KISS"
+          }
+        ],
+        "codeBlocks": 2,
+        "codeLanguages": [
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 1161,
+        "bodyWords": 101,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://en.wikipedia.org/wiki/KISS_principle",
+          "https://www.oreilly.com/library/view/clean-code-a/9780136083238/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "law-of-demeter",
+      "title": "迪米特法则",
+      "originalTitle": "LoD — Ley de Demeter",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/lod.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/lod.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 2,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Violacion del principio"
+          },
+          {
+            "level": 2,
+            "title": "Aplicando LoD"
+          }
+        ],
+        "codeBlocks": 2,
+        "codeLanguages": [
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 1653,
+        "bodyWords": 131,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://en.wikipedia.org/wiki/Law_of_Demeter",
+          "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "solid",
+      "title": "SOLID 五原则",
+      "originalTitle": "Principios SOLID",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/solid-principles.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/solid-principles.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 15,
+        "headings": [
+          {
+            "level": 2,
+            "title": "S — Single Responsibility Principle (SRP)"
+          },
+          {
+            "level": 3,
+            "title": "Violación del principio"
+          },
+          {
+            "level": 3,
+            "title": "Aplicando SRP"
+          },
+          {
+            "level": 2,
+            "title": "O — Open/Closed Principle (OCP)"
+          },
+          {
+            "level": 3,
+            "title": "Violación del principio"
+          },
+          {
+            "level": 3,
+            "title": "Aplicando OCP"
+          },
+          {
+            "level": 2,
+            "title": "L — Liskov Substitution Principle (LSP)"
+          },
+          {
+            "level": 3,
+            "title": "Violación del principio"
+          },
+          {
+            "level": 3,
+            "title": "Aplicando LSP"
+          },
+          {
+            "level": 2,
+            "title": "I — Interface Segregation Principle (ISP)"
+          },
+          {
+            "level": 3,
+            "title": "Violación del principio"
+          },
+          {
+            "level": 3,
+            "title": "Aplicando ISP"
+          },
+          {
+            "level": 2,
+            "title": "D — Dependency Inversion Principle (DIP)"
+          },
+          {
+            "level": 3,
+            "title": "Violación del principio"
+          },
+          {
+            "level": 3,
+            "title": "Aplicando DIP"
+          }
+        ],
+        "codeBlocks": 10,
+        "codeLanguages": [
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 6036,
+        "bodyWords": 366,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@aleksandra_shershen/solid-principles-implementation-and-examples-in-c-99f0d7e3e868",
+          "https://nexwebsites.com/blog/solid-design-principles/",
+          "https://www.javaguides.net/2020/01/solid-principles-in-java-with-examples.html",
+          "https://medium.com/@shavi22/solid-principles-in-java-cf9f5b167600",
+          "https://github.com/ryanmcdermott/clean-code-javascript#openclosed-principle-ocp",
+          "https://realpython.com/solid-principles-python/",
+          "https://medium.com/docler-engineering/applying-solid-to-react-ca6d1ff926a4",
+          "https://medium.com/@moein.mirkiani/solid-principles-in-vue-29ecc988f968"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "yagni",
+      "title": "YAGNI：按需实现",
+      "originalTitle": "YAGNI — You Aren't Gonna Need It",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/buenas-practicas/yagni.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/buenas-practicas/yagni.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 2,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Violacion del principio"
+          },
+          {
+            "level": 2,
+            "title": "Aplicando YAGNI"
+          }
+        ],
+        "codeBlocks": 2,
+        "codeLanguages": [
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 1315,
+        "bodyWords": 105,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://martinfowler.com/bliki/Yagni.html",
+          "https://www.oreilly.com/library/view/extreme-programming-explained/0321278658/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "cicd",
+      "title": "持续集成与交付",
+      "originalTitle": "CI/CD",
+      "category": "devops",
+      "sourcePath": "src/content/guide/cicd.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/cicd.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 151,
+        "bodyWords": 24,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@diego.coder/introducción-a-ci-cd-be79d0beafad",
+          "https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/strategy-cicd-litmus/understanding-cicd.html",
+          "https://www.freecodecamp.org/news/what-is-ci-cd/",
+          "https://resources.github.com/devops/pipeline/"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "express-clean",
+      "title": "Express 整洁架构",
+      "originalTitle": "Clean Architecture Express JS",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/clean-architecture-express-js.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/clean-architecture-express-js.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 175,
+        "bodyWords": 26,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.linkedin.com/pulse/clean-architecture-en-node-y-express-odannys-de-la-cruz/?originalSubdomain=es",
+          "https://medium.com/@ben.dev.io/clean-architecture-in-node-js-39c3358d46f3",
+          "https://github.com/panagiop/node.js-clean-architecture"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "java-clean",
+      "title": "Java 整洁架构",
+      "originalTitle": "Clean Architecture Java",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/clean-architecture-java.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/clean-architecture-java.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 169,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@soyjuanmalopez/clean-architecture-en-la-vida-real-9da710e5ad4a",
+          "https://medium.com/@viniciusromualdobusiness/clean-architecture-with-spring-boot-a-good-idea-d6f97e450130"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "php-clean",
+      "title": "PHP 整洁架构",
+      "originalTitle": "Clean Architecture PHP",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/clean-architecture-php.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/clean-architecture-php.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 168,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/unil-ci-software-engineering/clean-architecture-with-php-22de915a6c50",
+          "https://dev.to/bdelespierre/how-to-implement-clean-architecture-with-laravel-2f2i"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "python-clean",
+      "title": "Python 整洁架构",
+      "originalTitle": "Clean Architecture Python",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/clean-architecture-python.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/clean-architecture-python.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 171,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/@surajit.das0320/understanding-clean-architecture-in-python-deep-dive-on-the-code-17141dc5761a",
+          "https://github.com/pcah/python-clean-architecture",
+          "https://medium.com/21buttons-tech/clean-architecture-in-django-d326a4ab86a9",
+          "https://github.com/jacob-y/django-clean-architecture"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "containers",
+      "title": "容器与编排",
+      "originalTitle": "Contenedores y Orquestacion",
+      "category": "devops",
+      "sourcePath": "src/content/guide/contenedores-orquestacion.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/contenedores-orquestacion.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 173,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.hpe.com/mx/es/what-is/containers.html",
+          "https://azure.microsoft.com/es-mx/resources/cloud-computing-dictionary/what-is-a-container",
+          "https://medium.com/@villamorosjuan/contenedores-y-orquestación-transformando-la-gestión-de-aplicaciones-en-producción-0f2ebbd8aac5"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "git",
+      "title": "Git 与版本控制",
+      "originalTitle": "Control de Versiones",
+      "category": "devops",
+      "sourcePath": "src/content/guide/control-de-versiones.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/control-de-versiones.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 1,
+        "headings": [
+          {
+            "level": 3,
+            "title": "Workflows"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 13,
+        "bodyWords": 1,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.freecodecamp.org/espanol/news/guia-para-principiantes-de-git-y-github/",
+          "https://kinsta.com/es/blog/git-avanzado/",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows",
+          "https://www.babelgroup.com/es/Media/Blog/Abril-2021/Cinco-Git-Workflows-para-mejores-proyectos",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "system-design",
+      "title": "系统设计面试",
+      "originalTitle": "Diseno de sistemas",
+      "category": "system",
+      "sourcePath": "src/content/guide/diseno-de-sistemas.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/diseno-de-sistemas.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 154,
+        "bodyWords": 13,
+        "bodyLinks": [
+          {
+            "label": "System Design Interview Questions and Answers [2025]",
+            "url": "https://www.geeksforgeeks.org/system-design/top-10-system-design-interview-questions-and-answers",
+            "mapped": true
+          }
+        ],
+        "bodyUniqueHttpUrls": [
+          "https://www.geeksforgeeks.org/system-design/top-10-system-design-interview-questions-and-answers"
+        ],
+        "rawUniqueHttpUrls": [
+          "https://systemdesign.io",
+          "https://github.com/checkcheckzz/system-design-interview",
+          "https://medium.com/@sentalkssane/a-beginners-guide-to-system-design-76d64689788b",
+          "https://igotanoffer.com/blogs/tech/system-design-interviews",
+          "https://dev.to/somadevtoo/top-50-system-design-interview-questions-for-2024-5dbk",
+          "https://www.interviewbit.com/system-design-interview-questions",
+          "https://medium.com/javarevisited/system-design-cheatsheet-4607e716db5a",
+          "https://www.geeksforgeeks.org/system-design/top-10-system-design-interview-questions-and-answers"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "frontend-architecture",
+      "title": "前端架构",
+      "originalTitle": "Frontend",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/frontend.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/frontend.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 2,
+        "headings": [
+          {
+            "level": 4,
+            "title": "React Clean Architecture"
+          },
+          {
+            "level": 4,
+            "title": "Vue JS Clean Architecture"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 65,
+        "bodyWords": 7,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://softwarecrafters.io/react/arquitectura-hexagonal-frontend",
+          "https://codigoencasa.com/arquitecturas-frontend-enfoque-modular-simple/",
+          "https://medium.com/@johnadjanohoun/a-comprehensive-guide-to-modern-frontend-architecture-patterns-eb39debbd503",
+          "https://xurxodev.com/frontend-clean_architecture/",
+          "https://dev.to/dennysjmarquez/la-arquitectura-hexagonal-un-enfoque-para-desarrollar-aplicaciones-robustas-en-react-angular-y-vue-con-ejemplos-de-codigo-l4l",
+          "https://eduardo-ottaviani.medium.com/a-definitive-guide-to-front-end-clean-architecture-3a62418becb4",
+          "https://www.paradigmadigital.com/dev/introduccion-arquitectura-microfrontends-ejemplo-react/",
+          "https://devjaime.medium.com/microfrontend-4eecf1498cd1",
+          "https://medium.com/appfoster/a-comprehensive-guide-to-micro-frontend-architecture-cc0e31e0c053",
+          "https://dev.to/pavanbelagatti/microservices-vs-micro-frontends-whats-the-difference-33je",
+          "https://betterprogramming.pub/clean-architecture-with-react-cc097a08b105",
+          "https://dev.to/rubemfsv/clean-architecture-applying-with-react-40h6",
+          "https://github.com/eduardomoroni/react-clean-architecture",
+          "https://paulallies.medium.com/clean-architecture-typescript-and-react-8e509098abfe",
+          "https://www.linkedin.com/pulse/clean-architecture-vuejs-ahsan-riaz/",
+          "https://github.com/thanhchungbtc/vue-shopping-clean-architecture",
+          "https://github.com/smotastic/vue-clean-architecture",
+          "https://github.com/shamscorner/bloc-vue-3-clean-pattern"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "developer-ai",
+      "title": "开发者 AI 资源",
+      "originalTitle": "IA para desarrolladores",
+      "category": "ai",
+      "sourcePath": "src/content/guide/ia-para-desarrolladores.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/ia-para-desarrolladores.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 169,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://medium.com/ai-for-absolute-beginners/the-ultimate-list-of-ai-concepts-in-ai-for-absolute-beginners-and-let-me-know-what-you-want-to-3edf24ce7c01",
+          "https://dev.to/devscriptor/25-essential-ai-concepts-every-ai-developer-must-master-4ddn",
+          "https://github.com/jamesmurdza/awesome-ai-devtools",
+          "https://pieces.medium.com/best-ai-tools-for-developers-to-use-in-your-next-coding-project-794fce6bfa42",
+          "https://medium.com/h7w/what-is-mcp-a-beginners-guide-to-smarter-ai-bdd996f8b02e",
+          "https://medium.com/@sailakkshmiallada/understanding-model-context-protocol-mcp-a-beginners-guide-70060304742d",
+          "https://modelcontextprotocol.io/introduction",
+          "https://github.com/microsoft/mcp-for-beginners"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "orm",
+      "title": "ORM 与数据访问",
+      "originalTitle": "ORMs",
+      "category": "data",
+      "sourcePath": "src/content/guide/orms.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/orms.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 150,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://wildpasco.medium.com/qué-es-un-orm-backend-bee59674e1d0",
+          "https://www.freecodecamp.org/espanol/news/introduccion-a-mongoose-para-mongodb/",
+          "https://levelup.gitconnected.com/the-ultimate-guide-to-get-started-with-sequelize-orm-238588d3516e"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "design-patterns",
+      "title": "设计模式",
+      "originalTitle": "Patrones de diseno",
+      "category": "engineering",
+      "sourcePath": "src/content/guide/patrones-de-diseno.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/patrones-de-diseno.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 460,
+        "bodyWords": 35,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://refactoring.guru/es/design-patterns",
+          "https://www.patterns.dev/posts"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "backend-interview",
+      "title": "后端面试复习",
+      "originalTitle": "Preguntas de Backend",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-backend.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-backend.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 166,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.turing.com/interview-questions/back-end",
+          "https://anywhere.epam.com/en/blog/top-18-backend-developer-interview-questions-answered",
+          "https://github.com/tamhoang1412/backend-swe-interview-questions"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "interview-index",
+      "title": "面试资源总索引",
+      "originalTitle": "Preguntas frecuentes",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-frecuentes.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frecuentes.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 6,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Lenguajes de programacion mas populares"
+          },
+          {
+            "level": 2,
+            "title": "Frameworks y librerias mas populares"
+          },
+          {
+            "level": 3,
+            "title": "Frontend (librerias y frameworks de UI)"
+          },
+          {
+            "level": 3,
+            "title": "Backend"
+          },
+          {
+            "level": 3,
+            "title": "Preguntas de Frontend"
+          },
+          {
+            "level": 3,
+            "title": "Preguntas de Backend"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 16986,
+        "bodyWords": 727,
+        "bodyLinks": [
+          {
+            "label": "Frontend Interview Questions [Top 250+]",
+            "url": "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd",
+            "mapped": true
+          }
+        ],
+        "bodyUniqueHttpUrls": [
+          "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd"
+        ],
+        "rawUniqueHttpUrls": [
+          "https://www.fullstack.cafe",
+          "https://github.com/sudheerj/angular-interview-questions",
+          "https://github.com/Ujjawal-Anand/django-interview",
+          "https://github.com/Devinterview-io/java-interview-questions",
+          "https://github.com/altafjava/spring-interview-questions-answers",
+          "https://github.com/sudheerj/javascript-interview-questions",
+          "https://github.com/Devinterview-io/php-interview-questions",
+          "https://github.com/Devinterview-io/python-interview-questions",
+          "https://github.com/sudheerj/reactjs-interview-questions",
+          "https://github.com/kansiris/SQL-interview-questions/tree/master",
+          "https://github.com/xoraus/CrackingTheSQLInterview",
+          "https://github.com/sudheerj/vuejs-interview-questions",
+          "https://github.com/sudheerj/typescript-interview-questions",
+          "https://github.com/Devinterview-io/go-interview-questions",
+          "https://github.com/Devinterview-io/csharp-interview-questions",
+          "https://github.com/Devinterview-io/ruby-interview-questions",
+          "https://github.com/Devinterview-io/rust-interview-questions",
+          "https://github.com/Devinterview-io/kotlin-interview-questions",
+          "https://github.com/Devinterview-io/swift-interview-questions",
+          "https://github.com/sudheerj/nextjs-interview-questions",
+          "https://github.com/sudheerj/nuxt-interview-questions",
+          "https://github.com/sudheerj/svelte-interview-questions",
+          "https://github.com/sudheerj/nestjs-interview-questions",
+          "https://github.com/Devinterview-io/laravel-interview-questions",
+          "https://github.com/Devinterview-io/spring-boot-interview-questions",
+          "https://github.com/Devinterview-io/asp-net-core-interview-questions",
+          "https://github.com/Devinterview-io/fastapi-interview-questions",
+          "https://github.com/Devinterview-io/flask-interview-questions",
+          "https://github.com/sudheerj/nodejs-interview-questions",
+          "https://www.turing.com/interview-questions/back-end",
+          "https://anywhere.epam.com/en/blog/top-18-backend-developer-interview-questions-answered",
+          "https://github.com/tamhoang1412/backend-swe-interview-questions",
+          "https://www.frontendinterviewhandbook.com/introduction/",
+          "https://dev.to/m_midas/52-frontend-interview-questions-javascript-59h6",
+          "https://github.com/h5bp/Front-end-Developer-Interview-Questions?tab=readme-ov-file",
+          "https://anywhere.epam.com/en/blog/senior-front-end-developer-interview-questions",
+          "https://4dayweek.medium.com/15-frontend-developer-interview-questions-2023-91c7a9a628c1",
+          "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd"
+        ],
+        "internalLinks": [
+          "/guia/preguntas-frecuentes/javascript"
+        ],
+        "tableCount": 3,
+        "tableRowCount": 36,
+        "tables": [
+          {
+            "columns": [
+              "Lenguaje",
+              "Creador / Ano",
+              "Paradigma",
+              "Usos principales",
+              "Frameworks populares"
+            ],
+            "rows": [
+              [
+                "JavaScript",
+                "Brendan Eich / 1995",
+                "Multiparadigma (funcional, POO, imperativo)",
+                "Frontend, Backend (Node.js), Mobile (React Native)",
+                "React, Next.js, Vue, Nuxt, Express, NestJS"
+              ],
+              [
+                "TypeScript",
+                "Microsoft / 2012",
+                "Multiparadigma, superset tipado de JavaScript",
+                "Frontend, Backend, Full-stack, librerias",
+                "Angular, Next.js, NestJS, tRPC, RxJS"
+              ],
+              [
+                "Python",
+                "Guido van Rossum / 1991",
+                "Multiparadigma (POO, funcional, imperativo)",
+                "Backend, Data Science, IA/ML, scripting, automatizacion",
+                "Django, Flask, FastAPI, Pyramid, Celery"
+              ],
+              [
+                "Java",
+                "James Gosling (Sun) / 1995",
+                "Orientado a objetos, concurrente",
+                "Backend empresarial, Android, Big Data",
+                "Spring, Spring Boot, Hibernate, Quarkus, Micronaut"
+              ],
+              [
+                "PHP",
+                "Rasmus Lerdorf / 1995",
+                "Imperativo, POO, funcional",
+                "Backend web, CMS (WordPress, Drupal, Magento)",
+                "Laravel, Symfony, CodeIgniter, CakePHP, Slim"
+              ],
+              [
+                "Go (Golang)",
+                "Google (Griesemer, Pike, Thompson) / 2009",
+                "Compilado, concurrente, imperativo",
+                "Backend, microservicios, cloud, CLI, DevOps",
+                "Gin, Echo, Fiber, Beego, gRPC"
+              ],
+              [
+                "C#",
+                "Microsoft (Hejlsberg) / 2000",
+                "Orientado a objetos, funcional, tipado fuerte",
+                "Backend (.NET), escritorio, videojuegos (Unity), cloud",
+                ".NET, ASP.NET Core, Xamarin, Blazor, MAUI"
+              ],
+              [
+                "C++",
+                "Bjarne Stroustrup / 1985",
+                "Multiparadigma (POO, generico, imperativo)",
+                "Sistemas, videojuegos, embebidos, alto rendimiento",
+                "Qt, Boost, Unreal Engine, STL"
+              ],
+              [
+                "Ruby",
+                "Yukihiro Matsumoto / 1995",
+                "Orientado a objetos, dinamico, reflexivo",
+                "Backend web, scripting, prototipado rapido",
+                "Ruby on Rails, Sinatra, Hanami"
+              ],
+              [
+                "Rust",
+                "Graydon Hoare (Mozilla) / 2010",
+                "Multiparadigma, sistemas, ownership/borrow checker",
+                "Sistemas, WebAssembly, backend de alto rendimiento",
+                "Actix, Rocket, Axum, Tokio"
+              ],
+              [
+                "Kotlin",
+                "JetBrains / 2011",
+                "Orientado a objetos, funcional, multiplataforma",
+                "Android, backend (Ktor), multiplataforma (KMP)",
+                "Ktor, Spring Boot, Android Jetpack Compose"
+              ],
+              [
+                "Swift",
+                "Apple (Lattner) / 2014",
+                "Multiparadigma (POO, funcional, protocol-oriented)",
+                "Apps iOS/macOS, backend con Vapor",
+                "Vapor, Kitura, SwiftUI, Combine"
+              ],
+              [
+                "SQL",
+                "Chamberlin y Boyce (IBM) / 1974",
+                "Declarativo",
+                "Consulta y gestion de bases de datos relacionales",
+                "PostgreSQL, MySQL, SQL Server, Oracle, SQLite"
+              ]
+            ]
+          },
+          {
+            "columns": [
+              "Framework / Libreria",
+              "Lenguaje",
+              "Tipo",
+              "Caracteristicas clave",
+              "Casos de uso"
+            ],
+            "rows": [
+              [
+                "React",
+                "JavaScript / TypeScript",
+                "Libreria UI",
+                "Componentes, Virtual DOM, Hooks, JSX, ecosistema masivo",
+                "SPA, mobile (React Native), SSR (con Next.js)"
+              ],
+              [
+                "Next.js",
+                "JavaScript / TypeScript",
+                "Framework full-stack sobre React",
+                "SSR/SSG, App Router, Server Components, API routes, ISR",
+                "Web apps, e-commerce, sitios estaticos, blogs"
+              ],
+              [
+                "Vue",
+                "JavaScript / TypeScript",
+                "Framework progresivo",
+                "Composition API, reactividad, SFC, curva suave",
+                "SPA, prototipos, integracion progresiva"
+              ],
+              [
+                "Nuxt",
+                "JavaScript / TypeScript",
+                "Framework full-stack sobre Vue",
+                "SSR/SSG, modulos, auto-imports, server routes, Nitro",
+                "Web apps, sitios estaticos, JAMstack"
+              ],
+              [
+                "Angular",
+                "TypeScript",
+                "Framework full-stack opinionated",
+                "MVC, inyeccion de dependencias, RxJS, CLI potente",
+                "Apps empresariales, dashboards, SPAs complejas"
+              ],
+              [
+                "Svelte",
+                "JavaScript",
+                "Compilador / Framework",
+                "Sin Virtual DOM, reactividad nativa, bundle pequeno",
+                "SPA, componentes web, prototipos"
+              ],
+              [
+                "SvelteKit",
+                "JavaScript / TypeScript",
+                "Framework full-stack sobre Svelte",
+                "SSR/SSG, file-based routing, endpoints, adapters",
+                "Web apps, sitios estaticos, JAMstack"
+              ],
+              [
+                "Astro",
+                "JavaScript / TypeScript",
+                "Framework multi-framework",
+                "Islands architecture, multi-framework, contenido-first",
+                "Sitios de contenido, blogs, documentacion"
+              ]
+            ]
+          },
+          {
+            "columns": [
+              "Framework / Libreria",
+              "Lenguaje",
+              "Tipo",
+              "Caracteristicas clave",
+              "Casos de uso"
+            ],
+            "rows": [
+              [
+                "Node.js + Express",
+                "JavaScript",
+                "Runtime + framework minimal",
+                "Event-driven, no bloqueante, npm, ecosistema amplio",
+                "APIs REST, microservicios, real-time"
+              ],
+              [
+                "NestJS",
+                "TypeScript",
+                "Framework empresarial",
+                "Decoradores, DI, modular, inspirado en Angular",
+                "APIs REST/GraphQL escalables, microservicios"
+              ],
+              [
+                "Django",
+                "Python",
+                "Framework full-stack",
+                "ORM, admin, batteries included, MTV, DRF",
+                "Web apps, CMS, dashboards, APIs"
+              ],
+              [
+                "Flask",
+                "Python",
+                "Microframework",
+                "Ligero, flexible, extensible, Jinja2, minimal",
+                "APIs pequenas a medianas, prototipos, microservicios"
+              ],
+              [
+                "FastAPI",
+                "Python",
+                "Framework moderno async",
+                "Async, tipado con Pydantic, OpenAPI/Swagger auto, alto rendimiento",
+                "APIs REST modernas, microservicios async"
+              ],
+              [
+                "Spring / Spring Boot",
+                "Java",
+                "Framework empresarial",
+                "IoC, AOP, ecosistema amplio, microservicios, seguridad robusta",
+                "Backend empresarial, microservicios, fintech"
+              ],
+              [
+                "Laravel",
+                "PHP",
+                "Framework MVC",
+                "Eloquent ORM, Blade, artisan CLI, queue, ecosistema",
+                "Web apps, SaaS, e-commerce, APIs"
+              ],
+              [
+                "Symfony",
+                "PHP",
+                "Framework modular",
+                "Componentes reutilizables, Twig, ecosistema maduro",
+                "Web apps empresariales, APIs, CMS"
+              ],
+              [
+                "ASP.NET Core / .NET",
+                "C#",
+                "Framework full-stack",
+                "Multiplataforma, alto rendimiento, LINQ, async/await",
+                "APIs, microservicios, apps empresariales"
+              ],
+              [
+                "Gin",
+                "Go",
+                "Framework minimal",
+                "Rapido, minimalista, middleware, validacion JSON",
+                "APIs REST, microservicios de alto rendimiento"
+              ],
+              [
+                "Echo",
+                "Go",
+                "Framework minimal",
+                "Alto rendimiento, middleware, routing optimizado",
+                "APIs REST, microservicios"
+              ],
+              [
+                "Fiber",
+                "Go",
+                "Framework inspirado en Express",
+                "API similar a Express, fasthttp, bajo uso de memoria",
+                "APIs REST de alto rendimiento"
+              ],
+              [
+                "Ruby on Rails",
+                "Ruby",
+                "Framework MVC",
+                "Convention over configuration, ActiveRecord, scaffolding",
+                "Web apps, SaaS, prototipado rapido"
+              ],
+              [
+                "Ktor",
+                "Kotlin",
+                "Framework asincrono",
+                "DSL Kotlin, coroutines, multiplataforma",
+                "Microservicios, APIs, apps moviles (KMP)"
+              ],
+              [
+                "Vapor",
+                "Swift",
+                "Framework async",
+                "DSL Swift, SwiftNIO, async/await, Fluent ORM",
+                "APIs backend en Swift, microservicios"
+              ]
+            ]
+          }
+        ]
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 3,
+        "tableRowCount": 36
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "javascript-interview",
+      "title": "JavaScript 面试专题",
+      "originalTitle": "Preguntas frecuentes de JavaScript",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-frecuentes/javascript.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frecuentes/javascript.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 1,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Preguntas"
+          }
+        ],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 1814,
+        "bodyWords": 92,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://github.com/sudheerj/javascript-interview-questions",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        ],
+        "internalLinks": [
+          "/guia/preguntas-frecuentes",
+          "/guia/preguntas-frecuentes/javascript/crear-objetos",
+          "/guia/preguntas-frecuentes/javascript/cadena-de-prototipos",
+          "/guia/preguntas-frecuentes/javascript/call-apply-bind"
+        ],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "prototype-chain",
+      "title": "JavaScript 原型链",
+      "originalTitle": "¿Qué es la cadena de prototipos en JavaScript?",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-frecuentes/javascript/cadena-de-prototipos.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frecuentes/javascript/cadena-de-prototipos.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 4,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Como funciona la busqueda"
+          },
+          {
+            "level": 2,
+            "title": "`prototype` vs `__proto__`"
+          },
+          {
+            "level": 2,
+            "title": "Final de la cadena"
+          },
+          {
+            "level": 2,
+            "title": "Puntos clave"
+          }
+        ],
+        "codeBlocks": 4,
+        "codeLanguages": [
+          "js",
+          "js",
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 2876,
+        "bodyWords": 231,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "call-apply-bind",
+      "title": "call / apply / bind",
+      "originalTitle": "Diferencias entre call, apply y bind",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-frecuentes/javascript/call-apply-bind.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frecuentes/javascript/call-apply-bind.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 6,
+        "headings": [
+          {
+            "level": 2,
+            "title": "Tabla comparativa"
+          },
+          {
+            "level": 2,
+            "title": "Mismo ejemplo, tres formas"
+          },
+          {
+            "level": 2,
+            "title": "Cuando usar cada uno"
+          },
+          {
+            "level": 2,
+            "title": "Caso practico: tomar prestados metodos"
+          },
+          {
+            "level": 2,
+            "title": "Caso practico: event handler con `bind`"
+          },
+          {
+            "level": 2,
+            "title": "Resumen"
+          }
+        ],
+        "codeBlocks": 3,
+        "codeLanguages": [
+          "js",
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 3805,
+        "bodyWords": 243,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
+        ],
+        "internalLinks": [],
+        "tableCount": 1,
+        "tableRowCount": 3,
+        "tables": [
+          {
+            "columns": [
+              "Metodo",
+              "¿Ejecuta?",
+              "Argumentos",
+              "Devuelve"
+            ],
+            "rows": [
+              [
+                "call",
+                "Si, inmediatamente",
+                "Lista separada por comas",
+                "Resultado de la funcion"
+              ],
+              [
+                "apply",
+                "Si, inmediatamente",
+                "Array unico",
+                "Resultado de la funcion"
+              ],
+              [
+                "bind",
+                "No, devuelve nueva funcion",
+                "Lista separada por comas (parciales)",
+                "Funcion con this y args fijados"
+              ]
+            ]
+          }
+        ]
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "object-creation",
+      "title": "JavaScript 对象创建",
+      "originalTitle": "¿Cuáles son las formas posibles de crear objetos en JavaScript?",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-frecuentes/javascript/crear-objetos.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frecuentes/javascript/crear-objetos.mdx",
+      "kind": "tutorial",
+      "source": {
+        "headingCount": 8,
+        "headings": [
+          {
+            "level": 2,
+            "title": "1. Object literal"
+          },
+          {
+            "level": 2,
+            "title": "2. Constructor `Object` o `new Object()`"
+          },
+          {
+            "level": 2,
+            "title": "3. Funcion constructora"
+          },
+          {
+            "level": 2,
+            "title": "4. `Object.create`"
+          },
+          {
+            "level": 2,
+            "title": "5. Clase ES6"
+          },
+          {
+            "level": 2,
+            "title": "6. Factory function"
+          },
+          {
+            "level": 2,
+            "title": "7. Singleton via IIFE"
+          },
+          {
+            "level": 2,
+            "title": "Resumen"
+          }
+        ],
+        "codeBlocks": 7,
+        "codeLanguages": [
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js",
+          "js"
+        ],
+        "bodyCharacters": 3285,
+        "bodyWords": 220,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 3,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "frontend-interview",
+      "title": "前端面试复习",
+      "originalTitle": "Preguntas de Frontend",
+      "category": "interview",
+      "sourcePath": "src/content/guide/preguntas-frontend.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frontend.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 140,
+        "bodyWords": 10,
+        "bodyLinks": [
+          {
+            "label": "Frontend Interview Questions [Top 250+]",
+            "url": "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd",
+            "mapped": true
+          }
+        ],
+        "bodyUniqueHttpUrls": [
+          "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd"
+        ],
+        "rawUniqueHttpUrls": [
+          "https://www.frontendinterviewhandbook.com/introduction/",
+          "https://dev.to/m_midas/52-frontend-interview-questions-javascript-59h6",
+          "https://github.com/h5bp/Front-end-Developer-Interview-Questions?tab=readme-ov-file",
+          "https://anywhere.epam.com/en/blog/senior-front-end-developer-interview-questions",
+          "https://4dayweek.medium.com/15-frontend-developer-interview-questions-2023-91c7a9a628c1",
+          "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "react-clean",
+      "title": "React 整洁架构",
+      "originalTitle": "React Clean Architecture",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/react-clean-architecture.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/react-clean-architecture.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 170,
+        "bodyWords": 25,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://betterprogramming.pub/clean-architecture-with-react-cc097a08b105",
+          "https://dev.to/rubemfsv/clean-architecture-applying-with-react-40h6",
+          "https://github.com/eduardomoroni/react-clean-architecture",
+          "https://paulallies.medium.com/clean-architecture-typescript-and-react-8e509098abfe"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "vue-clean",
+      "title": "Vue 整洁架构",
+      "originalTitle": "Vue JS Clean Architecture",
+      "category": "architecture",
+      "sourcePath": "src/content/guide/vue-js-clean-architecture.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/vue-js-clean-architecture.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 171,
+        "bodyWords": 26,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.linkedin.com/pulse/clean-architecture-vuejs-ahsan-riaz/",
+          "https://github.com/thanhchungbtc/vue-shopping-clean-architecture",
+          "https://github.com/smotastic/vue-clean-architecture",
+          "https://github.com/shamscorner/bloc-vue-3-clean-pattern"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 0,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    },
+    {
+      "id": "git-workflows",
+      "title": "Git 协作流程",
+      "originalTitle": "Workflows",
+      "category": "devops",
+      "sourcePath": "src/content/guide/workflows.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/workflows.mdx",
+      "kind": "resource-guide",
+      "source": {
+        "headingCount": 0,
+        "headings": [],
+        "codeBlocks": 0,
+        "codeLanguages": [],
+        "bodyCharacters": 155,
+        "bodyWords": 23,
+        "bodyLinks": [],
+        "bodyUniqueHttpUrls": [],
+        "rawUniqueHttpUrls": [
+          "https://www.babelgroup.com/es/Media/Blog/Abril-2021/Cinco-Git-Workflows-para-mejores-proyectos",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
+          "https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow"
+        ],
+        "internalLinks": [],
+        "tableCount": 0,
+        "tableRowCount": 0,
+        "tables": []
+      },
+      "enrichment": {
+        "sectionCount": 2,
+        "exampleCount": 1,
+        "answerCount": 2,
+        "relatedCount": 3,
+        "tableCount": 0,
+        "tableRowCount": 0
+      },
+      "coverage": {
+        "topicMapped": true,
+        "frontmatterReferencesMatch": true,
+        "bodyReferencesMapped": true,
+        "enriched": true,
+        "answersMatchQuestions": true,
+        "relatedValid": true
+      }
+    }
+  ],
+  "extraResources": [
+    {
+      "label": "System Design Interview Questions and Answers [2025]",
+      "url": "https://www.geeksforgeeks.org/system-design/top-10-system-design-interview-questions-and-answers",
+      "topicIds": [
+        "system-design"
+      ],
+      "sourcePath": "src/content/guide/diseno-de-sistemas.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/diseno-de-sistemas.mdx",
+      "origin": "body"
+    },
+    {
+      "label": "Frontend Interview Questions [Top 250+]",
+      "url": "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd",
+      "topicIds": [
+        "interview-index"
+      ],
+      "sourcePath": "src/content/guide/preguntas-frecuentes.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frecuentes.mdx",
+      "origin": "body"
+    },
+    {
+      "label": "Frontend Interview Questions [Top 250+]",
+      "url": "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd",
+      "topicIds": [
+        "frontend-interview"
+      ],
+      "sourcePath": "src/content/guide/preguntas-frontend.mdx",
+      "sourceUrl": "https://github.com/DevCaress/guia-entrevistas-de-programacion/blob/fb5f7aff49baf60a0f6c42b0524ecaf3ee95b3ed/src/content/guide/preguntas-frontend.mdx",
+      "origin": "body"
+    }
+  ],
+  "readmeComparison": {
+    "available": true,
+    "extraLinks": [
+      {
+        "label": "System Design Interview Questions and Answers [2025]",
+        "url": "https://www.geeksforgeeks.org/system-design/top-10-system-design-interview-questions-and-answers"
+      },
+      {
+        "label": "Frontend Interview Questions [Top 250+]",
+        "url": "https://frontendinterviewquestions.medium.com/frontend-interview-questions-top-250-92ba361cbbbd"
+      }
+    ],
+    "otherLinks": [
+      {
+        "label": "caress.dev/guia",
+        "url": "https://caress.dev/guia"
+      },
+      {
+        "label": "@devcaress",
+        "url": "https://www.github.com/devcaress"
+      }
+    ],
+    "note": "两个 MDX 正文新增资料也存在于 README；README 网站入口和作者主页单列，不计为课程资源。"
+  }
+}
