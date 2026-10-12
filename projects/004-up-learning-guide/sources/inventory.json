@@ -1,0 +1,5842 @@
+{
+  "upstream": "https://github.com/byoungd/up",
+  "commit": "35e2aa9ad3a076fe4e8405877cc560df2593838f",
+  "researchDate": "2026-10-09",
+  "scope": "当前导航的全部中文页面及英文对应文件；英文不作为第二套独立知识重复计数。",
+  "counts": {
+    "chinesePages": 97,
+    "englishPages": 97,
+    "publicationPagesPerLanguage": 80,
+    "worksheetPairs": 25,
+    "uniqueExternalMarkdownLinks": 67,
+    "wordListEntries": 392,
+    "uniqueWordListTerms": 340
+  },
+  "groups": [
+    {
+      "title": "下载",
+      "pages": 1
+    },
+    {
+      "title": "开始",
+      "pages": 5
+    },
+    {
+      "title": "第一部：打开输入",
+      "pages": 11
+    },
+    {
+      "title": "第二部：把自己放回生活",
+      "pages": 10
+    },
+    {
+      "title": "第三部：借工具放大能力",
+      "pages": 8
+    },
+    {
+      "title": "第四部：实践与恢复",
+      "pages": 5
+    },
+    {
+      "title": "第五部：行动与长期改变",
+      "pages": 4
+    },
+    {
+      "title": "第六部：与自己做终身朋友",
+      "pages": 5
+    },
+    {
+      "title": "后记",
+      "pages": 1
+    },
+    {
+      "title": "工具箱",
+      "pages": 26
+    },
+    {
+      "title": "创业、自律与 AI 实操",
+      "pages": 6
+    },
+    {
+      "title": "旧文归档",
+      "pages": 5
+    },
+    {
+      "title": "词表",
+      "pages": 10
+    }
+  ],
+  "items": [
+    {
+      "order": 1,
+      "group": "下载",
+      "title": "下载中心",
+      "source": "docs/book-downloads.md",
+      "counterpart": "docs/en/book-downloads.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/book-downloads.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/book-downloads.md",
+      "onlineUrl": "https://byoungd.github.io/up/book-downloads",
+      "updated": "2026-10-02",
+      "sourcesChecked": null,
+      "characters": 1942,
+      "sha256": "35c9c47edf128c549b1e44043e1407e48f02ab616ca535f605db63fc8aa981ae",
+      "englishSha256": "6f5f62432978b4d20a269237cbda31bc5a3a3f540af9ff406b038373e3d83c3a",
+      "headings": [
+        {
+          "level": 1,
+          "title": "下载《人生进阶指南》"
+        },
+        {
+          "level": 2,
+          "title": "在线阅读"
+        }
+      ],
+      "summary": "提供中英文PDF/EPUB、文件校验和离线阅读入口，说明内容与代码不同许可。本提交页面仍显示旧页数与76章，而成品manifest为80个出版源页、PDF中文418页/英文479页；本研究核对四个文件哈希一致，未重新构建。",
+      "guide": "guides/06-publishing.md"
+    },
+    {
+      "order": 2,
+      "group": "开始",
+      "title": "人生进阶指南",
+      "source": "docs/README.md",
+      "counterpart": "docs/en/README.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/README.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/README.md",
+      "onlineUrl": "https://byoungd.github.io/up/",
+      "updated": "2026-10-04",
+      "sourcesChecked": null,
+      "characters": 14332,
+      "sha256": "20e59531622696ef309678f4db86c05ae23a6e5de448185931fd977c090eeebf",
+      "englishSha256": "0e16ef933015d44f39344414329e428d19fd786f5d0ca636d87cdafe7342821b",
+      "headings": [
+        {
+          "level": 1,
+          "title": "人生进阶指南"
+        },
+        {
+          "level": 2,
+          "title": "创业、自律与 AI：把方法用起来"
+        },
+        {
+          "level": 2,
+          "title": "书稿主线"
+        },
+        {
+          "level": 2,
+          "title": "从今天的一件小事开始"
+        },
+        {
+          "level": 2,
+          "title": "AI 学习与项目实践：从回答走向交付"
+        },
+        {
+          "level": 2,
+          "title": "写给仍在寻找方向的人"
+        },
+        {
+          "level": 3,
+          "title": "写给年轻人"
+        },
+        {
+          "level": 3,
+          "title": "写给正在低谷中的人"
+        },
+        {
+          "level": 2,
+          "title": "基础能力：英语仍然是一扇重要的门"
+        },
+        {
+          "level": 2,
+          "title": "人生复盘与恢复：经验也需要重新解释"
+        },
+        {
+          "level": 2,
+          "title": "现实仍在继续"
+        },
+        {
+          "level": 2,
+          "title": "作者项目与透明说明"
+        },
+        {
+          "level": 2,
+          "title": "项目边界"
+        },
+        {
+          "level": 2,
+          "title": "在线阅读"
+        }
+      ],
+      "summary": "说明项目从英语方法扩展为学习、AI、项目与人生实践的开放指南，提供六部书稿、工具箱、实操、双语和电子书入口。核心是具体任务、原始样本、真实反馈与长期回访；作者叙事和关联产品有独立的证据与许可边界。",
+      "guide": "guides/01-learning-system.md"
+    },
+    {
+      "order": 3,
+      "group": "开始",
+      "title": "阅读指南：把书放回生活",
+      "source": "docs/threads/part-0/reader-guide.md",
+      "counterpart": "docs/en/threads/part-0/reader-guide.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-0/reader-guide.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-0/reader-guide.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-0/reader-guide",
+      "updated": "2026-10-06",
+      "sourcesChecked": null,
+      "characters": 5579,
+      "sha256": "9ea9c335af7d89d1d9d5231741ede152574f84270b9b57904c2dfb3263f98837",
+      "englishSha256": "28332def67af7b2500f7717497364adbfa8bc2a578c323ce583ccdf6860e8601",
+      "headings": [
+        {
+          "level": 1,
+          "title": "阅读指南：把书放回生活"
+        },
+        {
+          "level": 2,
+          "title": "先选择今天的入口"
+        },
+        {
+          "level": 3,
+          "title": "我只是想重新开始"
+        },
+        {
+          "level": 3,
+          "title": "我想提高一项具体能力"
+        },
+        {
+          "level": 3,
+          "title": "我正在准备海外岗位或远程面试"
+        },
+        {
+          "level": 3,
+          "title": "我有很多资料，却没有作品"
+        },
+        {
+          "level": 3,
+          "title": "我有很多记录，却不知道自己是否真的改变"
+        },
+        {
+          "level": 3,
+          "title": "我不知道该选哪张工作纸"
+        },
+        {
+          "level": 3,
+          "title": "我正在帮助一名初中阶段的学习者"
+        },
+        {
+          "level": 3,
+          "title": "我正在低谷，今天的容量很小"
+        },
+        {
+          "level": 2,
+          "title": "两种读法，轮流使用"
+        },
+        {
+          "level": 3,
+          "title": "一条完整的阅读弧线"
+        },
+        {
+          "level": 3,
+          "title": "像读一本书一样读"
+        },
+        {
+          "level": 3,
+          "title": "像使用一间工作室一样读"
+        },
+        {
+          "level": 2,
+          "title": "每一章都留下四种痕迹"
+        },
+        {
+          "level": 2,
+          "title": "这本书不替你做的事"
+        },
+        {
+          "level": 2,
+          "title": "当计划被打断时，从这里回来"
+        },
+        {
+          "level": 2,
+          "title": "给读者的一页承诺"
+        }
+      ],
+      "summary": "给出重新开始、具体技能、求职、AI作品、证据、家庭与低容量等问题入口，区分完整阅读和按需使用。每章留下判断、样本、边界、回访点中的至少两项；中断后从学习状态与现实容量恢复，不以读完数量评价学习。",
+      "guide": "guides/01-learning-system.md"
+    },
+    {
+      "order": 4,
+      "group": "开始",
+      "title": "序章：先不要急着改变人生",
+      "source": "docs/threads/part-0/prologue.md",
+      "counterpart": "docs/en/threads/part-0/prologue.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-0/prologue.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-0/prologue.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-0/prologue",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 2584,
+      "sha256": "a8a440a8d63a9c7bed4c4db1841b326b1ddbda502946e2a6c2691dafe3a9fec8",
+      "englishSha256": "b7cbb5b7c6aff8de3f2f556ef893337a9090f7285ea3a4ea47e9da3a63dcffc0",
+      "headings": [
+        {
+          "level": 1,
+          "title": "序章：先不要急着改变人生"
+        },
+        {
+          "level": 2,
+          "title": "这本书的阅读契约"
+        },
+        {
+          "level": 2,
+          "title": "一条可以往返的阅读路径"
+        },
+        {
+          "level": 2,
+          "title": "写给此刻翻开这本书的人"
+        }
+      ],
+      "summary": "交代作者韩先凯（笔名离谱）因2017年英语提问开始写指南，并从失败、身体、关系和作品回看进阶。建立小任务、独立首版、证据和责任的阅读契约，不把个人故事或AI回答变成保证。",
+      "guide": "guides/01-learning-system.md"
+    },
+    {
+      "order": 5,
+      "group": "开始",
+      "title": "术语与方法索引",
+      "source": "docs/reference/glossary.md",
+      "counterpart": "docs/en/reference/glossary.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/reference/glossary.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/reference/glossary.md",
+      "onlineUrl": "https://byoungd.github.io/up/reference/glossary",
+      "updated": "2026-09-07",
+      "sourcesChecked": null,
+      "characters": 8626,
+      "sha256": "d05b3bfceaefcfc36fa417eff4c496b754987f1afb9ee570fb59d9495a35b1d7",
+      "englishSha256": "b79374330eeb97ce3f75e1ce6d50fd6fbc67c3c27aac0cd24ca3634b606b55a7",
+      "headings": [
+        {
+          "level": 1,
+          "title": "术语与方法索引"
+        },
+        {
+          "level": 2,
+          "title": "怎么使用"
+        },
+        {
+          "level": 2,
+          "title": "问题与目标"
+        },
+        {
+          "level": 2,
+          "title": "证据与判断"
+        },
+        {
+          "level": 2,
+          "title": "学习动作"
+        },
+        {
+          "level": 2,
+          "title": "工具与交付"
+        },
+        {
+          "level": 2,
+          "title": "生活与边界"
+        },
+        {
+          "level": 2,
+          "title": "一句话记忆"
+        }
+      ],
+      "summary": "将问题、证据、学习动作、英语诊断、工具交付、生活与边界术语集中解释，并连接章节与模板。词语须服务一个动作、样本或决定，不把方法语言当人格测试或统一学术量表。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 6,
+      "group": "开始",
+      "title": "工具箱总览",
+      "source": "docs/templates/toolkit.md",
+      "counterpart": "docs/en/templates/toolkit.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/toolkit.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/toolkit.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/toolkit",
+      "updated": "2026-10-04",
+      "sourcesChecked": null,
+      "characters": 4639,
+      "sha256": "abd364c2dbd5a424ce3a988e3e99c29f73be2d4730c8238ef9c593b9d20e0709",
+      "englishSha256": "3fe66c9bb0e4019e2766348bbd394c0f016510cc6ee12eb00a0547d4e5c8ca76",
+      "headings": [
+        {
+          "level": 1,
+          "title": "工具箱总览：先选问题，再选工具"
+        },
+        {
+          "level": 2,
+          "title": "先回答：我现在卡在哪里？"
+        },
+        {
+          "level": 2,
+          "title": "把工具串成一次闭环"
+        },
+        {
+          "level": 2,
+          "title": "三条使用规则"
+        },
+        {
+          "level": 3,
+          "title": "只追踪会改变决定的内容"
+        },
+        {
+          "level": 3,
+          "title": "第一版必须尽量由人完成"
+        },
+        {
+          "level": 3,
+          "title": "记录必须守住边界"
+        },
+        {
+          "level": 2,
+          "title": "一个最小开始"
+        }
+      ],
+      "summary": "工具箱总览按当前卡点选择第一张表，覆盖英语、AI、作品、家庭、生活、创业与可靠性。工具链连接定位、选择、练习、协作、交付、复查和回执；只记录影响决定的信息，先保留自己的首版并守住数据边界。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 7,
+      "group": "第一部：打开输入",
+      "title": "第一部导语：打开输入",
+      "source": "docs/threads/part-1/open-input.md",
+      "counterpart": "docs/en/threads/part-1/open-input.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/open-input.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/open-input.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/open-input",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 1737,
+      "sha256": "6fbcc9ac0cfd14353bc3169c3837e5d479de69049ef51763d46e7c381558856d",
+      "englishSha256": "12e89a5873bcdc5e21bca50c5d15d3dd01d98bb4de6f1126f607ff2d7a4d887b",
+      "headings": [
+        {
+          "level": 1,
+          "title": "第一部：打开输入"
+        },
+        {
+          "level": 2,
+          "title": "本部要回答的问题"
+        },
+        {
+          "level": 2,
+          "title": "阅读路径"
+        },
+        {
+          "level": 2,
+          "title": "读完留下什么"
+        },
+        {
+          "level": 2,
+          "title": "进入正文"
+        }
+      ],
+      "summary": "第一部导语：把英语当作扩大信息与表达选择的入口，能力以实际场景验证。先明确受众、当前样本和完成标准，再选词汇、语法、听读说写及AI协作，不用材料收藏替代输出。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 8,
+      "group": "第一部：打开输入",
+      "title": "CEFR 目标与自测",
+      "source": "docs/threads/part-1/0-cefr.md",
+      "counterpart": "docs/en/threads/part-1/0-cefr.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/0-cefr.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/0-cefr.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/0-cefr",
+      "updated": "2026-10-06",
+      "sourcesChecked": null,
+      "characters": 3600,
+      "sha256": "6884a57c696d7e7f12634d5529620a3fa53983225fe9f491e1a8f7707dc33a76",
+      "englishSha256": "d1c8e09650a24293c53c1b201bac18f8ee0df9833a4e3198418f4f559d2edd51",
+      "headings": [
+        {
+          "level": 1,
+          "title": "CEFR 目标与英语能力自测"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "A1-C2：我能做到什么"
+        },
+        {
+          "level": 2,
+          "title": "四项能力的快速证据"
+        },
+        {
+          "level": 2,
+          "title": "别让四项平均分遮住协作能力"
+        },
+        {
+          "level": 2,
+          "title": "从级别到目标"
+        },
+        {
+          "level": 2,
+          "title": "7 天启动"
+        },
+        {
+          "level": 2,
+          "title": "30 天建立系统"
+        },
+        {
+          "level": 2,
+          "title": "12 周完成迁移"
+        },
+        {
+          "level": 2,
+          "title": "反馈量表"
+        },
+        {
+          "level": 2,
+          "title": "把自测带进下一周期"
+        },
+        {
+          "level": 2,
+          "title": "结语：级别只是坐标"
+        }
+      ],
+      "summary": "用CEFR能力描述理解目标，从真实听读说写与互动任务保存独立样本。不同技能与场景可以不均衡；自测用于定训练方向，不能充当正式等级证明或所有岗位统一门槛。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 9,
+      "group": "第一部：打开输入",
+      "title": "1. 认知与训练原则",
+      "source": "docs/threads/part-1/1-understanding.md",
+      "counterpart": "docs/en/threads/part-1/1-understanding.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/1-understanding.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/1-understanding.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/1-understanding",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 6537,
+      "sha256": "67a729b6929a342e27c6c888d5607ddbc0de9faebcad59f958111e14d7f8380b",
+      "englishSha256": "8a89b3e56ee311a52579671750cc1ecfd9aa545e37c68eb854da92d0783065a6",
+      "headings": [
+        {
+          "level": 1,
+          "title": "认知篇：把努力变成可验证的学习"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先定义一次真实交付"
+        },
+        {
+          "level": 2,
+          "title": "2. 分开三类话"
+        },
+        {
+          "level": 2,
+          "title": "3. 一次完整学习回路"
+        },
+        {
+          "level": 2,
+          "title": "4. 首版是测量，不是判决"
+        },
+        {
+          "level": 2,
+          "title": "5. 诊断错误，而不是审判自己"
+        },
+        {
+          "level": 2,
+          "title": "6. 主动回忆比熟悉感更严格"
+        },
+        {
+          "level": 2,
+          "title": "7. 反馈必须进入下一次动作"
+        },
+        {
+          "level": 2,
+          "title": "8. 间隔、交错与睡眠"
+        },
+        {
+          "level": 2,
+          "title": "9. 把状态放在会话之外"
+        },
+        {
+          "level": 2,
+          "title": "10. AI 是支架，不是结果"
+        },
+        {
+          "level": 2,
+          "title": "11. 让能力跨条件移动"
+        },
+        {
+          "level": 2,
+          "title": "12. 7 天、30 天、12 周"
+        },
+        {
+          "level": 3,
+          "title": "7 天：让首版出现"
+        },
+        {
+          "level": 3,
+          "title": "30 天：让节奏可持续"
+        },
+        {
+          "level": 3,
+          "title": "12 周：让能力进入生活"
+        },
+        {
+          "level": 2,
+          "title": "13. 一页总诊断"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：把方法交给下一次"
+        }
+      ],
+      "summary": "把学习拆为任务、首版、诊断、输入、产出和反馈写回状态的完整回路。区分知识、提取、背景、策略、情绪容量及任务条件，使用主动回忆、间隔与可采纳反馈，最终检查延迟保持和新情境迁移。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 10,
+      "group": "第一部：打开输入",
+      "title": "2. 词汇系统",
+      "source": "docs/threads/part-1/2-vocabulary.md",
+      "counterpart": "docs/en/threads/part-1/2-vocabulary.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/2-vocabulary.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/2-vocabulary.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/2-vocabulary",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 9054,
+      "sha256": "2292b827622db67d7abbf1ecd8fbffe27e44b8179a60b1c0071abcebf91a9d61",
+      "englishSha256": "b6d7f832e96e06f0daa0efd35cbb05390ecf5749062d8037d5ed5fb9f50e92ae",
+      "headings": [
+        {
+          "level": 1,
+          "title": "词汇篇：从眼熟到在真实任务中调用"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先定义任务，不先追求总量"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存一次未经修饰的首遇"
+        },
+        {
+          "level": 2,
+          "title": "3. 为未知项做五种决定"
+        },
+        {
+          "level": 2,
+          "title": "4. 一个词至少包含八个问题"
+        },
+        {
+          "level": 2,
+          "title": "5. 义项不是列表中的第一行"
+        },
+        {
+          "level": 2,
+          "title": "6. 接受性词汇不等于产出性词汇"
+        },
+        {
+          "level": 2,
+          "title": "7. 正确理解覆盖率数字"
+        },
+        {
+          "level": 2,
+          "title": "8. 高质量词卡只测试一个决定"
+        },
+        {
+          "level": 2,
+          "title": "9. 让间隔服从表现"
+        },
+        {
+          "level": 2,
+          "title": "10. 用错误决定下一轮练习"
+        },
+        {
+          "level": 2,
+          "title": "11. AI 可以生成候选，不能替词负责"
+        },
+        {
+          "level": 2,
+          "title": "12. 技术词表是索引，不是课程"
+        },
+        {
+          "level": 2,
+          "title": "13. 一个 35 分钟训练单元"
+        },
+        {
+          "level": 2,
+          "title": "14. 十四天词汇实验"
+        },
+        {
+          "level": 2,
+          "title": "15. 怎样判断词汇正在变成能力"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：让词在需要时抵达"
+        }
+      ],
+      "summary": "从真实任务建立未知项决策队列，分别选择放过、推断、速查、主动学习和专业核验。词汇用词形、声音、当前义项、搭配、语法、语域、概念边界和调用条件八维核查；接受性与产出性分别练，词数和覆盖率只是条件指标。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 11,
+      "group": "第一部：打开输入",
+      "title": "语法篇：让结构服务于意思",
+      "source": "docs/threads/part-1/grammar.md",
+      "counterpart": "docs/en/threads/part-1/grammar.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/grammar.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/grammar.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/grammar",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 6940,
+      "sha256": "d6bd867eaceef0dfd0355c473ca0c517755ea52bc609bc6afe7f631a046339f8",
+      "englishSha256": "aab741bb885c12d38226f46a1231adaf3c565468f94da632b895ab6bc34f2056",
+      "headings": [
+        {
+          "level": 1,
+          "title": "语法篇：让结构服务于意思"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 语法不是把句子变复杂"
+        },
+        {
+          "level": 2,
+          "title": "2. 从六类意义选择开始"
+        },
+        {
+          "level": 2,
+          "title": "3. 用真实任务保存基线"
+        },
+        {
+          "level": 2,
+          "title": "4. 建立错误地图，不把一切叫“语法差”"
+        },
+        {
+          "level": 2,
+          "title": "5. 明确讲解之后，必须重新使用"
+        },
+        {
+          "level": 2,
+          "title": "6. 先建立六块可用地基"
+        },
+        {
+          "level": 3,
+          "title": "句子骨架与动词"
+        },
+        {
+          "level": 3,
+          "title": "提问与否定"
+        },
+        {
+          "level": 3,
+          "title": "时间与体"
+        },
+        {
+          "level": 3,
+          "title": "名词、冠词与可数性"
+        },
+        {
+          "level": 3,
+          "title": "从句与逻辑连接"
+        },
+        {
+          "level": 3,
+          "title": "情态与缓和"
+        },
+        {
+          "level": 2,
+          "title": "7. 用对比卡替代长篇规则笔记"
+        },
+        {
+          "level": 2,
+          "title": "8. 反馈先问意思，再问形式"
+        },
+        {
+          "level": 2,
+          "title": "9. 在听与读中观察，在说与写中调用"
+        },
+        {
+          "level": 2,
+          "title": "10. AI、词典、语料与教师怎样分工"
+        },
+        {
+          "level": 2,
+          "title": "11. 十四天语法实验"
+        },
+        {
+          "level": 2,
+          "title": "12. 怎样判断语法正在变成能力"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：句子不是规则的展柜"
+        }
+      ],
+      "summary": "让语法服务时间、参与者、条件、否定范围、逻辑关系与确定性。选择一项高影响结构，通过意义对比、真实修改、听读说写调用、反馈分类和延迟迁移训练，不把风格偏好或AI改对一遍当成稳定能力。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 12,
+      "group": "第一部：打开输入",
+      "title": "3. 听力训练",
+      "source": "docs/threads/part-1/3-listening.md",
+      "counterpart": "docs/en/threads/part-1/3-listening.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/3-listening.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/3-listening.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/3-listening",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 7110,
+      "sha256": "5eb1c0dd05c25f89870bf93366c6ba78bc414b5c7e7935958a1814a17844bb13",
+      "englishSha256": "a367cff9c5d3c09597f729a93f76fab6e7c7443bb2bcd53b2531b8837ce627b3",
+      "headings": [
+        {
+          "level": 1,
+          "title": "听力篇：从声音辨认到真实理解"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先定义听力任务"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存一次真实首听"
+        },
+        {
+          "level": 2,
+          "title": "3. 不把所有失败都叫“听不懂”"
+        },
+        {
+          "level": 2,
+          "title": "4. 材料不是收藏品，是训练条件"
+        },
+        {
+          "level": 2,
+          "title": "5. 字幕是一架可以撤走的梯子"
+        },
+        {
+          "level": 2,
+          "title": "6. 让每一遍承担不同问题"
+        },
+        {
+          "level": 3,
+          "title": "第一遍：预测与首听"
+        },
+        {
+          "level": 3,
+          "title": "第二遍：定位差异"
+        },
+        {
+          "level": 3,
+          "title": "第三遍：最小修复"
+        },
+        {
+          "level": 3,
+          "title": "第四遍：关闭支架"
+        },
+        {
+          "level": 3,
+          "title": "第五遍：意义重构与行动"
+        },
+        {
+          "level": 2,
+          "title": "7. 听写只切开关键片段"
+        },
+        {
+          "level": 2,
+          "title": "8. 从听见进入说出与回应"
+        },
+        {
+          "level": 2,
+          "title": "9. 精听与泛听承担不同工作"
+        },
+        {
+          "level": 2,
+          "title": "10. 逐步增加口音、速度与噪声"
+        },
+        {
+          "level": 2,
+          "title": "11. AI、播放器与教师怎样分工"
+        },
+        {
+          "level": 2,
+          "title": "12. 十四天听力实验"
+        },
+        {
+          "level": 2,
+          "title": "怎样判断听力正在变成能力"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：听见声音背后的人"
+        }
+      ],
+      "summary": "从无字幕首听保存主旨、细节与行动判断，按六层错误地图诊断声音、切词、调用、句法、背景和篇章问题。五遍任务与可升降字幕/转写支架连接核对、意义重构和输出，最后撤架、延迟复听并换平行材料。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 13,
+      "group": "第一部：打开输入",
+      "title": "4. 阅读训练",
+      "source": "docs/threads/part-1/4-reading.md",
+      "counterpart": "docs/en/threads/part-1/4-reading.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/4-reading.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/4-reading.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/4-reading",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 6989,
+      "sha256": "e1f5dc030de873061a6a18035f819eddd353ed7b908a3b92e044facab733c261",
+      "englishSha256": "24522a2bb3f60e2533ee78d5a73adf6f218bb32a5317ab410bc7c25d11d8e93c",
+      "headings": [
+        {
+          "level": 1,
+          "title": "阅读篇：从逐词翻译到观点与证据"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先把阅读任务写成结果"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存一次未经修饰的首读"
+        },
+        {
+          "level": 2,
+          "title": "3. 把“读不懂”拆成六层"
+        },
+        {
+          "level": 2,
+          "title": "4. 五遍阅读法：每一遍回答不同问题"
+        },
+        {
+          "level": 3,
+          "title": "第一遍：定位方向"
+        },
+        {
+          "level": 3,
+          "title": "第二遍：画结构"
+        },
+        {
+          "level": 3,
+          "title": "第三遍：核对关键证据"
+        },
+        {
+          "level": 3,
+          "title": "第四遍：合上工具重构"
+        },
+        {
+          "level": 3,
+          "title": "第五遍：进入任务"
+        },
+        {
+          "level": 2,
+          "title": "5. 技术文档：把页面读成可验证的事实"
+        },
+        {
+          "level": 2,
+          "title": "6. 生词、词族与翻译的边界"
+        },
+        {
+          "level": 2,
+          "title": "7. 精读、泛读与窄读"
+        },
+        {
+          "level": 2,
+          "title": "8. 多来源与跨文化逻辑"
+        },
+        {
+          "level": 2,
+          "title": "9. AI、搜索与阅读器怎样分工"
+        },
+        {
+          "level": 2,
+          "title": "10. 让阅读产生真实输出"
+        },
+        {
+          "level": 2,
+          "title": "11. 十四天阅读实验"
+        },
+        {
+          "level": 2,
+          "title": "12. 怎样判断阅读正在变成能力"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：让文字重新有重量"
+        }
+      ],
+      "summary": "先保存首读与六层障碍，区分词汇、结构、背景、证据和任务策略。五遍阅读连接结构地图、主张与证据、关键语言、真实输出和撤架；技术材料保留版本、前置、最小输入/输出与失败，多来源比较并检验迁移。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 14,
+      "group": "第一部：打开输入",
+      "title": "5. 口语训练",
+      "source": "docs/threads/part-1/5-speaking.md",
+      "counterpart": "docs/en/threads/part-1/5-speaking.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/5-speaking.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/5-speaking.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/5-speaking",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 7062,
+      "sha256": "94bdd431f4d35713572a83fae0627a0d8d2a314eace9bbf64843d04273537c54",
+      "englishSha256": "aadf35bfb1370b05597da0a46f59164a251256cd6e39a37a732d888e1ce2ea4d",
+      "headings": [
+        {
+          "level": 1,
+          "title": "口语篇：让意思清楚到达"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先把口语任务说清楚"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存三种未经修饰的基线"
+        },
+        {
+          "level": 2,
+          "title": "3. 选择参考变体，不制造高低等级"
+        },
+        {
+          "level": 2,
+          "title": "4. 把口音、可理解度与理解难度分开"
+        },
+        {
+          "level": 2,
+          "title": "5. 发音训练先修高影响关系"
+        },
+        {
+          "level": 3,
+          "title": "音与词义"
+        },
+        {
+          "level": 3,
+          "title": "词尾、重音与边界"
+        },
+        {
+          "level": 3,
+          "title": "句块、停顿与语气"
+        },
+        {
+          "level": 2,
+          "title": "6. 跟读不是终点：从模仿走向生成"
+        },
+        {
+          "level": 2,
+          "title": "7. 用词块建立可变的支架"
+        },
+        {
+          "level": 2,
+          "title": "8. 互动修复不是补救，是能力"
+        },
+        {
+          "level": 2,
+          "title": "9. 真实听众、教师与 AI 怎样分工"
+        },
+        {
+          "level": 2,
+          "title": "10. 把练习放回生活"
+        },
+        {
+          "level": 2,
+          "title": "11. 十四天口语实验"
+        },
+        {
+          "level": 2,
+          "title": "12. 怎样判断口语正在变成能力"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：让意思抵达"
+        }
+      ],
+      "summary": "优先让意思清楚到达，区分可理解度、理解难度与口音显著度，选择稳定参考变体。保存无稿独白、互动与陌生追问，使用听众复述、重音组织、请求澄清和修复误解，检查新主题与延迟表现。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 15,
+      "group": "第一部：打开输入",
+      "title": "6. 写作训练",
+      "source": "docs/threads/part-1/6-writing.md",
+      "counterpart": "docs/en/threads/part-1/6-writing.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/6-writing.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/6-writing.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/6-writing",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 6759,
+      "sha256": "0e56bcd069071f57e8fdb28e058572cff72fe17d8be6c066f41f0620aed360b0",
+      "englishSha256": "2504c6249375b7b2b012114be98a98b19cbf4fe44d1b6b573d4729e039e6a51a",
+      "headings": [
+        {
+          "level": 1,
+          "title": "写作篇：从初稿到可验证修订"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先定义写作任务"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存未经修饰的初稿"
+        },
+        {
+          "level": 2,
+          "title": "3. 先建立事实与责任账本"
+        },
+        {
+          "level": 2,
+          "title": "4. 用骨架决定每一段的工作"
+        },
+        {
+          "level": 2,
+          "title": "5. 翻译不是代写：建立意义对照"
+        },
+        {
+          "level": 2,
+          "title": "6. 五次修订，各自只问一类问题"
+        },
+        {
+          "level": 3,
+          "title": "第一遍：任务与事实"
+        },
+        {
+          "level": 3,
+          "title": "第二遍：结构与证据"
+        },
+        {
+          "level": 3,
+          "title": "第三遍：句子与意义"
+        },
+        {
+          "level": 3,
+          "title": "第四遍：语域与声音"
+        },
+        {
+          "level": 3,
+          "title": "第五遍：交付与边界"
+        },
+        {
+          "level": 2,
+          "title": "7. 让反馈进入下一版，而不是停在批注里"
+        },
+        {
+          "level": 2,
+          "title": "8. AI 是编辑助手，不是隐形作者"
+        },
+        {
+          "level": 2,
+          "title": "9. 异步写作要让工作继续"
+        },
+        {
+          "level": 2,
+          "title": "10. 诚实标题、引用和署名"
+        },
+        {
+          "level": 2,
+          "title": "11. 十四天写作实验"
+        },
+        {
+          "level": 2,
+          "title": "12. 怎样判断写作正在变成能力"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：写下愿意署名的版本"
+        }
+      ],
+      "summary": "先由作者完成初稿和事实责任账本，明确受众、动作、来源与署名责任。通过五遍修订处理事实意义、结构、段落、语言和交付；解释反馈采纳、翻译变化与AI参与，在异步协作和独立新稿中检查迁移。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 16,
+      "group": "第一部：打开输入",
+      "title": "7. 用 AI 学英语",
+      "source": "docs/threads/part-1/7-ai.md",
+      "counterpart": "docs/en/threads/part-1/7-ai.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/7-ai.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/7-ai.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/7-ai",
+      "updated": "2026-10-03",
+      "sourcesChecked": "2026-08-24",
+      "characters": 6839,
+      "sha256": "9e5a257ab7423d6ac0419c9099832df2cd983ca17b702ded973e595a7a099fc1",
+      "englishSha256": "fdc988d082d36789609b68455af14e585be510337f93d0ec9db17150ae60146b",
+      "headings": [
+        {
+          "level": 1,
+          "title": "用 AI 学英语：从练习到真实交付"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "先定义“会英语”"
+        },
+        {
+          "level": 2,
+          "title": "一、先测基线，再让 AI 介入"
+        },
+        {
+          "level": 2,
+          "title": "四项能力与证据卡"
+        },
+        {
+          "level": 2,
+          "title": "二、每次训练使用同一张任务卡"
+        },
+        {
+          "level": 2,
+          "title": "三、词汇：从眼熟到在真实任务中调用"
+        },
+        {
+          "level": 2,
+          "title": "四、听力：把“没听懂”拆开"
+        },
+        {
+          "level": 2,
+          "title": "五、口语与发音：以沟通结果为中心"
+        },
+        {
+          "level": 2,
+          "title": "六、阅读：训练证据链，而不是收集摘要"
+        },
+        {
+          "level": 2,
+          "title": "七、写作：保留作者的手"
+        },
+        {
+          "level": 2,
+          "title": "八、选择工具，但不混淆功能"
+        },
+        {
+          "level": 2,
+          "title": "一次跨模态练习：从看懂到说清楚"
+        },
+        {
+          "level": 2,
+          "title": "九、反馈协议与复测"
+        },
+        {
+          "level": 2,
+          "title": "十、7 天、30 天、12 周"
+        },
+        {
+          "level": 3,
+          "title": "7 天：建立一次闭环"
+        },
+        {
+          "level": 3,
+          "title": "30 天：建立错误库"
+        },
+        {
+          "level": 3,
+          "title": "12 周：完成真实英语交付"
+        },
+        {
+          "level": 2,
+          "title": "隐私、版权与官方来源"
+        },
+        {
+          "level": 2,
+          "title": "结语：工具离场以后"
+        }
+      ],
+      "summary": "将AI用作英语诊断、反例、模拟听众、有限反馈与对比练习。原始录音/文本、工具建议和人工修订分别保留，核验转写、翻译与自动评分错误，关闭辅助后复测；禁止让漂亮工具成品替代学习者能力。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 17,
+      "group": "第一部：打开输入",
+      "title": "8. 求职英语与远程协作",
+      "source": "docs/threads/part-1/8-job-search-english.md",
+      "counterpart": "docs/en/threads/part-1/8-job-search-english.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-1/8-job-search-english.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-1/8-job-search-english.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-1/8-job-search-english",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 7644,
+      "sha256": "7b1a2028df211781141cba0a0694c4696f562e5bbc391a6931328e858067fc66",
+      "englishSha256": "f1f386a9163c86bfdc006e7d91cf5094445ee3622a399bfbdb8bfe2f8cbe1336",
+      "headings": [
+        {
+          "level": 1,
+          "title": "8. 求职英语篇：把能力带进面试与远程协作"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. “英语要求”不是一个任务"
+        },
+        {
+          "level": 2,
+          "title": "2. CEFR 是坐标，不是录用线"
+        },
+        {
+          "level": 2,
+          "title": "3. 从岗位描述提取语言地图"
+        },
+        {
+          "level": 2,
+          "title": "4. 先保存一次完整基线"
+        },
+        {
+          "level": 2,
+          "title": "5. 准备故事，不背答案"
+        },
+        {
+          "level": 2,
+          "title": "6. 先说结论，再打开细节"
+        },
+        {
+          "level": 2,
+          "title": "7. 互动修复是面试能力，不是丢分动作"
+        },
+        {
+          "level": 3,
+          "title": "没听清"
+        },
+        {
+          "level": 3,
+          "title": "不确定问题范围"
+        },
+        {
+          "level": 3,
+          "title": "需要思考时间"
+        },
+        {
+          "level": 3,
+          "title": "暂时不知道"
+        },
+        {
+          "level": 3,
+          "title": "确认理解"
+        },
+        {
+          "level": 2,
+          "title": "8. 远程岗位还在测试写作"
+        },
+        {
+          "level": 2,
+          "title": "9. AI 可以模拟，不能替你获得诚信"
+        },
+        {
+          "level": 2,
+          "title": "10. 十四天岗位冲刺"
+        },
+        {
+          "level": 2,
+          "title": "11. 用阶段门槛判断“是否够用”"
+        },
+        {
+          "level": 2,
+          "title": "12. 面试之后也要关账"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：让能力抵达那场真实对话"
+        }
+      ],
+      "summary": "从真实岗位描述和招聘流程建立岗位语言地图，覆盖沟通、项目说明、技术追问与异步写作。用真实经历库、无稿表达、陌生追问、澄清和十四天复测准备，标记AI与面试诚信边界，按任务证据决定投递或补缺。",
+      "guide": "guides/02-english.md"
+    },
+    {
+      "order": 18,
+      "group": "第二部：把自己放回生活",
+      "title": "第二部导语：把自己放回生活",
+      "source": "docs/threads/part-2/return-to-life.md",
+      "counterpart": "docs/en/threads/part-2/return-to-life.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/return-to-life.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/return-to-life.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/return-to-life",
+      "updated": "2026-10-04",
+      "sourcesChecked": null,
+      "characters": 1863,
+      "sha256": "c26bd0654ddf795ad636a41c215988b24c424c3983bd950063db22750c88490e",
+      "englishSha256": "fb9881235d49b8a3765400d8015812b133449826cd6469f23936c60e1e79fe7c",
+      "headings": [
+        {
+          "level": 1,
+          "title": "第二部：把自己放回生活"
+        },
+        {
+          "level": 2,
+          "title": "本部要回答的问题"
+        },
+        {
+          "level": 2,
+          "title": "阅读路径"
+        },
+        {
+          "level": 2,
+          "title": "读完留下什么"
+        },
+        {
+          "level": 2,
+          "title": "进入正文"
+        }
+      ],
+      "summary": "第二部导语：把学习方法放回身体、工作、金钱、关系与现实责任。个人经历提供问题来路，需用事实、解释和未知复盘，不能由结果倒推所有选择；恢复、安全和代价先于升级目标。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 19,
+      "group": "第二部：把自己放回生活",
+      "title": "我的故事",
+      "source": "docs/threads/part-2/my-story.md",
+      "counterpart": "docs/en/threads/part-2/my-story.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/my-story.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/my-story.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/my-story",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 7296,
+      "sha256": "87cae4c2ba5d838a873cc9d618373b8fb6b97c8fb681fbc01ba8b5b9bd1a90c5",
+      "englishSha256": "2ca6850b2bf882bf12a67feb66715b9f1cb15e26a5c4bf9775510af89de1077a",
+      "headings": [
+        {
+          "level": 1,
+          "title": "我的故事：失败、恢复与重新出发"
+        },
+        {
+          "level": 2,
+          "title": "叙事边界"
+        },
+        {
+          "level": 2,
+          "title": "一家公司倒闭之后，我如何面对那些代价"
+        },
+        {
+          "level": 3,
+          "title": "爱情"
+        },
+        {
+          "level": 4,
+          "title": "如果爱有回声"
+        },
+        {
+          "level": 3,
+          "title": "餐饮"
+        },
+        {
+          "level": 3,
+          "title": "经营公司"
+        },
+        {
+          "level": 3,
+          "title": "身体垮掉"
+        },
+        {
+          "level": 3,
+          "title": "回老家之后"
+        },
+        {
+          "level": 3,
+          "title": "看不到希望的生活"
+        },
+        {
+          "level": 3,
+          "title": "感悟"
+        },
+        {
+          "level": 2,
+          "title": "2026-04-22 更新"
+        },
+        {
+          "level": 2,
+          "title": "2026-06-16 更新"
+        },
+        {
+          "level": 2,
+          "title": "结语：重来不是凯旋"
+        }
+      ],
+      "summary": "作者回看学习、工作、创业、经营和失败，说明理想化进阶叙事怎样遇到真实成本。重点是当时信息、选择、他人贡献、身体和责任，不将自述当独立审计，也不把今天解释改写成当时确定因果。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 20,
+      "group": "第二部：把自己放回生活",
+      "title": "我还在这里：从抑郁焦虑的黑暗中走出来",
+      "source": "docs/threads/part-2/depression-anxiety-recovery.md",
+      "counterpart": "docs/en/threads/part-2/depression-anxiety-recovery.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/depression-anxiety-recovery.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/depression-anxiety-recovery.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/depression-anxiety-recovery",
+      "updated": "2026-10-03",
+      "sourcesChecked": null,
+      "characters": 3826,
+      "sha256": "4c893fc74e7bf44ad33390df0ff5a3b31f201f45f391f0881f4818fe8a06e1a2",
+      "englishSha256": "4bd7fce905de1428811b3a1fbade15189c895c5d78b8a49c3c6ad5806c59fbd2",
+      "headings": [
+        {
+          "level": 1,
+          "title": "我还在这里：从抑郁焦虑的黑暗中走出来"
+        },
+        {
+          "level": 2,
+          "title": "叙事边界"
+        },
+        {
+          "level": 2,
+          "title": "黑雾不是一句“想开点”"
+        },
+        {
+          "level": 2,
+          "title": "我曾经把停药当成夺回控制权"
+        },
+        {
+          "level": 2,
+          "title": "最深处没有一个“想通了”的早晨"
+        },
+        {
+          "level": 2,
+          "title": "走出来不是一个人的胜利"
+        },
+        {
+          "level": 2,
+          "title": "我现在怎样理解“走出黑暗”"
+        },
+        {
+          "level": 2,
+          "title": "写给仍在黑暗里的人"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：我还在这里"
+        }
+      ],
+      "summary": "作者关于抑郁焦虑、错误判断、就医和获得支持的个人叙事。有效阅读边界是不要将个人病程、药物或恢复经历迁移为处方；专业评估、可信支持与保护生活能力的重要性贯穿叙事。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 21,
+      "group": "第二部：把自己放回生活",
+      "title": "叙事与证据篇：不把经历写成命运",
+      "source": "docs/threads/part-2/narrative-and-evidence.md",
+      "counterpart": "docs/en/threads/part-2/narrative-and-evidence.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/narrative-and-evidence.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/narrative-and-evidence.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/narrative-and-evidence",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 3866,
+      "sha256": "6a9eb74ecc849c8192e66499292591b8d70754aea4d7e8664d1a38e718297056",
+      "englishSha256": "1951ef25f55700f76bd6d7aba0614970277c6aa91b2d14934e9eb7995d1a0905",
+      "headings": [
+        {
+          "level": 1,
+          "title": "叙事与证据篇：不把经历写成命运"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 一件事至少有三个版本"
+        },
+        {
+          "level": 2,
+          "title": "2. 时间线比漂亮因果更可靠"
+        },
+        {
+          "level": 2,
+          "title": "3. 不用反事实惩罚过去"
+        },
+        {
+          "level": 2,
+          "title": "4. 解释处境，不替他人定罪"
+        },
+        {
+          "level": 2,
+          "title": "5. 从经验提炼有条件的原则"
+        },
+        {
+          "level": 2,
+          "title": "6. 一页案例复盘"
+        },
+        {
+          "level": 2,
+          "title": "7. 写作时保留一处不确定"
+        },
+        {
+          "level": 2,
+          "title": "8. 七天叙事复盘练习"
+        },
+        {
+          "level": 2,
+          "title": "9. 阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "结语：让故事回到生活"
+        }
+      ],
+      "summary": "分开当时版本、事后回望和外部证据，画时间线并标记事实、解释与假设。识别叙事压缩、回望偏差和未经证实的他人动机，提炼带条件与反例的原则；用七天写作、陌生读者复述和最小实验检查。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 22,
+      "group": "第二部：把自己放回生活",
+      "title": "回声篇：不要把逃避写成浪漫",
+      "source": "docs/threads/part-2/x-misc.md",
+      "counterpart": "docs/en/threads/part-2/x-misc.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/x-misc.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/x-misc.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/x-misc",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 4303,
+      "sha256": "9458dcb259ff43eb55f0d0d93754bfd8b38521af2748e3b2b3ae49d97ca2c28d",
+      "englishSha256": "96950bb2ea426ba9f7a499d1727ec5e7ac05bda3618b60ac3971f92f7e2b91f9",
+      "headings": [
+        {
+          "level": 1,
+          "title": "回声篇：不要把逃避写成浪漫"
+        },
+        {
+          "level": 2,
+          "title": "1. 我曾经把聪明当成通行证"
+        },
+        {
+          "level": 2,
+          "title": "2. 身体会保存没有结算的代价"
+        },
+        {
+          "level": 2,
+          "title": "3. 我把逃避误写成了自由"
+        },
+        {
+          "level": 2,
+          "title": "4. 一次成功不能替别人做决定"
+        },
+        {
+          "level": 2,
+          "title": "5. 五分钟和一台设备都不是魔法"
+        },
+        {
+          "level": 2,
+          "title": "6. 旧日经验里，我真正想留下什么"
+        },
+        {
+          "level": 3,
+          "title": "受伤不等于失败，反省也不等于自我定罪"
+        },
+        {
+          "level": 3,
+          "title": "反抗不等于自由"
+        },
+        {
+          "level": 3,
+          "title": "坚持不等于方向正确"
+        },
+        {
+          "level": 3,
+          "title": "被帮助不等于软弱"
+        },
+        {
+          "level": 2,
+          "title": "7. 给旧故事一张新的读法"
+        },
+        {
+          "level": 2,
+          "title": "结语：让过去停止替今天发言"
+        }
+      ],
+      "summary": "重新审视聪明、自由、设备、五分钟习惯和坚持等旧判断。反抗不自动等于自由，坚持不证明方向正确，条件差异和被帮助不能用人格评价解释；将口号改为有场景、代价和反例的行动。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 23,
+      "group": "第二部：把自己放回生活",
+      "title": "恢复篇：先把自己接住",
+      "source": "docs/threads/part-2/recovery.md",
+      "counterpart": "docs/en/threads/part-2/recovery.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/recovery.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/recovery.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/recovery",
+      "updated": "2026-09-07",
+      "sourcesChecked": "2026-09-07",
+      "characters": 6234,
+      "sha256": "5ad9b54d4b7fbc0ffafea5e6444e4e8c12262b8b438c2af0478fa69712c106bb",
+      "englishSha256": "63020312855b5daee33d5bcaff18c8d0f387c7ee39760420fe7737394bca0351",
+      "headings": [
+        {
+          "level": 1,
+          "title": "恢复篇：先把自己接住"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先确认安全"
+        },
+        {
+          "level": 2,
+          "title": "2. 先选择今天的恢复模式"
+        },
+        {
+          "level": 2,
+          "title": "3. 先恢复身体，不拿纪律惩罚自己"
+        },
+        {
+          "level": 2,
+          "title": "4. 把羞耻还原成事实"
+        },
+        {
+          "level": 2,
+          "title": "5. 关系需要道歉，也需要边界"
+        },
+        {
+          "level": 2,
+          "title": "6. 让工作回到可承受的尺度"
+        },
+        {
+          "level": 2,
+          "title": "7. 复工不是开关，而是一次逐级试载"
+        },
+        {
+          "level": 2,
+          "title": "8. 求助要具体，也要保留主体性"
+        },
+        {
+          "level": 2,
+          "title": "9. 七天恢复最小秩序"
+        },
+        {
+          "level": 2,
+          "title": "10. 什么时候不能只靠意志"
+        },
+        {
+          "level": 2,
+          "title": "11. 恢复的阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：先接住，再向前"
+        }
+      ],
+      "summary": "先保护安全、基本照料和可行动性，使用安全、降档、重建三种生活记录模式。写支持协议、限时任务与升级求助；复工一次只增时长、复杂度、责任或公开程度之一，检查当天结果及次日代价，保留本人控制权。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 24,
+      "group": "第二部：把自己放回生活",
+      "title": "选择篇：在不确定中做决定",
+      "source": "docs/threads/part-2/decision.md",
+      "counterpart": "docs/en/threads/part-2/decision.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/decision.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/decision.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/decision",
+      "updated": "2026-09-03",
+      "sourcesChecked": null,
+      "characters": 5733,
+      "sha256": "bb0e830e055c78ee05fbb89e9134dd0bf7061e5254588eba15ebb0db78813ff8",
+      "englishSha256": "1641d687b0250e545b93d697e69d872fe39b1f789eeda4f00fd7ba79f2006696",
+      "headings": [
+        {
+          "level": 1,
+          "title": "选择篇：在不确定中做决定"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 3,
+          "title": "让信心决定动作大小"
+        },
+        {
+          "level": 2,
+          "title": "1. 先写事实，再写故事"
+        },
+        {
+          "level": 2,
+          "title": "2. 先判断：缺信息，还是价值冲突"
+        },
+        {
+          "level": 2,
+          "title": "3. 先判断可逆性"
+        },
+        {
+          "level": 2,
+          "title": "4. 用最小实验替代豪赌"
+        },
+        {
+          "level": 2,
+          "title": "5. 一页决策简报"
+        },
+        {
+          "level": 2,
+          "title": "6. 四张代价表"
+        },
+        {
+          "level": 3,
+          "title": "金钱"
+        },
+        {
+          "level": 3,
+          "title": "健康"
+        },
+        {
+          "level": 3,
+          "title": "关系"
+        },
+        {
+          "level": 3,
+          "title": "责任"
+        },
+        {
+          "level": 2,
+          "title": "7. 把决定权、影响和执行分开"
+        },
+        {
+          "level": 2,
+          "title": "8. 不要用结果审判当时的决定"
+        },
+        {
+          "level": 2,
+          "title": "9. 把停止条件写成能被看见的信号"
+        },
+        {
+          "level": 2,
+          "title": "10. AI 可以参与，但不能成为神谕"
+        },
+        {
+          "level": 2,
+          "title": "11. 七天决策整理"
+        },
+        {
+          "level": 2,
+          "title": "12. 一个好决定的阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "结语：让选择留下回来的路"
+        }
+      ],
+      "summary": "区分缺信息、结果不确定、价值冲突和身份防卫，按可逆性与代价设计小实验。决定前记录事实、底线、选项、受影响者、权限及证据/成本/安全/责任门，写推翻证据和复查，避免沉没成本、好运气和AI建议替代判断。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 25,
+      "group": "第二部：把自己放回生活",
+      "title": "关系篇：在关系中成为成年人",
+      "source": "docs/threads/part-2/relationships.md",
+      "counterpart": "docs/en/threads/part-2/relationships.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/relationships.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/relationships.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/relationships",
+      "updated": "2026-10-04",
+      "sourcesChecked": null,
+      "characters": 5275,
+      "sha256": "c97d4e26b6f48dd0b7d06b62479864fd777f18cd8daab69eed7b85098eb86359",
+      "englishSha256": "ee1e6d359844dc1683c5ded4994dfd74e73818231aed01d149c1c2988698467f",
+      "headings": [
+        {
+          "level": 1,
+          "title": "关系篇：在关系中成为成年人"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 在场：先让对方被听见"
+        },
+        {
+          "level": 2,
+          "title": "2. 边界：把责任放回各自手里"
+        },
+        {
+          "level": 2,
+          "title": "3. 冲突：先处理安全，再处理观点"
+        },
+        {
+          "level": 2,
+          "title": "4. 道歉：不把痛苦当成免责条款"
+        },
+        {
+          "level": 2,
+          "title": "5. 修复：不是把关系恢复成原样"
+        },
+        {
+          "level": 2,
+          "title": "6. 亲密关系里的共同生活"
+        },
+        {
+          "level": 2,
+          "title": "7. 家庭、友谊与工作的边界"
+        },
+        {
+          "level": 2,
+          "title": "8. 权力差异：让拒绝真的有出口"
+        },
+        {
+          "level": 2,
+          "title": "9. AI 时代的关系伦理"
+        },
+        {
+          "level": 2,
+          "title": "10. 离开：不是所有关系都需要被挽回"
+        },
+        {
+          "level": 2,
+          "title": "11. 七天关系练习"
+        },
+        {
+          "level": 2,
+          "title": "12. 关系的阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "结语：让爱有边界，让选择有尊重"
+        }
+      ],
+      "summary": "从倾听、事实、感受、需要、请求和可执行边界处理关系。检查安全与权力差异、同意和退出，承担具体影响、道歉及可观察修复；不要求他人原谅，也不用AI处理未经同意的私人材料或替代情感责任。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 26,
+      "group": "第二部：把自己放回生活",
+      "title": "珍惜篇：从爱与牵挂中获得力量",
+      "source": "docs/threads/part-2/care-and-carry-on.md",
+      "counterpart": "docs/en/threads/part-2/care-and-carry-on.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/care-and-carry-on.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/care-and-carry-on.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/care-and-carry-on",
+      "updated": "2026-10-04",
+      "sourcesChecked": null,
+      "characters": 5791,
+      "sha256": "cb58b6762169d2ceef9e8551bc944d462bfe4cf77572755d2dce1b0ab75ee082",
+      "englishSha256": "f7cf006084f2b1c96f7dd943dbb7265d65a15fc3b211d9bd140c30739afd280c",
+      "headings": [
+        {
+          "level": 1,
+          "title": "珍惜篇：从爱与牵挂中获得力量"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 珍惜，从不再把熟悉当成理所当然开始"
+        },
+        {
+          "level": 2,
+          "title": "2. 关心家人，也要承认他们拥有自己的生活"
+        },
+        {
+          "level": 2,
+          "title": "3. 看见那些让日子得以继续的劳动"
+        },
+        {
+          "level": 2,
+          "title": "4. 从爱人那里获得力量，先允许自己被看见"
+        },
+        {
+          "level": 2,
+          "title": "5. 学会接受爱，不急着用成功偿还"
+        },
+        {
+          "level": 2,
+          "title": "6. 负重前行之前，先辨认肩上的重量"
+        },
+        {
+          "level": 2,
+          "title": "7. 一段普通生活里的分担"
+        },
+        {
+          "level": 2,
+          "title": "8. 当家庭或爱情暂时不能成为依靠"
+        },
+        {
+          "level": 2,
+          "title": "9. 七天里，只做两件能够兑现的小事"
+        },
+        {
+          "level": 2,
+          "title": "结语：让向前的路也通向彼此"
+        }
+      ],
+      "summary": "将珍惜落到倾听、感谢、具体照护和分担，识别无偿劳动并允许接受支持。共同责任需自愿、容量和拒绝空间；不要求用成功偿还爱、不让孩子承担成人情绪责任，七天只许诺能兑现的小动作。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 27,
+      "group": "第二部：把自己放回生活",
+      "title": "创业篇：从野心到使命",
+      "source": "docs/threads/part-2/entrepreneurship.md",
+      "counterpart": "docs/en/threads/part-2/entrepreneurship.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-2/entrepreneurship.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-2/entrepreneurship.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-2/entrepreneurship",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 7132,
+      "sha256": "2d16c58604eb16658cfe65ca0397955e265931c80f41b2e1e7d083ff5d6871dd",
+      "englishSha256": "70eaec55e53684ce9008de3ccc5709348cbcb9551eac63852afd84b599c4dbf1",
+      "headings": [
+        {
+          "level": 1,
+          "title": "创业篇：从野心到使命"
+        },
+        {
+          "level": 2,
+          "title": "先区分回忆、复盘与计划"
+        },
+        {
+          "level": 2,
+          "title": "2016：第一次把自己推向市场"
+        },
+        {
+          "level": 2,
+          "title": "2017：进入一家公司，然后把自己押进去"
+        },
+        {
+          "level": 2,
+          "title": "餐饮、酒店和现金流：离钱近，离本质也近"
+        },
+        {
+          "level": 2,
+          "title": "2022：在失败中看见产品与责任的地基"
+        },
+        {
+          "level": 2,
+          "title": "2023：退场之后，先活下来"
+        },
+        {
+          "level": 2,
+          "title": "2026：中国词元云与 AI 赋能实体经济"
+        },
+        {
+          "level": 2,
+          "title": "下一次创业的五道现实门槛"
+        },
+        {
+          "level": 2,
+          "title": "这些年留下的教训"
+        },
+        {
+          "level": 3,
+          "title": "功能堆不成产品"
+        },
+        {
+          "level": 3,
+          "title": "技术债最终会变成经营债"
+        },
+        {
+          "level": 3,
+          "title": "现金流比估值更诚实"
+        },
+        {
+          "level": 3,
+          "title": "警惕英雄叙事"
+        },
+        {
+          "level": 3,
+          "title": "失败之后还愿意学习，是最后的资产"
+        },
+        {
+          "level": 2,
+          "title": "创业不能靠燃尽自己"
+        },
+        {
+          "level": 2,
+          "title": "相关经历与资料"
+        },
+        {
+          "level": 2,
+          "title": "结语：让野心经过现实"
+        }
+      ],
+      "summary": "回看作者产品和经营失败，提炼未经验证的核心能力、数据、功能堆叠、技术债、用户、现金流与责任问题。创业首先购买关于真实需求的信息，后续用客户验证、人工试点和全部成本审视，而非以热情或公开故事保证商业成果。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 28,
+      "group": "第三部：借工具放大能力",
+      "title": "第三部导语：借工具放大能力",
+      "source": "docs/threads/part-3/amplify-ability.md",
+      "counterpart": "docs/en/threads/part-3/amplify-ability.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/amplify-ability.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/amplify-ability.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/amplify-ability",
+      "updated": "2026-10-03",
+      "sourcesChecked": null,
+      "characters": 1549,
+      "sha256": "9cb18aa546dbe061334944465dfdd383b3fc91a3396195473c931adb38f0b001",
+      "englishSha256": "89d0412745eec70966de9237ab4284fef712d22cfa9bdca13bac7d69a6da7d38",
+      "headings": [
+        {
+          "level": 1,
+          "title": "第三部：借工具放大能力"
+        },
+        {
+          "level": 2,
+          "title": "本部要回答的问题"
+        },
+        {
+          "level": 2,
+          "title": "阅读路径"
+        },
+        {
+          "level": 2,
+          "title": "读完留下什么"
+        },
+        {
+          "level": 2,
+          "title": "进入正文"
+        }
+      ],
+      "summary": "第三部导语：工具扩大行动范围，判断、来源、责任和学习主体性仍需保留。将AI用于有限任务与作品，观察独立能力、全部成本和失败出口，不把模型体验写成效果保证。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 29,
+      "group": "第三部：借工具放大能力",
+      "title": "使用 AI 学习一切",
+      "source": "docs/threads/part-3/1-ai-learning.md",
+      "counterpart": "docs/en/threads/part-3/1-ai-learning.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/1-ai-learning.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/1-ai-learning.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/1-ai-learning",
+      "updated": "2026-10-03",
+      "sourcesChecked": "2026-10-03",
+      "characters": 7472,
+      "sha256": "54de5a11f3efc8f718d8753694876a13ff66c553eff1a1415f56f27019ada021",
+      "englishSha256": "2234be22f396b18f0b4ee7f5c29e44011ae0e9aaab493d027937d51787f934d4",
+      "headings": [
+        {
+          "level": 1,
+          "title": "使用 AI 学习一切：从真实问题到可验证交付"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "先看清这套方法从哪里来"
+        },
+        {
+          "level": 3,
+          "title": "2015–2016：从无处可去到真实用户"
+        },
+        {
+          "level": 3,
+          "title": "2017–2022：从前端重构到组织与产品约束"
+        },
+        {
+          "level": 3,
+          "title": "2022：把搜索和预设结果误认为 AI"
+        },
+        {
+          "level": 3,
+          "title": "2023：失败以后先恢复可行动性"
+        },
+        {
+          "level": 3,
+          "title": "2026：重新进入 AI 与实体产业"
+        },
+        {
+          "level": 2,
+          "title": "七步闭环：先做事，再谈提示词"
+        },
+        {
+          "level": 2,
+          "title": "学习 AI，先弄懂五个层次"
+        },
+        {
+          "level": 2,
+          "title": "一页任务简报"
+        },
+        {
+          "level": 2,
+          "title": "一次会话的最小协议"
+        },
+        {
+          "level": 2,
+          "title": "不同输出需要不同证据"
+        },
+        {
+          "level": 2,
+          "title": "三次对照：证明 AI 帮了什么"
+        },
+        {
+          "level": 2,
+          "title": "常见失控与交接"
+        },
+        {
+          "level": 2,
+          "title": "从学习到项目交付"
+        },
+        {
+          "level": 2,
+          "title": "数据、隐私与版权"
+        },
+        {
+          "level": 2,
+          "title": "7 天、30 天、12 周"
+        },
+        {
+          "level": 3,
+          "title": "7 天：完成一个可复现微交付"
+        },
+        {
+          "level": 3,
+          "title": "30 天：建立一套重复工作流"
+        },
+        {
+          "level": 3,
+          "title": "12 周：交付给真实用户或组织"
+        },
+        {
+          "level": 2,
+          "title": "来源与核验说明"
+        },
+        {
+          "level": 2,
+          "title": "结语：把能力留在人身上"
+        }
+      ],
+      "summary": "用七步协作明确任务、保存首版、准备来源、限制AI帮助、核验修改、独立复测和交接。区分成品质量、独立能力与总成本，解释AI基础概念及检索/工具边界；十二周从真实问题到小作品、验证与公开说明。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 30,
+      "group": "第三部：借工具放大能力",
+      "title": "AI 趋势与学习路线：把变化变成能力",
+      "source": "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md",
+      "counterpart": "docs/en/threads/part-3/6-ai-trends-and-learning-roadmap.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/6-ai-trends-and-learning-roadmap.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/6-ai-trends-and-learning-roadmap.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/6-ai-trends-and-learning-roadmap",
+      "updated": "2026-10-03",
+      "sourcesChecked": "2026-10-03",
+      "characters": 5096,
+      "sha256": "692b0482809ab74ac5fa1c4d58cc13713964641f0251bbbca6740c967ccf576b",
+      "englishSha256": "e83b03ab6f8e815a21f61599da71d5498e4b5f761954256aa9eb2bd6f93e3ed6",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 趋势与学习路线：把变化变成能力"
+        },
+        {
+          "level": 2,
+          "title": "先建立趋势雷达"
+        },
+        {
+          "level": 2,
+          "title": "六个方向，六个最小实验"
+        },
+        {
+          "level": 3,
+          "title": "1. 从聊天到受限智能体"
+        },
+        {
+          "level": 3,
+          "title": "2. 从更多上下文到可携带状态"
+        },
+        {
+          "level": 3,
+          "title": "3. 从看见模态到验证理解"
+        },
+        {
+          "level": 3,
+          "title": "4. 从“模型变强”到持续评测"
+        },
+        {
+          "level": 3,
+          "title": "5. 从云端便利到本地与开放权重"
+        },
+        {
+          "level": 3,
+          "title": "6. 从“有来源”到可核验的来源链"
+        },
+        {
+          "level": 2,
+          "title": "把六个实验放进同一套比较"
+        },
+        {
+          "level": 2,
+          "title": "三十天路线"
+        },
+        {
+          "level": 2,
+          "title": "九十天路线"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：趋势最后要回到人"
+        }
+      ],
+      "summary": "将新模型、多模态、检索、工具/协议、工作流和评测等趋势转成可证伪小实验。记录一手来源与日期，分观察、宣传和推断，固定基线与条件，只按真实任务收益、权限、质量和全部成本决定是否学习或采用。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 31,
+      "group": "第三部：借工具放大能力",
+      "title": "注意力篇：把注意力还给自己",
+      "source": "docs/threads/part-3/3-attention-and-judgment.md",
+      "counterpart": "docs/en/threads/part-3/3-attention-and-judgment.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/3-attention-and-judgment.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/3-attention-and-judgment.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/3-attention-and-judgment",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 3276,
+      "sha256": "209115029b40ada24c11f09cf92b4c46caa342b6d99562173e5f00c154ca94ae",
+      "englishSha256": "0e4d2b5f7876ca72b4385bc9401897d8fffc5d0c15bdeca643a5075abef45a63",
+      "headings": [
+        {
+          "level": 1,
+          "title": "注意力篇：把注意力还给自己"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 注意力不是一盏永远亮着的灯"
+        },
+        {
+          "level": 2,
+          "title": "2. 给输入设置三道门"
+        },
+        {
+          "level": 2,
+          "title": "3. 使用 AI 前，先留下自己的版本"
+        },
+        {
+          "level": 2,
+          "title": "4. 让环境替你保护专注"
+        },
+        {
+          "level": 2,
+          "title": "5. 关系中的注意力"
+        },
+        {
+          "level": 2,
+          "title": "6. 每周做一次注意力审计"
+        },
+        {
+          "level": 2,
+          "title": "7. 七天注意力重置"
+        },
+        {
+          "level": 2,
+          "title": "8. 注意力的阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "结语：把注意力还给值得的事"
+        }
+      ],
+      "summary": "检查输入、切换、输出、关系与身体，减少无尽资讯和频繁工具切换。保护一个时间盒，先写自己的判断再请求有限反馈，用证据与反例审查观点；记录关闭AI后仍能独立完成的动作。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 32,
+      "group": "第三部：借工具放大能力",
+      "title": "作品篇：把学会变成做出",
+      "source": "docs/threads/part-3/4-artifacts-and-delivery.md",
+      "counterpart": "docs/en/threads/part-3/4-artifacts-and-delivery.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/4-artifacts-and-delivery.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/4-artifacts-and-delivery.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/4-artifacts-and-delivery",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 3681,
+      "sha256": "9125f2c8195434afe39351ebc5c47a49a9809713d08a8443cea912554bf748bc",
+      "englishSha256": "16100102e4a7e86aa3ac5f09ea41980cf8f7a6f39bb9e19635895102dc437856",
+      "headings": [
+        {
+          "level": 1,
+          "title": "作品篇：把学会变成做出"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 三种不同的“会”"
+        },
+        {
+          "level": 2,
+          "title": "2. 先选择作品的大小"
+        },
+        {
+          "level": 2,
+          "title": "3. 一页作品简报"
+        },
+        {
+          "level": 2,
+          "title": "4. 四次经过作品"
+        },
+        {
+          "level": 3,
+          "title": "第一遍：独立版"
+        },
+        {
+          "level": 3,
+          "title": "第二遍：结构版"
+        },
+        {
+          "level": 3,
+          "title": "第三遍：反馈版"
+        },
+        {
+          "level": 3,
+          "title": "第四遍：交付版"
+        },
+        {
+          "level": 2,
+          "title": "5. AI 在作品中的位置"
+        },
+        {
+          "level": 2,
+          "title": "6. 作品的质量门"
+        },
+        {
+          "level": 2,
+          "title": "7. 发布不是表演，而是获取信息"
+        },
+        {
+          "level": 2,
+          "title": "8. 7 天作品启动"
+        },
+        {
+          "level": 2,
+          "title": "9. 12 周作品阶梯"
+        },
+        {
+          "level": 2,
+          "title": "10. 作品的阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "交付之后再问一次"
+        },
+        {
+          "level": 2,
+          "title": "结语：让作品替你记住"
+        }
+      ],
+      "summary": "把作品定义为可被别人使用和质疑的输出，先写受众、场景与验收。保留首版、修改、交付与复用版本，接入真实反馈、来源权限、人工责任和回滚，区分演示效果与可维护交付。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 33,
+      "group": "第三部：借工具放大能力",
+      "title": "证据篇：变化要如何被看见",
+      "source": "docs/threads/part-3/5-evidence-and-transfer.md",
+      "counterpart": "docs/en/threads/part-3/5-evidence-and-transfer.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/5-evidence-and-transfer.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/5-evidence-and-transfer.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/5-evidence-and-transfer",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 4339,
+      "sha256": "eddbd0bbcae99e74adbb348169d06df863e41a4b66a660df3ab0b67044b4efea",
+      "englishSha256": "5550afa7eca8c633c60e7457c06145c3d3d6fa1662dc42a0381878f76dbc9184",
+      "headings": [
+        {
+          "level": 1,
+          "title": "证据篇：变化要如何被看见"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 证据不是成绩单"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存四个时间点"
+        },
+        {
+          "level": 2,
+          "title": "3. 三种结果不要混为一谈"
+        },
+        {
+          "level": 2,
+          "title": "4. AI 介入时，记录人工门"
+        },
+        {
+          "level": 2,
+          "title": "5. 把失败和返工写进证据"
+        },
+        {
+          "level": 2,
+          "title": "6. 不把生活做成仪表盘"
+        },
+        {
+          "level": 2,
+          "title": "7. 用证据决定下一步，而不是决定自己的价值"
+        },
+        {
+          "level": 2,
+          "title": "8. 一页证据链"
+        },
+        {
+          "level": 2,
+          "title": "9. 七天证据审计"
+        },
+        {
+          "level": 2,
+          "title": "结语：让变化能够被诚实地看见"
+        }
+      ],
+      "summary": "分开基线、即时表现、延迟保持、迁移和现实反馈，记录帮助与变化条件。用作品、录音、测试和来源替代打卡数量，标记事实、解释、假设与证据缺口，决定下一最小验证，防止单次成果被夸大。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 34,
+      "group": "第三部：借工具放大能力",
+      "title": "AI 开发与资源层创业",
+      "source": "docs/threads/part-3/2-ai-development-and-resource-layer.md",
+      "counterpart": "docs/en/threads/part-3/2-ai-development-and-resource-layer.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-3/2-ai-development-and-resource-layer.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-3/2-ai-development-and-resource-layer.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-3/2-ai-development-and-resource-layer",
+      "updated": "2026-09-20",
+      "sourcesChecked": "2026-09-20",
+      "characters": 10866,
+      "sha256": "bad54b5ca877d6eb42cede9f0aee87117645a5f469389899b581d4170e7df481",
+      "englishSha256": "4e4fb9cb7d5fa4250ab2be216db2df8e525cc2d610e20cb4c627327a66121bf1",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 学习、项目开发与资源层创业"
+        },
+        {
+          "level": 2,
+          "title": "先把事实、实践和结果分开"
+        },
+        {
+          "level": 2,
+          "title": "2022 年的失败如何改变今天的门禁"
+        },
+        {
+          "level": 2,
+          "title": "一、从学习者到建设者"
+        },
+        {
+          "level": 2,
+          "title": "二、用 AI 开发项目：速度之后仍然要有质量"
+        },
+        {
+          "level": 3,
+          "title": "2.1 项目简报"
+        },
+        {
+          "level": 3,
+          "title": "2.2 可复查的开发链"
+        },
+        {
+          "level": 3,
+          "title": "2.3 代码和发布门禁"
+        },
+        {
+          "level": 2,
+          "title": "三、什么是 AI 资源层"
+        },
+        {
+          "level": 3,
+          "title": "3.1 能力地图"
+        },
+        {
+          "level": 3,
+          "title": "3.2 一次请求的生命周期"
+        },
+        {
+          "level": 3,
+          "title": "3.3 路由不是“选最强模型”"
+        },
+        {
+          "level": 2,
+          "title": "四、中国词元云与 token.love：一条正在实践的业务路径"
+        },
+        {
+          "level": 2,
+          "title": "五、企业试点：先解决一个可验收的问题"
+        },
+        {
+          "level": 3,
+          "title": "5.1 发现阶段"
+        },
+        {
+          "level": 3,
+          "title": "5.2 试点阶段"
+        },
+        {
+          "level": 3,
+          "title": "5.3 验收与交接"
+        },
+        {
+          "level": 2,
+          "title": "六、赚钱逻辑：为客户承担可计价的工作"
+        },
+        {
+          "level": 3,
+          "title": "6.1 收费方式与适用场景"
+        },
+        {
+          "level": 3,
+          "title": "6.2 成本账本"
+        },
+        {
+          "level": 2,
+          "title": "七、运维：没有运行手册就没有企业服务"
+        },
+        {
+          "level": 3,
+          "title": "7.1 最低监控面板"
+        },
+        {
+          "level": 3,
+          "title": "7.2 故障分级与处理"
+        },
+        {
+          "level": 3,
+          "title": "7.3 供应商切换演练"
+        },
+        {
+          "level": 2,
+          "title": "八、数据、安全与合规边界"
+        },
+        {
+          "level": 2,
+          "title": "九、十二周验证路线"
+        },
+        {
+          "level": 2,
+          "title": "十、公众号文章的两个实践切片：从“抽象”到“逐帧”"
+        },
+        {
+          "level": 3,
+          "title": "10.1 拒绝第一个“最可能的答案”"
+        },
+        {
+          "level": 3,
+          "title": "10.2 把喧嚣还原成可回应的问题"
+        },
+        {
+          "level": 2,
+          "title": "十一、最容易失控的地方"
+        },
+        {
+          "level": 2,
+          "title": "十二、我希望留下什么"
+        },
+        {
+          "level": 2,
+          "title": "来源与核验说明"
+        },
+        {
+          "level": 2,
+          "title": "让方法回到日常"
+        }
+      ],
+      "summary": "描述需求、人工基线、原型、编码、测试、权限与交付链；资源层组织多模型接入、路由、计量、权限、部署、运维和合规。企业试点需需求/交付/商业验证、全部成本与回滚；作者关联服务和公开叙事不等于Up实现或已证明利润。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 35,
+      "group": "第三部：借工具放大能力",
+      "title": "作者项目与现实实践",
+      "source": "docs/projects.md",
+      "counterpart": "docs/en/projects.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/projects.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/projects.md",
+      "onlineUrl": "https://byoungd.github.io/up/projects",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 2856,
+      "sha256": "03f89f42aac2f19b438aeeb4dfa1ed21ec7f2de0cebafa9f36eaf011c8396aed",
+      "englishSha256": "4ec354b0edcba7951d9d1ce7185f2d500187db11a0cd315890e8bf9c15a80843",
+      "headings": [
+        {
+          "level": 1,
+          "title": "作者项目与现实实践"
+        },
+        {
+          "level": 2,
+          "title": "状态与证据边界"
+        },
+        {
+          "level": 2,
+          "title": "中国词元云与 token.love"
+        },
+        {
+          "level": 2,
+          "title": "AI 学习、项目开发与资源层创业"
+        },
+        {
+          "level": 2,
+          "title": "微信公众号文章与实践记录"
+        },
+        {
+          "level": 2,
+          "title": "ku0.com"
+        },
+        {
+          "level": 2,
+          "title": "AI 与实体产业实践"
+        },
+        {
+          "level": 2,
+          "title": "推荐原则"
+        },
+        {
+          "level": 2,
+          "title": "读者核验顺序"
+        }
+      ],
+      "summary": "集中披露作者参与的中国词元云/token.love、ku0.com、公开文章与实体产业实践方向。条目区分作者关联、正在实践、历史和待验证，保留各自核验日期；统一网关等能力是关联产品的表述，不是独立测评或Up后端功能。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 36,
+      "group": "第四部：实践与恢复",
+      "title": "第四部导语：实践与恢复",
+      "source": "docs/threads/part-4/practice-and-recovery.md",
+      "counterpart": "docs/en/threads/part-4/practice-and-recovery.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-4/practice-and-recovery.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-4/practice-and-recovery.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-4/practice-and-recovery",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 1410,
+      "sha256": "9b6dcf073ae746a85306b340e2cd4df4e8b7bccadd71cbbe92681533b232e299",
+      "englishSha256": "835e2d280e32804ab80d55554f712e051d78555250c6f5a0934d125030be05ab",
+      "headings": [
+        {
+          "level": 1,
+          "title": "第四部：实践与恢复"
+        },
+        {
+          "level": 2,
+          "title": "本部要回答的问题"
+        },
+        {
+          "level": 2,
+          "title": "阅读路径"
+        },
+        {
+          "level": 2,
+          "title": "读完留下什么"
+        },
+        {
+          "level": 2,
+          "title": "进入正文"
+        }
+      ],
+      "summary": "第四部导语：把英语、AI与生活判断带进一周可执行行动，并允许容量变化和中断。先小样本、反馈、生活系统和恢复，再增加任务，不用理想日程要求现实永远配合。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 37,
+      "group": "第四部：实践与恢复",
+      "title": "实践篇：先把第一周过完",
+      "source": "docs/threads/part-4/week-1.md",
+      "counterpart": "docs/en/threads/part-4/week-1.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-4/week-1.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-4/week-1.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-4/week-1",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 4688,
+      "sha256": "15fde5732c390a81f7267fa336c950ecde5e736a6014ff4105e36ccb201170a4",
+      "englishSha256": "777fbff642059d0a83c250464b6029ef95c32a3ff04e6b8957e38843e5be9605",
+      "headings": [
+        {
+          "level": 1,
+          "title": "实践篇：先把第一周过完"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 第一周不是缩小版的九十天"
+        },
+        {
+          "level": 2,
+          "title": "2. 只带一个问题进入这一周"
+        },
+        {
+          "level": 2,
+          "title": "3. 第一天，保存未经修饰的起点"
+        },
+        {
+          "level": 2,
+          "title": "4. 七天不求满格，只求能够回来"
+        },
+        {
+          "level": 2,
+          "title": "5. 一个真实例子：用英语谈疲惫"
+        },
+        {
+          "level": 2,
+          "title": "6. 低谷里的作品，不负责拯救人生"
+        },
+        {
+          "level": 2,
+          "title": "7. 给容量准备三个档位"
+        },
+        {
+          "level": 2,
+          "title": "8. 周末只回答四个问题"
+        },
+        {
+          "level": 2,
+          "title": "结语：第一周不证明你是谁"
+        }
+      ],
+      "summary": "第一周选一个七天可观察问题，保存10—25分钟独立基线，安排小输入、输出、反馈与复查。设计完整、压缩与恢复日，准备中断入口；周末比较质量、保持和迁移，再决定下一变量。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 38,
+      "group": "第四部：实践与恢复",
+      "title": "家庭学习篇：把成长还给孩子",
+      "source": "docs/threads/part-4/family-learning.md",
+      "counterpart": "docs/en/threads/part-4/family-learning.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-4/family-learning.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-4/family-learning.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-4/family-learning",
+      "updated": "2026-09-02",
+      "sourcesChecked": "2026-09-02",
+      "characters": 6363,
+      "sha256": "478b326f231dbe37bd5cbcf5bf162e03f114698ea7ac487223efc1eee4c12739",
+      "englishSha256": "5aef8ac1f3b297358bd54bc2ee2bb9c4b5211b00cfcd622fb981cd10b3a73973",
+      "headings": [
+        {
+          "level": 1,
+          "title": "家庭学习篇：把成长还给孩子"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先问：这是谁想要的改变"
+        },
+        {
+          "level": 2,
+          "title": "2. 不用总分替代起点"
+        },
+        {
+          "level": 2,
+          "title": "3. 四个角色，不互相代替"
+        },
+        {
+          "level": 2,
+          "title": "4. 家长的工作，是搭环境而不是站在背后"
+        },
+        {
+          "level": 3,
+          "title": "保护一个可用时间盒"
+        },
+        {
+          "level": 3,
+          "title": "减少启动摩擦"
+        },
+        {
+          "level": 3,
+          "title": "只问能改变下一步的问题"
+        },
+        {
+          "level": 3,
+          "title": "保护结束"
+        },
+        {
+          "level": 2,
+          "title": "5. 一周只完成一个真实任务"
+        },
+        {
+          "level": 2,
+          "title": "6. 一个合成示例：用英语介绍自己的兴趣"
+        },
+        {
+          "level": 2,
+          "title": "7. AI 进入家庭前，先过五道门"
+        },
+        {
+          "level": 3,
+          "title": "年龄与账户门"
+        },
+        {
+          "level": 3,
+          "title": "数据门"
+        },
+        {
+          "level": 3,
+          "title": "首版门"
+        },
+        {
+          "level": 3,
+          "title": "判断门"
+        },
+        {
+          "level": 3,
+          "title": "退出门"
+        },
+        {
+          "level": 2,
+          "title": "8. 三种容量，不用熬夜偿还学习"
+        },
+        {
+          "level": 2,
+          "title": "9. 反馈不等于评判孩子"
+        },
+        {
+          "level": 2,
+          "title": "10. 什么时候应该暂停学习实验"
+        },
+        {
+          "level": 2,
+          "title": "11. 用十四天决定继续、调整还是停止"
+        },
+        {
+          "level": 2,
+          "title": "12. 给家庭的一份最小约定"
+        },
+        {
+          "level": 2,
+          "title": "来源与边界"
+        },
+        {
+          "level": 2,
+          "title": "结语：不要替孩子走完那条路"
+        }
+      ],
+      "summary": "面向初中阶段学习者与家长，分学习者、家长、教师、AI四个角色，保护孩子首版、表达和参与权。检查年龄账户、数据、首版、判断与退出五道AI门；用私密共同协议与十四天证据复查，成人负责安全环境和合适支持。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 39,
+      "group": "第四部：实践与恢复",
+      "title": "生活系统篇：把改变安放在日子里",
+      "source": "docs/threads/part-4/daily-system.md",
+      "counterpart": "docs/en/threads/part-4/daily-system.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-4/daily-system.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-4/daily-system.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-4/daily-system",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 3949,
+      "sha256": "868edc6be88bf9bf5efa28f48fac094caa427b871f964e5dc8544e32cae2c8a3",
+      "englishSha256": "2d20403617ca4571791ddceca24152458711e5222bddb612d3e0db3f9a0476f2",
+      "headings": [
+        {
+          "level": 1,
+          "title": "生活系统篇：把改变安放在日子里"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先设计最小可行的一天"
+        },
+        {
+          "level": 2,
+          "title": "2. 给时间、精力和责任做预算"
+        },
+        {
+          "level": 2,
+          "title": "3. 让环境替你减少摩擦"
+        },
+        {
+          "level": 3,
+          "title": "启动摩擦"
+        },
+        {
+          "level": 3,
+          "title": "退出摩擦"
+        },
+        {
+          "level": 2,
+          "title": "4. 把学习嵌入已有生活"
+        },
+        {
+          "level": 2,
+          "title": "5. 让关系知道你的边界"
+        },
+        {
+          "level": 2,
+          "title": "6. 中断时只重启下一步"
+        },
+        {
+          "level": 2,
+          "title": "7. 用证据而不是情绪判断系统"
+        },
+        {
+          "level": 2,
+          "title": "8. 七天生活系统练习"
+        },
+        {
+          "level": 2,
+          "title": "结语：给生活留一条回来的路"
+        }
+      ],
+      "summary": "按时间、精力、照护与责任预算安排完整、压缩、恢复版本，建立最小可行一天。减少启动和退出摩擦，准备第一文件、生活锚点与收尾提示；中断后24小时做回归动作，明确不补旧时长，周复盘只调整一项。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 40,
+      "group": "第四部：实践与恢复",
+      "title": "节律篇：让小事穿过时间",
+      "source": "docs/threads/part-4/rhythm-and-compounding.md",
+      "counterpart": "docs/en/threads/part-4/rhythm-and-compounding.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-4/rhythm-and-compounding.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-4/rhythm-and-compounding.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-4/rhythm-and-compounding",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 4987,
+      "sha256": "9dd2416e1a29aed7c517b5e8ed42b439afce876acc6a63365648eb74178177be",
+      "englishSha256": "8bdbf492e9a275953e584c8366568f89cb0922cd206b31a508c557535d8ca7f9",
+      "headings": [
+        {
+          "level": 1,
+          "title": "节律篇：让小事穿过时间"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 进步不是一条斜线"
+        },
+        {
+          "level": 2,
+          "title": "2. 重复要有回声"
+        },
+        {
+          "level": 2,
+          "title": "3. 四种会复利的东西"
+        },
+        {
+          "level": 2,
+          "title": "4. 把节律设计成能活下来的形状"
+        },
+        {
+          "level": 2,
+          "title": "5. 反馈不是审判"
+        },
+        {
+          "level": 2,
+          "title": "6. 坏日子里的最小合同"
+        },
+        {
+          "level": 2,
+          "title": "7. 一页节律账本"
+        },
+        {
+          "level": 2,
+          "title": "8. 十四天节律实验"
+        },
+        {
+          "level": 2,
+          "title": "9. 阶段性标准"
+        },
+        {
+          "level": 2,
+          "title": "结语：让时间成为同伴"
+        }
+      ],
+      "summary": "将重复、反馈、变式和恢复连接成不同容量仍可辨认的节律。能力、信任、判断和恢复可积累，也会被透支；用坏日子最小合同、每周节律账本与十四天实验观察有效动作、真实反馈和中断后返回。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 41,
+      "group": "第五部：行动与长期改变",
+      "title": "第五部导语：行动与长期改变",
+      "source": "docs/threads/part-5/long-term-action.md",
+      "counterpart": "docs/en/threads/part-5/long-term-action.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-5/long-term-action.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-5/long-term-action.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-5/long-term-action",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 1636,
+      "sha256": "aacbabd624c523f35a8f6de28a2a24ea89035c7a5dfb6c47fe41916d43dcf8e2",
+      "englishSha256": "dcada65605e084639f36a2e9bd6d5f2691f6e6e9eb32be1fd88cfa7111f157b8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "第五部：行动与长期改变"
+        },
+        {
+          "level": 2,
+          "title": "本部要回答的问题"
+        },
+        {
+          "level": 2,
+          "title": "阅读路径"
+        },
+        {
+          "level": 2,
+          "title": "读完留下什么"
+        },
+        {
+          "level": 2,
+          "title": "进入正文"
+        }
+      ],
+      "summary": "第五部导语：从短期练习走向真实交付和长期改变，让计划有容量、证据、停止条件和周期末决定。九十天是观察容器，目标可继续、迁移、维护或结束。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 42,
+      "group": "第五部：行动与长期改变",
+      "title": "行动篇：九十天，把生活交还给自己",
+      "source": "docs/threads/part-5/90-day-plan.md",
+      "counterpart": "docs/en/threads/part-5/90-day-plan.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-5/90-day-plan.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-5/90-day-plan.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-5/90-day-plan",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 4064,
+      "sha256": "c316ec7505709822f22c5e5e6e628eb79bdb484c09433a9c69bcfb2836a51fb7",
+      "englishSha256": "56037da92ff57e8c3e2a2b0bf57d1197733acffeab43bfdf4c79845e8b07e5fa",
+      "headings": [
+        {
+          "level": 1,
+          "title": "行动篇：九十天，把生活交还给自己"
+        },
+        {
+          "level": 2,
+          "title": "0. 先定义“变好”"
+        },
+        {
+          "level": 2,
+          "title": "1. 用一页纸盘点起点"
+        },
+        {
+          "level": 2,
+          "title": "四项能力如何合流"
+        },
+        {
+          "level": 2,
+          "title": "2. 九十天分成三个阶段"
+        },
+        {
+          "level": 3,
+          "title": "第一阶段：校准（第 1—14 天）"
+        },
+        {
+          "level": 3,
+          "title": "第二阶段：堆叠（第 15—56 天）"
+        },
+        {
+          "level": 3,
+          "title": "第三阶段：交付（第 57—90 天）"
+        },
+        {
+          "level": 2,
+          "title": "3. 一周只保留一个主问题"
+        },
+        {
+          "level": 2,
+          "title": "4. 每天的最小闭环"
+        },
+        {
+          "level": 2,
+          "title": "5. 失败时不要重启人生，只重启下一步"
+        },
+        {
+          "level": 2,
+          "title": "6. 给自己一张诚实的记分卡"
+        },
+        {
+          "level": 2,
+          "title": "7. 九十天之后，留下三样东西"
+        },
+        {
+          "level": 2,
+          "title": "结语：把进阶还给日子"
+        }
+      ],
+      "summary": "安排1—14日校准、15—56日练习堆叠、57—90日交付迁移，每周一个主问题、每天一个小闭环。用基线、作品、真实反馈、成本和阶段门修正任务；中断返回下一入口，结束关账并决定方向，不保证90天达成特定结果。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 43,
+      "group": "第五部：行动与长期改变",
+      "title": "案例篇：让这本书证明它的方法",
+      "source": "docs/threads/part-5/book-as-proof.md",
+      "counterpart": "docs/en/threads/part-5/book-as-proof.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-5/book-as-proof.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-5/book-as-proof.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-5/book-as-proof",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 7231,
+      "sha256": "bdc5ab9b36d3d36db93f47eb642edfe00ce192cd1bbb7eef96515ede27292dc6",
+      "englishSha256": "97ec19257399b48af1696e20c0252141d2cd8f9d46fa5db3e0a7a0cb4c977901",
+      "headings": [
+        {
+          "level": 1,
+          "title": "案例篇：让这本书证明它的方法"
+        },
+        {
+          "level": 2,
+          "title": "本章为什么必须存在"
+        },
+        {
+          "level": 2,
+          "title": "1. 把“写一本好书”改写成可验收问题"
+        },
+        {
+          "level": 2,
+          "title": "2. 先保存基线，不用重写遮住问题"
+        },
+        {
+          "level": 2,
+          "title": "3. 架构不是目录，而是一条因果链"
+        },
+        {
+          "level": 2,
+          "title": "4. 把个人故事从“证明题”里救出来"
+        },
+        {
+          "level": 2,
+          "title": "5. AI 进入了哪里，又必须在哪里退出"
+        },
+        {
+          "level": 2,
+          "title": "6. 让一段文字经过完整作品链"
+        },
+        {
+          "level": 2,
+          "title": "7. 三次失败比一次全绿更有价值"
+        },
+        {
+          "level": 2,
+          "title": "8. 用发布门槛代替“我觉得已经很好”"
+        },
+        {
+          "level": 2,
+          "title": "9. 读者不是流量，而是方法的下一层证据"
+        },
+        {
+          "level": 2,
+          "title": "10. 到目前为止，什么仍未被证明"
+        },
+        {
+          "level": 2,
+          "title": "11. 把这次案例迁移到你的项目"
+        },
+        {
+          "level": 2,
+          "title": "12. 为这本书写一份当前交接说明"
+        },
+        {
+          "level": 2,
+          "title": "结语：作品也要接受自己的审判"
+        }
+      ],
+      "summary": "以书稿本身说明基线、改版、双语、来源、构建、电子书和读者回执如何构成交付链。技术检查与出版产物可以说明特定功能，不能直接证明读者能力改善；学习效果仍需要首版、延迟与迁移证据。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 44,
+      "group": "第五部：行动与长期改变",
+      "title": "九十天以后：把改变留在生活里",
+      "source": "docs/threads/part-5/after-90-days.md",
+      "counterpart": "docs/en/threads/part-5/after-90-days.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-5/after-90-days.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-5/after-90-days.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-5/after-90-days",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 6045,
+      "sha256": "89f47646658b94b3bc89f83780f1ab3a37561021ba7005acf551ba3923a6634a",
+      "englishSha256": "fc252d902149d62c13cd0e4921c502e941b609f547d2c1b9ee6ea7f4a49800b8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "九十天以后：把改变留在生活里"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 第九十一天，不再用兴奋替代判断"
+        },
+        {
+          "level": 2,
+          "title": "2. 先关账，再许愿"
+        },
+        {
+          "level": 2,
+          "title": "3. 把结果分成四种去向"
+        },
+        {
+          "level": 2,
+          "title": "4. 能力要迁移，作品要交接"
+        },
+        {
+          "level": 2,
+          "title": "5. 用三层结构保护长期性"
+        },
+        {
+          "level": 2,
+          "title": "6. 按季节安排，不按热血发誓"
+        },
+        {
+          "level": 2,
+          "title": "7. 目标必须有到期日与退出门"
+        },
+        {
+          "level": 2,
+          "title": "8. 让长期改变进入关系和责任"
+        },
+        {
+          "level": 2,
+          "title": "9. 给下一年只留三条线"
+        },
+        {
+          "level": 2,
+          "title": "10. 每季度回看一次“我正在成为谁”"
+        },
+        {
+          "level": 2,
+          "title": "11. 用三十天完成周期交接"
+        },
+        {
+          "level": 2,
+          "title": "结语：让成果找到住处"
+        }
+      ],
+      "summary": "周期末保存原始首版、独立终测、反馈、失败和代价，选择继续、迁移、维护或停止。长期结构分生活基础、一项主项目和有限探索；用季节、半年/年度复查、价值/证据/代价/责任退出门减少无限目标堆叠。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 45,
+      "group": "第六部：与自己做终身朋友",
+      "title": "了解自己：先看见自己如何运作",
+      "source": "docs/threads/part-6/1-understanding-yourself.md",
+      "counterpart": "docs/en/threads/part-6/1-understanding-yourself.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-6/1-understanding-yourself.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-6/1-understanding-yourself.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-6/1-understanding-yourself",
+      "updated": "2026-10-02",
+      "sourcesChecked": null,
+      "characters": 3153,
+      "sha256": "24a2fef69e55ac6db0f64a4808b7fbe64f6adc20722740018539023c33011d72",
+      "englishSha256": "0afa19513944a968128a14495bedafee7c89cb9e76ca16ca585bbdbeb9fe2f38",
+      "headings": [
+        {
+          "level": 1,
+          "title": "了解自己：先看见自己如何运作"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先停止给自己下结论"
+        },
+        {
+          "level": 2,
+          "title": "2. 用四个问题观察重复模式"
+        },
+        {
+          "level": 2,
+          "title": "3. 看见自己的容量，而不是把理想状态当标准"
+        },
+        {
+          "level": 2,
+          "title": "4. 把逃避当作信息，不把它当作身份"
+        },
+        {
+          "level": 2,
+          "title": "5. 英语学习是一面具体的镜子"
+        },
+        {
+          "level": 2,
+          "title": "6. 七天自我观察练习"
+        },
+        {
+          "level": 2,
+          "title": "7. 观察之后要做一个小决定"
+        },
+        {
+          "level": 2,
+          "title": "结语：先成为自己的可靠观察者"
+        }
+      ],
+      "summary": "将人格结论拆为事实、解释、情绪身体与未知，观察触发—动作—结果—需要。记录身体、注意和情绪容量，把逃避的短期缓解与长期代价分开，七天观察后写一个场景—信号—动作条件句。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 46,
+      "group": "第六部：与自己做终身朋友",
+      "title": "认识自己：从角色与评价中收回定义权",
+      "source": "docs/threads/part-6/2-knowing-yourself.md",
+      "counterpart": "docs/en/threads/part-6/2-knowing-yourself.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-6/2-knowing-yourself.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-6/2-knowing-yourself.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-6/2-knowing-yourself",
+      "updated": "2026-10-02",
+      "sourcesChecked": null,
+      "characters": 3387,
+      "sha256": "bdc188ff65437d93fdef689b9cde699ab2396855c26b89f5ffa710d572df9336",
+      "englishSha256": "f95ae2745ceb467a160f03f6b2dc07e3af83de5d139a0981c57d972cec522d31",
+      "headings": [
+        {
+          "level": 1,
+          "title": "认识自己：从角色与评价中收回定义权"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 角色是我承担的部分，不是我的全部"
+        },
+        {
+          "level": 2,
+          "title": "2. 价值不是墙上的词，而是愿意承担的代价"
+        },
+        {
+          "level": 2,
+          "title": "3. 辨认借来的欲望"
+        },
+        {
+          "level": 2,
+          "title": "4. 语言身份不等于口音和速度"
+        },
+        {
+          "level": 2,
+          "title": "5. 边界是认识自己的动词"
+        },
+        {
+          "level": 2,
+          "title": "6. 用决策卡把自我认识带进选择"
+        },
+        {
+          "level": 2,
+          "title": "7. 七天“收回定义权”练习"
+        },
+        {
+          "level": 2,
+          "title": "结语：把名字还给自己"
+        }
+      ],
+      "summary": "区分角色责任、他人评价与自己的选择，从实际付出的代价识别本阶段三项价值。测试借来的欲望，把语言身份分工具、声音与归属；通过四句边界、决策卡和七天练习将定义权落到责任与行动。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 47,
+      "group": "第六部：与自己做终身朋友",
+      "title": "善待自己：建立不依赖羞耻的恢复系统",
+      "source": "docs/threads/part-6/3-being-kind-to-yourself.md",
+      "counterpart": "docs/en/threads/part-6/3-being-kind-to-yourself.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-6/3-being-kind-to-yourself.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-6/3-being-kind-to-yourself.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-6/3-being-kind-to-yourself",
+      "updated": "2026-10-02",
+      "sourcesChecked": null,
+      "characters": 3343,
+      "sha256": "07b52665d7f58eac3ebd11f72cc6e089d6e810cf01c42068622d88272ebc7f7c",
+      "englishSha256": "513f66338db38a0bb48c87ceb26ca589f8f1931ec03371f7c2c693f4a8f09f66",
+      "headings": [
+        {
+          "level": 1,
+          "title": "善待自己：建立不依赖羞耻的恢复系统"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 善待不是放过一切，而是停止额外伤害"
+        },
+        {
+          "level": 2,
+          "title": "2. 先测容量，再决定今天做什么"
+        },
+        {
+          "level": 2,
+          "title": "3. 建立三本恢复账"
+        },
+        {
+          "level": 2,
+          "title": "4. 把内在批评改成一份工作说明"
+        },
+        {
+          "level": 2,
+          "title": "5. 为自己设置停止条件"
+        },
+        {
+          "level": 2,
+          "title": "6. 低容量时如何继续英语"
+        },
+        {
+          "level": 2,
+          "title": "7. 中断后的 24 小时回归协议"
+        },
+        {
+          "level": 2,
+          "title": "8. 十四天善待自己练习"
+        },
+        {
+          "level": 2,
+          "title": "结语：对自己诚实，也给自己余地"
+        }
+      ],
+      "summary": "保留现实责任，停止羞辱、透支和逃避带来的额外损失。用容量档位、身体/注意力/关系三本账、事实—影响—责任—支持改写自责，设置四类停止红线和24小时回归；十四天检验是否更早发现负荷变化。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 48,
+      "group": "第六部：与自己做终身朋友",
+      "title": "提升自己：让成长成为可验证的长期实验",
+      "source": "docs/threads/part-6/4-improving-yourself.md",
+      "counterpart": "docs/en/threads/part-6/4-improving-yourself.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-6/4-improving-yourself.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-6/4-improving-yourself.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-6/4-improving-yourself",
+      "updated": "2026-10-02",
+      "sourcesChecked": null,
+      "characters": 3315,
+      "sha256": "2956d381a43766cf64ca6d856a92bf38ffb5e9a764f9a5df783d4cba62337670",
+      "englishSha256": "31b292f7c7bb7a4c57e0903731721b9183ac356b3d1a2ec93c47812c57ad3ca0",
+      "headings": [
+        {
+          "level": 1,
+          "title": "提升自己：让成长成为可验证的长期实验"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 先问“提升为了什么”"
+        },
+        {
+          "level": 2,
+          "title": "2. 让基线保护你免受夸大和否定"
+        },
+        {
+          "level": 2,
+          "title": "3. 区分四种东西：输入、练习、作品、迁移"
+        },
+        {
+          "level": 2,
+          "title": "4. 一次只改一个主要变量"
+        },
+        {
+          "level": 2,
+          "title": "5. 让反馈改变动作，而不是定义人格"
+        },
+        {
+          "level": 2,
+          "title": "6. AI 可以加速迭代，不能替你决定方向"
+        },
+        {
+          "level": 2,
+          "title": "7. 用九十天安排一次可交付提升"
+        },
+        {
+          "level": 2,
+          "title": "8. 为长期目标设置退出条件"
+        },
+        {
+          "level": 2,
+          "title": "9. 三十天提升实验"
+        },
+        {
+          "level": 2,
+          "title": "结语：让进步离开想象"
+        }
+      ],
+      "summary": "把提升定义为具体场景、基线、反馈与可交付实验，区分输入、练习、作品与迁移。一次改一个主要变量，反馈先定位、验证再改变；AI归档到人工修改与现实反馈，九十天或三十天周期设价值/证据/代价/责任退出门。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 49,
+      "group": "第六部：与自己做终身朋友",
+      "title": "与自己做终身朋友：在变化中持续相处",
+      "source": "docs/threads/part-6/5-being-your-own-lifelong-friend.md",
+      "counterpart": "docs/en/threads/part-6/5-being-your-own-lifelong-friend.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-6/5-being-your-own-lifelong-friend.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-6/5-being-your-own-lifelong-friend.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-6/5-being-your-own-lifelong-friend",
+      "updated": "2026-10-02",
+      "sourcesChecked": null,
+      "characters": 3008,
+      "sha256": "c35cb8f121f1771ed92d853f20a3434fc1602433302e57ffeb6a59226520eb65",
+      "englishSha256": "e3401c9c847fd3d37b88321ff13835a4fbda5f15b361bdf6ac56cd48daf99a3c",
+      "headings": [
+        {
+          "level": 1,
+          "title": "与自己做终身朋友：在变化中持续相处"
+        },
+        {
+          "level": 2,
+          "title": "本章速览"
+        },
+        {
+          "level": 2,
+          "title": "1. 朋友首先记得你的历史"
+        },
+        {
+          "level": 2,
+          "title": "2. 朋友会告诉你事实，也会保留尊严"
+        },
+        {
+          "level": 2,
+          "title": "3. 朋友不会要求你永远保持同一种样子"
+        },
+        {
+          "level": 2,
+          "title": "4. 把承诺写得小而可信"
+        },
+        {
+          "level": 2,
+          "title": "5. 让长期英语学习也有季节"
+        },
+        {
+          "level": 2,
+          "title": "6. 给未来的自己留一封不夸张的信"
+        },
+        {
+          "level": 2,
+          "title": "7. 三十天“终身朋友”练习"
+        },
+        {
+          "level": 2,
+          "title": "结语：以后还要一起生活"
+        }
+      ],
+      "summary": "用记得、诚实、照料、回归四种责任保持自我连续性。写生活使用说明，以事实—影响—责任—尊严复盘，半年检查目标；小承诺含自动降档、证据与支持，英语有进入/集中/交付/保温季，三十天练习和未来短信保留经验。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 50,
+      "group": "后记",
+      "title": "人生最大的进阶，是找到真正的自己",
+      "source": "docs/threads/part-6/afterword.md",
+      "counterpart": "docs/en/threads/part-6/afterword.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/part-6/afterword.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/part-6/afterword.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/part-6/afterword",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 3786,
+      "sha256": "4c2d120ea043459e2684e2587ce38adf1db7f0f50036097cf76a849c8645300c",
+      "englishSha256": "50081f38227c97806d75abb19deccd1332950c4c6ecd87463be9b9b7c52dca6e",
+      "headings": [
+        {
+          "level": 1,
+          "title": "后记：人生最大的进阶，是找到真正的自己"
+        },
+        {
+          "level": 2,
+          "title": "回到最初的问题"
+        },
+        {
+          "level": 2,
+          "title": "失败没有替我写结论"
+        },
+        {
+          "level": 2,
+          "title": "找到真正的自己"
+        },
+        {
+          "level": 2,
+          "title": "从后记回到明天"
+        },
+        {
+          "level": 2,
+          "title": "给未来的读者"
+        }
+      ],
+      "summary": "从2017年的英语问题回到失败、身体、关系、AI和日常责任，把真正看重的价值与愿承担的动作放到一起。后记不提供成功公式，留下明天的小行动、回访和允许修改判断的入口。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 51,
+      "group": "工具箱",
+      "title": "工具箱实战：AI 跨会话学习",
+      "source": "docs/templates/toolkit-walkthrough.md",
+      "counterpart": "docs/en/templates/toolkit-walkthrough.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/toolkit-walkthrough.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/toolkit-walkthrough.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/toolkit-walkthrough",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 4711,
+      "sha256": "1560024fcb803c1dea58433650dc75fa0851dde1ec9bdbea3c128e6bcd3ec955",
+      "englishSha256": "a31d1cbaf02392cc9e0f3aeb724cae059ebabebf9857f1a0a9747e87c03a7f3c",
+      "headings": [
+        {
+          "level": 1,
+          "title": "工具箱实战：让 AI 跨会话继续一项 90 天学习"
+        },
+        {
+          "level": 2,
+          "title": "这不是成功案例"
+        },
+        {
+          "level": 2,
+          "title": "场景：计划为什么会失忆"
+        },
+        {
+          "level": 2,
+          "title": "五张工具各自做什么"
+        },
+        {
+          "level": 2,
+          "title": "第一步：把状态放到会话外"
+        },
+        {
+          "level": 2,
+          "title": "第二步：每次只给 AI 一个任务"
+        },
+        {
+          "level": 2,
+          "title": "第三步：先做基线，再请求帮助"
+        },
+        {
+          "level": 2,
+          "title": "第四步：把作品放进证据链"
+        },
+        {
+          "level": 2,
+          "title": "第五步：在新会话继续"
+        },
+        {
+          "level": 2,
+          "title": "第六步：七天后填写读者回执"
+        },
+        {
+          "level": 2,
+          "title": "如果一周中断"
+        },
+        {
+          "level": 2,
+          "title": "你可以直接复制的会话协议"
+        },
+        {
+          "level": 2,
+          "title": "这个演示证明了什么，仍未证明什么"
+        },
+        {
+          "level": 2,
+          "title": "结语：把记忆交给文件，把判断留给自己"
+        }
+      ],
+      "summary": "用每周四次45分钟的合成Python学习者完整演示状态文件、任务简报、独立CSV首版、反馈、七天复测、迁移和状态v2交接。人物和结果均为合成数据；说明跨会话依靠版本化文件，而非模型永久记忆，不能证明90天就业或AI效果。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 52,
+      "group": "工具箱",
+      "title": "证据链模板",
+      "source": "docs/templates/evidence-chain.md",
+      "counterpart": "docs/en/templates/evidence-chain.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/evidence-chain.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/evidence-chain.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/evidence-chain",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 1883,
+      "sha256": "fd8efc5eb2a3d0a749b21444bff6032ef4f2493c141c9e82721fb051810d638f",
+      "englishSha256": "43c985a85027c3c717567d718b4f8bd88dcbb4c8c94093679ef7a45c997f3f00",
+      "headings": [
+        {
+          "level": 1,
+          "title": "证据链模板"
+        },
+        {
+          "level": 2,
+          "title": "1. 先定义要回答的问题"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存未经修饰的基线"
+        },
+        {
+          "level": 2,
+          "title": "3. 记录即时表现"
+        },
+        {
+          "level": 2,
+          "title": "4. 做一次延迟保持"
+        },
+        {
+          "level": 2,
+          "title": "5. 做一次迁移"
+        },
+        {
+          "level": 2,
+          "title": "6. 把事实、解释和假设分开"
+        },
+        {
+          "level": 2,
+          "title": "7. 让证据决定下一步"
+        },
+        {
+          "level": 2,
+          "title": "8. 交接摘要"
+        }
+      ],
+      "summary": "保存任务、受众、标准、基线、即时辅助、延迟保持与迁移，注明时间、帮助、错误与证据位置。分事实、解释和假设，写下一决定与交接，防止一个分数代表所有条件下能力。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 53,
+      "group": "工具箱",
+      "title": "读者实践回执",
+      "source": "docs/templates/reader-field-note.md",
+      "counterpart": "docs/en/templates/reader-field-note.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/reader-field-note.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/reader-field-note.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/reader-field-note",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 2665,
+      "sha256": "575ccedcad89390409bf8d39fd1e30f927a0f7d03cd57ecc94bd2109d08b9e2f",
+      "englishSha256": "37ffa751b397606bd60c432bd246dd77a720e70706b7bb7f6297b4f18ac11ce9",
+      "headings": [
+        {
+          "level": 1,
+          "title": "读者实践回执：七天后，还留下了什么"
+        },
+        {
+          "level": 2,
+          "title": "先在私下完成"
+        },
+        {
+          "level": 2,
+          "title": "第一次填写：阅读后十分钟"
+        },
+        {
+          "level": 3,
+          "title": "1. 进入问题"
+        },
+        {
+          "level": 3,
+          "title": "2. 用自己的话复述"
+        },
+        {
+          "level": 3,
+          "title": "3. 做一个最小行动"
+        },
+        {
+          "level": 3,
+          "title": "4. 保存即时结果"
+        },
+        {
+          "level": 2,
+          "title": "第二次填写：三到七天后"
+        },
+        {
+          "level": 3,
+          "title": "5. 不重读，先复测"
+        },
+        {
+          "level": 3,
+          "title": "6. 换一个条件"
+        },
+        {
+          "level": 3,
+          "title": "7. 写出对书稿的反馈"
+        },
+        {
+          "level": 2,
+          "title": "把事实、解释和愿望分开"
+        },
+        {
+          "level": 2,
+          "title": "分享前的隐私门"
+        },
+        {
+          "level": 2,
+          "title": "什么时候转入证据链"
+        }
+      ],
+      "summary": "两次私有记录：阅读后十分钟写问题、复述、小行动和即时证据，三至七天后不先重读检查保持与新条件迁移。附具体编辑反馈与推断边界，公开前删除身份和敏感信息。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 54,
+      "group": "工具箱",
+      "title": "家庭学习共同协议",
+      "source": "docs/templates/family-learning-agreement.md",
+      "counterpart": "docs/en/templates/family-learning-agreement.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/family-learning-agreement.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/family-learning-agreement.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/family-learning-agreement",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 3037,
+      "sha256": "b3f0bb2a85dde2c80a902fb9bd08025caff3c8ebbdf3bfb3f90d03daa5681b6f",
+      "englishSha256": "20c5369c5ed073625d87d95c8c4171e38e8e085818a735d45bc6af2d5bb99ff2",
+      "headings": [
+        {
+          "level": 1,
+          "title": "家庭学习共同协议：十四天，把帮助变得可商量"
+        },
+        {
+          "level": 2,
+          "title": "1. 分别写，再一起读"
+        },
+        {
+          "level": 3,
+          "title": "学习者先写"
+        },
+        {
+          "level": 3,
+          "title": "家长/监护人再写"
+        },
+        {
+          "level": 2,
+          "title": "2. 写成一个共同问题"
+        },
+        {
+          "level": 2,
+          "title": "3. 保存起点"
+        },
+        {
+          "level": 2,
+          "title": "4. 三个容量档位"
+        },
+        {
+          "level": 2,
+          "title": "5. 成人支持清单"
+        },
+        {
+          "level": 2,
+          "title": "6. AI 与数据约定"
+        },
+        {
+          "level": 2,
+          "title": "7. 反馈规则"
+        },
+        {
+          "level": 2,
+          "title": "8. 十四天证据"
+        },
+        {
+          "level": 2,
+          "title": "9. 暂停与求助门"
+        },
+        {
+          "level": 2,
+          "title": "10. 两周复盘：学习者先说"
+        },
+        {
+          "level": 3,
+          "title": "学习者"
+        },
+        {
+          "level": 3,
+          "title": "家长/监护人"
+        },
+        {
+          "level": 3,
+          "title": "共同决定"
+        },
+        {
+          "level": 2,
+          "title": "结尾：帮助也要接受复盘"
+        }
+      ],
+      "summary": "孩子和家长分别写目标、担心与支持，共同确定基线、三种容量、成人职责、AI/数据边界、反馈和十四天复查。明示暂停与求助，孩子先说，成人不替做、不将文件变为监控。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 55,
+      "group": "工具箱",
+      "title": "学习状态模板",
+      "source": "docs/templates/learning-state.md",
+      "counterpart": "docs/en/templates/learning-state.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/learning-state.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/learning-state.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/learning-state",
+      "updated": "2026-10-06",
+      "sourcesChecked": null,
+      "characters": 1486,
+      "sha256": "35c16beef2e2ff09d00afc0e0c1f93d0d075dbbd80136a92b2a3d11a0aeeb5ee",
+      "englishSha256": "2e8084a8574a5d46e83e06cc39a19a147d631f98c8c105b1b882ada3caddb002",
+      "headings": [
+        {
+          "level": 1,
+          "title": "学习状态模板"
+        },
+        {
+          "level": 2,
+          "title": "如果今天只有五分钟"
+        },
+        {
+          "level": 2,
+          "title": "AI 跨会话恢复提示词"
+        }
+      ],
+      "summary": "会话外保存目标、约束、基线、完成证据、错误、有效方法、假设、边界、交接和下一最小任务。注明版本日期、时间材料与复查；AI先复述六项状态、不补造历史，结束将改变行动的事实写回文件。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 56,
+      "group": "工具箱",
+      "title": "节律账本模板",
+      "source": "docs/templates/rhythm-ledger.md",
+      "counterpart": "docs/en/templates/rhythm-ledger.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/rhythm-ledger.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/rhythm-ledger.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/rhythm-ledger",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 1668,
+      "sha256": "ca16251f61ef1ef89d87fd8657f5c9e1fc30179b61f65cbd04125c7fa673d13e",
+      "englishSha256": "f2c3791486f33b0616be9d7b860ad657c0c17e44b0992fe20e6f9a2c325607f8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "节律账本模板"
+        },
+        {
+          "level": 2,
+          "title": "1. 本周主问题"
+        },
+        {
+          "level": 2,
+          "title": "2. 三种容量版本"
+        },
+        {
+          "level": 2,
+          "title": "3. 重复要带着回声"
+        },
+        {
+          "level": 2,
+          "title": "4. 记录一次有效反馈"
+        },
+        {
+          "level": 2,
+          "title": "5. 中断与回归"
+        },
+        {
+          "level": 2,
+          "title": "6. 本周决定"
+        },
+        {
+          "level": 2,
+          "title": "7. 交接与证据位置"
+        }
+      ],
+      "summary": "每周一页记录主问题、完整/降档/恢复动作、重复、有效反馈、阻力、中断回归及下一单变量。保留启动与交接入口，不用打卡或低容量解释人格。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 57,
+      "group": "工具箱",
+      "title": "每周复盘模板",
+      "source": "docs/templates/weekly-review.md",
+      "counterpart": "docs/en/templates/weekly-review.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/weekly-review.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/weekly-review.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/weekly-review",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 1315,
+      "sha256": "cd0acc693c04f459185788d179c1c688eeeb31899433efe0a7f46be14ff8b0bf",
+      "englishSha256": "e89d47dbce333f0e14f2a9eb73cc59cf9443f32d49063572097aaf1934684b54",
+      "headings": [
+        {
+          "level": 1,
+          "title": "每周复盘模板"
+        },
+        {
+          "level": 2,
+          "title": "写回后的交接入口"
+        }
+      ],
+      "summary": "基于证据复查完成、质量、保持和迁移，简易0—2记录只作自我比较。写反复错误、可能原因、能量与代价，决定下周一项调整并更新状态、证据链和周期表。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 58,
+      "group": "工具箱",
+      "title": "英语能力诊断",
+      "source": "docs/templates/english-diagnostic.md",
+      "counterpart": "docs/en/templates/english-diagnostic.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/english-diagnostic.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/english-diagnostic.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/english-diagnostic",
+      "updated": "2026-10-06",
+      "sourcesChecked": null,
+      "characters": 3702,
+      "sha256": "d5e75a58b8b82d9fe54f8d341c7319fb994215140f186292c0eb2b509814ae10",
+      "englishSha256": "0bdfa3cc2d43941b74e23a26375068c4891f5bed3e5aba8f84e8ec838b4bae32",
+      "headings": [
+        {
+          "level": 1,
+          "title": "英语能力诊断：四项基线与迁移记录"
+        },
+        {
+          "level": 2,
+          "title": "1. 先定义诊断边界"
+        },
+        {
+          "level": 2,
+          "title": "2. 四项首版任务"
+        },
+        {
+          "level": 2,
+          "title": "2A. 按需记录协作维度"
+        },
+        {
+          "level": 2,
+          "title": "3. 保存首版与条件"
+        },
+        {
+          "level": 2,
+          "title": "4. 按影响评分，不按感觉评分"
+        },
+        {
+          "level": 3,
+          "title": "分数解释"
+        },
+        {
+          "level": 2,
+          "title": "5. 为每项只选一个首要障碍"
+        },
+        {
+          "level": 2,
+          "title": "6. 设计一次定向修复"
+        },
+        {
+          "level": 2,
+          "title": "7. 延迟复测与迁移"
+        },
+        {
+          "level": 2,
+          "title": "8. 记录 AI、翻译和人工反馈"
+        },
+        {
+          "level": 2,
+          "title": "9. 形成下一周期决定"
+        }
+      ],
+      "summary": "保存真实场景和听读说写四种未经修饰样本，记录时间、字幕、翻译、词典、AI和帮助条件。可补中介、在线互动与修复；每项找一高影响障碍，安排修复、延迟与迁移，不认证CEFR。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 59,
+      "group": "工具箱",
+      "title": "求职英语证据卡",
+      "source": "docs/templates/interview-evidence.md",
+      "counterpart": "docs/en/templates/interview-evidence.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/interview-evidence.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/interview-evidence.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/interview-evidence",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 2786,
+      "sha256": "a6c8614e1fb9156ea94eb9d485083a84772ef02b9055d978a2ec27efdafb6631",
+      "englishSha256": "cfb3f9acabe9e2116ed4e375d7e6d5d7cc054a1660a2171ee758c9b95eb81ccc",
+      "headings": [
+        {
+          "level": 1,
+          "title": "求职英语证据卡：从岗位描述到陌生追问"
+        },
+        {
+          "level": 2,
+          "title": "1. 岗位与流程"
+        },
+        {
+          "level": 2,
+          "title": "2. 岗位语言地图"
+        },
+        {
+          "level": 2,
+          "title": "3. 完整基线"
+        },
+        {
+          "level": 2,
+          "title": "4. 错误地图"
+        },
+        {
+          "level": 2,
+          "title": "5. 真实故事库"
+        },
+        {
+          "level": 2,
+          "title": "6. 听力与修复"
+        },
+        {
+          "level": 2,
+          "title": "7. 异步写作样本"
+        },
+        {
+          "level": 2,
+          "title": "8. AI 与诚信记录"
+        },
+        {
+          "level": 2,
+          "title": "9. 十四天比较"
+        },
+        {
+          "level": 2,
+          "title": "10. 当前岗位门槛"
+        },
+        {
+          "level": 2,
+          "title": "11. 面试后关账"
+        }
+      ],
+      "summary": "岗位语言地图连接无稿项目说明、真实经历库、陌生追问、听力修复和异步写作。记录工具与诚信边界、十四天比较、岗位门槛与面试反馈，不虚构成果或保证录用。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 60,
+      "group": "工具箱",
+      "title": "语法证据卡",
+      "source": "docs/templates/grammar-evidence.md",
+      "counterpart": "docs/en/templates/grammar-evidence.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/grammar-evidence.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/grammar-evidence.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/grammar-evidence",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 1849,
+      "sha256": "b604319f27f1c54e4e18bc42be8f680abd4753e711a58e3a23be77caebe2b75b",
+      "englishSha256": "d37ad39b9573fbc6dbdbad123d859013689a9503c55254ebfbe3d1d5ce28ce6e",
+      "headings": [
+        {
+          "level": 1,
+          "title": "语法证据卡：从规则识别到真实表达"
+        },
+        {
+          "level": 2,
+          "title": "1. 定义真实任务"
+        },
+        {
+          "level": 2,
+          "title": "2. 找到一个结构问题"
+        },
+        {
+          "level": 2,
+          "title": "3. 写一张意义对比卡"
+        },
+        {
+          "level": 2,
+          "title": "4. 保存修改与理由"
+        },
+        {
+          "level": 2,
+          "title": "5. 在四项能力中调用"
+        },
+        {
+          "level": 2,
+          "title": "6. AI 与反馈记录"
+        },
+        {
+          "level": 2,
+          "title": "7. 延迟复测"
+        },
+        {
+          "level": 2,
+          "title": "8. 评分与去留"
+        }
+      ],
+      "summary": "围绕一个高影响结构记录真实任务、原句、可能理解、真实意图、形式对比与修改理由。连接四项调用、反馈分类、延迟和第十四天迁移，再决定是否继续该结构。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 61,
+      "group": "工具箱",
+      "title": "词汇证据卡",
+      "source": "docs/templates/vocabulary-audit.md",
+      "counterpart": "docs/en/templates/vocabulary-audit.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/vocabulary-audit.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/vocabulary-audit.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/vocabulary-audit",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 3276,
+      "sha256": "9c00b5a3acfd269a3be5cd450b6a0b8b6d89f5648bd6eac676a9d2983127484f",
+      "englishSha256": "b37212bd5fc0f563782cbbac026f8ab6c7d0a1e34b40e8ca388c7d339047fb83",
+      "headings": [
+        {
+          "level": 1,
+          "title": "词汇证据卡：从卡片眼熟到情境调用"
+        },
+        {
+          "level": 2,
+          "title": "1. 定义任务与证据条件"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存未经查词的首遇"
+        },
+        {
+          "level": 2,
+          "title": "3. 建立未知项决策队列"
+        },
+        {
+          "level": 2,
+          "title": "4. 为每个高价值词块记录八个维度"
+        },
+        {
+          "level": 2,
+          "title": "5. 核验义项、搭配与来源"
+        },
+        {
+          "level": 2,
+          "title": "6. 设计无提示调用"
+        },
+        {
+          "level": 2,
+          "title": "7. 让真实读者或听众验收"
+        },
+        {
+          "level": 2,
+          "title": "8. 记录错误与最小修复"
+        },
+        {
+          "level": 2,
+          "title": "9. 记录 AI 与工具使用"
+        },
+        {
+          "level": 2,
+          "title": "10. 做延迟保持与迁移"
+        },
+        {
+          "level": 2,
+          "title": "11. 评分并决定保留什么"
+        }
+      ],
+      "summary": "从首遇基线与未知项决策开始，保留八维核验、来源和理由。记录听读识别、无提示调用、错误修复、工具影响、延迟与迁移，不把认识词和能用词混算。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 62,
+      "group": "工具箱",
+      "title": "听力证据卡",
+      "source": "docs/templates/listening-audit.md",
+      "counterpart": "docs/en/templates/listening-audit.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/listening-audit.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/listening-audit.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/listening-audit",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 2952,
+      "sha256": "e7163156e29822fbdd5b1e8fb75d657e7cc8898f3bb8ef31f038a53ec04b9188",
+      "englishSha256": "3590d69e1f41b0fef579c846c6ed799b05fc5c1407fa5229c75ded78b51f3b09",
+      "headings": [
+        {
+          "level": 1,
+          "title": "听力证据卡：从播放时长到意义重构"
+        },
+        {
+          "level": 2,
+          "title": "1. 定义任务与现实边界"
+        },
+        {
+          "level": 2,
+          "title": "2. 审计材料与条件"
+        },
+        {
+          "level": 2,
+          "title": "3. 保存无字幕首听"
+        },
+        {
+          "level": 2,
+          "title": "4. 建立六层错误地图"
+        },
+        {
+          "level": 2,
+          "title": "5. 使用支架阶梯"
+        },
+        {
+          "level": 2,
+          "title": "6. 让每一遍产生不同证据"
+        },
+        {
+          "level": 2,
+          "title": "7. 从听写与跟读进入生成"
+        },
+        {
+          "level": 2,
+          "title": "8. 记录 AI、教师与真实任务反馈"
+        },
+        {
+          "level": 2,
+          "title": "9. 做延迟保持与迁移"
+        },
+        {
+          "level": 2,
+          "title": "10. 评分与去留"
+        }
+      ],
+      "summary": "连接材料/设备条件、无字幕首听、六层错误地图、局部重听与字幕支架、意义重构和行动输出。记录反馈、工具错误、延迟撤架及平行材料迁移，不按播放时长证明听懂。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 63,
+      "group": "工具箱",
+      "title": "阅读证据卡",
+      "source": "docs/templates/reading-evidence.md",
+      "counterpart": "docs/en/templates/reading-evidence.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/reading-evidence.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/reading-evidence.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/reading-evidence",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 3217,
+      "sha256": "8145b8e7301c56c0b7819c7fc54a8cab7e41758f132da95dc59116a902d36e8e",
+      "englishSha256": "acae090a5f68521382055f92e8638aa666b04d0fa830f14fef8403ae5360d953",
+      "headings": [
+        {
+          "level": 1,
+          "title": "阅读证据卡：从读完摘要到真实交付"
+        },
+        {
+          "level": 2,
+          "title": "1. 定义任务、读者与边界"
+        },
+        {
+          "level": 2,
+          "title": "2. 记录来源与版本"
+        },
+        {
+          "level": 2,
+          "title": "3. 保存未经修饰的首读"
+        },
+        {
+          "level": 2,
+          "title": "4. 建立六层障碍地图"
+        },
+        {
+          "level": 2,
+          "title": "5. 画主张、证据与限制"
+        },
+        {
+          "level": 2,
+          "title": "6. 技术文档事实卡"
+        },
+        {
+          "level": 2,
+          "title": "7. 生词、词族与翻译记录"
+        },
+        {
+          "level": 2,
+          "title": "8. 多来源比较与真实输出"
+        },
+        {
+          "level": 2,
+          "title": "9. 记录工具与反馈"
+        },
+        {
+          "level": 2,
+          "title": "10. 做延迟保持与迁移"
+        },
+        {
+          "level": 2,
+          "title": "11. 评分与去留"
+        }
+      ],
+      "summary": "连接原文版本、首读、六层障碍、主张与证据、技术事实卡和多来源冲突。用真实复述、决定或运行结果验收，保留工具、反馈、延迟和新材料迁移。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 64,
+      "group": "工具箱",
+      "title": "口语证据卡",
+      "source": "docs/templates/speaking-evidence.md",
+      "counterpart": "docs/en/templates/speaking-evidence.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/speaking-evidence.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/speaking-evidence.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/speaking-evidence",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 2842,
+      "sha256": "a3e89db73133d51f310dfb7a4489f7dfd720b18e5925da05b038a9fbff9e45fe",
+      "englishSha256": "bcc62201aaddb0e556953ffc9a6d2911e624d156dfe35e21d566cfbd1ddff341",
+      "headings": [
+        {
+          "level": 1,
+          "title": "口语证据卡：从口音焦虑到可验证互动"
+        },
+        {
+          "level": 2,
+          "title": "1. 定义任务、听众与边界"
+        },
+        {
+          "level": 2,
+          "title": "2. 记录参考变体与技术条件"
+        },
+        {
+          "level": 2,
+          "title": "3. 保存三种无稿基线"
+        },
+        {
+          "level": 2,
+          "title": "4. 保存听众实际听见的内容"
+        },
+        {
+          "level": 2,
+          "title": "5. 建立高影响问题地图"
+        },
+        {
+          "level": 2,
+          "title": "6. 从词块进入陌生追问"
+        },
+        {
+          "level": 2,
+          "title": "7. 记录互动修复"
+        },
+        {
+          "level": 2,
+          "title": "8. 教师、听众与 AI 反馈记录"
+        },
+        {
+          "level": 2,
+          "title": "9. 做延迟保持与迁移"
+        },
+        {
+          "level": 2,
+          "title": "10. 评分与去留"
+        }
+      ],
+      "summary": "保存参考变体、独白/互动/陌生追问三种无稿样本、听众复述与理解成本。记录声音组织、互动修复、反馈、工具与重录条件、延迟迁移，音频和听众信息私下保存。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 65,
+      "group": "工具箱",
+      "title": "写作证据卡",
+      "source": "docs/templates/writing-evidence.md",
+      "counterpart": "docs/en/templates/writing-evidence.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/writing-evidence.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/writing-evidence.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/writing-evidence",
+      "updated": "2026-09-02",
+      "sourcesChecked": null,
+      "characters": 3315,
+      "sha256": "cd587e038812c1299dafa16a08e8a9705c75604dc771ac052aa615dfdf39bcc5",
+      "englishSha256": "c4c1a62cdd516f9f72a2414136ed844cc39c4624ae90903c767740618b0c0008",
+      "headings": [
+        {
+          "level": 1,
+          "title": "写作证据卡：从工具润色到署名交付"
+        },
+        {
+          "level": 2,
+          "title": "1. 定义任务、读者与责任"
+        },
+        {
+          "level": 2,
+          "title": "2. 保存无辅助初稿"
+        },
+        {
+          "level": 2,
+          "title": "3. 建立事实与责任账本"
+        },
+        {
+          "level": 2,
+          "title": "4. 保存文档骨架"
+        },
+        {
+          "level": 2,
+          "title": "5. 记录翻译的意义变化"
+        },
+        {
+          "level": 2,
+          "title": "6. 完成五次修订"
+        },
+        {
+          "level": 2,
+          "title": "7. 记录反馈吸收"
+        },
+        {
+          "level": 2,
+          "title": "8. 记录 AI 与自动工具使用"
+        },
+        {
+          "level": 2,
+          "title": "9. 检查异步交付"
+        },
+        {
+          "level": 2,
+          "title": "10. 做延迟保持与迁移"
+        },
+        {
+          "level": 2,
+          "title": "11. 评分与署名决定"
+        }
+      ],
+      "summary": "保存真实受众、无辅助初稿、事实责任账本、提纲、翻译变化与五遍修订。标记反馈采纳理由、AI参与、异步交付、新文本迁移和最后署名决定。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 66,
+      "group": "工具箱",
+      "title": "九十日行动总表",
+      "source": "docs/templates/90-day-cycle.md",
+      "counterpart": "docs/en/templates/90-day-cycle.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/90-day-cycle.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/90-day-cycle.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/90-day-cycle",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 1910,
+      "sha256": "3a9512e4a25ac7cac98b6610b7d99b3d7bf9ceada2be94cdce71edf02a12e3ab",
+      "englishSha256": "1a263162d20d90c1cf23c85847c0ee7511d9e6e575d7c192f5044fa4f0651067",
+      "headings": [
+        {
+          "level": 1,
+          "title": "九十日行动总表"
+        },
+        {
+          "level": 2,
+          "title": "1. 周期承诺"
+        },
+        {
+          "level": 2,
+          "title": "2. 第一天基线"
+        },
+        {
+          "level": 2,
+          "title": "3. 三个阶段的门槛"
+        },
+        {
+          "level": 2,
+          "title": "4. 十二周主问题"
+        },
+        {
+          "level": 2,
+          "title": "5. 证据链"
+        },
+        {
+          "level": 2,
+          "title": "6. 中断与恢复协议"
+        },
+        {
+          "level": 2,
+          "title": "7. 第九十天复盘"
+        }
+      ],
+      "summary": "将目标、基线、真实交付、现实容量、三阶段门和十二周主问题放到同表。记录输出、反馈、成本、中断回归与终测，周期末决定继续、迁移、维护或停止。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 67,
+      "group": "工具箱",
+      "title": "作品简报与交付卡",
+      "source": "docs/templates/artifact-brief.md",
+      "counterpart": "docs/en/templates/artifact-brief.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/artifact-brief.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/artifact-brief.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/artifact-brief",
+      "updated": "2026-08-31",
+      "sourcesChecked": null,
+      "characters": 1343,
+      "sha256": "af9059422eea58f2dd8deb619d34523c1ee03eb851bb3d9b0fa400d6de9b75ad",
+      "englishSha256": "d2dbd20f172016afdefd045ea5aec02a41cc7b5efc2852f87d401f0f42ed1767",
+      "headings": [
+        {
+          "level": 1,
+          "title": "作品简报与交付卡"
+        },
+        {
+          "level": 2,
+          "title": "1. 作品边界"
+        },
+        {
+          "level": 2,
+          "title": "2. 四个版本"
+        },
+        {
+          "level": 2,
+          "title": "3. 质量门"
+        },
+        {
+          "level": 2,
+          "title": "4. AI 与反馈记录"
+        },
+        {
+          "level": 2,
+          "title": "5. 交付与回滚"
+        }
+      ],
+      "summary": "作品的受众、动作、完成标准、版本、反馈和证据组成交付卡。记录来源/许可、隐私、AI范围、人工责任、未决风险、使用交接与回滚，让作品可使用且可维护。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 68,
+      "group": "工具箱",
+      "title": "AI 任务简报",
+      "source": "docs/templates/ai-task-brief.md",
+      "counterpart": "docs/en/templates/ai-task-brief.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/ai-task-brief.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/ai-task-brief.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/ai-task-brief",
+      "updated": "2026-09-20",
+      "sourcesChecked": null,
+      "characters": 2744,
+      "sha256": "5b2c29aeb03d3327a58b702d67e9c43b91b763ec80d7e2f1884da15d314de161",
+      "englishSha256": "10ec75e6afe9053dc9db601212555df4e15cb8fa8e71e471a27938d3679d7aa8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 任务简报：从问题到人工验收"
+        },
+        {
+          "level": 2,
+          "title": "1. 任务与责任"
+        },
+        {
+          "level": 2,
+          "title": "2. 输入、来源与数据边界"
+        },
+        {
+          "level": 2,
+          "title": "3. 输出与评估集"
+        },
+        {
+          "level": 2,
+          "title": "4. AI 的工作范围"
+        },
+        {
+          "level": 2,
+          "title": "5. 人工门"
+        },
+        {
+          "level": 2,
+          "title": "6. 成本、留存与可逆性"
+        },
+        {
+          "level": 2,
+          "title": "7. 失败、暂停与回滚"
+        },
+        {
+          "level": 2,
+          "title": "8. 交接与公开说明"
+        },
+        {
+          "level": 2,
+          "title": "9. 开始前检查"
+        }
+      ],
+      "summary": "九部分简报覆盖任务责任、输入来源与数据、评估集、AI与工具范围、七个人工门、全部成本、失败回滚、交接披露和开始检查。模型先复述边界，缺验收或责任时不将候选当最终结果。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 69,
+      "group": "工具箱",
+      "title": "AI 趋势实验卡",
+      "source": "docs/templates/ai-trend-radar.md",
+      "counterpart": "docs/en/templates/ai-trend-radar.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/ai-trend-radar.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/ai-trend-radar.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/ai-trend-radar",
+      "updated": "2026-10-03",
+      "sourcesChecked": null,
+      "characters": 1150,
+      "sha256": "d95f217224a27f5fa4cbecf34137ed5d95dd2b404f3cd4b62a7552e2b71050b9",
+      "englishSha256": "1654df74a3ce6176473a791910e057bd00b91662c0b82a993d910fbb16fff444",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 趋势实验卡：从信号到决定"
+        },
+        {
+          "level": 2,
+          "title": "可复制记录"
+        },
+        {
+          "level": 2,
+          "title": "判定顺序"
+        },
+        {
+          "level": 2,
+          "title": "关联入口"
+        }
+      ],
+      "summary": "将新趋势拆为日期、一手来源、已观察能力与未知推断、真实任务及人工基线。固定条件做一变量实验，记录质量、权限、返工、成本与独立表现，再决定采用、观察、降级或停止。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 70,
+      "group": "工具箱",
+      "title": "AI 学习记录",
+      "source": "docs/templates/ai-learning-log.md",
+      "counterpart": "docs/en/templates/ai-learning-log.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/ai-learning-log.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/ai-learning-log.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/ai-learning-log",
+      "updated": "2026-10-03",
+      "sourcesChecked": null,
+      "characters": 2355,
+      "sha256": "c8b56f508146b94904e49b713ce9b9a2599d287e299a675779c2a822d269254c",
+      "englishSha256": "8c1467951056053b10bc32ac928001f4c84c487b374197d253cd68e7d4182388",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 学习记录：从工具协作到独立能力"
+        },
+        {
+          "level": 2,
+          "title": "1. 任务与起点"
+        },
+        {
+          "level": 2,
+          "title": "2. 无 AI 基线"
+        },
+        {
+          "level": 2,
+          "title": "3. 约定 AI 只做什么"
+        },
+        {
+          "level": 2,
+          "title": "4. 交互与来源核验"
+        },
+        {
+          "level": 2,
+          "title": "5. 关闭 AI 后主动产出"
+        },
+        {
+          "level": 2,
+          "title": "6. 三次对照"
+        },
+        {
+          "level": 2,
+          "title": "7. 错误、反馈与迁移"
+        },
+        {
+          "level": 2,
+          "title": "8. 延迟保持与交接"
+        },
+        {
+          "level": 2,
+          "title": "9. 下一周期决定"
+        }
+      ],
+      "summary": "保存无AI基线、限定辅助、交互核验、人工修改与独立输出，比较延迟和新任务表现。分别测成品质量、学习者能力与包含审阅返工的总成本，记录错误、交接与决定。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 71,
+      "group": "工具箱",
+      "title": "AI 经历案例复盘",
+      "source": "docs/templates/ai-case-review.md",
+      "counterpart": "docs/en/templates/ai-case-review.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/ai-case-review.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/ai-case-review.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/ai-case-review",
+      "updated": "2026-08-24",
+      "sourcesChecked": null,
+      "characters": 441,
+      "sha256": "f73da8690f6ddaba889e373563d7b4f19e8e94b7924899ed1745758ec0bfef28",
+      "englishSha256": "6d38b08ea429b772810d7821690fb7f05d8d8b034b149be06a5dab6e2a4dcafb",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 经历案例复盘模板"
+        }
+      ],
+      "summary": "公开案例拆为来源、可核事实、当时信息、假设、决定、结果、代价和未知。标记事后解释、原则适用条件与不能迁移的部分，设计一个最小实践，不将公开人物故事当审计。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 72,
+      "group": "工具箱",
+      "title": "AI 项目评分卡",
+      "source": "docs/templates/ai-project-scorecard.md",
+      "counterpart": "docs/en/templates/ai-project-scorecard.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/ai-project-scorecard.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/ai-project-scorecard.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/ai-project-scorecard",
+      "updated": "2026-08-31",
+      "sourcesChecked": null,
+      "characters": 802,
+      "sha256": "40f58262528b9d2645853740262bc78e5071869e12982432c815299c9779cf79",
+      "englishSha256": "a79c3ecd2ac104d9d42185c3a269725fb20192461191e089aee38e7ef769c2d0",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 项目评分卡模板"
+        }
+      ],
+      "summary": "记录任务完成、首次通过、平均/尾部延迟、人审返工、模型/基础成本、独立表现、隐私和反馈。需求、测试、权限、成本与回滚门都需负责人日期证据，硬门不能被平均分抵消。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 73,
+      "group": "工具箱",
+      "title": "创业实验卡",
+      "source": "docs/templates/startup-experiment.md",
+      "counterpart": "docs/en/templates/startup-experiment.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/startup-experiment.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/startup-experiment.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/startup-experiment",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 2866,
+      "sha256": "6190ff0057999647c38aa1d37849836259e8b37434f10ea4b4abbba287eca2cb",
+      "englishSha256": "8afa5b3eed09c821265ca883b2ff7c7ebbbc957036a9fa05cb2efc1a05862446",
+      "headings": [
+        {
+          "level": 1,
+          "title": "创业实验卡"
+        },
+        {
+          "level": 2,
+          "title": "复制空白卡"
+        },
+        {
+          "level": 2,
+          "title": "填写示例：商品资料整理试点"
+        },
+        {
+          "level": 2,
+          "title": "示例结果与判读"
+        },
+        {
+          "level": 2,
+          "title": "最后写一句能被复查的结论"
+        }
+      ],
+      "summary": "记录用户/决定/付款者、过去行为、替代方案、访谈拒绝与反证。人工付费试点写清范围、输入、验收、双方工时、现金及返工；附合成产品信息示例，仅示范填法。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 74,
+      "group": "工具箱",
+      "title": "持续行动计划",
+      "source": "docs/templates/consistency-plan.md",
+      "counterpart": "docs/en/templates/consistency-plan.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/consistency-plan.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/consistency-plan.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/consistency-plan",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 3604,
+      "sha256": "201e87887e852114b7bf8feaed5ef49b8f3f3a432ad26e4a6d1665f27e74dfae",
+      "englishSha256": "447a1ef343603317539a82dd1d64c2ab6e0fa69b6dba5abb41d1d8c093550b7c",
+      "headings": [
+        {
+          "level": 1,
+          "title": "持续行动计划模板"
+        },
+        {
+          "level": 2,
+          "title": "可复制模板"
+        },
+        {
+          "level": 2,
+          "title": "填写实例：四周改进英文项目介绍"
+        },
+        {
+          "level": 2,
+          "title": "让 AI 帮助整理，而不替你制造进展"
+        }
+      ],
+      "summary": "将现实目标预算转为第一文件与第一动作，设置完整、压缩、恢复版和中断回归。保留四周证据与每周单变量调整；英语介绍示例为合成数据，AI不得补造成功。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 75,
+      "group": "工具箱",
+      "title": "AI 评测记录",
+      "source": "docs/templates/ai-evaluation.md",
+      "counterpart": "docs/en/templates/ai-evaluation.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/ai-evaluation.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/ai-evaluation.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/ai-evaluation",
+      "updated": "2026-10-03",
+      "sourcesChecked": null,
+      "characters": 1806,
+      "sha256": "e092d538c508892fbbab3bee2c470a6e69e50f90653f8b8e89ec49cadca5f958",
+      "englishSha256": "70c00c8f361f32a7054bd3632dea707c3dbdad64dd539323c8506c7e98a5faa4",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 评测记录模板"
+        },
+        {
+          "level": 2,
+          "title": "可复制记录"
+        },
+        {
+          "level": 2,
+          "title": "填写示例：公开资料比较表"
+        },
+        {
+          "level": 2,
+          "title": "从记录到行动"
+        }
+      ],
+      "summary": "固定任务、人工基线、输入权限、模型/提示/检索/工具/记忆/区域版本与预算。区分任务、重复试验、轨迹和环境结果，记录首次/修订通过、失败重试、留出与回归、硬门、总成本和回滚；零成功成本不能填零。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 76,
+      "group": "工具箱",
+      "title": "生活进阶工作表",
+      "source": "docs/templates/life-practice-toolkit.md",
+      "counterpart": "docs/en/templates/life-practice-toolkit.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/templates/life-practice-toolkit.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/templates/life-practice-toolkit.md",
+      "onlineUrl": "https://byoungd.github.io/up/templates/life-practice-toolkit",
+      "updated": "2026-10-04",
+      "sourcesChecked": null,
+      "characters": 3200,
+      "sha256": "14f5dfff0e6d7764c4d7673374297f23745c3affd9a36892a6f96693b3ccd0de",
+      "englishSha256": "de9a273137c26c8dff80f36dcd11f5a87e11dddc86ad99d63b2c2623fc173f99",
+      "headings": [
+        {
+          "level": 1,
+          "title": "生活进阶工作表"
+        },
+        {
+          "level": 2,
+          "title": "使用方式"
+        },
+        {
+          "level": 2,
+          "title": "一、选择简报"
+        },
+        {
+          "level": 2,
+          "title": "二、注意力审计"
+        },
+        {
+          "level": 2,
+          "title": "三、关系沟通卡"
+        },
+        {
+          "level": 2,
+          "title": "四、恢复重置表"
+        },
+        {
+          "level": 2,
+          "title": "五、关心与分担卡"
+        },
+        {
+          "level": 2,
+          "title": "六、每周复盘"
+        }
+      ],
+      "summary": "同一私有文件包含选择、注意力、关系沟通、恢复重置、关心分担及每周复查。字段覆盖事实、价值、权限、同意、容量、推翻证据、停止门和可执行修复，保留专业支持与儿童/第三方隐私边界。",
+      "guide": "guides/05-templates.md"
+    },
+    {
+      "order": 77,
+      "group": "创业、自律与 AI 实操",
+      "title": "实践路线图",
+      "source": "docs/practice.md",
+      "counterpart": "docs/en/practice.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/practice.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/practice.md",
+      "onlineUrl": "https://byoungd.github.io/up/practice",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 2980,
+      "sha256": "bcf1bce77ea9c968578294d973a675ce4133c0bc1d9bc79e6375ba9a364c50bf",
+      "englishSha256": "1dc8a718a27e541a24f66afe458a29abee8be7895e30ce6f74acf8a2eb05df9e",
+      "headings": [
+        {
+          "level": 1,
+          "title": "实践路线图：创业、自律与 AI"
+        },
+        {
+          "level": 2,
+          "title": "按你现在的问题选一条路"
+        },
+        {
+          "level": 2,
+          "title": "一条四周实践路径"
+        },
+        {
+          "level": 3,
+          "title": "第一周：建立起点"
+        },
+        {
+          "level": 3,
+          "title": "第二周：做最小版本"
+        },
+        {
+          "level": 3,
+          "title": "第三周：让现实给反馈"
+        },
+        {
+          "level": 3,
+          "title": "第四周：决定保留什么"
+        },
+        {
+          "level": 2,
+          "title": "所有主题共用一套证据"
+        },
+        {
+          "level": 2,
+          "title": "模板工具箱"
+        },
+        {
+          "level": 2,
+          "title": "如何看待指南中的内容"
+        }
+      ],
+      "summary": "实操总入口，将客户发现、可持续小生意、自律、AI工作流和AI评测组织为可执行手册。先选真实任务与人工基线，保存失败与成本，再用模板决定下一步，而非依靠收藏、演示或热情。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 78,
+      "group": "创业、自律与 AI 实操",
+      "title": "从问题到首批用户",
+      "source": "docs/threads/practice/customer-discovery.md",
+      "counterpart": "docs/en/threads/practice/customer-discovery.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/practice/customer-discovery.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/practice/customer-discovery.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/practice/customer-discovery",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 3436,
+      "sha256": "7b3bb844016f5994f210b8ab2b3473198111cff34c397530c18f44487d49e08a",
+      "englishSha256": "da62c013e05233a6a3148ea997a8d7e797e4df20e5c71b72a96495d79fd1672d",
+      "headings": [
+        {
+          "level": 1,
+          "title": "从真实问题到首批用户"
+        },
+        {
+          "level": 2,
+          "title": "1. 缩小到一次任务"
+        },
+        {
+          "level": 2,
+          "title": "2. 询问过去的行为"
+        },
+        {
+          "level": 2,
+          "title": "3. 和现有办法比较"
+        },
+        {
+          "level": 2,
+          "title": "4. 用人工试点检验结果"
+        },
+        {
+          "level": 2,
+          "title": "5. 把两周安排成一个问题"
+        },
+        {
+          "level": 2,
+          "title": "6. 允许结论是调整或停止"
+        },
+        {
+          "level": 2,
+          "title": "用英语说清这次实验"
+        }
+      ],
+      "summary": "访谈具体过去行为，区分使用者、决定者与付款者，追问频率、损失、现有替代及采购障碍。先人工交付小试点，记录拒绝、反证、付费与验收信号，避免诱导问题、赞美和免费试用误报需求。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 79,
+      "group": "创业、自律与 AI 实操",
+      "title": "可持续的小生意",
+      "source": "docs/threads/practice/sustainable-business.md",
+      "counterpart": "docs/en/threads/practice/sustainable-business.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/practice/sustainable-business.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/practice/sustainable-business.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/practice/sustainable-business",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 3472,
+      "sha256": "975a212949661d91ee107ff707945c18ff8e665b4dfb755b8eb67f45646c72b4",
+      "englishSha256": "d0d363244887107042bff638a0dfad830d1a702e6ea8f58889fe5e38ff0f43fb",
+      "headings": [
+        {
+          "level": 1,
+          "title": "可持续的小生意"
+        },
+        {
+          "level": 2,
+          "title": "1. 先给服务划出边界"
+        },
+        {
+          "level": 2,
+          "title": "2. 定价也是一项实验"
+        },
+        {
+          "level": 2,
+          "title": "3. 把自己的时间写进示例"
+        },
+        {
+          "level": 2,
+          "title": "4. 同时看到账和承诺"
+        },
+        {
+          "level": 2,
+          "title": "5. 容量由整条流程决定"
+        },
+        {
+          "level": 2,
+          "title": "6. 交付之后再观察复购"
+        },
+        {
+          "level": 2,
+          "title": "7. 给继续经营设置条件"
+        },
+        {
+          "level": 2,
+          "title": "用英语解释一单生意"
+        }
+      ],
+      "summary": "从窄范围服务、交付边界、沟通与支持成本建立可持续小生意。将模型、基础设施、人工、返工、获客、合规和故障纳入单位成本，观察现金回款、续用与容量；收入不等于利润或可规模化。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 80,
+      "group": "创业、自律与 AI 实操",
+      "title": "自律与坚持实操",
+      "source": "docs/threads/practice/discipline-and-consistency.md",
+      "counterpart": "docs/en/threads/practice/discipline-and-consistency.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/practice/discipline-and-consistency.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/practice/discipline-and-consistency.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/practice/discipline-and-consistency",
+      "updated": "2026-09-19",
+      "sourcesChecked": null,
+      "characters": 2636,
+      "sha256": "eebb1fb8b247215e26d52671f1cbd384167e5d6f0bbad1910cca1a0ec13089b3",
+      "englishSha256": "13dfc88ff59aeee46d9299d9c2d835188f6e06902a03100a0c24acb660149771",
+      "headings": [
+        {
+          "level": 1,
+          "title": "自律与坚持实操：排查卡点、重启与退出"
+        },
+        {
+          "level": 2,
+          "title": "先排查卡在哪里"
+        },
+        {
+          "level": 2,
+          "title": "案例一：计划很多，却一直起不来"
+        },
+        {
+          "level": 2,
+          "title": "案例二：中断两周，本周怎样恢复"
+        },
+        {
+          "level": 2,
+          "title": "把下一次行动写成一张小实验卡"
+        }
+      ],
+      "summary": "把启动困难拆成任务大小、第一动作、环境、容量和反馈条件，而非人格失败。设置完整、压缩和恢复动作、中断后24小时回归、证据与每周单变量调整，用四周实验验证能否持续而不透支。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 81,
+      "group": "创业、自律与 AI 实操",
+      "title": "AI 工作流",
+      "source": "docs/threads/practice/ai-workflows.md",
+      "counterpart": "docs/en/threads/practice/ai-workflows.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/practice/ai-workflows.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/practice/ai-workflows.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/practice/ai-workflows",
+      "updated": "2026-10-03",
+      "sourcesChecked": "2026-09-20",
+      "characters": 3626,
+      "sha256": "b846542a1be8e6d8565a2c4f24ff7862cb7ffbb9777c483c5e942838e8a230b5",
+      "englishSha256": "a9620fb377c98b7e963187eb66f5da8c1ca33f19a537bd847e8c400c150f44c9",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 工作流：把一次回答变成可靠交付"
+        },
+        {
+          "level": 2,
+          "title": "2026 年先看清三个变化"
+        },
+        {
+          "level": 2,
+          "title": "先选一个值得重复的任务"
+        },
+        {
+          "level": 2,
+          "title": "五步设计一条工作流"
+        },
+        {
+          "level": 3,
+          "title": "1. 收齐输入再开始"
+        },
+        {
+          "level": 3,
+          "title": "2. 先做一个可检查的中间结果"
+        },
+        {
+          "level": 3,
+          "title": "3. 在关键节点核验"
+        },
+        {
+          "level": 3,
+          "title": "4. 明确谁负责交付"
+        },
+        {
+          "level": 3,
+          "title": "5. 为失败留出口"
+        },
+        {
+          "level": 2,
+          "title": "完整示例：一份公开资料比较表"
+        },
+        {
+          "level": 2,
+          "title": "什么时候增加自动化"
+        },
+        {
+          "level": 2,
+          "title": "小团队交接需要什么"
+        },
+        {
+          "level": 2,
+          "title": "今天可以完成的练习"
+        }
+      ],
+      "summary": "将一次AI任务拆为输入、处理、核验、动作和复查五步，显式记录中间结果、工具、权限与人工门。处理提示注入、重复执行、重试、幂等、失败停止与回滚，比较人工流程、首次通过、实际总工时和成本。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 82,
+      "group": "创业、自律与 AI 实操",
+      "title": "AI 评测与可靠性",
+      "source": "docs/threads/practice/ai-evaluation.md",
+      "counterpart": "docs/en/threads/practice/ai-evaluation.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/practice/ai-evaluation.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/practice/ai-evaluation.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/practice/ai-evaluation",
+      "updated": "2026-10-03",
+      "sourcesChecked": "2026-09-20",
+      "characters": 3377,
+      "sha256": "b43038c8a220daf33543356cc0d91dcd179e77e78d36316468c54a0080e37fcb",
+      "englishSha256": "7ea67bba4832133813271255fde11c7e25ed659eeb8c7525a50c18a9c2823cff",
+      "headings": [
+        {
+          "level": 1,
+          "title": "AI 评测与可靠性：知道什么时候可以交付"
+        },
+        {
+          "level": 2,
+          "title": "从任务开始定义合格"
+        },
+        {
+          "level": 2,
+          "title": "建立一个小而有差异的测试集"
+        },
+        {
+          "level": 2,
+          "title": "比较时只改变一个主要因素"
+        },
+        {
+          "level": 2,
+          "title": "完整示例：一个更快但暂不能采用的版本"
+        },
+        {
+          "level": 2,
+          "title": "谁来评分，以及怎样处理分歧"
+        },
+        {
+          "level": 2,
+          "title": "把失败转成下一次回归检查"
+        },
+        {
+          "level": 2,
+          "title": "从评测走向小范围使用"
+        },
+        {
+          "level": 3,
+          "title": "模型变化以后，旧成绩不能自动沿用"
+        },
+        {
+          "level": 3,
+          "title": "让每次采用都有退出办法"
+        }
+      ],
+      "summary": "以任务、重复试验、过程记录和真实结果区分模型答对与环境动作成功。固定模型/提示/检索/工具/记忆版本，设置正常与边界样本、留出集、硬门和回归，包含失败重试、人审与成本，保留降级回滚。",
+      "guide": "guides/03-ai-and-projects.md"
+    },
+    {
+      "order": 83,
+      "group": "旧文归档",
+      "title": "归档说明",
+      "source": "docs/threads/archive/README.md",
+      "counterpart": "docs/en/threads/archive/README.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/archive/README.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/archive/README.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/archive/",
+      "updated": "2026-08-31",
+      "sourcesChecked": null,
+      "characters": 611,
+      "sha256": "a960f5530b195ee10947560ee7269c4755b073ad6281782ae5824e414d5e115c",
+      "englishSha256": "c1d29c16a64d6794a29da811bb69e79a0acb5c852d34e59dcede110be6130ba2",
+      "headings": [
+        {
+          "level": 1,
+          "title": "十年前的博客归档"
+        }
+      ],
+      "summary": "说明从2016年zb.gs博客快照及互链恢复四篇文章，并保留当时文本与评论的历史语境。部分Archive接口或原快照失效，日期按可恢复记录标注；历史叙述不等于当前建议。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 84,
+      "group": "旧文归档",
+      "title": "终于有了一个写字的地方",
+      "source": "docs/threads/archive/a-place-to-write.md",
+      "counterpart": "docs/en/threads/archive/a-place-to-write.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/archive/a-place-to-write.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/archive/a-place-to-write.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/archive/a-place-to-write",
+      "updated": "2026-08-31",
+      "sourcesChecked": null,
+      "characters": 1783,
+      "sha256": "f2813e6a4809a82b77447d603f5243df8849d227a9c87cd08fa12194acf89d7e",
+      "englishSha256": "30f335604dcdf340a07e4fa007dc359f3f82dd87f251d3af3698797012ca595b",
+      "headings": [
+        {
+          "level": 1,
+          "title": "终于有了一个写字的地方"
+        },
+        {
+          "level": 2,
+          "title": "原文评论"
+        }
+      ],
+      "summary": "2016年4月23日的写作与学校生活自述，涉及写作被打断、失眠、压力和寻找表达空间。上游编者明确不将历史私自用药、隐瞒症状或对他人判断作为健康与教育指导；本研究保留语境和入口。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 85,
+      "group": "旧文归档",
+      "title": "简单介绍下去年和现在的我",
+      "source": "docs/threads/archive/last-year-and-now.md",
+      "counterpart": "docs/en/threads/archive/last-year-and-now.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/archive/last-year-and-now.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/archive/last-year-and-now.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/archive/last-year-and-now",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 1010,
+      "sha256": "b5bda9ac57cb7732b09b3b3632e1007c86200470a6d964fa5ca18c03436b0236",
+      "englishSha256": "7dfb90d01e9f38f2eaae128fbeb9208d0f84f5baa05b357ea10d98bf03eb6054",
+      "headings": [
+        {
+          "level": 1,
+          "title": "简单介绍下去年和现在的我"
+        },
+        {
+          "level": 2,
+          "title": "原文评论"
+        }
+      ],
+      "summary": "2016年4月24日记录毕业、面试、返乡、首个网站与早期公司经营，含对他人的感谢和当时自我判断。收入、公司和健康信息只属于历史时间切片；原快照失效，当前依据为仓库保留文本。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 86,
+      "group": "旧文归档",
+      "title": "到底该不该扶老人",
+      "source": "docs/threads/archive/help-the-elderly.md",
+      "counterpart": "docs/en/threads/archive/help-the-elderly.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/archive/help-the-elderly.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/archive/help-the-elderly.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/archive/help-the-elderly",
+      "updated": "2026-09-01",
+      "sourcesChecked": null,
+      "characters": 1585,
+      "sha256": "30c377f8549af6e1d982e3606ea9ff7f0571e72669250ef6e04fab6f03e82f07",
+      "englishSha256": "71161b7d31f206d5b4da1c5eb122c1ca848f8e6997b53bd2f0e07c9e9faf1ca1",
+      "headings": [
+        {
+          "level": 1,
+          "title": "到底该不该扶老人"
+        },
+        {
+          "level": 2,
+          "title": "栗子一：去医院"
+        },
+        {
+          "level": 2,
+          "title": "栗子二：桥上相遇"
+        },
+        {
+          "level": 2,
+          "title": "原文评论"
+        }
+      ],
+      "summary": "2016年4月24日记录两次帮助老人的个人经历及评论。可提炼量力而行和安全责任，但不能从个人未遭损失推导普遍概率，原文历史处置不应当作急救或法律方法；原快照失效。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 87,
+      "group": "旧文归档",
+      "title": "博客临时更名公告",
+      "source": "docs/threads/archive/blog-renaming-notice.md",
+      "counterpart": "docs/en/threads/archive/blog-renaming-notice.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/archive/blog-renaming-notice.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/archive/blog-renaming-notice.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/archive/blog-renaming-notice",
+      "updated": "2026-08-31",
+      "sourcesChecked": null,
+      "characters": 437,
+      "sha256": "30f3d7116136071e7db420a2c997076451e7218b7aeedfe1062b62fd513057cb",
+      "englishSha256": "8933d38c025b7ead3625add2e17fb720979b7e08a345354018208e10636396b4",
+      "headings": [
+        {
+          "level": 1,
+          "title": "博客临时更名公告"
+        }
+      ],
+      "summary": "2016年5月21日的短公告，记录博客为当时备案临时从治病高手改名直播公社。它只说明历史名称变动，不代表当前品牌、服务或备案状态。",
+      "guide": "guides/04-life-and-long-term.md"
+    },
+    {
+      "order": 88,
+      "group": "词表",
+      "title": "Common",
+      "source": "docs/threads/word-list/Common.md",
+      "counterpart": "docs/en/threads/word-list/Common.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Common.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Common.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Common",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 795,
+      "sha256": "69f5d5718fa5672a42c28155f6b6b76abb80be46198553f326934d2baa4ed276",
+      "englishSha256": "96a758c313d91b1254beaa70dd6b51ba6d9efa2c929c9f1a4ee0a5e0877d3fd3",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Common"
+        }
+      ],
+      "summary": "通用编程英文词清单，涉及抽象、架构、并发、性能、协议、可靠性与维护。没有逐词定义，建议从真实任务选择并核验声音、义项、搭配和调用；全部源词保留于本地词表附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 89,
+      "group": "词表",
+      "title": "Go",
+      "source": "docs/threads/word-list/Go.md",
+      "counterpart": "docs/en/threads/word-list/Go.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Go.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Go.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Go",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 382,
+      "sha256": "2f7dadd8bc7438a56698f731b590e05135a1cb50fd10a00b6928eb05853d8350",
+      "englishSha256": "3c1d37571130483857174938c04461ad63d466013d28983aae4fa2f179a9c4eb",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Go"
+        }
+      ],
+      "summary": "Go相关英语术语查阅清单，覆盖语言、运行时与并发等概念。使用时回到对应版本文档和真实任务，词条数量不等于语言/编程能力；完整源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 90,
+      "group": "词表",
+      "title": "Java",
+      "source": "docs/threads/word-list/Java.md",
+      "counterpart": "docs/en/threads/word-list/Java.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Java.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Java.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Java",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 1111,
+      "sha256": "a438d785945465609f12f3eef8c7ea9c20d3da6adc3c9c326a0903570de48d99",
+      "englishSha256": "e0a79b12fe4fa5df6399d701ed3733a2e83cb6fb2f042803c38f727a6e4e446e",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Java"
+        }
+      ],
+      "summary": "Java语言、类型、运行和工程术语清单。它提供选词入口，不是系统课程或逐词释义；结合真实代码、文档和词汇八维练习，完整源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 91,
+      "group": "词表",
+      "title": "JavaScript",
+      "source": "docs/threads/word-list/JavaScript.md",
+      "counterpart": "docs/en/threads/word-list/JavaScript.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/JavaScript.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/JavaScript.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/JavaScript",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 472,
+      "sha256": "68947f34b913ce5414d9c73ede7a47a850d0a320563396ac4664b164deb03e69",
+      "englishSha256": "20c2b7dcdf2440682fe773d8c540cdebff29010487d580ffef858cbc505736d8",
+      "headings": [
+        {
+          "level": 1,
+          "title": "JavaScript"
+        }
+      ],
+      "summary": "JavaScript语法、类型、对象、异步及语言行为术语清单。具体含义需在版本与语境中核对，练习独立解释和调用；全部源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 92,
+      "group": "词表",
+      "title": "PHP",
+      "source": "docs/threads/word-list/PHP.md",
+      "counterpart": "docs/en/threads/word-list/PHP.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/PHP.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/PHP.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/PHP",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 423,
+      "sha256": "c80bb1e821972f50ed41a3b3043a2085e2e6184355d01e2fff8f4be289649b75",
+      "englishSha256": "6a33cc1b38a7532e9304180ab16c1ba1866be9f6b585eafe533aa830a37ed6d1",
+      "headings": [
+        {
+          "level": 1,
+          "title": "PHP"
+        }
+      ],
+      "summary": "PHP语言、运行与Web开发相关英文术语清单。按当前任务查选，不按背词量证明掌握框架；完整源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 93,
+      "group": "词表",
+      "title": "Prompt",
+      "source": "docs/threads/word-list/Prompt.md",
+      "counterpart": "docs/en/threads/word-list/Prompt.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Prompt.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Prompt.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Prompt",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 599,
+      "sha256": "6c5e9dd9540229f6e2835c156d91aeb75040c695eb49efcc9d9e82bd13b9ea8f",
+      "englishSha256": "028fde1d321604000fc2500345cb124d35c3b7cfbb3b760be94265feee014263",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Prompt (Common)"
+        }
+      ],
+      "summary": "提示协作常用术语，包括验收、约束、上下文窗口、指令层级、格式、检索、token、工具和提示注入。原页只有术语，无逐项定义；具体接口与限制按当前官方文档核验，完整源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 94,
+      "group": "词表",
+      "title": "Python",
+      "source": "docs/threads/word-list/Python.md",
+      "counterpart": "docs/en/threads/word-list/Python.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Python.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Python.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Python",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 690,
+      "sha256": "e4981c1b4d0ecfc198e1a5124360a5e7c701d5508d0ca388043544612ca4d0d5",
+      "englishSha256": "be0abcce9116bb956444d6f206d4e58bb4d299d72b354b15203bb434e3f3bec5",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Python"
+        }
+      ],
+      "summary": "Python语法、容器、函数、运行与工具概念英文词清单。用于读文档和解释代码时选词，配合无提示输出和延迟调用；完整源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 95,
+      "group": "词表",
+      "title": "Swift",
+      "source": "docs/threads/word-list/Swift.md",
+      "counterpart": "docs/en/threads/word-list/Swift.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Swift.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Swift.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Swift",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 445,
+      "sha256": "a910f8ccdfd044d3281cf682f8d66e024de77d31683b8fc7b8bc8ab0b2ed74ee",
+      "englishSha256": "10c61b3a57e56be70caebc09ecba6316c5d5630ef5d3d9ea86a73a46af288373",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Swift"
+        }
+      ],
+      "summary": "Swift语言、类型机制与开发相关英文术语清单。具体概念和可用API随版本，清单不能代替语言文档与实践；完整源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 96,
+      "group": "词表",
+      "title": "Rust",
+      "source": "docs/threads/word-list/Rust.md",
+      "counterpart": "docs/en/threads/word-list/Rust.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/Rust.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/Rust.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/Rust",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 536,
+      "sha256": "17d37b1e3b9025dc31e8bd61329a49d73add98018b5ad6c5a4ef3d1d87db9984",
+      "englishSha256": "840d622d695cb7f3efc977fdb4dcc2224b73608810b90c329e0f6ba9273b1d71",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Rust"
+        }
+      ],
+      "summary": "Rust类型、所有权、借用、生命周期、错误和并发相关英文术语清单。词形认识不等于理解机制，应在真实代码与文档中验证；全部源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    },
+    {
+      "order": 97,
+      "group": "词表",
+      "title": "Vibe Coding",
+      "source": "docs/threads/word-list/VibeCoding.md",
+      "counterpart": "docs/en/threads/word-list/VibeCoding.md",
+      "sourceUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/threads/word-list/VibeCoding.md",
+      "englishUrl": "https://github.com/byoungd/up/blob/35e2aa9ad3a076fe4e8405877cc560df2593838f/docs/en/threads/word-list/VibeCoding.md",
+      "onlineUrl": "https://byoungd.github.io/up/threads/word-list/VibeCoding",
+      "updated": "2026-08-16",
+      "sourcesChecked": null,
+      "characters": 667,
+      "sha256": "e91d9e8d5ecb0bb57065529cf387b3cf2bdf0f7feaa97246d533ec22bfb5283f",
+      "englishSha256": "545f52fa133d512ada8622ade47c71b1b576d56142df8e51150c4b6f298c534e",
+      "headings": [
+        {
+          "level": 1,
+          "title": "Vibe Coding (Agent)"
+        }
+      ],
+      "summary": "AI辅助开发中的需求、上下文、工具、测试、版本与交付相关英语术语清单。用于沟通和查文档，不把词汇熟悉度当工程可靠性；全部源词见附录。",
+      "guide": "guides/07-glossary-and-resources.md"
+    }
+  ]
+}

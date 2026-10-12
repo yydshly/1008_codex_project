@@ -159,6 +159,178 @@
       "coverFull": "projects/003-pascal-editor/assets/pascal-summary.png"
     },
     {
+      "id": "004",
+      "slug": "up-learning-guide",
+      "name": "Up 终身学习指南",
+      "summary": "中文知识地图完整呈现七篇专题与97页目录，支持全文检索、25张工作纸分类、392个分组词条和67个引用筛选，并说明学习方法与出版原理。",
+      "upstream": "https://github.com/byoungd/up",
+      "status": "已完成",
+      "tags": [
+        "终身学习",
+        "英语训练",
+        "AI 协作",
+        "知识汇总",
+        "静态网页"
+      ],
+      "cover": "projects/004-up-learning-guide/assets/cover.png",
+      "coverAlt": "Up中文知识地图桌面首页：左侧知识导航，右侧能力总览、97页覆盖与六步学习闭环",
+      "coverCaption": "2026-10-09 本地生产截图，1440×1000：完整研究正文、全文检索和目录、工作纸、词表及引用筛选；已验证子路径、深链接刷新与手机阅读。",
+      "demo": ""
+    },
+    {
+      "id": "005",
+      "slug": "threejs-game-skills",
+      "name": "Three.js 游戏技能研究",
+      "summary": "一图汇总九类能力、原理、约束和个人价值；提供两款原创小游戏、风格前后对照与实际输入验证，说明上游贡献和我们的扩展。",
+      "upstream": "https://github.com/majidmanzarpour/threejs-game-skills",
+      "status": "已完成",
+      "tags": [
+        "Three.js",
+        "Agent Skills",
+        "游戏开发",
+        "能力拆解",
+        "约束实验"
+      ],
+      "cover": "projects/005-threejs-game-skills/assets/ink-active.png",
+      "coverAlt": "第二版水墨剑斗：干笔山水、完整衣袍人物、笔刷状态条与朱砂题款",
+      "coverCaption": "2026-10-09 第二版生产 WebGL 实际截图；内置生成绘画素材接入三阵战斗，真实输入、11份画布检查与动作录像通过。",
+      "demo": ""
+    },
+    {
+      "id": "006",
+      "slug": "easel",
+      "name": "Easel 社媒智能体研究",
+      "summary": "逐项拆解 114 个技能、8 个系统模块与制作发布链路；核对 6 个热榜和 11 个资讯源的获取、过滤、缓存与降级，保留源码证据和离线验证边界。",
+      "upstream": "https://github.com/ZJU-REAL/Easel",
+      "status": "已完成",
+      "tags": [
+        "OpenClaw",
+        "社媒运营",
+        "源码研究",
+        "搜索与过滤",
+        "媒体制作"
+      ],
+      "cover": "projects/006-easel/assets/cover.jpg",
+      "coverAlt": "Easel 中文源码研究页：114 个技能统计、账号画像与 Agent 工具执行架构，以及搜索过滤、制作发布和证据导航",
+      "coverCaption": "2026-10-09 本地生产研究网页真实截图；上游基线 fb80ae6，展示完整技能和原理分析，未调用付费模型或真实发布。",
+      "demo": ""
+    },
+    {
+      "id": "007",
+      "slug": "octogent",
+      "name": "Octogent 多智能体工作台研究",
+      "summary": "六张上游真实截图与登录任务协作演示，讲清 Claude Code 多代理工作台的能力、文件上下文、终端、通信、Git 隔离和实际边界。",
+      "upstream": "https://github.com/hesamsheikh/octogent",
+      "status": "研究中",
+      "tags": [
+        "Claude Code",
+        "多智能体",
+        "开发工具",
+        "任务编排"
+      ],
+      "cover": "projects/007-octogent/assets/cover.jpg",
+      "coverAlt": "Octogent 中文研究页首屏：左侧说明多个 AI 的分工，右侧展示上游真实并行终端截图",
+      "coverCaption": "2026-10-09 本地生产网页截图：中文能力整理、六张作者界面截图与原创协作流程示例；上游基线 07cfc4e，未运行真实代理后端。",
+      "demo": ""
+    },
+    {
+      "id": "008",
+      "slug": "ghosttrack",
+      "name": "GhostTrack 能力与原理研究",
+      "summary": "中文网页与完整总览图拆解四项查询能力、底层原理和结果边界，并整理独立开发的用途、架构、推进顺序与许可。",
+      "upstream": "https://github.com/HunxByts/GhostTrack",
+      "status": "已完成",
+      "tags": [
+        "OSINT",
+        "能力拆解",
+        "IP 地理信息",
+        "号码元数据",
+        "静态网页"
+      ],
+      "cover": "projects/008-ghosttrack/assets/cover.png",
+      "coverAlt": "GhostTrack 中文研究网页：四项能力选择、IP 归属数据流与底层技术说明",
+      "coverCaption": "2026-10-09 本地生产网页真实截图：基于固定提交 a5cb8ad 的源码研究；页面说明四项查询、数据来源与边界，不执行真实查询。",
+      "demo": ""
+    },
+    {
+      "id": "009",
+      "slug": "cove",
+      "name": "Cove 全栈模板架构研究",
+      "summary": "完整单图与中文网页梳理 Cove 的模板定位、能力、六类场景、架构原理、八处扩展入口和六步适配，并按固定源码绘制四张交互架构图。",
+      "upstream": "https://github.com/mugnavo/cove",
+      "status": "已完成",
+      "tags": [
+        "全栈模板",
+        "TanStack Start",
+        "架构研究",
+        "Better Auth",
+        "Drizzle"
+      ],
+      "cover": "projects/009-cove/assets/cover.png",
+      "coverAlt": "Cove 中文研究网页：浏览器、服务器与数据库架构，四图切换和可点击模块详情",
+      "coverCaption": "2026-10-09 本地生产构建截图：依据上游 e7d40d5 固定源码原创绘制，展示模板自身架构；已验证四图、35个模块、子路径与手机布局。",
+      "demo": ""
+    },
+    {
+      "id": "010",
+      "slug": "unsloth",
+      "name": "Unsloth 模型训练与原理研究",
+      "summary": "中文交互网页与高清总览图整理 Unsloth 的能力、优化原理、七类代表模型、使用场景与个人实践价值，核对 MiniMax H3 和从零训练边界。",
+      "upstream": "https://github.com/unslothai/unsloth",
+      "status": "研究中",
+      "tags": [
+        "模型微调",
+        "LoRA / QLoRA",
+        "GPU 优化",
+        "MiniMax H3",
+        "中文交互网页",
+        "能力总览图"
+      ],
+      "cover": "projects/010-unsloth/assets/cover.png",
+      "coverAlt": "Unsloth 中文研究网页：核心价值、LoRA 矩阵示意与十个研究章节导航",
+      "coverCaption": "2026-10-09 本地生产网页真实截图；基于固定提交 f9718db，解释加载、量化、训练及 H3 音视频 LoRA，未执行 GPU 训练。",
+      "demo": ""
+    },
+    {
+      "id": "011",
+      "slug": "aitoearn",
+      "name": "AiToEarn 内容营销能力与原理研究",
+      "summary": "中文网页与完整总览图汇总32项能力、13个技能、14个平台、原理场景及扩展方向；安装原版技能并用GPT适配实际生成三张介绍图和本地草稿。",
+      "upstream": "https://github.com/yikart/AiToEarn",
+      "status": "已完成",
+      "tags": [
+        "内容营销",
+        "Agent / Skills / MCP",
+        "多平台发布",
+        "异步任务",
+        "中文研究网页"
+      ],
+      "cover": "projects/011-aitoearn/assets/real-demo.jpg",
+      "coverAlt": "AiToEarn真实效果实测网页：三张实际生成的中文介绍图，分别说明内容流程、四部分原理和创作步骤",
+      "coverCaption": "2026-10-09 本地网页真实截图；13个原版技能已安装，GPT适配实际生成3张1086×1448图与本地图文草稿；未执行原后台或真实社交发布。",
+      "demo": ""
+    },
+    {
+      "id": "012",
+      "slug": "huashu-art-motion",
+      "name": "Huashu 艺术动画能力与风格研究",
+      "summary": "一张高清图汇总Skill与动画工程、9项能力、35种风格、9种解说方法、使用场景、模型对比及扩展价值；保留原版动态效果与7部新增作品，区分已有能力与研究判断。",
+      "upstream": "https://github.com/alchaincyf/huashu-art-motion",
+      "status": "已完成",
+      "tags": [
+        "艺术动画",
+        "Canvas",
+        "Skill",
+        "风格配方",
+        "场景作品",
+        "互动导览"
+      ],
+      "cover": "projects/012-huashu-art-motion/assets/understanding/desktop.jpg",
+      "coverAlt": "Huashu研究网页的理解总览入口：原版效果与完整能力图预览，以及工程复用、使用目标和模型对比说明",
+      "coverCaption": "2026-10-09本地实际截图。新增3200×8524中文总览图，使用固定上游57d6760的原版场景静帧与作者解说截图；高清阅读、缩放、下载、手机和无脚本已验证。分类、价值判断与扩展方向为本研究归纳。",
+      "demo": ""
+    },
+    {
       "id": "013",
       "slug": "aihot",
       "name": "AIHOT 信源与资讯引擎研究",

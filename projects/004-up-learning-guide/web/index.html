@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Up 终身学习指南中文知识地图：完整阅读七篇专题，探索97页内容、25张工作纸、392个技术词条及来源资料。">
+  <meta name="theme-color" content="#102235">
+  <title>Up 知识地图 · 终身学习指南</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23102235'/%3E%3Cpath d='M8 8v11a5 5 0 0 0 10 0V8M22 8h3v16h-3' fill='none' stroke='%237bd5c8' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="mobile-bar"><a class="mobile-brand" href="#/overview">UP <span>知识地图</span></a><button id="menu-toggle" aria-controls="sidebar" aria-expanded="false">打开导航</button></div>
+  <div id="menu-scrim" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="主导航">
+    <a class="brand" href="#/overview"><span class="brand-mark">UP<span class="brand-line"></span></span><span><strong>知识地图</strong><small>终身学习指南</small></span></a>
+    <button class="search-button" id="open-search"><span class="search-icon" aria-hidden="true"></span><span>搜索全部内容</span><kbd>/</kbd></button>
+    <p class="nav-label">探索内容</p>
+    <nav class="primary-nav">
+      <a href="#/overview" data-nav="overview"><span class="nav-symbol">◈</span>能力总览</a>
+      <a href="#/map" data-nav="map"><span class="nav-symbol">◇</span>一图理解</a>
+      <a href="#/topics" data-nav="topics"><span class="nav-symbol">▤</span>详细专题<span class="nav-count">7</span></a>
+      <a href="#/catalog" data-nav="catalog"><span class="nav-symbol">▦</span>完整内容目录<span class="nav-count">97</span></a>
+      <a href="#/worksheets" data-nav="worksheets"><span class="nav-symbol">▧</span>工作纸<span class="nav-count">25</span></a>
+      <a href="#/words" data-nav="words"><span class="nav-symbol">Aa</span>技术词表</a>
+      <a href="#/resources" data-nav="resources"><span class="nav-symbol">◎</span>引用资源</a>
+    </nav>
+    <div class="sidebar-section"><p class="nav-label">按问题阅读</p><nav id="guide-nav" class="guide-nav"></nav></div>
+    <div class="sidebar-footer"><span class="edition">研究版 · 2026.10</span><a href="#/guide/sources">来源与内容许可</a><a href="https://github.com/byoungd/up" target="_blank" rel="noopener noreferrer">原仓库 · byoungd/up</a><p>内容归纳自 byoungd and contributors<br>CC BY-NC 4.0 · 已注明改写</p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div id="breadcrumb">UP / 能力总览</div><div class="topbar-right"><span class="version-label">研究提交 35e2aa9</span><a href="https://byoungd.github.io/up/" target="_blank" rel="noopener noreferrer">上游在线版</a></div></header>
+    <main id="main" tabindex="-1"><div class="loading"><span class="loading-dot"></span>正在读取知识地图…</div></main>
+    <footer class="page-footer"><span>UP · 中文内容研究</span><span>原作者 byoungd and contributors · <a href="#/guide/sources">版本、署名与许可</a></span></footer>
+  </div>
+  <dialog id="search-dialog" aria-labelledby="search-title">
+    <div class="search-head"><h2 id="search-title">搜索知识地图</h2><button id="close-search" aria-label="关闭搜索">关闭</button></div>
+    <label class="search-field"><span class="search-icon" aria-hidden="true"></span><input id="search-input" type="search" placeholder="输入问题、方法或术语" autocomplete="off" aria-label="搜索全部内容"></label>
+    <p id="search-status" class="search-status" aria-live="polite">搜索专题正文、页面摘要、工作纸和词表</p><div id="search-results"></div>
+  </dialog>
+</body>
+</html>

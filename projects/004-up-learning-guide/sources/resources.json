@@ -1,0 +1,691 @@
+{
+  "upstream": "https://github.com/byoungd/up",
+  "commit": "35e2aa9ad3a076fe4e8405877cc560df2593838f",
+  "researchDate": "2026-10-09",
+  "note": "保留上游中文正文 Markdown 外链、标签与所在页面。只核对上游引用存在，未逐一访问外站；含论文、官方文档、产品及作者关联入口，不表示推荐或当前可用。HTML 外链与图片权属另见上游 ATTRIBUTIONS.md。",
+  "resources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/image-understanding",
+      "labels": [
+        "Google：Image understanding"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "labels": [
+        "Google：Gemma overview"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://ai.google.dev/gemma/docs/integrations/ollama",
+      "labels": [
+        "Ollama integration"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1002%2Ftesq.3178",
+      "labels": [
+        "Vuogan & Li (2022), Examining the Effectiveness of Peer Feedback in Second Language Writing"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/6-writing.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1002%2Ftesq.67",
+      "labels": [
+        "Saito (2012), Effects of Instruction on L2 Pronunciation Development"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/5-speaking.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1017%2FS0272263108080042",
+      "labels": [
+        "Webb (2008), Receptive and Productive Vocabulary Sizes of L2 Learners"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/2-vocabulary.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1037%2F0033-2909.132.3.354",
+      "labels": [
+        "Cepeda et al. (2006), Distributed Practice in Verbal Recall Tasks"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/1-understanding.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1075%2Fbpa.13.03jeo",
+      "labels": [
+        "Jeon (2022), L2 Reading Comprehension and Its Correlates"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/4-reading.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2F0023-8333.00136",
+      "labels": [
+        "Norris & Ortega (2000), Effectiveness of L2 Instruction"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/grammar.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fj.1467-9280.2006.01693.x",
+      "labels": [
+        "Roediger & Karpicke (2006), Test-Enhanced Learning"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/1-understanding.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fj.1467-9922.2009.00559.x",
+      "labels": [
+        "Vandergrift & Tafaghodtari (2010), Teaching L2 Learners How to Listen Does Make a Difference"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/3-listening.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fj.1467-9922.2010.00562.x",
+      "labels": [
+        "Spada & Tomita (2010), Interactions Between Type of Instruction and Type of Language Feature"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/grammar.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fj.1539-6053.2009.01038.x",
+      "labels": [
+        "Pashler et al. (2008), Learning Styles"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/1-understanding.md",
+        "docs/threads/part-1/2-vocabulary.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fj.1540-4781.2011.01146.x",
+      "labels": [
+        "Schmitt, Jiang & Grabe (2011), The Percentage of Words Known in a Text and Reading Comprehension"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/2-vocabulary.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fjrir.12004",
+      "labels": [
+        "Akkakoson (2013), The Relationship between Strategic Reading Instruction and L2 Reading Achievement"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/4-reading.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Flang.12034",
+      "labels": [
+        "Jeon & Yamashita (2014), L2 Reading Comprehension and Its Correlates"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/4-reading.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fmodl.12189",
+      "labels": [
+        "Kang & Han (2015), The Efficacy of Written Corrective Feedback in Improving L2 Written Accuracy"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/6-writing.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1111%2Fmodl.12671",
+      "labels": [
+        "Webb, Yanagisawa & Uchihara (2020), How Effective Are Intentional Vocabulary-Learning Activities?"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/2-vocabulary.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1152%2Fphysrev.00032.2012",
+      "labels": [
+        "Rasch & Born (2013), About Sleep's Role in Memory"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/1-understanding.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1177%2F0033688216631175",
+      "labels": [
+        "Chang & Millett (2016), Developing L2 Listening Fluency through Extended Listening-focused Activities"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/3-listening.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1177%2F003368829702800104",
+      "labels": [
+        "Tauroza & Luk (1997), Accent and Second Language Listening Comprehension"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/3-listening.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1177%2F07356331221127300",
+      "labels": [
+        "Zhai & Ma (2022), The Effectiveness of Automated Writing Evaluation on Writing Quality"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/6-writing.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1177%2F1529100612453266",
+      "labels": [
+        "Dunlosky et al. (2013), Improving Students' Learning With Effective Learning Techniques"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/1-understanding.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2307%2F3588485",
+      "labels": [
+        "Levis (2005), Changing Contexts and Shifting Paradigms in Pronunciation Teaching"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/5-speaking.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2307%2F3588486",
+      "labels": [
+        "Derwing & Munro (2005), Second Language Accent and Pronunciation Teaching"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/5-speaking.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3102%2F003465430298487",
+      "labels": [
+        "Hattie & Timperley (2007), The Power of Feedback"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/1-understanding.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3138%2Fcmlr.63.1.59",
+      "labels": [
+        "Nation (2006), How Large a Vocabulary Is Needed for Reading and Listening?"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/2-vocabulary.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://apps.ankiweb.net/",
+      "labels": [
+        "Anki"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/2-vocabulary.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://byoungd.github.io/up/",
+      "labels": [
+        "GitHub Pages"
+      ],
+      "citedBy": [
+        "docs/README.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://c2pa.org/specifications/specifications/2.2/explainer/Explainer.html",
+      "labels": [
+        "C2PA 2.2 Explainer"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd",
+      "labels": [
+        "GitHub 主页：byoungd / Leap 离谱"
+      ],
+      "citedBy": [
+        "docs/threads/part-2/entrepreneurship.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd/up",
+      "labels": [
+        "GitHub 仓库",
+        "离谱的英语学习指南"
+      ],
+      "citedBy": [
+        "docs/README.md",
+        "docs/threads/part-2/my-story.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd/up/blob/main/ATTRIBUTIONS.md",
+      "labels": [
+        "第三方素材与引用"
+      ],
+      "citedBy": [
+        "docs/README.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd/up/blob/main/CODE_OF_CONDUCT.md",
+      "labels": [
+        "行为准则"
+      ],
+      "citedBy": [
+        "docs/README.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd/up/blob/main/CONTRIBUTING.md",
+      "labels": [
+        "贡献指南"
+      ],
+      "citedBy": [
+        "docs/README.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd/up/blob/main/LICENSE.md",
+      "labels": [
+        "许可证说明"
+      ],
+      "citedBy": [
+        "docs/README.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/byoungd/up/issues/new?template=reader-field-note.yml",
+      "labels": [
+        "公开回执",
+        "公开读者回执"
+      ],
+      "citedBy": [
+        "docs/threads/part-5/book-as-proof.md",
+        "docs/templates/reader-field-note.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://github.com/editablejs/editable",
+      "labels": [
+        "Editable 项目"
+      ],
+      "citedBy": [
+        "docs/threads/part-4/week-1.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://help.openai.com/en/articles/10169521-projects",
+      "labels": [
+        "Projects in ChatGPT"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://ku0.com/",
+      "labels": [
+        "ku0.com"
+      ],
+      "citedBy": [
+        "docs/projects.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "labels": [
+        "MCP 规范"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/2-ai-development-and-resource-layer.md",
+        "docs/threads/practice/ai-workflows.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+      "labels": [
+        "MCP 安全最佳实践"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1787503349&ver=6922&signature=hsfWcee*q*Okq4gsJ5TpMaWV4vZTwLean6SKtOxCC-EyAf9jWD6l1LQYDny29FqXVImHZFNFDPt*EVH*hVMN2pa91kZtuYfzI81wtV7yahnqVBsKS*c7Ls1uf9QqiEIF&new=1",
+      "labels": [
+        "《韩先凯：AI 圈最“抽象”的人类》"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/2-ai-development-and-resource-layer.md",
+        "docs/projects.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1787503349&ver=6922&signature=k7g1j*QF9lLWMGUlkAu65EFOmvokb8FoM51LNr4hgn4Q4Cc7q3t3O8Mkac7YnWTJbIVdvX-PXYdZXVHEohJieTOPR*Q2-TVAHuIg2ljgp2BMn8m7STrvovnpW01j817Y&new=1",
+      "labels": [
+        "《韩先凯与 AI：把喧嚣拆成一帧一帧的情绪》"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/2-ai-development-and-resource-layer.md",
+        "docs/projects.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://notebooklm.google/",
+      "labels": [
+        "NotebookLM"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://openai.com/zh-Hans-CN/index/chatgpt-study-mode/",
+      "labels": [
+        "学习模式简介"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "labels": [
+        "What are projects?"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/15274899",
+      "labels": [
+        "Gemini Live"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/16275879",
+      "labels": [
+        "创建测验、抽认卡等"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/16448384",
+      "labels": [
+        "在 Gemini 应用中使用学习工具"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://token.love/",
+      "labels": [
+        "token.love"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/2-ai-development-and-resource-layer.md",
+        "docs/projects.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://web.archive.org/web/20160423145153/http://zb.gs/%E7%BB%88%E4%BA%8E%E6%9C%89%E4%BA%86%E4%B8%80%E4%B8%AA%E5%86%99%E5%AD%97%E7%9A%84%E5%9C%B0%E6%96%B9",
+      "labels": [
+        "Wayback Machine 快照"
+      ],
+      "citedBy": [
+        "docs/threads/archive/a-place-to-write.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://web.archive.org/web/20160521100054/http://zb.gs/%E5%8D%9A%E5%AE%A2%E4%B8%B4%E6%97%B6%E6%9B%B4%E5%90%8D%E5%85%AC%E5%91%8A",
+      "labels": [
+        "Wayback Machine 快照"
+      ],
+      "citedBy": [
+        "docs/threads/archive/blog-renaming-notice.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "labels": [
+        "Anthropic：Building effective agents"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "labels": [
+        "Anthropic：Demystifying evals for AI agents",
+        "Demystifying evals for AI agents"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md",
+        "docs/threads/practice/ai-evaluation.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "labels": [
+        "Anthropic：Effective context engineering for AI agents"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale",
+      "labels": [
+        "Council of Europe, CEFR 3.3 Global Scale",
+        "Council of Europe：CEFR 3.3 Global Scale"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/0-cefr.md",
+        "docs/threads/part-1/8-job-search-english.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.deepl.com/write",
+      "labels": [
+        "DeepL Write"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.ibm.com/think/topics/rag-vs-fine-tuning",
+      "labels": [
+        "IBM 的 RAG 与微调说明"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/1-ai-learning.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.ltddir.com/companies/china-ciyuan-cloud-computing-limited/",
+      "labels": [
+        "China Ciyuan Cloud Computing Limited 公开登记页面"
+      ],
+      "citedBy": [
+        "docs/threads/part-2/entrepreneurship.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.perplexity.ai/help-center/",
+      "labels": [
+        "Help Center"
+      ],
+      "citedBy": [
+        "docs/threads/part-1/7-ai.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "labels": [
+        "UNESCO AI competency framework for students"
+      ],
+      "citedBy": [
+        "docs/threads/part-3/6-ai-trends-and-learning-roadmap.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "labels": [
+        "UNESCO：Guidance for generative AI in education and research"
+      ],
+      "citedBy": [
+        "docs/threads/part-4/family-learning.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+      "labels": [
+        "WHO：Mental health at work"
+      ],
+      "citedBy": [
+        "docs/threads/part-2/recovery.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/suicide",
+      "labels": [
+        "WHO：Suicide fact sheet"
+      ],
+      "citedBy": [
+        "docs/threads/part-2/recovery.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240053052",
+      "labels": [
+        "Guidelines on mental health at work"
+      ],
+      "citedBy": [
+        "docs/threads/part-2/recovery.md"
+      ],
+      "verifiedInThisResearch": false
+    },
+    {
+      "url": "https://x.com/ourleap",
+      "labels": [
+        "X"
+      ],
+      "citedBy": [
+        "docs/README.md"
+      ],
+      "verifiedInThisResearch": false
+    }
+  ]
+}

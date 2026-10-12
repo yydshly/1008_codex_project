@@ -1,0 +1,14 @@
+{
+  "name": "up-learning-knowledge-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Up 终身学习指南的中文知识整理与完整阅读网页",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dir dist --port 4194 --base /1008_codex_project/004-up-learning-guide/",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": { "marked": "18.1.0" }
+}
