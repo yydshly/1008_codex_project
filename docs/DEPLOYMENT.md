@@ -3,7 +3,7 @@
 <!-- OCTOGENT_PUBLICATION:START -->
 ## Octogent 完整理解、原始全景图与多 Agent 研究（2026-10-12）
 
-007 接入现有 GitHub Pages Actions，与 001、002、003、004、005、006、013 独立构建后统一发布；本轮只新增 007。首次公开 HTTPS 和浏览器核验后再登记 `projects.json` 的 `demo`，当前处于发布准备与核验阶段。
+007 已通过现有 GitHub Pages Actions 部署，与 001、002、003、004、005、006、013 独立构建后统一发布；本轮只新增 007。[完整中文研究](https://yydshly.github.io/1008_codex_project/007-octogent/)和[可缩放一图阅读](https://yydshly.github.io/1008_codex_project/007-octogent/map.html)已通过公开 HTTPS 与真实浏览器核验，正式 `demo` 在核验后登记。[首次发布运行38228913914](https://github.com/yydshly/1008_codex_project/actions/runs/38228913914)构建与部署成功。27个公开页面/资源、原图哈希、六张作者截图与既有七个入口通过；390/320手机布局和模块深链接刷新通过。见[发布核验](../projects/007-octogent/src/publication-verification.json)、[HTTP记录](../projects/007-octogent/src/public-http-checks.json)与[浏览器记录](../projects/007-octogent/src/public-browser-checks.json)。
 
 内容包含 12 项完整摘要、6 段图前介绍、8 个系统模块、5 步执行与反馈、6 类场景、业务与工程各 4 项价值、4 条复用路线和 8 项扩展建议。核心正文与能力说明进入静态 HTML，关闭脚本仍可读；JavaScript 提供六截图浏览、登录任务预设演示、机制标签和全景图缩放。根 `projects.json` 是摘要与引导介绍来源，网页和站点总入口复用相同内容。
 

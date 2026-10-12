@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-12",
+  "passed": true,
+  "entry": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+  "checks": [
+    "公开页面加载8个模块、8项扩展和6个截图标签",
+    "完整摘要可展开、关闭，12项摘要可见",
+    "模块原理深链接#modules刷新后仍显示正文和已初始化截图标签",
+    "map.html可进入价值章节并适应宽度，高清图尺寸3600×10174",
+    "实际公开PNG下载SHA-256与既有原图一致",
+    "桌面1265/1265，390手机375/375，320窄屏305/305，没有页面整体横向溢出",
+    "有src的已加载图片无损坏；控制台error/warn为空；临时视口已恢复"
+  ],
+  "publicDownloadSha256": "a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242",
+  "screenshots": ["assets/publication/public-cover.jpg", "assets/publication/public-modules.jpg", "assets/publication/public-map.jpg", "assets/publication/public-mobile.jpg"],
+  "boundary": "静态研究网页的真实浏览器核验，不代表原库实际Agent协作效果"
+}

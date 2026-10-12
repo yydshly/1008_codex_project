@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-12",
+  "passed": true,
+  "entry": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+  "checkedResources": 27,
+  "checks": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/map.html",
+      "status": 200,
+      "bytes": 2674,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+      "status": 200,
+      "bytes": 56954,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/app.js",
+      "status": 200,
+      "bytes": 8774,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/content.js",
+      "status": 200,
+      "bytes": 15669,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/index.html",
+      "status": 200,
+      "bytes": 56954,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/publication.css",
+      "status": 200,
+      "bytes": 2915,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/interactive-sections.mjs",
+      "status": 200,
+      "bytes": 10100,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/map.js",
+      "status": 200,
+      "bytes": 2031,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/styles.css",
+      "status": 200,
+      "bytes": 24301,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/map.css",
+      "status": 200,
+      "bytes": 2243,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/research.md",
+      "status": 200,
+      "bytes": 9021,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/publication.json",
+      "status": 200,
+      "bytes": 21401,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/notes.md",
+      "status": 200,
+      "bytes": 7081,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/understanding.md",
+      "status": 200,
+      "bytes": 17685,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/LICENSE.upstream.txt",
+      "status": 200,
+      "bytes": 1056,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/local-publication-verification.json",
+      "status": 200,
+      "bytes": 2141,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/octogent-understanding-map-layout.json",
+      "status": 200,
+      "bytes": 878,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/octogent-understanding-map.svg",
+      "status": 200,
+      "bytes": 2407598,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/octogent-understanding-map-preview.jpg",
+      "status": 200,
+      "bytes": 1205901,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/octogent-understanding-map.png",
+      "status": 200,
+      "bytes": 5033677,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/octogent-understanding-map-content.md",
+      "status": 200,
+      "bytes": 14181,
+      "contentType": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/preview_1.jpg",
+      "status": 200,
+      "bytes": 170631,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/preview_2.jpg",
+      "status": 200,
+      "bytes": 399033,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/preview_3.jpg",
+      "status": 200,
+      "bytes": 280745,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/preview_4.jpg",
+      "status": 200,
+      "bytes": 359861,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/preview_6.jpg",
+      "status": 200,
+      "bytes": 318004,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/007-octogent/assets/preview_5.jpg",
+      "status": 200,
+      "bytes": 237195,
+      "contentType": "image/jpeg"
+    }
+  ],
+  "preserved": [
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/001-sandboard/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/002-interview-guide/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/003-pascal-editor/overview/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/004-up-learning-guide/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/005-threejs-game-skills/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/006-easel/",
+      "status": 200
+    },
+    {
+      "url": "https://yydshly.github.io/1008_codex_project/013-aihot/",
+      "status": 200
+    }
+  ],
+  "summaryItems": 12,
+  "overviewItems": 6,
+  "modules": 8,
+  "scenarios": 6,
+  "extensions": 8,
+  "originalGuide": {
+    "sha256": "a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242",
+    "width": 3600,
+    "height": 10174,
+    "bytes": 5033677
+  },
+  "boundary": "仅核验公开静态研究网页；没有验证原库真实Agent工作。"
+}

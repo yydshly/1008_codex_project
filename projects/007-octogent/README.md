@@ -16,13 +16,13 @@
 | 上游许可 | MIT；原文保存在 [src/LICENSE.upstream](src/LICENSE.upstream) |
 | 状态 | 已完成本轮源码研究与中文整理；原应用真实代理工作流尚未本地复现 |
 | 本地入口 | http://127.0.0.1:4193/1008_codex_project/007-octogent/ |
-| 在线发布 | 尚未发布，根索引 `demo` 保持为空 |
+| 在线发布 | [完整研究网页](https://yydshly.github.io/1008_codex_project/007-octogent/) · [可缩放一图阅读](https://yydshly.github.io/1008_codex_project/007-octogent/map.html) |
 
 ## 网页内容
 
 完整理解已扩展为 **12 项摘要、6 段图前介绍、8 个系统模块、5 步执行与反馈、6 类场景、4 项业务价值、4 项工程学习价值、4 条复用路线和 8 项扩展建议**。核心正文与原有能力说明在构建时进入 HTML，关闭脚本仍可阅读；交互用于截图浏览、任务预设播放、机制标签和一图缩放。摘要和图前介绍来自根 `projects.json`，网页、总入口与 README 索引共用同一内容。
 
-新增 [理解全景图](assets/octogent-understanding-map.png)，提供 [可缩放阅读页](http://127.0.0.1:4193/1008_codex_project/007-octogent/map.html)、[SVG 源文件](assets/octogent-understanding-map.svg)和[文字版](assets/octogent-understanding-map-content.md)。一张图覆盖能力、执行链与反馈链、开源研究场景、业务与工程价值、个人 Agent 库扩展建议及证据边界，嵌入六张上游真实截图。
+沿用 [理解全景图](assets/octogent-understanding-map.png)，提供 [在线可缩放阅读页](https://yydshly.github.io/1008_codex_project/007-octogent/map.html)、[SVG 源文件](assets/octogent-understanding-map.svg)和[文字版](assets/octogent-understanding-map-content.md)。一张图覆盖能力、执行链与反馈链、开源研究场景、业务与工程价值、个人 Agent 库扩展建议及证据边界，嵌入六张上游真实截图。
 
 1. **真实效果**：六张作者截图展示代理关系画布、并行终端、任务工作台、用量与 GitHub 活动、文件修改活动、会话记录；可切换、放大和用键盘浏览。
 2. **协作演示**：以“给网站增加登录功能”为例，观察后台、前端、测试三个 worker 的分工、BLOCKED 求助、DONE 汇报和审查整合；支持逐步查看、自动播放、暂停、重置及代理切换。
@@ -78,7 +78,7 @@ Octogent 是带可视化界面的本地多代理编排工作台，主要围绕 C
 
 本轮验证本项目的静态网页、资源和交互，命令及观察见 [notes.md](notes.md) 与 [src/verification.json](src/verification.json)。未运行原 Octogent 的真实多代理工作流，没有测量任务完成率、成本、速度或真实合并成功率。
 
-2026-10-12 发布准备的命令、完整性和浏览器记录见 [src/local-publication-verification.json](src/local-publication-verification.json)。公开部署记录在首次线上核验后补充。
+2026-10-12 通过 GitHub Pages 部署并登记正式入口；27 个公开页面和资源、原图下载哈希、完整静态正文及既有七个入口通过核验，线上真实浏览器检查摘要、模块深链接、图解下载和390/320手机布局通过。见 [发布核验](src/publication-verification.json)、[本地记录](src/local-publication-verification.json)、[公开 HTTP](src/public-http-checks.json)和[公开浏览器](src/public-browser-checks.json)。[首次发布运行 38228913914](https://github.com/yydshly/1008_codex_project/actions/runs/38228913914) 构建与部署成功。部署研究网页不能证明原应用工作可靠性。
 
 - `web/`：原创 HTML / CSS / JavaScript、内容数据、独立构建与本机预览脚本。
 - `assets/preview_1.jpg` 至 `preview_6.jpg`、`octopus-favicon.svg`：上游原文件，无修改。

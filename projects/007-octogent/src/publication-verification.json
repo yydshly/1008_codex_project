@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "status": "verified",
+  "scope": "完整中文研究网页、已有全景图与资料在GitHub Pages发布",
+  "entry": "https://yydshly.github.io/1008_codex_project/007-octogent/",
+  "map": "https://yydshly.github.io/1008_codex_project/007-octogent/map.html",
+  "verifiedDeployment": {
+    "commit": "49d4d01d2cfa20aea620ba5ae324fbb4ca97aa19",
+    "workflowRunId": 38228913914,
+    "workflowUrl": "https://github.com/yydshly/1008_codex_project/actions/runs/38228913914",
+    "build": "success",
+    "deploy": "success",
+    "catalogRunId": 38228913821,
+    "catalogConclusion": "success"
+  },
+  "content": { "summaryItems": 12, "overviewItems": 6, "modules": 8, "pipelineSteps": 5, "scenarios": 6, "businessValues": 4, "learningValues": 4, "reuseRoutes": 4, "extensions": 8 },
+  "verification": { "publicResources": 27, "preservedPublishedEntries": 7, "httpPassed": true, "browserPassed": true, "originalGuidePassed": true },
+  "originalGuide": { "width": 3600, "height": 10174, "sha256": "a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242", "unchanged": true },
+  "reports": ["local-publication-verification.json", "public-http-checks.json", "public-browser-checks.json"],
+  "limitations": ["上游研究固定07cfc4e，MIT", "没有运行原Octogent API、PTY、模型或worker", "未验证原应用完整Agent工作流、Windows兼容性或速度成本收益", "八项扩展方向是待开发建议"]
+}

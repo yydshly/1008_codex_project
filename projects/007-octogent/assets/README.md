@@ -41,3 +41,5 @@
 ## 2026-10-12 发布核验画面
 
 `publication/local-modules.jpg`、`publication/local-mobile.jpg` 来自完整静态研究页的本地生产子路径，分别记录系统模块正文与手机检查。属于本研究浏览器画面，不能当作原 Octogent 运行结果。现有全景图继续保留 SHA-256 `a630623ede3b9582791f3965eaeb70023a2cb579fb4e781138c5f378e63bc242`，不重绘或裁切。
+
+`publication/public-cover.jpg`、`public-modules.jpg`、`public-map.jpg`、`public-mobile.jpg` 是首次成功部署后，在正式 GitHub Pages 地址拍摄的真实浏览器截图。分别展示网页入口、系统模块、已有全景图阅读和手机布局，不是原库的本地运行截图。

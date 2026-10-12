@@ -38,6 +38,7 @@ await writeFile(path.join(project, 'UNDERSTANDING.md'), renderUnderstanding(entr
 await cp(path.join(project, 'assets'), path.join(dest, 'assets'), { recursive: true });
 for (const [input, output] of [['README.md', 'research.md'], ['notes.md', 'notes.md'], ['src/LICENSE.upstream', 'LICENSE.upstream.txt'], ['src/verification.json', 'verification.json']]) await copyFile(path.join(project, input), path.join(dest, output));
 await copyFile(path.join(project,'src/local-publication-verification.json'),path.join(dest,'local-publication-verification.json'));
+for (const file of ['publication-verification.json','public-http-checks.json','public-browser-checks.json']) await copyFile(path.join(project,'src',file),path.join(dest,file));
 // 内容版本避免发布后继续读取旧的脚本或数据；引导图原文件不作改写。
 const resources = ['styles.css','app.js','content.js','map.css','map.js','publication.css','interactive-sections.mjs','publication.mjs','assets/octogent-understanding-map-layout.json'];
 const releaseHash = createHash('sha256');

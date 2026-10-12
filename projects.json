@@ -527,7 +527,7 @@
       "coverFull": "projects/007-octogent/assets/octogent-understanding-map.png",
       "coverAlt": "Octogent 完整理解全景图：六张真实截图、核心能力、执行反馈链、开源研究场景、业务与工程价值和个人 Agent 库扩展路线",
       "coverCaption": "沿用2026-10-09生成的完整3600×10174全景图，PNG原始字节保持一致；截图来自hesamsheikh/octogent固定提交07cfc4e，中文整理和扩展建议为本研究原创。2026-10-12整理发布；未本地复现原应用真实多Agent任务。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/1008_codex_project/007-octogent/",
       "summaryItems": [
         {
           "title": "定位",
