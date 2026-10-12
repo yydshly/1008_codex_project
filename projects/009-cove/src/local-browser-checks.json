@@ -1,0 +1,53 @@
+{
+  "researchDate": "2026-10-09",
+  "publicationDate": "2026-10-12",
+  "commit": "e7d40d524b6526d80c803fd092f6fa8bf2029f8e",
+  "url": "http://127.0.0.1:4299/1008_codex_project/009-cove/",
+  "checks": [
+    "生产子路径可直接访问；14 章、12 项摘要、8 类能力、8 组模块、6 类场景、6 项价值、4 条复用及完整适配扩展",
+    "完整总览图 2700×6471 加载与下载；图源、渲染记录、来源摘要一致；6 类场景、8 处扩展与 6 步适配完整",
+    "四图切换、全部 35 个模块详情及对应来源、四张 SVG 下载",
+    "图类型的方向键 / Home / End 导航",
+    "固定提交源码链接全部校对；静态资源、研究文档、许可、来源清单和子路径重定向",
+    "390px 手机宽度无页面横向溢出；四张图可在内部滚动并选择右侧模块",
+    "页面整体 2 倍缩放后无全页横向溢出；图表保留内部滚动区域",
+    "来源说明可展开；浏览器脚本错误与资源错误均为 0",
+    "原图阅读器 100%、50%、滑杆、适合宽度和 PNG 下载；图片自然尺寸保持完整",
+    "320 / 390px 手机正文、引导图和接口章节刷新；图表保留内部滚动",
+    "禁用 JavaScript 仍有完整理解、扩展正文与完整引导图"
+  ],
+  "nodeCount": 35,
+  "screenshots": [
+    {
+      "file": "cover.png",
+      "width": 1440,
+      "height": 1200
+    },
+    {
+      "file": "architecture-desktop.png",
+      "type": "interactive architecture panel"
+    },
+    {
+      "file": "mobile.png",
+      "width": 390,
+      "height": 1050
+    }
+  ],
+  "overview": {
+    "file": "cove-overview.png",
+    "width": 2700,
+    "height": 6471,
+    "counts": [
+      6,
+      6,
+      4,
+      4,
+      8,
+      6
+    ]
+  },
+  "sourceFileCount": 36,
+  "errors": [],
+  "failedResponses": [],
+  "scope": "Static research website only; no Cove backend, OAuth, database or production performance test."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "cove-research-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cove 全栈模板的中文能力与架构研究网页，原创静态站点。",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "figure:source": "node scripts/create-overview.mjs",
+    "catalog:sync": "node scripts/sync-catalog.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}

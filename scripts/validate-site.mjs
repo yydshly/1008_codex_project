@@ -22,10 +22,10 @@ for (const link of links) {
 }
 const publishedDirectories = (await readdir(site, { withFileTypes: true }))
   .filter(entry => entry.isDirectory() && /^\d{3,}-/.test(entry.name)).map(entry => entry.name).sort();
-assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','010-unsloth','013-aihot'], '发布允许名单包含 001–008、010 与 013');
+assert.deepEqual(publishedDirectories, ['001-sandboard', '002-interview-guide', '003-pascal-editor', '004-up-learning-guide','005-threejs-game-skills','006-easel','007-octogent','008-ghosttrack','009-cove','010-unsloth','013-aihot'], '发布允许名单包含 001–010 与 013');
 
 // Introductions must be readable before each guide and use the catalog text.
-const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '010':'unsloth', '013': 'aihot' };
+const introductionSections = { '001': 'sandboard', '002': 'interview-guide', '003': 'pascal', '004': 'up-learning-guide', '005':'threejs-game-skills', '006':'easel', '007':'octogent', '008':'ghosttrack', '009':'cove', '010':'unsloth', '013': 'aihot' };
 const escapeIntroduction = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 for (const [id, sectionId] of Object.entries(introductionSections)) {
   const project = readCatalog().projects.find(project => project.id === id);
@@ -297,3 +297,9 @@ const unslothMetadata=readCatalog().projects.find(project=>project.id==='010');
 for(const item of unslothMetadata.summaryItems)assert.ok(html.includes(`<strong>${escapeIntroduction(item.title)}</strong>：${escapeIntroduction(item.text)}`),`010 总入口缺少摘要 ${item.title}`);
 assert.ok(html.includes('src="./010-unsloth/assets/unsloth-overview.png"'),'010 总入口使用已有完整引导图');
 assert.ok(html.includes('>unsloth</a>'),'010 来源链接使用原库名');
+const {auditCove}=await import('../projects/009-cove/web/scripts/audit.mjs');
+await auditCove(path.join(site,'009-cove'));
+const coveMetadata=readCatalog().projects.find(project=>project.id==='009');
+for(const item of coveMetadata.summaryItems)assert.ok(html.includes('<strong>'+escapeIntroduction(item.title)+'</strong>：'+escapeIntroduction(item.text)),'009 总入口缺少摘要 '+item.title);
+assert.ok(html.includes('src="./009-cove/assets/cove-overview.png"'),'009 总入口使用已有完整引导图');
+assert.ok(html.includes('>cove</a>'),'009 来源链接使用原库名');

@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "upstream": "https://github.com/mugnavo/cove",
+  "commit": "e7d40d524b6526d80c803fd092f6fa8bf2029f8e",
+  "researchDate": "2026-10-09",
+  "upstreamPackageVersion": "0.0.1",
+  "tag": null,
+  "license": "Unlicense",
+  "scope": "Original Chinese source analysis and static website; upstream application not executed.",
+  "dependencies": {
+    "@base-ui/react": "1.8.0",
+    "@better-auth/drizzle-adapter": "1.7.7",
+    "@fontsource-variable/inter": "5.3.0",
+    "@icons-pack/react-simple-icons": "13.15.1",
+    "@tanstack/react-query": "5.104.1",
+    "@tanstack/react-router": "1.170.41",
+    "@tanstack/react-router-ssr-query": "1.167.3",
+    "@tanstack/react-start": "1.168.60",
+    "@varlock/vite-integration": "1.5.2",
+    "better-auth": "1.7.7",
+    "class-variance-authority": "0.7.1",
+    "cn": "0.4.0",
+    "drizzle-orm": "1.0.0-rc.4",
+    "evlog": "2.30.1",
+    "lucide-react": "1.52.0",
+    "postgres": "3.4.9",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "shadcn": "4.21.4",
+    "varlock": "1.21.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@tailwindcss/vite": "4.3.3",
+    "@tanstack/devtools-a11y": "0.2.2",
+    "@tanstack/devtools-vite": "0.8.5",
+    "@tanstack/eslint-plugin-query": "5.104.1",
+    "@tanstack/eslint-plugin-router": "1.162.0",
+    "@tanstack/react-devtools": "0.10.13",
+    "@tanstack/react-query-devtools": "5.104.1",
+    "@tanstack/react-router-devtools": "1.167.2",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "drizzle-kit": "1.0.0-rc.4",
+    "nitro": "3.0.260903-beta",
+    "oxc-transform-react": "0.153.0",
+    "tailwindcss": "4.3.3",
+    "tw-animate-css": "1.4.0",
+    "typescript": "7.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "files": [
+    {
+      "path": ".agents/testing.md",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/.agents/testing.md",
+      "sha256": "f8b4b45d3f13b670a5323908b069dd24b728c5a465e80b0d836ef70a3628e7a2",
+      "bytes": 5190
+    },
+    {
+      "path": ".env.schema",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/.env.schema",
+      "sha256": "dd8b69705860e5367b7f41150d70855b48e8c428f01c59a83bdc48ee87263183",
+      "bytes": 1044
+    },
+    {
+      "path": "AGENTS.md",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/AGENTS.md",
+      "sha256": "223370edc3c8387c28501778e3b8c8c9928a84d992006bd694a930c04ebbb5f1",
+      "bytes": 5414
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/LICENSE",
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e",
+      "bytes": 1211
+    },
+    {
+      "path": "README.md",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/README.md",
+      "sha256": "bf4a9d62f4349b42c1ded77af9dc2e0896f75563cbe55cf1a7fb6233609c2571",
+      "bytes": 6082
+    },
+    {
+      "path": "docker-compose.yml",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/docker-compose.yml",
+      "sha256": "2d247e8fd4245ab8721bfa06c8a6ed79687f9691b024709ed1b89a541cd3dcc3",
+      "bytes": 272
+    },
+    {
+      "path": "drizzle.config.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/drizzle.config.ts",
+      "sha256": "f50af0ec4112addb2559e049733955873226248031a9f74d35abdf6a3ea15437",
+      "bytes": 309
+    },
+    {
+      "path": "nitro.config.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/nitro.config.ts",
+      "sha256": "278d923c862a428bd3e15406940456fdc1ac5909b6b50642d96d0cb54b4a111e",
+      "bytes": 847
+    },
+    {
+      "path": "package.json",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/package.json",
+      "sha256": "66a39834699f7b17c6d384fae8f7381ed507c1401d2dcf69c4486110aca79384",
+      "bytes": 3013
+    },
+    {
+      "path": "playwright.config.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/playwright.config.ts",
+      "sha256": "9ca202ef47c21dc6bfb39d3fe41cc873427c3d193fef1559b54f5a3129187d93",
+      "bytes": 1140
+    },
+    {
+      "path": "src/components/sign-in-social-buttons.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/components/sign-in-social-buttons.tsx",
+      "sha256": "93e446d3ef7b8698f526920bc7b286578e5aef5189c17f532d95d7a87d4e99e1",
+      "bytes": 2475
+    },
+    {
+      "path": "src/components/sign-out-button.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/components/sign-out-button.tsx",
+      "sha256": "46b6c9403accd714c01845fc2e9470374c8cbfe57b4a5124bd608184062f5991",
+      "bytes": 897
+    },
+    {
+      "path": "src/components/theme-provider.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/components/theme-provider.tsx",
+      "sha256": "96e2c0de7162952fc4406cdc3cf54df3f2be9f2692c7189be7a4cd237d6e83cf",
+      "bytes": 2793
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/components/ui/button.tsx",
+      "sha256": "ce0781762d4830c0fbe6d2ea92b0f8b61b293f29674480ea56f5c2e3fe6edbc6",
+      "bytes": 2851
+    },
+    {
+      "path": "src/lib/auth/auth-client.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/auth-client.ts",
+      "sha256": "54e09dcd3e037b0aa7ed7e6d4b894ddba1cb9b7283ab2d770f1780ce1ee87a9c",
+      "bytes": 476
+    },
+    {
+      "path": "src/lib/auth/auth.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/auth.ts",
+      "sha256": "411714d4102cb5b2814eca6a25c29efc05b7978970a9ae650ba9c059589bff7e",
+      "bytes": 1352
+    },
+    {
+      "path": "src/lib/auth/functions.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/functions.ts",
+      "sha256": "3ff49abfe21e1061040e38ed262eec8392ea90d62680ba34b7cc629ee1ee3d5c",
+      "bytes": 1430
+    },
+    {
+      "path": "src/lib/auth/hooks.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/hooks.ts",
+      "sha256": "8b5c4fbed30006ab0f933b0b261cba7755874df3c0766fe7963aeb0c0c4bce37",
+      "bytes": 690
+    },
+    {
+      "path": "src/lib/auth/middleware.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/middleware.ts",
+      "sha256": "c65eac0ddc060f0082367a8f61cb81f169f91f383cc2b193e68e9bb2b163e641",
+      "bytes": 1847
+    },
+    {
+      "path": "src/lib/auth/queries.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/queries.ts",
+      "sha256": "5de37471b6381dd728ebb97b1f693fb818802c52ac33e4a3a6b414e1f9147f9f",
+      "bytes": 377
+    },
+    {
+      "path": "src/lib/db/index.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/db/index.ts",
+      "sha256": "a4946f5264471085df68af18f5b517689c336e43dc62a527143f778a1286b273",
+      "bytes": 578
+    },
+    {
+      "path": "src/lib/db/schema/auth.schema.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/db/schema/auth.schema.ts",
+      "sha256": "5d114afe738cdd165c43e940d38486256bb90b222f04b7e9d005d56c339609de",
+      "bytes": 2964
+    },
+    {
+      "path": "src/lib/db/schema/index.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/db/schema/index.ts",
+      "sha256": "6f9d541303b7aef9353e81e32f43f740b70c31307216f837927bf20e1a02ab1d",
+      "bytes": 65
+    },
+    {
+      "path": "src/lib/logger.server.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/logger.server.ts",
+      "sha256": "5a9f03b749118e2c3a9d12d7377dabcbdc9f5ed1bd1fd3096129881601005401",
+      "bytes": 357
+    },
+    {
+      "path": "src/routeTree.gen.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routeTree.gen.ts",
+      "sha256": "5a190aa1ea5007b94c78851fbae0ddb777e6bdc07ba5330425266efedaa68ce9",
+      "bytes": 6676
+    },
+    {
+      "path": "src/router.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/router.tsx",
+      "sha256": "176077f8f64fe05856f295b78294c1cd482a76295e80b6a2722ac386c8d6be22",
+      "bytes": 1240
+    },
+    {
+      "path": "src/routes/__root.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/__root.tsx",
+      "sha256": "18569412668c5e3cceb82baaca443830db29db2c37be41aa05fd5ba5caa17309",
+      "bytes": 2306
+    },
+    {
+      "path": "src/routes/_auth/app/index.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_auth/app/index.tsx",
+      "sha256": "ef8f94105d5271d121094ed66af3deddb46bf4757fa8482d8059928cc7c06b94",
+      "bytes": 860
+    },
+    {
+      "path": "src/routes/_auth/app/route.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_auth/app/route.tsx",
+      "sha256": "acebc7bc28da3fae1d1fb21ebdbdfc6dd34be64d949316ee8411b14bfce09a1e",
+      "bytes": 1382
+    },
+    {
+      "path": "src/routes/_auth/route.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_auth/route.tsx",
+      "sha256": "cec5093761af7e785a403ca31c9bbd2f0d7ad905c0a009fa93328b3c6c5d60f1",
+      "bytes": 1585
+    },
+    {
+      "path": "src/routes/_guest/login.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_guest/login.tsx",
+      "sha256": "461e24968f35ea875a121477a6edc9a6d2924ccedc7460f7b38b66b9d590a121",
+      "bytes": 4595
+    },
+    {
+      "path": "src/routes/_guest/route.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_guest/route.tsx",
+      "sha256": "8e5c99ac9aa2dad9f77fdc12bc5b16c2af282d66ef32dea8fbeff8db7bc15e8d",
+      "bytes": 1285
+    },
+    {
+      "path": "src/routes/_guest/signup.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_guest/signup.tsx",
+      "sha256": "cdfea485c528958ce1afbabcead6d38b805955706252ac1f7dc352283599012f",
+      "bytes": 4937
+    },
+    {
+      "path": "src/routes/api/auth/$.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/api/auth/$.ts",
+      "sha256": "d11730d8f6c8bcac823a1ced76515058180825eda57650b2bf4bd314b7ccb747",
+      "bytes": 356
+    },
+    {
+      "path": "src/routes/index.tsx",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/index.tsx",
+      "sha256": "69e4c209263e6377bd418620a89674df44fb6d6ff2e585ab5c24c9c38b32e8a6",
+      "bytes": 424
+    },
+    {
+      "path": "vite.config.ts",
+      "url": "https://github.com/mugnavo/cove/blob/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/vite.config.ts",
+      "sha256": "dfd6075d5b2d0353cb71a25f5b5aa72e8a899ac576d0e58c8c81f711d55687c8",
+      "bytes": 4184
+    }
+  ],
+  "directories": [
+    {
+      "path": "src/components/",
+      "url": "https://github.com/mugnavo/cove/tree/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/components/"
+    },
+    {
+      "path": "src/lib/auth/",
+      "url": "https://github.com/mugnavo/cove/tree/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/auth/"
+    },
+    {
+      "path": "src/lib/db/",
+      "url": "https://github.com/mugnavo/cove/tree/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/lib/db/"
+    },
+    {
+      "path": "src/routes/_auth/app/",
+      "url": "https://github.com/mugnavo/cove/tree/e7d40d524b6526d80c803fd092f6fa8bf2029f8e/src/routes/_auth/app/"
+    }
+  ]
+}

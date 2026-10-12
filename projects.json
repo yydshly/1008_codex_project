@@ -702,6 +702,103 @@
       "coverFull": "projects/008-ghosttrack/assets/ghosttrack-overview.png"
     },
     {
+      "id": "009",
+      "slug": "cove",
+      "name": "Cove 全栈模板架构研究",
+      "summary": "完整理解 Cove 的全栈模板定位、八类能力、八组模块、六个原理、六类场景、复用价值、八处接口与六步适配，沿用已有完整引导图和四张交互架构图。",
+      "upstream": "https://github.com/mugnavo/cove",
+      "status": "已完成",
+      "summaryItems": [
+        {
+          "title": "定位",
+          "text": "Cove Stack（原 TanStarter）是 React / TypeScript 全栈起步模板：已连接页面、路由、查询、身份、数据库和工具链，创建自己的工程后继续开发业务。"
+        },
+        {
+          "title": "能力",
+          "text": "八类基础覆盖 SSR 与服务器函数、文件路由、Query 缓存、邮箱密码及可配置 OAuth、认证数据与迁移、UI / 主题、环境日志测试、构建部署；默认 /app 仅为用户展示示例。"
+        },
+        {
+          "title": "模块",
+          "text": "按职责分为页面 UI、Router / Query、服务器函数与 API、Better Auth、会话与业务鉴权、Drizzle / PostgreSQL、环境与观测、构建测试部署八组；四张图含 35 个可查看源码的节点。"
+        },
+        {
+          "title": "执行原理",
+          "text": "首次请求由 Start 做 SSR，浏览器水合接管交互；createServerFn 在浏览器成为 RPC 代理，数据库实现留在服务端。文件路由生成路由树，Router 与 Query 共享 SSR 数据。"
+        },
+        {
+          "title": "身份与数据",
+          "text": "authClient 经 /api/auth/* 到 auth.handler；当前用户经 $getUser / _getUser 到 getSession。Better Auth 用 Drizzle adapter 访问 user、session、account、verification 四表，并转发 Cookie。"
+        },
+        {
+          "title": "缓存与权限",
+          "text": "Query 默认两分钟新鲜期，认证 Cookie 缓存五分钟；均不等于会话有效期。beforeLoad 控制页面导航，业务接口显式鉴权；freshAuthMiddleware 跳过缓存，角色、归属与租户权限仍需开发。"
+        },
+        {
+          "title": "适用场景",
+          "text": "个人工具 SaaS、团队内部管理、会员内容、AI 工具 Web 底座、客户门户、项目研究平台；适合账号、结构化记录与工作区交互，场景及专业业务服务为适配建议。"
+        },
+        {
+          "title": "价值",
+          "text": "复用各库接线、类型边界与基础工具，把投入转向业务模型和用户流程；还可学习 SSR / RPC / 认证与授权分工、作为自己的工程起点。实际省时、质量和性能收益未量化。"
+        },
+        {
+          "title": "适配与复用",
+          "text": "可使用完整模板、学习接线方法、择取模块或建立自己的研究工作区。六步为创建工程、配置运行条件、设计业务数据、完成页面到数据库闭环、接业务服务、验证部署维护。"
+        },
+        {
+          "title": "扩展入口",
+          "text": "八处真实入口对应页面 UI、服务器函数、查询同步、schema / 迁移、身份权限、外部服务、环境观测和部署测试。“预留接口”是框架 API / 配置与目录约定，未发现专用业务插件注册系统。"
+        },
+        {
+          "title": "扩展方向",
+          "text": "业务记录、组织授权、支付权益、文件内容、邮件通知、AI / 队列、检索报表、运行治理八项均为待开发建议；需设计资源归属、外部事件验证、幂等、失败处理和验收。"
+        },
+        {
+          "title": "来源与边界",
+          "text": "固定 e7d40d5、Unlicense；原模板要求 Node.js ≥24、pnpm ≥12、Vite+ 与 PostgreSQL，依赖含 Drizzle RC / Nitro beta。本次发布静态研究和已有原图，未运行 Cove 后端、真实 OAuth、迁移或性能测试。"
+        }
+      ],
+      "overviewItems": [
+        {
+          "title": "定位与能力",
+          "text": "用 Cove 创建自己的全栈工程，再补业务页面、规则和数据。它已连接 React、TanStack Start / Router / Query、Better Auth、Drizzle / PostgreSQL、UI 与开发工具；默认登录后页面仍是示例。"
+        },
+        {
+          "title": "模块与原理",
+          "text": "页面和文件路由进入 SSR / 水合及 Query；用户读取走服务器函数，登录走认证 API；Better Auth 经适配器保存账户与会话。数据库和密钥留在服务端，页面导航检查与接口授权分别负责。"
+        },
+        {
+          "title": "场景与产出",
+          "text": "可做个人笔记工具、内部项目看板、会员资料库、AI 工具门户或客户工单。以研究平台为例，完成自己的研究记录、笔记和实验数据闭环；模型、支付、存储和组织权限需继续接入。"
+        },
+        {
+          "title": "价值与复用",
+          "text": "复用基础接线与工程约定，把开发投入到产品流程、业务约束和验收；也可只参考 SSR、RPC、身份与缓存的组合方法。模板不能替代需求设计、权限规则和业务维护。"
+        },
+        {
+          "title": "适配与扩展",
+          "text": "从实际环境、业务 schema、服务器函数、页面与查询开始，沿八处入口增加支付权益、文件邮件、AI 队列和监控。先验收一条完整闭环，再增加组织、检索、报表和更复杂的服务。"
+        },
+        {
+          "title": "图与验证边界",
+          "text": "下图沿用我们已生成的完整中文总览，说明已有能力、配置项、模块关系和建议新增路径；网页另补价值与复用。研究固定源码，静态网页可用性与原 Cove 全栈运行效果分别看待。"
+        }
+      ],
+      "tags": [
+        "全栈模板",
+        "TanStack Start",
+        "SSR / RPC",
+        "Better Auth",
+        "Drizzle",
+        "业务适配"
+      ],
+      "cover": "projects/009-cove/assets/cove-overview.png",
+      "coverFull": "projects/009-cove/assets/cove-overview.png",
+      "coverAlt": "Cove 完整中文引导图：模板定位、基础能力、六类场景、模块架构、执行原理、八处扩展接口和六步业务适配",
+      "coverCaption": "沿用 2026-10-09 原创 2700×6471 完整 PNG；固定源码 e7d40d5，2026-10-12 补全中文理解。原图不裁切、不重绘；已有能力、配置项和建议开发分别标明，静态网站验证不代表 Cove 后端运行验证。",
+      "demo": ""
+    },
+    {
       "id": "010",
       "slug": "unsloth",
       "name": "Unsloth 模型训练与原理研究",

@@ -1,5 +1,32 @@
 # 多 Web 演示部署与记录
 
+<!-- COVE_PUBLICATION:START -->
+## Cove 完整理解与既有引导图发布（2026-10-12）
+
+009 接入现有 GitHub Pages Actions，与已发布的 001–008、010 和 013 独立构建后统一发布。发布的是中文静态研究网页，原 Cove 的 SSR、认证、服务器函数和 PostgreSQL 仍需要自己的服务器运行环境。
+
+完整理解提供14章、12项摘要、6段图前介绍、8类基础能力、8组职责模块、4张架构图 / 35个节点、6个执行机制、6类场景、6项价值、4条复用路线、8处扩展入口、6步适配和8项扩展建议。根 projects.json 与网页摘要 / 引导介绍一致；建议新增服务和已有配置分别说明。
+
+沿用 assets/cove-overview.png 的原始字节，2700 × 6471，2,008,514字节；SHA-256 为 085338220f911e14ce8c388204eb4011d60be73282bac90fe9cef5387203143f。新增 map.html 缩放阅读器，保留独立可编辑 HTML 图源、原图生成记录、四张 SVG、文字版、结构化研究与上游 Unlicense。
+
+~~~powershell
+npm.cmd ci --prefix projects/009-cove/web
+npm.cmd run build --prefix projects/009-cove/web
+npm.cmd run check --prefix projects/009-cove/web
+npm.cmd run index:build
+npm.cmd run check
+npm.cmd test
+npm.cmd run build:site
+node scripts/validate-site.mjs
+~~~
+
+静态页需 Node.js 22+、无第三方运行依赖；完整 web/dist/ 复制到 .cache/pages-site/009-cove/，默认子路径 /1008_codex_project/009-cove/。网页包含相对资源、map.html、publication.json、understanding.md 和固定源码清单；关闭脚本仍可阅读核心正文与原图。CI 新增路径触发、独立安装与完整内容 / 原图校验。
+
+研究保持 e7d40d524b6526d80c803fd092f6fa8bf2029f8e 的固定基线；不是上游之后所有变化的综述。Drizzle RC、Nitro beta 和实际目标平台需由产品开发者验证；此次部署不证明真实 OAuth、数据库迁移或业务性能。
+
+公开链接和首次部署运行在 HTTPS、下载与真实浏览器核验通过后登记，证据保存于项目 src/publication-verification.json。
+<!-- COVE_PUBLICATION:END -->
+
 <!-- UNSLOTH_PUBLICATION:START -->
 ## Unsloth 完整理解与既有总览图发布（2026-10-12）
 

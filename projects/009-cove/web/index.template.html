@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="完整理解 Cove 全栈起步模板：十二项摘要、能力与模块、SSR与RPC及认证数据原理、业务场景、开发价值、复用路线、八处接口与六步适配；沿用完整引导图和四张交互架构图。">
+  <meta name="theme-color" content="#101e30">
+  <title>Cove · 全栈模板架构研究</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#overview">跳到正文</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true">C</span><span>Cove<span class="brand-small">模板研究 / 009</span></span></a>
+    <p class="side-label">从集成到底层</p>
+    <nav aria-label="研究章节">
+      <a href="#overview"><span>01</span>理解定位</a>
+      <a href="#summary"><span>02</span>完整摘要</a>
+      <a href="#architecture"><span>03</span>引导图与架构</a>
+      <a href="#modules"><span>04</span>模块职责</a>
+      <a href="#capabilities"><span>05</span>能力与边界</a>
+      <a href="#principles"><span>06</span>执行原理</a>
+      <a href="#scenarios"><span>07</span>业务场景</a>
+      <a href="#value"><span>08</span>开发价值</a>
+      <a href="#reuse"><span>09</span>复用路线</a>
+      <a href="#interfaces"><span>10</span>扩展入口</a>
+      <a href="#adaptation"><span>11</span>适配步骤</a>
+      <a href="#extensions"><span>12</span>扩展方向</a>
+      <a href="#files"><span>13</span>源码与版本</a>
+      <a href="#faq"><span>14</span>采用判断</a>
+    </nav>
+    <div class="side-bottom"><span class="side-label">研究基线</span><a href="https://github.com/mugnavo/cove/tree/e7d40d524b6526d80c803fd092f6fa8bf2029f8e" target="_blank" rel="noopener noreferrer"><code>e7d40d5</code> · 固定源码</a><p>2026.10.09<br>中文整理与架构解读</p></div>
+  </aside>
+  <div class="page">
+    <header class="topbar"><span>GitHub 项目研究集 <b>/</b> 009 · Cove Stack</span><a href="https://github.com/mugnavo/cove" target="_blank" rel="noopener noreferrer">原仓库 <span aria-hidden="true">↗</span></a></header>
+    <main>
+      <section id="overview" class="overview">
+        <div class="eyebrow"><span class="mini-line"></span> 全栈模板 / 架构理解</div>
+        <h1>基础已经接好，<br><em>业务从这里开始。</em></h1>
+        <p class="lead">Cove 将页面、登录、数据库与构建工具连接成一个起步项目。它省下基础设施集成的时间，让开发从自己的数据与业务规则开始。</p>
+        <div class="intro-meta"><span>原名 TanStarter</span><span>React + TypeScript</span><span>上游许可：Unlicense</span></div>
+        <div class="understanding">
+          <div><span class="eyebrow">我们的理解</span><h2>一套已集成的全栈起步模板</h2><p>使用模板创建自己的项目，保留或调整已有基础，再增加业务页面、数据表、服务器逻辑和访问权限。</p></div>
+          <div class="understanding-split"><p><span class="pill teal">模板已有</span>登录会话、路由、数据库连接、基础 UI、工具链</p><p><span class="pill outline">业务补充</span>项目 / 订单 / 笔记、权限、支付、文件、AI 等</p></div>
+        </div>
+      </section>
+      <!-- PUBLICATION_SUMMARY -->
+      <section id="architecture">
+        <div class="section-heading"><div><span class="eyebrow">03 / ARCHITECTURE</span><h2>先看清它如何连接</h2></div><p>点击模块查看职责与源码；小屏幕可在图内左右滑动。</p></div>
+        <!-- SUMMARY_FIGURE -->
+        <div class="architecture-panel">
+          <div class="diagram-tabs" role="tablist" aria-label="架构图类型"><!-- DIAGRAM_TABS --></div>
+          <!-- DIAGRAMS -->
+        </div>
+        <div class="support-strip"><p><b>Varlock</b><span>验证环境变量，生成类型</span></p><p><b>evlog / Nitro</b><span>记录请求，处理服务器运行</span></p><p><b>Vitest / Playwright</b><span>提供测试基础，业务验证按需补充</span></p></div>
+      </section>
+      <!-- MODULES -->
+      <section id="capabilities">
+        <div class="section-heading"><div><span class="eyebrow">05 / CAPABILITIES</span><h2>模板做到哪一步</h2></div><p>区分已有集成、需要配置的能力与业务扩展。</p></div>
+        <div class="cap-grid"><!-- CAPABILITIES --></div>
+        <div class="boundary-note"><b>默认 /app 是示例页</b><p>目前只展示当前登录用户、布局路径、主题切换和退出。完整的管理后台、支付订阅、组织权限、AI 模型调用与业务数据表，都需要继续开发。</p></div>
+      </section>
+      <section id="principles">
+        <div class="section-heading"><div><span class="eyebrow">06 / EXECUTION</span><h2>底层原理，在连接处</h2></div><p>框架负责机制，Cove 负责将这些机制组装起来。</p></div>
+        <div class="principle-list"><!-- PRINCIPLES --></div>
+        <div class="security-story"><span class="pill light">一个具体例子</span><h3>能打开订单页，不等于能修改任何订单。</h3><p>页面检查让未登录用户去登录。修改订单的服务器函数还要验证会话，并确认订单属于当前用户、角色允许执行修改。模板提供会话中间件；订单归属与业务权限由自己的代码实现。</p></div>
+      </section>
+      <section id="scenarios">
+        <div class="section-heading"><div><span class="eyebrow">07 / USE CASES</span><h2>哪些业务能用上这套基础</h2></div><p>以下为根据技术组合提出的场景判断，属于应用建议。</p></div>
+        <div class="scenario-grid"><!-- SCENARIOS --></div>
+        <div class="fit-note"><h3>选择依据</h3><p>当业务包含用户登录、结构化数据、表单列表和个人 / 团队工作区时，模板的集成价值较大。纯展示网站可以更轻量；复杂电商、ERP、实时协作等也能开发，但专业领域功能与基础设施仍需另行设计。</p></div>
+      </section>
+      <!-- VALUES -->
+      <!-- REUSE -->
+      <!-- INTERFACES -->
+      <!-- ADAPTATION -->
+      <section id="extensions">
+        <div class="section-heading"><div><span class="eyebrow">12 / EXTENSIONS</span><h2>沿着已有边界增加业务</h2></div><p>八项待开发建议，分别说明接入位置与验收依据。</p></div>
+        <div class="extension-list"><!-- EXTENSIONS --></div>
+        <div class="business-flow"><span class="eyebrow">以我们的研究平台为例 · 建议架构</span><h3>先完成“保存一条自己的研究记录”</h3><ol><li>研究列表 / 编辑页面</li><li>Query 查询与缓存</li><li>业务服务器函数</li><li>会话 + ownerId 校验</li><li>Drizzle / Research 表</li></ol><p>建议新增 Research、Note、Experiment 等业务表；这条链是对模板的扩展方案，当前展示网页没有实现它们。</p></div>
+      </section>
+      <section id="files">
+        <div class="section-heading"><div><span class="eyebrow">13 / SOURCE MAP</span><h2>把架构对应回真实文件</h2></div><p>源码链接固定到研究提交，避免上游更新后失去上下文。</p></div>
+        <div class="file-table-wrap"><table class="file-table"><thead><tr><th>源码位置</th><th>架构职责</th><th>实际内容</th></tr></thead><tbody><!-- FILES --></tbody></table></div>
+        <div class="route-map"><div><h3>文件目录与访问路径</h3><pre>src/routes/
+├── __root.tsx            根 HTML 与全局组件
+├── index.tsx             /
+├── _guest/               路径隐藏的访客布局
+│   ├── route.tsx
+│   ├── login.tsx         /login
+│   └── signup.tsx        /signup
+├── _auth/                路径隐藏的登录布局
+│   ├── route.tsx
+│   └── app/
+│       ├── route.tsx     /app 布局
+│       └── index.tsx     /app 页面
+└── api/auth/$.ts         /api/auth/*</pre></div><div><h3>固定版本与运行条件</h3><p>以下版本来自固定提交的 package.json；不代表各库的当前最新版本。</p><div class="version-grid"><!-- VERSIONS --></div><p class="runtime-note">原模板：Node.js ≥ 24、pnpm ≥ 12、Vite+、PostgreSQL。Drizzle v1 RC、Nitro v3 beta 需要结合部署目标验证。模板包字段 0.0.1 不代表稳定发布。</p></div></div>
+        <details class="sources"><summary>研究来源与验证范围</summary><p>已核对固定源码与官方原理文档。本项目新增的是独立中文研究网页与原创架构图；未运行 Cove 认证后端、OAuth、数据库迁移或部署性能测试。网页的构建、子路径、交互和响应式布局另行验证。</p><div class="source-grid"><!-- SOURCES --></div></details>
+      </section>
+      <!-- FAQS -->
+    </main>
+    <footer><div><strong>Cove / 009</strong><p>源码研究 · 中文整理 · 原创架构解读</p></div><div><a href="./research.md">项目说明</a><a href="./notes.md">验证记录</a><a href="./LICENSE.upstream.txt">上游许可证</a><a href="#overview">回到顶部</a></div></footer>
+  </div>
+</body>
+</html>

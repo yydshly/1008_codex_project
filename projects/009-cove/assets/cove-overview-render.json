@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09",
+  "source": "cove-overview.html",
+  "sourceSha256": "c86ee4c95bf75cd18069b6c057b06cc4ee80b695774a1d070aedbc2c84a33c03",
+  "outputSha256": "085338220f911e14ce8c388204eb4011d60be73282bac90fe9cef5387203143f",
+  "output": "cove-overview.png",
+  "width": 2700,
+  "height": 6471,
+  "logicalWidth": 1800,
+  "logicalHeight": 4314,
+  "mode": "Deterministic HTML/CSS + original SVG architecture, rasterized with Chromium.",
+  "checks": {
+    "capabilities": 6,
+    "scenarios": 6,
+    "requestPaths": 4,
+    "principles": 4,
+    "extensionPoints": 8,
+    "adaptationSteps": 6,
+    "clipping": [],
+    "errors": []
+  }
+}

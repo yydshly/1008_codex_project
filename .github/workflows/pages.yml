@@ -12,6 +12,7 @@ on:
       - 'projects/006-easel/**'
       - 'projects/007-octogent/**'
       - 'projects/008-ghosttrack/**'
+      - 'projects/009-cove/**'
       - 'projects/010-unsloth/**'
       - 'projects/013-aihot/**'
       - 'projects.json'
@@ -54,8 +55,9 @@ jobs:
           npm ci --prefix projects/006-easel/web
           npm ci --prefix projects/007-octogent/web
           npm ci --prefix projects/008-ghosttrack/web
+          npm ci --prefix projects/009-cove/web
           npm ci --prefix projects/010-unsloth/web
-      - name: Build the research entrance and published projects 001 through 008, 010 and 013
+      - name: Build the research entrance and published projects 001 through 010 and 013
         run: npm run build:site
       - name: Verify archive media and sixteen page links
         working-directory: projects/001-sandboard/experiments/sand-art
@@ -83,6 +85,8 @@ jobs:
         run: npm run check --prefix projects/008-ghosttrack/web
       - name: Verify Unsloth full understanding, training boundaries and unchanged guide
         run: npm run check --prefix projects/010-unsloth/web
+      - name: Verify Cove full understanding, adaptation interfaces and unchanged guide
+        run: npm run check --prefix projects/009-cove/web
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .cache/pages-site

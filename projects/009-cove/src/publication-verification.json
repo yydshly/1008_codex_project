@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-12",
+  "state": "prepared",
+  "upstreamCommit": "e7d40d524b6526d80c803fd092f6fa8bf2029f8e",
+  "guideSha256": "085338220f911e14ce8c388204eb4011d60be73282bac90fe9cef5387203143f",
+  "scope": "静态研究网页的发布；不运行原 Cove 认证、数据库或业务服务。"
+}
